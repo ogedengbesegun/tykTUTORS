@@ -1,0 +1,19 @@
+{
+  "class1A": [
+    {
+      "ID": "ABSHS001",
+      "firstName": "adeola",
+      "lastName": "olumide",
+      "password": "adeola001",
+      "picture": "http://127.0.0.1:5501/images/img001.jpg"
+    },
+
+    {
+      "ID": "ABSHS002",
+      "firstName": "benson",
+      "lastName": "Harry",
+      "password": "benson002",
+      "picture": "http://127.0.0.1:5501/images/Ogedengbe Eniolorunfe Theophilus passport.jpg"
+    }
+  ]
+}
