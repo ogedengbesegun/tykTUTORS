@@ -95,7 +95,7 @@ function Login() {
         // alert("The login is successful")
         let profilePic = document.querySelector(".img001")
 
-        profilePic.setAttribute("src", class1APicture)
+        profilePic.setAttribute("src", class1APicture0)
 
 
         // These events are fired after the login is done

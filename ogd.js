@@ -147,222 +147,423 @@ let label104 = document.querySelector(".label104")
 
 
 
-let g = 1
-let mns = 0
-function answeredQtns() {
+let scoreResult = {
+    success: 1,
+    failure: 0
+}
 
-    let inputValues = document.querySelectorAll(".inputValue")
-    let inputValue = Array.from(inputValues)
+function answeredQtn1() {
+
+    let inputValues = document.querySelectorAll(".inputValue1")
+    let inputValue1 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn1.textContent == qtn[0].ask) {
 
-        inputValue[1].checked
-        if (inputValue[1].checked) {
-            g
+        inputValue1[1].checked
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
     }
     else if (qstn1.textContent == qtn[1].ask) {
 
-        inputValue[3].checked
-        if (inputValue[3].checked) {
-            g
+        inputValue1[3].checked
+        if (inputValue1[3].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[2].ask) {
 
-        inputValue[0].checked
-        if (inputValue[0].checked) {
-            g
+        inputValue1[0].checked
+        if (inputValue1[0].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[3].ask) {
 
-        inputValue[2].checked
-        if (inputValue[2].checked) {
-            g
+        inputValue1[2].checked
+        if (inputValue1[2].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[4].ask) {
 
-        inputValue[1].checked
-        if (inputValue[1].checked) {
-            g
+        inputValue1[1].checked
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[5].ask) {
 
-        inputValue[1].checked
-        if (inputValue[1].checked) {
-            g
+        inputValue1[1].checked
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[6].ask) {
 
-        inputValue[0].checked
-        if (inputValue[0].checked) {
-            g
+        inputValue1[0].checked
+        if (inputValue1[0].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[7].ask) {
 
-        inputValue[1].checked
-        if (inputValue[1].checked) {
-            g
+        inputValue1[1].checked
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[8].ask) {
 
-        inputValue[3].checked
-        if (inputValue[3].checked) {
-            g
+        inputValue1[3].checked
+        if (inputValue1[3].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[9].ask) {
 
-        inputValue[3].checked
-        if (inputValue[3].checked) {
-            g
+        inputValue1[3].checked
+        if (inputValue1[3].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[10].ask) {
-        inputValue[0].checked
+        inputValue1[0].checked
 
-        if (inputValue[0].checked) {
-            g
+        if (inputValue1[0].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[11].ask) {
-        inputValue[2].checked
+        inputValue1[2].checked
 
-        if (inputValue[2].checked) {
-            g
+        if (inputValue1[2].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[12].ask) {
-        inputValue[0].checked
+        inputValue1[0].checked
 
-        if (inputValue[0].checked) {
-            g
+        if (inputValue1[0].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[13].ask) {
-        inputValue[2].checked
+        inputValue1[2].checked
 
-        if (inputValue[2].checked) {
-            g
+        if (inputValue1[2].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[14].ask) {
-        inputValue[3].checked
+        inputValue1[3].checked
 
-        if (inputValue[3].checked) {
-            g
+        if (inputValue1[3].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[15].ask) {
-        inputValue[1].checked
+        inputValue1[1].checked
 
-        if (inputValue[1].checked) {
-            g
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[16].ask) {
-        inputValue[1].checked
+        inputValue1[1].checked
 
-        if (inputValue[1].checked) {
-            g
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[17].ask) {
-        inputValue[1].checked
+        inputValue1[1].checked
 
-        if (inputValue[1].checked) {
-            g
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[18].ask) {
-        inputValue[3].checked
+        inputValue1[3].checked
 
-        if (inputValue[3].checked) {
-            g
+        if (inputValue1[3].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[19].ask) {
-        inputValue[1].checked
+        inputValue1[1].checked
 
-        if (inputValue[1].checked) {
-            g
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[20].ask) {
-        inputValue[2].checked
+        inputValue1[2].checked
 
-        if (inputValue[2].checked) {
-            g
+        if (inputValue1[2].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[21].ask) {
-        inputValue[2].checked
+        inputValue1[2].checked
 
-        if (inputValue[2].checked) {
-            g
+        if (inputValue1[2].checked) {
+            return 1
 
-        } else { 0 }
+        } else { return 0 }
 
     }
     else if (qstn1.textContent == qtn[22].ask) {
-        inputValue[1].checked
+        inputValue1[1].checked
 
-        if (inputValue[1].checked) {
-            g
+        if (inputValue1[1].checked) {
+            return 1
 
-        } else { mns }
+        } else { return 0 }
 
     }
 
 }
+
+
+// this is answers for shuffle for question 2
+function answeredQtn2() {
+
+    let inputValues = document.querySelectorAll(".inputValue2")
+    let inputValue2 = Array.from(inputValues)
+    var response = JSON.parse(xhttp.responseText)
+    let qtn = response.question
+    if (qstn2.textContent == qtn[0].ask) {
+
+        inputValue2[1].checked
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+    }
+    else if (qstn2.textContent == qtn[1].ask) {
+
+        inputValue2[3].checked
+        if (inputValue2[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[2].ask) {
+
+        inputValue2[0].checked
+        if (inputValue2[0].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[3].ask) {
+
+        inputValue2[2].checked
+        if (inputValue2[2].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[4].ask) {
+
+        inputValue2[1].checked
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[5].ask) {
+
+        inputValue2[1].checked
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[6].ask) {
+
+        inputValue2[0].checked
+        if (inputValue2[0].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[7].ask) {
+
+        inputValue2[1].checked
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[8].ask) {
+
+        inputValue2[3].checked
+        if (inputValue2[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[9].ask) {
+
+        inputValue2[3].checked
+        if (inputValue2[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[10].ask) {
+        inputValue2[0].checked
+
+        if (inputValue2[0].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[11].ask) {
+        inputValue2[2].checked
+
+        if (inputValue2[2].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[12].ask) {
+        inputValue2[0].checked
+
+        if (inputValue2[0].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[13].ask) {
+        inputValue2[2].checked
+
+        if (inputValue2[2].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[14].ask) {
+        inputValue2[3].checked
+
+        if (inputValue2[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[15].ask) {
+        inputValue2[1].checked
+
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[16].ask) {
+        inputValue2[1].checked
+
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[17].ask) {
+        inputValue2[1].checked
+
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[18].ask) {
+        inputValue2[3].checked
+
+        if (inputValue2[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[19].ask) {
+        inputValue2[1].checked
+
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[20].ask) {
+        inputValue2[2].checked
+
+        if (inputValue2[2].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[21].ask) {
+        inputValue2[2].checked
+
+        if (inputValue2[2].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn2.textContent == qtn[22].ask) {
+        inputValue2[1].checked
+
+        if (inputValue2[1].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+
+}
+
+
+
+
 // for ease of use for other functions-------------------
 
 function start() {
@@ -549,11 +750,7 @@ function start() {
 
     let submitTest = document.querySelector(".submit")
 
-    // This is a score counter for the result sheet per candidate
-    let scoreCounter = 1
-    console.log(scoreCounter += 1)
-
-    // ----------------------------------------
+    
 
     // this is to display the result sheet for the candidate
     submitTest.addEventListener("click", function () {
@@ -563,9 +760,11 @@ function start() {
         let scoreSheetHead = document.querySelector(".scoreSheetHead")
         scoreSheetHead.style.display = "block";
 
-        answeredQtns()
-        document.querySelector(".scoreNumber").innerHTML = 10
-
+        answeredQtn1()
+        answeredQtn2()
+        // document.querySelector(".scoreNumber").innerHTML = 10
+        let scoreNumber = document.querySelector(".scoreNumber")
+        scoreNumber.textContent = answeredQtn1() + answeredQtn2()
 
 
 
