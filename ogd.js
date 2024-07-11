@@ -147,6 +147,7 @@ let label104 = document.querySelector(".label104")
 
 
 
+let g = 1
 
 function answeredQtns() {
 
@@ -154,12 +155,12 @@ function answeredQtns() {
     let inputValue = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    let g = "Correct"
     if (qstn1.textContent == qtn[0].ask) {
 
         inputValue[1].checked
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
     }
     else if (qstn1.textContent == qtn[1].ask) {
@@ -167,6 +168,7 @@ function answeredQtns() {
         inputValue[3].checked
         if (inputValue[3].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -175,6 +177,7 @@ function answeredQtns() {
         inputValue[0].checked
         if (inputValue[0].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -183,6 +186,7 @@ function answeredQtns() {
         inputValue[2].checked
         if (inputValue[2].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -191,6 +195,7 @@ function answeredQtns() {
         inputValue[1].checked
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -199,6 +204,7 @@ function answeredQtns() {
         inputValue[1].checked
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -207,6 +213,7 @@ function answeredQtns() {
         inputValue[0].checked
         if (inputValue[0].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -215,6 +222,7 @@ function answeredQtns() {
         inputValue[1].checked
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -223,6 +231,7 @@ function answeredQtns() {
         inputValue[3].checked
         if (inputValue[3].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -231,6 +240,7 @@ function answeredQtns() {
         inputValue[3].checked
         if (inputValue[3].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -239,6 +249,7 @@ function answeredQtns() {
 
         if (inputValue[0].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -247,6 +258,7 @@ function answeredQtns() {
 
         if (inputValue[2].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -255,6 +267,7 @@ function answeredQtns() {
 
         if (inputValue[0].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -263,6 +276,7 @@ function answeredQtns() {
 
         if (inputValue[2].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -271,6 +285,7 @@ function answeredQtns() {
 
         if (inputValue[3].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -279,6 +294,7 @@ function answeredQtns() {
 
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -287,6 +303,7 @@ function answeredQtns() {
 
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -295,6 +312,7 @@ function answeredQtns() {
 
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -303,6 +321,7 @@ function answeredQtns() {
 
         if (inputValue[3].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -311,6 +330,7 @@ function answeredQtns() {
 
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -319,6 +339,7 @@ function answeredQtns() {
 
         if (inputValue[2].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -327,6 +348,7 @@ function answeredQtns() {
 
         if (inputValue[2].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -335,6 +357,7 @@ function answeredQtns() {
 
         if (inputValue[1].checked) {
             alert(g)
+
         } else { alert("Incorrect") }
 
     }
@@ -517,143 +540,9 @@ function start() {
     // console.log(inputValueArray[0].value)
 
 
-    let answers = [
-        "of final entry",
 
 
 
-        "resale",
-
-        "float",
-
-
-
-        "fixed and current assets",
-
-        "capital account",
-
-
-        "gross profit",
-
-
-        "contra entry",
-
-
-
-        "Purchases ledger",
-
-
-        "Purchases ledger",
-
-
-        "land and building",
-
-        "machinery",
-
-
-
-        "bulk purchases",
-
-        "Creditor",
-
-
-        "Cash Book",
-
-
-        "Debtor",
-
-        "discount column",
-
-
-        "prompt payment",
-
-
-        "trading account",
-
-
-        "loan",
-
-        "contra entry",
-
-
-
-        "profit and loss account",
-
-
-        "the arithemetical accuracy of the ledger",
-
-        "I, III and V"
-
-    ]
-
-    // for (let i = 0; i < answerOptions.length; i++) {
-
-    //     let inputValue = document.querySelectorAll(".inputValue")
-    //     let inputValueArray = Array.from(inputValue);
-    //     // const answerValue = answer[i];
-    //     // console.log(answerOptions[i]);
-    //     // console.log(inputValueArray)
-
-    //     inputValueArray.forEach(inputvalueeach => {
-    //         // console.log(inputvalueeach.value = answer[i])
-    //         answerOptions.forEach(answerOption => {
-    //             console.log(inputvalueeach.value = answerOption[i])
-
-    //         })
-    //         let correctAnswers = ["of original entry", "resale", "float",
-    //             "fixed and current assets", "capital account",
-    //             "gross profit", "contra entry", "Purchases ledger",
-    //             "land and building", "machinery", "bulk purchases",
-    //             "Creditor", "Cash Book",]
-
-
-    //         let submitTest = document.querySelector(".submit")
-
-    //         submitTest.addEventListener("click", function () {
-    //             for (let j = 0; j < correctAnswers.length; j++) {
-    //                 // const element = array[j];
-    //                 if (correctAnswers[j].includes(inputvalueeach.value)) {
-    //                     alert("we are doing fine")
-    //                 }
-    //                 else {
-    //                     alert("incorrect Answer")
-    //                 }
-    //             }
-    //         })
-    //     })
-
-
-    // }
-
-
-    // inputValue[0].checked
-
-
-
-
-
-    // for (const d of response.question) {
-
-    //     console.log([d.ask])
-
-    //     if ((d.ask).includes(qstn1.textContent)) {
-
-    //         console.log(response.question[0].a)
-
-    //         let optn1s = document.getElementsByName("optn1")
-    //         let optn1 = Array.from(optn1s)
-    //         for (const k of optn1) {
-    //             console.log(k)
-    //             if (answers.includes(k.value)) {
-    //                 k.checked
-    //                 console.log(k.value)
-    //             }
-    //         }
-
-
-    //     }
-
-    // }
 
 
 
