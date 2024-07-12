@@ -61,6 +61,9 @@ xhttp1.send();
 
 function Login() {
 
+    document.querySelector(".start").setAttribute("title", "Click To Start, 'GoodLuck'")
+
+
     var response1 = JSON.parse(xhttp1.responseText)
 
 
@@ -100,7 +103,6 @@ function Login() {
 
         // These events are fired after the login is done
         document.querySelector(".start").disabled = false;
-        document.querySelector(".start").setAttribute("title", "Click To Start, 'GoodLuck'")
         // ----------------------------------------------
 
         Arrayhide4login[0].style.display = "block";

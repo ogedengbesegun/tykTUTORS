@@ -222,8 +222,8 @@ function answeredQtn1() {
     }
     else if (qstn1.textContent == qtn[7].ask) {
 
-        inputValue1[1].checked
-        if (inputValue1[1].checked) {
+        inputValue1[3].checked
+        if (inputValue1[3].checked) {
             return 1
 
         } else { return 0 }
@@ -432,8 +432,8 @@ function answeredQtn2() {
     }
     else if (qstn2.textContent == qtn[7].ask) {
 
-        inputValue2[1].checked
-        if (inputValue2[1].checked) {
+        inputValue2[3].checked
+        if (inputValue2[3].checked) {
             return 1
         } else { return 0 }
 
@@ -568,14 +568,14 @@ function answeredQtn3() {
     let inputValue3 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn3.textContent == qtn[0].ask) {
 
         inputValue3[1].checked
         if (inputValue3[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn3.textContent == qtn[1].ask) {
 
         inputValue3[3].checked
         if (inputValue3[3].checked) {
@@ -583,7 +583,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn3.textContent == qtn[2].ask) {
 
         inputValue3[0].checked
         if (inputValue3[0].checked) {
@@ -591,7 +591,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn3.textContent == qtn[3].ask) {
 
         inputValue3[2].checked
         if (inputValue3[2].checked) {
@@ -599,7 +599,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn3.textContent == qtn[4].ask) {
 
         inputValue3[1].checked
         if (inputValue3[1].checked) {
@@ -607,7 +607,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn3.textContent == qtn[5].ask) {
 
         inputValue3[1].checked
         if (inputValue3[1].checked) {
@@ -615,7 +615,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn3.textContent == qtn[6].ask) {
 
         inputValue3[0].checked
         if (inputValue3[0].checked) {
@@ -623,15 +623,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue3[1].checked
-        if (inputValue3[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn3.textContent == qtn[7].ask) {
 
         inputValue3[3].checked
         if (inputValue3[3].checked) {
@@ -639,7 +631,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn3.textContent == qtn[8].ask) {
 
         inputValue3[3].checked
         if (inputValue3[3].checked) {
@@ -647,7 +639,15 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn3.textContent == qtn[9].ask) {
+
+        inputValue3[3].checked
+        if (inputValue3[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn3.textContent == qtn[10].ask) {
         inputValue3[0].checked
 
         if (inputValue3[0].checked) {
@@ -655,7 +655,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn3.textContent == qtn[11].ask) {
         inputValue3[2].checked
 
         if (inputValue3[2].checked) {
@@ -663,7 +663,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn3.textContent == qtn[12].ask) {
         inputValue3[0].checked
 
         if (inputValue3[0].checked) {
@@ -671,7 +671,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn3.textContent == qtn[13].ask) {
         inputValue3[2].checked
 
         if (inputValue3[2].checked) {
@@ -679,7 +679,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn3.textContent == qtn[14].ask) {
         inputValue3[3].checked
 
         if (inputValue3[3].checked) {
@@ -687,7 +687,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn3.textContent == qtn[15].ask) {
         inputValue3[1].checked
 
         if (inputValue3[1].checked) {
@@ -695,7 +695,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn3.textContent == qtn[16].ask) {
         inputValue3[1].checked
 
         if (inputValue3[1].checked) {
@@ -703,7 +703,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn3.textContent == qtn[17].ask) {
         inputValue3[1].checked
 
         if (inputValue3[1].checked) {
@@ -711,7 +711,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn3.textContent == qtn[18].ask) {
         inputValue3[3].checked
 
         if (inputValue3[3].checked) {
@@ -719,7 +719,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn3.textContent == qtn[19].ask) {
         inputValue3[1].checked
 
         if (inputValue3[1].checked) {
@@ -727,7 +727,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn3.textContent == qtn[20].ask) {
         inputValue3[2].checked
 
         if (inputValue3[2].checked) {
@@ -735,7 +735,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn3.textContent == qtn[21].ask) {
         inputValue3[2].checked
 
         if (inputValue3[2].checked) {
@@ -743,7 +743,7 @@ function answeredQtn3() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn3.textContent == qtn[22].ask) {
         inputValue3[1].checked
 
         if (inputValue3[1].checked) {
@@ -761,14 +761,14 @@ function answeredQtn4() {
     let inputValue4 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn4.textContent == qtn[0].ask) {
 
         inputValue4[1].checked
         if (inputValue4[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn4.textContent == qtn[1].ask) {
 
         inputValue4[3].checked
         if (inputValue4[3].checked) {
@@ -776,7 +776,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn4.textContent == qtn[2].ask) {
 
         inputValue4[0].checked
         if (inputValue4[0].checked) {
@@ -784,7 +784,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn4.textContent == qtn[3].ask) {
 
         inputValue4[2].checked
         if (inputValue4[2].checked) {
@@ -792,7 +792,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn4.textContent == qtn[4].ask) {
 
         inputValue4[1].checked
         if (inputValue4[1].checked) {
@@ -800,7 +800,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn4.textContent == qtn[5].ask) {
 
         inputValue4[1].checked
         if (inputValue4[1].checked) {
@@ -808,7 +808,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn4.textContent == qtn[6].ask) {
 
         inputValue4[0].checked
         if (inputValue4[0].checked) {
@@ -816,15 +816,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue4[1].checked
-        if (inputValue4[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn4.textContent == qtn[7].ask) {
 
         inputValue4[3].checked
         if (inputValue4[3].checked) {
@@ -832,7 +824,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn4.textContent == qtn[8].ask) {
 
         inputValue4[3].checked
         if (inputValue4[3].checked) {
@@ -840,7 +832,15 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn4.textContent == qtn[9].ask) {
+
+        inputValue4[3].checked
+        if (inputValue4[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn4.textContent == qtn[10].ask) {
         inputValue4[0].checked
 
         if (inputValue4[0].checked) {
@@ -848,7 +848,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn4.textContent == qtn[11].ask) {
         inputValue4[2].checked
 
         if (inputValue4[2].checked) {
@@ -856,7 +856,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn4.textContent == qtn[12].ask) {
         inputValue4[0].checked
 
         if (inputValue4[0].checked) {
@@ -864,7 +864,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn4.textContent == qtn[13].ask) {
         inputValue4[2].checked
 
         if (inputValue4[2].checked) {
@@ -872,7 +872,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn4.textContent == qtn[14].ask) {
         inputValue4[3].checked
 
         if (inputValue4[3].checked) {
@@ -880,7 +880,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn4.textContent == qtn[15].ask) {
         inputValue4[1].checked
 
         if (inputValue4[1].checked) {
@@ -888,7 +888,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn4.textContent == qtn[16].ask) {
         inputValue4[1].checked
 
         if (inputValue4[1].checked) {
@@ -896,7 +896,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn4.textContent == qtn[17].ask) {
         inputValue4[1].checked
 
         if (inputValue4[1].checked) {
@@ -904,7 +904,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn4.textContent == qtn[18].ask) {
         inputValue4[3].checked
 
         if (inputValue4[3].checked) {
@@ -912,7 +912,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn4.textContent == qtn[19].ask) {
         inputValue4[1].checked
 
         if (inputValue4[1].checked) {
@@ -920,7 +920,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn4.textContent == qtn[20].ask) {
         inputValue4[2].checked
 
         if (inputValue4[2].checked) {
@@ -928,7 +928,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn4.textContent == qtn[21].ask) {
         inputValue4[2].checked
 
         if (inputValue4[2].checked) {
@@ -936,7 +936,7 @@ function answeredQtn4() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn4.textContent == qtn[22].ask) {
         inputValue4[1].checked
 
         if (inputValue4[1].checked) {
@@ -954,14 +954,14 @@ function answeredQtn5() {
     let inputValue5 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn5.textContent == qtn[0].ask) {
 
         inputValue5[1].checked
         if (inputValue5[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn5.textContent == qtn[1].ask) {
 
         inputValue5[3].checked
         if (inputValue5[3].checked) {
@@ -969,7 +969,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn5.textContent == qtn[2].ask) {
 
         inputValue5[0].checked
         if (inputValue5[0].checked) {
@@ -977,7 +977,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn5.textContent == qtn[3].ask) {
 
         inputValue5[2].checked
         if (inputValue5[2].checked) {
@@ -985,7 +985,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn5.textContent == qtn[4].ask) {
 
         inputValue5[1].checked
         if (inputValue5[1].checked) {
@@ -993,7 +993,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn5.textContent == qtn[5].ask) {
 
         inputValue5[1].checked
         if (inputValue5[1].checked) {
@@ -1001,7 +1001,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn5.textContent == qtn[6].ask) {
 
         inputValue5[0].checked
         if (inputValue5[0].checked) {
@@ -1009,15 +1009,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue5[1].checked
-        if (inputValue5[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn5.textContent == qtn[7].ask) {
 
         inputValue5[3].checked
         if (inputValue5[3].checked) {
@@ -1025,7 +1017,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn5.textContent == qtn[8].ask) {
 
         inputValue5[3].checked
         if (inputValue5[3].checked) {
@@ -1033,7 +1025,15 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn5.textContent == qtn[9].ask) {
+
+        inputValue5[3].checked
+        if (inputValue5[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn5.textContent == qtn[10].ask) {
         inputValue5[0].checked
 
         if (inputValue5[0].checked) {
@@ -1041,7 +1041,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn5.textContent == qtn[11].ask) {
         inputValue5[2].checked
 
         if (inputValue5[2].checked) {
@@ -1049,7 +1049,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn5.textContent == qtn[12].ask) {
         inputValue5[0].checked
 
         if (inputValue5[0].checked) {
@@ -1057,7 +1057,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn5.textContent == qtn[13].ask) {
         inputValue5[2].checked
 
         if (inputValue5[2].checked) {
@@ -1065,7 +1065,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn5.textContent == qtn[14].ask) {
         inputValue5[3].checked
 
         if (inputValue5[3].checked) {
@@ -1073,7 +1073,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn5.textContent == qtn[15].ask) {
         inputValue5[1].checked
 
         if (inputValue5[1].checked) {
@@ -1081,7 +1081,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn5.textContent == qtn[16].ask) {
         inputValue5[1].checked
 
         if (inputValue5[1].checked) {
@@ -1089,7 +1089,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn5.textContent == qtn[17].ask) {
         inputValue5[1].checked
 
         if (inputValue5[1].checked) {
@@ -1097,7 +1097,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn5.textContent == qtn[18].ask) {
         inputValue5[3].checked
 
         if (inputValue5[3].checked) {
@@ -1105,7 +1105,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn5.textContent == qtn[19].ask) {
         inputValue5[1].checked
 
         if (inputValue5[1].checked) {
@@ -1113,7 +1113,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn5.textContent == qtn[20].ask) {
         inputValue5[2].checked
 
         if (inputValue5[2].checked) {
@@ -1121,7 +1121,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn5.textContent == qtn[21].ask) {
         inputValue5[2].checked
 
         if (inputValue5[2].checked) {
@@ -1129,7 +1129,7 @@ function answeredQtn5() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn5.textContent == qtn[22].ask) {
         inputValue5[1].checked
 
         if (inputValue5[1].checked) {
@@ -1147,14 +1147,14 @@ function answeredQtn6() {
     let inputValue6 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn6.textContent == qtn[0].ask) {
 
         inputValue6[1].checked
         if (inputValue6[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn6.textContent == qtn[1].ask) {
 
         inputValue6[3].checked
         if (inputValue6[3].checked) {
@@ -1162,7 +1162,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn6.textContent == qtn[2].ask) {
 
         inputValue6[0].checked
         if (inputValue6[0].checked) {
@@ -1170,7 +1170,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn6.textContent == qtn[3].ask) {
 
         inputValue6[2].checked
         if (inputValue6[2].checked) {
@@ -1178,7 +1178,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn6.textContent == qtn[4].ask) {
 
         inputValue6[1].checked
         if (inputValue6[1].checked) {
@@ -1186,7 +1186,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn6.textContent == qtn[5].ask) {
 
         inputValue6[1].checked
         if (inputValue6[1].checked) {
@@ -1194,7 +1194,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn6.textContent == qtn[6].ask) {
 
         inputValue6[0].checked
         if (inputValue6[0].checked) {
@@ -1202,15 +1202,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue6[1].checked
-        if (inputValue6[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn6.textContent == qtn[7].ask) {
 
         inputValue6[3].checked
         if (inputValue6[3].checked) {
@@ -1218,7 +1210,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn6.textContent == qtn[8].ask) {
 
         inputValue6[3].checked
         if (inputValue6[3].checked) {
@@ -1226,7 +1218,15 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn6.textContent == qtn[9].ask) {
+
+        inputValue6[3].checked
+        if (inputValue6[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn6.textContent == qtn[10].ask) {
         inputValue6[0].checked
 
         if (inputValue6[0].checked) {
@@ -1234,7 +1234,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn6.textContent == qtn[11].ask) {
         inputValue6[2].checked
 
         if (inputValue6[2].checked) {
@@ -1242,7 +1242,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn6.textContent == qtn[12].ask) {
         inputValue6[0].checked
 
         if (inputValue6[0].checked) {
@@ -1250,7 +1250,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn6.textContent == qtn[13].ask) {
         inputValue6[2].checked
 
         if (inputValue6[2].checked) {
@@ -1258,7 +1258,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn6.textContent == qtn[14].ask) {
         inputValue6[3].checked
 
         if (inputValue6[3].checked) {
@@ -1266,7 +1266,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn6.textContent == qtn[15].ask) {
         inputValue6[1].checked
 
         if (inputValue6[1].checked) {
@@ -1274,7 +1274,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn6.textContent == qtn[16].ask) {
         inputValue6[1].checked
 
         if (inputValue6[1].checked) {
@@ -1282,7 +1282,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn6.textContent == qtn[17].ask) {
         inputValue6[1].checked
 
         if (inputValue6[1].checked) {
@@ -1290,7 +1290,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn6.textContent == qtn[18].ask) {
         inputValue6[3].checked
 
         if (inputValue6[3].checked) {
@@ -1298,7 +1298,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn6.textContent == qtn[19].ask) {
         inputValue6[1].checked
 
         if (inputValue6[1].checked) {
@@ -1306,7 +1306,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn6.textContent == qtn[20].ask) {
         inputValue6[2].checked
 
         if (inputValue6[2].checked) {
@@ -1314,7 +1314,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn6.textContent == qtn[21].ask) {
         inputValue6[2].checked
 
         if (inputValue6[2].checked) {
@@ -1322,7 +1322,7 @@ function answeredQtn6() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn6.textContent == qtn[22].ask) {
         inputValue6[1].checked
 
         if (inputValue6[1].checked) {
@@ -1340,14 +1340,14 @@ function answeredQtn7() {
     let inputValue7 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn7.textContent == qtn[0].ask) {
 
         inputValue7[1].checked
         if (inputValue7[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn7.textContent == qtn[1].ask) {
 
         inputValue7[3].checked
         if (inputValue7[3].checked) {
@@ -1355,7 +1355,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn7.textContent == qtn[2].ask) {
 
         inputValue7[0].checked
         if (inputValue7[0].checked) {
@@ -1363,7 +1363,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn7.textContent == qtn[3].ask) {
 
         inputValue7[2].checked
         if (inputValue7[2].checked) {
@@ -1371,7 +1371,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn7.textContent == qtn[4].ask) {
 
         inputValue7[1].checked
         if (inputValue7[1].checked) {
@@ -1379,7 +1379,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn7.textContent == qtn[5].ask) {
 
         inputValue7[1].checked
         if (inputValue7[1].checked) {
@@ -1387,7 +1387,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn7.textContent == qtn[6].ask) {
 
         inputValue7[0].checked
         if (inputValue7[0].checked) {
@@ -1395,15 +1395,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue7[1].checked
-        if (inputValue7[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn7.textContent == qtn[7].ask) {
 
         inputValue7[3].checked
         if (inputValue7[3].checked) {
@@ -1411,7 +1403,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn7.textContent == qtn[8].ask) {
 
         inputValue7[3].checked
         if (inputValue7[3].checked) {
@@ -1419,7 +1411,15 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn7.textContent == qtn[9].ask) {
+
+        inputValue7[3].checked
+        if (inputValue7[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn7.textContent == qtn[10].ask) {
         inputValue7[0].checked
 
         if (inputValue7[0].checked) {
@@ -1427,7 +1427,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn7.textContent == qtn[11].ask) {
         inputValue7[2].checked
 
         if (inputValue7[2].checked) {
@@ -1435,7 +1435,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn7.textContent == qtn[12].ask) {
         inputValue7[0].checked
 
         if (inputValue7[0].checked) {
@@ -1443,7 +1443,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn7.textContent == qtn[13].ask) {
         inputValue7[2].checked
 
         if (inputValue7[2].checked) {
@@ -1451,7 +1451,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn7.textContent == qtn[14].ask) {
         inputValue7[3].checked
 
         if (inputValue7[3].checked) {
@@ -1459,7 +1459,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn7.textContent == qtn[15].ask) {
         inputValue7[1].checked
 
         if (inputValue7[1].checked) {
@@ -1467,7 +1467,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn7.textContent == qtn[16].ask) {
         inputValue7[1].checked
 
         if (inputValue7[1].checked) {
@@ -1475,7 +1475,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn7.textContent == qtn[17].ask) {
         inputValue7[1].checked
 
         if (inputValue7[1].checked) {
@@ -1483,7 +1483,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn7.textContent == qtn[18].ask) {
         inputValue7[3].checked
 
         if (inputValue7[3].checked) {
@@ -1491,7 +1491,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn7.textContent == qtn[19].ask) {
         inputValue7[1].checked
 
         if (inputValue7[1].checked) {
@@ -1499,7 +1499,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn7.textContent == qtn[20].ask) {
         inputValue7[2].checked
 
         if (inputValue7[2].checked) {
@@ -1507,7 +1507,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn7.textContent == qtn[21].ask) {
         inputValue7[2].checked
 
         if (inputValue7[2].checked) {
@@ -1515,7 +1515,7 @@ function answeredQtn7() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn7.textContent == qtn[22].ask) {
         inputValue7[1].checked
 
         if (inputValue7[1].checked) {
@@ -1533,14 +1533,14 @@ function answeredQtn8() {
     let inputValue8 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn8.textContent == qtn[0].ask) {
 
         inputValue8[1].checked
         if (inputValue8[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn8.textContent == qtn[1].ask) {
 
         inputValue8[3].checked
         if (inputValue8[3].checked) {
@@ -1548,7 +1548,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn8.textContent == qtn[2].ask) {
 
         inputValue8[0].checked
         if (inputValue8[0].checked) {
@@ -1556,7 +1556,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn8.textContent == qtn[3].ask) {
 
         inputValue8[2].checked
         if (inputValue8[2].checked) {
@@ -1564,7 +1564,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn8.textContent == qtn[4].ask) {
 
         inputValue8[1].checked
         if (inputValue8[1].checked) {
@@ -1572,7 +1572,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn8.textContent == qtn[5].ask) {
 
         inputValue8[1].checked
         if (inputValue8[1].checked) {
@@ -1580,7 +1580,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn8.textContent == qtn[6].ask) {
 
         inputValue8[0].checked
         if (inputValue8[0].checked) {
@@ -1588,15 +1588,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue8[1].checked
-        if (inputValue8[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn8.textContent == qtn[7].ask) {
 
         inputValue8[3].checked
         if (inputValue8[3].checked) {
@@ -1604,7 +1596,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn8.textContent == qtn[8].ask) {
 
         inputValue8[3].checked
         if (inputValue8[3].checked) {
@@ -1612,7 +1604,15 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn8.textContent == qtn[9].ask) {
+
+        inputValue8[3].checked
+        if (inputValue8[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn8.textContent == qtn[10].ask) {
         inputValue8[0].checked
 
         if (inputValue8[0].checked) {
@@ -1620,7 +1620,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn8.textContent == qtn[11].ask) {
         inputValue8[2].checked
 
         if (inputValue8[2].checked) {
@@ -1628,7 +1628,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn8.textContent == qtn[12].ask) {
         inputValue8[0].checked
 
         if (inputValue8[0].checked) {
@@ -1636,7 +1636,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn8.textContent == qtn[13].ask) {
         inputValue8[2].checked
 
         if (inputValue8[2].checked) {
@@ -1644,7 +1644,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn8.textContent == qtn[14].ask) {
         inputValue8[3].checked
 
         if (inputValue8[3].checked) {
@@ -1652,7 +1652,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn8.textContent == qtn[15].ask) {
         inputValue8[1].checked
 
         if (inputValue8[1].checked) {
@@ -1660,7 +1660,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn8.textContent == qtn[16].ask) {
         inputValue8[1].checked
 
         if (inputValue8[1].checked) {
@@ -1668,7 +1668,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn8.textContent == qtn[17].ask) {
         inputValue8[1].checked
 
         if (inputValue8[1].checked) {
@@ -1676,7 +1676,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn8.textContent == qtn[18].ask) {
         inputValue8[3].checked
 
         if (inputValue8[3].checked) {
@@ -1684,7 +1684,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn8.textContent == qtn[19].ask) {
         inputValue8[1].checked
 
         if (inputValue8[1].checked) {
@@ -1692,7 +1692,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn8.textContent == qtn[20].ask) {
         inputValue8[2].checked
 
         if (inputValue8[2].checked) {
@@ -1700,7 +1700,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn8.textContent == qtn[21].ask) {
         inputValue8[2].checked
 
         if (inputValue8[2].checked) {
@@ -1708,7 +1708,7 @@ function answeredQtn8() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn8.textContent == qtn[22].ask) {
         inputValue8[1].checked
 
         if (inputValue8[1].checked) {
@@ -1726,14 +1726,14 @@ function answeredQtn9() {
     let inputValue9 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn9.textContent == qtn[0].ask) {
 
         inputValue9[1].checked
         if (inputValue9[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn9.textContent == qtn[1].ask) {
 
         inputValue9[3].checked
         if (inputValue9[3].checked) {
@@ -1741,7 +1741,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn9.textContent == qtn[2].ask) {
 
         inputValue9[0].checked
         if (inputValue9[0].checked) {
@@ -1749,7 +1749,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn9.textContent == qtn[3].ask) {
 
         inputValue9[2].checked
         if (inputValue9[2].checked) {
@@ -1757,7 +1757,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn9.textContent == qtn[4].ask) {
 
         inputValue9[1].checked
         if (inputValue9[1].checked) {
@@ -1765,7 +1765,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn9.textContent == qtn[5].ask) {
 
         inputValue9[1].checked
         if (inputValue9[1].checked) {
@@ -1773,7 +1773,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn9.textContent == qtn[6].ask) {
 
         inputValue9[0].checked
         if (inputValue9[0].checked) {
@@ -1781,15 +1781,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue9[1].checked
-        if (inputValue9[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn9.textContent == qtn[7].ask) {
 
         inputValue9[3].checked
         if (inputValue9[3].checked) {
@@ -1797,7 +1789,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn9.textContent == qtn[8].ask) {
 
         inputValue9[3].checked
         if (inputValue9[3].checked) {
@@ -1805,7 +1797,15 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn9.textContent == qtn[9].ask) {
+
+        inputValue9[3].checked
+        if (inputValue9[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn9.textContent == qtn[10].ask) {
         inputValue9[0].checked
 
         if (inputValue9[0].checked) {
@@ -1813,7 +1813,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn9.textContent == qtn[11].ask) {
         inputValue9[2].checked
 
         if (inputValue9[2].checked) {
@@ -1821,7 +1821,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn9.textContent == qtn[12].ask) {
         inputValue9[0].checked
 
         if (inputValue9[0].checked) {
@@ -1829,7 +1829,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn9.textContent == qtn[13].ask) {
         inputValue9[2].checked
 
         if (inputValue9[2].checked) {
@@ -1837,7 +1837,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn9.textContent == qtn[14].ask) {
         inputValue9[3].checked
 
         if (inputValue9[3].checked) {
@@ -1845,7 +1845,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn9.textContent == qtn[15].ask) {
         inputValue9[1].checked
 
         if (inputValue9[1].checked) {
@@ -1853,7 +1853,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn9.textContent == qtn[16].ask) {
         inputValue9[1].checked
 
         if (inputValue9[1].checked) {
@@ -1861,7 +1861,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn9.textContent == qtn[17].ask) {
         inputValue9[1].checked
 
         if (inputValue9[1].checked) {
@@ -1869,7 +1869,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn9.textContent == qtn[18].ask) {
         inputValue9[3].checked
 
         if (inputValue9[3].checked) {
@@ -1877,7 +1877,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn9.textContent == qtn[19].ask) {
         inputValue9[1].checked
 
         if (inputValue9[1].checked) {
@@ -1885,7 +1885,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn9.textContent == qtn[20].ask) {
         inputValue9[2].checked
 
         if (inputValue9[2].checked) {
@@ -1893,7 +1893,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn9.textContent == qtn[21].ask) {
         inputValue9[2].checked
 
         if (inputValue9[2].checked) {
@@ -1901,7 +1901,7 @@ function answeredQtn9() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn9.textContent == qtn[22].ask) {
         inputValue9[1].checked
 
         if (inputValue9[1].checked) {
@@ -1919,14 +1919,14 @@ function answeredQtn10() {
     let inputValue10 = Array.from(inputValues)
     var response = JSON.parse(xhttp.responseText)
     let qtn = response.question
-    if (qstn2.textContent == qtn[0].ask) {
+    if (qstn10.textContent == qtn[0].ask) {
 
         inputValue10[1].checked
         if (inputValue10[1].checked) {
             return 1
         } else { return 0 }
     }
-    else if (qstn2.textContent == qtn[1].ask) {
+    else if (qstn10.textContent == qtn[1].ask) {
 
         inputValue10[3].checked
         if (inputValue10[3].checked) {
@@ -1934,7 +1934,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[2].ask) {
+    else if (qstn10.textContent == qtn[2].ask) {
 
         inputValue10[0].checked
         if (inputValue10[0].checked) {
@@ -1942,7 +1942,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[3].ask) {
+    else if (qstn10.textContent == qtn[3].ask) {
 
         inputValue10[2].checked
         if (inputValue10[2].checked) {
@@ -1950,7 +1950,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[4].ask) {
+    else if (qstn10.textContent == qtn[4].ask) {
 
         inputValue10[1].checked
         if (inputValue10[1].checked) {
@@ -1958,7 +1958,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[5].ask) {
+    else if (qstn10.textContent == qtn[5].ask) {
 
         inputValue10[1].checked
         if (inputValue10[1].checked) {
@@ -1966,7 +1966,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[6].ask) {
+    else if (qstn10.textContent == qtn[6].ask) {
 
         inputValue10[0].checked
         if (inputValue10[0].checked) {
@@ -1974,15 +1974,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[7].ask) {
-
-        inputValue10[1].checked
-        if (inputValue10[1].checked) {
-            return 1
-        } else { return 0 }
-
-    }
-    else if (qstn2.textContent == qtn[8].ask) {
+    else if (qstn10.textContent == qtn[7].ask) {
 
         inputValue10[3].checked
         if (inputValue10[3].checked) {
@@ -1990,7 +1982,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[9].ask) {
+    else if (qstn10.textContent == qtn[8].ask) {
 
         inputValue10[3].checked
         if (inputValue10[3].checked) {
@@ -1998,7 +1990,15 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[10].ask) {
+    else if (qstn10.textContent == qtn[9].ask) {
+
+        inputValue10[3].checked
+        if (inputValue10[3].checked) {
+            return 1
+        } else { return 0 }
+
+    }
+    else if (qstn10.textContent == qtn[10].ask) {
         inputValue10[0].checked
 
         if (inputValue10[0].checked) {
@@ -2006,7 +2006,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[11].ask) {
+    else if (qstn10.textContent == qtn[11].ask) {
         inputValue10[2].checked
 
         if (inputValue10[2].checked) {
@@ -2014,7 +2014,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[12].ask) {
+    else if (qstn10.textContent == qtn[12].ask) {
         inputValue10[0].checked
 
         if (inputValue10[0].checked) {
@@ -2022,7 +2022,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[13].ask) {
+    else if (qstn10.textContent == qtn[13].ask) {
         inputValue10[2].checked
 
         if (inputValue10[2].checked) {
@@ -2030,7 +2030,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[14].ask) {
+    else if (qstn10.textContent == qtn[14].ask) {
         inputValue10[3].checked
 
         if (inputValue10[3].checked) {
@@ -2038,7 +2038,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[15].ask) {
+    else if (qstn10.textContent == qtn[15].ask) {
         inputValue10[1].checked
 
         if (inputValue10[1].checked) {
@@ -2046,7 +2046,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[16].ask) {
+    else if (qstn10.textContent == qtn[16].ask) {
         inputValue10[1].checked
 
         if (inputValue10[1].checked) {
@@ -2054,7 +2054,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[17].ask) {
+    else if (qstn10.textContent == qtn[17].ask) {
         inputValue10[1].checked
 
         if (inputValue10[1].checked) {
@@ -2062,7 +2062,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[18].ask) {
+    else if (qstn10.textContent == qtn[18].ask) {
         inputValue10[3].checked
 
         if (inputValue10[3].checked) {
@@ -2070,7 +2070,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[19].ask) {
+    else if (qstn10.textContent == qtn[19].ask) {
         inputValue10[1].checked
 
         if (inputValue10[1].checked) {
@@ -2078,7 +2078,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[20].ask) {
+    else if (qstn10.textContent == qtn[20].ask) {
         inputValue10[2].checked
 
         if (inputValue10[2].checked) {
@@ -2086,7 +2086,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[21].ask) {
+    else if (qstn10.textContent == qtn[21].ask) {
         inputValue10[2].checked
 
         if (inputValue10[2].checked) {
@@ -2094,7 +2094,7 @@ function answeredQtn10() {
         } else { return 0 }
 
     }
-    else if (qstn2.textContent == qtn[22].ask) {
+    else if (qstn10.textContent == qtn[22].ask) {
         inputValue10[1].checked
 
         if (inputValue10[1].checked) {
@@ -2313,24 +2313,27 @@ function start() {
         answeredQtn8()
         answeredQtn9()
         answeredQtn10()
-        let allScore = answeredQtn1() +
-            answeredQtn2() +
-            answeredQtn3() +
-            answeredQtn4() +
-            answeredQtn5() +
-            answeredQtn6() +
-            answeredQtn7() +
-            answeredQtn8() +
-            answeredQtn9() +
-            answeredQtn10()
+
+        let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
+            answeredQtn4() + answeredQtn5()
+            + answeredQtn6() + answeredQtn7() +
+            answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
         // this laods TextContent into my scoreNumber class
         let scoreNumber = document.querySelector(".scoreNumber")
 
         scoreNumber.textContent = allScore
+        console.log(allScore)
 
-
-
-
+        console.log(answeredQtn1())
+        console.log(answeredQtn2())
+        console.log(answeredQtn3())
+        console.log(answeredQtn4())
+        console.log(answeredQtn5())
+        console.log(answeredQtn6())
+        console.log(answeredQtn7())
+        console.log(answeredQtn8())
+        console.log(answeredQtn9())
+        console.log(answeredQtn10())
 
     });
 
