@@ -61,8 +61,9 @@ xhttp1.send();
 
 function Login() {
 
-    document.querySelector(".start").setAttribute("title", "Click To Start, 'GoodLuck!!!'")
-
+    let attribute = document.querySelector(".start")
+    attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
+    setTimeout(attribute, 3000)
 
     var response1 = JSON.parse(xhttp1.responseText)
 
