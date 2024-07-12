@@ -183,3 +183,7 @@ ul li:nth-child(odd) {
 ul li:nth-child(even) {
   background-color: #43f50d;
 }
+
+.neco,.waec {
+  text-decoration: none;
+}
