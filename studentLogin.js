@@ -63,7 +63,7 @@ function Login() {
 
     let attribute = document.querySelector(".start")
     attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
-    setTimeout(attribute, 3000)
+
 
     var response1 = JSON.parse(xhttp1.responseText)
 
@@ -86,8 +86,8 @@ function Login() {
     let passwd = document.querySelector('#passwd')
 
     // for testing purposes
-    // logid.value = class1AID1
-    // passwd.value = class1APasswd1
+    logid.value = class1AID1
+    passwd.value = class1APasswd1
 
     // ----------------------
 
@@ -295,6 +295,12 @@ $(document).ready(function () {
 })
 
 
+let arraysam = ['a', 'b', 'c', 'd', 'e', 'f']
+for (let i = 0; i < arraysam.length; i++) {
+    let resu = arraysam[i]
+
+    if ("m") { console.log(resu+' hybrid') }
+}
 
 
 
