@@ -295,12 +295,12 @@ $(document).ready(function () {
 })
 
 
-let arraysam = ['a', 'b', 'c', 'd', 'e', 'f']
-for (let i = 0; i < arraysam.length; i++) {
-    let resu = arraysam[i]
+// let arraysam = ['a', 'b', 'c', 'd', 'e', 'f']
+// for (let i = 0; i < arraysam.length; i++) {
+//     let resu = arraysam[i]
 
-    if ("m") { console.log(resu+' hybrid') }
-}
+//     if ("m") { console.log(resu+' hybrid') }
+// }
 
 
 
