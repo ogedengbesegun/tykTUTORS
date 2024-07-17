@@ -9,8 +9,8 @@ const collection = 'posts';
 use(database);
 
 // Create a new collection.
-let mydb = db.createCollection(collection);
-document.querySelector("")
+db.createCollection(collection);
+
 
 
 // The prototype form to create a collection:
