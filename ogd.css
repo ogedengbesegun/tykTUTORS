@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+fieldset {
+  all: revert;
+}
 /* hide */
 .hide {
   display: none;
@@ -184,6 +186,11 @@ ul li:nth-child(even) {
   background-color: #43f50d;
 }
 
-.neco,.waec {
+.neco,
+.waec {
   text-decoration: none;
+}
+
+.reveal {
+  margin-left: -25px;
 }

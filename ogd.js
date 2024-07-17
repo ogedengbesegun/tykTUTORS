@@ -346,7 +346,7 @@ function answeredQtn1() {
         } else { return 0 }
 
     }
-    else if (qstn1.textContent == qtn[21].ask) {
+    else if (qstn1.textContent == qtn[21].ask) {0
         inputValue1[2].checked
 
         if (inputValue1[2].checked) {
