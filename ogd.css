@@ -71,6 +71,17 @@ nav {
   border: 1px solid #800bee;
 }
 
+/* Registration Form */
+.no-outline:focus {
+  outline: none;
+  box-shadow: none;
+ 
+}
+
+.no-inner-no-outer-spin[type="number"]::-webkit-inner-spin-button,
+.no-inner-no-outer-spin[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
 /* .menuList {
   position: absolute;
   margin-top: 40px;

@@ -10,5 +10,6 @@
     $ben="Ben";
     echo "$ben";
     ?>
+    
 </body>
 </html>
