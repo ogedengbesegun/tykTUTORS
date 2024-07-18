@@ -75,7 +75,6 @@ nav {
 .no-outline:focus {
   outline: none;
   box-shadow: none;
- 
 }
 
 .no-inner-no-outer-spin[type="number"]::-webkit-inner-spin-button,
@@ -204,4 +203,9 @@ ul li:nth-child(even) {
 
 .reveal {
   margin-left: -25px;
+  /* font-size: small; */
+}
+
+.FScustom {
+  font-size: small;
 }

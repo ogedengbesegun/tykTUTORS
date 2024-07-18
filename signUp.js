@@ -15,3 +15,23 @@ document.querySelector("input[type = 'password']").setAttribute("maxlength", 15)
 // 3.capitalise input text for firstName & lastName
 document.querySelector("#regfirstName").style.textTransform = "capitalize";
 document.querySelector(" #reglastName").style.textTransform = "capitalize";
+
+
+// 4 reveal and toggle the password input to reveal the password
+let reveal = document.querySelector(".reveal")
+reveal.addEventListener("click", () => {
+    if (reveal.classList.contains("fa-eye-slash")) {
+        reveal.classList.remove("fa-eye-slash")
+        reveal.classList.add("fa-eye");
+        reveal.style.color = "green";
+        document.querySelector("#regPassword").setAttribute("type", "text");
+
+    }
+    else {
+        reveal.classList.add("fa-eye-slash")
+        reveal.classList.remove("fa-eye")
+        reveal.style.color = "revert";
+        document.querySelector("#regPassword").setAttribute("type", "password");
+
+    }
+})
