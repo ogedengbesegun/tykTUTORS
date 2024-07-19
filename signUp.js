@@ -23,6 +23,7 @@ reveal.addEventListener("click", () => {
     if (reveal.classList.contains("fa-eye-slash")) {
         reveal.classList.remove("fa-eye-slash")
         reveal.classList.add("fa-eye");
+        reveal.classList.remove("text-danger")
         reveal.style.color = "green";
         document.querySelector("#regPassword").setAttribute("type", "text");
 
@@ -30,8 +31,10 @@ reveal.addEventListener("click", () => {
     else {
         reveal.classList.add("fa-eye-slash")
         reveal.classList.remove("fa-eye")
-        reveal.style.color = "revert";
+        reveal.classList.add("text-danger")
+
         document.querySelector("#regPassword").setAttribute("type", "password");
 
     }
 })
+
