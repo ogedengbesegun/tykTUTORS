@@ -193,8 +193,16 @@ button[title="Previous Question"]:hover {
 ul li:nth-child(odd) {
   background-color: #a250ee;
 }
+ul .li:nth-child(odd):hover {
+  background-color: #be8cee;
+  color: black;
+}
 ul li:nth-child(even) {
   background-color: #43f50d;
+}
+ul .li:nth-child(even):hover {
+  background-color: #72eb4e;
+  color: black;
 }
 
 .neco,

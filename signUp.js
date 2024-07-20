@@ -1,6 +1,6 @@
 
 
-// 1. convert the iput value to accept only numbers
+// 1. convert the input value to accept only numbers
 document.querySelector(".input-Val").addEventListener('input', function (e) {
     const value = e.target.value;
     if (!/^\d*$/.test(value)) {

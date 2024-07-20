@@ -2246,17 +2246,22 @@ function start() {
 
 
     let timer = setInterval(function () {
-
+        // 1 to set timer for the user
         let minutes = Math.floor(duration / 60);
         let seconds = duration % 60;
         minutes = minutes < 10 ? '0' + minutes : minutes;
         seconds = seconds < 10 ? '0' + seconds : seconds;
         timerDisplay.textContent = 'Timer: ' + minutes + ':' + seconds;
 
+        // 2 if the duration iterate -- less than zero
         if (--duration < 0) {
+            // the clearInterval method is invoked 
             clearInterval(timer);
+
             timerDisplay.textContent = "Timer:" + " Time is Up!";
             timerDisplay.style.color = "red";
+
+
 
 
             let qstnHide = document.querySelectorAll(".qstnHide")
@@ -2268,8 +2273,13 @@ function start() {
 
             });
         }
+
+
+
+
+
     }, 1000);
-    let duration = 10 * 60;
+    let duration = 2 * 60;
 
 
 
@@ -2291,19 +2301,34 @@ function start() {
 
 
 
-
+    // this is to declare the variable submit button
     let submitTest = document.querySelector(".submit")
 
 
 
     // this is to display the result sheet for the candidate
     submitTest.addEventListener("click", function () {
+        // confirm if user wants to truely Submit
+        confirm("Do you want to Submit ?")
 
+        // 1.   to close down the questions and display the login page
+        let qstnHide = document.querySelectorAll(".qstnHide")
+        qstnHide = Array.from(qstnHide)
+        qstnHide.forEach(element => {
+            element.style.display = "none";
 
+            document.querySelector(".login").style.display = "block";
 
+        });
+        // ----------------------------------------------------------------
+
+        // 2. to display the candiidates result 
         let scoreSheetHead = document.querySelector(".scoreSheetHead")
         scoreSheetHead.style.display = "block";
+        // ----------------------------------
 
+
+        // 3 to initaiate the functions declared
         answeredQtn1()
         answeredQtn2()
         answeredQtn3()
@@ -2314,27 +2339,61 @@ function start() {
         answeredQtn8()
         answeredQtn9()
         answeredQtn10()
+        // -----------------------------------
+
+
+        // 4 this is to add together the scores for each question 
 
         let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
             answeredQtn4() + answeredQtn5()
             + answeredQtn6() + answeredQtn7() +
             answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
-        // this laods TextContent into my scoreNumber class
+
+        // ------------------------------------------------
+
+        // 5 this laods TextContent into my scoreNumber class
         let scoreNumber = document.querySelector(".scoreNumber")
 
         scoreNumber.textContent = allScore
         console.log(allScore)
+        // -------------------------------------------------
 
-        console.log(answeredQtn1())
-        console.log(answeredQtn2())
-        console.log(answeredQtn3())
-        console.log(answeredQtn4())
-        console.log(answeredQtn5())
-        console.log(answeredQtn6())
-        console.log(answeredQtn7())
-        console.log(answeredQtn8())
-        console.log(answeredQtn9())
-        console.log(answeredQtn10())
+        //6 to hide the submit Button
+        this.style.display = "none";
+        // ----------------------------
+
+        // 7 duration set to zero
+        duration = 0 * 60
+
+
+        // 8  timerDisplay.textContent
+
+        // timerDisplay.textContent = 
+
+
+
+
+
+        // -----------------------------
+
+
+
+        // console.log(answeredQtn1())
+        // console.log(answeredQtn2())
+        // console.log(answeredQtn3())
+        // console.log(answeredQtn4())
+        // console.log(answeredQtn5())
+        // console.log(answeredQtn6())
+        // console.log(answeredQtn7())
+        // console.log(answeredQtn8())
+        // console.log(answeredQtn9())
+        // console.log(answeredQtn10())
+
+
+
+        // -------------------------------------------------
+
+
 
     });
 
