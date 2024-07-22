@@ -2404,14 +2404,20 @@ function start() {
 
 
 
+// Subject Picker
+// 1 set to display="none"
+let tykc = document.querySelector(".tykc")
+tykc.addEventListener("click", () => {
+    document.querySelector(".menuList").style.display = "none";
+    document.querySelector(".screenCover").style.display="block";
 
-// let start = document.querySelector(".start")
+})
 
 
 
 
 
-// JQuery CODES
+// JQuery CODES for ogd.js
 $(document).ready(function () {
     // $("html,body").animate({ scrollButtom: 
     // $(".header").hide() });
@@ -2421,29 +2427,37 @@ $(document).ready(function () {
 
 
     $(".navBarIcon").mouseenter(function () {
-        $("nav").toggle(200)
+        $(".menuList").show(200)
+
+        // $(".QuizQuestn").toggle()
     });
 
 
     $(".menuList").mouseleave(function () {
-        $("nav").hide(200);
+        // hide nav element for me
+        $(this).hide(200);
+
+        // one the mouseleave it should close it 
+        // $(".li").hide()
     });
 
     $(".icon-menuList").click(function () {
-        $("nav").hide();
+        $(".menuList").hide();
+
     });
 
     // $(".contacts").click(function () {
     //     $(".contactMe").css( "z-index", 9999 )
     // })
 
-    $(".QuizQuestn").click(function () {
-        $("html,body").animate({
-            scrollTop: $(".quiz").offset().top
-        }, "fast")
+    // $(".QuizQuestn").click(function () {
 
-        // $(".SectionOne").hide()
-    })
+    // to scroll by animating to the top of .quiz class
+    // $("html,body").animate({
+    //     scrollTop: $(".quiz").offset().top
+    // }, "fast")
+
+    // })
 
     $(".picture").click(function () {
         $("html,body").animate({
@@ -2452,15 +2466,7 @@ $(document).ready(function () {
         }, "slow");
     });
 
-    // show SectionThree
-    // $(".SectionThree").hide();
 
-    // $(" .picture").click(function () {
-    //     $(".SectionThree").toggle(1000)
-    //     $(".quiz").hide();
-    //     $(".SectionOne").hide()
-
-    // });
 
     $(".viewMore, .personalities").click(function () {
         $(".SectionTwo").toggle(1000);
@@ -2471,17 +2477,17 @@ $(document).ready(function () {
     });
 
 
-    // $(".menuList").mouseleave(function () {
-    //     $("nav").fadeToggle(500);
 
 
-    // })
 
+    // i want remove  the subject modal dialog
+    $(".rm-subjList").click(() => {
+        $(".screenCover").hide()
+    })
+    // ----------
 });
 
 
-
-// 
 
 
 
