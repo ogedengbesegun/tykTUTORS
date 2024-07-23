@@ -50,3 +50,12 @@ td,
 th {
   all: revert;
 }
+
+.d-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+}
+
+.text-purple{
+  color: rgb(255, 0, 255);
+}

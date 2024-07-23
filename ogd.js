@@ -2261,7 +2261,9 @@ function start() {
             timerDisplay.textContent = "Timer:" + " Time is Up!";
             timerDisplay.style.color = "red";
 
-
+            // TO click on .submit Button to fire it open
+            $(".submit").click()
+            // --------------------------------------
 
 
             let qstnHide = document.querySelectorAll(".qstnHide")
@@ -2301,69 +2303,77 @@ function start() {
 
 
 
+
+
+
+
     // this is to declare the variable submit button
-    let submitTest = document.querySelector(".submit")
-
-
+    let submit = document.querySelector(".submit")
 
     // this is to display the result sheet for the candidate
-    submitTest.addEventListener("click", function () {
+    submit.addEventListener("click", function () {
         // confirm if user wants to truely Submit
-        confirm("Do you want to Submit ?")
+        if (confirm("Do you want to Submit ?")) {
+            // 1.   to close down the questions and display the login page
+            let qstnHide = document.querySelectorAll(".qstnHide")
+            qstnHide = Array.from(qstnHide)
+            qstnHide.forEach(element => {
+                element.style.display = "none";
 
-        // 1.   to close down the questions and display the login page
-        let qstnHide = document.querySelectorAll(".qstnHide")
-        qstnHide = Array.from(qstnHide)
-        qstnHide.forEach(element => {
-            element.style.display = "none";
+                document.querySelector(".login").style.display = "block";
 
-            document.querySelector(".login").style.display = "block";
+            });
+            // ----------------------------------------------------------------
 
-        });
-        // ----------------------------------------------------------------
-
-        // 2. to display the candiidates result 
-        let scoreSheetHead = document.querySelector(".scoreSheetHead")
-        scoreSheetHead.style.display = "block";
-        // ----------------------------------
-
-
-        // 3 to initaiate the functions declared
-        answeredQtn1()
-        answeredQtn2()
-        answeredQtn3()
-        answeredQtn4()
-        answeredQtn5()
-        answeredQtn6()
-        answeredQtn7()
-        answeredQtn8()
-        answeredQtn9()
-        answeredQtn10()
-        // -----------------------------------
+            // 2. to display the candiidates result 
+            let scoreSheetHead = document.querySelector(".scoreSheetHead")
+            scoreSheetHead.style.display = "block";
+            // ----------------------------------
 
 
-        // 4 this is to add together the scores for each question 
+            // 3 to initaiate the functions declared
+            answeredQtn1()
+            answeredQtn2()
+            answeredQtn3()
+            answeredQtn4()
+            answeredQtn5()
+            answeredQtn6()
+            answeredQtn7()
+            answeredQtn8()
+            answeredQtn9()
+            answeredQtn10()
+            // -----------------------------------
 
-        let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
-            answeredQtn4() + answeredQtn5()
-            + answeredQtn6() + answeredQtn7() +
-            answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
 
-        // ------------------------------------------------
+            // 4 this is to add together the scores for each question 
 
-        // 5 this laods TextContent into my scoreNumber class
-        let scoreNumber = document.querySelector(".scoreNumber")
+            let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
+                answeredQtn4() + answeredQtn5()
+                + answeredQtn6() + answeredQtn7() +
+                answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
 
-        scoreNumber.textContent = allScore
-        console.log(allScore)
-        // -------------------------------------------------
+            // ------------------------------------------------
 
-        //6 to hide the submit Button
-        this.style.display = "none";
-        // ----------------------------
+            // 5 this laods TextContent into my scoreNumber class
+            let scoreNumber = document.querySelector(".scoreNumber")
 
-        // 7 duration set to zero
-        duration = 0 * 60
+            scoreNumber.textContent = allScore
+            console.log(allScore)
+            // -------------------------------------------------
+
+            //6 to hide the submit Button
+            this.style.display = "none";
+            // ----------------------------
+
+            // 7 duration set to zero
+            duration = 0 * 60
+
+        }
+        else {
+
+        }
+
+
 
 
         // 8  timerDisplay.textContent
@@ -2409,9 +2419,32 @@ function start() {
 let tykc = document.querySelector(".tykc")
 tykc.addEventListener("click", () => {
     document.querySelector(".menuList").style.display = "none";
-    document.querySelector(".screenCover").style.display="block";
+    document.querySelector(".screenCover").style.display = "block";
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

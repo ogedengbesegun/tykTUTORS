@@ -47,11 +47,6 @@ nav {
   justify-content: space-between;
 }
 
-.checker {
-  list-style: none;
-  text-decoration: none;
-}
-
 .btn-purple {
   background-color: rgb(168, 94, 236);
   border: 1px solid rgb(153, 120, 184);
@@ -105,6 +100,8 @@ nav {
   height: 100%;
   gap: 5px;
 } */
+
+
 .SectionOne {
   border: 1px solid red;
   padding: 5px;
@@ -196,20 +193,6 @@ button[title="Previous Question"]:hover {
 .icon-menuList:active {
   background-color: #b4b2b2;
 }
-ul li:nth-child(odd) {
-  background-color: #a250ee;
-}
-ul .li:nth-child(odd):hover {
-  background-color: #be8cee;
-  color: black;
-}
-ul li:nth-child(even) {
-  background-color: #43f50d;
-}
-ul .li:nth-child(even):hover {
-  background-color: #72eb4e;
-  color: black;
-}
 
 .neco,
 .waec {
@@ -236,8 +219,8 @@ ul .li:nth-child(even):hover {
 
 .screenCover {
   position: fixed;
-  top: 5px;
-  right: 0;
+  top: -10px;
+  left: 0;
   border-radius: 5px;
 
   width: 100%;
@@ -255,6 +238,64 @@ ul .li:nth-child(even):hover {
   height: 100%;
 }
 
-.rm-subjList {
-  margin-top: 95px;
+/* grid  template columns */
+.d-grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
 }
+.d-grid-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.d-grid-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+/* ------------------------------------- */
+
+.no-list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checker {
+  list-style: none;
+  text-decoration: none;
+}
+
+.text-purple {
+  color: rgb(255, 0, 255);
+}
+
+.fs-hover:hover {
+  font-size: small;
+}
+
+/* a-hover color styling */
+.a-hover {
+  color: #ffffff;
+}
+.a-hover:hover {
+  color: black;
+}
+/* ------------------------ */
+.fieldset-0 {
+  margin-top: 60px;
+}
+
+/* subsList  */
+.subsList:nth-child(even) {
+  background-color: #37cc0a;
+}
+
+.subsList:nth-child(even):hover {
+  background-color: #3cff00;
+}
+.subsList:nth-child(odd) {
+  background-color: #8f5dbe;
+}
+.subsList:nth-child(odd):hover {
+  background-color: #a751f1;
+}
+/* ------------------------------- */
