@@ -2518,6 +2518,23 @@ $(document).ready(function () {
         $(".screenCover").hide()
     })
     // ----------
+
+
+
+
+
+
+    // subject buttons clicks
+    // 4 financial Accounting
+    $("[href='/Financial-Accounting.html']").click(function () {
+        alert("finacial Accounting")
+       
+    })
+
+
+
+
+
 });
 
 

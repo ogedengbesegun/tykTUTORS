@@ -101,7 +101,6 @@ nav {
   gap: 5px;
 } */
 
-
 .SectionOne {
   border: 1px solid red;
   padding: 5px;
@@ -278,6 +277,7 @@ button[title="Previous Question"]:hover {
 }
 .a-hover:hover {
   color: black;
+  font-size: 18px;
 }
 /* ------------------------ */
 .fieldset-0 {
@@ -299,3 +299,9 @@ button[title="Previous Question"]:hover {
   background-color: #a751f1;
 }
 /* ------------------------------- */
+
+.rm-subjList {
+  position: absolute;
+  top: 110px;
+  right: 35px;
+}
