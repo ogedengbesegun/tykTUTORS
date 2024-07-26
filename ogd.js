@@ -41,7 +41,7 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET", "question.json", true);
+xhttp.open("GET","/question.json", true);
 xhttp.send();
 
 

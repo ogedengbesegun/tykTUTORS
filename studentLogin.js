@@ -56,8 +56,11 @@ xhttp1.onreadystatechange = function () {
 
 }
 
-xhttp1.open("GET", "studentLogin.json", true);
+xhttp1.open("GET", "/studentLogin.json", true);
 xhttp1.send();
+
+
+
 
 function Login() {
 

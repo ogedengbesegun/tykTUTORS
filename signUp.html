@@ -23,7 +23,7 @@
 
             <fieldset class="ms-1 mb-1 text-center">
                 <legend class="text-light mb-3 mt-2 fs-1 register">Register Now</legend>
-                <form action="">
+                <form action="/submit" method="post">
                     <div class="">
                         <input type="text" name="regfirstName" id="regfirstName" title="Enter First Name"
                             placeholder="First Name" required
@@ -39,16 +39,17 @@
                         <input type="password" name="regPassword" id="regPassword" placeholder="Enter password" required
                             class="text-center rounded-pill p-2 border-0 w-50 FScustom no-outline"
                             title="Enter your Password"><i class="fas fa-eye-slash text-danger reveal"></i>
-                        <a href="/ogd.html" class="text-decoration-none"><button type="button"
-                                class="btn btn-danger d-block mx-auto w-1 my-4 rounded-pill">Sign-Up
-                                Registration</button></a>
+                        <button type="submit" class="btn btn-danger d-block mx-auto w-1 my-4 rounded-pill">Sign-Up
+                            Registration</button>
                     </div>
                 </form>
             </fieldset>
         </section>
     </div>
 
-    
+
+
+    <script src="/server.js"></script>
     <script src="/signUp.js"></script>
 
 
