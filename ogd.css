@@ -184,14 +184,14 @@ button[title="Previous Question"]:hover {
   color: white;
 }
 
-.icon-menuList {
+/* .icon-menuList {
   background-color: #ffffff;
   padding: 7px;
 }
 
 .icon-menuList:active {
   background-color: #b4b2b2;
-}
+} */
 
 .neco,
 .waec {
@@ -305,3 +305,9 @@ button[title="Previous Question"]:hover {
   top: 110px;
   right: 35px;
 }
+
+.icon-menuList:hover {
+  background-color: rgb(202, 226, 241);
+}
+
+
