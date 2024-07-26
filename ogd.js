@@ -41,7 +41,7 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET","/question.json", true);
+xhttp.open("GET", "/question.json", true);
 xhttp.send();
 
 
@@ -2427,7 +2427,8 @@ tykc.addEventListener("click", () => {
 
 
 
-
+// Upload a file project
+var formidable = require('formidable');
 
 
 
@@ -2522,14 +2523,6 @@ $(document).ready(function () {
 
 
 
-
-
-    // subject buttons clicks
-    // 4 financial Accounting
-    $("[href='/Financial-Accounting.html']").click(function () {
-        alert("finacial Accounting")
-       
-    })
 
 
 
