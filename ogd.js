@@ -2308,7 +2308,7 @@ function start() {
 
 
 
-   
+
     // this is to declare the variable submit button
     let submit = document.querySelector(".submit")
 
@@ -2317,7 +2317,7 @@ function start() {
     submit.addEventListener("click", function () {
 
 
-        alert("You are about to Submit and Print !!!")
+        alert("Do you want to Print Result ?")
 
 
 

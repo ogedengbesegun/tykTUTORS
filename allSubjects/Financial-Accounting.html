@@ -15,7 +15,7 @@
 
 
     <link rel="stylesheet" href="/ogd.css">
-    <link rel="shortcut icon" href="/images/img001.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/finAcct.jpeg" type="image/x-icon">
     <script src="/bootstrap.bundle.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
 
 
 
-    <div class="heading d-flex justify-content-between position-sticky top-0 z-1">
+    <div class="heading d-flex justify-content-between position-sticky top-0 z-2">
         <button title="Toggle Menu" type="button" class="ms-5 navbar-toggler navbar-dark navBarIcon"><span
                 class="navbar-toggler-icon text-bg-primary fs-4 rounded-2"></span><Small
                 class=" mx-1 text-primary">Menu</Small>
@@ -47,28 +47,28 @@
         <div class="text-center contactMe p-1 ms-5">
             <div class="border-grey border-1 d-inline-flex rounded-pill">
                 <div class="btn-primary btn btn-sm rounded-pill ">
-                    <i class="fas fa-phone"> </i> <small>08036749218</small>
+                    <i class="fas fa-mobile-screen-button"> </i> <small>08036749218</small>
                 </div>
             </div>
             <div class="border-grey d-inline-flex rounded-pill">
                 <div class="btn-success btn w-auto btn btn-sm rounded-pill">
 
-                    <i class="fas fa-envelope me-1"></i><small>wisdomworld28608@gmail.com</small>
+                    <i class="fas fa-envelope-open me-1"></i><small>wisdomworld28608@gmail.com</small>
                 </div>
             </div>
             <div class="border-grey d-inline-flex rounded-pill">
                 <div class="btn-primary btn btn btn-sm rounded-pill mt-1">
                     <a href="https://www.facebook.com/ogedengbe.segun.5?mibextid=ZbWKwL" target="_blank" rel="noopener"
-                        class="checker text-light"><span
-                            class=" fas fa-f rounded-circle text-bg-success p-2 ms-1"></span> facebook</a>
+                        class="checker text-light"><span class="fab fa-facebook-f rounded-circle p-2 ms-1"></span>
+                        facebook.com/ogedengbe.segun.5</a>
                 </div>
             </div>
-            <div class="border-grey d-inline-flex rounded-pill ">
+            <div class="border-grey d-inline-flex rounded-pill mt-1 ">
                 <div class="btn-primary btn btn-sm rounded-pill">
                     <a href="https://www.linkedin.com/in/segun-ogedengbe-547026273" target="_blank" rel="noopener"
                         class="checker text-light"><span
-                            class=" bi bi-linkedin rounded-circle p-1 me-1 text-light">&#xF472</span>
-                        linkedin</a>
+                            class="fab fa-linkedin-in rounded-circle p-2 text-light me-1"></span>
+                        linkedin.com/in/segun-ogedengbe</a>
                 </div>
             </div>
         </div>
@@ -79,23 +79,30 @@
 
 
 
-    <nav class=" hide bg-secondary menuList w-100 p-3 rounded-1 z-3 position-fixed top-0">
+    <nav class="hide menuList bg-info  w-50 p-3 rounded-1 z-3 position-fixed top-0">
         <div class="rounded-2 ">
 
-            <span class="fas fa-times text-danger  rounded rounded-circle icon-menuList"></span>
-            <h4 class="text-bg-info rounded-1 closed mx-auto text-center my-2 w-1 p-2">Menu List</h4>
-            <ul class="d-grid mx-auto w-50 ">
+            <button type="button" title="Close" class="rounded-circle border-0 p-2 icon-menuList"><span
+                    class="fas fa-times fs-5 text-danger"></span>
+            </button>
+            <h4 class="text-bg-success rounded-1 closed mx-auto text-center my-2 w-1 p-2">Menu List</h4>
+            <hr class="bg-light">
+            <ul class="d-grid fs-1 no-list-style bg-black rounded p-2">
 
-                <li class="btn btn-primary mb-1 sign-up"><a href="/signUp.html" target="_blank" title="Sign-Up"
-                        class="text-decoration-none text-light">Sign-Up</a></li>
+                <li class="btn btn-primary mb-2 sign-up"><a href="/ogd.html" target="_parent" title="Home Page"
+                        class="checker p-1 text-light">Home Page</a></li>
 
-                <li class="btn btn-primary mb-1 text-nowrap"><a href="/ogd.html" target="_parent"
-                        class="text-decoration-none text-light">Home Page</a></li>
-                <li class="btn btn-primary mb-1 contacts">Contacts</li>
-                <li class="btn btn-primary mb-1  QuizQuestn text-nowrap">Quiz Questions</li>
-                <li class=" btn btn-primary mb-1 m waec"><a href="https://www.waecdirect.org/" rel="noopener"
+
+                <!-- <li class="btn btn-primary mb-2 personalities">Personalities</li>
+                <li class="btn btn-secondary mb-2 picture text-nowrap">Picture Stories</li>
+                <li class="btn btn-secondary mb-2 contacts">Contacts</li> -->
+                <!-- <li class="btn btn-danger mb-2  QuizQuestn text-nowrap tykc">Quiz
+                    Questions ?</li> -->
+                <li class="btn btn-danger mb-2  PrintQuiz text-nowrap ">Print Quiz
+                    Results ?</li>
+                <li class=" btn btn-warning mb-2 m waec"><a href="https://www.waecdirect.org/" rel="noopener"
                         target="_blank" class="text-light text-nowrap waec">WAEC Result Checker</a> </li>
-                <li class="btn btn-primary neco"><a href="https://results.neco.gov.ng/" rel="noopener" target="_blank"
+                <li class="btn btn-warning neco"><a href="https://results.neco.gov.ng/" rel="noopener" target="_blank"
                         class="text-light neco">NECO Result
                         Checker</a></li>
 
@@ -111,7 +118,11 @@
 
     <div class="container">
         <section class="quiz bg-dark p-5 rounded-4 mt-2">
-            <h1 class="text-light">Financial Accounting</h1>
+
+            <div class="d-flex">
+                <h1 class="text-light">Financial Accounting</h1><img src="/images/finAcct.jpeg" alt="Accounting-Image"
+                    class="myPicture ms-3">
+            </div>
             <button type="button" title="Enter Login Details First" class=" p-2 w-50 start"
                 onclick="start()">Start</button>
 
@@ -134,8 +145,12 @@
                             class="border-0 rounded-2 mt-1 text-center w-50 p-1" placeholder="Password"
                             autocomplete="current-password">
                         <button type="button" class="btn btn-warning mx-auto w-50 mt-3 d-block rounded-pill my-2"
-                            onclick="Login()">Login</button>
+                            onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
+                        <small><a href="#" class="text-danger">forgot password ?</a></small>
                     </form>
+                    <a href="/signUp.html">
+                        <p class="text-light mt-1">Sign Up <span class="fas fa-right-to-bracket"></span></p>
+                    </a>
                 </div>
 
                 <div class="qstsAll">

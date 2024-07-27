@@ -282,6 +282,7 @@ button[title="Previous Question"]:hover {
 /* ------------------------ */
 .fieldset-0 {
   margin-top: 60px;
+  background-color: rgba(96, 95, 97, 0.75);
 }
 
 /* subsList  */
@@ -309,5 +310,3 @@ button[title="Previous Question"]:hover {
 .icon-menuList:hover {
   background-color: rgb(202, 226, 241);
 }
-
-
