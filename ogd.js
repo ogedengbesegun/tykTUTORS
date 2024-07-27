@@ -2307,101 +2307,84 @@ function start() {
 
 
 
+
+   
     // this is to declare the variable submit button
     let submit = document.querySelector(".submit")
 
+
     // this is to display the result sheet for the candidate
     submit.addEventListener("click", function () {
+
+
+        alert("You are about to Submit and Print !!!")
+
+
+
+
+
+
         // confirm if user wants to truely Submit
-        if (confirm("Do you want to Submit ?")) {
-            // 1.   to close down the questions and display the login page
-            let qstnHide = document.querySelectorAll(".qstnHide")
-            qstnHide = Array.from(qstnHide)
-            qstnHide.forEach(element => {
-                element.style.display = "none";
+        // confirm("Do you want to Submit and Print ?");
+        // 1.   to close down the questions and display the login page
+        let qstnHide = document.querySelectorAll(".qstnHide")
+        qstnHide = Array.from(qstnHide)
+        qstnHide.forEach(element => {
+            element.style.display = "none";
 
-                document.querySelector(".login").style.display = "block";
+            document.querySelector(".login").style.display = "block";
 
-            });
-            // ----------------------------------------------------------------
+        });
+        // ----------------------------------------------------------------
 
-            // 2. to display the candiidates result 
-            let scoreSheetHead = document.querySelector(".scoreSheetHead")
-            scoreSheetHead.style.display = "block";
-            // ----------------------------------
-
-
-            // 3 to initaiate the functions declared
-            answeredQtn1()
-            answeredQtn2()
-            answeredQtn3()
-            answeredQtn4()
-            answeredQtn5()
-            answeredQtn6()
-            answeredQtn7()
-            answeredQtn8()
-            answeredQtn9()
-            answeredQtn10()
-            // -----------------------------------
+        // 2. to display the candiidates result 
+        let scoreSheetHead = document.querySelector(".scoreSheetHead")
+        scoreSheetHead.style.display = "block";
+        // ----------------------------------
 
 
-            // 4 this is to add together the scores for each question 
-
-            let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
-                answeredQtn4() + answeredQtn5()
-                + answeredQtn6() + answeredQtn7() +
-                answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
-
-            // ------------------------------------------------
-
-            // 5 this laods TextContent into my scoreNumber class
-            let scoreNumber = document.querySelector(".scoreNumber")
-
-            scoreNumber.textContent = allScore
-            console.log(allScore)
-            // -------------------------------------------------
-
-            //6 to hide the submit Button
-            this.style.display = "none";
-            // ----------------------------
-
-            // 7 duration set to zero
-            duration = 0 * 60
-
-        }
-        else {
-
-        }
+        // 3 to initaiate the functions declared
+        answeredQtn1()
+        answeredQtn2()
+        answeredQtn3()
+        answeredQtn4()
+        answeredQtn5()
+        answeredQtn6()
+        answeredQtn7()
+        answeredQtn8()
+        answeredQtn9()
+        answeredQtn10()
+        // -----------------------------------
 
 
+        // 4 this is to add together the scores for each question 
 
+        let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
+            answeredQtn4() + answeredQtn5()
+            + answeredQtn6() + answeredQtn7() +
+            answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
 
-        // 8  timerDisplay.textContent
+        // ------------------------------------------------
 
-        // timerDisplay.textContent = 
+        // 5 this laods TextContent into my scoreNumber class
+        let scoreNumber = document.querySelector(".scoreNumber")
 
-
-
-
-
-        // -----------------------------
-
-
-
-        // console.log(answeredQtn1())
-        // console.log(answeredQtn2())
-        // console.log(answeredQtn3())
-        // console.log(answeredQtn4())
-        // console.log(answeredQtn5())
-        // console.log(answeredQtn6())
-        // console.log(answeredQtn7())
-        // console.log(answeredQtn8())
-        // console.log(answeredQtn9())
-        // console.log(answeredQtn10())
-
-
-
+        scoreNumber.textContent = allScore
+        console.log(allScore)
         // -------------------------------------------------
+
+        //6 to hide the submit Button
+        this.style.display = "none";
+        // ----------------------------
+
+        // 7 duration set to zero
+
+
+
+
+
+
+
 
 
 
@@ -2427,8 +2410,6 @@ tykc.addEventListener("click", () => {
 
 
 
-// Upload a file project
-var formidable = require('formidable');
 
 
 

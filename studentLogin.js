@@ -169,6 +169,7 @@ $(document).ready(function () {
     // buttonX close
     $(".buttonX").click(function () {
         $(".scoreSheetHead").hide();
+        
     });
 
     $(".buttonX").mouseenter(function () {
