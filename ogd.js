@@ -41,7 +41,7 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET", "/question.json", true);
+xhttp.open("GET", "/subjectsJSON/financial.json", true);
 xhttp.send();
 
 
@@ -2415,24 +2415,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// // this is directoryy is for allSubjects platform
-// // 1 English
-// let engl = document.querySelector(".screenCover .engl")
-// let englURL = "/allSubjects/English-Language.html";
+// this is directoryy is for allSubjects platform
+// 1 English
+let engl = document.querySelector(".screenCover .engl")
+let englURL = "/allSubjects/English-Language.html";
+
+if (engl) {
+    engl.addEventListener('click', () => {
+        window.open(englURL);
+    })
+}
 
 
-// engl.addEventListener('click', () => {
-//     window.location.href = englURL;
-// })
 
+//  2 Financial Accounting
+let fina = document.querySelector(".screenCover .fina")
+let finaURL = "/allSubjects/Financial-Accounting.html";
+if (fina) {
+    fina.addEventListener('click', () => {
+        window.open(finaURL)
+    });
+}
 
-// //  2 Financial Accounting
-// let fina = document.querySelector(".screenCover .fina")
-// let finaURL = "/allSubjects/Financial-Accounting.html";
-
-// fina.addEventListener('click', () => {
-//     window.location.href = finaURL
-// })
 
 
 
@@ -2479,7 +2483,7 @@ $(document).ready(function () {
     });
 
     $(".icon-menuList").click(function () {
-        $(".menuList2").hide();
+        $(".menuList").hide();
 
     });
 
