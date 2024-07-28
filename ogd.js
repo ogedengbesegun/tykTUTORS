@@ -2399,18 +2399,40 @@ function start() {
 
 // Subject Picker
 // 1 set to display="none"
-let tykc = document.querySelector(".tykc")
-tykc.addEventListener("click", () => {
-    document.querySelector(".menuList").style.display = "none";
-    document.querySelector(".screenCover").style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+    let QuizQuestn = document.querySelector(".QuizQuestn");
+    if (QuizQuestn) {
+        QuizQuestn.addEventListener("click", function () {
+            document.querySelector(".menuList").style.display = "none";
+            document.querySelector(".screenCover").style.display = "block";
+        });
+    }
 
-})
+});
 
 
 
 
 
 
+// // this is directoryy is for allSubjects platform
+// // 1 English
+// let engl = document.querySelector(".screenCover .engl")
+// let englURL = "/allSubjects/English-Language.html";
+
+
+// engl.addEventListener('click', () => {
+//     window.location.href = englURL;
+// })
+
+
+// //  2 Financial Accounting
+// let fina = document.querySelector(".screenCover .fina")
+// let finaURL = "/allSubjects/Financial-Accounting.html";
+
+// fina.addEventListener('click', () => {
+//     window.location.href = finaURL
+// })
 
 
 
@@ -2457,7 +2479,7 @@ $(document).ready(function () {
     });
 
     $(".icon-menuList").click(function () {
-        $(".menuList").hide();
+        $(".menuList2").hide();
 
     });
 

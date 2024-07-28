@@ -292,12 +292,14 @@ button[title="Previous Question"]:hover {
 
 .subsList:nth-child(even):hover {
   background-color: #3cff00;
+  color: black;
 }
 .subsList:nth-child(odd) {
   background-color: #8f5dbe;
 }
 .subsList:nth-child(odd):hover {
   background-color: #a751f1;
+  color: black;
 }
 /* ------------------------------- */
 
