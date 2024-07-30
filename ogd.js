@@ -2225,8 +2225,10 @@ function start() {
     inputValue[39].value = label104.textContent = array.slice(9, 10)[0].d;
 
 
+console.log(array[0].ask)
+console.log(array.ask)
 
-
+console.log(array.slice(9,10)[0].ask)
 
 
     // inputValue[0].value = label1.textContent
@@ -2422,6 +2424,10 @@ let englURL = "/allSubjects/English-Language.html";
 
 if (engl) {
     engl.addEventListener('click', () => {
+        // this opens in the parent window
+        // window.location.href="englURL"
+        // ;
+        // this opens a new window target=_blank
         window.open(englURL);
     })
 }
