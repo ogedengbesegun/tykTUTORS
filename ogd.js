@@ -2445,12 +2445,84 @@ if (fina) {
 }
 
 
+// close the subject page when any subject is clicked
+
+let subsList = document.querySelectorAll(".subsList")
+subsList.forEach(subLis => {
+    subLis.addEventListener("click", () => {
+        document.querySelector(".screenCover").style.display = "none"
+    })
+});
+// --------------------------------------------------
+
+// timeStamp for result printing
+let timeStamp = document.getElementsByClassName('timeStamp')[0]
+let year = new Date().getFullYear();
+let month = new Date().getMonth() + 1;
+let day = new Date().getDate();
+
+// months in words
+function mymonth() {
+    if (month == 1) {
+        return "Jan"
+    } else if (month == 2) {
+        return "Feb"
+    }
+    else if (month == 3) {
+        return "Mar"
+    }
+    else if (month == 4) {
+        return "Apr"
+    }
+    else if (month == 5) {
+        return "May"
+    }
+    else if (month == 6) {
+        return "Jun"
+    }
+    else if (month == 7) {
+        return "Jul"
+    }
+    else if (month == 8) {
+        return "Aug"
+    }
+    else if (month == 9) {
+        return "Sep"
+    }
+    else if (month == 10) {
+        return "Oct"
+    }
+    else if (month == 11) {
+        return "Nov"
+    }
+    else if (month == 12) {
+        return "Dec"
+    }
+}
+// month()
 
 
+// days in st,th or nd
+function myday() {
+    if (day.toString().endsWith("1")) {
+        return "st"
+    } else if (day.toString().endsWith("2")) {
+        return "nd"
+    }
+    else if (day.toString().endsWith("3")) {
+        return "rd"
+    }
+    else {
+        return "th"
+    }
+}
 
+if (timeStamp) {
+    timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday()
 
+}
 
-
+// console.log(day)
 
 
 

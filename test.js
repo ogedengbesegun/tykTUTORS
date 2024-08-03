@@ -1,5 +1,5 @@
-let one23 = ["one", "two", "three", "four", "five", "six"];
-let abc = ["a", "b", "c", "d", "e", "f"]
+// let one23 = ["one", "two", "three", "four", "five", "six"];
+// let abc = ["a", "b", "c", "d", "e", "f"]
 
 
 
@@ -106,14 +106,14 @@ console.log(myValue1)
 
 
 
-let vang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+// let vang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
-for (let m = vang.length - 1; m > 0; m--) {
-    const j = Math.floor(Math.random() * (m + 1));
+// for (let m = vang.length - 1; m > 0; m--) {
+//     const j = Math.floor(Math.random() * (m + 1));
 
-    [vang[m], vang[j]] = [vang[j], vang[m]];
+//     [vang[m], vang[j]] = [vang[j], vang[m]];
 
-}
+// }
 // console.log(vang[0]);
 // console.log(vang[1]);
 // console.log(vang[2]);
@@ -130,11 +130,38 @@ const days = []
 console.log(days)
 // console.log(ludo[0])
 // let myKey = ludo.slice(0,1)[0];
-let add = 0
+let add = 0;
+let arrayText = document.querySelector(".arrayText")
+
 function addArray() {
-    let arrayText = document.querySelector(".arrayText")
-    arrayText.textContent = add += 1
+    arrayText.textContent = add += 1;
     days.push(arrayText.textContent);
+    document.querySelector(".myCount").textContent = days.join(" ")
+    // document.querySelector(".myCount").textContent = days.slice(11,21)
+
 
 }
+
+function clone() {
+
+    let cloneBtn = document.querySelector(".addArray").cloneNode()
+    // cloneBtn.className = "newBtn";
+    cloneBtn.textContent = "Sub Array";
+    cloneBtn.style.display = "block";
+    cloneBtn.className = "rounded-1 mt-3 text-light bg-secondary mx-auto w-1 border-1 fs-5 subArray"
+    document.querySelector("div:nth-child(1)").append(cloneBtn)
+    cloneBtn.classList.remove("addArray")
+    cloneBtn.removeAttribute("onclick");
+    let subArray = document.querySelectorAll(".subArray")
+    subArray.forEach(subArra => {
+        subArra.addEventListener("click", () => {
+            arrayText.textContent = add -= 1;
+            document.querySelector(".myCount").textContent = days.pop(arrayText.textContent)
+        });
+    });
+
+}
+clone()
+
+
 
