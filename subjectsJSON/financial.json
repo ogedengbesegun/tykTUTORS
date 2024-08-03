@@ -5,161 +5,184 @@
       "a": "of final entry",
       "b": "of original entry",
       "c": "found in the ledger",
-      "d": "of a subsidiary entries"
+      "d": "of a subsidiary entries",
+      "ans":"b"
     },
     {
       "ask": "Purchases in accounting refers to goods bought for__",
       "a": "repairs",
       "b": "decorating officers",
       "c": "owner's use",
-      "d": "resale"
+      "d": "resale",
+      "ans":"d"
     },
     {
       "ask": "A fixed amount of money set aside for petty expenses is called",
       "a": "float",
       "b": "imprest receipt",
       "c": "drawing",
-      "d": "accumulated fund"
+      "d": "accumulated fund",
+      "ans":"a"
     },
     {
       "ask": "The asets of a business can be classified broadly into__",
       "a": "current and circulating asset",
       "b": "intangible and fixed assets",
       "c": "fixed and current assets",
-      "d": "fixed and floating assets"
+      "d": "fixed and floating assets",
+      "ans":"c"
     },
     {
       "ask": "Which of the account belongs to the private ledger?",
       "a": "purchases account",
       "b": "capital account",
       "c": "machinery account",
-      "d": "Olu's account"
+      "d": "Olu's account",
+      "ans":"b"
     },
     {
       "ask": "The purpose of a trading account is to ascertain__",
       "a": "net profit",
       "b": "gross profit",
       "c": "sales",
-      "d": "market"
+      "d": "market",
+      "ans":"b"
     },
     {
       "ask": "When both debit and credit entries of a transaction are shown in the cash book, it is described as __",
       "a": "contra entry",
       "b": "single entry",
       "c": "double entry",
-      "d": "complete reversal of entry"
+      "d": "complete reversal of entry",
+      "ans":"a"
     },
     {
       "ask": "Which of the following is NOT a real account?",
       "a": "Building account",
       "b": "Motor van account",
       "c": "Patents account",
-      "d": "Purchases ledger"
+      "d": "Purchases ledger",
+      "ans":"d"
     },
     {
       "ask": "Which of the following is NOT a book of prime entry?",
       "a": "Sales Daybook",
       "b": "Purchases Daybook ",
       "c": "Cash Book",
-      "d": "Purchases ledger"
+      "d": "Purchases ledger",
+      "ans":"d"
     },
     {
       "ask": "Fixed Assets include__",
       "a": "accruel",
       "b": "stock",
       "c": "prepayment",
-      "d": "land and building"
+      "d": "land and building",
+      "ans":"d"
     },
     {
       "ask": "Which of the folowing is NOT a petty cash book items? Purchase of__",
       "a": "machinery",
       "b": "stamps",
       "c": "office stationery",
-      "d": "postage"
+      "d": "postage",
+      "ans":"a"
     },
     {
       "ask": "Trade discounts are given for__",
       "a": "quick delivery",
       "b": "cash payment",
       "c": "bulk purchases",
-      "d": "prompt payment"
+      "d": "prompt payment",
+      "ans":"c"
     },
     {
       "ask": "__ is a person that lend out money",
       "a": "Creditor",
       "b": "Payer",
       "c": "Receiver",
-      "d": "Debtor"
+      "d": "Debtor",
+      "ans":"a"
     },
     {
       "ask": "Which of the following books of original entry  is used to record all payments and receipts by  cash or cheque",
       "a": "Sales Daybook",
       "b": "Purchases Daybook",
       "c": "Cash Book",
-      "d": "General Journal"
+      "d": "General Journal",
+      "ans":"c"
     },
     {
       "ask": "A person that owes certain sum of money is called a __",
       "a": "Creditor",
       "b": "Payer",
       "c": "Borrower",
-      "d": "Debtor"
+      "d": "Debtor",
+      "ans":"d"
     },
     {
       "ask": "The distinguishing feature between a two column and three column cash book is _",
       "a": "cash column",
       "b": "discount column",
       "c": "bank column",
-      "d": "ledger column"
+      "d": "ledger column",
+      "ans":"b"
     },
     {
       "ask": "Cash discount is an allowance for __",
       "a": "bulk purchase",
       "b": "prompt payment",
       "c": "damaged goods",
-      "d": "price list"
+      "d": "price list",
+      "ans":"b"
     },
     {
       "ask": "Carriage inwards is charged in the __",
       "a": "balance sheet",
       "b": "trading account",
       "c": "profit and loss account",
-      "d": "purchases journal"
+      "d": "purchases journal",
+      "ans":"b"
     },
     {
       "ask": "Which of the following is NOT an Asset?",
       "a": "building",
       "b": "cash",
       "c": "stock",
-      "d": "loan"
+      "d": "loan",
+      "ans":"d"
     },
     {
       "ask": "The lodgement of business cash into the bank account is an example of__",
       "a": "cash book",
       "b": "contra entry",
       "c": "bank entry",
-      "d": "reversal entry"
+      "d": "reversal entry",
+      "ans":"b"
     },
     {
       "ask": "Carriage outwards is charged in the__",
       "a": "balance sheet",
       "b": "trading account",
       "c": "profit and loss account",
-      "d": "purchases journal"
+      "d": "purchases journal",
+      "ans":"c"
     },
     {
       "ask": "The balance sheet is prepared to reveal__",
       "a": "the accrual and prepayment",
       "b": "the financial position of the business",
       "c": "the arithemetical accuracy of the ledger",
-      "d": "the result of the operations of the period"
+      "d": "the result of the operations of the period",
+      "ans":"c"
     },
     {
       "ask": "which of the following are impersonal accounts?  I. Investment   II. Creditors   III. Premises   IV. Debtors V. Salaries",
       "a": "I, III and IV",
       "b": "I, III and V",
       "c": "II and IV",
-      "d": "III and V"
+      "d": "III and V",
+      "ans":"b"
     }
   ]
 }

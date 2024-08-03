@@ -18,7 +18,6 @@ while (i < 10);
 
 
 // Setting my Start button to disabled at onLoadState.
-
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
 
@@ -43,6 +42,8 @@ xhttp.onreadystatechange = function () {
 
 xhttp.open("GET", "/subjectsJSON/financial.json", true);
 xhttp.send();
+
+
 
 
 // console.log(response)
@@ -2225,10 +2226,10 @@ function start() {
     inputValue[39].value = label104.textContent = array.slice(9, 10)[0].d;
 
 
-console.log(array[0].ask)
-console.log(array.ask)
+    console.log(array[0].ask)
+    console.log(array.ask)
 
-console.log(array.slice(9,10)[0].ask)
+    console.log(array.slice(9, 10)[0].ask)
 
 
     // inputValue[0].value = label1.textContent
