@@ -1,3 +1,52 @@
+
+
+// Setting my Start button to disabled at onLoadState.
+var xhttp3 = new XMLHttpRequest();
+xhttp3.onreadystatechange = function () {
+
+
+
+    if (this.readyState == 4 && this.status == 200) {
+
+        // Typical action to be performed when the document is ready:
+
+        console.log(xhttp3.responseText);
+
+
+        // console.log(JSON.parse(xhttp.responseText)[0].ask)
+
+
+
+    }
+
+
+
+}
+
+xhttp3.open("GET", "/subjectsJSON/english.json", true);
+xhttp3.send();
+
+var response3 = JSON.parse(xhttp3.responseText)
+// let response = xhttp2.responseText;
+
+// console.log(response[0].ask);
+// console.log(response[0].ans);
+// console.log(response[1].ask);
+
+let myData = document.querySelector(".myData")
+myData.textContent = response3[0].ask
+
+let dataInput = document.querySelector(".dataInput");
+dataInput.innerHTML = response3[0].d;
+console.log(resData[0].d)
+// console.log(JSON.parse(xhttp.responseText)[0].ask);
+// let myData = document.querySelector(".myData");
+// myData.value = resData[0].ask
+// console.log(myData.value)
+
+
+
+
 // let one23 = ["one", "two", "three", "four", "five", "six"];
 // let abc = ["a", "b", "c", "d", "e", "f"]
 
@@ -106,21 +155,6 @@ console.log(myValue1)
 
 
 
-// let vang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-
-// for (let m = vang.length - 1; m > 0; m--) {
-//     const j = Math.floor(Math.random() * (m + 1));
-
-//     [vang[m], vang[j]] = [vang[j], vang[m]];
-
-// }
-// console.log(vang[0]);
-// console.log(vang[1]);
-// console.log(vang[2]);
-// console.log(vang[3]);
-// console.log(vang[4]);
-// console.log(vang[0]);
-
 
 
 
@@ -144,24 +178,29 @@ function addArray() {
 
 function clone() {
 
-    let cloneBtn = document.querySelector(".addArray").cloneNode()
+    let cloneBtn = document.querySelector(".addArray")
+    let cloned = cloneBtn.cloneNode();
     // cloneBtn.className = "newBtn";
-    cloneBtn.textContent = "Sub Array";
-    cloneBtn.style.display = "block";
-    cloneBtn.className = "rounded-1 mt-3 text-light bg-secondary mx-auto w-1 border-1 fs-5 subArray"
-    document.querySelector("div:nth-child(1)").append(cloneBtn)
-    cloneBtn.classList.remove("addArray")
-    cloneBtn.removeAttribute("onclick");
+    cloned.textContent = "Sub Array";
+    cloned.style.display = "block";
+    cloned.className = "rounded-1 mt-3 text-light bg-secondary mx-auto w-1 border-1 fs-5 subArray";
+    document.querySelector("div:nth-child(1)").append(cloned)
+
+    cloned.classList.remove("addArray")
+    cloned.removeAttribute("onclick");
     let subArray = document.querySelectorAll(".subArray")
     subArray.forEach(subArra => {
         subArra.addEventListener("click", () => {
             arrayText.textContent = add -= 1;
+            if (arrayText.textContent == 0) {
+                arrayText.setAttribute("min", "1");
+                document.querySelector(".myCount").textContent = days.push(0)
+            }
             document.querySelector(".myCount").textContent = days.pop(arrayText.textContent)
         });
     });
 
 }
 clone()
-
 
 

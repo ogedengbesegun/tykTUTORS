@@ -38,3 +38,22 @@ reveal.addEventListener("click", () => {
     }
 })
 
+// the closeSign-up btn initialised or fired up
+let closeSignUp = document.querySelector(".closeSignUp")
+closeSignUp.addEventListener("click", () => {
+    window.close();
+});
+
+// hover to change element appearance
+
+closeSignUp.addEventListener("mouseover", () => {
+    closeSignUp.style.color = "white";
+    closeSignUp.classList.remove("text-danger")
+});
+
+closeSignUp.addEventListener("mouseleave", () => {
+    // closeSignUp.style.color = "white";
+    closeSignUp.classList.add("text-danger")
+});
+
+

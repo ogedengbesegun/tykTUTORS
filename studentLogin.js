@@ -169,7 +169,7 @@ $(document).ready(function () {
     // buttonX close
     $(".buttonX").click(function () {
         $(".scoreSheetHead").hide();
-        
+        window.location.reload()
     });
 
     $(".buttonX").mouseenter(function () {

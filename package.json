@@ -1,12 +1,12 @@
 {
   "name": "ogd-profile-page",
   "version": "1.0.0",
-  "description": "ogd-profile-page/Education-Solution",
-  "main": "ogd.js",
+  "description": "ogd-Education-solution",
+  "main": "bootstrap.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ogedengbe, Segun",
+  "author": "Ogedengbe,segun",
   "license": "ISC",
   "dependencies": {
     "uuid": "^10.0.0"

@@ -309,6 +309,22 @@ button[title="Previous Question"]:hover {
   right: 35px;
 }
 
-.icon-menuList:hover {
-  background-color: rgb(202, 226, 241);
+.closeSignUp {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  float: right;
+}
+
+/* position relative and float right */
+.icon-menuList {
+  position: relative;
+  top: -35px;
+  right: -5px;
+  float: right;
+}
+/* ---------------------- */
+
+.registration {
+  background-color: rgba(122, 18, 226, 0.75);
 }

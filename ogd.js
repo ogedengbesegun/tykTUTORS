@@ -2227,7 +2227,6 @@ function start() {
 
 
     console.log(array[0].ask)
-    console.log(array.ask)
 
     console.log(array.slice(9, 10)[0].ask)
 
@@ -2271,8 +2270,8 @@ function start() {
 
             let qstnHide = document.querySelectorAll(".qstnHide")
             qstnHide = Array.from(qstnHide)
-            qstnHide.forEach(element => {
-                element.style.display = "none";
+            qstnHide.forEach(qstnHid => {
+                qstnHid.style.display = "none";
 
                 document.querySelector(".login").style.display = "block";
 
@@ -2320,7 +2319,7 @@ function start() {
     submit.addEventListener("click", function () {
 
 
-        alert("Do you want to Print Result ?")
+        confirm("Do you want to Print Result ?")
 
 
 
@@ -2332,8 +2331,8 @@ function start() {
         // 1.   to close down the questions and display the login page
         let qstnHide = document.querySelectorAll(".qstnHide")
         qstnHide = Array.from(qstnHide)
-        qstnHide.forEach(element => {
-            element.style.display = "none";
+        qstnHide.forEach(qstnHid2 => {
+            qstnHid2.style.display = "none";
 
             document.querySelector(".login").style.display = "block";
 
@@ -2524,6 +2523,17 @@ if (timeStamp) {
 
 // console.log(day)
 
+// sign-up btn initiated
+let signUp = document.querySelector(".sign-up")
+signUp.addEventListener("click", () => {
+    let url = "/signUp.html";
+    window.open(url, "blank");
+})
+
+
+
+
+
 
 
 
@@ -2585,7 +2595,6 @@ $(document).ready(function () {
 
         }, "slow");
     });
-
 
 
     $(".viewMore, .personalities").click(function () {
