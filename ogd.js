@@ -2524,11 +2524,32 @@ if (timeStamp) {
 // console.log(day)
 
 // sign-up btn initiated
-let signUp = document.querySelector(".sign-up")
-signUp.addEventListener("click", () => {
-    let url = "/signUp.html";
-    window.open(url, "blank");
-})
+let signUp = document.querySelector(".sign-up");
+if (signUp) {
+    signUp.addEventListener("click", () => {
+        let url = "/signUp.html";
+        window.open(url, "blank");
+    })
+};
+
+// mouseEnter: add class text-danger
+const mouseEnter = document.querySelector(".mouseEnter");
+if (mouseEnter) {
+    mouseEnter.addEventListener("mouseenter", () => {
+        mouseEnter.classList.add("text-danger");
+    })
+
+};
+
+
+// mouseleave: remove class text-danger
+if (mouseEnter) {
+    mouseEnter.addEventListener("mouseleave", () => {
+        mouseEnter.classList.remove("text-danger");
+    });
+};
+
+
 
 
 
@@ -2571,7 +2592,7 @@ $(document).ready(function () {
         // $(".li").hide()
     });
 
-    $(".icon-menuList").click(function () {
+    $(".icon-menuList, .icon-close").click(function () {
         $(".menuList").hide();
 
     });
