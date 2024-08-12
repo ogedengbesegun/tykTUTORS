@@ -2263,19 +2263,28 @@ function start() {
             timerDisplay.textContent = "Timer:" + " Time is Up!";
             timerDisplay.style.color = "red";
 
+
+            setTimeout(() => {
+                showResult()
+            }, 5000);
+
+
             // TO click on .submit Button to fire it open
-            $(".submit").click()
+            // $(".submit").click()
             // --------------------------------------
 
 
-            let qstnHide = document.querySelectorAll(".qstnHide")
-            qstnHide = Array.from(qstnHide)
-            qstnHide.forEach(qstnHid => {
-                qstnHid.style.display = "none";
+            // let qstnHide = document.querySelectorAll(".qstnHide")
+            // qstnHide = Array.from(qstnHide)
+            // qstnHide.forEach(qstnHid => {
+            //     qstnHid.style.display = "none";
 
-                document.querySelector(".login").style.display = "block";
 
-            });
+
+
+            // document.querySelector(".login").style.display = "block";
+
+            // });
         }
 
 
@@ -2283,7 +2292,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 2 * 60;
+    let duration = 1 * 60;
 
 
 
@@ -2319,73 +2328,29 @@ function start() {
     submit.addEventListener("click", function () {
 
 
-        confirm("Do you want to Print Result ?")
+
+
+        if (confirm("Do you want to Submit?") == 1) {
+
+            // confirm if user wants to truely Submit
+            // confirm("Do you want to Submit and Print ?");
+            // 1.   to close down the questions and display the login page
+            let qstnHide = document.querySelectorAll(".qstnHide")
+            qstnHide = Array.from(qstnHide)
+            qstnHide.forEach(qstnHid2 => {
+                qstnHid2.style.display = "none";
+
+                document.querySelector(".login").style.display = "block";
+
+            });
+
+
+            // ----------------------------------------------------------------
+            showResult()
 
 
 
-
-
-
-        // confirm if user wants to truely Submit
-        // confirm("Do you want to Submit and Print ?");
-        // 1.   to close down the questions and display the login page
-        let qstnHide = document.querySelectorAll(".qstnHide")
-        qstnHide = Array.from(qstnHide)
-        qstnHide.forEach(qstnHid2 => {
-            qstnHid2.style.display = "none";
-
-            document.querySelector(".login").style.display = "block";
-
-        });
-        // ----------------------------------------------------------------
-
-        // 2. to display the candiidates result 
-        let scoreSheetHead = document.querySelector(".scoreSheetHead")
-        scoreSheetHead.style.display = "block";
-        // ----------------------------------
-
-
-        // 3 to initaiate the functions declared
-        answeredQtn1()
-        answeredQtn2()
-        answeredQtn3()
-        answeredQtn4()
-        answeredQtn5()
-        answeredQtn6()
-        answeredQtn7()
-        answeredQtn8()
-        answeredQtn9()
-        answeredQtn10()
-        // -----------------------------------
-
-
-        // 4 this is to add together the scores for each question 
-
-        let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
-            answeredQtn4() + answeredQtn5()
-            + answeredQtn6() + answeredQtn7() +
-            answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
-
-        // ------------------------------------------------
-
-        // 5 this laods TextContent into my scoreNumber class
-        let scoreNumber = document.querySelector(".scoreNumber")
-
-        scoreNumber.textContent = allScore
-        console.log(allScore)
-        // -------------------------------------------------
-
-        //6 to hide the submit Button
-        this.style.display = "none";
-        // ----------------------------
-
-        // 7 duration set to zero
-
-
-
-
-
-
+        }
 
 
 
@@ -2396,6 +2361,73 @@ function start() {
 
 
 }
+
+
+// funtion to show result
+function showResult() {
+
+    // 2. to display the candidates result 
+    let scoreSheetHead = document.querySelector(".scoreSheetHead")
+    scoreSheetHead.style.display = "block";
+    // ----------------------------------
+
+
+    // 3 to initaiate the functions declared
+    answeredQtn1()
+    answeredQtn2()
+    answeredQtn3()
+    answeredQtn4()
+    answeredQtn5()
+    answeredQtn6()
+    answeredQtn7()
+    answeredQtn8()
+    answeredQtn9()
+    answeredQtn10()
+    // -----------------------------------
+
+
+    // 4 this is to add together the scores for each question 
+
+    let allScore = (answeredQtn1() + answeredQtn2() + answeredQtn3() +
+        answeredQtn4() + answeredQtn5()
+        + answeredQtn6() + answeredQtn7() +
+        answeredQtn8() + answeredQtn9() + answeredQtn10()) * 10 + "%"
+
+    // ------------------------------------------------
+
+    // 5 this laods TextContent into my scoreNumber class
+    let scoreNumber = document.querySelector(".scoreNumber")
+
+    scoreNumber.textContent = allScore
+    // console.log(allScore)
+    // -------------------------------------------------
+
+    //6 to hide the submit Button
+    // this.style.display = "none";
+    // ----------------------------
+
+
+}
+
+
+// print the result in pdf
+
+let printMyResult = document.querySelector(".printMyResult")
+if (printMyResult) {
+    printMyResult.addEventListener("click", () => {
+        let scoreSheet = document.querySelector(".scoreSheet")
+
+        scoreSheet
+
+    });
+}
+
+// --------------------------------------------------------------
+
+
+
+
+
 
 
 
@@ -2419,7 +2451,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // this is directoryy is for allSubjects platform
 // 1 English
-let engl = document.querySelector(".screenCover .engl")
+let engl = document.querySelector(".engl")
 let englURL = "/allSubjects/English-Language.html";
 
 if (engl) {
@@ -2428,18 +2460,18 @@ if (engl) {
         // window.location.href="englURL"
         // ;
         // this opens a new window target=_blank
-        window.open(englURL);
+        window.open(englURL, "English-Language");
     })
 }
 
 
 
 //  2 Financial Accounting
-let fina = document.querySelector(".screenCover .fina")
+let fina = document.querySelector(".fina")
 let finaURL = "/allSubjects/Financial-Accounting.html";
 if (fina) {
     fina.addEventListener('click', () => {
-        window.open(finaURL)
+        window.open(finaURL, "Financial-Accounting")
     });
 }
 
@@ -2452,6 +2484,8 @@ subsList.forEach(subLis => {
         document.querySelector(".screenCover").style.display = "none"
     })
 });
+
+
 // --------------------------------------------------
 
 // timeStamp for result printing
@@ -2459,6 +2493,8 @@ let timeStamp = document.getElementsByClassName('timeStamp')[0]
 let year = new Date().getFullYear();
 let month = new Date().getMonth() + 1;
 let day = new Date().getDate();
+
+// console.log(day);
 
 // months in words
 function mymonth() {
@@ -2503,9 +2539,14 @@ function mymonth() {
 
 // days in st,th or nd
 function myday() {
-    if (day.toString().endsWith("1")) {
+    if (day === 11 || day === 12 || day === 13) {
+        return "th"
+    }
+    else if (day.toString().endsWith("1")) {
         return "st"
-    } else if (day.toString().endsWith("2")) {
+
+    }
+    else if (day.toString().endsWith("2")) {
         return "nd"
     }
     else if (day.toString().endsWith("3")) {
@@ -2514,12 +2555,17 @@ function myday() {
     else {
         return "th"
     }
+
 }
+
+
 
 if (timeStamp) {
     timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday()
 
 }
+
+
 
 // console.log(day)
 

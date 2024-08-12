@@ -1,2 +1,4 @@
-./subjectsJSON
+/subjectsJSON
 .env
+bootstrap.bundle.js
+bootstrap.css
