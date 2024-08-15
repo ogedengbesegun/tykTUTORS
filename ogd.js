@@ -2260,13 +2260,21 @@ function start() {
             // the clearInterval method is invoked 
             clearInterval(timer);
 
+            // this  displays the timeup 
             timerDisplay.textContent = "Timer:" + " Time is Up!";
             timerDisplay.style.color = "red";
 
 
-            setTimeout(() => {
-                showResult()
-            }, 5000);
+            // this will disable my input elements to stop users on countdown
+            let inputValue = document.querySelectorAll(".inputValue")
+            inputValue.forEach(inputValues => {
+                inputValues.disabled = true;
+            });
+
+            // set a timeout to display the user result
+            // setTimeout(() => {
+            //     showResult()
+            // }, 5000);
 
 
             // TO click on .submit Button to fire it open
@@ -2596,6 +2604,37 @@ if (mouseEnter) {
 };
 
 
+// home page navigating back
+let homePage = document.querySelector(".homePage");
+
+if (homePage) {
+    homePage.addEventListener("click", () => {
+        let myHomeURL = "http://127.0.0.1:5501/ogd.html"
+        window.open(myHomeURL, "ogd");
+        window.location = close();
+
+    });
+}
+
+// show Login Details to be able to print result
+const subjResultLogin = document.querySelector(".subjResultLogin")
+const PrintResults = document.querySelector(".PrintResults");
+if (PrintResults) {
+    PrintResults.addEventListener("click", () => {
+
+        subjResultLogin.style.display = "block"
+        document.querySelector(".menuList").style.display = "none";
+
+    })
+};
+
+// closeUp the login dialog page
+const closeUp = document.querySelector('.closeUp')
+if (closeUp) {
+    closeUp.addEventListener('click', () => {
+        subjResultLogin.style.display = "none"
+    })
+}
 
 
 

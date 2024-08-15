@@ -18,7 +18,8 @@
 }
 
 .no-inner-no-outer-spin[type="number"]::-webkit-inner-spin-button,
-.no-inner-no-outer-spin[type="number"]::-webkit-outer-spin-button {
+.no-inner-no-outer-spin[type="number"]::-webkit-outer-spin-button,
+.no-inner-spin {
   appearance: none;
 }
 .FScustom {
@@ -56,6 +57,6 @@ th {
   grid-template-columns: repeat(2, 4fr);
 }
 
-.text-purple{
+.text-purple {
   color: rgb(255, 0, 255);
 }

@@ -184,9 +184,6 @@ button[title="Previous Question"]:hover {
   color: white;
 }
 
-
-
-
 .neco,
 .waec {
   text-decoration: none;
@@ -333,4 +330,27 @@ button[title="Previous Question"]:hover {
 
 .registration {
   background-color: rgba(122, 18, 226, 0.75);
+}
+
+/* no-inner-spin */
+
+.no-inner-no-outer-spin[type="number"]::-webkit-inner-spin-button,
+.no-inner-no-outer-spin[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+.no-outline {
+  outline: none;
+}
+
+/* just for class usage to focus cursor:pointer */
+.cursor {
+  cursor: pointer;
+}
+
+.mt-6 {
+  margin-top: 96px;
+}
+
+.mt-7 {
+  margin-top: 100px;
 }
