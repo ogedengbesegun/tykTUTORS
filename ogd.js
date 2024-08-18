@@ -2425,7 +2425,7 @@ if (printMyResult) {
     printMyResult.addEventListener("click", () => {
         let scoreSheet = document.querySelector(".scoreSheet")
 
-        scoreSheet
+        scoreSheet = print();
 
     });
 }
@@ -2604,17 +2604,29 @@ if (mouseEnter) {
 };
 
 
-// home page navigating back
-let homePage = document.querySelector(".homePage");
 
-if (homePage) {
-    homePage.addEventListener("click", () => {
-        let myHomeURL = "http://127.0.0.1:5501/ogd.html"
-        window.open(myHomeURL, "ogd");
-        window.location = close();
 
-    });
-}
+// waec URL directory defined
+let waec = document.querySelector(".waec")
+let waecURL = "https://www.waecdirect.org/";
+waec.addEventListener("click", () => {
+    if (waec) {
+        window.open(waecURL)
+    }
+})
+
+
+// neco URL directory defined
+let neco = document.querySelector(".neco");
+let necoURL = "https://results.neco.gov.ng/";
+neco.addEventListener("click", () => {
+    if (neco) {
+        window.open(necoURL);
+    }
+})
+
+// ------------------------------------------------
+
 
 // show Login Details to be able to print result
 const subjResultLogin = document.querySelector(".subjResultLogin")
