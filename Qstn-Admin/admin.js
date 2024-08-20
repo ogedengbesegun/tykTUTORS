@@ -51,7 +51,7 @@ let section = document.querySelector("section")
 submitAdmin.addEventListener("click", () => {
 
     // set the password 1&2 to black onclick
-    adminpwd.addEventListener("click", () => {
+    adminpwd.addEventListener("focus", () => {
         adminpwd.style.color = "black";
         adminpwd2.style.color = "black";
         response.textContent = ""
@@ -71,7 +71,7 @@ submitAdmin.addEventListener("click", () => {
             && (`${adminpwd.value}` == `${adminpwd2.value}`)) {
             response.textContent = "Registration Successful "
             response.style.color = "green";
-            console.log(response.textContent);
+            // console.log(response.textContent);
             adminpwd.style.color = "green";
             adminpwd2.style.color = "green";
 
@@ -86,7 +86,7 @@ submitAdmin.addEventListener("click", () => {
             response.textContent = "Check Password ";
             response.appendChild(times);
             response.style.color = "red";
-            console.log(response.textContent);
+            // console.log(response.textContent);
             adminpwd.style.color = "red";
             adminpwd2.style.color = "red";
 
@@ -101,3 +101,9 @@ submitAdmin.addEventListener("click", () => {
 
 
 });
+
+// adminClose 
+let adminClose = document.querySelector(".adminClose");
+adminClose.addEventListener("click", () => {
+    window.close();
+})
