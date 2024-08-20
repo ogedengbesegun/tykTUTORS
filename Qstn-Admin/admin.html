@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1 boostrap framework css -->
+    <link rel="stylesheet" href="/bootstrap.css">
+
+    <!-- 2 my css framework -->
+    <link rel="stylesheet" href="/my.css">
+    <!-- -------------------------------- -->
+
+    <!--3  custom for Qstn-Admin -->
+    <link rel="stylesheet" href="/Qstn-Admin/admin.css">
+    <!-- ---------------------- -->
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Question Administrators</title>
+
+</head>
+
+
+<body>
+    <div class="container mt-7">
+        <section class=" w-1 border rounded-2">
+
+            <h2 class="text-center text-primary mt-5">Register Now</h2>
+
+            <b>
+                <p class=" mx-3 text-center text-success fs-4">This is an oppotunity to send-in your input as a seasoned
+                    teacher. </p>
+            </b>
+            <form action="">
+                <input type="email" name="adminemail" id="adminemail"
+                    class="d-block text-center w-50 mx-auto mb-1 no-outline rounded-pill border p-1"
+                    placeholder="myemail@example.com" autocomplete="email">
+                <input type="password" name="adminpwd" id="adminpwd"
+                    class="d-block text-center w-50 mb-1 mx-auto no-outline rounded-pill border p-1"
+                    placeholder="Password" autocomplete="current-password">
+                <input type="password" name="adminpwd2" id="adminpwd2"
+                    class="d-block text-center w-50 mb-1 mx-auto no-outline rounded-pill border p-1"
+                    placeholder="Confirm Password" autocomplete="current-password">
+                <p class="res text-center"></p>
+                <button type="button"
+                    class="btn  border-black border d-block mx-auto w-2 mb-3 submitAdmin fs-5">Submit</button>
+            </form>
+
+        </section>
+
+        <!-- SECTION 2 -->
+        <div class="hide">
+            <div class="d-flex mx-auto mt-3">
+                <button title="PREVIOUS" type="button" class="btn border-0 btn-secondary opacity-50 prev btnPrev"><span
+                        class="fas fa-chevron-left fs-1"><span></button>
+                <section class=" rounded-2 mx-auto w-50">
+                    <div class="text-center">
+                        <h4>Picture Stories</h4>
+                        <img src="/images/finAcct.jpeg" alt="" class="w-50 m-auto rounded-2 mt-1 mb-1 imgstart">
+
+                        <img src="/images/Free_face.jpg" alt="" class="w-50 m-auto rounded-2 mt-1 mb-1 hide imgstory">
+                        <img src="/images/img001.jpg" alt="" class="w-50 m-auto rounded-2 mt-1 mb-1 hide imgstory">
+                        <img src="/images/Ogedengbe Eniolorunfe Theophilus passport.jpg" alt=""
+                            class="w-25 m-auto rounded-2 mt-1 mb-1 hide imgstory">
+                        <img src="/images/waec-2024.jpg" alt="" class="w-50 m-auto rounded-2 mt-1 mb-1 hide imgstory">
+                    </div>
+
+                </section>
+                <button title="NEXT" type="button"
+                    class="btn btn-secondary opacity-50 border-0 next next1 next2 next3 next4"><span
+                        class="fas fa-chevron-right fs-1"><span></button>
+            </div>
+        </div>
+
+        <section class="w-1 hide border border-1 border-black mt-2 rounded-2">
+            <form action="">
+
+
+                <button type="button" class="btn d-block mx-auto w-50 mb-3 submitAdmin">Submit</button>
+            </form>
+        </section>
+    </div>
+
+
+
+    <script src="/Qstn-Admin/admin.js"></script>
+</body>
+
+</html>

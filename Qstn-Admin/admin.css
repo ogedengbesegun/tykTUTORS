@@ -1,0 +1,14 @@
+.submitAdmin:hover {
+  background-color: aqua;
+  color: red;
+}
+
+section:nth-child(1) {
+  background-image: url(/images/software-development-6523979_640.jpg);
+
+  /* background-size:250px; */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+

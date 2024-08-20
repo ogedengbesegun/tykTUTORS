@@ -2484,6 +2484,23 @@ if (fina) {
 }
 
 
+// signAdmin
+let adminSign = document.querySelector(".adminSign");
+
+
+if (adminSign) {
+    adminSign.addEventListener("click", () => {
+        let adminURL = "http://127.0.0.1:5501/Qstn-Admin/admin.html";
+
+        window.open(adminURL);
+    });
+
+}
+// --------------------------------------------
+
+
+
+
 // close the subject page when any subject is clicked
 
 let subsList = document.querySelectorAll(".subsList")
@@ -2647,7 +2664,6 @@ if (closeUp) {
         subjResultLogin.style.display = "none"
     })
 }
-
 
 
 

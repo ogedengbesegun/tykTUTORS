@@ -60,3 +60,35 @@ th {
 .text-purple {
   color: rgb(255, 0, 255);
 }
+
+.no-outline {
+  outline: none;
+}
+
+/* grid  template columns */
+.d-grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.d-grid-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.d-grid-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+/* ------------------------------------- */
+
+/* just for class usage to focus cursor:pointer */
+.cursor {
+  cursor: pointer;
+}
+
+.mt-6 {
+  margin-top: 96px;
+}
+
+.mt-7 {
+  margin-top: 100px;
+}
