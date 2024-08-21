@@ -7,21 +7,21 @@ let imgstory = document.querySelectorAll(".imgstory");
 
 let nextone = document.querySelector(".next1")
 
-next.addEventListener("click", next1);
-nextone.addEventListener("click", next2)
+// next.addEventListener("click", next1);
+// nextone.addEventListener("click", next2)
 
-function next1() {
-    imgstory[0].classList.remove("hide")
-    imgstart.classList.add("hide");
-    // this.classList.remove()
-}
-function next2() {
-    imgstory[0].classList.add("hide")
+// function next1() {
+//     imgstory[0].classList.remove("hide")
+//     imgstart.classList.add("hide");
+//     // this.classList.remove()
+// }
+// function next2() {
+//     imgstory[0].classList.add("hide")
 
-    imgstory[1].classList.remove("hide")
+//     imgstory[1].classList.remove("hide")
 
 
-}
+// }
 
 
 

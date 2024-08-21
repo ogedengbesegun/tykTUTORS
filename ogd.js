@@ -2424,9 +2424,13 @@ let printMyResult = document.querySelector(".printMyResult")
 if (printMyResult) {
     printMyResult.addEventListener("click", () => {
         let scoreSheet = document.querySelector(".scoreSheet")
+        printMyResult.style.display = "none";
 
         scoreSheet = print();
 
+
+        // setTimeout(() => {
+        // }, 5000);
     });
 }
 
@@ -2492,11 +2496,19 @@ if (adminSign) {
     adminSign.addEventListener("click", () => {
         let adminURL = "http://127.0.0.1:5501/Qstn-Admin/admin.html";
 
-        window.open(adminURL);
+        window.open(adminURL, "admin");
     });
 
 }
 // --------------------------------------------
+// picture Stories-------------
+let picture = document.querySelector(".picture");
+if (picture) {
+    picture.addEventListener("click", () => {
+        let pictureURL = "http://127.0.0.1:5501/pictureStories/stories.html"
+        window.open(pictureURL, "stories")
+    })
+}
 
 
 
@@ -2645,25 +2657,19 @@ neco.addEventListener("click", () => {
 // ------------------------------------------------
 
 
-// show Login Details to be able to print result
-const subjResultLogin = document.querySelector(".subjResultLogin")
-const PrintResults = document.querySelector(".PrintResults");
-if (PrintResults) {
-    PrintResults.addEventListener("click", () => {
+// // show Login Details to be able to print result
+// const subjResultLogin = document.querySelector(".subjResultLogin")
+// const PrintResults = document.querySelector(".PrintResults");
+// if (PrintResults) {
+//     PrintResults.addEventListener("click", () => {
 
-        subjResultLogin.style.display = "block"
-        document.querySelector(".menuList").style.display = "none";
+//         subjResultLogin.style.display = "block"
+//         document.querySelector(".menuList").style.display = "none";
 
-    })
-};
+//     })
+// };
 
-// closeUp the login dialog page
-const closeUp = document.querySelector('.closeUp')
-if (closeUp) {
-    closeUp.addEventListener('click', () => {
-        subjResultLogin.style.display = "none"
-    })
-}
+
 
 
 

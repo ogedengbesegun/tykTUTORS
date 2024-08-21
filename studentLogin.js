@@ -1,9 +1,10 @@
+// document.querySelector(".start").disabled = true;
 document.querySelector(".start").disabled = true;
 
 let Nohide = document.querySelector(".No-hide");
 Nohide.style.display = "none";
 
-// turn hide4login class to Array-like object
+// turn hide4login class to Array-like object and hide ALL
 
 let hide4login = document.querySelectorAll(".hide4login")
 
@@ -25,7 +26,7 @@ document.querySelector(".login #passwd").setAttribute("maxlength", 9)
 
 
 var xhttp1 = new XMLHttpRequest();
-xhttp1.onreadystatechange = function () {
+xhttp1.onreadystatechange = ()=> {
 
 
 

@@ -173,5 +173,24 @@ if (homePage) {
 }
 
 
+// show Login Details to be able to print result
+const subjResultLogin = document.querySelector(".subjResultLogin")
+const PrintResults = document.querySelector(".PrintResults");
+if (PrintResults) {
+    PrintResults.addEventListener("click", () => {
+
+        subjResultLogin.style.display = "block"
+        document.querySelector(".menuList").style.display = "none";
+
+    })
+};
+
+// closeUp the login dialog page
+const closeUp = document.querySelector('.closeUp')
+if (closeUp) {
+    closeUp.addEventListener('click', () => {
+        subjResultLogin.style.display = "none"
+    })
+};
 
 
