@@ -165,7 +165,7 @@ let homePage = document.querySelector(".homePage");
 
 if (homePage) {
     homePage.addEventListener("click", () => {
-        let myHomeURL = "http://127.0.0.1:5501/ogd.html"
+        let myHomeURL = "/ogd.html"
         window.open(myHomeURL, "ogd");
         window.location = close();
 

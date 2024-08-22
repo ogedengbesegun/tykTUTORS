@@ -2423,14 +2423,15 @@ function showResult() {
 let printMyResult = document.querySelector(".printMyResult")
 if (printMyResult) {
     printMyResult.addEventListener("click", () => {
-        let scoreSheet = document.querySelector(".scoreSheet")
+        // let scoreSheet = document.querySelector(".scoreSheet")
+
+
+        print()
+        // print();
         printMyResult.style.display = "none";
 
-        scoreSheet = print();
 
 
-        // setTimeout(() => {
-        // }, 5000);
     });
 }
 
@@ -2494,7 +2495,7 @@ let adminSign = document.querySelector(".adminSign");
 
 if (adminSign) {
     adminSign.addEventListener("click", () => {
-        let adminURL = "http://127.0.0.1:5501/Qstn-Admin/admin.html";
+        let adminURL = "/Qstn-Admin/admin.html";
 
         window.open(adminURL, "admin");
     });
@@ -2505,7 +2506,7 @@ if (adminSign) {
 let picture = document.querySelector(".picture");
 if (picture) {
     picture.addEventListener("click", () => {
-        let pictureURL = "http://127.0.0.1:5501/pictureStories/stories.html"
+        let pictureURL = "/pictureStories/stories.html"
         window.open(pictureURL, "stories")
     })
 }
@@ -2657,6 +2658,41 @@ neco.addEventListener("click", () => {
 // ------------------------------------------------
 
 
+
+// sites under Constructions
+// printall
+// contacts
+let printall = document.querySelector(".printall");
+let contacts = document.querySelector(".contacts");
+let dlcontacts = document.querySelector(".dlcontacts");
+let contactsok = document.querySelector(".contactsok");
+if (contacts) {
+    contacts.addEventListener("click", () => {
+
+        dlcontacts.showModal();
+        // document.querySelector(".menuList").style.display = "none";
+
+    })
+}
+
+// close the dialog 
+if (contactsok) {
+    contactsok.addEventListener("click", () => {
+
+        dlcontacts.close();
+    })
+};
+
+// printall is under contruction too
+if (printall) {
+    printall.addEventListener(".click", () => {
+        dlcontacts.showModal();
+    })
+}
+
+
+
+
 // // show Login Details to be able to print result
 // const subjResultLogin = document.querySelector(".subjResultLogin")
 // const PrintResults = document.querySelector(".PrintResults");
@@ -2707,8 +2743,9 @@ $(document).ready(function () {
         // hide nav element for me
         $(this).hide(200);
 
-        // one the mouseleave it should close it 
-        // $(".li").hide()
+        $(".contactsok").click();
+
+
     });
 
     $(".icon-menuList, .icon-close").click(function () {
