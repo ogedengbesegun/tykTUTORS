@@ -19,8 +19,8 @@ footer {
 /* picdisplay */
 .picdisplay {
 
-  height: 20%;
-  line-height: 20%;
+  height: 8%;
+  line-height: 8%;
 }
 
 @media (min-width: 576px) {
