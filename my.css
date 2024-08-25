@@ -96,3 +96,66 @@ th {
 .mt-8 {
   margin-top: 116px;
 }
+/* bg */
+.bg-darkgray {
+  background-color: darkgray;
+}
+
+@media (min-width: 576px) {
+  /* .container-sm, .container {
+    max-width: 540px;
+  } */
+}
+
+/* device screen resolution greather than 768(tablet)  */
+@media (min-width: 768px) {
+  /* .container-md, .container-sm, .container {
+    max-width: 720px;
+  } */
+}
+@media (min-width: 992px) {
+  /* .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  } */
+}
+@media (min-width: 1200px) {
+  /* .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  } */
+}
+@media (min-width: 1400px) {
+  /* .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  } */
+}
+
+/* 2# for Screen resolutions */
+@media (max-width: 576px) {
+  /* .container-sm, .container {
+    max-width: 540px;
+  } */
+}
+
+/* device screen resolution less than 768(tablet)  */
+@media (max-width: 768px) {
+  /* .container-md, .container-sm, .container {
+    max-width: 720px;
+  } */
+}
+@media (max-width: 992px) {
+  /* screen less than 992px */
+
+  /* .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  } */
+}
+@media (max-width: 1200px) {
+  /* .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  } */
+}
+@media (max-width: 1400px) {
+  /* .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  } */
+}

@@ -2663,17 +2663,24 @@ neco.addEventListener("click", () => {
 // printall
 // contacts
 let printall = document.querySelector(".printall");
+// printall.textContent = "working"
 let contacts = document.querySelector(".contacts");
 let dlcontacts = document.querySelector(".dlcontacts");
 let contactsok = document.querySelector(".contactsok");
 if (contacts) {
     contacts.addEventListener("click", () => {
 
-        dlcontacts.showModal();
+        // dlcontacts.showModal();
+        showmodal();
         // document.querySelector(".menuList").style.display = "none";
 
     })
 }
+// declare the function for showModal()
+function showmodal() {
+    dlcontacts.showModal();
+}
+
 
 // close the dialog 
 if (contactsok) {
@@ -2685,10 +2692,21 @@ if (contactsok) {
 
 // printall is under contruction too
 if (printall) {
-    printall.addEventListener(".click", () => {
-        dlcontacts.showModal();
+    printall.addEventListener("click", () => {
+        // dlcontacts.showModal();
+        showmodal();
     })
 }
+
+
+// prevent Duplicate Page Load
+if (window.name !== "pageLoaded") {
+    window.name = "pageLoaded";
+}
+else {
+    window.close();
+};
+// ------------------------------------
 
 
 
