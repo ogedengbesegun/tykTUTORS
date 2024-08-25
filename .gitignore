@@ -1,4 +1,6 @@
-/subjectsJSON
+subjectsJSON/
 .env
 bootstrap.bundle.js
 bootstrap.css
+node_modules/
+studentLogin.subjectsJSON
