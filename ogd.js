@@ -2477,6 +2477,14 @@ if (engl) {
     })
 }
 
+//  2 Mathematics
+let math = document.querySelector(".math")
+let mathURL = "/allSubjects/mathematics.html";
+if (math) {
+    math.addEventListener('click', () => {
+        window.open(mathURL, "mathematics")
+    });
+}
 
 
 //  2 Financial Accounting
@@ -2700,12 +2708,12 @@ if (printall) {
 
 
 // prevent Duplicate Page Load
-if (window.name !== "pageLoaded") {
-    window.name = "pageLoaded";
-}
-else {
-    window.close();
-};
+// if (window.name !== "pageLoaded") {
+//     window.name = "pageLoaded";
+// }
+// else {
+//     window.close();
+// };
 // ------------------------------------
 
 
