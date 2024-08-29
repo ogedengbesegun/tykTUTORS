@@ -57,100 +57,87 @@ xhttp1.onreadystatechange = () => {
 
 }
 
-xhttp1.open("GET", "/studentLogin.json", true);
+xhttp1.open("GET", "/subjectsJSON/studentLogin.json", true);
 xhttp1.send();
 
 
 
 
+let logid = document.querySelector('#logid')
+
+
+let passwd = document.querySelector('#passwd')
+
 function Login() {
 
-    let attribute = document.querySelector(".start")
-    attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
+    // let attribute = document.querySelector(".start")
+    // attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
 
-
+    let invalidmsg = document.querySelector(".invalidmsg");
+    let okclose = document.querySelector(".okclose");
+    // -------------------------------------------------
     var response1 = JSON.parse(xhttp1.responseText)
 
+    for (let i = 0; i < response1.class1A.length; i++) {
+
+        // ------------------------------------
+
+        if ((logid.value === `${response1.class1A[i].ID}`) && (passwd.value === `${response1.class1A[i].password}`)
+        ) {
 
 
 
+            // the attributes needs to change as login becomes successful
+            let attribute = document.querySelector(".start")
 
-    let class1AID0 = response1.class1A[0].ID
-    let class1APasswd0 = response1.class1A[0].password
-    let class1APicture0 = response1.class1A[0].picture
-
-    let class1AID1 = response1.class1A[1].ID
-    let class1APasswd1 = response1.class1A[1].password
-    let class1APicture1 = response1.class1A[1].picture
+            attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
 
 
-    let logid = document.querySelector('#logid')
+            // alert("The login is successful")
+            let profilePic = document.querySelector(".img001")
+
+            profilePic.setAttribute("src", `${response1.class1A[i].picture}`)
 
 
-    let passwd = document.querySelector('#passwd')
+            // These events are fired after the login is done
+            document.querySelector(".start").disabled = false;
+            // ----------------------------------------------
 
-    // for testing purposes
-    logid.value = class1AID1
-    passwd.value = class1APasswd1
-
-    // ----------------------
+            Arrayhide4login[0].style.display = "block";
 
 
 
+            Nohide.style.display = "block"
 
-    if ((logid.value == class1AID0) && (passwd.value == class1APasswd0)
-    ) {
+            document.querySelector(".login").style.display = "none"
 
-        // alert("The login is successful")
-        let profilePic = document.querySelector(".img001")
+            let reportName = document.querySelector(".reportName")
 
-        profilePic.setAttribute("src", class1APicture0)
-
-
-        // These events are fired after the login is done
-        document.querySelector(".start").disabled = false;
-        // ----------------------------------------------
-
-        Arrayhide4login[0].style.display = "block";
+            reportName.textContent = "Name: " + " " + (response1.class1A[i].firstName + " " + response1.class1A[i].lastName).toUpperCase();
 
 
-
-        Nohide.style.display = "block"
-
-        document.querySelector(".login").style.display = "none"
-
-        let reportName = document.querySelector(".reportName")
-
-        reportName.textContent = "Name: " + " " + (response1.class1A[0].firstName + " " + response1.class1A[0].lastName).toUpperCase();
+            // the dialog is secretly opened, so close it up 
+            invalidmsg.close();
 
 
-    }
-    else if ((logid.value == class1AID1) && (passwd.value == class1APasswd1)) {
-        let profilePic = document.querySelector(".img001")
+            break
+        }
+        else {
+            invalidmsg.showModal();
 
-        profilePic.setAttribute("src", class1APicture1)
+            okclose.addEventListener("click", () => {
+                invalidmsg.close();
+                logid.value = ""
+                passwd.value = ""
+                // window.location.reload()
+            })
+        }
 
 
-        document.querySelector(".start").disabled = false;
-
-        Arrayhide4login[0].style.display = "block";
-
-
-
-        Nohide.style.display = "block"
-
-        document.querySelector(".login").style.display = "none"
-
-        let reportName = document.querySelector(".reportName")
-
-        reportName.textContent = "Name: " + " " + (response1.class1A[1].firstName + " " + response1.class1A[1].lastName).toUpperCase();
 
     }
 
 
-    else {
-        alert("Please Enter Valid ID and Password")
-    }
 }
 
 
@@ -170,7 +157,7 @@ $(document).ready(function () {
     // buttonX close
     $(".buttonX").click(function () {
         $(".scoreSheetHead").hide();
-        // window.location.reload();
+        window.location.reload();
     });
 
     $(".buttonX").mouseenter(function () {

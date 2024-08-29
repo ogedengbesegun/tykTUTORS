@@ -14,7 +14,20 @@
       "lastName": "Harry",
       "password": "benson002",
       "picture": "http://127.0.0.1:5501/images/Ogedengbe Eniolorunfe Theophilus passport.jpg"
+    },
+    {
+      "ID": "ABSHS003",
+      "firstName": "ogedengbe",
+      "lastName": "segun",
+      "password": "segun003",
+      "picture": "http://127.0.0.1:5501/images/img001.jpg"
+    },
+    {
+      "ID": "ABSHS004",
+      "firstName": "ogedengbe",
+      "lastName": "sade",
+      "password": "sade004",
+      "picture": "http://127.0.0.1:5501/images/img001.jpg"
     }
   ]
 }
-

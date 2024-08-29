@@ -14,6 +14,7 @@
 
 
     <link rel="stylesheet" href="/css/ogd.css">
+    <link rel="stylesheet" href="/css/my.css">
     <link rel="shortcut icon" href="/images/finAcct.jpeg" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
@@ -149,6 +150,16 @@
                         <label for="passwd"></label><input type="password" name="passwd" id="passwd"
                             class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline" placeholder="Password"
                             autocomplete="current-password">
+
+                        <!-- a dialog to display error msg -->
+                        <dialog class=" border-0 mx-auto mt-8 rounded-2 invalidmsg">
+                            <h6 class="text-danger p-2 m-2">Oops! Invalid input</h6>
+                            <button type="button" class="btn btn-light mb-3 okclose">
+                                OK
+                            </button>
+
+                        </dialog>
+                        <!-- ------- -->
                         <button type="button" class="btn btn-warning mx-auto w-50 mt-3 d-block rounded-pill my-2"
                             onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
                         <small class="text-danger forgotPwd cursor">forgot password ?</small>
