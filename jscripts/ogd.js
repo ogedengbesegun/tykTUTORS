@@ -2426,13 +2426,17 @@ if (printMyResult) {
         // let scoreSheet = document.querySelector(".scoreSheet")
 
 
-        print()
         // print();
-        printMyResult.style.display = "none";
+        printMyResult.style.opacity = 0;
+        setTimeout(() => {
+            print()
+
+        }, 1000);
 
 
 
     });
+
 }
 
 // --------------------------------------------------------------
@@ -2619,7 +2623,7 @@ if (timeStamp) {
 let signUp = document.querySelector(".sign-up");
 if (signUp) {
     signUp.addEventListener("click", () => {
-        let url = "/signUp.html";
+        let url = "/html/signUp.html";
         window.open(url, "blank");
     })
 };
@@ -2706,6 +2710,8 @@ if (printall) {
     })
 }
 
+
+console.log(window.innerHeight / 5 * 4)
 
 // prevent Duplicate Page Load
 // if (window.name !== "pageLoaded") {

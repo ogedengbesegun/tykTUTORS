@@ -26,7 +26,7 @@ document.querySelector(".login #passwd").setAttribute("maxlength", 9)
 
 
 var xhttp1 = new XMLHttpRequest();
-xhttp1.onreadystatechange = ()=> {
+xhttp1.onreadystatechange = () => {
 
 
 
@@ -193,6 +193,7 @@ $(document).ready(function () {
 
         $(".hide4login:nth-child(2)").show();
         $(".No-hide").hide()
+        $(".present-Qst").val() = 1;
 
     })
 

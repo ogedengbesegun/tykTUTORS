@@ -165,8 +165,8 @@ let homePage = document.querySelector(".homePage");
 
 if (homePage) {
     homePage.addEventListener("click", () => {
-        let myHomeURL = "/ogd.html"
-        window.open(myHomeURL, "ogd");
+        let myHomeURL = "/index.html"
+        window.open(myHomeURL, "index");
         window.location = close();
 
     });
