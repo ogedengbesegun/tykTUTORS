@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/css/ogd.css">
     <link rel="stylesheet" href="/css/my.css">
+    <link rel="stylesheet" href="/css/fina.css">
     <link rel="shortcut icon" href="/images/finAcct.jpeg" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
@@ -82,7 +83,7 @@
 
 
 
-    <nav class="hide menuList bg-info  w-50 p-3 rounded-1 z-3 position-fixed top-0 ms-1">
+    <nav class="hide menuList bg-info p-3 rounded-1 z-3 position-fixed top-0 ms-1">
         <div class="rounded-2 mt-4">
 
             <button type="button" title="Close" class=" fs-4 btn border-0 icon-close "><span
@@ -102,11 +103,17 @@
                     Questions ?</li> -->
                 <li class="btn btn-danger mb-2  PrintResults text-nowrap "><span class="fas fa-print me-1"></span>Print
                     Results?</li>
-                <li class=" btn btn-warning mb-2 m waec"><a href="https://www.waecdirect.org/" rel="noopener"
-                        target="_blank" class="text-light text-nowrap waec">WAEC Result Checker</a> </li>
-                <li class="btn btn-warning neco"><a href="https://results.neco.gov.ng/" rel="noopener" target="_blank"
-                        class="text-light neco">NECO Result
-                        Checker</a></li>
+                <!-- <li class=" btn  waec-bg bg-light mb-2 waec"><a href="https://www.waecdirect.org/" rel="noopener"
+                        target="_blank" class="text-nowrap waec"><small class="ms-4 ">WAEC
+                            Result
+                            Checker</small></a> </li>
+                <li class="btn neco-bg bg-light neco"><a href="https://results.neco.gov.ng/" rel="noopener"
+                        target="_blank" class="neco"><small class="ms-4">NECO Result
+                            Checker</small></a></li> -->
+                <li class=" btn waec-bg bg-light mb-2 waec" title="Check WAEC Result"><small class="ms-4 hover">WAEC
+                        Result Checker</small> </li>
+                <li class="btn neco-bg bg-light neco"><small class="ms-4 hover">NECO Result
+                        Checker</small></li>
 
 
             </ul>
@@ -153,8 +160,9 @@
 
                         <!-- a dialog to display error msg -->
                         <dialog class=" border-0 mx-auto mt-8 rounded-2 invalidmsg">
-                            <h6 class="text-danger p-2 m-2">Oops! Invalid input</h6>
-                            <button type="button" class="btn btn-light mb-3 okclose">
+                            <h6 class="text-danger p-2 m-2">Oops! Invalid input <span
+                                    class="fas fa-exclamation-triangle fs-4"></span></h6>
+                            <button type="button" class="btn btn-danger mb-3 okclose">
                                 OK
                             </button>
 
@@ -188,7 +196,7 @@
 
                         </dialog>
                     </form>
-                    <a href="/signUp.html">
+                    <a href="/html/signUp.html">
                         <p class="text-light mt-1">Sign Up <span class="fas fa-right-to-bracket"></span></p>
                     </a>
                 </div>

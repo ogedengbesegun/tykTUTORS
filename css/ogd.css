@@ -9,7 +9,6 @@
   padding: 0;
 }
 
-
 fieldset,
 legend,
 button,
@@ -364,4 +363,23 @@ button[title="Previous Question"]:hover {
   margin-top: 100px;
 }
 
-/* dlcontacts */
+/*----------- */
+
+/* creating | waec logo */
+.waec-bg {
+  background-image: url(/images/waec-2024.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position-x: center; */
+}
+/* ------------------------- */
+/* creating |neco logo */
+.neco-bg {
+  background-image: url(/images/neco-logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hover:hover{
+  color: #1a02f3;
+}

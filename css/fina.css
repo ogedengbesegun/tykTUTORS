@@ -1,0 +1,10 @@
+.waec-bg {
+  background-image: url(/images/waec-2024.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position-x: center; */
+}
+
+.focus-light:focus {
+  background-color: silver;
+}
