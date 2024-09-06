@@ -1,4 +1,9 @@
 
+// this is a window object to get screen width of the user
+console.log(window.screen.width);
+// this will get you the user's screen height
+console.log(window.screen.height);
+
 
 // 1. configure the input elemnts to accept only number values
 document.querySelector(".input-Val").addEventListener('input', function (e) {
@@ -10,12 +15,47 @@ document.querySelector(".input-Val").addEventListener('input', function (e) {
 })
 
 // 2. set the input password to maxLenght 10
-document.querySelector("input[type = 'password']").setAttribute("maxlength", 15)
+let limitPwds = document.querySelectorAll("input[type = 'password']");
+limitPwds.forEach(limitPwd => {
+    limitPwd.setAttribute("maxlength", 15);
+});
+
 
 // 3.capitalise input text for firstName & lastName
 document.querySelector("#regfirstName").style.textTransform = "capitalize";
 document.querySelector(" #reglastName").style.textTransform = "capitalize";
 
+
+// validate the form input
+let regPassword = document.querySelector("#regPassword");
+let regPassword2 = document.querySelector("#regPassword2")
+
+function sameValue() {
+    regPassword2.addEventListener("focus", () => {
+
+
+        if (regPassword.classList.contains("border-0") && regPassword2.classList.contains("border-0")) {
+            if (regPassword.value == regPassword2.value) {
+                regPassword.classList.remove("border-0");
+                regPassword2.classList.remove("border-0");
+
+                console.log("hey we are the same");
+            }
+            else if (regPassword.value == '' && regPassword2.value == '') {
+                regPassword.value = ""
+                regPassword2.value = ""
+            }
+
+
+        }
+
+
+
+    })
+
+
+}
+sameValue();
 
 // 4 reveal and toggle the password input to reveal the password
 let reveal = document.querySelector(".reveal")
@@ -42,6 +82,7 @@ reveal.addEventListener("click", () => {
 let closeSignUp = document.querySelector(".closeSignUp")
 closeSignUp.addEventListener("click", () => {
     window.close();
+    // window.back();
 });
 
 // hover to change element appearance

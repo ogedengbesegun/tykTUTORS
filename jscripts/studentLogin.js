@@ -19,8 +19,8 @@ hide4login.forEach(eachhide4login => {
 
 
 // set the login class input attribute of maxlength t0 9 for security reasons
-document.querySelector(".login #logid").setAttribute("maxlength", 9);
-document.querySelector(".login #passwd").setAttribute("maxlength", 9)
+document.querySelector(".studentlogin #logid").setAttribute("maxlength", 9);
+document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
 
 
 
@@ -109,7 +109,7 @@ function Login() {
 
             Nohide.style.display = "block"
 
-            document.querySelector(".login").style.display = "none"
+            document.querySelector(".studentlogin").style.display = "none"
 
             let reportName = document.querySelector(".reportName")
 
@@ -120,7 +120,7 @@ function Login() {
             invalidmsg.close();
 
 
-            break
+            break;
         }
         else {
             invalidmsg.showModal();
@@ -180,7 +180,7 @@ $(document).ready(function () {
 
         $(".hide4login:nth-child(2)").show();
         $(".No-hide").hide()
-        $(".present-Qst").val() = 1;
+        // $(".present-Qst").val() = 1;
 
     })
 

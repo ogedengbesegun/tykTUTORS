@@ -2348,7 +2348,7 @@ function start() {
             qstnHide.forEach(qstnHid2 => {
                 qstnHid2.style.display = "none";
 
-                document.querySelector(".login").style.display = "block";
+                document.querySelector(".studentlogin").style.display = "block";
 
             });
 
@@ -2725,17 +2725,6 @@ console.log(window.innerHeight / 5 * 4)
 
 
 
-// // show Login Details to be able to print result
-// const subjResultLogin = document.querySelector(".subjResultLogin")
-// const PrintResults = document.querySelector(".PrintResults");
-// if (PrintResults) {
-//     PrintResults.addEventListener("click", () => {
-
-//         subjResultLogin.style.display = "block"
-//         document.querySelector(".menuList").style.display = "none";
-
-//     })
-// };
 
 
 

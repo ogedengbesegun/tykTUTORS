@@ -45,6 +45,10 @@ th {
   all: revert;
 }
 
+.man {
+  border: 2px solid green;
+}
+
 .d-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 4fr);
@@ -127,8 +131,6 @@ th {
 .top-4 {
   top: 56px;
 }
-
-
 
 /* media Query */
 @media (min-width: 576px) {

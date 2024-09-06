@@ -35,17 +35,37 @@ let admin = [{
     password: "admin"
 },
 {
-    email: "wisdomworld28608@yahoo.com",
+    email: "wisdomworld",
     password: "admin"
 }]
+
+
+
+
+
 // declare the variables for the object
 let adminEmail = document.querySelector("#adminemail");
 let adminpwd = document.querySelector("#adminpwd");
 let adminpwd2 = document.querySelector("#adminpwd2");
 
 let submitAdmin = document.querySelector(".submitAdmin")
-let response = document.querySelector(".res");
+let res = document.querySelector(".res");
 let section = document.querySelector("section")
+
+// set the adminpwd to have an Attribute of maxlength
+let adminPwds = document.querySelectorAll("input[type=password]");
+adminPwds.forEach(adminPwdEach => {
+    adminPwdEach.setAttribute("maxlength", "15");
+})
+// =================================================
+
+// make all the placeholder to color in green
+let inputPlaceholders = document.querySelectorAll("input[placeholder]");
+inputPlaceholders.forEach(inputPlaceholder => {
+    inputPlaceholder.style.color = "green"
+});
+
+// email-input validation to ensure
 
 
 submitAdmin.addEventListener("click", () => {
@@ -54,10 +74,15 @@ submitAdmin.addEventListener("click", () => {
     adminpwd.addEventListener("focus", () => {
         adminpwd.style.color = "black";
         adminpwd2.style.color = "black";
-        response.textContent = ""
+        res.textContent = ""
+
+
+        // if (!(adminEmail.hasAttribute("type", "email"))) {
+        //     alert("This is NOT an email input")
+        // }
     })
 
-    // creatElement to append into the response node
+    // creatElement to append into the res node
     let check = document.createElement("i");
     check.className = "fas fa-check";
     let times = document.createElement("i");
@@ -69,24 +94,26 @@ submitAdmin.addEventListener("click", () => {
         if ((admin[i].email == `${adminEmail.value}`)
             && (admin[i].password == `${adminpwd.value}`)
             && (`${adminpwd.value}` == `${adminpwd2.value}`)) {
-            response.textContent = "Registration Successful "
-            response.style.color = "green";
-            // console.log(response.textContent);
+            res.textContent = "Registration Successful "
+            res.style.color = "green";
+            // console.log(res.textContent);
             adminpwd.style.color = "green";
             adminpwd2.style.color = "green";
 
             // check.style.fontSize = "48px"
-            response.appendChild(check);
+            res.appendChild(check);
             break
 
         }
         else {
             // times.style.fontSize = "48px"
 
-            response.textContent = "Check Password ";
-            response.appendChild(times);
-            response.style.color = "red";
-            // console.log(response.textContent);
+            res.textContent = "Check Password ";
+
+
+            res.appendChild(times);
+            res.style.color = "red";
+            // console.log(res.textContent);
             adminpwd.style.color = "red";
             adminpwd2.style.color = "red";
 
@@ -107,3 +134,36 @@ let adminClose = document.querySelector(".adminClose");
 adminClose.addEventListener("click", () => {
     window.close();
 })
+let toggleeye = document.querySelector(".toggle-eye")
+
+toggleeye.addEventListener("click", () => {
+    if (toggleeye.classList.contains("fa-eye-slash")) {
+        toggleeye.classList.remove("fa-eye-slash");
+        toggleeye.classList.add("fa-eye");
+        toggleeye.classList.remove("text-danger");
+        toggleeye.style.color = "green";
+        document.querySelector("#adminpwd").setAttribute("type", "text");
+    }
+    else {
+
+
+        toggleeye.classList.add("fa-eye-slash");
+        toggleeye.classList.remove("fa-eye");
+        toggleeye.classList.add("text-danger");
+        document.querySelector("#adminpwd").setAttribute("type", "password")
+
+    }
+
+
+});
+
+// to use form API checkValidity()method and validityMessage property
+// adminEmail.addEventListener("click", () => {
+
+//     if (!adminEmail.checkValidity()) {
+
+//         adminEmail.validityMessage
+//     };
+// })
+
+

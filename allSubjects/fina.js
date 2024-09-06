@@ -13,7 +13,8 @@ const scoreSheetHead = document.querySelector(".scoreSheetHead");
 // loginResult
 const loginR = document.querySelector(".loginR");
 // to get the dialog element with class dialog
-let dialog = document.querySelector(".dialog");
+let dialog7 = document.querySelector(".dialog7");
+
 // to get pwd forgotten input 
 let reEnterPwd = document.querySelector(".reEnterPwd");
 // 
@@ -39,11 +40,18 @@ let showselect = document.querySelector(".showselect")
 
 // --------------------------------------------------
 
+// to make the password input have maxlength of 9 
+subjPwd.setAttribute("maxlength", 9)
 
 
 
 
+
+// this uses the select element value
 subjSelect.addEventListener("click", () => {
+    // dialog7.style.display = "none"
+
+    // 
 
     if (subjSelect.value === "fina") {
 
@@ -61,19 +69,25 @@ subjSelect.addEventListener("click", () => {
             showselect.style.display = "none";
 
             msgUser.textContent = "";
-            // ---------------------------
+            // -----------------------
 
         }, 2000);
 
 
         bell.style.display = "none";
-        // dialog.close();
+
+        dialog7.close();
 
     }
+    else if (subjSelect.value === "Select One") {
+        document.querySelector("option").disabled = true;
+    }
+
     else {
 
 
-        // dialog.show()
+
+        dialog7.show()
         bell.style.color = "red";
         bell.style.display = "inline";
 
@@ -82,6 +96,13 @@ subjSelect.addEventListener("click", () => {
 
 
 });
+
+// subjSelect.addEventListener("mouseenter", () => {
+//     dialog7.style.display = "none"
+
+
+// });
+
 
 // this is to display error msg on on readonly attribute
 
@@ -124,7 +145,7 @@ let logDetail = [{
 //1. onclick class:loginR, button
 loginR.addEventListener("click", () => {
     for (let i = 0; i < logDetail.length; i++) {
-        if ((logDetail[i].id == `${subjId.value}`) && (logDetail[i].pwd == `${subjPwd.value}`)) {
+        if ((logDetail[i].id === `${subjId.value}`) && (logDetail[i].pwd === `${subjPwd.value}`)) {
 
             // to  msg the user
             msgUser.textContent = "Successfully";
@@ -136,7 +157,7 @@ loginR.addEventListener("click", () => {
             // to remove text-danger class from msgUser
             msgUser.classList.remove("text-danger");
 
-            break
+            break;
         }
         else {
 
@@ -181,7 +202,7 @@ if (PrintResults) {
 
         subjResultLogin.style.display = "block"
         document.querySelector(".menuList").style.display = "none";
-
+        // limit password value to 8
     })
 };
 
@@ -192,5 +213,6 @@ if (closeUp) {
         subjResultLogin.style.display = "none"
     })
 };
+
 
 

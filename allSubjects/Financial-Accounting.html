@@ -103,16 +103,10 @@
                     Questions ?</li> -->
                 <li class="btn btn-danger mb-2  PrintResults text-nowrap "><span class="fas fa-print me-1"></span>Print
                     Results?</li>
-                <!-- <li class=" btn  waec-bg bg-light mb-2 waec"><a href="https://www.waecdirect.org/" rel="noopener"
-                        target="_blank" class="text-nowrap waec"><small class="ms-4 ">WAEC
-                            Result
-                            Checker</small></a> </li>
-                <li class="btn neco-bg bg-light neco"><a href="https://results.neco.gov.ng/" rel="noopener"
-                        target="_blank" class="neco"><small class="ms-4">NECO Result
-                            Checker</small></a></li> -->
+
                 <li class=" btn waec-bg bg-light mb-2 waec" title="Check WAEC Result"><small class="ms-4 hover">WAEC
                         Result Checker</small> </li>
-                <li class="btn neco-bg bg-light neco"><small class="ms-4 hover">NECO Result
+                <li class="btn neco-bg bg-light neco" title="Check NECO Result"><small class="ms-4 hover">NECO Result
                         Checker</small></li>
 
 
@@ -124,7 +118,7 @@
 
 
 
-
+    <!-- login Page financial accounting start page -->
     <div class="container">
         <section class="quiz bg-dark p-5 rounded-4 mt-2">
 
@@ -148,15 +142,15 @@
                 </div>
 
 
-                <div class="mx-5 text-bg-primary rounded-3 w-auto my-2 p-2 text-center login">
+                <div class="mx-5 text-bg-primary rounded-3 w-auto my-2 p-2 text-center studentlogin">
                     <form action="">
-                        <h3 class="text-light">Enter Login Details</h3>
-                        <label for="logid"></label><input type="text" name="logid" id="logid"
-                            class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline" placeholder="Enter ID"
-                            autocomplete="userName">
-                        <label for="passwd"></label><input type="password" name="passwd" id="passwd"
-                            class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline" placeholder="Password"
-                            autocomplete="current-password">
+                        <h3 class="text-light">login to Start Exam</h3><span class="fas fa-book-open fs-1"></span>
+                        <input title="Login your ID" type="text" name="logid" id="logid"
+                            class="rounded-2 text-center border-0 mb-2  d-block mx-auto w-50 p-1 no-outline"
+                            placeholder="Enter ID" autocomplete="userName">
+                        <input title="Input your Password" type="password" name="passwd" id="passwd"
+                            class="border-0 rounded-2  text-center d-block mx-auto w-50 p-1 no-outline"
+                            placeholder="Password" autocomplete="current-password">
 
                         <!-- a dialog to display error msg -->
                         <dialog class=" border-0 mx-auto mt-8 rounded-2 invalidmsg">
@@ -168,7 +162,7 @@
 
                         </dialog>
                         <!-- ------- -->
-                        <button type="button" class="btn btn-warning mx-auto w-50 mt-3 d-block rounded-pill my-2"
+                        <button type="button" class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
                             onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
                         <small class="text-danger forgotPwd cursor">forgot password ?</small>
 
@@ -200,12 +194,14 @@
                         <p class="text-light mt-1">Sign Up <span class="fas fa-right-to-bracket"></span></p>
                     </a>
                 </div>
+                <!-- start page end -->
 
+                <!-- question page start -->
                 <div class="qstsAll">
                     <!-- Qstn  1 -->
 
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide No-hide">
-                        <p class="fs-5 p-1 text-center text-light qstn1 ">1</p>
+                        <span class=" fs-3">1.</span> <p class="fs-5 p-1 text-center text-light qstn1 "></p>
 
                         <label for="optn1" class="d-flex mx-2 bg-white rounded-1 mt-2" title="Option A">
                             <input type="radio" id="optn1" class="ms-2 inputValue inputValue1" name="optn1"
@@ -624,7 +620,8 @@
 
         </section>
     </div>
-    </div>
+
+    <!-- Result display page Start-->
     <div class="hide scoreSheetHead">
 
         <!-- <div class="text-center"> -->
@@ -669,7 +666,7 @@
     </div>
 
 
-    <!-- To show login page for students to print result -->
+    <!-- Print Previous Results based on current subject(Finan Acct) -->
     <div class="hide bg-light position-fixed top-0 z-2 w-100 h-100 mx-auto subjResultLogin">
         <!-- <div class="card w-50 mx-auto mt-2 bg-info border-0">
             <p class="text-center mt-2">1. Select a Subject</p>
@@ -682,7 +679,7 @@
 
                 <button type="button" title="close" class="btn btn-primary mb-4 float-end  closeUp"><span
                         class="fas fa-times text-danger"></span></button>
-                <h4 class="text-white pt-5 mx-auto w-75">Enter Login Details </h4>
+                <h4 class="text-white pt-5 mx-auto w-75">Login Details to Print </h4>
                 <form action="">
 
 
@@ -701,10 +698,10 @@
 
 
         <!-- these allows users to select the subject of choice for result viewing -->
-        <div class="hide text-center container showselect">
+        <div class="hide text-center container showselect ">
             <h5 class="text-center text-primary selectSubject">Select Subject </span></h5>
             <select title="Select Subject" name="subjPick" id="subjSelect"
-                class="rounded-1 border-0 no-outline text-bg-info p-1 select">
+                class="rounded-1 border-0 no-outline text-bg-info p-1 select ">
                 <option class="text-bg-primary text-center">Select One</option>
                 <option value="engl">English-Language</option>
                 <option value="math">Mathematics</option>
@@ -726,8 +723,8 @@
 
 
             </select>
-            <dialog class="dialog container border-0 text-center w-50 p-1 rounded-1">
-                <h6 class="text-danger"> Subject Not Found <span class="hide fas fa-warning bell"></span></h6>
+            <dialog class="dialog7 container border-0 text-center w-50 p-1 rounded-1">
+                <h6 class="text-danger"> Select Valid Subject<span class=" fas fa-warning ms-1 fs-2 bell"></span></h6>
             </dialog>
         </div>
     </div>
