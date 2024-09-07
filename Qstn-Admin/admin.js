@@ -47,6 +47,7 @@ let admin = [{
 let adminEmail = document.querySelector("#adminemail");
 let adminpwd = document.querySelector("#adminpwd");
 let adminpwd2 = document.querySelector("#adminpwd2");
+let admintel = document.querySelector("#admintel");
 
 let submitAdmin = document.querySelector(".submitAdmin")
 let res = document.querySelector(".res");
@@ -130,10 +131,13 @@ submitAdmin.addEventListener("click", () => {
 });
 
 // adminClose 
-let adminClose = document.querySelector(".adminClose");
-adminClose.addEventListener("click", () => {
-    window.close();
+let adminClose = document.querySelectorAll(".adminClose");
+adminClose.forEach(adminclose => { //to fireUp all the classes called adminClose
+    adminclose.addEventListener("click", () => {
+        window.close();
+    })
 })
+
 let toggleeye = document.querySelector(".toggle-eye")
 
 toggleeye.addEventListener("click", () => {
@@ -158,12 +162,160 @@ toggleeye.addEventListener("click", () => {
 });
 
 // to use form API checkValidity()method and validityMessage property
-// adminEmail.addEventListener("click", () => {
+document.querySelector(".form").addEventListener('submit', function (event) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(adminEmail.value)) {
 
-//     if (!adminEmail.checkValidity()) {
+        alert('Please enter a valid email address.');   // an alert to warn users
+        adminEmail.value = ""; // set the value back to nothing
+        event.preventDefault(); // Prevent form submission
+    } else {
 
-//         adminEmail.validityMessage
-//     };
-// })
+        document.querySelector(".form").setAttribute("method", ""); // to send to the server into the db
+        confirm("Congratullations, Form Submitted Successfully")
+    }
+});
 
 
+// 1. configure the input elemnts to accept only number values
+admintel.addEventListener('input', function (e) {
+    const value = e.target.value;
+    if (!/^\d*$/.test(value)) {
+        e.target.value = value.replace(/\D/g, '');
+        alert("Enter Valid Phone Numbers eg. (080*****123)")
+    }
+});
+
+
+
+let teacherlogin = document.querySelector(".teacherlogin"); //variable declared
+teacherlogin.setAttribute("disabled", "true"); // make the button notactive
+
+// select thee subject appropriately
+let teacherSub = document.querySelector("#teacherSub"); // variable teacherSub
+
+// decalre 
+let selectedSubject = document.querySelector(".selectedSubject")
+
+teacherSub.addEventListener("click", () => {
+    // teacherSub.value; // onclick remain in your state
+
+    if (teacherSub.value == ">>>Select One") {
+
+        //  = `${teacherSub.value}`;
+        teacherlogin.setAttribute("disabled", "true")
+
+
+    }
+
+    else {
+
+        teacherlogin.removeAttribute("disabled", "true");
+        selectedSubject.textContent = subjectText(); //from the ()=> declared
+
+
+    }
+});// end of teacherSub click event
+
+teacherSub.addEventListener("mouseenter", () => {
+    // teacherSub.style.color = "red"
+    teacherSub.value = ">>>Select One"
+    teacherlogin.setAttribute("disabled", "true")
+    // selectedSubject
+    selectedSubject.textContent = ""; //set to NULL
+});
+// teacherlogin.addEventListener("mouseenter", () => {
+//     // hide the samp element
+// document.querySelector("samp").style.display = "none";
+// });
+
+let adminLogpwd = document.querySelector("#adminLogpwd");
+document.querySelector
+    ("#adminLogtel").setAttribute("maxlength", "11"); // set attribute of maxlength
+adminLogpwd.addEventListener("click", () => {
+    // reveal the samp element
+    document.querySelector("samp").style.display = "block";
+});
+
+adminLogpwd.addEventListener("input", () => {
+    // hide the samp element
+    if (adminLogpwd) {
+        document.querySelector("samp").style.display = "none";
+    }
+
+    else {
+        document.querySelector("samp").style.display = "block";
+
+    }
+
+})
+
+
+
+
+
+
+// write a function the subject selections
+function subjectText() { //declaration of function to change to textContent
+    if (teacherSub.value == "engl") {
+        return "English-Language"
+    }
+    else if (teacherSub.value == "math") {
+        return "Mathematics"
+    }
+    else if (teacherSub.value == "fina") {
+        return "Financial-Accounting"
+    }
+    else if (teacherSub.value == "econ") {
+        return "Economics"
+    }
+    else if (teacherSub.value == "comp") {
+        return "Computer-Studies"
+    }
+    else if (teacherSub.value == "biol") {
+        return "Biology"
+    }
+    else if (teacherSub.value == "phys") {
+        return "Physics"
+    }
+    else if (teacherSub.value == "chem") {
+        return "Chemistry"
+    }
+    else if (teacherSub.value == "furt") {
+        return "Further-Mathematics"
+    }
+    else if (teacherSub.value == "comm") {
+        return "Commerce"
+    }
+    else if (teacherSub.value == "lite") {
+        return "Literature-in-English"
+    }
+    else if (teacherSub.value == "gove") {
+        return "Government"
+    }
+    else if (teacherSub.value == "civi") {
+        return "Civic-Education"
+    }
+    else if (teacherSub.value == "mart") {
+        return "Marketing"
+    }
+    else if (teacherSub.value == "proc") {
+        return "Data-Processing"
+    }
+    else if (teacherSub.value == "anim") {
+        return "Animal-Husbandary"
+    }
+
+    else {
+    }
+}
+// subjectText
+
+
+// signUP
+let signUp = document.querySelector("form .signUp"); //declaration
+signUp.addEventListener("click", function () {
+    document.querySelector(".regSection").classList.remove("hide"); //make visible
+    document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
+
+})

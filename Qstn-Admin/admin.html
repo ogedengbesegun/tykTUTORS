@@ -37,47 +37,57 @@
 
 
 <body>
-    <div class="container mt-7">
-        <section class=" border rounded-2">
+    <div class="container mt-5">
+        <section class="hide border rounded-2 regSection">
             <button type="button" title="close Page" class="float-end adminClose"> <i
                     class="fas fa-times text-danger fs-4"></i></button>
 
 
             <fieldset class=" rounded-2 mt-3 mx-2 my-2 border-light border-2 border p-2 ">
-                <legend class="h4 text-center text-info"><b>Teachers Registeration</b></legend>
+                <legend class="h2 text-center text-info bg-dark p-1 rounded-2 opacity-75"><b>Teachers Registration</b>
+                </legend>
                 <b>
-                    <p class=" mx-3 text-center text-warning h5">This is an oppotunity to send-in your input as a
+                    <p class=" mx-3 text-center w-75 opacity-50 mx-auto text-primary bg-warning rounded-1 p-2">This is
+                        an
+                        oppotunity to send-in your input as a
                         seasoned
                         teacher. </p>
                 </b>
 
-                <form action="" class="text-center form">
+                <form action="" method="" class="text-center p-3 form">
+
+
                     <!-- firstName -->
                     <input title="first Name" type="text"
                         class=" mx-auto w-50 no-outline rounded-pill p-1 text-center border mb-1"
-                        placeholder="First Name">
+                        placeholder="First Name" required>
                     <!-- lastName -->
                     <input title="last Name" type="text"
-                        class="mx-auto w-50 no-outline rounded-pill p-1 text-center border mb-1"
-                        placeholder="Last Name">
+                        class="mx-auto w-50 no-outline rounded-pill p-1 text-center border mb-1" placeholder="Last Name"
+                        required>
                     <!-- email input -->
                     <input type="email" name="adminemail" id="adminemail"
                         class="w-50 mx-auto text-center  mb-1 no-outline rounded-pill border p-1"
-                        placeholder="myemail@example.com" autocomplete="email">
+                        placeholder="myemail@example.com" autocomplete="email" required>
+                    <!-- telephone -->
+                    <input title="Enter your Mobile Number" type="tel" name="admintel" id="admintel"
+                        class="text-center rounded-pill mx-auto w-50 no-outline border mb-1 p-1"
+                        placeholder="Enter Phone Number" maxlength="11" required>
+
                     <!-- password and eyeslashed class  -->
                     <div class="">
                         <input type="password" name="adminpwd" id="adminpwd"
                             class=" w-50 mx-auto text-center  mb-1 no-outline rounded-pill border p-1  gap-2"
-                            placeholder="Password" autocomplete="current-password">
+                            placeholder="Password" autocomplete="current-password" required>
                         <i class="fas fa-eye-slash text-danger neg-ms-1 toggle-eye"></i>
                     </div>
 
 
                     <input type="password" name="adminpwd2" id="adminpwd2"
                         class="mx-auto w-50 text-center mb-1 no-outline rounded-pill border p-1"
-                        placeholder="Confirm Password" autocomplete="current-password">
+                        placeholder="Confirm Password" autocomplete="current-password" required>
                     <p class="res text-center rounded-2 bg-light mx-auto w-50"></p>
-                    <button type="button"
+                    <button type="submit"
                         class="btn  border-black border d-block mx-auto w-2 mb-3 submitAdmin fs-5">Submit</button>
                 </form>
             </fieldset>
@@ -85,14 +95,82 @@
         </section>
 
 
+        <!--  -->
+        <section class=" text-center my-2 rounded-2 d-flex gap-1 loginSection">
+            <div class="card p-2 border-1 border-dark w-50 h-50">
+                <h6 class="text-centre text-bg-primary p-1 rounded-1">Select Subject</h6>
+                <select title="Please Select Subject to include into the Project" name="teacherSub" id="teacherSub"
+                    class="border-2 mb-1">
+                    <option class="text-bg-primary text-center"> >>>Select One</option>
+                    <option value="engl">English-Language</option>
+                    <option value="math">Mathematics</option>
+                    <option value="fina">Financial-Accounting</option>
+                    <option value="econ">Economics</option>
+                    <option value="comp">Computer-Studies</option>
+                    <option value="biol">Biology</option>
+                    <option value="phys">Physics</option>
+                    <option value="chem">Chemistry</option>
+                    <option value="furt">Further-Mathematics</option>
+                    <option value="comm">Commerce</option>
+                    <option value="lite">Literature-in-English</option>
+                    <option value="gove">Government</option>
+                    <option value="civi">Civic-Education</option>
+                    <option value="mart">Marketing</option>
+                    <option value="proc">Data-Processing</option>
+                    <option value="anim">Animal-Husbandry</option>
+                </select>
+                <p class="text-center  text-bg-success opacity-75 p-2 rounded-1 mb-0 mt-auto">
+                    This is
+                    an
+                    oppotunity to send-in your input as a
+                    seasoned
+                    teacher.
+                </p>
 
-        <section class="w-1 hide border border-1 border-black mt-2 rounded-2">
-            <form action="">
+                <!-- <div class="text-bg-info rounded-2 p-1">
+                    <h5>
+                        For Questions and Enquiries
+                    </h5>
+
+                    <span class="fas fa-envelope-open mt-2"></span><p class=""> wisdomworld@gmail.com</p>
+                    <p><span class="fas fa-mobile-screen-button"></span> 08036749218 , 08024779567</p>
+                </div> -->
+            </div>
+
+            <!--  -->
+            <form action="" class="bg-secondary rounded-1 text-center form2 h-25  ">
+                <button type="button" title="close Page" class="float-end adminClose"> <i
+                    class="fas fa-times text-danger fs-4"></i></button>
+                <h2 class="
+                 text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login Platform
+                </h2>
+                <div class="d-block">
+                    <p class="selectedSubject text-center text-light my-1"></p>
+                    <input title="Enter Phone Number" type="tel" id="adminLogtel"
+                        class="no-outline text-center p-1 mb-1 mx-auto w-50" placeholder="Phone Number" required>
+                    <input title="Enter Password" type="password" name="adminLogpwd" id="adminLogpwd"
+                        class=" no-outline text-center p-1 mx-auto  w-50" placeholder="Password" required>
+                    <button title="Click Login Button" type="button"
+                        class="btn btn-secondary w-1 mx-auto my-2 border-primary border-2 fs-5 d-block teacherlogin">Login</button>
+                    <samp class=" hide text-info">
+                        One Subject Must be selected to Login
+                    </samp>
 
 
-                <button type="button" class="btn d-block mx-auto w-50 mb-3 ">Submit</button>
+                </div>
+                <!--  -->
+
+
+                <div class="bg-light border border-2 border-success mx-1 p-1">
+                    <small class="text-danger">Not registered? </small> <br>
+                     <small class="text-success cursor signUp">SignUp</small>
+                </div>
             </form>
+            <!--  -->
+
+
         </section>
+        <!--  -->
     </div>
 
 
