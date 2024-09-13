@@ -37,15 +37,16 @@
 
 
 <body>
-    <header class="d-flex position-fixed top-0 z-2 bg-secondary w-100 p-1">
-        <button type="button" class="btn btn-primary btn-sm btnMenu">Menu</button>
-        <span class="text-light fs-4 fw-bold Mymarquee ms-1">Welcome onboard this Noble
-            Platform</span>
+    <header class="d-flex position-fixed top-0 z-2 bg-dark w-100  py-1">
+        <button title="Menu" type="button" class="btn btn-dark  btnMenu z-2"><span
+                class="bg-light navbar-toggler border-2 border-primary   navbar navbar-toggler-icon"></span></button>
+        <span class="fs-4 fw-bold Mymarquee ms-5 text-nowrap ">Welcome onboard to this Noble
+            Platform for Teachers</span>
         <!-- <h4 class=" ms-1 text-bg-dark p-2 w-75 text-center rounded-2">Teachers' Modules</h4> -->
     </header>
     <!-- dailog for to select login or registration -->
-    <dialog class="text-center  border-0 rounded-2 mt-5 mx-auto logSignToggle ">
-        <h4 class="text-center">Choose One</h4>
+    <dialog class="text-center  border-0 rounded-2 mt-5 mx-auto logSignToggle " size="2">
+        <h4 class="text-center">Login/SignUp</h4>
         <select name="logToggle" id="logToggle" class="mx-auto w-100 mb-1 p-1 bg-light">
             <option value="Login" class="text-center text-success fw-bold">Login</option>
             <option value="SignUp" class="text-center text-success fw-bold">SignUp</option>
@@ -65,8 +66,8 @@
                 <legend class="h2 text-center text-info bg-dark p-1 rounded-2 opacity-75"><b>Teachers Registration</b>
                 </legend>
                 <b>
-                    <p class=" mx-3 text-center w-75 opacity-50 mx-auto text-primary bg-warning rounded-1 p-2">This is
-                        an
+                    <p class=" mx-3 text-center w-75 opacity-50 mx-auto text-primary bg-warning rounded-1 p-2">
+                        This is an
                         oppotunity to send-in your input as a
                         seasoned
                         teacher. </p>
@@ -168,7 +169,8 @@
                 <button type="button" title="close Page" class="float-end adminClose"> <i
                         class="fas fa-times text-danger fs-4"></i></button>
                 <h2 class="
-                 text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login Platform
+                 text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login <i
+                        class="fas fa-key fs-5"></i>
                 </h2>
                 <div class="d-block">
                     <p class="selectedSubject text-center text-light my-1"></p>
@@ -177,7 +179,9 @@
                     <input title="Enter Password" type="password" name="adminLogpwd" id="adminLogpwd"
                         class=" no-outline text-center p-1 mx-auto  w-50" placeholder="Password" required>
                     <button title="Click Login Button" type="button"
-                        class="btn btn-secondary w-1 mx-auto my-2 border-primary border-2 fs-5 d-block teacherlogin">Login</button>
+                        class="btn btn-secondary w-1 mx-auto my-2 border-primary border-2 fs-5 d-block teacherlogin">Login</button><u
+                        class="text-light">
+                        <small class="text-warning fw-bold teaforgotpwd cursor">forgot Password ?</small></u>
                     <samp class=" hide text-info">
                         One Subject Must be selected to Login
                     </samp>
@@ -193,6 +197,29 @@
                 </div>
             </form>
             <!--  -->
+            <!--teacher forgot password ? -->
+
+            <dialog class="reEnterPwd border-0 rounded-2 mt-7 mx-auto">
+                <h3 class="mt-2 text-center text-danger">Forgot Password? <span
+                        class="fas fa-times-circle text-danger float-end me-2 cursor closeDlg"
+                        title="close"></span></h3>
+                <form action="">
+                    <input type="tel" name="reIdOld" id="reIdOld"
+                        class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline" placeholder="Phone Number">
+                    <input type="password" name="repwdNew1" id="repwdNew1"
+                        class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline" placeholder="New Password">
+                    <input type="password" name="repwdNew2" id="repwdNew2"
+                        class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline mb-3"
+                        placeholder="Confirm Password">
+
+                    <button title="Submit" type="submit" class="btn btn-success d-block mx-auto w-50 mb-2">Change
+                        Password</button>
+                </form>
+
+
+
+            </dialog>
+
 
         </section>
 
@@ -200,7 +227,7 @@
         <!--  -->
         <!-- creation of questions for -->
         <section class="createQst">
-            <div class="text-center mt-auto card p-2 bg-secondary">
+            <div class="text-center mt-auto card p-2 textarea">
                 <h4>Subject:</h4>
                 <textarea title="Teachers Question" name="adminQuestion" id="adminQuestion" cols="60" rows="5"
                     placeholder="Type in your Question HERE:"
@@ -218,7 +245,7 @@
                         cols="10" rows="1" maxlength="1"></textarea><br>
                     <dialog class="text-center answerPopup border-0 rounded-1">
                         <strong>
-                            <h6>Instructions</h6>
+                            <h6 class="text-danger">Instructions <i class="d-inline fas fa-warning"></i></h6>
                         </strong>
                         <u class="text-primary">
                             <p class="text-center">Please, let your answer be either a, b, c or d</p>

@@ -27,16 +27,25 @@ let nextone = document.querySelector(".next1")
 
 // declare an object admin
 let admin = [{
+    firstname: "segun",
+    lastname: "ogedengbe",
     email: "wisdomworld28608@gmail.com",
-    password: "admin"
+    phonenumber: "08036749218",
+    password: "admin001"
 },
 {
+    firstname: "sade",
+    lastname: "ogedengbe",
     email: "wisdomworld1201@gmail.com",
-    password: "admin"
+    phonenumber: "08038542690",
+    password: "admin002"
 },
 {
-    email: "wisdomworld",
-    password: "admin"
+    firstname: "eniolorunfe",
+    lastname: "ogedengbe",
+    email: "wisdomworld1234@gmail.com",
+    phonenumber: "09034645647",
+    password: "admin003"
 }]
 
 
@@ -320,13 +329,41 @@ signUp.addEventListener("click", function () {
     document.querySelector(".createQst").style.display = "none"
 });
 
+// use the dialog element
+const logToggle = document.querySelector("#logToggle"); // variable declaration
+
+logToggle.addEventListener("click", () => {
+    if (logToggle.value == "SignUp") {
+        document.querySelector(".regSection").classList.remove("hide"); //make visible
+        document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
+        document.querySelector(".createQst").style.display = "none";
+
+    }
+
+    else if (logToggle.value == "Login") {
+        document.querySelector(".regSection").classList.add("hide"); //make visible
+        document.querySelector(".loginSection").classList.remove("invisible"); //make invinsible
+        document.querySelector(".createQst").style.display = "block";
+
+    }
+});
+// 
+
+
 let txtans = document.querySelector(".txtans"); // this the variable for 
 txtans.addEventListener("input", () => {
-    if (txtans.value == txtans.toUpperCase()) {
+    if (txtans.value === txtans.value.toUpperCase()) {
         // alert("Revert to lowerCase")
-        txtans.value = ""
+        txtans.value = txtans.value.toLowerCase()
     };
-    document.querySelector(".answerPopup").showModal();
+    if (txtans.value === "a" || "b" || "c" || "d") {
+        // document.querySelector(".answerPopup").showModal();
+    }
+    else {
+        txtans.value = " ";
+
+    }
+
     document.querySelector(".answerPopup").addEventListener("click", () => {
         document.querySelector(".answerPopup").close(); //close the dialog onscreen click
 
@@ -335,7 +372,7 @@ txtans.addEventListener("input", () => {
 
 // Starting point menu toggle
 const btnMenu = document.querySelector(".btnMenu"); //variable declaration
-const logSignToggle = document.querySelector(".logSignToggle")
+const logSignToggle = document.querySelector(".logSignToggle");
 
 btnMenu.addEventListener("click", () => {
     logSignToggle.showModal(); //to showModal method
@@ -346,4 +383,20 @@ const teacherClose = document.querySelector(".teacherClose"); //variable
 teacherClose.addEventListener("click", () => { // close onclick
     logSignToggle.close(); // close the modal
 
-}); 
+});
+
+
+// to get teaforgotpwd forgotten input 
+let reEnterPwd = document.querySelector(".reEnterPwd");
+const closeDlg = document.querySelector(".closeDlg");
+const teaforgotpwd = document.querySelector(".teaforgotpwd")
+//1 to open forgotten password dialog
+teaforgotpwd.addEventListener("click", () => {
+    reEnterPwd.showModal();
+
+});
+
+//2 to close the modal showModal forgotten dialog
+closeDlg.addEventListener("click", () => {
+    reEnterPwd.close();
+});

@@ -8,11 +8,36 @@ section:nth-child(1) {
 
   /* background-size:250px; */
   background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 /* this will take an element back to negative left */
 .neg-ms-1 {
   margin-left: -30px;
+}
+ .textarea{
+  background-color: aquamarine;
+
+ }
+
+
+
+.Mymarquee { 
+  color: bisque;
+  display: inline-block;
+  animation: Mymarquee 8s linear infinite;
+}
+
+.reEnterPwd{
+  background-color: rgb(158, 203, 245);
+}
+
+@keyframes Mymarquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
