@@ -1,5 +1,6 @@
 // import { } from 'ogd Profile Page/studentLogin.js'
 
+
 // import { answeredQtns } from '/answers.js'
 
 let text = " ";
@@ -2611,9 +2612,10 @@ function myday() {
 
 
 if (timeStamp) {
-    timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday()
+    let date = new Date()
+    timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday() + " (" + date.toLocaleString() +")";
 
-}
+};
 
 
 

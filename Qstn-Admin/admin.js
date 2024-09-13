@@ -317,5 +317,33 @@ let signUp = document.querySelector("form .signUp"); //declaration
 signUp.addEventListener("click", function () {
     document.querySelector(".regSection").classList.remove("hide"); //make visible
     document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
+    document.querySelector(".createQst").style.display = "none"
+});
 
-})
+let txtans = document.querySelector(".txtans"); // this the variable for 
+txtans.addEventListener("input", () => {
+    if (txtans.value == txtans.toUpperCase()) {
+        // alert("Revert to lowerCase")
+        txtans.value = ""
+    };
+    document.querySelector(".answerPopup").showModal();
+    document.querySelector(".answerPopup").addEventListener("click", () => {
+        document.querySelector(".answerPopup").close(); //close the dialog onscreen click
+
+    });
+});
+
+// Starting point menu toggle
+const btnMenu = document.querySelector(".btnMenu"); //variable declaration
+const logSignToggle = document.querySelector(".logSignToggle")
+
+btnMenu.addEventListener("click", () => {
+    logSignToggle.showModal(); //to showModal method
+});
+
+// to close the showModal method
+const teacherClose = document.querySelector(".teacherClose"); //variable
+teacherClose.addEventListener("click", () => { // close onclick
+    logSignToggle.close(); // close the modal
+
+}); 

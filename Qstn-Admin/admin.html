@@ -37,7 +37,25 @@
 
 
 <body>
-    <div class="container mt-5">
+    <header class="d-flex position-fixed top-0 z-2 bg-secondary w-100 p-1">
+        <button type="button" class="btn btn-primary btn-sm btnMenu">Menu</button>
+        <span class="text-light fs-4 fw-bold Mymarquee ms-1">Welcome onboard this Noble
+            Platform</span>
+        <!-- <h4 class=" ms-1 text-bg-dark p-2 w-75 text-center rounded-2">Teachers' Modules</h4> -->
+    </header>
+    <!-- dailog for to select login or registration -->
+    <dialog class="text-center  border-0 rounded-2 mt-5 mx-auto logSignToggle ">
+        <h4 class="text-center">Choose One</h4>
+        <select name="logToggle" id="logToggle" class="mx-auto w-100 mb-1 p-1 bg-light">
+            <option value="Login" class="text-center text-success fw-bold">Login</option>
+            <option value="SignUp" class="text-center text-success fw-bold">SignUp</option>
+        </select>
+        <button type="button" class="mt-2 mx-auto w-75 btn btn-danger teacherClose">OK</button>
+    </dialog>
+
+
+    <br><br> <!-- To put spacing into the -->
+    <div class="container position-sticky top-0 mt-1">
         <section class="hide border rounded-2 regSection">
             <button type="button" title="close Page" class="float-end adminClose"> <i
                     class="fas fa-times text-danger fs-4"></i></button>
@@ -95,7 +113,8 @@
         </section>
 
 
-        <!--  -->
+        <!--start of the admin Questions for Subjects  -->
+
         <section class=" text-center my-2 rounded-2 d-flex gap-1 loginSection">
             <div class="card p-2 border-1 border-dark w-50 h-50">
                 <h6 class="text-centre text-bg-primary p-1 rounded-1">Select Subject</h6>
@@ -122,11 +141,18 @@
                 <p class="text-center  text-bg-success opacity-75 p-2 rounded-1 mb-0 mt-auto">
                     This is
                     an
-                    oppotunity to send-in your input as a
+                    opportunity to send-in your input as a
                     seasoned
                     teacher.
                 </p>
 
+                <div>
+                    <small class="text-danger border-bottom border-danger">Instructions <span
+                            class="fas fa-warning"></span></small>
+                    <b><small class="d-block text-success">Ensure One of the Subjects is selected before Login is
+                            activated
+                            !!!</small></b>
+                </div>
                 <!-- <div class="text-bg-info rounded-2 p-1">
                     <h5>
                         For Questions and Enquiries
@@ -140,7 +166,7 @@
             <!--  -->
             <form action="" class="bg-secondary rounded-1 text-center form2 h-25  ">
                 <button type="button" title="close Page" class="float-end adminClose"> <i
-                    class="fas fa-times text-danger fs-4"></i></button>
+                        class="fas fa-times text-danger fs-4"></i></button>
                 <h2 class="
                  text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login Platform
                 </h2>
@@ -163,16 +189,81 @@
 
                 <div class="bg-light border border-2 border-success mx-1 p-1">
                     <small class="text-danger">Not registered? </small> <br>
-                     <small class="text-success cursor signUp">SignUp</small>
+                    <small class="text-success cursor signUp">SignUp</small>
                 </div>
             </form>
             <!--  -->
 
-
         </section>
-        <!--  -->
-    </div>
 
+
+        <!--  -->
+        <!-- creation of questions for -->
+        <section class="createQst">
+            <div class="text-center mt-auto card p-2 bg-secondary">
+                <h4>Subject:</h4>
+                <textarea title="Teachers Question" name="adminQuestion" id="adminQuestion" cols="60" rows="5"
+                    placeholder="Type in your Question HERE:"
+                    class="text-center rounded-1 no-outline bg-light"></textarea>
+                <div class="d-block p-1 ">
+                    <textarea placeholder="a." class="no-outline text-center bg-light txta " title="option A" cols="20"
+                        rows="2"></textarea>
+                    <textarea placeholder="b." class="no-outline text-center bg-light txtb" title="option B" cols="20"
+                        rows="2"></textarea>
+                    <textarea placeholder="c." class="no-outline text-center bg-light txtc" title="option C" cols="20"
+                        rows="2"></textarea>
+                    <textarea placeholder="d." class="no-outline text-center bg-light txtd" title="option D" cols="20"
+                        rows="2"></textarea> <br>
+                    <textarea placeholder="answer" class="no-outline text-center bg-light txtans" title="Correct Answer"
+                        cols="10" rows="1" maxlength="1"></textarea><br>
+                    <dialog class="text-center answerPopup border-0 rounded-1">
+                        <strong>
+                            <h6>Instructions</h6>
+                        </strong>
+                        <u class="text-primary">
+                            <p class="text-center">Please, let your answer be either a, b, c or d</p>
+                        </u>
+                        <button type="button" class="btn btn-light text-danger ">OK</button>
+                    </dialog>
+                    <div class="mt-2 ">
+                        <button title="Back" type="button" class="btn btn-primary me-5"><i
+                                class="fas fa-backward"></i></button>
+                        <button title="forward" type="button" class="btn btn-primary ms-5"><i
+                                class="fas fa-forward"></i></button>
+                    </div>
+
+                    <button type="button" class="btn btn-success mt-2">Submit</button>
+
+                </div>
+            </div>
+
+            <section class="card p-2 mt-2 bg-light">
+                <strong>
+                    <p class="text-center text-primary"><strong class="text-danger">Note:</strong> This Platform is
+                        Created
+                        solely for Professional Teachers with
+                        wealth of experience to have their
+                        input to the Question Bank and get renumerated with token amount as a form encouragement </p>
+                </strong>
+                <strong class="text-center"> <u class="text-danger">Please Note:</u></strong>
+                <p class="text-danger text-center">Questions fed into the Question Data Bank will be <em
+                        class="text-success">verified,
+                        scrutinized</em> and subsequently added up to the question bank</p>
+
+            </section>
+
+        </section> <!-- end of the create question-->
+        <!-- footer to the project -->
+        <footer class="  mx-auto my-2 position-sticky bottom-0 z-2">
+            <div class="card bg-light p-2">
+                <button title="My Profile" type="button" class="btn btn-primary w-25 p-1 border-0">
+                    <img src="/images/finAcct.jpeg" alt="" class="w-25 rounded-2 border-0"><small
+                        class="d-block">Teacher's Profile</small>
+                </button>
+            </div>
+        </footer>
+
+    </div>
 
 
     <script src="/Qstn-Admin/admin.js"></script>
