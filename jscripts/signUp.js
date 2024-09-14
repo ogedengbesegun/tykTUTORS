@@ -98,3 +98,8 @@ closeSignUp.addEventListener("mouseleave", () => {
 });
 
 
+let backpage = document.querySelector('.backpage'); // back to previuos page
+backpage.addEventListener("click", () => {
+    window.history.back();
+
+})

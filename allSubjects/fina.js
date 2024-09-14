@@ -188,10 +188,38 @@ if (homePage) {
     homePage.addEventListener("click", () => {
         let myHomeURL = "/index.html"
         window.open(myHomeURL, "index");
-        window.location = close();
-
+        window.close();
+        // window.history.back(); // to previous page
     });
 }
+
+//  powerOff declaration
+const powerOff = document.querySelector(".powerOff");
+
+powerOff.addEventListener("mouseenter", () => {
+    if (powerOff.classList.contains("text-bg-danger")) {
+        powerOff.classList.remove("text-bg-danger");
+
+        powerOff.classList.add("text-danger");
+    }
+    // else if() {
+    //     
+    // }
+}); // mouseenter ends
+powerOff.addEventListener("mouseleave", () => {
+    powerOff.classList.add("text-bg-danger");
+
+    powerOff.classList.remove("text-danger");
+
+}); // mouseleave ends
+
+//ppowerOff clicks event
+powerOff.addEventListener("click", () => {
+    window.close(); // to close thepage completely
+});
+
+
+// 
 
 
 // show Login Details to be able to print result
@@ -209,7 +237,7 @@ if (PrintResults) {
 // closeUp the login dialog page
 const closeUp = document.querySelector('.closeUp')
 if (closeUp) {
-    closeUp.addEventListener('click', () => {
+    closeUp.addEventListener("click", () => {
         subjResultLogin.style.display = "none"
     })
 };
