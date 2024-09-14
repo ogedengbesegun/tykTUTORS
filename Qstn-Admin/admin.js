@@ -7,22 +7,6 @@ let imgstory = document.querySelectorAll(".imgstory");
 
 let nextone = document.querySelector(".next1")
 
-// next.addEventListener("click", next1);
-// nextone.addEventListener("click", next2)
-
-// function next1() {
-//     imgstory[0].classList.remove("hide")
-//     imgstart.classList.add("hide");
-//     // this.classList.remove()
-// }
-// function next2() {
-//     imgstory[0].classList.add("hide")
-
-//     imgstory[1].classList.remove("hide")
-
-
-// }
-
 
 
 // declare an object admin
@@ -187,13 +171,26 @@ document.querySelector(".form").addEventListener('submit', function (event) {
 
 
 // 1. configure the input elemnts to accept only number values
-admintel.addEventListener('input', function (e) {
+admintel.addEventListener('input', (e) => {
+    notNumbers(e); // from !Numbers () declared
+});
+
+
+// #forgot password input number acccepts only number, no strings
+const teachNum = document.querySelector("#teachNum");
+teachNum.addEventListener("input", (e) => {
+    notNumbers(e); // will not accept !number--------
+})
+
+// function !Numbers are rejected
+function notNumbers(e) {
     const value = e.target.value;
     if (!/^\d*$/.test(value)) {
         e.target.value = value.replace(/\D/g, '');
         alert("Enter Valid Phone Numbers eg. (080*****123)")
     }
-});
+};
+// 
 
 
 
@@ -239,8 +236,8 @@ teacherSub.addEventListener("mouseenter", () => {
 // });
 
 let adminLogpwd = document.querySelector("#adminLogpwd");
-document.querySelector
-    ("#adminLogtel").setAttribute("maxlength", "11"); // set attribute of maxlength
+let adminLogtel = document.querySelector("#adminLogtel");
+adminLogtel.setAttribute("maxlength", "11"); // set attribute of maxlength
 adminLogpwd.addEventListener("click", () => {
     // reveal the samp element
     document.querySelector("samp").style.display = "block";
@@ -256,6 +253,11 @@ adminLogpwd.addEventListener("input", () => {
         document.querySelector("samp").style.display = "block";
 
     }
+
+})
+
+adminLogtel.addEventListener("input", (e) => {
+    notNumbers(e); // does not accept !numbers
 
 })
 
