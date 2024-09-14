@@ -353,25 +353,29 @@ logToggle.addEventListener("click", () => {
 
 
 let txtans = document.querySelector(".txtans"); // this the variable for 
+let answerPopup = document.querySelector(".answerPopup");
 txtans.addEventListener("input", () => {
     if (txtans.value === txtans.value.toUpperCase()) {
         // alert("Revert to lowerCase")
-        txtans.value = txtans.value.toLowerCase()
-    };
-    if (txtans.value === "a" || "b" || "c" || "d") {
-        // document.querySelector(".answerPopup").showModal();
+        txtans.value = txtans.value.toLowerCase();
+
+
+
+    }
+    else if ((txtans.value === "a") || (txtans.value === "b") ||
+        (txtans.value === "c") || (txtans.value === "d")) {
+
+
+
     }
     else {
-        txtans.value = " ";
-
+        answerPopup.showModal();
+        document.querySelector(".answerPopup").addEventListener("click", () => {
+            document.querySelector(".answerPopup").close(); //close the dialog onscreen click
+            txtans.value = ""
+        });
     }
-
-    document.querySelector(".answerPopup").addEventListener("click", () => {
-        document.querySelector(".answerPopup").close(); //close the dialog onscreen click
-
-    });
 });
-
 // Starting point menu toggle
 const btnMenu = document.querySelector(".btnMenu"); //variable declaration
 const logSignToggle = document.querySelector(".logSignToggle");
