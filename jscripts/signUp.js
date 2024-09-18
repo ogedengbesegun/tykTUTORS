@@ -98,8 +98,40 @@ closeSignUp.addEventListener("mouseleave", () => {
 });
 
 
-let backpage = document.querySelector('.backpage'); // back to previuos page
-backpage.addEventListener("click", () => {
-    window.history.back();
+// let backpage = document.querySelector('.backpage'); // back to previuos page
+// backpage.addEventListener("click", () => {
+//     window.history.back();
 
+// })
+
+// fetch("/html/signUp.html")
+//     .then(response => response.text())
+//     .then(data => {
+//         document.querySelector("#content").innerHTML = data
+//     });
+
+// fetch("/html/signUp.html")
+//     .then(response => response.text())
+//     .then(data => {
+//         document.querySelector("#content1").innerHTML = data
+//     });
+
+
+
+const section = document.querySelector("section")// variable declaration
+const accountExist = document.querySelector(".accountExist"); //variable declared
+const stdLogin = document.querySelector(".stdLogin"); //variable declared
+const stdRegBtn = document.querySelector(".stdRegBtn");// declaration
+accountExist.addEventListener("click", () => {
+    if (stdLogin.classList.contains("hide")) { // see if it has array object
+
+        stdLogin.classList.remove("hide")// removes the hide class
+
+        section.style.display = "none"; // add hide to classList
+    }
 })
+
+stdRegBtn.addEventListener("click", () => {
+    stdLogin.classList.add("hide"); // hide the Login
+    section.style.display = "block";// to display section
+});

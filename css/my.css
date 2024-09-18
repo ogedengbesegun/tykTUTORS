@@ -49,10 +49,20 @@ th {
   border: 2px solid green;
 }
 
-.d-grid-2 {
+
+.bg-native {
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-color: rgb(214, 217, 220);
+  /* margin: 0%; */
+  max-width: max-content;
+  /* width: 50%; */
+}
+
+/* .d-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 4fr);
-}
+} */
 
 .text-purple {
   color: rgb(255, 0, 255);
@@ -131,6 +141,10 @@ th {
 .top-4 {
   top: 56px;
 }
+
+
+
+
 
 /* media Query */
 @media (min-width: 576px) {
