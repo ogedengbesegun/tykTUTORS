@@ -25,8 +25,11 @@
     <!-- this is to show my profile picture as an icon -->
     <link rel="shortcut icon" href="/images/img001.jpg">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- Jquery library-->
+
+
     <!-- <script src="/bootstrap.bundle.js"></script> -->
-    <title>Sign-Up</title>
+    <title>Sign-Up ||(TYK)</title>
 </head>
 
 <body>
@@ -38,7 +41,7 @@
             <!-- <div class="cursor backpage" title="Click to go back"><span class="fas fa-arrow-left text-light"></span>
                 <p class="d-inline text-light"> Back</p>
             </div> -->
-            <span class="fas fa-times-circle fs-3 text-danger closeSignUp"></span>
+            <span title="Close Page" class="fas fa-times-circle fs-3 text-danger closeSignUp"></span>
             <fieldset class="mx-auto text-center rounded-4 border border-light border-2">
                 <legend class="text-light  mt-2 fs-1 register">Students' Registration</legend>
                 <h4 class="m-0">Test Your Knowledge Platfrom</h4>
@@ -48,15 +51,15 @@
                     WAEC, NECO, NABTEB and JAMB </small>
                 <form action="" method="post">
                     <div class="">
-                        <input type="text" name="regfirstName" id="regfirstName" title="Enter First Name"
-                            placeholder="First Name" required
+                        <input type="text" name="regfirstName" id="regfirstName" title="Enter Surname Name"
+                            placeholder="Surname Name" required
                             class="text-center rounded-pill p-1 border-0 w-50 mb-2 no-outline">
-                        <input type="text" name="reglastName" id="reglastName" title="Enter Last Name"
-                            placeholder="Last Name" required
+                        <input type="text" name="reglastName" id="reglastName" title="Enter Other Names"
+                            placeholder="Other Names" required
                             class="text-center rounded-pill p-1 border-0 mb-2 w-50 no-outline">
 
                         <input type="text" name="regNumber" id="regNumber" placeholder="080******123"
-                            title="Enter Phone Number" required
+                            title="Student's Or Parent/Guardian Phone Number" required
                             class="text-center rounded-pill p-1 border-0 w-50 mb-2 no-outline no-inner-no-outer-spin input-Val"
                             maxlength="11">
                         <input type="password" name="regPassword" id="regPassword" placeholder="Enter Password" required
@@ -75,9 +78,9 @@
             </fieldset>
         </section>
 
-        <div class="bg-secondary w-75 pt-4 pb-2 rounded-5  px-0 mx-auto hide stdLogin">
-            <h3 class="text-light text-center">Student Login Details</h3>
-            <form action="" class="bg-native border-1 border-light border  p-4 rounded-2 mx-auto">
+        <div class=" w-75 pt-4 pb-2 rounded-5  px-0 mx-auto hide stdLogin">
+            <!-- <h3 class="text-light text-center">Student Login Details</h3> -->
+            <!-- <form action="" class="bg-native border-1 border-light border  p-4 rounded-2 mx-auto">
 
                 <h1 class="text-center text-secondary  login">Login</h1>
                 <div class="d-grid text-center">
@@ -95,15 +98,69 @@
                 </div>
 
 
-            </form>
-            <button type="button" class="btn btn-danger d-block mt-3 ms-auto me-auto stdRegBtn">Not Registered?</button>
+            </form> -->
+            <!--  -->
+            <div class=" screenCover">
+                <fieldset class="fieldset-0 rounded-2 border-1 border-danger mx-2 ">
+                    <legend class="rounded-pill p-1 text-bg-primary text-center fs-4">Test Your Knowledge Challenge
+                    </legend>
+
+
+                    <div class="mx-1 my-1 text-center bg-light rounded-3">
+                        <div title="Close the Subject Page" class="">
+                            <i class="fas fa-times-circle text-danger bg-primary rounded-5 rounded-1 closeSignUp fs-1 my-2"></i>
+                            <!-- <small class="text-danger">Close</small> -->
+                        </div>
+                        <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
+                        <ul class="mx-2 my-2 d-grid-4 gap-1 no-list-style btn border-0 text-light text-center">
+                            <li class="my-2 rounded-2 p-1 subsList engl">English Language</li>
+                            <li class="my-2 rounded-2 p-1 subsList math">Mathematics</li>
+                            <li class="my-2 rounded-2 p-1 subsList econ">Economics</li>
+                            <li class="my-2 rounded-2 p-1 subsList fina">Financial Accounting</li>
+                            <li class="my-2 rounded-2 p-1 subsList comp">Computer Studies</li>
+                            <li class="my-2 rounded-2 p-1 subsList biol">Biology</li>
+                            <li class="my-2 rounded-2 p-1 subsList phys">Physics</li>
+                            <li class="my-2 rounded-2 p-1 subsList chem">Chemistry</li>
+                            <li class="my-2 rounded-2 p-1 subsList furm">Further Mathematics</li>
+                            <li class="my-2 rounded-2 p-1 subsList comm">Commerce</li>
+                            <li class="my-2 rounded-2 p-1 subsList lite">Literature in English</li>
+                            <li class="my-2 rounded-2 p-1 subsList gove">Government</li>
+                            <li class="my-2 rounded-2 p-1 subsList civi">Civic Education</li>
+                            <li class="my-2 rounded-2 p-1 subsList mart">Marketing</li>
+                            <li class="my-2 rounded-2 p-1 subsList data">Data Processing</li>
+                            <li class="my-2 rounded-2 p-1 subsList anim">Animal Husbandary</li>
+                        </ul>
+                        <small class="text-center mx-4"></small><strong class="text-danger fs-5 ">Note:
+                        </strong>Select any Subject to test your Knowledge.
+                        This platform helps
+                        students prepare for Examinations e.g WAEC NECO NABTEB.
+                        Our seasoned Professionals use the finest of questions and answers
+                        for this noble platform.
+                        </small>
+                        <!-- <hr> -->
+                    </div>
+
+
+                    <button type="button" class="btn btn-danger d-block mt-1 ms-auto me-auto stdRegBtn">Not
+                        Registered?</button>
+
+                </fieldset>
+
+
+
+
+            </div>
+
         </div>
+
+
+
         <!-- <div id="content"></div>
         <div id="content1"></div> -->
     </div>
 
 
-
+    <script src="/jscripts/ogd.js"></script>
     <script src="/jscripts/signUp.js"></script>
 
 

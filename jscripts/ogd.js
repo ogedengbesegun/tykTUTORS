@@ -2613,7 +2613,7 @@ function myday() {
 
 if (timeStamp) {
     let date = new Date()
-    timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday() + " (" + date.toLocaleString() +")";
+    timeStamp.textContent = year + "-" + mymonth() + "-" + day + myday() + " (" + date.toLocaleString() + ")";
 
 };
 
@@ -2652,22 +2652,25 @@ if (mouseEnter) {
 
 // waec URL directory defined
 let waec = document.querySelector(".waec")
+
 let waecURL = "https://www.waecdirect.org/";
-waec.addEventListener("click", () => {
-    if (waec) {
+if (waec) {
+
+    waec.addEventListener("click", () => {
         window.open(waecURL)
-    }
-})
+    })
+}
 
 
 // neco URL directory defined
 let neco = document.querySelector(".neco");
 let necoURL = "https://results.neco.gov.ng/";
-neco.addEventListener("click", () => {
-    if (neco) {
+if (neco) {
+
+    neco.addEventListener("click", () => {
         window.open(necoURL);
-    }
-})
+    })
+}
 
 // ------------------------------------------------
 
@@ -2810,10 +2813,15 @@ $(document).ready(function () {
 
 
     // i want remove  the subject modal dialog
-    $(".rm-subjList").click(() => {
-        $(".screenCover").hide()
-    })
-    // ----------
+    const rmsubjList = document.querySelectorAll(".rm-subjList");
+    if (document.querySelectorAll(".rm-subjList")); {
+
+        $(".rm-subjList").click(() => {
+            $(".screenCover").hide()
+        })
+        // ----------
+    }
+
 
 
 

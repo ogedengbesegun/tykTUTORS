@@ -79,23 +79,30 @@ reveal.addEventListener("click", () => {
 })
 
 // the closeSign-up btn initialised or fired up
-let closeSignUp = document.querySelector(".closeSignUp")
-closeSignUp.addEventListener("click", () => {
-    window.close();
-    // window.back();
-});
+let closeSignUp = document.querySelectorAll(".closeSignUp")
 
-// hover to change element appearance
+closeSignUp.forEach(closeSignUps => {
+    closeSignUps.addEventListener("click", () => {
+        window.close();
+        // window.back();
+    });
 
-closeSignUp.addEventListener("mouseover", () => {
-    closeSignUp.style.color = "white";
-    closeSignUp.classList.remove("text-danger")
-});
 
-closeSignUp.addEventListener("mouseleave", () => {
-    // closeSignUp.style.color = "white";
-    closeSignUp.classList.add("text-danger")
-});
+    // hover to change element appearance
+
+    closeSignUps.addEventListener("mouseover", () => {
+        closeSignUps.style.color = "white";
+        closeSignUps.classList.remove("text-danger")
+    });
+
+    closeSignUps.addEventListener("mouseleave", () => {
+        // closeSignUps.style.color = "white";
+        closeSignUps.classList.add("text-danger")
+    });
+
+})
+
+
 
 
 // let backpage = document.querySelector('.backpage'); // back to previuos page

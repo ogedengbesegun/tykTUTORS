@@ -384,6 +384,15 @@ btnMenu.addEventListener("click", () => {
     logSignToggle.showModal(); //to showModal method
 });
 
+
+btnMenu.addEventListener("mouseenter", () => { // to show Menu text
+    document.querySelector(".d-flex small").style.display = "block"
+})
+
+btnMenu.addEventListener("mouseleave", () => {
+    document.querySelector(".d-flex small").style.display = "none"
+})
+
 // to close the showModal method
 const teacherClose = document.querySelector(".teacherClose"); //variable
 teacherClose.addEventListener("click", () => { // close onclick
@@ -428,3 +437,7 @@ teaforgotpwd.addEventListener("click", () => {
 closeDlg.addEventListener("click", () => {
     reEnterPwd.close();
 });
+
+
+// show the menu text
+

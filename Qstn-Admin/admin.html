@@ -38,8 +38,11 @@
 
 <body>
     <header class="d-flex position-fixed top-0 z-2 bg-dark w-100  py-1">
-        <button title="Menu" type="button" class="btn btn-dark  btnMenu z-2"><span
-                class="bg-light navbar-toggler border-2 border-primary   navbar navbar-toggler-icon"></span></button>
+        <div class="d-flex">
+            <button title="Menu" type="button" class="btn btn-dark  btnMenu z-2"><span
+                    class="bg-light navbar-toggler border-2 border-primary navbar navbar-toggler-icon text-light "></span></button><small
+                class=" text-light m-auto hide">Menu</small>
+        </div>
         <span class="fs-4 fw-bold Mymarquee ms-5 text-nowrap ">Welcome onboard to this Noble
             Platform for Teachers</span>
         <!-- <h4 class=" ms-1 text-bg-dark p-2 w-75 text-center rounded-2">Teachers' Modules</h4> -->
@@ -201,8 +204,8 @@
 
             <dialog class="reEnterPwd border-0 rounded-2 mt-7 mx-auto">
                 <h3 class="mt-2 text-center text-danger">Forgot Password? <span
-                        class="fas fa-times-circle text-danger float-end me-2 cursor closeDlg"
-                        title="close"></span></h3>
+                        class="fas fa-times-circle text-danger float-end me-2 cursor closeDlg" title="close"></span>
+                </h3>
                 <form action="">
                     <input type="tel" name="teachNum" id="teachNum"
                         class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline" placeholder="Phone Number">
@@ -229,8 +232,8 @@
         <section class="createQst">
             <div class="text-center mt-auto card p-2 textarea">
                 <h4>Subject:</h4>
-                <textarea title="Teachers Question. Please, ensure Questions are typo-Error free and well constructed" name="adminQuestion" id="adminQuestion" cols="60" rows="5"
-                    placeholder="Type in your Question HERE:"
+                <textarea title="Teachers Question. Please, ensure Questions are typo-Error free and well constructed"
+                    name="adminQuestion" id="adminQuestion" cols="60" rows="5" placeholder="Type in your Question HERE:"
                     class="text-center rounded-1 no-outline bg-light"></textarea>
                 <div class="d-block p-1 ">
                     <textarea placeholder="a." class="no-outline text-center bg-light txta " title="option A" cols="20"
@@ -264,7 +267,7 @@
                 </div>
             </div>
 
-            <section class="card p-2 mt-2 bg-light">
+            <section class="card p-2 my-2 bg-light">
                 <strong>
                     <p class="text-center text-primary"><strong class="text-danger">Note:</strong> This Platform is
                         Created
@@ -281,14 +284,14 @@
 
         </section> <!-- end of the create question-->
         <!-- footer to the project -->
-        <footer class="  mx-auto my-2 position-sticky bottom-0 z-2">
+        <!-- <footer class="  mx-auto my-2 position-sticky bottom-0 z-2">
             <div class="card bg-light p-2">
                 <button title="My Profile" type="button" class="btn btn-primary w-25 p-1 border-0">
                     <img src="/images/finAcct.jpeg" alt="" class="w-25 rounded-2 border-0"><small
                         class="d-block">Teacher's Profile</small>
                 </button>
             </div>
-        </footer>
+        </footer> -->
 
     </div>
 
