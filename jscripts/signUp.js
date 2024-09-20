@@ -76,15 +76,15 @@ function sameValue() { //give border-success when same value input
     });
 
     regPassword.addEventListener("input", () => { //ist input
-        if (regPassword.value == "") {
-            regPassword2.value = ""
+        if (regPassword.value != regPassword2.value ) { //if val !=
+            regPassword2.value = "";// return empty
             // ////////////
 
-            regPassword.classList.remove("border-success");
-            regPassword2.classList.remove("border-success");
+            regPassword.classList.remove("border-success");// revert
+            regPassword2.classList.remove("border-success"); // revert
 
-            regPassword.classList.remove("border-danger");
-            regPassword2.classList.remove("border-danger");
+            regPassword.classList.remove("border-danger"); // revert
+            regPassword2.classList.remove("border-danger"); // revert
 
         }
     });

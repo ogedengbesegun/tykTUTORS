@@ -19,7 +19,7 @@ while (i < 10);
 
 
 // Setting my Start button to disabled at onLoadState.
-var xhttp = new XMLHttpRequest();
+const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
 
 
@@ -392,7 +392,7 @@ function answeredQtn2() {
 
     let inputValues = document.querySelectorAll(".inputValue2")
     let inputValue2 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn2.textContent == qtn[0].ask) {
 
@@ -585,7 +585,7 @@ function answeredQtn3() {
 
     let inputValues = document.querySelectorAll(".inputValue3")
     let inputValue3 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn3.textContent == qtn[0].ask) {
 
@@ -778,7 +778,7 @@ function answeredQtn4() {
 
     let inputValues = document.querySelectorAll(".inputValue4")
     let inputValue4 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn4.textContent == qtn[0].ask) {
 
@@ -971,7 +971,7 @@ function answeredQtn5() {
 
     let inputValues = document.querySelectorAll(".inputValue5")
     let inputValue5 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn5.textContent == qtn[0].ask) {
 
@@ -1164,7 +1164,7 @@ function answeredQtn6() {
 
     let inputValues = document.querySelectorAll(".inputValue6")
     let inputValue6 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn6.textContent == qtn[0].ask) {
 
@@ -1357,7 +1357,7 @@ function answeredQtn7() {
 
     let inputValues = document.querySelectorAll(".inputValue7")
     let inputValue7 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn7.textContent == qtn[0].ask) {
 
@@ -1550,7 +1550,7 @@ function answeredQtn8() {
 
     let inputValues = document.querySelectorAll(".inputValue8")
     let inputValue8 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn8.textContent == qtn[0].ask) {
 
@@ -1743,7 +1743,7 @@ function answeredQtn9() {
 
     let inputValues = document.querySelectorAll(".inputValue9")
     let inputValue9 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn9.textContent == qtn[0].ask) {
 
@@ -1936,7 +1936,7 @@ function answeredQtn10() {
 
     let inputValues = document.querySelectorAll(".inputValue10")
     let inputValue10 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
     let qtn = response.question
     if (qstn10.textContent == qtn[0].ask) {
 
@@ -2146,7 +2146,7 @@ function start() {
 
 
     document.querySelector(".start").disabled = true
-    var response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText)
 
 
     let array = response.question

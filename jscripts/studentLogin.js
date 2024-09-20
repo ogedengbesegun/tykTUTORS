@@ -25,7 +25,7 @@ document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
 
 
 
-var xhttp1 = new XMLHttpRequest();
+let xhttp1 = new XMLHttpRequest();
 xhttp1.onreadystatechange = () => {
 
 
@@ -76,7 +76,7 @@ function Login() {
     let invalidmsg = document.querySelector(".invalidmsg");
     let okclose = document.querySelector(".okclose");
     // -------------------------------------------------
-    var response1 = JSON.parse(xhttp1.responseText)
+    let response1 = JSON.parse(xhttp1.responseText)
 
     for (let i = 0; i < response1.class1A.length; i++) {
 
