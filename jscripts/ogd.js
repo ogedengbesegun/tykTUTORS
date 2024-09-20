@@ -158,8 +158,21 @@ function answeredQtn1() {
 
     let inputValues = document.querySelectorAll(".inputValue1")
     let inputValue1 = Array.from(inputValues)
-    var response = JSON.parse(xhttp.responseText)
+    const response = JSON.parse(xhttp.responseText)
     let qtn = response.question
+
+    // ////////////////////////////////
+    for (let i = 0; i < qtn.length; i++) {
+        if (qstn1.textContent == qtn[i].ask) {
+            return console.log(qst[i].ans)
+
+        }
+        break;
+    }
+
+    /////////////////////////////////////////////
+
+
     if (qstn1.textContent == qtn[0].ask) {
 
         inputValue1[1].checked
@@ -367,6 +380,9 @@ function answeredQtn1() {
         } else { return 0 }
 
     }
+
+
+
 
 }
 
@@ -2227,9 +2243,9 @@ function start() {
     inputValue[39].value = label104.textContent = array.slice(9, 10)[0].d;
 
 
-    console.log(array[0].ask)
+    // console.log(array[0].ask)
 
-    console.log(array.slice(9, 10)[0].ask)
+    // console.log(array.slice(9, 10)[0].ask)
 
 
     // inputValue[0].value = label1.textContent
@@ -2266,34 +2282,14 @@ function start() {
             timerDisplay.style.color = "red";
 
 
-            // this will disable my input elements to stop users on countdown
+            // this will disable my input elements to stop users_
+            //from seleecting on countdown
             let inputValue = document.querySelectorAll(".inputValue")
             inputValue.forEach(inputValues => {
                 inputValues.disabled = true;
             });
 
-            // set a timeout to display the user result
-            // setTimeout(() => {
-            //     showResult()
-            // }, 5000);
 
-
-            // TO click on .submit Button to fire it open
-            // $(".submit").click()
-            // --------------------------------------
-
-
-            // let qstnHide = document.querySelectorAll(".qstnHide")
-            // qstnHide = Array.from(qstnHide)
-            // qstnHide.forEach(qstnHid => {
-            //     qstnHid.style.display = "none";
-
-
-
-
-            // document.querySelector(".login").style.display = "block";
-
-            // });
         }
 
 
@@ -2302,25 +2298,6 @@ function start() {
 
     }, 1000);
     let duration = 1 * 60;
-
-
-
-
-
-
-
-    // set the inputValue for each  (objective question's options) to each Label textContent
-
-
-
-    // inputValueArray[0].value = label1.textContent
-    // console.log(inputValueArray[0].value)
-
-
-
-
-
-
 
 
 
@@ -2498,6 +2475,9 @@ let finaURL = "/allSubjects/Financial-Accounting.html";
 if (fina) {
     fina.addEventListener('click', () => {
         window.open(finaURL, "Financial-Accounting")
+
+        // reload the window location
+        window.location.reload(); // just reload the current page
     });
 }
 

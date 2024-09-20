@@ -6,14 +6,25 @@ console.log(window.screen.height);
 
 
 // 1. configure the input elemnts to accept only number values
+
 document.querySelector(".input-Val").addEventListener('input', function (e) {
+    acceptOnlyNum(e)
+})
+
+
+// Accept Only Numbers No Alphabeths
+function acceptOnlyNum(e) {
     const value = e.target.value;
     if (!/^\d*$/.test(value)) {
         e.target.value = value.replace(/\D/g, '');
         alert("Enter Valid Phone Numbers eg. (080*****123)")
     }
-})
 
+
+}
+
+
+// //////////////////////////////////////////
 // 2. set the input password to maxLenght 10
 let limitPwds = document.querySelectorAll("input[type = 'password']");
 limitPwds.forEach(limitPwd => {
@@ -30,28 +41,53 @@ document.querySelector(" #reglastName").style.textTransform = "capitalize";
 let regPassword = document.querySelector("#regPassword");
 let regPassword2 = document.querySelector("#regPassword2")
 
-function sameValue() {
-    regPassword2.addEventListener("focus", () => {
+
+function sameValue() { //give border-success when same value input
+    regPassword.classList.remove("border-success");
+    regPassword2.classList.remove("border-success");
+
+    regPassword2.addEventListener("input", () => {
 
 
-        if (regPassword.classList.contains("border-0") && regPassword2.classList.contains("border-0")) {
-            if (regPassword.value == regPassword2.value) {
-                regPassword.classList.remove("border-0");
-                regPassword2.classList.remove("border-0");
-
-                console.log("hey we are the same");
-            }
-            else if (regPassword.value == '' && regPassword2.value == '') {
-                regPassword.value = ""
-                regPassword2.value = ""
-            }
+        if ((regPassword2.value === regPassword.value) || (regPassword.value === regPassword2.value)) {
+            regPassword.classList.add("border-success");
+            regPassword2.classList.add("border-success");
 
 
+            regPassword.classList.remove("border-danger");
+            regPassword2.classList.remove("border-danger");
+
+            console.log("hey we are the same");
+        }
+        else {
+
+
+            regPassword.classList.remove("border-success");
+            regPassword2.classList.remove("border-success");
+
+            regPassword.classList.add("border-danger");
+            regPassword2.classList.add("border-danger");
         }
 
 
 
-    })
+
+
+    });
+
+    regPassword.addEventListener("input", () => { //ist input
+        if (regPassword.value == "") {
+            regPassword2.value = ""
+            // ////////////
+
+            regPassword.classList.remove("border-success");
+            regPassword2.classList.remove("border-success");
+
+            regPassword.classList.remove("border-danger");
+            regPassword2.classList.remove("border-danger");
+
+        }
+    });
 
 
 }
@@ -134,7 +170,12 @@ accountExist.addEventListener("click", () => {
 
         stdLogin.classList.remove("hide")// removes the hide class
 
+
+
         section.style.display = "none"; // add hide to classList
+
+
+
     }
 })
 
@@ -142,3 +183,12 @@ stdRegBtn.addEventListener("click", () => {
     stdLogin.classList.add("hide"); // hide the Login
     section.style.display = "block";// to display section
 });
+
+///////////////
+
+// const subsList = document.querySelectorAll(".subsList");
+// subsList.forEach(subslist => {
+//     subslist.addEventListener("click", () => {
+//         console.log("Just got clicked Now")
+//     })
+// })

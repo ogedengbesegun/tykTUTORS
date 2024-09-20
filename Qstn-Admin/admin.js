@@ -400,28 +400,11 @@ teacherClose.addEventListener("click", () => { // close onclick
 
 });
 
-//to click outside
 
-// let isClickInsideDialog = false;
-// logSignToggle.addEventListener("mousedown", (event) => {
-//     isClickInsideDialog = true;
-//     console.log(isClickInsideDialog = true);
-// });
 
-// document.addEventListener("mousedown", (event) => {
-//     if (!logSignToggle.contains(event.target)) {
-//         isClickInsideDialog = false;
-//     }
-// });
 
-// document.addEventListener("click", (event) => {
-//     if (isClickInsideDialog) {
 
-//         logSignToggle.close(); // close the modal
 
-//     }
-
-// });
 
 // to get teaforgotpwd forgotten input 
 let reEnterPwd = document.querySelector(".reEnterPwd");
