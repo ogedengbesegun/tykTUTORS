@@ -197,8 +197,8 @@ if (homePage) {
 const powerOff = document.querySelector(".powerOff");
 
 powerOff.addEventListener("mouseenter", () => {
-    if (powerOff.classList.contains("text-bg-danger")) {
-        powerOff.classList.remove("text-bg-danger");
+    if (powerOff.classList.contains("text-light")) {
+        powerOff.classList.remove("text-light");
 
         powerOff.classList.add("text-danger");
     }
@@ -207,7 +207,7 @@ powerOff.addEventListener("mouseenter", () => {
     // }
 }); // mouseenter ends
 powerOff.addEventListener("mouseleave", () => {
-    powerOff.classList.add("text-bg-danger");
+    powerOff.classList.add("text-light");
 
     powerOff.classList.remove("text-danger");
 
