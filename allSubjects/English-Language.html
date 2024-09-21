@@ -14,7 +14,9 @@
 
 
     <link rel="stylesheet" href="/css/ogd.css">
-    <link rel="shortcut icon" href="/images/software-development-6523979_640.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/my.css">
+    <link rel="stylesheet" href="/css/fina.css">
+    <link rel="shortcut icon" href="/images/finAcct.jpeg" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
         integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
@@ -36,9 +38,8 @@
                 class="navbar-toggler-icon text-bg-primary fs-4 rounded-2"></span><Small
                 class=" mx-1 text-primary">Menu</Small>
         </button>
-        <h4 class="me-5 fs-4 text-success"><a href="#" class="backHome">Ogedengbe Segun</a> @
-            Front-End
-            Developer
+        <h4 class="me-5 fs-4 text-success"><a href="#" class="backHome">OGD||Education-Consult</a> @
+            Test Your Knowledge
         </h4>
     </div>
 
@@ -81,31 +82,31 @@
 
 
 
-    <nav class="hide menuList bg-info  w-50 p-3 rounded-1 z-3 position-fixed top-0 ms-1">
+    <nav class="hide menuList bg-info p-3 rounded-1 z-3 position-fixed top-0 ms-1">
         <div class="rounded-2 mt-4">
 
-            <button type="button" title="Close" class="fs-4 btn border-0 icon-close"><span
+            <button type="button" title="Close" class=" fs-4 btn border-0 icon-close "><span
                     class="fas fa-times-circle text-danger"></span>
             </button>
-            <h4 class="text-bg-success rounded-2 closed mx-auto text-center w-1 p-2">Menu List</h4>
+
+            <h4 class="text-bg-success rounded-1 closed mx-auto text-center w-1 p-2">Menu List</h4>
             <hr class="bg-light">
-            <ul class="d-grid fs-1 no-list-style bg-black rounded p-2 ">
+            <ul class="d-grid fs-1 no-list-style bg-black rounded p-2">
 
-                <li class="btn btn-primary mb-2"><a href="/ogd.html" target="_parent" title="Home Page"
-                        class="checker p-1 text-light">Home Page</a></li>
-
+                <li class="btn btn-primary mb-2 homePage"><span class="fas fa-home me-1"></span>Home Page</li>
 
                 <!-- <li class="btn btn-primary mb-2 personalities">Personalities</li>
                 <li class="btn btn-secondary mb-2 picture text-nowrap">Picture Stories</li>
                 <li class="btn btn-secondary mb-2 contacts">Contacts</li> -->
                 <!-- <li class="btn btn-danger mb-2  QuizQuestn text-nowrap tykc">Quiz
                     Questions ?</li> -->
-                <li class="btn btn-danger mb-2  PrintQuiz text-nowrap ">Print Results ?</li>
-                <li class=" btn btn-warning mb-2 m waec"><a href="https://www.waecdirect.org/" rel="noopener"
-                        target="_blank" class="text-light text-nowrap waec">WAEC Result Checker</a> </li>
-                <li class="btn btn-warning neco"><a href="https://results.neco.gov.ng/" rel="noopener" target="_blank"
-                        class="text-light neco">NECO Result
-                        Checker</a></li>
+                <li class="btn btn-danger mb-2  PrintResults text-nowrap "><span class="fas fa-print me-1"></span>Print
+                    Results?</li>
+
+                <li class=" btn waec-bg bg-light mb-2 waec" title="Check WAEC Result"><small class="ms-4 hover">WAEC
+                        Result Checker</small> </li>
+                <li class="btn neco-bg bg-light neco" title="Check NECO Result"><small class="ms-4 hover">NECO Result
+                        Checker</small></li>
 
 
             </ul>
@@ -116,49 +117,95 @@
 
 
 
-
+    <!-- login Page financial accounting start page -->
     <div class="container">
-        <section class="quiz bg-warning p-5 rounded-4 mt-2">
+        <section class="quiz bg-primary px-5 pb-4 rounded-4 mt-2 mb-3">
+            <button type="button" title="Close Page" class=" btn my-3">
+                <i class="fas fa-power-off text-bg-danger rounded-4  fs-1 powerOff "></i>
 
+            </button>
+            <!-- <h5 class="text-light">Welcome: Segun</h5> -->
             <div class="d-flex">
                 <h1 class="text-light">English Language</h1><img src="/images/finAcct.jpeg" alt="Accounting-Image"
                     class="myPicture ms-3">
             </div>
-            <button type="button" title="Enter Login Details First" class=" p-2 w-50 start"
-                onclick="start()">Start</button>
+            <button type="button" title="Enter Login Details First" class=" p-2 w-50 fs-6 start "
+                onclick="start()">Start Exams
+            </button>
 
             <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 text-center rounded-pill"></h4>
             <div class="card mt-2 rounded-2">
 
                 <div class="hide4login">
-                    <h4 class=" text-center mx-2">Questions</h4>
+                    <div class="d-flex justify-content-center">
+                        <h4 class=" text-center mx-2">Question</h4>
+
+                    </div>
                     <h5 class="fs-5"><strong>(Test)</strong></h5>
                 </div>
 
 
-                <div class="mx-5 text-bg-primary rounded-3 w-auto my-2 p-2 text-center login">
+                <div class="mx-5 text-bg-secondary rounded-3 w-auto my-2 p-2 text-center studentlogin">
                     <form action="">
-                        <h3 class="text-light">Enter Login Details</h3>
-                        <label for="logid"></label><input type="text" name="logid" id="logid"
-                            class="rounded-2 text-center border-0 my-1 w-50 p-1" placeholder="Enter ID"
-                            autocomplete="userName">
-                        <label for="passwd"></label><input type="password" name="passwd" id="passwd"
-                            class="border-0 rounded-2 mt-1 text-center w-50 p-1" placeholder="Password"
-                            autocomplete="current-password">
-                        <button type="button" class="btn btn-warning mx-auto w-50 mt-3 d-block rounded-pill my-2"
-                            onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
-                        <small><a href="#" class="text-danger">forgot password ?</a></small>
-                    </form>
-                    <a href="/signUp.html">
-                        <p class="text-light mt-1">Sign Up <span class="fas fa-right-to-bracket"></span></p>
-                    </a>
-                </div>
+                        <h3 class="text-light">login to Start Exam</h3><span class="fas fa-book-open fs-1"></span>
+                        <input title="Login your ID" type="text" name="logid" id="logid"
+                            class="rounded-2 text-center border-0 mb-2  d-block mx-auto w-50 p-1 no-outline"
+                            placeholder="Enter ID" autocomplete="userName">
+                        <input title="Input your Password" type="password" name="passwd" id="passwd"
+                            class="border-0 rounded-2  text-center d-block mx-auto w-50 p-1 no-outline"
+                            placeholder="Password" autocomplete="current-password">
 
+                        <!-- a dialog to display error msg -->
+                        <dialog class=" border-0 mx-auto mt-8 rounded-2 invalidmsg">
+                            <h6 class="text-danger p-2 m-2">Oops! Invalid input <span
+                                    class="fas fa-exclamation-triangle fs-4"></span></h6>
+                            <button type="button" class="btn btn-danger mb-3 okclose">
+                                OK
+                            </button>
+
+                        </dialog>
+                        <!-- ------- -->
+                        <button type="button" class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
+                            onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
+                        <small class="text-danger forgotPwd cursor">forgot password ?</small>
+
+                        <!-- dialog to display re-enter password -->
+                        <dialog class="reEnterPwd bg-secondary border-0 rounded-2 mt-7 mx-auto">
+                            <h3 class="mt-2">Forgot Password? <span
+                                    class="fas fa-times-circle text-danger opacity-50 float-end me-2 cursor closeDlg"
+                                    title="close"></span></h3>
+                            <form action="">
+                                <input type="text" name="reIdOld" id="reIdOld"
+                                    class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline"
+                                    placeholder="Enter ID">
+                                <input type="password" name="repwdNew1" id="repwdNew1"
+                                    class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline"
+                                    placeholder="New Password">
+                                <input type="password" name="repwdNew2" id="repwdNew2"
+                                    class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline mb-3"
+                                    placeholder="Confirm Password">
+
+                                <button title="Submit" type="submit"
+                                    class="btn btn-success d-block mx-auto w-50 mb-2">Change Password</button>
+                            </form>
+
+
+
+                        </dialog>
+                    </form>
+                    <!-- <a href="/html/signUp.html" class=""> -->
+                        <p class="text-light mt-1 cursor sign-up">Sign Up <span class="fas fa-right-to-bracket"></span></p>
+                    <!-- </a> -->
+                </div>
+                <!-- start page end -->
+
+                <!-- question page start -->
                 <div class="qstsAll">
                     <!-- Qstn  1 -->
 
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide No-hide">
-                        <p class="fs-6 p-1 text-center text-light qstn1 ">1</p>
+                        <h5 class="text-center mt-1 text-light">1</h5>
+                        <p class="fs-5 p-1 text-center text-light qstn1 "></p>
 
                         <label for="optn1" class="d-flex mx-2 bg-white rounded-1 mt-2" title="Option A">
                             <input type="radio" id="optn1" class="ms-2 inputValue inputValue1" name="optn1"
@@ -199,7 +246,9 @@
 
                     <!-- Qstn  2 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn2">2</p>
+                        <h5 class="text-center mt-1 text-light">2</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn2"></p>
 
                         <label for="optn21" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn21" class="ms-2 inputValue inputValue2" name="optn2"
@@ -241,7 +290,9 @@
 
                     <!-- Qstn  3 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn3">3</p>
+                        <h5 class="text-center mt-1 text-light">3</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn3"></p>
 
                         <label for="optn31" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn31" class="ms-2 inputValue inputValue3" name="optn3"
@@ -282,7 +333,9 @@
 
                     <!-- Qstn  4 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn4">4</p>
+                        <h5 class="text-center mt-1 text-light">4</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn4"></p>
 
                         <label for="optn41" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn41" class="ms-2 inputValue inputValue4" name="optn4"
@@ -322,7 +375,9 @@
 
                     <!-- Qstn  5 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn5">5</p>
+                        <h5 class="text-center mt-1 text-light">5</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn5"></p>
 
                         <label for="optn51" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn51" class="ms-2 inputValue inputValue5" name="optn5"
@@ -362,7 +417,9 @@
 
                     <!-- Qstn  6 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn6">6</p>
+                        <h5 class="text-center mt-1 text-light">6</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn6"></p>
 
                         <label for="optn61" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn61" class="ms-2 inputValue inputValue6" name="optn6"
@@ -402,7 +459,9 @@
 
                     <!-- Qstn  7 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn7">7</p>
+                        <h5 class="text-center mt-1 text-light">7</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn7"></p>
 
                         <label for="optn71" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn71" class="ms-2 inputValue inputValue7" name="optn7"
@@ -442,7 +501,9 @@
 
                     <!-- Qstn  8 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn8">8</p>
+                        <h5 class="text-center mt-1 text-light">8</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn8"></p>
 
                         <label for="optn81" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn81" class="ms-2 inputValue inputValue8" name="optn8"
@@ -482,7 +543,9 @@
 
                     <!-- Qstn  9 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login">
-                        <p class="fs-6 p-1 text-center text-light qstn9">9</p>
+                        <h5 class="text-center mt-1 text-light">9</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn9"></p>
 
                         <label for="optn91" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn91" class="ms-2 inputValue inputValue9" name="optn9"
@@ -522,7 +585,9 @@
 
                     <!-- Qstn  10 -->
                     <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide hide4login my-2">
-                        <p class="fs-6 p-1 text-center text-light qstn10">10</p>
+                        <h5 class="text-center mt-1 text-light">10</h5>
+
+                        <p class="fs-5 p-1 text-center text-light qstn10"></p>
 
                         <label for="optn101" class="d-flex mx-2 d-block bg-white rounded-1 mt-2" title="option A">
                             <input type="radio" id="optn101" class="ms-2 inputValue inputValue10" name="optn10"
@@ -565,10 +630,10 @@
                 </div>
                 <!-- <button class="play btn rounded-pill border border-1 border-success mx-auto wx-auto w-25 my-1"><span
                 class="fas fa-play"></span>
-            Next</button> -->
+             Next</button> -->
 
                 <button type="button"
-                    class="hide submit btn btn-light text-primary fs-5 my-2 mx-auto w-50 rounded-pill border border-success border-3">Submit
+                    class="hide submit btn btn-light text-primary fs-5 my-2  mx-auto w-50 rounded-pill border border-success border-3">Submit
                     Test</button>
 
             </div>
@@ -577,21 +642,28 @@
 
         </section>
     </div>
-    </div>
+
+    <!-- Result display page Start-->
     <div class="hide scoreSheetHead">
 
         <!-- <div class="text-center"> -->
-        <button type="button" title="Close Printing"
-            class="btn btn-light rounded-circle text-danger mt-2 ms-3 buttonX"><span
-                class="fas fa-times"></span></button>
-        <label class="hide text-danger labelClose">Close</label>
+        <div class="d-flex align-items-center">
+            <button type="button" title="Close Printing"
+                class="btn btn-light rounded-circle text-danger mt-2 ms-3 buttonX"><span
+                    class="fas fa-times"></span></button>
+            <small class="hide text-danger labelClose mt-2">Close</small>
+        </div>
         <!-- </div> -->
 
 
 
 
-        <div class="scoreSheet card w-50 container mt-5 border border-black border-1">
+        <div class="scoreSheet card w-75 h-75 container mt-5">
+            <h4 class="text-center text-bg-primary mt-2 border-bottom border-dark border-1 p-1 rounded-2">Test Your
+                Knowledge Platform</h4>
+
             <div class="d-flex mt-1 justify-space-between">
+                <!-- the student passport -->
                 <img src="/images/Free_face.jpg" alt="myProfile picture"
                     class="img001 myPicture border boder-1 border-primary">
 
@@ -600,23 +672,98 @@
                     SCORES
                 </h3>
             </div>
-            <h4 class="text-center my-2">Subject: English Language </h4>
-            <label class="reportName w-50 mx-auto mt-3 text-center text-bg-light border-dark border rounded-2 p-2"
-                for=""></label>
-            <label class="mt-2 text-center fs-3" for="scores">Score:</label>
+
+            <h4 class="text-center my-2">Subject: English-Language </h4>
+            <!-- the label is for student name using reportName class -->
+            <p class="reportName w-50 mx-auto mt-3 text-center text-bg-light border-dark border rounded-2 p-2"
+              ></p>
+            <p class="mt-2 text-center fs-3" >Score:</p>
+            <!-- to show students scores -->
             <p class="scoreNumber text-center fs-2 mt-2 rounded-pill border border-1 border-danger w-25 mx-auto">
             </p>
-            <p class="text-center timeStamp"></p>
 
+            <!-- this will show time stamp -->
+
+            <strong class="mt-auto opacity-50">
+                <p class="text-center timeStamp mb-0"></p>
+            </strong>
         </div>
-        <button type="button" class="btn btn-danger my-2 w-25 mx-auto d-block" title="Print Document">Print</button>
+
+
+        <button type="button" class="btn btn-danger w-25 mx-auto d-block printMyResult"
+            title="Print Document">Print</button>
 
     </div>
 
 
-    <hr class="hr">
-    <footer class="mx-1 border-1 border-black rounded-1 mt-3">
-        <h3 class="text-primary text-center border boder-1 border-secondary mx-auto w-1 m-2 rounded-pill p-2">Our
+    <!-- Print Previous Results based on current subject(Finan Acct) -->
+    <div class="hide bg-light position-fixed top-0 z-2 w-100 h-100 mx-auto subjResultLogin">
+        <!-- <div class="card w-50 mx-auto mt-2 bg-info border-0">
+            <p class="text-center mt-2">1. Select a Subject</p>
+            <p class="text-center">2. Enter Log-In Details to view your Result</p>
+        </div> -->
+        <div class="container mt-5">
+            <h4 class="text-center">Check Results Page </h4>
+
+            <div class="bg-primary text-center rounded-2 w-75 mx-auto">
+
+                <button type="button" title="close" class="btn btn-primary mb-4 float-end  closeUp"><span
+                        class="fas fa-times text-danger"></span></button>
+                <h4 class="text-white pt-5 mx-auto w-75">Login Details to Print </h4>
+                <form action="">
+
+
+                    <input type="text" title="Enter your ID" name="" id="subjId"
+                        class="mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjId"
+                        placeholder="Enter ID">
+                    <input type="password" title="Enter your Password" name="" id="subjPwd"
+                        class=" mt-1 mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjPwd"
+                        placeholder="Enter Password">
+                    <small class="msg-User d-block mb-3"></small>
+                    <button type="button" class="btn btn-success mx-auto w-25 mb-2 loginR">LogIn <span
+                            class="fas fa-user"></span></button>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- these allows users to select the subject of choice for result viewing -->
+        <div class="hide text-center container showselect ">
+            <h5 class="text-center text-primary selectSubject">Select Subject </span></h5>
+            <select title="Select Subject" name="subjPick" id="subjSelect"
+                class="rounded-1 border-0 no-outline text-bg-info p-1 select ">
+                <option class="text-bg-primary text-center">Select One</option>
+                <option value="engl">English-Language</option>
+                <option value="math">Mathematics</option>
+                <option value="fina">Financial-Accounting</option>
+                <option value="econ">Economics</option>
+                <option value="comp">Computer-Studies</option>
+                <option value="biol">Biology</option>
+                <option value="phys">Physics</option>
+                <option value="chem">Chemistry</option>
+                <option value="furt">Further-Mathematics</option>
+                <option value="comm">Commerce</option>
+                <option value="lite">Literature-in-English</option>
+                <option value="gove">Government</option>
+                <option value="civi">Civic-Education</option>
+                <option value="mart">Marketing</option>
+                <option value="proc">Data-Processing</option>
+                <option value="anim">Animal-Husbandry</option>
+
+
+
+            </select>
+            <dialog class="dialog7 container border-0 text-center w-50 p-1 rounded-1">
+                <h6 class="text-danger"> Select Valid Subject<span class=" fas fa-warning ms-1 fs-2 bell"></span></h6>
+            </dialog>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------- -->
+    <!-- attach a select Subject list items for selection -->
+
+    <!-- <hr class="hr">
+    <footer class="mx-1 border-1 border-black rounded-1 mt-auto">
+        <h3 class="text-primary text-center border border-1 border-secondary mx-auto w-1 rounded-pill p-2">Our
             Services</h3>
         <div class=" text-center mb-2" id="subjectList">
             <div class="text-center">
@@ -638,7 +785,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 
@@ -647,6 +794,7 @@
     <script src="/jscripts/studentLogin.js"></script>
 
     <script src="/jscripts/ogd.js"></script>
+    <script src="/allSubjects/fina.js"></script>
 
 
 
