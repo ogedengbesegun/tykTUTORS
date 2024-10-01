@@ -54,12 +54,20 @@ adminPwds.forEach(adminPwdEach => {
 // =================================================
 
 // make all the placeholder to color in green
-let inputPlaceholders = document.querySelectorAll("input[placeholder]");
-inputPlaceholders.forEach(inputPlaceholder => {
-    inputPlaceholder.style.color = "green"
-});
+// let inputPlaceholders = document.querySelectorAll("input[placeholder]");
+// inputPlaceholders.forEach(inputPlaceholder => {
+//     inputPlaceholder.style.color = "green"
+// });
 
-// email-input validation to ensure
+
+///// tolowercase()
+let names = document.querySelectorAll(".names");
+names.forEach(eachName => {
+    eachName.addEventListener("input", () => {
+        eachName.value = eachName.value.toLowerCase();
+    })
+})
+//////////////////////////
 
 
 submitAdmin.addEventListener("click", () => {
@@ -230,10 +238,13 @@ teacherSub.addEventListener("mouseenter", () => {
     // selectedSubject
     selectedSubject.textContent = ""; //set to NULL
 });
-// teacherlogin.addEventListener("mouseenter", () => {
-//     // hide the samp element
-// document.querySelector("samp").style.display = "none";
-// });
+
+/////////////////////////////on click teacherlogin btn
+teacherlogin.addEventListener("click", () => {
+    // if()
+});
+/////////////////
+
 
 let adminLogpwd = document.querySelector("#adminLogpwd");
 let adminLogtel = document.querySelector("#adminLogtel");
@@ -422,5 +433,145 @@ closeDlg.addEventListener("click", () => {
 });
 
 
-// show the menu text
+// countqst
+
+let mycount = 1; //declaration 
+/////////
+const countInc = () => { // countInc ()init
+    return mycount + 1;
+};//////////////////////
+///////////
+const countDec = () => {// countDec ()init
+    return mycount - 1;
+}
+///////////////////
+
+// let mycount = 0;
+let backcount = document.querySelector(".backcount");
+let forwardcount = document.querySelector(".forwardcount");
+const countqst = document.querySelector(".countqst");
+
+countqst.addEventListener("click", () => {
+    countqst.textContent = 1;
+});
+
+///////////////////////////////////
+
+const txta = document.querySelector(".txta");
+const txtb = document.querySelector(".txtb");
+const txtc = document.querySelector(".txtc");
+const txtd = document.querySelector(".txtd");
+
+
+// const txtans = document.querySelector("txtans");//already declared
+//////////////////////////////////////////////
+
+getmyText("/subjectsJSON/QstBank.fina.json");
+async function getmyText(file) {
+
+    let x = await fetch(file)
+    let y = await x.json()
+
+
+    console.log(y.length)
+
+    ////////////////////////////////////// forward click
+    forwardcount.addEventListener("click", () => {
+
+        ////////////////////////////////////
+
+
+        if (countqst.textContent >= y.length) {
+            // countqst.textContent = 0
+
+            countqst.textContent = (y.length);
+            countqst;
+        }
+        else {
+
+            // reduce continuosly
+            // countqst.textContent = countInc();
+            countqst.textContent = mycount++;
+
+
+            //// fetch API//////////////////////////
+            ///////////
+            const qstion = document.querySelector(".qstion");
+            // getmyText("/subjectsJSON/QstBank.fina.json");
+            // async function getmyText(file) {
+
+            //     let x = await fetch(file)
+            //     let y = await x.json()
+
+            qstion.value = y[countqst.textContent - 1].ask;
+            txta.value = y[countqst.textContent - 1].a;
+            txtb.value = y[countqst.textContent - 1].b;
+            txtc.value = y[countqst.textContent - 1].c;
+            txtd.value = y[countqst.textContent - 1].d;
+            txtans.value = y[countqst.textContent - 1].ans;
+
+
+            // };
+            ////////////////////////fetch API end
+
+        }
+
+    });
+
+
+
+
+
+};
+
+//////////fetchAPI backcount to load qstion
+backcount.addEventListener("click", () => {
+
+
+
+    if (countqst.textContent <= 1) { //////////
+        countqst.textContent = 1;
+        // mycount = 1;
+
+        // countqst.textContent = mycount
+    }
+    else {
+        // reduce continuosly
+        countqst.textContent = mycount--;
+
+        //// fetch API//////////////////////////
+        ///////////
+        const qstion = document.querySelector(".qstion");
+
+
+
+
+
+        getmyText("/subjectsJSON/QstBank.fina.json");
+        async function getmyText(file) {
+
+            let x = await fetch(file)
+            let y = await x.json()
+
+            // console.log(y[0].ask)
+            qstion.value = y[(countqst.textContent) - 1].ask;
+            txta.value = y[(countqst.textContent) - 1].a;
+            txtb.value = y[(countqst.textContent) - 1].b;
+            txtc.value = y[(countqst.textContent) - 1].c;
+            txtd.value = y[(countqst.textContent) - 1].d;
+            txtans.value = y[(countqst.textContent) - 1].ans;
+
+        };
+        ////////////////////////fetch API end
+
+    }
+
+});////
+////////////end
+
+////////////
+
+
+
+
 

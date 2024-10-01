@@ -2,31 +2,31 @@
   "class1A": [
     {
       "ID": "ABSHS001",
-      "firstName": "adeola",
+      "firstName": "adeola muyiwa",
       "lastName": "olumide",
-      "password": "adeola001",
+      "password": "olumide001",
       "picture": "http://127.0.0.1:5501/images/img001.jpg"
     },
 
     {
       "ID": "ABSHS002",
-      "firstName": "benson",
-      "lastName": "Harry",
-      "password": "benson002",
+      "firstName": "benson tunde",
+      "lastName": "harry",
+      "password": "harry001",
       "picture": "http://127.0.0.1:5501/images/Ogedengbe Eniolorunfe Theophilus passport.jpg"
     },
     {
       "ID": "ABSHS003",
-      "firstName": "ogedengbe",
-      "lastName": "segun",
-      "password": "segun003",
+      "firstName": "segun victor",
+      "lastName": "ogedengbe",
+      "password": "segun001",
       "picture": "http://127.0.0.1:5501/images/img001.jpg"
     },
     {
       "ID": "ABSHS004",
-      "firstName": "ogedengbe",
-      "lastName": "sade",
-      "password": "sade004",
+      "firstName": "tosin sade",
+      "lastName": "ogedengbe",
+      "password": "sade001",
       "picture": "http://127.0.0.1:5501/images/img001.jpg"
     }
   ]

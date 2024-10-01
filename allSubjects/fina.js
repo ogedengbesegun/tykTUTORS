@@ -157,7 +157,7 @@ loginR.addEventListener("click", () => {
             // to remove text-danger class from msgUser
             msgUser.classList.remove("text-danger");
 
-            break;
+            break;///to stop others from running
         }
         else {
 

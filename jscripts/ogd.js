@@ -3,17 +3,7 @@
 
 // import { answeredQtns } from '/answers.js'
 
-let text = " ";
-let arr = ["seun", "kayode", "akeem", "biodun", "sewa", "55"]
-let awe = [1, 2, 3, 4, 5, 6]
-let i = 0;
 
-do {
-    text = text + "we are " + i;
-    i++;
-
-}
-while (i < 10);
 
 
 
@@ -41,7 +31,7 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET", "/subjectsJSON/financial.json", true);
+xhttp.open("GET", "/subjectsJSON/QstBank.fina.json", true);
 xhttp.send();
 
 
@@ -154,12 +144,14 @@ let scoreResult = {
     failure: 0
 }
 
+
+////////////////////////////question 1 load
 function answeredQtn1() {
 
     let inputValues = document.querySelectorAll(".inputValue1")
     let inputValue1 = Array.from(inputValues)
     const response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
 
     // ////////////////////////////////
     for (let i = 0; i < qtn.length; i++) {
@@ -385,7 +377,7 @@ function answeredQtn1() {
 
 
 }
-
+/////////////////qst 1 end
 
 // this is answers for shuffle for question 2
 function answeredQtn2() {
@@ -393,7 +385,7 @@ function answeredQtn2() {
     let inputValues = document.querySelectorAll(".inputValue2")
     let inputValue2 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn2.textContent == qtn[0].ask) {
 
         inputValue2[1].checked
@@ -586,7 +578,7 @@ function answeredQtn3() {
     let inputValues = document.querySelectorAll(".inputValue3")
     let inputValue3 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn3.textContent == qtn[0].ask) {
 
         inputValue3[1].checked
@@ -779,7 +771,7 @@ function answeredQtn4() {
     let inputValues = document.querySelectorAll(".inputValue4")
     let inputValue4 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn4.textContent == qtn[0].ask) {
 
         inputValue4[1].checked
@@ -972,7 +964,7 @@ function answeredQtn5() {
     let inputValues = document.querySelectorAll(".inputValue5")
     let inputValue5 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn5.textContent == qtn[0].ask) {
 
         inputValue5[1].checked
@@ -1165,7 +1157,7 @@ function answeredQtn6() {
     let inputValues = document.querySelectorAll(".inputValue6")
     let inputValue6 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn6.textContent == qtn[0].ask) {
 
         inputValue6[1].checked
@@ -1358,7 +1350,7 @@ function answeredQtn7() {
     let inputValues = document.querySelectorAll(".inputValue7")
     let inputValue7 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn7.textContent == qtn[0].ask) {
 
         inputValue7[1].checked
@@ -1551,7 +1543,7 @@ function answeredQtn8() {
     let inputValues = document.querySelectorAll(".inputValue8")
     let inputValue8 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn8.textContent == qtn[0].ask) {
 
         inputValue8[1].checked
@@ -1744,7 +1736,7 @@ function answeredQtn9() {
     let inputValues = document.querySelectorAll(".inputValue9")
     let inputValue9 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn9.textContent == qtn[0].ask) {
 
         inputValue9[1].checked
@@ -1937,7 +1929,7 @@ function answeredQtn10() {
     let inputValues = document.querySelectorAll(".inputValue10")
     let inputValue10 = Array.from(inputValues)
     let response = JSON.parse(xhttp.responseText)
-    let qtn = response.question
+    let qtn = response
     if (qstn10.textContent == qtn[0].ask) {
 
         inputValue10[1].checked
@@ -2149,7 +2141,7 @@ function start() {
     let response = JSON.parse(xhttp.responseText)
 
 
-    let array = response.question
+    let array = response
 
 
 
@@ -2456,6 +2448,9 @@ if (engl) {
         // ;
         // this opens a new window target=_blank
         window.open(englURL, "English-Language");
+
+        // reload the window location
+        window.location.reload(); // just reload the current page
     })
 }
 
@@ -2465,6 +2460,9 @@ let mathURL = "/allSubjects/mathematics.html";
 if (math) {
     math.addEventListener('click', () => {
         window.open(mathURL, "mathematics")
+
+        // reload the window location
+        window.location.reload(); // just reload the current page
     });
 }
 

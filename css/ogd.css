@@ -181,10 +181,11 @@ h5 {
   background-color: rgba(231, 228, 228, 0.98);
   /* background-image: url(/images/software-development-6523979_640.jpg); */
 }
-.StudentName {
+
+/* .StudentName {
   text-wrap: nowrap;
   font-size: medium;
-}
+} */
 
 button[title="Next Question"]:hover,
 button[title="Previous Question"]:hover {
@@ -380,6 +381,6 @@ button[title="Previous Question"]:hover {
   background-repeat: no-repeat;
 }
 
-.hover:hover{
+.hover:hover {
   color: #1a02f3;
 }

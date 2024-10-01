@@ -32,10 +32,15 @@ limitPwds.forEach(limitPwd => {
 });
 
 
-// 3.capitalise input text for firstName & lastName
-document.querySelector("#regfirstName").style.textTransform = "capitalize";
-document.querySelector(" #reglastName").style.textTransform = "capitalize";
+/////////////toLowerCase()
 
+let stdNames = document.querySelectorAll(".stdNames");
+stdNames.forEach(eName => {
+    eName.addEventListener("input", () => {
+        eName.value = eName.value.toLowerCase();
+    })
+});
+/////////////////////////////////
 
 // validate the form input
 let regPassword = document.querySelector("#regPassword");
@@ -56,6 +61,7 @@ function sameValue() { //give border-success when same value input
 
             regPassword.classList.remove("border-danger");
             regPassword2.classList.remove("border-danger");
+            document.querySelector("button[type=submit]").disabled = false;
 
             console.log("hey we are the same");
         }
@@ -67,6 +73,9 @@ function sameValue() { //give border-success when same value input
 
             regPassword.classList.add("border-danger");
             regPassword2.classList.add("border-danger");
+
+            document.querySelector("button[type=submit]").disabled = true;
+
         }
 
 
@@ -76,10 +85,10 @@ function sameValue() { //give border-success when same value input
     });
 
     regPassword.addEventListener("input", () => { //ist input
-        if (regPassword.value != regPassword2.value ) { //if val !=
+        if (regPassword.value != regPassword2.value) { //if val !=
             regPassword2.value = "";// return empty
             // ////////////
-
+            document.querySelector("button[type=submit]").disabled = true;
             regPassword.classList.remove("border-success");// revert
             regPassword2.classList.remove("border-success"); // revert
 
@@ -192,3 +201,10 @@ stdRegBtn.addEventListener("click", () => {
 //         console.log("Just got clicked Now")
 //     })
 // })
+
+const signHome = document.querySelector(".signHome"); //variable declared
+signHome.addEventListener("click", () => {
+    let url = "/index.html"
+    window.close();//closes first the active page
+    window.open(url, 'index.html'); //open the url
+});

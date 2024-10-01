@@ -19,7 +19,7 @@ hide4login.forEach(eachhide4login => {
 
 
 // set the login class input attribute of maxlength t0 9 for security reasons
-document.querySelector(".studentlogin #logid").setAttribute("maxlength", 9);
+document.querySelector(".studentlogin #logid").setAttribute("maxlength", 30);
 document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
 
 
@@ -82,7 +82,7 @@ function Login() {
 
         // ------------------------------------
 
-        if ((logid.value === `${response1.class1A[i].ID}`) && (passwd.value === `${response1.class1A[i].password}`)
+        if ((logid.value === `${response1.class1A[i].lastName}`) && (passwd.value === `${response1.class1A[i].password}`)
         ) {
 
 

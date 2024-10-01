@@ -148,9 +148,9 @@
                 <div class="mx-5 text-bg-primary rounded-3 w-auto my-2 p-2 text-center studentlogin">
                     <form action="">
                         <h3 class="text-light">login to Start Exam</h3><span class="fas fa-book-open fs-1"></span>
-                        <input title="Login your ID" type="text" name="logid" id="logid"
+                        <input title="Surname" type="text" name="logid" id="logid"
                             class="rounded-2 text-center border-0 mb-2  d-block mx-auto w-50 p-1 no-outline"
-                            placeholder="Enter ID" autocomplete="userName">
+                            placeholder="Enter Surname" autocomplete="userName">
                         <input title="Input your Password" type="password" name="passwd" id="passwd"
                             class="border-0 rounded-2  text-center d-block mx-auto w-50 p-1 no-outline"
                             placeholder="Password" autocomplete="current-password">
@@ -167,7 +167,7 @@
                         <!-- ------- -->
                         <button type="button" class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
                             onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
-                        <small class="text-danger forgotPwd cursor">forgot password ?</small>
+                        <small title="forgot password?" class="text-danger forgotPwd cursor">forgot password ?</small>
 
                         <!-- dialog to display re-enter password -->
                         <dialog class="reEnterPwd bg-secondary border-0 rounded-2 mt-7 mx-auto">
@@ -185,7 +185,7 @@
                                     class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline mb-3"
                                     placeholder="Confirm Password">
 
-                                <button title="Submit" type="submit"
+                                <button title="Change Password" type="submit"
                                     class="btn btn-success d-block mx-auto w-50 mb-2">Change Password</button>
                             </form>
 
@@ -194,7 +194,7 @@
                         </dialog>
                     </form>
                     <!-- <a href="/html/signUp.html" class=""> -->
-                        <p class="text-light mt-1 cursor sign-up">Sign Up <span class="fas fa-right-to-bracket"></span></p>
+                        <p title="Sign Up" class="text-light mt-1 cursor sign-up">Sign Up <span class="fas fa-right-to-bracket"></span></p>
                     <!-- </a> -->
                 </div>
                 <!-- start page end -->
@@ -667,7 +667,7 @@
                 <img src="/images/Free_face.jpg" alt="myProfile picture"
                     class="img001 myPicture border boder-1 border-primary">
 
-                <h3 class="StudentName text-center p-1 mx-auto border-primary border-2 border m-2 rounded-2 w-100 ms-1">
+                <h3 class="StudentName fs-3 fw-bold text-nowrap text-center p-1 mx-auto border-primary border-2 border m-2 rounded-2 w-100 ms-1">
                     REPORTS OF
                     SCORES
                 </h3>
@@ -697,7 +697,7 @@
 
 
     <!-- Print Previous Results based on current subject(Finan Acct) -->
-    <div class="hide bg-light position-fixed top-0 z-2 w-100 h-100 mx-auto subjResultLogin">
+    <div class="hidec bg-light position-fixed top-0 z-2 w-100 h-100 mx-auto subjResultLogin">
         <!-- <div class="card w-50 mx-auto mt-2 bg-info border-0">
             <p class="text-center mt-2">1. Select a Subject</p>
             <p class="text-center">2. Enter Log-In Details to view your Result</p>
@@ -708,7 +708,7 @@
             <div class="bg-primary text-center rounded-2 w-75 mx-auto">
 
                 <button type="button" title="close" class="btn btn-primary mb-4 float-end  closeUp"><span
-                        class="fas fa-times text-danger"></span></button>
+                        class="fas fa-times text-danger fw-bold fs-4"></span></button>
                 <h4 class="text-white pt-5 mx-auto w-75">Login Details to Print </h4>
                 <form action="">
 
