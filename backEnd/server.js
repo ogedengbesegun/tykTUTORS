@@ -14,9 +14,8 @@ app.use(cors());
 
 // MongoDB connection
 const uri = 'mongodb://localhost:27017/'; // Replace with your actual MongoDB connection string
-const client = new MongoClient(uri,
-    { useNewUrlParser: true, useUnifiedTopology: true });
-
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// ,{ useNewUrlParser: true, useUnifiedTopology: true }
 client.connect().then(() => {
     const db = client.db('tykBank'); // Replace with your database name
     const collection = db.collection('stds'); // Replace with your collection name
