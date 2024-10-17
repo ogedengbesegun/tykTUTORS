@@ -14,6 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
     <!-- 1 boostrap framework css -->
     <!-- <link rel="stylesheet" href="/bootstrap.css"> -->
@@ -43,24 +45,27 @@
                     class="bg-light navbar-toggler border-2 border-primary navbar navbar-toggler-icon text-light "></span></button><small
                 class=" text-light m-auto hide">Menu</small>
         </div>
+
         <span class="fs-4 fw-bold Mymarquee ms-5 text-nowrap ">Welcome onboard to this Noble
             Platform for Teachers</span>
         <!-- <h4 class=" ms-1 text-bg-dark p-2 w-75 text-center rounded-2">Teachers' Modules</h4> -->
     </header>
     <!-- dailog for to select login or registration -->
     <dialog class="text-center  border-0 rounded-2 logSignToggle">
-        <h4 class="text-center">Login/SignUp</h4>
-        <select name="logToggle" id="logToggle" class="mx-auto w-100 mb-1 p-1 bg-light">
-            <option value="Login" class="text-center text-success fw-bold">Login</option>
-            <option value="SignUp" class="text-center text-success fw-bold">SignUp</option>
-        </select>
-        <button type="button" class="mt-2 mx-auto w-75 btn btn-danger teacherClose">OK</button>
+        <span class="cursor fas fa-times-circle float-end text-danger teacherClose"></span>
+
+        <h5 class="text-center">Login/SignUp</h5>
+        <ul id="logToggle" class="mx-auto w-100 mb-1 p-1 bg-light rounded-pill">
+            <li class=" btn btn-primary text-center text-light rounded-pill fw-bold w-75 mb-1 Login">Login</li>
+            <li class=" btn btn-success text-center text-light rounded-pill fw-bold w-75 signUp">SignUp</li>
+        </ul>
+
     </dialog>
 
 
     <br><br> <!-- To put spacing into the -->
-    <div class="container position-sticky top-0 mt-1">
-        <section class="hides border rounded-2 regSection">
+    <div class="container position-sticky top-0 mt-1 ">
+        <section class="hide border rounded-2 regSection">
             <button type="button" title="close Page" class="float-end adminClose"> <i
                     class="fas fa-times text-danger fs-4"></i></button>
 
@@ -110,7 +115,8 @@
                         placeholder="Confirm Password" autocomplete="current-password" required>
                     <p class="res text-center rounded-2 bg-light mx-auto w-50"></p>
                     <button type="submit"
-                        class="btn  border-black border d-block mx-auto w-2 mb-3 submitAdmin fs-5">Submit</button>
+                        class="btn  border-black border d-block mx-auto w-2 mb-3 fs-4 fw-bold submitAdmin">Submit</button>
+                    <small title="Login" class="text-danger Login cursor text-decoration-underline">Already have an Account? Login</small>
                 </form>
             </fieldset>
 
@@ -118,46 +124,46 @@
 
 
         <!--start of the admin Questions for Subjects  -->
+        <div class=" loginSection"> <!--loginsection to hide all entirely-->
+            <section class="text-center my-2 rounded-2 d-flex gap-1">
+                <div class=" card p-2 border-1 border-dark w-50 h-50">
+                    <h6 class="text-centre text-bg-primary p-1 rounded-1">Select Subject</h6>
+                    <select title="Please Select Subject to include into the Project" name="teacherSub" id="teacherSub"
+                        class="border-2 mb-1">
+                        <option class="text-bg-primary text-center"> >>>Select One</option>
+                        <option value="engl">English-Language</option>
+                        <option value="math">Mathematics</option>
+                        <option value="fina">Financial-Accounting</option>
+                        <option value="econ">Economics</option>
+                        <option value="comp">Computer-Studies</option>
+                        <option value="biol">Biology</option>
+                        <option value="phys">Physics</option>
+                        <option value="chem">Chemistry</option>
+                        <option value="furt">Further-Mathematics</option>
+                        <option value="comm">Commerce</option>
+                        <option value="lite">Literature-in-English</option>
+                        <option value="gove">Government</option>
+                        <option value="civi">Civic-Education</option>
+                        <option value="mart">Marketing</option>
+                        <option value="proc">Data-Processing</option>
+                        <option value="anim">Animal-Husbandry</option>
+                    </select>
+                    <p class="text-center  text-bg-success opacity-75 p-2 rounded-1 mb-0 mt-auto">
+                        This is
+                        an
+                        opportunity to send-in your input as a
+                        seasoned
+                        teacher.
+                    </p>
 
-        <section class=" text-center my-2 rounded-2 d-flex gap-1 loginSection">
-            <div class="card p-2 border-1 border-dark w-50 h-50">
-                <h6 class="text-centre text-bg-primary p-1 rounded-1">Select Subject</h6>
-                <select title="Please Select Subject to include into the Project" name="teacherSub" id="teacherSub"
-                    class="border-2 mb-1">
-                    <option class="text-bg-primary text-center"> >>>Select One</option>
-                    <option value="engl">English-Language</option>
-                    <option value="math">Mathematics</option>
-                    <option value="fina">Financial-Accounting</option>
-                    <option value="econ">Economics</option>
-                    <option value="comp">Computer-Studies</option>
-                    <option value="biol">Biology</option>
-                    <option value="phys">Physics</option>
-                    <option value="chem">Chemistry</option>
-                    <option value="furt">Further-Mathematics</option>
-                    <option value="comm">Commerce</option>
-                    <option value="lite">Literature-in-English</option>
-                    <option value="gove">Government</option>
-                    <option value="civi">Civic-Education</option>
-                    <option value="mart">Marketing</option>
-                    <option value="proc">Data-Processing</option>
-                    <option value="anim">Animal-Husbandry</option>
-                </select>
-                <p class="text-center  text-bg-success opacity-75 p-2 rounded-1 mb-0 mt-auto">
-                    This is
-                    an
-                    opportunity to send-in your input as a
-                    seasoned
-                    teacher.
-                </p>
-
-                <div>
-                    <small class="text-danger border-bottom border-danger">Instructions <span
-                            class="fas fa-warning"></span></small>
-                    <b><small class="d-block text-success">Ensure One of the Subjects is selected before Login is
-                            activated
-                            !!!</small></b>
-                </div>
-                <!-- <div class="text-bg-info rounded-2 p-1">
+                    <div>
+                        <small class="text-danger border-bottom border-danger">Instructions <span
+                                class="fas fa-warning"></span></small>
+                        <b><small class="d-block text-success">Ensure One of the Subjects is selected before Login is
+                                activated
+                                !!!</small></b>
+                    </div>
+                    <!-- <div class="text-bg-info rounded-2 p-1">
                     <h5>
                         For Questions and Enquiries
                     </h5>
@@ -165,66 +171,67 @@
                     <span class="fas fa-envelope-open mt-2"></span><p class=""> wisdomworld@gmail.com</p>
                     <p><span class="fas fa-mobile-screen-button"></span> 08036749218 , 08024779567</p>
                 </div> -->
-            </div>
-
-            <!--  -->
-            <form action="" class="bg-secondary rounded-1 text-center form2 h-25  ">
-                <button type="button" title="close Page" class="float-end adminClose"> <i
-                        class="fas fa-times text-danger fs-4"></i></button>
-                <h2 class="
-                 text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login <i
-                        class="fas fa-key fs-5"></i>
-                </h2>
-                <div class="d-block">
-                    <p class="selectedSubject text-center text-light my-1"></p>
-                    <input title="Enter Phone Number" type="tel" id="adminLogtel"
-                        class="no-outline text-center p-1 mb-1 mx-auto w-50" placeholder="Phone Number" required>
-                    <input title="Enter Password" type="password" name="adminLogpwd" id="adminLogpwd"
-                        class=" no-outline text-center p-1 mx-auto  w-50" placeholder="Password" required>
-                    <button title="Click Login Button" type="button"
-                        class="btn btn-secondary w-1 mx-auto my-2 border-primary border-2 fs-5 d-block teacherlogin">Login</button><u
-                        class="text-light">
-                        <small class="text-warning fw-bold teaforgotpwd cursor">forgot Password ?</small></u>
-                    <samp class=" hide text-info">
-                        One Subject Must be selected to Login
-                    </samp>
-
-
                 </div>
+
                 <!--  -->
+                <form action="" class="bg-secondary rounded-1 text-center form2 h-25  ">
+                    <button type="button" title="close Page" class="float-end adminClose"> <i
+                            class="fas fa-times text-danger fs-4"></i></button>
+                    <h2 class="
+                 text-bg-primary border-bottom rounded-1 border-3 border-dark text-nowarp p-2">Teacher's Login <i
+                            class="fas fa-key fs-5"></i>
+                    </h2>
+                    <div class="d-block">
+                        <p class="selectedSubject text-center text-light my-1"></p>
+                        <input title="Enter Phone Number" type="tel" id="adminLogtel"
+                            class="no-outline text-center p-1 mb-1 mx-auto w-50" placeholder="Phone Number" required>
+                        <input title="Enter Password" type="password" name="adminLogpwd" id="adminLogpwd"
+                            class=" no-outline text-center p-1 mx-auto  w-50" placeholder="Password" required>
+                        <button title="Click Login Button" type="button"
+                            class="btn btn-secondary w-1 mx-auto my-2 border-primary border-2 fs-5 d-block teacherlogin">Login</button><u
+                            class="text-light">
+                            <small class="text-warning fw-bold teaforgotpwd cursor">forgot Password ?</small></u>
+                        <samp class=" hide text-info">
+                            One Subject Must be selected to Login
+                        </samp>
 
 
-                <div class="bg-light border border-2 border-success mx-1 p-1">
-                    <small class="text-danger">Not registered? </small> <br>
-                    <small class="text-success cursor signUp">SignUp</small>
-                </div>
-            </form>
-            <!--  -->
-            <!--teacher forgot password ? -->
+                    </div>
+                    <!--  -->
 
-            <dialog class="reEnterPwd border-0 rounded-2 mt-7 mx-auto">
-                <h3 class="mt-2 text-center text-danger">Forgot Password? <span
-                        class="fas fa-times-circle text-danger float-end me-2 cursor closeDlg" title="close"></span>
-                </h3>
-                <form action="">
-                    <input type="tel" name="teachNum" id="teachNum"
-                        class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline" placeholder="Phone Number">
-                    <input type="password" name="repwdNew1" id="repwdNew1"
-                        class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline" placeholder="New Password">
-                    <input type="password" name="repwdNew2" id="repwdNew2"
-                        class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline mb-3"
-                        placeholder="Confirm Password">
 
-                    <button title="Submit" type="submit" class="btn btn-success d-block mx-auto w-50 mb-2">Change
-                        Password</button>
+                    <div class="bg-light border border-2 border-success mx-1 p-1">
+                        <small class="text-danger">Not registered? </small> <br>
+                        <small class="text-success cursor signUp text-decoration-underline fw-bold">SignUp</small>
+                    </div>
                 </form>
+                <!--  -->
+                <!--teacher forgot password ? -->
+
+                <dialog class="reEnterPwd border-0 rounded-2 mt-7 mx-auto">
+                    <h3 class="mt-2 text-center text-danger">Forgot Password? <span
+                            class="fas fa-times-circle text-danger float-end me-2 cursor closeDlg" title="close"></span>
+                    </h3>
+                    <form action="">
+                        <input type="tel" name="teachNum" id="teachNum"
+                            class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline" placeholder="Phone Number">
+                        <input type="password" name="repwdNew1" id="repwdNew1"
+                            class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline" placeholder="New Password">
+                        <input type="password" name="repwdNew2" id="repwdNew2"
+                            class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline mb-3"
+                            placeholder="Confirm Password">
+
+                        <button title="Submit" type="submit" class="btn btn-success d-block mx-auto w-50 mb-2">Change
+                            Password</button>
+                    </form>
 
 
 
-            </dialog>
+                </dialog>
 
 
-        </section>
+            </section>
+        </div>
 
 
         <!--  -->
@@ -270,22 +277,28 @@
                 </div>
             </div>
 
-            <section class="card p-2 my-2 bg-light">
-                <strong>
-                    <p class="text-center text-primary"><strong class="text-danger">Note:</strong> This Platform is
-                        Created
-                        solely for Professional Teachers with
-                        wealth of experience to have their
-                        input to the Question Bank and get renumerated with token amount as a form encouragement </p>
-                </strong>
-                <strong class="text-center"> <u class="text-danger">Please Note:</u></strong>
-                <p class="text-danger text-center">Questions fed into the Question Data Bank will be <em
-                        class="text-success">verified,
-                        scrutinized</em> and subsequently added up to the question bank</p>
 
-            </section>
 
-        </section> <!-- end of the create question-->
+        </section>
+        <section class="card p-2 my-2 bg-light">
+            <strong>
+                <p class="text-center text-primary"><strong class="text-danger">Note:</strong> This Platform is
+                    Created
+                    solely for Professional Teachers with
+                    wealth of experience to have their
+                    input to the Question Bank and get renumerated with token amount as a form encouragement </p>
+            </strong>
+            <strong class="text-center"> <u class="text-danger">Please Note:</u></strong>
+            <p class="text-danger text-center">Questions fed into the Question Data Bank will be <em
+                    class="text-success">verified,
+                    scrutinized</em> and subsequently added up to the question bank</p>
+
+        </section><!-- end of the create question-->
+
+
+
+
+
         <!-- footer to the project -->
         <!-- <footer class="  mx-auto my-2 position-sticky bottom-0 z-2">
             <div class="card bg-light p-2">

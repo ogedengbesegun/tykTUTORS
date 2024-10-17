@@ -78,13 +78,12 @@ function Login() {
     // -------------------------------------------------
     let response1 = JSON.parse(xhttp1.responseText)
 
-    for (let i = 0; i < response1.class1A.length; i++) {
+    for (let i = 0; i < response1.stds.length; i++) {
 
         // ------------------------------------
 
-        if ((logid.value === `${response1.class1A[i].lastName}`) && (passwd.value === `${response1.class1A[i].password}`)
+        if ((logid.value === `${response1.stds[i].surname}`) && (passwd.value === `${response1.stds[i].password}`)
         ) {
-
 
 
             // the attributes needs to change as login becomes successful
@@ -96,7 +95,7 @@ function Login() {
             // alert("The login is successful")
             let profilePic = document.querySelector(".img001")
 
-            profilePic.setAttribute("src", `${response1.class1A[i].picture}`)
+            profilePic.setAttribute("src", `${response1.stds[i].picture}`)
 
 
             // These events are fired after the login is done
@@ -113,7 +112,7 @@ function Login() {
 
             let reportName = document.querySelector(".reportName")
 
-            reportName.textContent = "Name: " + " " + (response1.class1A[i].firstName + " " + response1.class1A[i].lastName).toUpperCase();
+            reportName.textContent = "Name: " + " " + (response1.stds[i].surname + " " + response1.stds[i].otherName).toUpperCase();
 
 
             // the dialog is secretly opened, so close it up 

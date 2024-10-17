@@ -335,31 +335,41 @@ function subjectText() { //declaration of function to change to textContent
 
 
 // signUP
-let signUp = document.querySelector("form .signUp"); //declaration
-signUp.addEventListener("click", function () {
-    document.querySelector(".regSection").classList.remove("hide"); //make visible
-    document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
-    document.querySelector(".createQst").style.display = "none"
+let signUp = document.querySelectorAll(".signUp"); //declaration
+signUp.forEach(signUps => {
+    signUps.addEventListener("click", function () {
+        document.querySelector(".regSection").classList.remove("hide"); //make visible
+        document.querySelector(".loginSection").classList.add("hide"); //make invinsible
+        document.querySelector(".createQst").style.display = "none"
+
+
+
+        logSignToggle.close(); // close the modal
+    });
 });
+
 
 // use the dialog element
-const logToggle = document.querySelector("#logToggle"); // variable declaration
+const login = document.querySelectorAll(".Login"); // variable declaration
+// const signUp = document.querySelector(".Login");
+// signUp.addEventListener("click", () => {
 
-logToggle.addEventListener("click", () => {
-    if (logToggle.value == "SignUp") {
-        document.querySelector(".regSection").classList.remove("hide"); //make visible
-        document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
-        document.querySelector(".createQst").style.display = "none";
+//     document.querySelector(".regSection").classList.remove("hide"); //make visible
+//     document.querySelector(".loginSection").classList.add("invisible"); //make invinsible
+//     document.querySelector(".createQst").style.display = "none";
 
-    }
-
-    else if (logToggle.value == "Login") {
+// });
+login.forEach(logins => {
+    logins.addEventListener('click', () => {
         document.querySelector(".regSection").classList.add("hide"); //make visible
-        document.querySelector(".loginSection").classList.remove("invisible"); //make invinsible
-        document.querySelector(".createQst").style.display = "block";
+        document.querySelector(".loginSection").classList.remove("hide"); //make invinsible
+        // document.querySelector(".createQst").style.display = "block";
 
-    }
+        logSignToggle.close(); // close the modal
+
+    });
 });
+
 // 
 
 
@@ -438,11 +448,11 @@ closeDlg.addEventListener("click", () => {
 let mycount = 1; //declaration 
 /////////
 const countInc = () => { // countInc ()init
-    return mycount + 1;
+    return mycount++;
 };//////////////////////
 ///////////
 const countDec = () => {// countDec ()init
-    return mycount - 1;
+    return mycount--;
 }
 ///////////////////
 
@@ -466,7 +476,7 @@ const txtd = document.querySelector(".txtd");
 // const txtans = document.querySelector("txtans");//already declared
 //////////////////////////////////////////////
 
-getmyText("/subjectsJSON/QstBank.fina.json");
+getmyText("/subjectsJSON/tykBank.fina.json");
 async function getmyText(file) {
 
     let x = await fetch(file)
@@ -491,7 +501,7 @@ async function getmyText(file) {
 
             // reduce continuosly
             // countqst.textContent = countInc();
-            countqst.textContent = mycount++;
+            countqst.textContent = countInc();
 
 
             //// fetch API//////////////////////////
@@ -537,7 +547,7 @@ backcount.addEventListener("click", () => {
     }
     else {
         // reduce continuosly
-        countqst.textContent = mycount--;
+        countqst.textContent = countDec();
 
         //// fetch API//////////////////////////
         ///////////
@@ -547,7 +557,7 @@ backcount.addEventListener("click", () => {
 
 
 
-        getmyText("/subjectsJSON/QstBank.fina.json");
+        getmyText("/subjectsJSON/tykBank.fina.json");
         async function getmyText(file) {
 
             let x = await fetch(file)

@@ -31,7 +31,7 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET", "/subjectsJSON/QstBank.fina.json", true);
+xhttp.open("GET", "/subjectsJSON/tykBank.fina.json", true);
 xhttp.send();
 
 
@@ -52,20 +52,20 @@ xhttp.send();
 
 
 
-function show() {
-    document.querySelector('.show').style.display = 'block';
+// function show() {
+//     document.querySelector('.show').style.display = 'block';
 
-}
+// }
 
 
-let vang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+// let vang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
-for (let m = vang.length - 1; m > 0; m--) {
-    const j = Math.floor(Math.random() * (m + 1));
+// for (let m = vang.length - 1; m > 0; m--) {
+//     const j = Math.floor(Math.random() * (m + 1));
 
-    [vang[m], vang[j]] = [vang[j], vang[m]];
+//     [vang[m], vang[j]] = [vang[j], vang[m]];
 
-}
+// }
 
 // console.log(vang.slice(0, 1)[0]);
 
@@ -2138,7 +2138,7 @@ function start() {
 
 
     document.querySelector(".start").disabled = true
-    let response = JSON.parse(xhttp.responseText)
+    let response = JSON.parse(xhttp.responseText);
 
 
     let array = response

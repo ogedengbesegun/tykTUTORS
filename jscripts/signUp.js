@@ -1,8 +1,5 @@
 
-// this is a window object to get screen width of the user
-console.log(window.screen.width);
-// this will get you the user's screen height
-console.log(window.screen.height);
+
 
 
 // 1. configure the input elemnts to accept only number values
@@ -42,8 +39,13 @@ stdNames.forEach(eName => {
 });
 /////////////////////////////////
 
+
+document.querySelector("button[type=submit]").disabled = true;/// disable submit button
+
+
+
 // validate the form input
-let regPassword = document.querySelector("#regPassword");
+let regPassword = document.querySelector(".regPsw");
 let regPassword2 = document.querySelector("#regPassword2")
 
 
@@ -110,7 +112,7 @@ reveal.addEventListener("click", () => {
         reveal.classList.add("fa-eye");
         reveal.classList.remove("text-danger")
         reveal.style.color = "green";
-        document.querySelector("#regPassword").setAttribute("type", "text");
+        document.querySelector(".regPsw").setAttribute("type", "text");
 
     }
     else {
@@ -118,7 +120,7 @@ reveal.addEventListener("click", () => {
         reveal.classList.remove("fa-eye")
         reveal.classList.add("text-danger")
 
-        document.querySelector("#regPassword").setAttribute("type", "password");
+        document.querySelector(".regPsw").setAttribute("type", "password");
 
     }
 })
@@ -208,3 +210,56 @@ signHome.addEventListener("click", () => {
     window.close();//closes first the active page
     window.open(url, 'index.html'); //open the url
 });
+
+
+
+////////regSignup
+
+const regSignup = document.querySelector('.regSignup')
+regSignup.addEventListener('click', function () {
+
+    // alert('Registration Failed')
+
+});
+//    this.preventDefault();
+
+async function reg() {
+    const regSur = document.querySelector('.regSur').value;
+    const regOther = document.querySelector('.regOther').value;
+    const regNum = document.querySelector('.regNum').value;
+    const regEmail = document.querySelector('.regEmail').value;
+    const regPsw = document.querySelector('.regPsw').value;
+
+
+
+
+    const response = await fetch('http://localhost:3000/insert', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            regSur: regSur, regOther: regOther,
+            regNum: regNum, regEmail: regEmail, regPsw: regPsw
+        }),
+    });
+
+    const result = await response.json();
+    console.log(result);
+};
+
+
+// async function get() {
+
+//     const response = await fetch('http://localhost:3000/insert', {
+//         method: 'get',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+
+//     });
+
+//     const fetchget = await response.json();
+// // fetchget.
+// }
+
