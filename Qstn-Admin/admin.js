@@ -363,7 +363,7 @@ login.forEach(logins => {
     logins.addEventListener('click', () => {
         document.querySelector(".regSection").classList.add("hide"); //make visible
         document.querySelector(".loginSection").classList.remove("hide"); //make invinsible
-        // document.querySelector(".createQst").style.display = "block";
+        document.querySelector(".createQst").style.display = "block";
 
         logSignToggle.close(); // close the modal
 
@@ -559,6 +559,11 @@ backcount.addEventListener("click", () => {
 
         getmyText("/subjectsJSON/tykBank.fina.json");
         async function getmyText(file) {
+
+
+// const 
+
+
 
             let x = await fetch(file)
             let y = await x.json()
