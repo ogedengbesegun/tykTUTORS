@@ -2,9 +2,10 @@
   "name": "ogd-profile-page",
   "version": "1.0.0",
   "description": "ogd-Education-solution",
-  "main": "bootstrap.bundle.js",
+  "main": "backEnd/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backEnd/server.js"
   },
   "author": "Ogedengbe,segun",
   "license": "ISC",
@@ -18,6 +19,6 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.7"
   }
 }

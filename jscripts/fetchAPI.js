@@ -97,6 +97,9 @@
 
 ////////////////////////////////////
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const express = require('express');
+
+const app = express();
 const uri = "mongodb://localhost:27017/";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -126,7 +129,7 @@ async function run() {
         await client.db("tykBank").command({ ping: 1 });
 
         //  result to show
-        const document = await stds.findOne({ surname: "ogedengbe",password:"aaaa" });
+        const document = await stds.findOne({ surname: "obafemi", password: "obafemi" });
 
         console.log(document)
 

@@ -1,8 +1,17 @@
 
+//variables declarations
+const regSur = document.querySelector('.regSur');
+const regOther = document.querySelector('.regOther');
+const regNum = document.querySelector('.regNum');
+const regEmail = document.querySelector('.regEmail');
+const regPsw = document.querySelector('.regPsw');
+const regPassword2 = document.querySelector("#regPassword2");
 
 
 
 // 1. configure the input elemnts to accept only number values
+
+
 
 document.querySelector(".input-Val").addEventListener('input', function (e) {
     acceptOnlyNum(e)
@@ -45,23 +54,23 @@ document.querySelector("button[type=submit]").disabled = true;/// disable submit
 
 
 // validate the form input
-let regPassword = document.querySelector(".regPsw");
-let regPassword2 = document.querySelector("#regPassword2")
+// let regPsw = document.querySelector(".regPsw"); //aready declared
 
 
 function sameValue() { //give border-success when same value input
-    regPassword.classList.remove("border-success");
+    regPsw.classList.remove("border-success");
     regPassword2.classList.remove("border-success");
 
     regPassword2.addEventListener("input", () => {
 
 
-        if ((regPassword2.value === regPassword.value) || (regPassword.value === regPassword2.value)) {
-            regPassword.classList.add("border-success");
+        if ((regPassword2.value === regPsw.value) || (regPsw.value === regPassword2.value) && regSur.value != ""
+            && regOther.value != "" && regNum.value != "" && regEmail.value != "") {
+            regPsw.classList.add("border-success");
             regPassword2.classList.add("border-success");
 
 
-            regPassword.classList.remove("border-danger");
+            regPsw.classList.remove("border-danger");
             regPassword2.classList.remove("border-danger");
             document.querySelector("button[type=submit]").disabled = false;
 
@@ -70,10 +79,10 @@ function sameValue() { //give border-success when same value input
         else {
 
 
-            regPassword.classList.remove("border-success");
+            regPsw.classList.remove("border-success");
             regPassword2.classList.remove("border-success");
 
-            regPassword.classList.add("border-danger");
+            regPsw.classList.add("border-danger");
             regPassword2.classList.add("border-danger");
 
             document.querySelector("button[type=submit]").disabled = true;
@@ -86,15 +95,15 @@ function sameValue() { //give border-success when same value input
 
     });
 
-    regPassword.addEventListener("input", () => { //ist input
-        if (regPassword.value != regPassword2.value) { //if val !=
+    regPsw.addEventListener("input", () => { //ist input
+        if (regPsw.value != regPassword2.value) { //if val !=
             regPassword2.value = "";// return empty
             // ////////////
             document.querySelector("button[type=submit]").disabled = true;
-            regPassword.classList.remove("border-success");// revert
+            regPsw.classList.remove("border-success");// revert
             regPassword2.classList.remove("border-success"); // revert
 
-            regPassword.classList.remove("border-danger"); // revert
+            regPsw.classList.remove("border-danger"); // revert
             regPassword2.classList.remove("border-danger"); // revert
 
         }
@@ -215,51 +224,61 @@ signHome.addEventListener("click", () => {
 
 ////////regSignup
 
+
+
 const regSignup = document.querySelector('.regSignup')
-regSignup.addEventListener('click', function () {
+let form =document.querySelector('.form'); //variable
+const sverURL="http://localhost:3000/stdsReg"; //server URl
 
-    // alert('Registration Failed')
+form.setAttribute("action",sverURL )
+regSignup.addEventListener('click',()=> {
+if(reg()){
+ // get();
+ document.querySelector('.resMsg').innerHTML = "Successfully Submitted"
 
+//  setTimeout(() => {
+//      window.location.reload();
+//  }, 2000);
+}
+   
 });
 //    this.preventDefault();
 
+///http address server
 async function reg() {
-    const regSur = document.querySelector('.regSur').value;
-    const regOther = document.querySelector('.regOther').value;
-    const regNum = document.querySelector('.regNum').value;
-    const regEmail = document.querySelector('.regEmail').value;
-    const regPsw = document.querySelector('.regPsw').value;
-
-
-
-
-    const response = await fetch('http://localhost:3000/insert', {
+try{
+    const response = await fetch(sverURL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            regSur: regSur, regOther: regOther,
-            regNum: regNum, regEmail: regEmail, regPsw: regPsw
+            regSur: regSur.value, regOther: regOther.value,
+            regNum: regNum.value, regEmail: regEmail.value,
+            regPsw: regPsw.value
         }),
     });
-
-    const result = await response.json();
-    console.log(result);
+      const sverRes= response.json()
+    if(sverRes){
+      alert("Congratulations" + sverRes.othernames)  
+    }
+}
+catch(error){
+    alert("Registration Sending failed", error)
+}
+    
 };
 
 
 // async function get() {
 
-//     const response = await fetch('http://localhost:3000/insert', {
-//         method: 'get',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
+//     const resMsg = document.querySelector('.resMsg').innerHTML;
 
-//     });
-
-//     const fetchget = await response.json();
-// // fetchget.
+//     const geturl = await fetch('http://localhost:3000/insert');
+   
+    
 // }
+
+
+
 

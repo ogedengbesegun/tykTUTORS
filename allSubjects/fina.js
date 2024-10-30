@@ -244,3 +244,12 @@ if (closeUp) {
 
 
 
+////////////to get data from my mongodb via the server
+
+
+
+
+
+
+
+
