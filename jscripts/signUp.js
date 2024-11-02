@@ -2,21 +2,34 @@
 //variables declarations
 const regSur = document.querySelector('.regSur');
 const regOther = document.querySelector('.regOther');
+const regDob = document.querySelector('.regDob');
+const regMale = document.querySelector('.regMale');
+const regFemale = document.querySelector('.regFemale');
 const regNum = document.querySelector('.regNum');
 const regEmail = document.querySelector('.regEmail');
 const regPsw = document.querySelector('.regPsw');
 const regPassword2 = document.querySelector("#regPassword2");
 
+//////////// server url fetch from url.json
+async function url() {// url from json
+    try {
+        const myurl = await fetch("/url.json");
+
+        const response = await myurl.json();
+        console.log(response.myurl);
+    }
+    catch (error) {
+        console.error("failure to load the data", error)
+    }
+};
+// url();
+
 
 
 // 1. configure the input elemnts to accept only number values
-
-
-
 document.querySelector(".input-Val").addEventListener('input', function (e) {
     acceptOnlyNum(e)
 })
-
 
 // Accept Only Numbers No Alphabeths
 function acceptOnlyNum(e) {
@@ -48,15 +61,15 @@ stdNames.forEach(eName => {
 });
 /////////////////////////////////
 
-
-document.querySelector("button[type=submit]").disabled = true;/// disable submit button
-
+////disable sign/Register button 1st
+document.querySelector(".regSignup").disabled = true;/// disable submit button
+///////
 
 
 // validate the form input
 // let regPsw = document.querySelector(".regPsw"); //aready declared
 
-
+///// to ensure enter password and confirm are same
 function sameValue() { //give border-success when same value input
     regPsw.classList.remove("border-success");
     regPassword2.classList.remove("border-success");
@@ -72,7 +85,7 @@ function sameValue() { //give border-success when same value input
 
             regPsw.classList.remove("border-danger");
             regPassword2.classList.remove("border-danger");
-            document.querySelector("button[type=submit]").disabled = false;
+            document.querySelector(".regSignup").disabled = false;
 
             console.log("hey we are the same");
         }
@@ -85,7 +98,7 @@ function sameValue() { //give border-success when same value input
             regPsw.classList.add("border-danger");
             regPassword2.classList.add("border-danger");
 
-            document.querySelector("button[type=submit]").disabled = true;
+            document.querySelector(".regSignup").disabled = true;
 
         }
 
@@ -99,7 +112,7 @@ function sameValue() { //give border-success when same value input
         if (regPsw.value != regPassword2.value) { //if val !=
             regPassword2.value = "";// return empty
             // ////////////
-            document.querySelector("button[type=submit]").disabled = true;
+            document.querySelector(".regSignup").disabled = true;
             regPsw.classList.remove("border-success");// revert
             regPassword2.classList.remove("border-success"); // revert
 
@@ -112,6 +125,8 @@ function sameValue() { //give border-success when same value input
 
 }
 sameValue();
+//////////
+
 
 // 4 reveal and toggle the password input to reveal the password
 let reveal = document.querySelector(".reveal")
@@ -223,61 +238,130 @@ signHome.addEventListener("click", () => {
 
 
 ////////regSignup
+////////////////
+
+let dlgsex = document.querySelector('.dlgsex').textContent;
 
 
-
+function sex() {
+    if (regMale.checked) {
+        return regMale.value
+    } else {
+        if (regFemale.checked) {
+            return regFemale.value
+        }
+    }
+};
+// dlgsex = sex();
+//////////////
 const regSignup = document.querySelector('.regSignup')
-let form =document.querySelector('.form'); //variable
-const sverURL="http://localhost:3000/stdsReg"; //server URl
+let form = document.querySelector('.form'); //variable
+const sverURL = url(); //server URl
 
-form.setAttribute("action",sverURL )
-regSignup.addEventListener('click',()=> {
-if(reg()){
- // get();
- document.querySelector('.resMsg').innerHTML = "Successfully Submitted"
+form.setAttribute("action", sverURL);
 
-//  setTimeout(() => {
-//      window.location.reload();
-//  }, 2000);
-}
-   
+
+regSignup.addEventListener('click', () => {
+
+    ////////
+    const dlgConfirm = document.querySelector('.dlgConfirm'); ///dialog v
+
+    const dlgsur = document.querySelector('.dlgsur');
+    const dlgother = document.querySelector('.dlgother');
+    const dlgdob = document.querySelector('.dlgdob');
+    const dlgsex = document.querySelector('.dlgsex');
+
+    const dlgemail = document.querySelector('.dlgemail');
+    const dlgpassword = document.querySelector('.dlgpassword');
+    const dlgphone = document.querySelector('.dlgphone');
+    const xform = document.querySelector('.xform');
+    const subform = document.querySelector('.subform');
+
+    ///////////////
+    dlgsur.textContent = regSur.value.toUpperCase();
+    dlgother.textContent = regOther.value.toUpperCase();
+    dlgdob.textContent = regDob.value;
+    dlgsex.textContent = sex();
+    dlgemail.textContent = regEmail.value;
+    dlgpassword.textContent = regPsw.value;
+    dlgphone.textContent = regNum.value;
+    dlgConfirm.showModal();
+
+    xform.addEventListener('click', () => {
+        dlgConfirm.close()// to close dialog element
+        if (alert('Registration NOT Submitted yet!!!'), 1) { // its to int with the user
+            location.reload()// reload present page
+
+        };
+    })
+
+    subform.addEventListener('click', () => {
+        ///////////
+        if (reg()) {
+            alert('Registration Successful')
+        }
+        else {
+            alert('Registration Failed')
+        }
+        ////////////////
+        setTimeout(() => {
+            dlgConfirm.close()// to close dialog element
+
+        }, 1000)// close dthe dialog in secs
+        location.reload()// to reload the page
+    });
+
 });
 //    this.preventDefault();
 
 ///http address server
 async function reg() {
-try{
-    const response = await fetch(sverURL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            regSur: regSur.value, regOther: regOther.value,
-            regNum: regNum.value, regEmail: regEmail.value,
-            regPsw: regPsw.value
-        }),
-    });
-      const sverRes= response.json()
-    if(sverRes){
-      alert("Congratulations" + sverRes.othernames)  
+    try {
+        const regSur = document.querySelector('.regSur').value;
+        const regOther = document.querySelector('.regOther').value;
+        const regDob = document.querySelector('.regDob').value;
+        // const regMale = document.querySelector('.regMale').value;
+        // const regFemale = document.querySelector('.regFemale').value;
+        const regNum = document.querySelector('.regNum').value;
+        const regEmail = document.querySelector('.regEmail').value;
+        const regPsw = document.querySelector('.regPsw').value;
+        const confirmsex = dlgsex = sex()// either M or F
+
+
+        // const sex = () => {
+        //     if (regMale.checked) { return "Male" }// return male
+
+
+        //     else if (regFemale.checked) { return "Female" }// femalae
+        // }
+        ////////
+        const fetchstds = await fetch(sverURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                regSur: regSur, regOther: regOther,
+                regDob: regDob, confirmsex: confirmsex,
+                regNum: regNum, regEmail: regEmail,
+                regPsw: regPsw
+            })
+        })
+
+        const response = await fetchstds.json();
+
+
+
     }
-}
-catch(error){
-    alert("Registration Sending failed", error)
-}
-    
+    catch (error) {
+        console.log("Not connecting to the server", error)
+    }
+
+
 };
 
 
-// async function get() {
 
-//     const resMsg = document.querySelector('.resMsg').innerHTML;
-
-//     const geturl = await fetch('http://localhost:3000/insert');
-   
-    
-// }
 
 
 

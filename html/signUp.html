@@ -62,8 +62,18 @@
                         <input type="text" name="othernames" id="othernames" title="Enter Other Names"
                             placeholder="Other Names" required
                             class="text-center rounded-pill p-1 border-0 mb-2 w-50 no-outline stdNames regOther">
+                        <input type="date" title="Enter Date of Birth"
+                            class="text-center rounded-pill p-1 border-0 mb-1 w-50 no-outline regDob" required>
 
-                        <input type="text" name="telephone" id="telephone" placeholder="080******123"
+                        <div class="bg-light rounded-pill p-1 w-50 mx-auto my-2" title="Select Sex">
+                            <label title="Male" for="male" class="">Male <input type="radio" name="sex" id="male"
+                                    class="d-inline regMale" value="M" required></label>
+                            <label title="Female" for="female" class="ms-2">Female <input type="radio" name="sex"
+                                    id="female" class="d-inline regFemale" value="F" required></label>
+                        </div>
+
+
+                        <input type=" text" name="telephone" id="telephone" placeholder="080******123"
                             title="Student's Or Parent/Guardian Phone Number" required
                             class="text-center rounded-pill p-1 border-0 w-50 mb-2 no-outline no-inner-no-outer-spin input-Val regNum"
                             maxlength="11">
@@ -79,7 +89,7 @@
                             class="text-center rounded-pill p-2 border border-3 border-success w-50 FScustom no-outline mt-2 ms-2"
                             title="Confirm Password">
                         <p class="text-center fw-bold resMsg text-light mt-2"></p>
-                        <button type="submit"
+                        <button type="button"
                             class="btn btn-danger d-block mx-auto w-1 my-3 rounded-pill regSignup">Sign-Up/Register</button>
                         <small class="accountExist cursor">Already have an account? Login</small>
                     </div>
@@ -163,12 +173,45 @@
 
         </div>
 
-
-
-        <!-- <div id="content"></div>
-        <div id="content1"></div> -->
     </div>
+    <!-- for dialog to display conformation -->
+    <dialog class="dlgConfirm border-0 mt-3 w-75 mx-auto rounded-2 ">
+        <h1 class="text-center text-primary mt-1 fw-bold">tyk says... <i class="fas fa-microphone"></i></h1>
+        <h4 class="text-danger text-center">Please Confirm Details !!!</h4>
+        <ul class="text-bg-light rounded-2 mx-4 mt-2">
+            <div class="ms-1 my-1 p-2 fw-bold">
+                <li>Surname:
+                    <p class="dlgsur d-inline"></p>
+                </li>
+                <li>Other Names:
+                    <p class="dlgother d-inline"></p>
+                </li>
+                <li>DOB:
+                    <p class="dlgdob d-inline"></p>
+                </li>
+                <li>Sex:
+                    <p class="dlgsex d-inline"></p>
+                </li>
+                <li>Email:
+                    <p class="dlgemail d-inline"></p>
+                </li>
+                <li>Phone Number:
+                    <p class="dlgphone d-inline"></p>
+                </li>
 
+                <li>Password:
+                    <p class="dlgpassword d-inline"></p>
+                </li>
+
+            </div>
+        </ul>
+        <div class="text-center m-2">
+            <button type="button" title="Ok, if OK" class="btn btn-light w-25 border-primary subform">Ok</button>
+            <button type="button" title="Cancel, to correct"
+                class="btn btn-light w-25 border-danger xform">Cancel</button>
+        </div>
+
+    </dialog>
 
     <script src="/jscripts/ogd.js"></script>
     <script src="/jscripts/signUp.js"></script>
