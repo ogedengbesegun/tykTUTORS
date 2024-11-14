@@ -1,5 +1,5 @@
 
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'; //to have access to the .env 
 import express from 'express';
 import { MongoClient } from 'mongodb';
 // import bodyParser from 'body-parser';
@@ -16,20 +16,20 @@ app.use(cors());
 // app.use(bodyParser.json());
 // MongoDB connection
 const uri = process.env.MONGO_db; // Replace with your actual MongoDB connection string
-const client = new MongoClient(uri);
+const client = new MongoClient(uri)
 const PORT = process.env.PORT;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }
 client.connect().then(() => {
     const db = client.db('tykBank'); //  database name
     const collection = db.collection('stds'); //  collection name
     // Endpoint to handle POST request for inserting data
-    app.post("/insert", async (req, res) => {
+    app.post('/insert', async (req, res) => {
         try {
 
 
 
             const { regSur, regOther,
-                regDob, regNum, regEmail, regPsw, confirmsex } = req.body;
+                regDob, regNum, regEmail, regPsw, confirmsex, logid, passwd } = req.body;
 
             // Insert the document into MongoDB
             const result = await collection.insertOne({
@@ -38,18 +38,18 @@ client.connect().then(() => {
                 email: regEmail, password: regPsw
             });
             ///if it contains
-            const Isamong = await collection.findOne({ email: regEmail });
-            if (regEmail === Isamong) {
-                console.log(Isamong + "is the same with" + regEmail)
-                // res.json(Isamong)
-            }
-
+            const Isamong = await collection.findOne({ surname: logid, password: passwd });
+            // if (Isamong) {
+            //     console.log(Isamong + "is the same with" + regEmail)
+            //     // res.json(Isamong)
+            // }
+            res.json({ myInsert: result, myFind: Isamong });
             if (result) {
                 // Respond back to the Client side
-                res.json(result);// client response
+                res.json(myInsert);// client response
             }
             else if (Isamong) {
-                res.json(message, "email is taken");
+                res.json(myFind);
 
             }
 

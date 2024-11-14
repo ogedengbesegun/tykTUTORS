@@ -11,24 +11,52 @@ const regPsw = document.querySelector('.regPsw');
 const regPassword2 = document.querySelector("#regPassword2");
 
 //////////// server url fetch from url.json
-async function url() {// url from json
-    try {
-        const myurl = await fetch("/url.json");
+// async function url() {// url from json
+//     try {
+//         const myURL = await fetch("/url.json");
 
-        const response = await myurl.json();
-        console.log(response.myurl);
+//         const response = await myURL.json();
+//         if (response) {
+//             return response.myurl
+
+//         }
+
+//     }
+//     catch (error) {
+//         console.error("failure to load the data", error)
+//     }
+// };
+// // url();
+// console.log(url());
+// let stor =
+async function url() {
+    const findURL = await fetch("/url.json");
+    const response = await findURL.json()
+    return response.myurl;
+    // console.log(response.myurl);
+}
+
+async function myget() {
+    try {
+        const get1 = await url()
+
+        let conv = get1
+        // const resget1 = await get1.json();
+        console.log(conv);
+        return conv.toString();
     }
     catch (error) {
-        console.error("failure to load the data", error)
+        console.log('Its an error', error)
     }
-};
-// url();
 
+}
+// myget();
+console.log(myget())
 
 
 // 1. configure the input elemnts to accept only number values
 document.querySelector(".input-Val").addEventListener('input', function (e) {
-    acceptOnlyNum(e)
+    acceptOnlyNum(e);// function call
 })
 
 // Accept Only Numbers No Alphabeths
@@ -256,8 +284,8 @@ function sex() {
 //////////////
 const regSignup = document.querySelector('.regSignup')
 let form = document.querySelector('.form'); //variable
-const sverURL = url(); //server URl
-
+// const sverURL = url(); //server URl
+const sverURL = "http://localhost:8080/insert";
 form.setAttribute("action", sverURL);
 
 
@@ -327,7 +355,6 @@ async function reg() {
         const regPsw = document.querySelector('.regPsw').value;
         const confirmsex = dlgsex = sex()// either M or F
 
-
         // const sex = () => {
         //     if (regMale.checked) { return "Male" }// return male
 
@@ -349,8 +376,8 @@ async function reg() {
         })
 
         const response = await fetchstds.json();
-
-
+        response.myInsert;
+        // console.log("Already existing email", response.myFind)
 
     }
     catch (error) {

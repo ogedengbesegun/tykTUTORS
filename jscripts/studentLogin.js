@@ -1,3 +1,4 @@
+
 // document.querySelector(".start").disabled = true;
 document.querySelector(".start").disabled = true;
 
@@ -66,26 +67,54 @@ xhttp1.send();
 let logid = document.querySelector('#logid')
 
 
-let passwd = document.querySelector('#passwd')
+let passwd = document.querySelector('#passwd');
 
 function Login() {
 
-    // let attribute = document.querySelector(".start")
-    // attribute.setAttribute("title", "Click To Start, 'GoodLuck!!!'")
+    // -------------------------------------------------
+    //launch the loginUser function
 
+    loginUser();
+
+
+
+
+
+
+}
+
+
+
+// API to connect to the server
+async function loginUser() {
+    const logid = document.querySelector('#logid').value;//call for the logid
+    const passwd = document.querySelector('#passwd').value;
+    /////
     let invalidmsg = document.querySelector(".invalidmsg");
     let okclose = document.querySelector(".okclose");
-    // -------------------------------------------------
-    let response1 = JSON.parse(xhttp1.responseText)
+    try {
+        const loginA = await fetch("http://localhost:5000/getLogin",
+            {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    logid: logid, passwd: passwd
+                }),
+            }
 
-    for (let i = 0; i < response1.stds.length; i++) {
 
-        // ------------------------------------
+        );
 
-        if ((logid.value === `${response1.stds[i].surname}`) && (passwd.value === `${response1.stds[i].password}`)
-        ) {
+        const loginRes = await loginA.json();
+        // for (let i = 0; i < loginRes.length; i++) {
+
+        console.log(loginRes.surname);
+        if ((logid === loginRes.surname) && (passwd === loginRes.password)) {
 
 
+
+            // a correct login should give thid results
+            //response
             // the attributes needs to change as login becomes successful
             let attribute = document.querySelector(".start")
 
@@ -95,7 +124,7 @@ function Login() {
             // alert("The login is successful")
             let profilePic = document.querySelector(".img001")
 
-            profilePic.setAttribute("src", `${response1.stds[i].picture}`)
+            profilePic.setAttribute("src", `${loginRes.picture}`)
 
 
             // These events are fired after the login is done
@@ -112,34 +141,38 @@ function Login() {
 
             let reportName = document.querySelector(".reportName")
 
-            reportName.textContent = "Name: " + " " + (response1.stds[i].surname + " " + response1.stds[i].otherName).toUpperCase();
+            reportName.textContent = "Name: " + " " + (loginRes.surname + " " + loginRes.othernames).toUpperCase();
 
 
             // the dialog is secretly opened, so close it up 
             invalidmsg.close();
 
 
-            break;
-        }
-        else {
-            invalidmsg.showModal();
+            // alert("Welcome" + " " + loginRes.othernames + " you have login Successfully");
 
-            okclose.addEventListener("click", () => {
-                invalidmsg.close();
-                logid.value = ""
-                passwd.value = ""
-                // window.location.reload()
-            })
+
         }
+
 
 
 
     }
+    catch (error) {
+        console.log("The Surname or Password is NOT Correct", error)
+        //////
 
+
+        invalidmsg.showModal();
+
+        okclose.addEventListener("click", () => {
+            invalidmsg.close();
+            logid = ""
+            passwd = ""
+            // window.location.reload()
+        });
+    }
 
 }
-
-
 
 
 
