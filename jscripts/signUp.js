@@ -243,8 +243,6 @@ function sex() {
 //////////////
 const regSignup = document.querySelector('.regSignup')
 const form = document.querySelector(".form")
-// let url = "http://localhost:8080/insert"
-// form.setAttribute("action", url);////
 
 let urlform = async () => {
     const urlF = await fetch("/url.json");
@@ -252,9 +250,12 @@ let urlform = async () => {
     return urlR.insert
 }
 
-const urlinsert = await urlform()
-form.setAttribute("action", urlinsert)
-console.log(form.getAttributeNames());
+async function wrk() {
+    const urlinsert = await urlform()
+    form.setAttribute("action", urlinsert)
+    console.log(form.getAttribute("action"));
+}
+wrk();
 ////////////////
 regSignup.addEventListener('click', () => {
 
