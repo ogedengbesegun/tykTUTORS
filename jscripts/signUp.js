@@ -247,9 +247,14 @@ const form = document.querySelector(".form")
 // form.setAttribute("action", url);////
 
 let urlform = async () => {
-
+    const urlF = await fetch("/url.json");
+    const urlR = await urlF.json()
+    return urlR.insert
 }
 
+const urlinsert = await urlform()
+form.setAttribute("action", urlinsert)
+console.log(form.getAttributeNames());
 ////////////////
 regSignup.addEventListener('click', () => {
 
