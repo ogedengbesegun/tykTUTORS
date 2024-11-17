@@ -13,6 +13,9 @@ const app = express();
 // Initialize Express app
 app.use(express.json());
 app.use(cors());
+//////////
+// app2.use(express.json());
+// app2.use(cors());
 // app.use(bodyParser.json());
 // MongoDB connection
 const uri = process.env.MONGO_db; // Replace with your actual MongoDB connection string
@@ -22,6 +25,10 @@ const PORT = process.env.PORT;
 client.connect().then(() => {
     const db = client.db('tykBank'); //  database name
     const collection = db.collection('stds'); //  collection name
+
+    //////
+
+    const collection2 = db.collection("fina"); //collection fina
     // Endpoint to handle POST request for inserting data
     app.post('/insert', async (req, res) => {
         try {
@@ -29,7 +36,7 @@ client.connect().then(() => {
 
 
             const { regSur, regOther,
-                regDob, regNum, regEmail, regPsw, confirmsex, logid, passwd } = req.body;
+                regDob, regNum, regEmail, regPsw, confirmsex } = req.body;
 
             // Insert the document into MongoDB
             const result = await collection.insertOne({
@@ -37,21 +44,23 @@ client.connect().then(() => {
                 sex: confirmsex, telephone: regNum,
                 email: regEmail, password: regPsw
             });
+
+            res.json(result);
             ///if it contains
-            const Isamong = await collection.findOne({ surname: logid, password: passwd });
+            // const Isamong = await collection.findOne({ surname: logid, password: passwd });
             // if (Isamong) {
             //     console.log(Isamong + "is the same with" + regEmail)
             //     // res.json(Isamong)
             // }
-            res.json({ myInsert: result, myFind: Isamong });
-            if (result) {
-                // Respond back to the Client side
-                res.json(myInsert);// client response
-            }
-            else if (Isamong) {
-                res.json(myFind);
 
-            }
+            // if (result) {
+            //     // Respond back to the Client side
+            //     // client response
+            // }
+            // else if (Isamong) {
+            //     res.json(myFind);
+
+            // }
 
             // res.json({ message: 'Document inserted successfully', insertedId: result.insertedId });
             // res.json({ message: 'Document inserted successfully', insertedId: result.insertedId });
@@ -61,6 +70,33 @@ client.connect().then(() => {
         }
     });
 
+    ///request 2
+    app.post('/getLogin', async (req, res) => {
+        try {
+            const { logid, passwd } = req.body;
+            const getlogin = await collection.findOne({ surname: logid, password: passwd })
+            res.json(getlogin);
+
+        }
+        catch (error) {
+            console.log("Check the password")
+
+        }
+    });
+
+    /////request from fina
+    app.post('/getfina', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getfin = collection2.find({ sub: "fina" })
+            const arrayfin = await getfin.toArray();// to get multiple res findMany
+            res.json(arrayfin)
+        }
+        catch (error) {
+
+        }
+    })
 
 
     // Start the server

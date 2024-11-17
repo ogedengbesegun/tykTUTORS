@@ -10,48 +10,7 @@ const regEmail = document.querySelector('.regEmail');
 const regPsw = document.querySelector('.regPsw');
 const regPassword2 = document.querySelector("#regPassword2");
 
-//////////// server url fetch from url.json
-// async function url() {// url from json
-//     try {
-//         const myURL = await fetch("/url.json");
-
-//         const response = await myURL.json();
-//         if (response) {
-//             return response.myurl
-
-//         }
-
-//     }
-//     catch (error) {
-//         console.error("failure to load the data", error)
-//     }
-// };
-// // url();
-// console.log(url());
-// let stor =
-async function url() {
-    const findURL = await fetch("/url.json");
-    const response = await findURL.json()
-    return response.myurl;
-    // console.log(response.myurl);
-}
-
-async function myget() {
-    try {
-        const get1 = await url()
-
-        let conv = get1
-        // const resget1 = await get1.json();
-        console.log(conv);
-        return conv.toString();
-    }
-    catch (error) {
-        console.log('Its an error', error)
-    }
-
-}
-// myget();
-console.log(myget())
+///////////////
 
 
 // 1. configure the input elemnts to accept only number values
@@ -283,12 +242,15 @@ function sex() {
 // dlgsex = sex();
 //////////////
 const regSignup = document.querySelector('.regSignup')
-let form = document.querySelector('.form'); //variable
-// const sverURL = url(); //server URl
-const sverURL = "http://localhost:8080/insert";
-form.setAttribute("action", sverURL);
+const form = document.querySelector(".form")
+// let url = "http://localhost:8080/insert"
+// form.setAttribute("action", url);////
 
+let urlform = async () => {
 
+}
+
+////////////////
 regSignup.addEventListener('click', () => {
 
     ////////
@@ -325,17 +287,16 @@ regSignup.addEventListener('click', () => {
 
     subform.addEventListener('click', () => {
         ///////////
+        // reg()
         if (reg()) {
             alert('Registration Successful')
         }
-        else {
-            alert('Registration Failed')
-        }
+
         ////////////////
         setTimeout(() => {
             dlgConfirm.close()// to close dialog element
 
-        }, 1000)// close dthe dialog in secs
+        }, 3000)// close dthe dialog in secs
         location.reload()// to reload the page
     });
 
@@ -344,6 +305,15 @@ regSignup.addEventListener('click', () => {
 
 ///http address server
 async function reg() {
+    ////fetch the http for server
+    async function insert() {
+        const insertF = await fetch("/url.json"); // fetch the url for server
+        const insertR = await insertF.json()// return the object
+        console.log(insertR.insert)
+        return insertR.insert// returns obj properties
+
+    }
+
     try {
         const regSur = document.querySelector('.regSur').value;
         const regOther = document.querySelector('.regOther').value;
@@ -355,14 +325,11 @@ async function reg() {
         const regPsw = document.querySelector('.regPsw').value;
         const confirmsex = dlgsex = sex()// either M or F
 
-        // const sex = () => {
-        //     if (regMale.checked) { return "Male" }// return male
 
 
-        //     else if (regFemale.checked) { return "Female" }// femalae
-        // }
         ////////
-        const fetchstds = await fetch(sverURL, {
+        const insertRes = await insert()// from insert ()
+        const fetchstds = await fetch(insertRes, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -376,12 +343,17 @@ async function reg() {
         })
 
         const response = await fetchstds.json();
-        response.myInsert;
+        // if (response) {
+        //     alert("Successfully Registered, Congratullations")
+        // }
+        // response.myInsert;
         // console.log("Already existing email", response.myFind)
 
     }
     catch (error) {
         console.log("Not connecting to the server", error)
+
+        // alert("The registration failed, Try again!!!")
     }
 
 

@@ -1,336 +1,362 @@
-[{
-  "_id": {
-    "$oid": "66eeee464e458119f671e353"
+[
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e353"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "A subsidiary record is a book__",
+    "a": "of final entry",
+    "b": "of original entry",
+    "c": "found in the ledger",
+    "d": "of a subsidiary entries",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "A subsidiary record is a book__",
-  "a": "of final entry",
-  "b": "of original entry",
-  "c": "found in the ledger",
-  "d": "of a subsidiary entries",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e354"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e354"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Purchases in accounting refers to goods bought for__",
+    "a": "repairs",
+    "b": "decorating officers",
+    "c": "owner's use",
+    "d": "resale",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Purchases in accounting refers to goods bought for__",
-  "a": "repairs",
-  "b": "decorating officers",
-  "c": "owner's use",
-  "d": "resale",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e355"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e355"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "A fixed amount of money set aside for petty expenses is called",
+    "a": "float",
+    "b": "imprest receipt",
+    "c": "drawing",
+    "d": "accumulated fund",
+    "ans": "a",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "A fixed amount of money set aside for petty expenses is called",
-  "a": "float",
-  "b": "imprest receipt",
-  "c": "drawing",
-  "d": "accumulated fund",
-  "ans": "a",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e356"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e356"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The asets of a business can be classified broadly into__",
+    "a": "current and circulating asset",
+    "b": "intangible and fixed assets",
+    "c": "fixed and current assets",
+    "d": "fixed and floating assets",
+    "ans": "c",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "The asets of a business can be classified broadly into__",
-  "a": "current and circulating asset",
-  "b": "intangible and fixed assets",
-  "c": "fixed and current assets",
-  "d": "fixed and floating assets",
-  "ans": "c",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e357"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e357"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the account belongs to the private ledger?",
+    "a": "purchases account",
+    "b": "capital account",
+    "c": "machinery account",
+    "d": "Olu's account",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the account belongs to the private ledger?",
-  "a": "purchases account",
-  "b": "capital account",
-  "c": "machinery account",
-  "d": "Olu's account",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e358"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e358"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The purpose of a trading account is to ascertain__",
+    "a": "net profit",
+    "b": "gross profit",
+    "c": "sales",
+    "d": "market",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "The purpose of a trading account is to ascertain__",
-  "a": "net profit",
-  "b": "gross profit",
-  "c": "sales",
-  "d": "market",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e359"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e359"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "When both debit and credit entries of a transaction are shown in the cash book, it is described as __",
+    "a": "contra entry",
+    "b": "single entry",
+    "c": "double entry",
+    "d": "complete reversal of entry",
+    "ans": "a",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "When both debit and credit entries of a transaction are shown in the cash book, it is described as __",
-  "a": "contra entry",
-  "b": "single entry",
-  "c": "double entry",
-  "d": "complete reversal of entry",
-  "ans": "a",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35a"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35a"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is NOT a real account?",
+    "a": "Building account",
+    "b": "Motor van account",
+    "c": "Patents account",
+    "d": "Purchases ledger",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the following is NOT a real account?",
-  "a": "Building account",
-  "b": "Motor van account",
-  "c": "Patents account",
-  "d": "Purchases ledger",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35b"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35b"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is NOT a book of prime entry?",
+    "a": "Sales Daybook",
+    "b": "Purchases Daybook ",
+    "c": "Cash Book",
+    "d": "Purchases ledger",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the following is NOT a book of prime entry?",
-  "a": "Sales Daybook",
-  "b": "Purchases Daybook ",
-  "c": "Cash Book",
-  "d": "Purchases ledger",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35c"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35c"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Fixed Assets include__",
+    "a": "accruel",
+    "b": "stock",
+    "c": "prepayment",
+    "d": "land and building",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Fixed Assets include__",
-  "a": "accruel",
-  "b": "stock",
-  "c": "prepayment",
-  "d": "land and building",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35d"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35d"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the folowing is NOT a petty cash book items? Purchase of__",
+    "a": "machinery",
+    "b": "stamps",
+    "c": "office stationery",
+    "d": "postage",
+    "ans": "a",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the folowing is NOT a petty cash book items? Purchase of__",
-  "a": "machinery",
-  "b": "stamps",
-  "c": "office stationery",
-  "d": "postage",
-  "ans": "a",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35e"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35e"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Trade discounts are given for__",
+    "a": "quick delivery",
+    "b": "cash payment",
+    "c": "bulk purchases",
+    "d": "prompt payment",
+    "ans": "c",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Trade discounts are given for__",
-  "a": "quick delivery",
-  "b": "cash payment",
-  "c": "bulk purchases",
-  "d": "prompt payment",
-  "ans": "c",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e35f"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e35f"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "__ is a person that lend out money",
+    "a": "Creditor",
+    "b": "Payer",
+    "c": "Receiver",
+    "d": "Debtor",
+    "ans": "a",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "__ is a person that lend out money",
-  "a": "Creditor",
-  "b": "Payer",
-  "c": "Receiver",
-  "d": "Debtor",
-  "ans": "a",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e360"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e360"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following books of original entry  is used to record all payments and receipts by  cash or cheque",
+    "a": "Sales Daybook",
+    "b": "Purchases Daybook",
+    "c": "Cash Book",
+    "d": "General Journal",
+    "ans": "c",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the following books of original entry  is used to record all payments and receipts by  cash or cheque",
-  "a": "Sales Daybook",
-  "b": "Purchases Daybook",
-  "c": "Cash Book",
-  "d": "General Journal",
-  "ans": "c",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e361"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e361"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "A person that owes certain sum of money is called a __",
+    "a": "Creditor",
+    "b": "Payer",
+    "c": "Borrower",
+    "d": "Debtor",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "A person that owes certain sum of money is called a __",
-  "a": "Creditor",
-  "b": "Payer",
-  "c": "Borrower",
-  "d": "Debtor",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e362"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e362"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The distinguishing feature between a two column and three column cash book is _",
+    "a": "cash column",
+    "b": "discount column",
+    "c": "bank column",
+    "d": "ledger column",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "The distinguishing feature between a two column and three column cash book is _",
-  "a": "cash column",
-  "b": "discount column",
-  "c": "bank column",
-  "d": "ledger column",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e363"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e363"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Cash discount is an allowance for __",
+    "a": "bulk purchase",
+    "b": "prompt payment",
+    "c": "damaged goods",
+    "d": "price list",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Cash discount is an allowance for __",
-  "a": "bulk purchase",
-  "b": "prompt payment",
-  "c": "damaged goods",
-  "d": "price list",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e364"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e364"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Carriage inwards is charged in the __",
+    "a": "balance sheet",
+    "b": "trading account",
+    "c": "profit and loss account",
+    "d": "purchases journal",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Carriage inwards is charged in the __",
-  "a": "balance sheet",
-  "b": "trading account",
-  "c": "profit and loss account",
-  "d": "purchases journal",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e365"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e365"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is NOT an Asset?",
+    "a": "building",
+    "b": "cash",
+    "c": "stock",
+    "d": "loan",
+    "ans": "d",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Which of the following is NOT an Asset?",
-  "a": "building",
-  "b": "cash",
-  "c": "stock",
-  "d": "loan",
-  "ans": "d",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e366"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e366"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The lodgement of business cash into the bank account is an example of__",
+    "a": "cash book",
+    "b": "contra entry",
+    "c": "bank entry",
+    "d": "reversal entry",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "The lodgement of business cash into the bank account is an example of__",
-  "a": "cash book",
-  "b": "contra entry",
-  "c": "bank entry",
-  "d": "reversal entry",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e367"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e367"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "Carriage outwards is charged in the__",
+    "a": "balance sheet",
+    "b": "trading account",
+    "c": "profit and loss account",
+    "d": "purchases journal",
+    "ans": "c",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "Carriage outwards is charged in the__",
-  "a": "balance sheet",
-  "b": "trading account",
-  "c": "profit and loss account",
-  "d": "purchases journal",
-  "ans": "c",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e368"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e368"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The balance sheet is prepared to reveal__",
+    "a": "the accrual and prepayment",
+    "b": "the financial position of the business",
+    "c": "the arithemetical accuracy of the ledger",
+    "d": "the result of the operations of the period",
+    "ans": "c",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "The balance sheet is prepared to reveal__",
-  "a": "the accrual and prepayment",
-  "b": "the financial position of the business",
-  "c": "the arithemetical accuracy of the ledger",
-  "d": "the result of the operations of the period",
-  "ans": "c",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eeee464e458119f671e369"
+  {
+    "_id": {
+      "$oid": "66eeee464e458119f671e369"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "which of the following are impersonal accounts?  I. Investment   II. Creditors   III. Premises   IV. Debtors V. Salaries",
+    "a": "I, III and IV",
+    "b": "I, III and V",
+    "c": "II and IV",
+    "d": "III and V",
+    "ans": "b",
+    "tel": "08036749218",
+    "password": "segden"
   },
-  "author": "ogedengbe segun",
-  "ask": "which of the following are impersonal accounts?  I. Investment   II. Creditors   III. Premises   IV. Debtors V. Salaries",
-  "a": "I, III and IV",
-  "b": "I, III and V",
-  "c": "II and IV",
-  "d": "III and V",
-  "ans": "b",
-  "tel": "08036749218",
-  "password": "segden"
-},
-{
-  "_id": {
-    "$oid": "66eef28620458a07f309ead4"
-  },
-  "author": "ogedengbe segun",
-  "ask": "The sales of goods for cash will affect ____ accounts",
-  "a": "two",
-  "b": "one",
-  "c": "three",
-  "d": "four",
-  "ans": "a",
-  "tel": "08036749218",
-  "password": "segden"
-}]
+  {
+    "_id": {
+      "$oid": "66eef28620458a07f309ead4"
+    },
+    "sub": "fina",
+    "author": "ogedengbe segun",
+    "ask": "The sales of goods for cash will affect ____ accounts",
+    "a": "two",
+    "b": "one",
+    "c": "three",
+    "d": "four",
+    "ans": "a",
+    "tel": "08036749218",
+    "password": "segden"
+  }
+]

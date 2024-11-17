@@ -245,9 +245,60 @@ if (closeUp) {
 
 
 ////////////to get data from my mongodb via the server
+const formgetfina = document.querySelector('form');
 
 
+// const myfina = finajson()//
+// console.log(myfina);
 
+
+// send request to the server
+getfina();
+
+async function getfina() {
+
+    ///////
+    async function finajson() {//fetch http
+        const getfina = await fetch("/url.json");//fetched http dir
+        const finaCome = await getfina.json();
+        // console.log((finaCome.getfina));
+        return (finaCome.getfina);
+
+    }
+
+    try {
+        const fina1 = await finajson()
+        // console.log(fina1);
+        const fina = await fetch(fina1,// got from asychronise
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+
+                })
+            }
+        );
+
+        const resfina = await fina.json()
+        for (let i = resfina.length - 1; i > 0; i--) {
+            const rm = Math.floor(Math.random() * (i + 1));
+            [resfina[rm], resfina[i]] = [resfina[i], resfina[rm]];//array destructuring
+
+        }
+        console.log(resfina.slice(0, 1)[0].ask);
+        console.log(resfina.slice(0, 1)[0].a);
+        console.log(resfina.slice(0, 1)[0].b);
+        console.log(resfina.slice(0, 1)[0].c);
+        console.log(resfina.slice(0, 1)[0].d);
+        console.log(resfina.slice(0, 1)[0].ans);
+
+
+    }
+    catch (error) {
+        console.log("Check Connectiong Error", error)
+
+    }
+}
 
 
 

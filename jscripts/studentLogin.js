@@ -20,8 +20,15 @@ hide4login.forEach(eachhide4login => {
 
 
 // set the login class input attribute of maxlength t0 9 for security reasons
-document.querySelector(".studentlogin #logid").setAttribute("maxlength", 30);
+document.querySelector("#logid").setAttribute("maxlength", 30);
 document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
+
+// set the #logid toLowerCase()
+let lower = document.querySelector("#logid");
+lower.addEventListener('input', () => {
+    lower.value = lower.value.toLowerCase()
+})
+
 
 
 
@@ -64,10 +71,7 @@ xhttp1.send();
 
 
 
-let logid = document.querySelector('#logid')
 
-
-let passwd = document.querySelector('#passwd');
 
 function Login() {
 
@@ -87,19 +91,35 @@ function Login() {
 
 // API to connect to the server
 async function loginUser() {
-    const logid = document.querySelector('#logid').value;//call for the logid
-    const passwd = document.querySelector('#passwd').value;
+    let logid = document.querySelector('#logid');//call for the logid
+    let passwd = document.querySelector('#passwd');
     /////
     let invalidmsg = document.querySelector(".invalidmsg");
     let okclose = document.querySelector(".okclose");
+
+
+    ///////
+    async function loginUser() {// get http url
+        const userurl = await fetch("/url.json");
+        const userRes = await userurl.json()
+        return userRes.getLogin;
+    }
+    ///////
+
     try {
-        const loginA = await fetch("http://localhost:5000/getLogin",
+        ///// creat an object
+        const bodyStringify = {
+            logid: logid.value, passwd: passwd.value
+        }
+        ////////
+        const conRes = await loginUser();
+        //////
+        // console.log(conRes);
+        const loginA = await fetch(conRes,
             {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    logid: logid, passwd: passwd
-                }),
+                body: JSON.stringify(bodyStringify),
             }
 
 
@@ -108,8 +128,8 @@ async function loginUser() {
         const loginRes = await loginA.json();
         // for (let i = 0; i < loginRes.length; i++) {
 
-        console.log(loginRes.surname);
-        if ((logid === loginRes.surname) && (passwd === loginRes.password)) {
+        // console.log(loginRes.surname);
+        if ((logid.value === loginRes.surname) && (passwd.value === loginRes.password)) {
 
 
 
@@ -166,8 +186,8 @@ async function loginUser() {
 
         okclose.addEventListener("click", () => {
             invalidmsg.close();
-            logid = ""
-            passwd = ""
+            logid.value = "";
+            passwd.value = "";
             // window.location.reload()
         });
     }

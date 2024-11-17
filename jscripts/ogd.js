@@ -18,7 +18,7 @@ xhttp.onreadystatechange = function () {
 
         // Typical action to be performed when the document is ready:
 
-        console.log(xhttp.responseText);
+        // console.log(xhttp.responseText);
 
 
 
