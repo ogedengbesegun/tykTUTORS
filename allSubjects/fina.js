@@ -254,7 +254,6 @@ const formgetfina = document.querySelector('form');
 
 // send request to the server
 getfina();
-
 async function getfina() {
 
     ///////
@@ -295,11 +294,10 @@ async function getfina() {
 
     }
     catch (error) {
-        console.log("Check Connectiong Error", error)
+        console.log("Check Connection Error", error)
 
     }
 }
-
 
 
 

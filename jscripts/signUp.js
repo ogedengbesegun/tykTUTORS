@@ -295,15 +295,15 @@ regSignup.addEventListener('click', () => {
         ///////////
         // reg()
         if (reg()) {
-            alert('Registration Successful')
+            alert('Signup is about to be completed')
         }
 
         ////////////////
         setTimeout(() => {
             dlgConfirm.close()// to close dialog element
+            location.reload()// to reload the page
 
-        }, 3000)// close dthe dialog in secs
-        location.reload()// to reload the page
+        },5000)// close the dialog in secs
     });
 
 });

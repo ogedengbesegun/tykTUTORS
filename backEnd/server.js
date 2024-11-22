@@ -46,6 +46,7 @@ client.connect().then(() => {
             });
 
             res.json(result);
+
             ///if it contains
             // const Isamong = await collection.findOne({ surname: logid, password: passwd });
             // if (Isamong) {
@@ -96,7 +97,10 @@ client.connect().then(() => {
         catch (error) {
 
         }
-    })
+    });///////////////////////// end fina
+
+    ////////////getUserName
+  
 
 
     // Start the server

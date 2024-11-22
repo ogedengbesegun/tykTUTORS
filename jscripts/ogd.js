@@ -2273,9 +2273,12 @@ function start() {
             timerDisplay.textContent = "Timer:" + " Time is Up!";
             timerDisplay.style.color = "red";
 
-
+            //// once time up disable the start btn
+            document.querySelector(".start").disabled = true;
+            document.querySelector(".start").textContent = 'Exams Ended';
+            document.querySelector(".start").style.backgroundColor = "red";
             // this will disable my input elements to stop users_
-            //from seleecting on countdown
+            //from selecting on countdown
             let inputValue = document.querySelectorAll(".inputValue")
             inputValue.forEach(inputValues => {
                 inputValues.disabled = true;
@@ -2814,8 +2817,77 @@ $(document).ready(function () {
 
 
 
+/////playing with timer
+// let duration = .10 * 60;
+// let mytimer = setInterval(function () {
+//     let minutes = Math.floor(duration / 60)
+//     let seconds = duration % 60;
 
 
+//     if (minutes < 10) {
+
+//         minutes = "0" + minutes
+//     }
+//     if (seconds < 10) {
+//         seconds = "0" + seconds
+//     }
+//     let dUserName = document.querySelector(".dUserName");
+//     dUserName.style.color = "green"
+//     dUserName.textContent = minutes + ":" + seconds;
+
+//     if (--duration < 0) {
+//         clearInterval(mytimer)
+//         dUserName.textContent = "Sorry Time is UP!!!"
+//         dUserName.style.color = "red"
+
+//         let clrTimer = setTimeout(() => {
+//             dUserName.style.display = "none"
+//         }, 3000);
+//         clrTimer();
+//     }
+//     console.log(minutes + " : " + seconds);
 
 
+// }, 1000);
+// console.log(mytimer)
 
+
+///////testing
+//// call for user name
+async function urljson() {
+    try {
+        const urlf = await fetch('/url.json');
+        const urlRes = await urlf.json();
+        // console.log(urlRes);
+        const insert = urlRes.insert;
+        const getLogin = urlRes.getLogin;
+        const getfina = urlRes.getfina;
+        const getUserName = urlRes.getUserName;
+        return { insert, getLogin, getfina, getUserName };
+
+    }
+    catch (error) {
+        console.log("getUserName NOT available", error)
+    }
+
+}
+//////////
+async function userNameLabel() {
+    const dUserName = document.querySelector(".dUserName");
+    const urljsonRes = await urljson()
+    // console.log(urljsonRes.getUserName);
+    // dUserName.textContent = await urljsonRes.getUserName;
+
+    try {
+        const userNameF = await fetch(urljsonRes.getUserName, {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify()
+        });
+        const userNameRes = await userNameF.json();
+    }
+    catch (error) {
+
+    }
+}
+userNameLabel();

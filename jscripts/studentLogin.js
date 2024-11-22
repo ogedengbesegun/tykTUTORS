@@ -99,7 +99,7 @@ async function loginUser() {
 
 
     ///////
-    async function loginUser() {// get http url
+    async function fUsers() {// get http url
         const userurl = await fetch("/url.json");
         const userRes = await userurl.json()
         return userRes.getLogin;
@@ -112,7 +112,7 @@ async function loginUser() {
             logid: logid.value, passwd: passwd.value
         }
         ////////
-        const conRes = await loginUser();
+        const conRes = await fUsers();
         //////
         // console.log(conRes);
         const loginA = await fetch(conRes,
@@ -131,6 +131,11 @@ async function loginUser() {
         // console.log(loginRes.surname);
         if ((logid.value === loginRes.surname) && (passwd.value === loginRes.password)) {
 
+            //////
+            const dUserName = document.querySelector('.dUserName');
+            dUserName.style.display = 'block'// chnge from hide
+            dUserName.textContent = `Welcome, ${loginRes.othernames.toUpperCase()}.`
+            ////////
 
 
             // a correct login should give thid results
