@@ -236,53 +236,53 @@ $(document).ready(function () {
         // $(".hide4login:nth-child(1)").show();
 
         $(".hide4login:nth-child(2)").show();
-        $(".No-hide").hide()
+        // $(".No-hide").hide();
         // $(".present-Qst").val() = 1;
 
     })
 
 
-    $(".next2").click(function () {
-        $(".hide4login:nth-child(3)").show();
-        $(".hide4login:nth-child(2)").hide();
+    // $(".next2").click(function () {
+    //     $(".hide4login:nth-child(3)").show();
+    //     $(".hide4login:nth-child(2)").hide();
 
-    })
-    $(".next3").click(function () {
-        $(".hide4login:nth-child(4)").show();
-        $(".hide4login:nth-child(3)").hide();
+    // })
+    // $(".next3").click(function () {
+    //     $(".hide4login:nth-child(4)").show();
+    //     $(".hide4login:nth-child(3)").hide();
 
-    })
-    $(".next4").click(function () {
-        $(".hide4login:nth-child(5)").show();
-        $(".hide4login:nth-child(4)").hide();
+    // })
+    // $(".next4").click(function () {
+    //     $(".hide4login:nth-child(5)").show();
+    //     $(".hide4login:nth-child(4)").hide();
 
-    })
-    $(".next5").click(function () {
-        $(".hide4login:nth-child(6)").show();
-        $(".hide4login:nth-child(5)").hide();
+    // })
+    // $(".next5").click(function () {
+    //     $(".hide4login:nth-child(6)").show();
+    //     $(".hide4login:nth-child(5)").hide();
 
-    })
-    $(".next6").click(function () {
-        $(".hide4login:nth-child(7)").show();
-        $(".hide4login:nth-child(6)").hide();
+    // })
+    // $(".next6").click(function () {
+    //     $(".hide4login:nth-child(7)").show();
+    //     $(".hide4login:nth-child(6)").hide();
 
-    })
-    $(".next7").click(function () {
-        $(".hide4login:nth-child(8)").show();
-        $(".hide4login:nth-child(7)").hide();
+    // })
+    // $(".next7").click(function () {
+    //     $(".hide4login:nth-child(8)").show();
+    //     $(".hide4login:nth-child(7)").hide();
 
-    })
-    $(".next8").click(function () {
-        $(".hide4login:nth-child(9)").show();
-        $(".hide4login:nth-child(8)").hide();
+    // })
+    // $(".next8").click(function () {
+    //     $(".hide4login:nth-child(9)").show();
+    //     $(".hide4login:nth-child(8)").hide();
 
-    })
+    // })
 
-    $(".next9").click(function () {
-        $(".hide4login:nth-child(10)").show();
-        $(".hide4login:nth-child(9)").hide();
-        $(".submit").show()
-    });
+    // $(".next9").click(function () {
+    //     $(".hide4login:nth-child(10)").show();
+    //     $(".hide4login:nth-child(9)").hide();
+    //     $(".submit").show()
+    // });
 
 
     // back buttons commands i can runn more efficient codes than this
@@ -293,53 +293,53 @@ $(document).ready(function () {
 
     })
 
-    $(".back3").click(function () {
-        $(".hide4login:nth-child(3)").hide();
-        $(".hide4login:nth-child(2)").show();
-    })
+    // $(".back3").click(function () {
+    //     $(".hide4login:nth-child(3)").hide();
+    //     $(".hide4login:nth-child(2)").show();
+    // })
 
 
-    $(".back4").click(function () {
-        $(".hide4login:nth-child(4)").hide();
-        $(".hide4login:nth-child(3)").show();
-    })
+    // $(".back4").click(function () {
+    //     $(".hide4login:nth-child(4)").hide();
+    //     $(".hide4login:nth-child(3)").show();
+    // })
 
 
-    $(".back5").click(function () {
-        $(".hide4login:nth-child(5)").hide();
-        $(".hide4login:nth-child(4)").show();
-    })
+    // $(".back5").click(function () {
+    //     $(".hide4login:nth-child(5)").hide();
+    //     $(".hide4login:nth-child(4)").show();
+    // })
 
 
-    $(".back6").click(function () {
-        $(".hide4login:nth-child(6)").hide();
-        $(".hide4login:nth-child(5)").show();
-    })
+    // $(".back6").click(function () {
+    //     $(".hide4login:nth-child(6)").hide();
+    //     $(".hide4login:nth-child(5)").show();
+    // })
 
-    $(".back7").click(function () {
-        $(".hide4login:nth-child(7)").hide();
-        $(".hide4login:nth-child(6)").show();
-    })
-
-
-    $(".back8").click(function () {
-        $(".hide4login:nth-child(8)").hide();
-        $(".hide4login:nth-child(7)").show();
-    })
-
-    $(".back9").click(function () {
-        $(".hide4login:nth-child(9)").hide();
-        $(".hide4login:nth-child(8)").show();
-    })
+    // $(".back7").click(function () {
+    //     $(".hide4login:nth-child(7)").hide();
+    //     $(".hide4login:nth-child(6)").show();
+    // })
 
 
+    // $(".back8").click(function () {
+    //     $(".hide4login:nth-child(8)").hide();
+    //     $(".hide4login:nth-child(7)").show();
+    // })
+
+    // $(".back9").click(function () {
+    //     $(".hide4login:nth-child(9)").hide();
+    //     $(".hide4login:nth-child(8)").show();
+    // })
 
 
-    $(".back10").click(function () {
-        $(".hide4login:nth-child(10)").hide();
-        $(".hide4login:nth-child(9)").show();
-        $(".submit").hide();
-    })
+
+
+    // $(".back10").click(function () {
+    //     $(".hide4login:nth-child(10)").hide();
+    //     $(".hide4login:nth-child(9)").show();
+    //     $(".submit").hide();
+    // })
 
 
 })

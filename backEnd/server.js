@@ -100,7 +100,17 @@ client.connect().then(() => {
     });///////////////////////// end fina
 
     ////////////getUserName
-  
+    app.post('/getUserName', async (req, res) => {
+        try {
+            const oderNames = collection.find({ surname: 'ogedengbe' });
+            const oderNamesRes = await oderNames.toArray();
+            res.json(oderNamesRes)
+
+        }
+        catch (error) {
+
+        }
+    })
 
 
     // Start the server
