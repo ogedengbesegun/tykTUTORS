@@ -2216,17 +2216,22 @@ function start() {
             m = +m;
 
             const radioA = document.createElement('input');
+            const radioB = document.createElement('input');
+            const radioC = document.createElement('input');
+            const radioD = document.createElement('input');
+
             Object.assign(radioA, {
                 id: 'opt1',
                 type: "radio", className: "ms-2",
-                name: "option", title: 'Option Adddd'
-            })
-            console.log(radioA.outerHTML);
+                name: "option", title: 'Option A'
+            });
+
+            // console.log(radioA.outerHTML);
 
             // inputValues.forEach(inputValue => {
-            inputValue[0].style.display = 'none'
+            // inputValue[0].style.display = 'none';
             const lb1 = document.querySelector('.lb1')
-            lb1.prepend(radioA)
+            // lb1.prepend(radioA);
 
             // })
 
