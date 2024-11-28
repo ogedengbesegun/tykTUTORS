@@ -3,7 +3,7 @@
 document.querySelector(".start").disabled = true;
 
 let Nohide = document.querySelector(".No-hide");
-Nohide.style.display = "none";
+// Nohide.style.display = "none";
 
 // turn hide4login class to Array-like object and hide ALL
 
@@ -160,7 +160,7 @@ async function loginUser() {
 
 
 
-            Nohide.style.display = "block"
+            Nohide.style.display = "block";
 
             document.querySelector(".studentlogin").style.display = "none"
 

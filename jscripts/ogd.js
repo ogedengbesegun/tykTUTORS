@@ -2127,7 +2127,7 @@ function start() {
 
     document.querySelector(".start").style.
         backgroundColor = "green";
-
+    document.querySelector(".start").textContent = 'Exams-in-Progress';
 
 
 
@@ -2143,7 +2143,7 @@ function start() {
 
 
     let array = response
-    let qtn = response
+    // let qtn = response
 
 
 
@@ -2159,183 +2159,300 @@ function start() {
         [array[m], array[i]] = [array[i], array[m]];
 
     };
-
-
-    // console.log(array.slice(0, 1)[0].ask)
+    console.log()
     // set value Attribute for each radio button
+    //////////////////////
+    // Total number of blocks to load
+    const qstsAll = document.querySelector('.qstsAll');
+    const loadingIndicator = document.getElementById('loading');
+    ////////
+    const totalBlocks = 100;
+    // Number of blocks to load per batch
+    const batchSize = 24;
+    // Current index of loaded blocks
+    let currentIndex = 0;
 
 
 
-    qstn1.textContent = array.slice(0, 1)[0].ask
-    inputValue[0].value = label1.textContent = array.slice(0, 1)[0].a
-    inputValue[1].value = label2.textContent = array.slice(0, 1)[0].b
-    inputValue[2].value = label3.textContent = array.slice(0, 1)[0].c
-    inputValue[3].value = label4.textContent = array.slice(0, 1)[0].d
+    // Template for the HTML structure
+    const template = (index) => `
+     <div class="mx-5 bg-success rounded-3 w-auto my-2 py-2 qstnHide No-hide">
+         <h5 class="text-center mt-1 text-light qstNo" id="page${index}" value=${index}>Question ${index}</h5>
+         <p class="fs-5 p-1 text-center text-light qstn1">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
 
-    ///////////
-    const prev = document.querySelector('.prev');
-    prev.disabled = true;
-    prev.addEventListener('click', () => {
-        if (qstNo.textContent > 1) {
-            qstNo.textContent = +qstNo.textContent - 1;
-            console.log(qstNo.textContent);
-            /////////////////
-            let m = qstNo.textContent - 1;
+         <label for="optn1-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb1" title="Option A">
+             <input type="radio" id="optn1-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option A" value=a>
+             <label for="optn1-${index}" class="me-1 p-1 rounded-1 label1 lb1">${label1 = array.slice(index - 1, index)[0].a
+        }</label>
+         </label>
+         <label for="optn2-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb2" title="Option B">
+             <input type="radio" id="optn2-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option B" value=b>
+             <label for="optn2-${index}" class="me-1 p-1 rounded-1 d-block label2 lb2">${label2 = array.slice(index - 1, index)[0].b
+        }</label>
+         </label>
+         <label for="optn3-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb3" title="Option C">
+             <input type="radio" id="optn3-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option C" value=c>
+             <label for="optn3-${index}" class="me-1 p-1 rounded-1 d-block label3 lb3">${label3 = array.slice(index - 1, index)[0].c
+        }</label>
+         </label>
+         <label for="optn4-${index}" class="d-flex mx-2 bg-white rounded-1 my-2 lb4" title="Option D">
+             <input type="radio" id="optn4-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option D" value=d>
+             <label for="optn4-${index}" class="me-1 p-1 rounded-1 d-block label4 lb4">${label4 = array.slice(index - 1, index)[0].d
+        }</label>
+         </label>
+        
+     </div>
+ `;
 
-            console.log(m)
-            qstn1.textContent = array.slice(m, m + 1)[0].ask
-            inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
-            inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
-            inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
-            inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
-
-
-
-
+    // Function to load a batch of blocks
+    function loadBatch() {
+        const nextBatchEnd = Math.min(currentIndex + batchSize, totalBlocks);
+        for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
+            qstsAll.insertAdjacentHTML('beforeend', template(i));
         }
-    })
-    /////// click next fireUP
+        /// set overflow-y & height
+        qstsAll.style.overflowY = 'scroll';
+        qstsAll.style.overflowColor = 'green'
+        qstsAll.style.height = '300px'
+        qstsAll.style.scrollBehaviour = 'smooth';
+        //////////
+        const controlBtns = document.querySelector('.controlBtns');
+        controlBtns.style.display = 'block';
+        ////////to show previously hidden btns
+        currentIndex += batchSize;
+
+        // Hide loading indicator if all blocks are loaded
+        if (currentIndex >= totalBlocks) {
+            observer.unobserve(loadingIndicator);
+            loadingIndicator.style.display = 'none';
+        }
+    }
+
+    // Intersection Observer to detect when loading indicator is visible
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            loadBatch();
+        }
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+
+    // Start observing the loading indicator
+    observer.observe(loadingIndicator);
+
+    ////
+    const prev = document.querySelector('.prev');
     const next = document.querySelector('.next');
-    const qstNo = document.querySelector('.qstNo');// qstions numbering
-    // for (let c = 0;) {
-
-
-    qstNo.textContent = 1;
-
-    ///////////////
+    let count = 1;
 
     next.addEventListener('click', () => {
-        // lb1.style.display = "none";
-        prev.disabled = false;
-        //////
-        if (qstNo.textContent < array.length) {
-            qstNo.textContent = +qstNo.textContent + 1;
-            // console.log(qstNo.textContent);
-            /////////////////
-            let m = qstNo.textContent - 1;
-            m = +m;
+        // console.log(count)
+        count = count + 1
+        if (count < batchSize + 1) {
+            const pgnext = document.querySelector(`#page${count}`)
+            pgnext.scrollIntoView({ behaviour: 'smooth' });
 
-            const radioA = document.createElement('input');
-            const radioB = document.createElement('input');
-            const radioC = document.createElement('input');
-            const radioD = document.createElement('input');
+        }
+        else {
+            //let 
+            // console.log()
+            count = 0;
 
-            Object.assign(radioA, {
-                id: 'opt1',
-                type: "radio", className: "ms-2",
-                name: "option", title: 'Option A'
-            });
-
-            // console.log(radioA.outerHTML);
-
-            // inputValues.forEach(inputValue => {
-            // inputValue[0].style.display = 'none';
-            const lb1 = document.querySelector('.lb1')
-            // lb1.prepend(radioA);
-
-            // })
-
-            // /////////
-            // lb1.forEach(elb1 => {
-
-            //     elb1.removeAttribute('for')
-            //     elb1.setAttribute('for', `opt${m}`);
-
-            //     console.log(elb1)
-
-            // });
-
-            // lb2.forEach(elb2 => {
-            //     elb2.removeAttribute('for')
-
-            //     elb2.setAttribute('for', `opt${m + 1}`);
-
-            //     console.log(elb2)
-            // });
-
-            // lb3.forEach(elb3 => {
-            //     elb3.removeAttribute('for')
-
-            //     elb3.setAttribute('for', `opt${m + 2}`);
-
-            //     console.log(elb3)
-
-            // });
-
-            // lb4.forEach(elb4 => {
-            //     elb4.removeAttribute('for')
-
-            //     elb4.setAttribute('for', `opt${m + 3}`);
-
-            //     console.log(elb4)
-
-            // });
-
-
-
-            // /////////////
-            // inputValue[0].removeAttribute('id')
-            // inputValue[1].removeAttribute('id')
-            // inputValue[2].removeAttribute('id')
-            // inputValue[3].removeAttribute('id')
-
-            // inputValue[0].id = `opt${m}`
-            // inputValue[1].id = `opt${m + 1}`
-            // inputValue[2].id = `opt${m + 2}`
-            // inputValue[3].id = `opt${m + 3}`
-            // ////////////
-            // //////////
-            // inputValues.forEach(
-            //     inputValue => {
-
-            //         inputValue.setAttribute('name', `optns${m}`)
-            //         console.log(inputValue)
-            //     }
-            // )
-
-
-
-            // console.log(m)
-            qstn1.textContent = array.slice(m, m + 1)[0].ask
-            inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
-            inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
-            inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
-            inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
-
-
-            //////
-            if (console.log(qstn1.textContent == qtn[m].ask),
-                console.log(inputValue[0].value = label1.textContent),
-                console.log(inputValue[1].value = label2.textContent),
-                console.log(inputValue[2].value = label3.textContent),
-                console.log(inputValue[3].value = label4.textContent),
-                console.log(array.slice(m, m + 1)[0].ans)) {
-                // inputValue[0].checked;
-                inputValue[1].checked;
-                // inputValue[2].checked;
-                // inputValue[3].checked;
-
-
-            }
-            else {
-
-            }
-            /////uncheck
-
-
-
-        } else {
-            // qstNo.textContent = "Finish";
-            // qstNo.classList.add('text-danger');
         }
 
 
+        prev.addEventListener('click', () => {
+            let lcount = count - 1;
+
+        })
+
+    })
 
 
 
 
 
-    });
+    // Initial load
+    loadBatch();
+
+
+
+
+
+
+
+    // qstn1.textContent = array.slice(0, 1)[0].ask
+    // inputValue[0].value = label1.textContent = array.slice(0, 1)[0].a
+    // inputValue[1].value = label2.textContent = array.slice(0, 1)[0].b
+    // inputValue[2].value = label3.textContent = array.slice(0, 1)[0].c
+    // inputValue[3].value = label4.textContent = array.slice(0, 1)[0].d
+
+    // ///////////
+    // const prev = document.querySelector('.prev');
+    // prev.disabled = true;
+    // prev.addEventListener('click', () => {
+    // if (qstNo.textContent > 1) {
+    //     qstNo.textContent = +qstNo.textContent - 1;
+    //     console.log(qstNo.textContent);
+    //     /////////////////
+    //     let m = qstNo.textContent - 1;
+
+    //     console.log(m)
+    //     qstn1.textContent = array.slice(m, m + 1)[0].ask
+    //     inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
+    //     inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
+    //     inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
+    //     inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
+
+
+
+
+    //     }
+    // })
+    // /////// click next fireUP
+    // const next = document.querySelector('.next');
+    // const qstNo = document.querySelector('.qstNo');// qstions numbering
+    // // for (let c = 0;) {
+
+
+    // qstNo.textContent = 1;
+
+    // ///////////////
+
+    // next.addEventListener('click', () => {
+    //     // lb1.style.display = "none";
+    //     prev.disabled = false;
+    //     //////
+    //     if (qstNo.textContent < array.length) {
+    //         qstNo.textContent = +qstNo.textContent + 1;
+    //         // console.log(qstNo.textContent);
+    //         /////////////////
+    //         let m = qstNo.textContent - 1;
+    //         m = +m;
+
+    //         const radioA = document.createElement('input');
+    //         const radioB = document.createElement('input');
+    //         const radioC = document.createElement('input');
+    //         const radioD = document.createElement('input');
+
+    //         Object.assign(radioA, {
+    //             id: 'opt1',
+    //             type: "radio", className: "ms-2",
+    //             name: "option", title: 'Option A'
+    //         });
+
+    //         // console.log(radioA.outerHTML);
+
+    //         // inputValues.forEach(inputValue => {
+    //         // inputValue[0].style.display = 'none';
+    //         const lb1 = document.querySelector('.lb1')
+    //         // lb1.prepend(radioA);
+
+    //         // })
+
+    //         // /////////
+    //         // lb1.forEach(elb1 => {
+
+    //         //     elb1.removeAttribute('for')
+    //         //     elb1.setAttribute('for', `opt${m}`);
+
+    //         //     console.log(elb1)
+
+    //         // });
+
+    //         // lb2.forEach(elb2 => {
+    //         //     elb2.removeAttribute('for')
+
+    //         //     elb2.setAttribute('for', `opt${m + 1}`);
+
+    //         //     console.log(elb2)
+    //         // });
+
+    //         // lb3.forEach(elb3 => {
+    //         //     elb3.removeAttribute('for')
+
+    //         //     elb3.setAttribute('for', `opt${m + 2}`);
+
+    //         //     console.log(elb3)
+
+    //         // });
+
+    //         // lb4.forEach(elb4 => {
+    //         //     elb4.removeAttribute('for')
+
+    //         //     elb4.setAttribute('for', `opt${m + 3}`);
+
+    //         //     console.log(elb4)
+
+    //         // });
+
+
+
+    //         // /////////////
+    //         // inputValue[0].removeAttribute('id')
+    //         // inputValue[1].removeAttribute('id')
+    //         // inputValue[2].removeAttribute('id')
+    //         // inputValue[3].removeAttribute('id')
+
+    //         // inputValue[0].id = `opt${m}`
+    //         // inputValue[1].id = `opt${m + 1}`
+    //         // inputValue[2].id = `opt${m + 2}`
+    //         // inputValue[3].id = `opt${m + 3}`
+    //         // ////////////
+    //         // //////////
+    //         // inputValues.forEach(
+    //         //     inputValue => {
+
+    //         //         inputValue.setAttribute('name', `optns${m}`)
+    //         //         console.log(inputValue)
+    //         //     }
+    //         // )
+
+
+
+    //         // console.log(m)
+    //         qstn1.textContent = array.slice(m, m + 1)[0].ask
+    //         inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
+    //         inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
+    //         inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
+    //         inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
+
+
+    //         //////
+    //         if (console.log(qstn1.textContent == qtn[m].ask),
+    //             console.log(inputValue[0].value = label1.textContent),
+    //             console.log(inputValue[1].value = label2.textContent),
+    //             console.log(inputValue[2].value = label3.textContent),
+    //             console.log(inputValue[3].value = label4.textContent),
+    //             console.log(array.slice(m, m + 1)[0].ans)) {
+    //             // inputValue[0].checked;
+    //             inputValue[1].checked;
+    //             // inputValue[2].checked;
+    //             // inputValue[3].checked;
+
+
+    //         }
+    //         else {
+
+    //         }
+    //         /////uncheck
+
+
+
+    //     } else {
+    //         // qstNo.textContent = "Finish";
+    //         // qstNo.classList.add('text-danger');
+    //     }
+
+
+
+
+
+
+
+    // });
 
 
     // qstn2.textContent = array.slice(1, 2)[0].ask
@@ -2417,11 +2534,11 @@ function start() {
     // running the timer
 
 
-    let timerDisplay = document.querySelector(".countDownTimer");
-    timerDisplay.style.color = "black";
-    timerDisplay.style.fontSize = "18px";
+    let countDownTimer = document.querySelector(".countDownTimer");
+    countDownTimer.style.color = "black";
+    countDownTimer.style.fontSize = "18px";
 
-    timerDisplay.style.backgroundColor = "white"
+    countDownTimer.style.backgroundColor = "white"
 
 
     let timer = setInterval(function () {
@@ -2430,7 +2547,7 @@ function start() {
         let seconds = duration % 60;
         minutes = minutes < 10 ? '0' + minutes : minutes;
         seconds = seconds < 10 ? '0' + seconds : seconds;
-        timerDisplay.textContent = 'Timer: ' + minutes + ':' + seconds;
+        countDownTimer.textContent = 'Timer: ' + minutes + ':' + seconds;
 
         // 2 if the duration iterate -- less than zero
         if (--duration < 0) {
@@ -2438,8 +2555,8 @@ function start() {
             clearInterval(timer);
 
             // this  displays the timeup 
-            timerDisplay.textContent = "Timer:" + " Time is Up!";
-            timerDisplay.style.color = "red";
+            // countDownTimer.textContent = "Timer:" + " Time is Up!";
+            countDownTimer.style.color = "red";
 
             //// once time up disable the start btn
             document.querySelector(".start").disabled = true;
@@ -2448,8 +2565,8 @@ function start() {
             // this will disable my input elements to stop users_
             //from selecting on countdown
             let inputValue = document.querySelectorAll(".inputValue")
-            inputValue.forEach(inputValues => {
-                inputValues.disabled = true;
+            inputValue.forEach(Eachinput => {
+                Eachinput.disabled = true;
             });
 
 
@@ -2460,7 +2577,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 10 * 60;
+    let duration = 1 * 60;
 
 
 
@@ -2960,7 +3077,7 @@ $(document).ready(function () {
 
     // i want remove  the subject modal dialog
     const rmsubjList = document.querySelectorAll(".rm-subjList");
-    if (document.querySelectorAll(".rm-subjList")); {
+    if (rmsubjList) {
 
         $(".rm-subjList").click(() => {
             $(".screenCover").hide()

@@ -61,16 +61,16 @@
             </div>
             <div class="d-inline-flex border border-primary rounded-4 pe-1 me-1">
                 <div class="">
-                    <a title="Facebook" href="https://www.facebook.com/ogedengbe.segun.5?mibextid=ZbWKwL" target="_blank" rel="noopener"
-                        class="checker"><span class="fab fa-facebook-f ms-1"></span>
-                        </a>
+                    <a title="Facebook" href="https://www.facebook.com/ogedengbe.segun.5?mibextid=ZbWKwL"
+                        target="_blank" rel="noopener" class="checker"><span class="fab fa-facebook-f ms-1"></span>
+                    </a>
                 </div>
             </div>
             <div class="mt-1 d-inline-flex border border-primary rounded-2 ps-1">
                 <div class="">
-                    <a title="Linked-in" href="https://www.linkedin.com/in/segun-ogedengbe-547026273" target="_blank" rel="noopener"
-                        class="checker"><span class="fab fa-linkedin-in me-1"></span>
-                       </a>
+                    <a title="Linked-in" href="https://www.linkedin.com/in/segun-ogedengbe-547026273" target="_blank"
+                        rel="noopener" class="checker"><span class="fab fa-linkedin-in me-1"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -140,10 +140,11 @@
 
                 <div class="hide4login">
                     <div class="d-flex justify-content-center">
-                        <h4 class=" text-center mx-2">Question</h4>
+                        <h4 class=" text-center text-success mx-2">tykTUTORS <span class="fas fa-graduation-cap"></span>
+                        </h4>
 
                     </div>
-                    <h5 class="fs-5"><strong>(Test)</strong></h5>
+                    <!-- <h5 class="fs-5"><strong>(Test)</strong></h5> -->
                 </div>
 
 
@@ -203,10 +204,10 @@
                 <!-- start page end -->
 
                 <!-- question page start -->
-                <div class="qstsAll">
+                <div class="qstsAll No-hide">
                     <!-- Qstn  1 -->
 
-                    <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide No-hide">
+                    <!-- <div class="mx-5 bg-success rounded-3 w-auto my-2 qstnHide No-hide">
                         <h5 class="text-center mt-1 text-light qstNo"></h5>
                         <p class="fs-5 p-1 text-center text-light qstn1 "></p>
 
@@ -243,10 +244,10 @@
                             <button title="Next Question" type="button"
                                 class="border border-light btn mx-2 my-1 next">Next
                                 <span class="fas fa-forward"></span></button>
-                        </div>
+                        </div> -->
 
 
-                    </div>
+                    <!-- </div> -->
 
 
 
@@ -634,13 +635,25 @@
 
 
                 </div>
-                <!-- <button class="play btn rounded-pill border border-1 border-success mx-auto wx-auto w-25 my-1"><span
-                class="fas fa-play"></span>
-             Next</button> -->
+                <div id="loading" class="loading hide">Loading more questions...</div>
 
-                <button type="button"
-                    class="hide submit btn btn-light text-primary fs-5 my-2  mx-auto w-50 rounded-pill border border-success border-3">Submit
-                    Test</button>
+                <div class="controlBtns text-center hide">
+                    <div class=" justify-space-between">
+                        <button title="previous question" type="button"
+                            class="play btn-light btn rounded-pill border border-1 border-success mx-auto wx-auto w-25 my-1 prev"><span
+                                class="fas fa-backward text-success"></span>
+                        </button>
+                        <button title="next question" type="button"
+                            class="play btn-light btn rounded-pill border border-1 border-success mx-auto wx-auto w-25 my-1 next"><span
+                                class="fas fa-forward text-success"></span>
+                        </button>
+
+                    </div>
+
+                    <button title="Submit Exams" type="button"
+                        class="hid submit btn btn-light text-primary my-2  mx-auto  rounded-pill border border-success border-3">Submit
+                        Test</button>
+                </div>
 
             </div>
 

@@ -303,7 +303,7 @@ regSignup.addEventListener('click', () => {
             dlgConfirm.close()// to close dialog element
             location.reload()// to reload the page
 
-        },5000)// close the dialog in secs
+        }, 5000)// close the dialog in secs
     });
 
 });
@@ -367,7 +367,57 @@ async function reg() {
 
 
 
+////////
+async function urljson() {
+    try {
+        const urlf = await fetch('/url.json');
+        const urlRes = await urlf.json();
+        // console.log(urlRes);
+        const insert = urlRes.insert;
+        const getLogin = urlRes.getLogin;
+        const getfina = urlRes.getfina;
+        const getUserName = urlRes.getUserName;
+        const getEmail = urlRes.getEmail
+        return { insert, getLogin, getfina, getUserName, getEmail };
+
+    }
+    catch (error) {
+        console.log("getUserName NOT available", error)
+    }
+
+}
+
+async function emailtaken() {
+    const valEmail = document.querySelector('.regEmail').value;
+
+    try {
+        const getemail = await urljson();
+        console.log(getemail.getEmail)
+        const emailf = await fetch(getemail.getEmail, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ valEmail: valEmail })
+        });
+        const emailR = await emailf.json();
+        console.log(emailR)
+
+        // if (regEmail === emailR.email) {
+        //     alert(`${emailR.email}is taken`)
+        // }
+        // else {
+        // }
 
 
+    }
+    catch (error) {
+
+    }
+}
+emailtaken();
+
+const validateEmail = document.querySelector(".regEmail");
+validateEmail.addEventListener('mouseleave', () => {
 
 
+});
+////////addevent listener

@@ -111,7 +111,20 @@ client.connect().then(() => {
 
         }
     })
+    ////////Is_email_available
+    app.post('/getEmail', async (req, res) => {
+        const { valEmail } = req.body;
+        try {
+            const IsEmailAvailable = collection.findOne({ email: valEmail })//to look for already existing email
+          
+            res.json(IsEmailAvailable);
+           
+           
+        }
+        catch (error) {
 
+        }
+    })
 
     // Start the server
     app.listen(PORT, () => {
