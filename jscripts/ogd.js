@@ -2264,7 +2264,7 @@ function start() {
 
 
         prev.addEventListener('click', () => {
-            let lcount = count - 1;
+            // let lcount = count - 1;
 
         })
 
