@@ -30,7 +30,7 @@ client.connect().then(() => {
 
     const collection2 = db.collection("fina"); //collection fina
     // Endpoint to handle POST request for inserting data
-    app.post('/insert', async (req, res) => {
+    app.post('/getsignup', async (req, res) => {
         try {
 
 
@@ -110,16 +110,18 @@ client.connect().then(() => {
         catch (error) {
 
         }
-    })
+    });
+
     ////////Is_email_available
     app.post('/getEmail', async (req, res) => {
-        const { valEmail } = req.body;
         try {
-            const IsEmailAvailable = collection.findOne({ email: valEmail })//to look for already existing email
-          
-            res.json(IsEmailAvailable);
-           
-           
+
+            const { valEmail } = req.body;
+
+            const availemail = await collection.findOne({ email: valEmail })//to look for already existing email
+            res.json(availemail)
+
+
         }
         catch (error) {
 

@@ -1,5 +1,5 @@
 {
-  "name": "tykTUTORS",
+  "name": "tyktutors",
   "version": "1.0.0",
   "description": "ogd-Education-solution",
   "main": "backEnd/server.js",
@@ -15,11 +15,12 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongodb": "^6.11.0",
-    "mongoose": "^8.7.1",
+    "mongoose": "^8.8.4",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "path-to-regexp": "^8.2.0"
   },
   "type": "module"
 }

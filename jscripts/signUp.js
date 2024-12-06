@@ -28,8 +28,24 @@ function acceptOnlyNum(e) {
 
 
 }
+////////////////////////////
+///accept only email into regEmail.value
+function emailOnly() {
+    const Regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // const regEmail = document.querySelector(".regEmail");
+    regEmail.addEventListener("focusout", () => {
+        const emailValTrim = regEmail.value.trim();
+        if (Regex.test(emailValTrim)) {
 
+        }
+        else {
+            alert("Please enter a Valid Email Address");
+            regEmail.value = "";//remove
+        }
 
+    })
+}
+emailOnly();
 // //////////////////////////////////////////
 // 2. set the input password to maxLenght 10
 let limitPwds = document.querySelectorAll("input[type = 'password']");
@@ -64,17 +80,16 @@ function sameValue() { //give border-success when same value input
     regPassword2.addEventListener("input", () => {
 
 
-        if ((regPassword2.value === regPsw.value) || (regPsw.value === regPassword2.value) && regSur.value != ""
-            && regOther.value != "" && regNum.value != "" && regEmail.value != "") {
+        if ((regPassword2.value === regPsw.value) || (regPsw.value === regPassword2.value)) {
             regPsw.classList.add("border-success");
             regPassword2.classList.add("border-success");
 
 
             regPsw.classList.remove("border-danger");
             regPassword2.classList.remove("border-danger");
-            document.querySelector(".regSignup").disabled = false;
 
-            console.log("hey we are the same");
+
+            // console.log("hey we are the same");
         }
         else {
 
@@ -99,12 +114,13 @@ function sameValue() { //give border-success when same value input
         if (regPsw.value != regPassword2.value) { //if val !=
             regPassword2.value = "";// return empty
             // ////////////
-            document.querySelector(".regSignup").disabled = true;
             regPsw.classList.remove("border-success");// revert
             regPassword2.classList.remove("border-success"); // revert
 
             regPsw.classList.remove("border-danger"); // revert
             regPassword2.classList.remove("border-danger"); // revert
+            ////
+            document.querySelector(".regSignup").disabled = true;
 
         }
     });
@@ -112,8 +128,36 @@ function sameValue() { //give border-success when same value input
 
 }
 sameValue();
-//////////
 
+//////////
+function formValid() {//////////
+    const formValidity = document.querySelector('.form');
+
+    if (formValidity.checkValidity()) {//dont submit empty input){
+
+        document.querySelector(".regSignup").disabled = false;
+
+    } else {
+        if (alert("Fill all required fields..."), 1) {
+            document.querySelector(".regSignup").disabled = true;
+
+            regPsw.value = '';
+
+        };
+
+
+    }
+    /////////////to ensure all form fields are filled
+
+}
+
+////Once focusout on Confirm Passworm input
+regPassword2.addEventListener('focusout', () => {
+    formValid();//trigger form validation
+})
+
+
+////////formValid();
 
 // 4 reveal and toggle the password input to reveal the password
 let reveal = document.querySelector(".reveal")
@@ -244,10 +288,10 @@ function sex() {
 const regSignup = document.querySelector('.regSignup')
 const form = document.querySelector(".form")
 
-let urlform = async () => {
+async function urlform() {
     const urlF = await fetch("/url.json");
     const urlR = await urlF.json()
-    return urlR.insert
+    return urlR.signup
 }
 
 async function wrk() {
@@ -255,10 +299,9 @@ async function wrk() {
     form.setAttribute("action", urlinsert)
     console.log(form.getAttribute("action"));
 }
-wrk();
+// wrk();
 ////////////////
-regSignup.addEventListener('click', () => {
-
+regSignup.addEventListener('click', (event) => {
     ////////
     const dlgConfirm = document.querySelector('.dlgConfirm'); ///dialog v
 
@@ -281,16 +324,27 @@ regSignup.addEventListener('click', () => {
     dlgemail.textContent = regEmail.value;
     dlgpassword.textContent = regPsw.value;
     dlgphone.textContent = regNum.value;
+
+
+
+    /////validate form
+
+    event.preventDefault();
     dlgConfirm.showModal();
 
+
+
+
+    /////////to cancel submition for error reason
     xform.addEventListener('click', () => {
         dlgConfirm.close()// to close dialog element
-        if (alert('Registration NOT Submitted yet!!!'), 1) { // its to int with the user
-            location.reload()// reload present page
+        alert('Registration NOT Submitted yet!!!')// its to int with the user
+        // location.reload()// reload present page
+        regPsw.value = '';
 
-        };
-    })
 
+    });
+    //////////////
     subform.addEventListener('click', () => {
         ///////////
         // reg()
@@ -312,11 +366,11 @@ regSignup.addEventListener('click', () => {
 ///http address server
 async function reg() {
     ////fetch the http for server
-    async function insert() {
-        const insertF = await fetch("/url.json"); // fetch the url for server
-        const insertR = await insertF.json()// return the object
-        console.log(insertR.insert)
-        return insertR.insert// returns obj properties
+    async function signup() {
+        const signupF = await fetch("/url.json"); // fetch the url for server
+        const signupR = await signupF.json()// return the object
+        console.log(signupR.signup)
+        return signupR.signup// returns obj properties
 
     }
 
@@ -334,8 +388,8 @@ async function reg() {
 
 
         ////////
-        const insertRes = await insert()// from insert ()
-        const fetchstds = await fetch(insertRes, {
+        const signupRes = await signup()// from insert ()
+        const fetchstds = await fetch(signupRes, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -373,12 +427,12 @@ async function urljson() {
         const urlf = await fetch('/url.json');
         const urlRes = await urlf.json();
         // console.log(urlRes);
-        const insert = urlRes.insert;
+        const signup = urlRes.signup;
         const getLogin = urlRes.getLogin;
         const getfina = urlRes.getfina;
         const getUserName = urlRes.getUserName;
         const getEmail = urlRes.getEmail
-        return { insert, getLogin, getfina, getUserName, getEmail };
+        return { signup, getLogin, getfina, getUserName, getEmail };
 
     }
     catch (error) {
@@ -388,23 +442,41 @@ async function urljson() {
 }
 
 async function emailtaken() {
-    const valEmail = document.querySelector('.regEmail').value;
+    ////
+    const valEmail = document.querySelector('.regEmail');
 
     try {
-        const getemail = await urljson();
-        console.log(getemail.getEmail)
-        const emailf = await fetch(getemail.getEmail, {
+
+
+        const geturl = await urljson();
+        const geturlemail = geturl.getEmail
+        console.log(geturlemail)
+        // console.log(geturl.getUserName)
+        const emailf = await fetch(geturlemail, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ valEmail: valEmail })
-        });
-        const emailR = await emailf.json();
-        console.log(emailR)
+            body: JSON.stringify({ valEmail: valEmail.value })
+        })
 
-        // if (regEmail === emailR.email) {
-        //     alert(`${emailR.email}is taken`)
-        // }
+        let emailR = await emailf.json();
+
+
+
+        if (valEmail.value === emailR.email) {
+            console.log(`${emailR.email} is TAKEN`)
+
+            if (alert(`${emailR.email} is TAKEN`), 1) {
+                valEmail.value = "";
+            };
+
+        }
+        else {
+            console.log(`${emailR.email} is available`)
+
+        }
+
         // else {
+
         // }
 
 
@@ -412,12 +484,12 @@ async function emailtaken() {
     catch (error) {
 
     }
+
 }
-emailtaken();
 
-const validateEmail = document.querySelector(".regEmail");
-validateEmail.addEventListener('mouseleave', () => {
-
+const focusPsw = document.querySelector(".regPsw");// onfucus
+focusPsw.addEventListener('focusin', () => {
+    emailtaken()
 
 });
 ////////addevent listener
