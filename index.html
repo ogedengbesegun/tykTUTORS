@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/css/my.css">
 
     <!-- this is to show my profile picture as an icon -->
-    <link rel="shortcut icon" href="/images/img001.jpg">
+    <link rel="shortcut icon" href="/images/tykicon.jpg">
 
 
     <!-- <script src="/bootstrap.bundle.js"></script> -->
@@ -41,12 +41,12 @@
 
 </head>
 
-<body class="body">
+<body>
 
-    <div class="heading d-flex justify-content-between position-sticky top-0 z-2">
-        <button title="Toggle Menu" type="button" class="ms-2 btn navBarIcon"><span
-                class="navbar navbar-toggler navbar-toggler-icon border-3 border border-danger  fs-2 rounded-2"></span><Small
-                class=" mx-1 text-danger">Menu</Small>
+    <div class="heading d-flex  justify-content-between position-sticky top-0 z-2">
+        <button title="Toggle Menu" type="button" class="ms-2 btn navbar-toggler text-light navBarIcon"><span
+                class="navbar navbar-toggler-icon border border-light fs-5 rounded-2" data-bs-theme="dark"></span><Small
+                class=" mx-1 text-light">Menu</Small>
         </button>
         <h4 class="me-5 fs-4 text-success"><a href="#" class="backHome">OGD||Education-Consult</a> @
             tykTUTORS
@@ -55,7 +55,7 @@
     </div>
 
 
-    <div class="flex p-2">
+    <!-- <div class="flex p-2">
 
 
 
@@ -90,19 +90,19 @@
 
         <img src="/images/img001.jpg" alt="myPicture" class="myPicture me-5">
 
-    </div>
+    </div> -->
 
 
 
-    <nav class="hide menuList bg-info ms-2  p-3 rounded-1 z-3 position-fixed top-0">
+    <nav class="hide menuList  ms-2 p-3 rounded-1 z-3 position-fixed top-0">
         <div class="rounded-2 ">
 
             <button type="button" title="Close" class="btn border-0 p-1 icon-menuList"><span
                     class="fas fa-times-circle fs-3 mouseEnter"></span>
             </button>
-            <h4 class="text-bg-success rounded-1 mx-auto text-center mt-4 w-1 p-2">Menu List</h4>
-            <hr class="bg-dark border-4 opacity-100">
-            <ul class="d-grid no-list-style bg-black rounded p-2">
+            <!-- <h4 class="text-bg-success rounded-1 mx-auto text-center mt-4 w-1 p-2">Menu List</h4> -->
+            <!-- <hr class="bg-dark border-4 opacity-100"> -->
+            <ul class="d-grid no-list-style rounded p-2 mt-5">
 
                 <li class="btn btn-primary mb-2 sign-up" title="Student Sign-Up"><span
                         class="fas fa-user-circle me-1"></span>Sign-Up(User)</li>
@@ -149,9 +149,36 @@
 
     </nav>
 
-    <div class="container">
 
-        <div class="flexSec mt-2">
+    <p class="container txt text-light p-2 text-center rounded-2">
+
+
+        <strong class="text-success text-center "> Welcome to TYKtutors!</strong>
+       <br> Empowering Your Educational Journey
+        At TYK, we’re dedicated to guiding students, parents, and educators toward academic excellence and career
+        success. Whether you're looking for expert counseling, personalized guidance, or resources to thrive in your
+        educational pursuits, we’re here to support you every step of the way.
+        Explore our services and discover how we can help you achieve your goals. Together, we build brighter
+        futures! <br>
+
+        <button type="button" class=" mt-1 btn btn-primary"> Let’s get started!</button>
+
+
+
+    </p>
+    <!-- <img src="/images/tykbgboy.jpg" alt="tykimage" class="imgpic w-50"> -->
+
+
+
+    <button type="button" class="btn btn-light rounded-pill position-fixed login">login/signup</button>
+
+
+
+
+
+    <!-- <div class="container"> -->
+
+    <!-- <div class="flexSec mt-2">
             <section class="SectionOne">
                 <img src="/images/img001.jpg" alt="myPicture" class="myPicture" id="myPictureId">
 
@@ -182,9 +209,9 @@
                 </p>
             </section>
 
-        </div>
-        <!-- <hr class="hr"> -->
-        <div class="hide">
+        </div> -->
+    <!-- <hr class="hr"> -->
+    <!-- <div class="hide">
             <section class=" sectionThree mt-2">
 
                 <div class="card my-1 w-50">
@@ -218,76 +245,67 @@
 
 
             </section>
-        </div>
+        </div> -->
 
-        <div>
+    <!-- <div></div> -->
+    <!-- <hr class="hr border-black border border-2 opacity-100"> -->
 
-        </div>
-        <hr class="hr border-black border border-2 opacity-100">
-
-        <div class=" screenCover hide">
-            <fieldset class="fieldset-0 rounded-2 border-1 border-danger mx-2 ">
-                <legend class="rounded-pill p-1 text-bg-primary text-center fs-4">Test Your Knowledge Challenge
-                </legend>
+    <div class=" screenCover hide">
+        <fieldset class="fieldset-0 rounded-2 border-1 border-danger mx-2 ">
+            <legend class="rounded-pill p-1 text-bg-primary text-center fs-4">Test Your Knowledge Challenge
+            </legend>
 
 
-                <div class="mx-1 my-1 text-center bg-light rounded-3">
-                    <div title="Close the Subject Page" class="">
-                        <i class="fas fa-times text-danger  rm-subjList fs-1 my-2"></i>
-                        <!-- <small class="text-danger">Close</small> -->
-                    </div>
-                    <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
-                    <ul class="mx-2 my-2 d-grid-4 gap-1 no-list-style btn border-0 text-light text-center">
-                        <li class="my-2 rounded-2 p-1 subsList engl">English Language</li>
-                        <li class="my-2 rounded-2 p-1 subsList math">Mathematics</li>
-                        <li class="my-2 rounded-2 p-1 subsList econ">Economics</li>
-                        <li class="my-2 rounded-2 p-1 subsList fina">Financial Accounting</li>
-                        <li class="my-2 rounded-2 p-1 subsList comp">Computer Studies</li>
-                        <li class="my-2 rounded-2 p-1 subsList biol">Biology</li>
-                        <li class="my-2 rounded-2 p-1 subsList phys">Physics</li>
-                        <li class="my-2 rounded-2 p-1 subsList chem">Chemistry</li>
-                        <li class="my-2 rounded-2 p-1 subsList furm">Further Mathematics</li>
-                        <li class="my-2 rounded-2 p-1 subsList comm">Commerce</li>
-                        <li class="my-2 rounded-2 p-1 subsList lite">Literature in English</li>
-                        <li class="my-2 rounded-2 p-1 subsList gove">Government</li>
-                        <li class="my-2 rounded-2 p-1 subsList civi">Civic Education</li>
-                        <li class="my-2 rounded-2 p-1 subsList mart">Marketing</li>
-                        <li class="my-2 rounded-2 p-1 subsList data">Data Processing</li>
-                        <li class="my-2 rounded-2 p-1 subsList anim">Animal Husbandary</li>
-                    </ul>
-                    <small class="text-center mx-4"></small><strong class="text-danger fs-5 ">Note:
-                    </strong>Select any Subject to test your Knowledge.
-                    This platform helps
-                    students prepare for Examinations e.g WAEC NECO NABTEB.
-                    Our seasoned Professionals use the finest of questions and answers
-                    for this noble platform.
-                    </small>
-                    <hr>
+            <div class="mx-1 my-1 text-center bg-light rounded-3">
+                <div title="Close the Subject Page" class="">
+                    <i class="fas fa-times text-danger  rm-subjList fs-1 my-2"></i>
+                    <!-- <small class="text-danger">Close</small> -->
                 </div>
-
-            </fieldset>
-
-        </div>
-        <!-- </footer> -->
-        <!-- <button type="button" popovertarget="subjectList" id="" class="mb-1 btn btn-primary">
-            Our
-            Services</button> -->
-        <footer class="mt-auto">
-
-            <div class="border-0 w-75 mx-auto  mb-2" id="subjectList">
-                <div class="text-center">
-                    <h6 class="btn btn-primary rounded-pill mt-2">Test your Knowledge challenge</h6>
-
-                </div>
-                <button type="button" class="btn btn-light border-success w-1">Sign up<i
-                        class="fas fa-user ms-1 fs-5"></i></button>
+                <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
+                <ul class="mx-2 my-2 d-grid-4 gap-1 no-list-style btn border-0 text-light text-center">
+                    <li class="my-2 rounded-2 p-1 subsList engl">English Language</li>
+                    <li class="my-2 rounded-2 p-1 subsList math">Mathematics</li>
+                    <li class="my-2 rounded-2 p-1 subsList econ">Economics</li>
+                    <li class="my-2 rounded-2 p-1 subsList fina">Financial Accounting</li>
+                    <li class="my-2 rounded-2 p-1 subsList comp">Computer Studies</li>
+                    <li class="my-2 rounded-2 p-1 subsList biol">Biology</li>
+                    <li class="my-2 rounded-2 p-1 subsList phys">Physics</li>
+                    <li class="my-2 rounded-2 p-1 subsList chem">Chemistry</li>
+                    <li class="my-2 rounded-2 p-1 subsList furm">Further Mathematics</li>
+                    <li class="my-2 rounded-2 p-1 subsList comm">Commerce</li>
+                    <li class="my-2 rounded-2 p-1 subsList lite">Literature in English</li>
+                    <li class="my-2 rounded-2 p-1 subsList gove">Government</li>
+                    <li class="my-2 rounded-2 p-1 subsList civi">Civic Education</li>
+                    <li class="my-2 rounded-2 p-1 subsList mart">Marketing</li>
+                    <li class="my-2 rounded-2 p-1 subsList data">Data Processing</li>
+                    <li class="my-2 rounded-2 p-1 subsList anim">Animal Husbandary</li>
+                </ul>
+                <small class="text-center mx-4"></small><strong class="text-danger fs-5 ">Note:
+                </strong>Select any Subject to test your Knowledge.
+                This platform helps
+                students prepare for Examinations e.g WAEC NECO NABTEB.
+                Our seasoned Professionals use the finest of questions and answers
+                for this noble platform.
+                </small>
+                <hr>
             </div>
-        </footer>
 
-        <script src="/jscripts/ogd.js"></script>
+        </fieldset>
 
-        <!-- test running purposes only -->
-        <script src="/jscripts/fetchAPI.js"></script>
+    </div>
+    <footer class="bg-info position-fixed w-100 mt-5 bottom-0">
+        <section class="">
+            <!-- <p>Contacts</p> -->
+            <i class="fab fa-facebook-f text-light ms-4 p-2"></i>
+
+
+        </section>
+
+    </footer>
+
+    <script src="/jscripts/ogd.js"></script>
+
+    <!-- test running purposes only -->
 
 </body>
 

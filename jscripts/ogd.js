@@ -2212,7 +2212,7 @@ function start() {
         }
         /// set overflow-y & height
         qstsAll.style.overflowY = 'scroll';
-        qstsAll.style.overflowColor = 'green'
+        // qstsAll.style.overflowColor = 'green';
         qstsAll.style.height = '300px'
         qstsAll.style.scrollBehaviour = 'smooth';
         //////////
@@ -2252,24 +2252,30 @@ function start() {
         count = count + 1
         if (count < batchSize + 1) {
             const pgnext = document.querySelector(`#page${count}`)
-            pgnext.scrollIntoView({ behaviour: 'smooth' });
+            pgnext.scrollIntoView({ behavior: 'smooth' });
 
         }
         else {
-            //let 
-            // console.log()
+
             count = 0;
 
         }
 
 
-        prev.addEventListener('click', () => {
-            // let lcount = count - 1;
 
-        })
+
+    })////////
+    prev.addEventListener('click', () => {
+        count = count - 1;
+        if (count != 0) {
+            const pgprev = document.querySelector(`#page${count}`);
+            pgprev.scrollIntoView({ behavior: 'smooth' })
+        }
+        else {
+            count = 1
+        }
 
     })
-
 
 
 
@@ -3021,7 +3027,7 @@ $(document).ready(function () {
 
 
 
-    $(".navBarIcon").mouseenter(function () {
+    $(".navBarIcon").click(function () {
         $(".menuList").show(200)
 
         // $(".QuizQuestn").toggle()
