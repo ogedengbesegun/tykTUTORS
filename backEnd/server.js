@@ -100,17 +100,17 @@ client.connect().then(() => {
     });///////////////////////// end fina
 
     ////////////getUserName
-    app.post('/getUserName', async (req, res) => {
-        try {
-            const oderNames = collection.find({ surname: 'ogedengbe' });
-            const oderNamesRes = await oderNames.toArray();
-            res.json(oderNamesRes)
+    // app.post('/getUserName', async (req, res) => {
+    //     try {
+    //         const oderNames = collection.find({ surname: 'ogedengbe' });
+    //         const oderNamesRes = await oderNames.toArray();
+    //         res.json(oderNamesRes)
 
-        }
-        catch (error) {
+    //     }
+    //     catch (error) {
 
-        }
-    });
+    //     }
+    // });
 
     ////////Is_email_available
     app.post('/getEmail', async (req, res) => {

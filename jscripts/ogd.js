@@ -14,7 +14,7 @@ xhttp.onreadystatechange = function () {
 
         // Typical action to be performed when the document is ready:
 
-        console.log(xhttp.responseText);
+        // console.log(xhttp.responseText);
 
 
 
@@ -82,61 +82,6 @@ let label1 = document.querySelector(".label1")
 let label2 = document.querySelector(".label2")
 let label3 = document.querySelector(".label3")
 let label4 = document.querySelector(".label4")
-
-// let qstn2 = document.querySelector(".qstn2")
-// let label21 = document.querySelector(".label21")
-// let label22 = document.querySelector(".label22")
-// let label23 = document.querySelector(".label23")
-// let label24 = document.querySelector(".label24")
-
-// let qstn3 = document.querySelector(".qstn3")
-// let label31 = document.querySelector(".label31")
-// let label32 = document.querySelector(".label32")
-// let label33 = document.querySelector(".label33")
-// let label34 = document.querySelector(".label34")
-
-// let qstn4 = document.querySelector(".qstn4")
-// let label41 = document.querySelector(".label41")
-// let label42 = document.querySelector(".label42")
-// let label43 = document.querySelector(".label43")
-// let label44 = document.querySelector(".label44")
-
-// let qstn5 = document.querySelector(".qstn5")
-// let label51 = document.querySelector(".label51")
-// let label52 = document.querySelector(".label52")
-// let label53 = document.querySelector(".label53")
-// let label54 = document.querySelector(".label54")
-
-// let qstn6 = document.querySelector(".qstn6")
-// let label61 = document.querySelector(".label61")
-// let label62 = document.querySelector(".label62")
-// let label63 = document.querySelector(".label63")
-// let label64 = document.querySelector(".label64")
-
-// let qstn7 = document.querySelector(".qstn7")
-// let label71 = document.querySelector(".label71")
-// let label72 = document.querySelector(".label72")
-// let label73 = document.querySelector(".label73")
-// let label74 = document.querySelector(".label74")
-
-// let qstn8 = document.querySelector(".qstn8")
-// let label81 = document.querySelector(".label81")
-// let label82 = document.querySelector(".label82")
-// let label83 = document.querySelector(".label83")
-// let label84 = document.querySelector(".label84")
-
-// let qstn9 = document.querySelector(".qstn9")
-// let label91 = document.querySelector(".label91")
-// let label92 = document.querySelector(".label92")
-// let label93 = document.querySelector(".label93")
-// let label94 = document.querySelector(".label94")
-
-// let qstn10 = document.querySelector(".qstn10")
-// let label101 = document.querySelector(".label101")
-// let label102 = document.querySelector(".label102")
-// let label103 = document.querySelector(".label103")
-// let label104 = document.querySelector(".label104")
-
 
 
 
@@ -2131,409 +2076,179 @@ function start() {
 
 
 
-
-    // document.querySelector(".start").style.;
-    // border-bottom-left-radius: 32px;
-    // border-top-right-radius: 32px;
-    // border-bottom-right-radius: 32px;}
-
-
-    document.querySelector(".start").disabled = true
-    let response = JSON.parse(xhttp.responseText);
-
-
-    let array = response
+    // document.querySelector(".start").disabled = true
+    // let response = JSON.parse(xhttp.responseText);
+    // let array = response
     // let qtn = response
 
 
+    ///////////////////////////
+    // send request to the server
+    getfina();
+    async function getfina() {
+
+        ///////
+        async function finajson() {//fetch http
+            const getfina = await fetch("/url.json");//fetched http dir
+            const finaCome = await getfina.json();
+            // console.log((finaCome.getfina));
+            return (finaCome.getfina);
+
+        }
+
+        try {
+            const fina1 = await finajson()
+            // console.log(fina1);
+            const fina = await fetch(fina1,// got from asychronise
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+
+                    })
+                }
+            );
+
+            const resfina = await fina.json();
+            let array = resfina;
+            for (let i = array.length - 1; i > 0; i--) {
+                const rm = Math.floor(Math.random() * (i + 1));
+                [array[rm], array[i]] = [array[i], array[rm]];//array destructuring
+
+            }
+            //////inject the responses into DOM
+            //////////////////////
+            // Total number of blocks to load
+            const qstsAll = document.querySelector('.qstsAll');
+            const loadingIndicator = document.getElementById('loading');
+            ////////
+            const totalBlocks = 100;
+            // Number of blocks to load per batch
+            const batchSize = 24;
+            // Current index of loaded blocks
+            let currentIndex = 0;
 
 
 
-
-
-
-    // console.log(array[20].ask)
-    for (let i = array.length - 1; i > 0; i--) {
-        let m = Math.floor(Math.random() * (i + 1));
-
-        [array[m], array[i]] = [array[i], array[m]];
-
-    };
-    console.log()
-    // set value Attribute for each radio button
-    //////////////////////
-    // Total number of blocks to load
-    const qstsAll = document.querySelector('.qstsAll');
-    const loadingIndicator = document.getElementById('loading');
-    ////////
-    const totalBlocks = 100;
-    // Number of blocks to load per batch
-    const batchSize = 24;
-    // Current index of loaded blocks
-    let currentIndex = 0;
-
-
-
-    // Template for the HTML structure
-    const template = (index) => `
+            // Template for the HTML structure
+            const template = (index) => `
      <div class="mx-5 bg-success rounded-3 w-auto my-2 py-2 qstnHide No-hide">
          <h5 class="text-center mt-1 text-light qstNo" id="page${index}" value=${index}>Question ${index}</h5>
          <p class="fs-5 p-1 text-center text-light qstn1">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
 
          <label for="optn1-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb1" title="Option A">
-             <input type="radio" id="optn1-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option A" value=a>
+             <input type="radio" id="optn1-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option A" value="a">
              <label for="optn1-${index}" class="me-1 p-1 rounded-1 label1 lb1">${label1 = array.slice(index - 1, index)[0].a
-        }</label>
+                }</label>
          </label>
          <label for="optn2-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb2" title="Option B">
-             <input type="radio" id="optn2-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option B" value=b>
+             <input type="radio" id="optn2-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option B" value="b">
              <label for="optn2-${index}" class="me-1 p-1 rounded-1 d-block label2 lb2">${label2 = array.slice(index - 1, index)[0].b
-        }</label>
+                }</label>
          </label>
          <label for="optn3-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb3" title="Option C">
-             <input type="radio" id="optn3-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option C" value=c>
+             <input type="radio" id="optn3-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option C" value="c">
              <label for="optn3-${index}" class="me-1 p-1 rounded-1 d-block label3 lb3">${label3 = array.slice(index - 1, index)[0].c
-        }</label>
+                }</label>
          </label>
          <label for="optn4-${index}" class="d-flex mx-2 bg-white rounded-1 my-2 lb4" title="Option D">
-             <input type="radio" id="optn4-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option D" value=d>
+             <input type="radio" id="optn4-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option D" value="d">
              <label for="optn4-${index}" class="me-1 p-1 rounded-1 d-block label4 lb4">${label4 = array.slice(index - 1, index)[0].d
-        }</label>
+                }</label>
          </label>
         
      </div>
  `;
 
-    // Function to load a batch of blocks
-    function loadBatch() {
-        const nextBatchEnd = Math.min(currentIndex + batchSize, totalBlocks);
-        for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
-            qstsAll.insertAdjacentHTML('beforeend', template(i));
-        }
-        /// set overflow-y & height
-        qstsAll.style.overflowY = 'scroll';
-        // qstsAll.style.overflowColor = 'green';
-        qstsAll.style.height = '300px'
-        qstsAll.style.scrollBehaviour = 'smooth';
-        //////////
-        const controlBtns = document.querySelector('.controlBtns');
-        controlBtns.style.display = 'block';
-        ////////to show previously hidden btns
-        currentIndex += batchSize;
+            // Function to load a batch of blocks
+            function loadBatch() {
+                const nextBatchEnd = Math.min(currentIndex + batchSize, totalBlocks);
+                for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
+                    qstsAll.insertAdjacentHTML('beforeend', template(i));
+                }
+                /// set overflow-y & height
+                qstsAll.style.overflowY = 'scroll';
+                // qstsAll.style.overflowColor = 'green';
+                qstsAll.style.height = '300px'
+                qstsAll.style.scrollBehaviour = 'smooth';
+                //////////
+                const controlBtns = document.querySelector('.controlBtns');
+                controlBtns.style.display = 'block';
+                ////////to show previously hidden btns
+                currentIndex += batchSize;
 
-        // Hide loading indicator if all blocks are loaded
-        if (currentIndex >= totalBlocks) {
-            observer.unobserve(loadingIndicator);
-            loadingIndicator.style.display = 'none';
+                // Hide loading indicator if all blocks are loaded
+                if (currentIndex >= totalBlocks) {
+                    observer.unobserve(loadingIndicator);
+                    loadingIndicator.style.display = 'none';
+                }
+            }
+
+            // Intersection Observer to detect when loading indicator is visible
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    loadBatch();
+                }
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            // Start observing the loading indicator
+            observer.observe(loadingIndicator);
+
+            ////
+            const prev = document.querySelector('.prev');
+            const next = document.querySelector('.next');
+            let count = 1;
+
+            next.addEventListener('click', () => {
+                // console.log(count)
+                count = count + 1
+                if (count < batchSize + 1) {
+                    const pgnext = document.querySelector(`#page${count}`)
+                    pgnext.scrollIntoView({ behavior: 'smooth' });
+
+                }
+                else {
+
+                    count = 0;
+
+                }
+
+
+
+
+            })////////scroll back
+            prev.addEventListener('click', () => {
+                count = count - 1;
+                if (count != 0) {
+                    const pgprev = document.querySelector(`#page${count}`);
+                    pgprev.scrollIntoView({ behavior: 'smooth' })
+                }
+                else {
+                    count = 1
+                }
+
+            })
+            ////back scroll
+
+
+
+            // Initial load
+            loadBatch();
+
+
+        }
+        catch (error) {
+            console.log("Check Connection Error", error)
+
         }
     }
+    /////////////////////////////
 
-    // Intersection Observer to detect when loading indicator is visible
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            loadBatch();
-        }
-    }, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    });
 
-    // Start observing the loading indicator
-    observer.observe(loadingIndicator);
-
-    ////
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-    let count = 1;
-
-    next.addEventListener('click', () => {
-        // console.log(count)
-        count = count + 1
-        if (count < batchSize + 1) {
-            const pgnext = document.querySelector(`#page${count}`)
-            pgnext.scrollIntoView({ behavior: 'smooth' });
-
-        }
-        else {
-
-            count = 0;
-
-        }
-
-
-
-
-    })////////
-    prev.addEventListener('click', () => {
-        count = count - 1;
-        if (count != 0) {
-            const pgprev = document.querySelector(`#page${count}`);
-            pgprev.scrollIntoView({ behavior: 'smooth' })
-        }
-        else {
-            count = 1
-        }
-
-    })
-
-
-
-
-    // Initial load
-    loadBatch();
-
-
-
-
-
-
-
-    // qstn1.textContent = array.slice(0, 1)[0].ask
-    // inputValue[0].value = label1.textContent = array.slice(0, 1)[0].a
-    // inputValue[1].value = label2.textContent = array.slice(0, 1)[0].b
-    // inputValue[2].value = label3.textContent = array.slice(0, 1)[0].c
-    // inputValue[3].value = label4.textContent = array.slice(0, 1)[0].d
-
-    // ///////////
-    // const prev = document.querySelector('.prev');
-    // prev.disabled = true;
-    // prev.addEventListener('click', () => {
-    // if (qstNo.textContent > 1) {
-    //     qstNo.textContent = +qstNo.textContent - 1;
-    //     console.log(qstNo.textContent);
-    //     /////////////////
-    //     let m = qstNo.textContent - 1;
-
-    //     console.log(m)
-    //     qstn1.textContent = array.slice(m, m + 1)[0].ask
-    //     inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
-    //     inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
-    //     inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
-    //     inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
-
-
-
-
-    //     }
-    // })
-    // /////// click next fireUP
-    // const next = document.querySelector('.next');
-    // const qstNo = document.querySelector('.qstNo');// qstions numbering
-    // // for (let c = 0;) {
-
-
-    // qstNo.textContent = 1;
-
-    // ///////////////
-
-    // next.addEventListener('click', () => {
-    //     // lb1.style.display = "none";
-    //     prev.disabled = false;
-    //     //////
-    //     if (qstNo.textContent < array.length) {
-    //         qstNo.textContent = +qstNo.textContent + 1;
-    //         // console.log(qstNo.textContent);
-    //         /////////////////
-    //         let m = qstNo.textContent - 1;
-    //         m = +m;
-
-    //         const radioA = document.createElement('input');
-    //         const radioB = document.createElement('input');
-    //         const radioC = document.createElement('input');
-    //         const radioD = document.createElement('input');
-
-    //         Object.assign(radioA, {
-    //             id: 'opt1',
-    //             type: "radio", className: "ms-2",
-    //             name: "option", title: 'Option A'
-    //         });
-
-    //         // console.log(radioA.outerHTML);
-
-    //         // inputValues.forEach(inputValue => {
-    //         // inputValue[0].style.display = 'none';
-    //         const lb1 = document.querySelector('.lb1')
-    //         // lb1.prepend(radioA);
-
-    //         // })
-
-    //         // /////////
-    //         // lb1.forEach(elb1 => {
-
-    //         //     elb1.removeAttribute('for')
-    //         //     elb1.setAttribute('for', `opt${m}`);
-
-    //         //     console.log(elb1)
-
-    //         // });
-
-    //         // lb2.forEach(elb2 => {
-    //         //     elb2.removeAttribute('for')
-
-    //         //     elb2.setAttribute('for', `opt${m + 1}`);
-
-    //         //     console.log(elb2)
-    //         // });
-
-    //         // lb3.forEach(elb3 => {
-    //         //     elb3.removeAttribute('for')
-
-    //         //     elb3.setAttribute('for', `opt${m + 2}`);
-
-    //         //     console.log(elb3)
-
-    //         // });
-
-    //         // lb4.forEach(elb4 => {
-    //         //     elb4.removeAttribute('for')
-
-    //         //     elb4.setAttribute('for', `opt${m + 3}`);
-
-    //         //     console.log(elb4)
-
-    //         // });
-
-
-
-    //         // /////////////
-    //         // inputValue[0].removeAttribute('id')
-    //         // inputValue[1].removeAttribute('id')
-    //         // inputValue[2].removeAttribute('id')
-    //         // inputValue[3].removeAttribute('id')
-
-    //         // inputValue[0].id = `opt${m}`
-    //         // inputValue[1].id = `opt${m + 1}`
-    //         // inputValue[2].id = `opt${m + 2}`
-    //         // inputValue[3].id = `opt${m + 3}`
-    //         // ////////////
-    //         // //////////
-    //         // inputValues.forEach(
-    //         //     inputValue => {
-
-    //         //         inputValue.setAttribute('name', `optns${m}`)
-    //         //         console.log(inputValue)
-    //         //     }
-    //         // )
-
-
-
-    //         // console.log(m)
-    //         qstn1.textContent = array.slice(m, m + 1)[0].ask
-    //         inputValue[0].value = label1.textContent = array.slice(m, m + 1)[0].a
-    //         inputValue[1].value = label2.textContent = array.slice(m, m + 1)[0].b
-    //         inputValue[2].value = label3.textContent = array.slice(m, m + 1)[0].c
-    //         inputValue[3].value = label4.textContent = array.slice(m, m + 1)[0].d
-
-
-    //         //////
-    //         if (console.log(qstn1.textContent == qtn[m].ask),
-    //             console.log(inputValue[0].value = label1.textContent),
-    //             console.log(inputValue[1].value = label2.textContent),
-    //             console.log(inputValue[2].value = label3.textContent),
-    //             console.log(inputValue[3].value = label4.textContent),
-    //             console.log(array.slice(m, m + 1)[0].ans)) {
-    //             // inputValue[0].checked;
-    //             inputValue[1].checked;
-    //             // inputValue[2].checked;
-    //             // inputValue[3].checked;
-
-
-    //         }
-    //         else {
-
-    //         }
-    //         /////uncheck
-
-
-
-    //     } else {
-    //         // qstNo.textContent = "Finish";
-    //         // qstNo.classList.add('text-danger');
-    //     }
-
-
-
-
-
-
-
-    // });
-
-
-    // qstn2.textContent = array.slice(1, 2)[0].ask
-    // inputValue[4].value = label21.textContent = array.slice(1, 2)[0].a
-    // inputValue[5].value = label22.textContent = array.slice(1, 2)[0].b
-    // inputValue[6].value = label23.textContent = array.slice(1, 2)[0].c
-    // inputValue[7].value = label24.textContent = array.slice(1, 2)[0].d
-
-
-    // qstn3.textContent = array.slice(2, 3)[0].ask;
-    // inputValue[8].value = label31.textContent = array.slice(2, 3)[0].a
-    // inputValue[9].value = label32.textContent = array.slice(2, 3)[0].b
-    // inputValue[10].value = label33.textContent = array.slice(2, 3)[0].c
-    // inputValue[11].value = label34.textContent = array.slice(2, 3)[0].d
-
-
-
-    // qstn4.textContent = array.slice(3, 4)[0].ask;
-    // inputValue[12].value = label41.textContent = array.slice(3, 4)[0].a
-    // inputValue[13].value = label42.textContent = array.slice(3, 4)[0].b
-    // inputValue[14].value = label43.textContent = array.slice(3, 4)[0].c
-    // inputValue[15].value = label44.textContent = array.slice(3, 4)[0].d
-
-
-    // qstn5.textContent = array.slice(4, 5)[0].ask;
-    // inputValue[16].value = label51.textContent = array.slice(4, 5)[0].a
-    // inputValue[17].value = label52.textContent = array.slice(4, 5)[0].b
-    // inputValue[18].value = label53.textContent = array.slice(4, 5)[0].c
-    // inputValue[19].value = label54.textContent = array.slice(4, 5)[0].d
-
-
-    // qstn6.textContent = array.slice(5, 6)[0].ask;
-    // inputValue[20].value = label61.textContent = array.slice(5, 6)[0].a
-    // inputValue[21].value = label62.textContent = array.slice(5, 6)[0].b
-    // inputValue[22].value = label63.textContent = array.slice(5, 6)[0].c
-    // inputValue[23].value = label64.textContent = array.slice(5, 6)[0].d
-
-
-    // qstn7.textContent = array.slice(6, 7)[0].ask;
-    // inputValue[24].value = label71.textContent = array.slice(6, 7)[0].a
-    // inputValue[25].value = label72.textContent = array.slice(6, 7)[0].b
-    // inputValue[26].value = label73.textContent = array.slice(6, 7)[0].c
-    // inputValue[27].value = label74.textContent = array.slice(6, 7)[0].d
-
-
-    // qstn8.textContent = array.slice(7, 8)[0].ask;
-    // inputValue[28].value = label81.textContent = array.slice(7, 8)[0].a
-    // inputValue[29].value = label82.textContent = array.slice(7, 8)[0].b
-    // inputValue[30].value = label83.textContent = array.slice(7, 8)[0].c
-    // inputValue[31].value = label84.textContent = array.slice(7, 8)[0].d
-
-
-
-    // qstn9.textContent = array.slice(8, 9)[0].ask;
-    // inputValue[32].value = label91.textContent = array.slice(8, 9)[0].a
-    // inputValue[33].value = label92.textContent = array.slice(8, 9)[0].b
-    // inputValue[34].value = label93.textContent = array.slice(8, 9)[0].c
-    // inputValue[35].value = label94.textContent = array.slice(8, 9)[0].d
-
-
-    // qstn10.textContent = array.slice(9, 10)[0].ask;
-    // inputValue[36].value = label101.textContent = array.slice(9, 10)[0].a
-    // inputValue[37].value = label102.textContent = array.slice(9, 10)[0].b
-    // inputValue[38].value = label103.textContent = array.slice(9, 10)[0].c
-    // inputValue[39].value = label104.textContent = array.slice(9, 10)[0].d;
-
-
-    // console.log(array[0].ask)
-
-    // console.log(array.slice(9, 10)[0].ask)
-
-
-    // inputValue[0].value = label1.textContent
-    // console.log(inputValue[0].value)
-    // console.log(inputValue[1].value)
 
 
 
@@ -2583,7 +2298,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 1 * 60;
+    let duration = 2 * 60;
 
 
 
@@ -2899,6 +2614,14 @@ if (signUp) {
     })
 };
 
+let logind = document.getElementsByClassName('login')[0];
+if (logind) {
+    logind.addEventListener('click', () => {
+        let url = "/html/signUp.html";
+        window.open(url, "blank");
+    })
+}
+
 // mouseEnter: add class text-danger
 const mouseEnter = document.querySelector(".mouseEnter");
 if (mouseEnter) {
@@ -2996,8 +2719,42 @@ console.log(window.innerHeight / 5 * 4)
 // };
 // ------------------------------------
 
+////splits the text
+const letgotext = (document.getElementsByClassName('letgotext')[0]);
+if (letgotext) {
+
+    let seme = letgotext.textContent.split(" ");
+    // seme[0].style.color = 'green';
+    // seme[1].style.color = 'purple';
+    // seme[2].style.color = 'red'
+
+    const copyme = document.getElementById('copyme')
+    seme.forEach((word, index) => {
+        const span = document.createElement('span');
+        span.textContent = word;
+
+        if (index === 0) {
+            span.style.color = 'green';
+
+        }
+        else if (index === 1) {
+            span.style.color = 'blue'
+        }
+        else {
+            span.style.color = 'red'
+        }
+
+        copyme.appendChild(span);
+        copyme.appendChild(document.createTextNode(" "));
+        document.getElementById('origin').style.display = "none";
+    })
 
 
+
+}
+
+
+////work with split() method
 
 
 
@@ -3160,23 +2917,23 @@ async function urljson() {
 
 }
 //////////
-async function userNameLabel() {
-    const dUserName = document.querySelector(".dUserName");
-    const urljsonRes = await urljson();
-    const urljsonResult = urljsonRes.getUserName;
-    console.log(urljsonResult);
-    // dUserName.textContent = await urljsonRes.getUserName;
+// async function userNameLabel() {
+//     const dUserName = document.querySelector(".dUserName");
+//     const urljsonRes = await urljson();
+//     const urljsonResult = urljsonRes.getUserName;
+//     console.log(urljsonResult);
+//     // dUserName.textContent = await urljsonRes.getUserName;
 
-    try {
-        const userNameF = await fetch(urljsonResult, {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify()
-        });
-        const userNameRes = await userNameF.json();
-    }
-    catch (error) {
-        console.log("server for getUserName failed")
-    }
-}
+//     try {
+//         const userNameF = await fetch(urljsonResult, {
+//             method: 'POST',
+//             headers: { "Content-Type": "application/json" },
+//             body: JSON.stringify()
+//         });
+//         const userNameRes = await userNameF.json();
+//     }
+//     catch (error) {
+//         console.log("server for getUserName failed")
+//     }
+// }
 // userNameLabel();

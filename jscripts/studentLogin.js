@@ -102,7 +102,7 @@ async function loginUser() {
     async function fUsers() {// get http url
         const userurl = await fetch("/url.json");
         const userRes = await userurl.json()
-        return userRes.getLogin;
+        return userRes.getLogin; 
     }
     ///////
 
@@ -147,9 +147,9 @@ async function loginUser() {
 
 
             // alert("The login is successful")
-            let profilePic = document.querySelector(".img001")
+            // let profilePic = document.querySelector(".img001")
 
-            profilePic.setAttribute("src", `${loginRes.picture}`)
+            // profilePic.setAttribute("src", `${loginRes.picture}`)
 
 
             // These events are fired after the login is done

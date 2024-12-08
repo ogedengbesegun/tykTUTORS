@@ -17,18 +17,26 @@ body {
 .txt {
   margin-top: 10rem;
   max-width: 30%;
+  margin-right: 5px;
   /* color: #ffffff; */
+  font-weight: bold;
   float: right;
   font-size: large;
   padding-left: 5px;
   padding-right: 5px;
-  /* padding:5px 0px; */
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.login {
+.letgo {
+  /* display: grid; */
+  position: static;
+  /* top: 70%; */
+}
+
+/* .login {
   top: 400px;
   margin-left: 200px;
-}
+} */
 
 * {
   margin: 0;
@@ -426,11 +434,15 @@ button[title="Previous Question"]:hover {
   .txt {
     margin-top: 1rem;
     max-width: 35%;
-    /* color: #ffffff; */
-    float: right;
     font-size: small;
-    padding-left: 5px;
-    padding-right: 5px;
-    /* padding:5px 0px; */
+  }
+
+  .subsList {
+    font-size: small;
+  }
+
+  .regSection {
+    font-size: small;
+    /* background-color: aquamarine; */
   }
 }

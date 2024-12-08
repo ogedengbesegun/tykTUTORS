@@ -357,7 +357,7 @@ regSignup.addEventListener('click', (event) => {
             dlgConfirm.close()// to close dialog element
             location.reload()// to reload the page
 
-        }, 5000)// close the dialog in secs
+        }, 3000)// close the dialog in secs
     });
 
 });
