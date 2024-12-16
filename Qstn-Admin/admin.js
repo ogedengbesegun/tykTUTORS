@@ -1,4 +1,6 @@
 // declare my variables
+
+
 // let btnNext = document.querySelector(".btnNext")
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
@@ -40,7 +42,7 @@ let admin = [{
 let adminEmail = document.querySelector("#adminemail");
 let adminpwd = document.querySelector("#adminpwd");
 let adminpwd2 = document.querySelector("#adminpwd2");
-let admintel = document.querySelector("#admintel");
+// let admintel = document.querySelector("#admintel");
 
 let submitAdmin = document.querySelector(".submitAdmin")
 let res = document.querySelector(".res");
@@ -179,9 +181,9 @@ document.querySelector(".form").addEventListener('submit', function (event) {
 
 
 // 1. configure the input elemnts to accept only number values
-admintel.addEventListener('input', (e) => {
-    notNumbers(e); // from !Numbers () declared
-});
+// admintel.addEventListener('input', (e) => {
+//     notNumbers(e); // from !Numbers () declared
+// });
 
 
 // #forgot password input number acccepts only number, no strings
@@ -209,7 +211,7 @@ teacherlogin.setAttribute("disabled", "true"); // make the button notactive
 let teacherSub = document.querySelector("#teacherSub"); // variable teacherSub
 
 // decalre 
-let selectedSubject = document.querySelector(".selectedSubject")
+let selectedSubject = document.querySelector(".selectedSubject");
 
 teacherSub.addEventListener("click", () => {
     // teacherSub.value; // onclick remain in your state
@@ -218,7 +220,10 @@ teacherSub.addEventListener("click", () => {
 
         //  = `${teacherSub.value}`;
         teacherlogin.setAttribute("disabled", "true")
-
+        /////subjectHeading class
+        const subjectHeading = document.querySelector(".subjectHeading")
+        subjectHeading.textContent = "Subject: ";
+        /////////
 
     }
 
@@ -228,6 +233,13 @@ teacherSub.addEventListener("click", () => {
         selectedSubject.textContent = subjectText(); //from the ()=> declared
 
 
+        /////subjectHeading class
+        const subjectHeading = document.querySelector(".subjectHeading")
+        subjectHeading.textContent = "Subject: " + subjectText();
+        /////////
+        const reqError = document.querySelector(".reqError");
+
+        reqError.textContent = ""
     }
 });// end of teacherSub click event
 
@@ -237,6 +249,11 @@ teacherSub.addEventListener("mouseenter", () => {
     teacherlogin.setAttribute("disabled", "true")
     // selectedSubject
     selectedSubject.textContent = ""; //set to NULL
+
+    /////subjectHeading class
+    const subjectHeading = document.querySelector(".subjectHeading")
+    subjectHeading.textContent = "Subject: ";
+    /////////
 });
 
 /////////////////////////////on click teacherlogin btn
@@ -271,7 +288,6 @@ adminLogtel.addEventListener("input", (e) => {
     notNumbers(e); // does not accept !numbers
 
 })
-
 
 
 
@@ -331,7 +347,7 @@ function subjectText() { //declaration of function to change to textContent
     else {
     }
 }
-// subjectText
+/////
 
 
 // signUP
@@ -372,23 +388,16 @@ login.forEach(logins => {
 
 // 
 
-
+const regex = /^[a-d]+$/
 let txtans = document.querySelector(".txtans"); // this the variable for 
 let answerPopup = document.querySelector(".answerPopup");
 txtans.addEventListener("input", () => {
-    if (txtans.value === txtans.value.toUpperCase()) {
-        // alert("Revert to lowerCase")
-        txtans.value = txtans.value.toLowerCase();
 
+    if (regex.test(txtans.value)) {
 
-
+        regex
     }
-    else if ((txtans.value === "a") || (txtans.value === "b") ||
-        (txtans.value === "c") || (txtans.value === "d")) {
 
-
-
-    }
     else {
         answerPopup.showModal();
         document.querySelector(".answerPopup").addEventListener("click", () => {
@@ -467,126 +476,93 @@ countqst.addEventListener("click", () => {
 
 ///////////////////////////////////
 
-const txta = document.querySelector(".txta");
-const txtb = document.querySelector(".txtb");
-const txtc = document.querySelector(".txtc");
-const txtd = document.querySelector(".txtd");
 
+////////////////////////
+async function allurl() {
+    try {
+        const qstFetch = await fetch('/url.json');
+        const qstResult = await qstFetch.json();
 
-// const txtans = document.querySelector("txtans");//already declared
-//////////////////////////////////////////////
+        return qstResult; // Directly return the JSON object
+    } catch (error) {
+        console.error("Error fetching URL data:", error);
+        throw new Error("Unable to fetch URLs");
+    }
+}
 
-getmyText("/subjectsJSON/tykBank.fina.json");
-async function getmyText(file) {
+async function findsub() {
+    try {
+        const getQsturl = await allurl();
+        console.log(getQsturl)
+        const selectedSubject = document.querySelector(".selectedSubject").textContent;
+        let teacherSub = document.querySelector("#teacherSub").value;
 
-    let x = await fetch(file)
-    let y = await x.json()
+        // Normalize subject to match keys in the JSON (e.g., English-Language -> engl)
+        const subjectKey = selectedSubject.replace(selectedSubject, teacherSub);
 
-
-    console.log(y.length)
-
-    ////////////////////////////////////// forward click
-    forwardcount.addEventListener("click", () => {
-
-        ////////////////////////////////////
-
-
-        if (countqst.textContent >= y.length) {
-            // countqst.textContent = 0
-
-            countqst.textContent = (y.length);
-            countqst;
+        if (getQsturl[subjectKey]) {
+            console.log(getQsturl[subjectKey]);
+            return getQsturl[subjectKey];
+        } else {
+            console.error(`Subject URL not found for: ${selectedSubject}`);
+            throw new Error(`Invalid subject: ${selectedSubject}`);
         }
-        else {
+    } catch (error) {
+        console.error("Error finding subject URL:", error);
+        throw error;
+    }
+}
 
-            // reduce continuosly
-            // countqst.textContent = countInc();
-            countqst.textContent = countInc();
+async function setsub() {
+    try {
+        const reqError = document.querySelector(".reqError");
+        reqError.textContent = "";
+        const response = await findsub(); // Resolve dynamically based on the selected subject
 
-
-            //// fetch API//////////////////////////
-            ///////////
-            const qstion = document.querySelector(".qstion");
-            // getmyText("/subjectsJSON/QstBank.fina.json");
-            // async function getmyText(file) {
-
-            //     let x = await fetch(file)
-            //     let y = await x.json()
-
-            qstion.value = y[countqst.textContent - 1].ask;
-            txta.value = y[countqst.textContent - 1].a;
-            txtb.value = y[countqst.textContent - 1].b;
-            txtc.value = y[countqst.textContent - 1].c;
-            txtd.value = y[countqst.textContent - 1].d;
-            txtans.value = y[countqst.textContent - 1].ans;
-
-
-            // };
-            ////////////////////////fetch API end
-
+        if (!response) {
+            console.error("No URL found for the selected subject.");
+            const reqError = document.querySelector(".reqError");
+            reqError.textContent = "Unable to find URL for the selected subject.";
+            return;
         }
 
-    });
+        // Fetch input values
+        const qstion = document.querySelector(".qstion").value;
+        const txta = document.querySelector(".txta").value;
+        const txtb = document.querySelector(".txtb").value;
+        const txtc = document.querySelector(".txtc").value;
+        const txtd = document.querySelector(".txtd").value;
+        const txtans = document.querySelector(".txtans").value;
+        const sub = document.querySelector(".selectedSubject").textContent;
 
+        // Send the request
+        const sendqst = await fetch(response, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                qstion: qstion,
+                txta: txta,
+                txtb: txtb,
+                txtc: txtc,
+                txtd: txtd,
+                txtans: txtans,
+                sub: sub,
+            }),
+        });
 
+        const sendqstRes = await sendqst.json();
+        console.log("Submission response:", sendqstRes);
+    } catch (error) {
+        console.error("Error in comp function:", error);
+        const reqError = document.querySelector(".reqError");
 
-
-
-};
-
-//////////fetchAPI backcount to load qstion
-backcount.addEventListener("click", () => {
-
-
-
-    if (countqst.textContent <= 1) { //////////
-        countqst.textContent = 1;
-        // mycount = 1;
-
-        // countqst.textContent = mycount
+        reqError.textContent = "Check your Internet or contact support.";
     }
-    else {
-        // reduce continuosly
-        countqst.textContent = countDec();
+}
 
-        //// fetch API//////////////////////////
-        ///////////
-        const qstion = document.querySelector(".qstion");
+// Attach event listener for the submit button
+const submitqst = document.querySelector(".submitqst");
 
-
-
-
-
-        getmyText("/subjectsJSON/tykBank.fina.json");
-        async function getmyText(file) {
-
-
-// const 
-
-
-
-            let x = await fetch(file)
-            let y = await x.json()
-
-            // console.log(y[0].ask)
-            qstion.value = y[(countqst.textContent) - 1].ask;
-            txta.value = y[(countqst.textContent) - 1].a;
-            txtb.value = y[(countqst.textContent) - 1].b;
-            txtc.value = y[(countqst.textContent) - 1].c;
-            txtd.value = y[(countqst.textContent) - 1].d;
-            txtans.value = y[(countqst.textContent) - 1].ans;
-
-        };
-        ////////////////////////fetch API end
-
-    }
-
-});////
-////////////end
-
-////////////
-
-
-
-
-
+submitqst.addEventListener("click", () => {
+    setsub();
+});

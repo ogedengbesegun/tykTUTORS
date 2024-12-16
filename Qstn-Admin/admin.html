@@ -54,7 +54,8 @@
     <dialog class="text-center  border border-4 border-success rounded-2 logSignToggle">
         <span class="cursor fs-3 fas fa-times-circle float-end text-danger teacherClose" title="Close"></span>
 
-        <h5 class="text-center text-info text-decoration-underline">tykTUTORS<span class="fas fa-handshake mx-1"></span></h5>
+        <h5 class="text-center text-info text-decoration-underline">tykTUTORS<span class="fas fa-handshake mx-1"></span>
+        </h5>
         <ul id="logToggle" class="mx-auto w-100 mb-1 p-1 bg-light rounded-3">
             <li class=" btn btn-primary text-center text-light rounded-pill fw-bold w-75 mb-1 Login">Login</li>
             <li class=" btn btn-success text-center text-light rounded-pill fw-bold w-75 signUp">SignUp</li>
@@ -85,21 +86,21 @@
 
 
                     <!-- firstName -->
-                    <input title="Enter Surname" type="text"
+                    <!-- <input title="Enter Surname" type="text"
                         class=" mx-auto w-50 no-outline rounded-pill p-1 text-center border mb-1 names"
-                        placeholder="Enter Surname" required>
+                        placeholder="Enter Surname" required> -->
                     <!-- lastName -->
-                    <input title="Other Names" type="text"
+                    <!-- <input title="Other Names" type="text"
                         class="mx-auto w-50 no-outline rounded-pill p-1 text-center border mb-1 names"
-                        placeholder="Other Names" required>
+                        placeholder="Other Names" required> -->
                     <!-- email input -->
                     <input type="email" name="adminemail" id="adminemail"
                         class="w-50 mx-auto text-center  mb-1 no-outline rounded-pill border p-1"
                         placeholder="myemail@example.com" autocomplete="email" required>
                     <!-- telephone -->
-                    <input title="Enter your Mobile Number" type="tel" name="admintel" id="admintel"
+                    <!-- <input title="Enter your Mobile Number" type="tel" name="admintel" id="admintel"
                         class="text-center rounded-pill mx-auto w-50 no-outline border mb-1 p-1"
-                        placeholder="Enter Phone Number" maxlength="11" required>
+                        placeholder="Enter Phone Number" maxlength="11" required> -->
 
                     <!-- password and eyeslashed class  -->
                     <div class="">
@@ -239,7 +240,8 @@
         <!-- creation of questions for -->
         <section class="createQst hid">
             <div class="text-center mt-auto card p-2 textarea">
-                <h4>Subject:</h4>
+                <h4 class="subjectHeading"></h4>
+                <p class="reqError text-danger fw-bold"></p>
                 <textarea title="Teachers Question. Please, ensure Questions are typo-Error free and well constructed"
                     name="adminQuestion" id="adminQuestion" cols="60" rows="5" placeholder="Type in your Question HERE:"
                     class="rounded-1 no-outline bg-light px-2 qstion"></textarea>
@@ -273,7 +275,8 @@
                                 class="fas fa-forward"></i></button>
                     </div>
 
-                    <button type="button" title="Submit Questions" class="btn btn-success mt-2">Submit</button>
+                    <button type="button" title="Submit Questions"
+                        class="btn btn-success mt-2 submitqst">Submit</button>
 
                 </div>
             </div>
@@ -287,10 +290,10 @@
                     Created
                     solely for Professional Teachers with
                     wealth of experience to have their
-                    input to the Question Bank. 
-                    These available resources will in no 
-                    small measure help the Nigerian Child 
-                    achieve academic excellence. 
+                    input to the Question Bank.
+                    These available resources will in no
+                    small measure help the Nigerian Child
+                    achieve academic excellence.
                     Your Support is highly appreciated.</p>
             </strong>
             <strong class="text-center"> <u class="text-danger">Please Note:</u></strong>
