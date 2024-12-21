@@ -1,36 +1,43 @@
+.submitAdmin {
+  color: lightskyblue;
+}
 .submitAdmin:hover {
   background-color: aqua;
   color: red;
 }
 
-section:nth-child(1) {
-  background-image: url(/images/software-development-6523979_640.jpg);
-
-  /* background-size:250px; */
+.regSection fieldset {
+  /* background-color: rgba(58, 58, 61, 0.705); */
+  background-image: url(/images/tykbggirl.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 50%;
 }
-
 /* this will take an element back to negative left */
 .neg-ms-1 {
   margin-left: -30px;
 }
- .textarea{
+.textarea {
   background-color: aquamarine;
-
- }
-
-
-
-.Mymarquee { 
-  color: bisque;
-  display: inline-block;
-  animation: Mymarquee 8s linear infinite;
 }
 
-.reEnterPwd{
+.Mymarquee {
+  color: bisque;
+  display: inline-block;
+  animation: Mymarquee 20s linear infinite;
+}
+
+.reEnterPwd {
   background-color: rgb(158, 203, 245);
+}
+
+/* device screen smaller than 768px tablet screens*/
+@media (max-width: 768px) {
+  .regSection fieldset {
+    /* background-color: rgba(58, 58, 61, 0.705); */
+    width: 100%;
+  }
 }
 
 @keyframes Mymarquee {

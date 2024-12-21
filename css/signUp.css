@@ -1,7 +1,14 @@
 .accountExist:hover {
-  color: rgba(255, 0, 0, 0.7);
-  font-weight: 600;
-  /* opacity: 80%; */
+  color: rgb(255, 0, 0);
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-
-
+.accountExist {
+  color: #ffffff;
+}
+fieldset {
+  background-color: rgba(0, 0, 0, 0.5);
+}

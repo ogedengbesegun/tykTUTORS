@@ -1,4 +1,7 @@
+
 // declare my variables
+
+// import { stringify } from "path-to-regexp";
 
 
 // let btnNext = document.querySelector(".btnNext")
@@ -8,8 +11,71 @@ let imgstart = document.querySelector(".imgstart");
 let imgstory = document.querySelectorAll(".imgstory");
 
 let nextone = document.querySelector(".next1")
+///accept only email into regEmail.value
+const dialogg = document.querySelector(".dialogg");
+const adminemail = document.querySelector("#adminemail");
+
+function emailOnly() {
+    ///////
+
+    /////////
+    const Regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const admintrim = adminemail.value.trim()
+    if (Regex.test(admintrim)) {
+        dialogg.close()
+
+    }
+    else {
+        dialogg.showModal()
+
+    }
+    // const regEmail = document.querySelector(".regEmail");
+
+}
+// emailOnly();
+//////////////
+
+adminemail.addEventListener("focusout", () => {
+
+    emailOnly();
 
 
+})
+const closebtn = document.querySelector(".closebtn")
+closebtn.addEventListener("click", () => {
+    dialogg.close()
+    adminemail.value = ""
+})
+// ///create dialog elemnt
+// function mydlg() {
+//     const dialogg = document.createElement("dialog");
+//     dialogg.classList.add("border-0");
+//     dialogg.classList.add("rounded-2");
+//     dialogg.classList.add("dialogg");
+
+//     dialogg.innerHTML = `<h6 class="text-danger border border-0">
+//     Please Enter a valid Email Address</h6>
+//     <button class="btn btn-primary d-block mx-auto 
+//     closebtn">ok</button>`
+
+
+//     document.body.append(dialogg)// alert("Please enter a Valid Email Address");
+//     let closebtn = document.querySelector(".closebtn");
+//     const adminemail = document.querySelector("#adminemail");
+
+//     dialogg.showModal()
+
+//     closebtn.addEventListener("click", () => {
+//         // adminemail.value = "";//remove
+
+//         dialogg.close();
+//         // window.location.reload()
+
+//         adminemail.value = "";
+//     })
+
+
+// }
 
 // declare an object admin
 let admin = [{
@@ -42,10 +108,9 @@ let admin = [{
 let adminEmail = document.querySelector("#adminemail");
 let adminpwd = document.querySelector("#adminpwd");
 let adminpwd2 = document.querySelector("#adminpwd2");
-// let admintel = document.querySelector("#admintel");
+let admintel = document.querySelector("#admintel");
 
 let submitAdmin = document.querySelector(".submitAdmin")
-let res = document.querySelector(".res");
 let section = document.querySelector("section")
 
 // set the adminpwd to have an Attribute of maxlength
@@ -72,66 +137,7 @@ names.forEach(eachName => {
 //////////////////////////
 
 
-submitAdmin.addEventListener("click", () => {
 
-    // set the password 1&2 to black onclick
-    adminpwd.addEventListener("focus", () => {
-        adminpwd.style.color = "black";
-        adminpwd2.style.color = "black";
-        res.textContent = ""
-
-
-        // if (!(adminEmail.hasAttribute("type", "email"))) {
-        //     alert("This is NOT an email input")
-        // }
-    })
-
-    // creatElement to append into the res node
-    let check = document.createElement("i");
-    check.className = "fas fa-check";
-    let times = document.createElement("i");
-    times.className = "fas fa-close";
-
-
-    for (let i = 0; i < admin.length; i++) {
-
-        if ((admin[i].email == `${adminEmail.value}`)
-            && (admin[i].password == `${adminpwd.value}`)
-            && (`${adminpwd.value}` == `${adminpwd2.value}`)) {
-            res.textContent = "Registration Successful "
-            res.style.color = "green";
-            // console.log(res.textContent);
-            adminpwd.style.color = "green";
-            adminpwd2.style.color = "green";
-
-            // check.style.fontSize = "48px"
-            res.appendChild(check);
-            break
-
-        }
-        else {
-            // times.style.fontSize = "48px"
-
-            res.textContent = "Check Password ";
-
-
-            res.appendChild(times);
-            res.style.color = "red";
-            // console.log(res.textContent);
-            adminpwd.style.color = "red";
-            adminpwd2.style.color = "red";
-
-
-
-        }
-
-
-
-
-    }
-
-
-});
 
 // adminClose 
 let adminClose = document.querySelectorAll(".adminClose");
@@ -164,39 +170,26 @@ toggleeye.addEventListener("click", () => {
 
 });
 
-// to use form API checkValidity()method and validityMessage property
-document.querySelector(".form").addEventListener('submit', function (event) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(adminEmail.value)) {
 
-        alert('Please enter a valid email address.');   // an alert to warn users
-        adminEmail.value = ""; // set the value back to nothing
-        event.preventDefault(); // Prevent form submission
-    } else {
-
-        document.querySelector(".form").setAttribute("method", ""); // to send to the server into the db
-        confirm("Congratullations, Form Submitted Successfully")
-    }
-});
 
 
 // 1. configure the input elemnts to accept only number values
-// admintel.addEventListener('input', (e) => {
-//     notNumbers(e); // from !Numbers () declared
-// });
+admintel.addEventListener('input', (e) => {
+    notNumbers(e); // from !Numbers () declared
+});
 
 
 // #forgot password input number acccepts only number, no strings
 const teachNum = document.querySelector("#teachNum");
 teachNum.addEventListener("input", (e) => {
-    notNumbers(e); // will not accept !number--------
+    notNumbers(e); // will not accept !alphabeths--------
 })
 
 // function !Numbers are rejected
 function notNumbers(e) {
-    const value = e.target.value;
-    if (!/^\d*$/.test(value)) {
-        e.target.value = value.replace(/\D/g, '');
+    const valued = e.target.value;
+    if (!/^\d*$/.test(valued)) {
+        e.target.value = valued.replace(/\D/g, '');
         alert("Enter Valid Phone Numbers eg. (080*****123)")
     }
 };
@@ -212,7 +205,9 @@ let teacherSub = document.querySelector("#teacherSub"); // variable teacherSub
 
 // decalre 
 let selectedSubject = document.querySelector(".selectedSubject");
-
+///declare samp element
+let samp = document.querySelector("samp");
+/////
 teacherSub.addEventListener("click", () => {
     // teacherSub.value; // onclick remain in your state
 
@@ -222,6 +217,7 @@ teacherSub.addEventListener("click", () => {
         teacherlogin.setAttribute("disabled", "true")
         /////subjectHeading class
         const subjectHeading = document.querySelector(".subjectHeading")
+
         subjectHeading.textContent = "Subject: ";
         /////////
 
@@ -232,7 +228,7 @@ teacherSub.addEventListener("click", () => {
         teacherlogin.removeAttribute("disabled", "true");
         selectedSubject.textContent = subjectText(); //from the ()=> declared
 
-
+        samp.style.display = "none";
         /////subjectHeading class
         const subjectHeading = document.querySelector(".subjectHeading")
         subjectHeading.textContent = "Subject: " + subjectText();
@@ -256,36 +252,30 @@ teacherSub.addEventListener("mouseenter", () => {
     /////////
 });
 
-/////////////////////////////on click teacherlogin btn
-teacherlogin.addEventListener("click", () => {
-    // if()
-});
-/////////////////
+
 
 
 let adminLogpwd = document.querySelector("#adminLogpwd");
 let adminLogtel = document.querySelector("#adminLogtel");
 adminLogtel.setAttribute("maxlength", "11"); // set attribute of maxlength
-adminLogpwd.addEventListener("click", () => {
-    // reveal the samp element
-    document.querySelector("samp").style.display = "block";
+adminLogpwd.addEventListener("input", () => {
+
+    if (selectedSubject.textContent === subjectText()) {
+        // reveal the samp element
+        samp.style.display = "none";
+    }
+    else {
+        if (selectedSubject.textContent != subjectText()) {
+            samp.style.display = "block";
+            selectedSubject.textContent = "";
+            teacherlogin.disabled = true;
+        }
+    }
 });
 
-adminLogpwd.addEventListener("input", () => {
-    // hide the samp element
-    if (adminLogpwd) {
-        document.querySelector("samp").style.display = "none";
-    }
-
-    else {
-        document.querySelector("samp").style.display = "block";
-
-    }
-
-})
 
 adminLogtel.addEventListener("input", (e) => {
-    notNumbers(e); // does not accept !numbers
+    notNumbers(e); // does not accept !alphabeths
 
 })
 
@@ -379,7 +369,7 @@ login.forEach(logins => {
     logins.addEventListener('click', () => {
         document.querySelector(".regSection").classList.add("hide"); //make visible
         document.querySelector(".loginSection").classList.remove("hide"); //make invinsible
-        document.querySelector(".createQst").style.display = "block";
+        // document.querySelector(".createQst").style.display = "block";
 
         logSignToggle.close(); // close the modal
 
@@ -394,8 +384,7 @@ let answerPopup = document.querySelector(".answerPopup");
 txtans.addEventListener("input", () => {
 
     if (regex.test(txtans.value)) {
-
-        regex
+        txtans.value
     }
 
     else {
@@ -553,7 +542,7 @@ async function setsub() {
         const sendqstRes = await sendqst.json();
         console.log("Submission response:", sendqstRes);
     } catch (error) {
-        console.error("Error in comp function:", error);
+        console.error("Error in setsub function:", error);
         const reqError = document.querySelector(".reqError");
 
         reqError.textContent = "Check your Internet or contact support.";
@@ -566,3 +555,191 @@ const submitqst = document.querySelector(".submitqst");
 submitqst.addEventListener("click", () => {
     setsub();
 });
+
+async function tcherReg() {
+    const adminsurname = document.getElementById('adminsurname').value;
+    const adminothername = document.getElementById('adminothername').value;
+    const adminemail = document.getElementById('adminemail').value;
+    const admintel = document.getElementById('admintel').value;
+    const adminpwd = document.getElementById('adminpwd').value;
+    try {
+        const url = await allurl();
+        const tchers = url["tchers"]
+        console.log(tchers);
+        const tcher = await fetch(tchers, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                adminsurname: adminsurname,
+                adminothername: adminothername,
+                adminemail: adminemail, admintel: admintel,
+                adminpwd: adminpwd
+            })
+        });
+        const tcherResponse = await tcher.json()
+        // console.log(tcherResponse)
+    }
+    catch (error) {
+
+    }
+}
+///////
+// to use form API checkValidity()method and validityMessage property
+// const submitAdmin = document.querySelector(".submitAdmin");
+
+submitAdmin.addEventListener('click', function (event) {
+    let adminsurname = document.getElementById('adminsurname').value;
+    let adminothername = document.getElementById('adminothername').value;
+    // let adminemail = document.getElementById('adminemail').value;
+    let admintel = document.getElementById('admintel').value;
+    let adminpwd = document.getElementById('adminpwd').value;
+    let submitResponse = document.querySelector(".submitResponse");
+
+
+    ///////////////
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(adminEmail.value)) {
+
+        alert('Please enter a valid email address.');   // an alert to warn users
+        adminEmail.value = ""; // set the value back to nothing
+        event.preventDefault(); // Prevent form submission
+
+    }
+    else if ((adminsurname === "") || (adminothername === "")
+        || (admintel === "") || (adminpwd === "")) {
+        submitResponse.textContent = "Please Complete all fields";
+        submitResponse.style.color = "red"
+        event.preventDefault(); // Prevent form submission
+        setTimeout(() => {
+            submitResponse.textContent = "";
+        }, 2000);
+        // alert("Requred information")
+    }
+    else {
+        if (tcherReg()) {
+            //  creatElement to append into the res node
+            let check = document.createElement("i");
+            check.className = "fas fa-check";
+            submitResponse.append(check);
+            check.style.fontSize = "50px"
+            check.style.color = "green"
+            submitResponse.classList.remove("bg-light")
+            setTimeout(() => {
+                window.location.reload();
+
+            }, 3000)
+        }
+        // document.querySelector(".form").setAttribute("method", ""); // to send to the server into the db
+        // confirm("Congratulations, Form Submitted Successfully")
+    }
+});
+
+
+
+async function tcherlogRequest() {
+    const adminLogtel = document.querySelector("#adminLogtel").value;
+    const adminLogpwd = document.querySelector("#adminLogpwd").value;
+
+    try {
+        const url = await allurl();
+        const tcherlogurl = url["tcherlogin"]
+        console.log(tcherlogurl);
+        const logTcher = await fetch(tcherlogurl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ adminLogtel: adminLogtel, adminLogpwd: adminLogpwd })
+        });
+        const tcherReq = await logTcher.json();
+        console.log(tcherReq.password);
+        console.log(tcherReq.tel);
+        if ((adminLogtel === tcherReq.tel) && (adminLogpwd === tcherReq.password)) {
+               document.querySelector(".createQst").style.display = "block";
+            // console.log('phone and password are Correct')
+        }
+    }
+    catch (error) {
+        console.error(`the request failed ${error}`)
+    }
+}
+////teacherlogin
+// const teacherlogin = document.querySelector(".teacherlogin");
+teacherlogin.addEventListener("click", () => {
+    // alert("thanks buddy")
+    tcherlogRequest();
+})
+
+
+
+// const submitAdmin = document.querySelector(".submitAdmin")
+
+// submitAdmin.addEventListener("click", () => {
+//     let submitResponse = document.querySelector(".submitResponse");
+
+//     if (tcherReg()) {
+
+//         // creatElement to append into the res node
+//         let check = document.createElement("i");
+//         check.className = "fas fa-check";
+//         let times = document.createElement("i");
+//         times.className = "fas fa-close";
+
+
+
+//         submitResponse.textContent = "Registration Successful "
+//         submitResponse.style.color = "green";
+//         // console.log(res.textContent);
+//         adminpwd.style.color = "green";
+//         adminpwd2.style.color = "green";
+
+//         // check.style.fontSize = "48px"
+//         submitResponse.appendChild(check);
+
+//     }   // initialized
+//     else {
+//         // times.style.fontSize = "48px"
+
+//         submitResponse.textContent = "Check Password ";
+//         submitResponse.appendChild(times);
+//         submitResponse.style.color = "red";
+//         // console.log(res.textContent);
+//         adminpwd.style.color = "red";
+//         adminpwd2.style.color = "red";
+
+
+
+//     }
+
+
+
+
+// for (let i = 0; i < admin.length; i++) {
+
+//     if ((admin[i].email == `${adminEmail.value}`)
+//         && (admin[i].password == `${adminpwd.value}`)
+//         && (`${adminpwd.value}` == `${adminpwd2.value}`)) {
+//         res.textContent = "Registration Successful "
+//         res.style.color = "green";
+//         // console.log(res.textContent);
+//         adminpwd.style.color = "green";
+//         adminpwd2.style.color = "green";
+
+//         // check.style.fontSize = "48px"
+//         res.appendChild(check);
+//         break
+
+//     }
+//     else {
+//         // times.style.fontSize = "48px"
+
+//         res.textContent = "Check Password ";
+//         res.appendChild(times);
+//         res.style.color = "red";
+//         // console.log(res.textContent);
+//         adminpwd.style.color = "red";
+//         adminpwd2.style.color = "red";
+
+
+
+//     }
+// }
+// });

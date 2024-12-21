@@ -25,7 +25,7 @@ const PORT = process.env.PORT;
 client.connect().then(() => {
     const db = client.db('tykBank'); //  database name
     const stds = db.collection('stds'); //  collection =stds name
-    const tchers = db.collection('tchers'); //  collection =stds name
+    const tchers = db.collection('tchers'); //  collection =tchers details
 
 
     //////subjects db
@@ -131,6 +131,45 @@ client.connect().then(() => {
         }
     });///////////////////////// end fina
 
+    app.post('/tchers', async (req, res) => {
+        try {
+            const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;
+            const tchersreg = tchers.insertOne({
+                surname: adminsurname, other_name: adminothername,
+                email: adminemail, tel: admintel, password: adminpwd
+            })
+            res.json(tchersreg);
+
+            // const { adminLogtel, adminLogpwd } = req1.body;
+            // const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
+            // res1.json(tcherlogin);
+        }
+        catch (error) {
+            console.error(`the server not received request, ${error}`)
+        }
+
+        //
+        // try {
+        //     const { adminLogtel, adminLogpwd } = req1.body;
+        //     const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
+        //     res1.json(tcherlogin);
+        // }
+        // catch (error) {
+
+        // }
+    });
+
+    app.post('/tcherlogin', async (req, res) => {//login Admin //teacher
+        ////
+        try {
+            const { adminLogtel, adminLogpwd } = req.body;
+            const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
+            res.json(tcherlogin);
+        }
+        catch (error) {
+
+        }
+    });
     ////////////getUserName
     // app.post('/getUserName', async (req, res) => {
     //     try {
@@ -267,3 +306,4 @@ client.connect().then(() => {
 
 );
 
+///////////////////

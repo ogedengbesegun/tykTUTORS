@@ -178,9 +178,6 @@ async function loginUser() {
 
         }
 
-
-
-
     }
     catch (error) {
         console.log("The Surname or Password is NOT Correct", error)
