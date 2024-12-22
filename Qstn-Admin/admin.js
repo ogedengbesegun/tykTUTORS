@@ -1,7 +1,6 @@
 
 // declare my variables
 
-// import { stringify } from "path-to-regexp";
 
 
 // let btnNext = document.querySelector(".btnNext")
@@ -77,28 +76,6 @@ closebtn.addEventListener("click", () => {
 
 // }
 
-// declare an object admin
-let admin = [{
-    firstname: "segun",
-    lastname: "ogedengbe",
-    email: "wisdomworld28608@gmail.com",
-    phonenumber: "08036749218",
-    password: "admin001"
-},
-{
-    firstname: "sade",
-    lastname: "ogedengbe",
-    email: "wisdomworld1201@gmail.com",
-    phonenumber: "08038542690",
-    password: "admin002"
-},
-{
-    firstname: "eniolorunfe",
-    lastname: "ogedengbe",
-    email: "wisdomworld1234@gmail.com",
-    phonenumber: "09034645647",
-    password: "admin003"
-}]
 
 
 
@@ -135,9 +112,6 @@ names.forEach(eachName => {
     })
 })
 //////////////////////////
-
-
-
 
 // adminClose 
 let adminClose = document.querySelectorAll(".adminClose");
@@ -337,15 +311,22 @@ function subjectText() { //declaration of function to change to textContent
     else {
     }
 }
-/////
+/////to  hide  dnamically
+const loginSection = document.querySelector(".loginSection ")
+const createQst = document.querySelector(".createQst");
+loginSection.style.display = "none";
+createQst.style.display = "none";
+//////////////////////
+
+
 
 
 // signUP
 let signUp = document.querySelectorAll(".signUp"); //declaration
 signUp.forEach(signUps => {
     signUps.addEventListener("click", function () {
-        document.querySelector(".regSection").classList.remove("hide"); //make visible
-        document.querySelector(".loginSection").classList.add("hide"); //make invinsible
+        document.querySelector(".regSection").style.display = "block"; //make visible
+        document.querySelector(".loginSection").style.display = "none"; //make invinsible
         document.querySelector(".createQst").style.display = "none"
 
 
@@ -367,9 +348,9 @@ const login = document.querySelectorAll(".Login"); // variable declaration
 // });
 login.forEach(logins => {
     logins.addEventListener('click', () => {
-        document.querySelector(".regSection").classList.add("hide"); //make visible
-        document.querySelector(".loginSection").classList.remove("hide"); //make invinsible
-        // document.querySelector(".createQst").style.display = "block";
+        document.querySelector(".regSection").style.display = "none"; //make visible
+        document.querySelector(".loginSection").style.display = "block"; //make invinsible
+        document.querySelector(".createQst").style.display = "none";
 
         logSignToggle.close(); // close the modal
 
@@ -523,12 +504,13 @@ async function setsub() {
         const txtd = document.querySelector(".txtd").value;
         const txtans = document.querySelector(".txtans").value;
         const sub = document.querySelector(".selectedSubject").textContent;
-
+        const author = document.querySelector(".author").textContent;
         // Send the request
         const sendqst = await fetch(response, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
+                author: author,
                 qstion: qstion,
                 txta: txta,
                 txtb: txtb,
@@ -540,22 +522,58 @@ async function setsub() {
         });
 
         const sendqstRes = await sendqst.json();
-        console.log("Submission response:", sendqstRes);
+        ////////
+
+        // console.log("Submission response:", sendqstRes);
     } catch (error) {
         console.error("Error in setsub function:", error);
         const reqError = document.querySelector(".reqError");
 
-        reqError.textContent = "Check your Internet or contact support.";
+        reqError.textContent = "Check your Internet or Select a Subject first.";
     }
 }
 
-// Attach event listener for the submit button
+
+
+
+///////////////////
+//Ssubject Submission Button fired-up
+///////////////////
 const submitqst = document.querySelector(".submitqst");
 
-submitqst.addEventListener("click", () => {
-    setsub();
+submitqst.addEventListener("click", (event) => {
+    const qstion = document.querySelector(".qstion");
+    const txta = document.querySelector(".txta");
+    const txtb = document.querySelector(".txtb");
+    const txtc = document.querySelector(".txtc");
+    const txtd = document.querySelector(".txtd");
+    const txtans = document.querySelector(".txtans");
+    const sub = document.querySelector(".selectedSubject");
+    const author = document.querySelector(".author");
+    ////////////////////
+    if (qstion.value === "" || txta.value === ""
+        || txtb.value === "" || txtc.value === "" || txtd.value === ""
+        || txtans.value === "" || sub.textContent === "" || author.textContent === "") {
+        event.preventDefault();
+        alert(`Empty Field(s) Cannot be Submitted!!!`);
+    }
+    else {
+
+        setsub();
+        alert(`${sub.textContent} is Successfully Submitted`);
+        setTimeout(() => {
+            qstion.value = ""; txta.value = "";
+            txtb.value = ""; txtc.value = ""; txtd.value = "";
+            txtans.value = "";
+        }, 2000)
+    }
 });
 
+
+
+//////////////
+//Teachers Registration
+////////////////////////////////
 async function tcherReg() {
     const adminsurname = document.getElementById('adminsurname').value;
     const adminothername = document.getElementById('adminothername').value;
@@ -619,10 +637,11 @@ submitAdmin.addEventListener('click', function (event) {
         if (tcherReg()) {
             //  creatElement to append into the res node
             let check = document.createElement("i");
-            check.className = "fas fa-check";
+            check.className = `fas fa-check rounded-circle
+             border-2 border border-light p-2`;
             submitResponse.append(check);
             check.style.fontSize = "50px"
-            check.style.color = "green"
+            check.style.color = "blue"
             submitResponse.classList.remove("bg-light")
             setTimeout(() => {
                 window.location.reload();
@@ -635,41 +654,76 @@ submitAdmin.addEventListener('click', function (event) {
 });
 
 
-
+///////Adminlogin req
 async function tcherlogRequest() {
     const adminLogtel = document.querySelector("#adminLogtel").value;
     const adminLogpwd = document.querySelector("#adminLogpwd").value;
-
+    const author = document.querySelector(".author");
     try {
         const url = await allurl();
         const tcherlogurl = url["tcherlogin"]
-        console.log(tcherlogurl);
+        // console.log(tcherlogurl);
         const logTcher = await fetch(tcherlogurl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ adminLogtel: adminLogtel, adminLogpwd: adminLogpwd })
+            body: JSON.stringify({
+                adminLogtel: adminLogtel,
+                adminLogpwd: adminLogpwd
+            })
         });
         const tcherReq = await logTcher.json();
-        console.log(tcherReq.password);
-        console.log(tcherReq.tel);
+        // console.log(tcherReq);
+        // console.log(tcherReq.tel);
+        // console.log(tcherReq["surname"])
+        /////////conditional statement for output
         if ((adminLogtel === tcherReq.tel) && (adminLogpwd === tcherReq.password)) {
-               document.querySelector(".createQst").style.display = "block";
-            // console.log('phone and password are Correct')
+            document.querySelector(".createQst").style.display = "block";
+            //give marginTop 5px
+            document.querySelector(".createQst").style.marginTop = "10px"
+            // author.style.textAlign = "start";
+            author.textContent = tcherReq.surname.toUpperCase()
+                + " " + tcherReq.other_name;
+            if (alert("Login Successful"), 1) {
+                document.querySelector("#adminLogpwd").value = "";//set to ""
+                document.querySelector("#adminLogtel").value = "";//set to ""
+
+            };
+            loginSection.style.display = "none";//// 
+        }
+        else {
         }
     }
     catch (error) {
-        console.error(`the request failed ${error}`)
+        const adminLogpwd = document.querySelector("#adminLogpwd");
+
+        alert(`Oops, Check your password!!!`);
+        adminLogpwd.value = "";
+        // console.error(`the request failed ${error}`)
     }
 }
 ////teacherlogin
 // const teacherlogin = document.querySelector(".teacherlogin");
 teacherlogin.addEventListener("click", () => {
-    // alert("thanks buddy")
-    tcherlogRequest();
+
+    if (tcherlogRequest()) {
+
+    };
 })
 
+/////logOut Admin/teacher button logout////
+const logout = document.querySelector(".logout");
+logout.addEventListener('click', () => {
+    const author = document.querySelector(".author");
 
+    if (confirm(`${author.textContent}: Do you want to Logout ?`, 1)) {
+        location.reload()
 
+    }
+    else {
+
+    }
+})
+///////////////////////////////////
 // const submitAdmin = document.querySelector(".submitAdmin")
 
 // submitAdmin.addEventListener("click", () => {

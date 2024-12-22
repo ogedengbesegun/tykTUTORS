@@ -134,7 +134,7 @@ client.connect().then(() => {
     app.post('/tchers', async (req, res) => {
         try {
             const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;
-            const tchersreg = tchers.insertOne({
+            const tchersreg = await tchers.insertOne({
                 surname: adminsurname, other_name: adminothername,
                 email: adminemail, tel: admintel, password: adminpwd
             })
@@ -163,7 +163,10 @@ client.connect().then(() => {
         ////
         try {
             const { adminLogtel, adminLogpwd } = req.body;
-            const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
+            const tcherlogin = await tchers.findOne({
+                tel: adminLogtel,
+                password: adminLogpwd
+            });
             res.json(tcherlogin);
         }
         catch (error) {
@@ -200,99 +203,99 @@ client.connect().then(() => {
     });
     /////comp
     app.post('/comp', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await comp.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await comp.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////fina
     app.post('/fina', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await fina.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await fina.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////math
     app.post('/math', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await math.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await math.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////engl
     app.post('/engl', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await engl.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await engl.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////econ
     app.post('/econ', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await econ.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await econ.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
 
     //////biol
     app.post('/biol', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await biol.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await biol.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////phys
     app.post('/phys', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await phys.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await phys.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////chem
     app.post('/chem', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await chem.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await chem.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////furt
     app.post('/furt', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await furt.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await furt.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////comm
     app.post('/comm', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await comm.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await comm.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////lite
     app.post('/lite', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await lite.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await lite.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////gove
     app.post('/gove', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await gove.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await gove.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////civi
     app.post('/civi', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await civi.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await civi.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////mart
     app.post('/mart', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await mart.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await mart.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////proc
     app.post('/proc', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await proc.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await proc.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     //////anim
     app.post('/anim', async (req, res) => {
-        const { sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
-        const resDB = await anim.insertOne({ subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
+        const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
+        const resDB = await anim.insertOne({ author: author, subject: sub, ask: qstion, a: txta, b: txtb, c: txtc, d: txtd, ans: txtans })
         res.json(resDB)
     })
     ////////////////
