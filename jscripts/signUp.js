@@ -65,7 +65,7 @@ stdNames.forEach(eName => {
 /////////////////////////////////
 
 ////disable sign/Register button 1st
-document.querySelector(".regSignup").disabled = true;/// disable submit button
+// document.querySelector(".regSignup").disabled = true;/// disable submit button
 ///////
 
 
@@ -100,7 +100,7 @@ function sameValue() { //give border-success when same value input
             regPsw.classList.add("border-danger");
             regPassword2.classList.add("border-danger");
 
-            document.querySelector(".regSignup").disabled = true;
+            // document.querySelector(".regSignup").disabled = true;
 
         }
 
@@ -120,7 +120,7 @@ function sameValue() { //give border-success when same value input
             regPsw.classList.remove("border-danger"); // revert
             regPassword2.classList.remove("border-danger"); // revert
             ////
-            document.querySelector(".regSignup").disabled = true;
+            // document.querySelector(".regSignup").disabled = true;
 
         }
     });
@@ -130,34 +130,9 @@ function sameValue() { //give border-success when same value input
 sameValue();
 
 //////////
-function formValid() {//////////
-    const formValidity = document.querySelector('.form');
-
-    if (formValidity.checkValidity()) {//dont submit empty input){
-
-        document.querySelector(".regSignup").disabled = false;
-
-    } else {
-        if (alert("Fill all required fields..."), 1) {
-            document.querySelector(".regSignup").disabled = true;
-
-            regPsw.value = '';
-
-        };
 
 
-    }
-    /////////////to ensure all form fields are filled
 
-}
-
-////Once focusout on Confirm Passworm input
-regPassword2.addEventListener('focusout', () => {
-    formValid();//trigger form validation
-})
-
-
-////////formValid();
 
 // 4 reveal and toggle the password input to reveal the password
 let reveal = document.querySelector(".reveal")
@@ -207,23 +182,6 @@ closeSignUp.forEach(closeSignUps => {
 
 
 
-// let backpage = document.querySelector('.backpage'); // back to previuos page
-// backpage.addEventListener("click", () => {
-//     window.history.back();
-
-// })
-
-// fetch("/html/signUp.html")
-//     .then(response => response.text())
-//     .then(data => {
-//         document.querySelector("#content").innerHTML = data
-//     });
-
-// fetch("/html/signUp.html")
-//     .then(response => response.text())
-//     .then(data => {
-//         document.querySelector("#content1").innerHTML = data
-//     });
 
 
 
@@ -270,17 +228,17 @@ signHome.addEventListener("click", () => {
 
 ////////regSignup
 ////////////////
-
 let dlgsex = document.querySelector('.dlgsex').textContent;
 
 
 function sex() {
     if (regMale.checked) {
         return regMale.value
-    } else {
-        if (regFemale.checked) {
-            return regFemale.value
-        }
+    } else if (regFemale.checked) {
+        return regFemale.value
+    }
+    else {
+        return ""
     }
 };
 // dlgsex = sex();
@@ -322,43 +280,56 @@ regSignup.addEventListener('click', (event) => {
     dlgdob.textContent = regDob.value;
     dlgsex.textContent = sex();
     dlgemail.textContent = regEmail.value;
-    dlgpassword.textContent = regPsw.value;
+    dlgpassword.textContent = regPsw.type;
     dlgphone.textContent = regNum.value;
-
+// regPsw.setAttribute("")
 
 
     /////validate form
+    if ((regSur.value === "") || (regOther.value === "") || (regDob.value === "")
+        || (regNum.value === "") || (regEmail.value === "") || (regPsw.value === "")
+        || (regPassword2.value === "") || !sex()) {
+        event.preventDefault();
+        alert(`Oops: Empty fields cannot Submit`)
 
-    event.preventDefault();
-    dlgConfirm.showModal();
+    } else {
+        dlgConfirm.showModal()
 
-
-
-
-    /////////to cancel submition for error reason
-    xform.addEventListener('click', () => {
-        dlgConfirm.close()// to close dialog element
-        alert('Registration NOT Submitted yet!!!')// its to int with the user
-        // location.reload()// reload present page
-        regPsw.value = '';
-
-
-    });
-    //////////////
-    subform.addEventListener('click', () => {
-        ///////////
-        // reg()
-        if (reg()) {
-            alert('Signup is about to be completed')
-        }
-
-        ////////////////
-        setTimeout(() => {
+        /////////to cancel submition for error reason
+        xform.addEventListener('click', () => {
             dlgConfirm.close()// to close dialog element
-            location.reload()// to reload the page
+            alert('Registration NOT Submitted yet!!!')// its to int with the user
+            // location.reload()// reload present page
+            regPsw.value = '';
 
-        }, 3000)// close the dialog in secs
-    });
+
+        });
+        //////////////
+        subform.addEventListener('click', () => {
+
+            ///////////
+
+            // reg()
+            if (alert('Signup is about to be completed'), 1) {
+                reg()
+
+            }
+
+            ////////////////
+            setTimeout(() => {
+                dlgConfirm.close()// to close dialog element
+                location.reload()// to reload the page
+
+            }, 1500)// close the dialog in secs
+        });
+
+
+
+
+
+
+    }
+
 
 });
 //    this.preventDefault();
@@ -403,11 +374,7 @@ async function reg() {
         })
 
         const response = await fetchstds.json();
-        // if (response) {
-        //     alert("Successfully Registered, Congratullations")
-        // }
-        // response.myInsert;
-        // console.log("Already existing email", response.myFind)
+
 
     }
     catch (error) {
@@ -427,13 +394,8 @@ async function urljson() {
         const urlf = await fetch('/url.json');
         const urlRes = await urlf.json();
         // console.log(urlRes);
-        const signup = urlRes.signup;
-        const getLogin = urlRes.getLogin;
-        const getfina = urlRes.getfina;
-        const getUserName = urlRes.getUserName;
-        const getEmail = urlRes.getEmail
-        return { signup, getLogin, getfina, getUserName, getEmail };
 
+        return urlRes;
     }
     catch (error) {
         console.log("getUserName NOT available", error)
@@ -493,3 +455,38 @@ focusPsw.addEventListener('focusin', () => {
 
 });
 ////////addevent listener
+
+
+// tel_taken()
+async function tel_taken() {
+    try {
+        const regNum = document.querySelector(".regNum");
+        const urltel = await urljson();
+        console.log(urltel['getTel']);
+
+        const getTel = await fetch(urltel['getTel'], {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                regNum: regNum.value
+            })
+        });
+        const getTelResp = await getTel.json();
+        console.log(getTelResp.telephone)
+        ////
+        if (regNum.value === getTelResp.telephone) {
+            alert(`${regNum.value} is for another User`);
+            regNum.value = "";
+        }
+    }
+    catch (error) {
+        // console.error(`${error} error getting tel Num`)
+    }
+}
+////// telephone taken by another User
+regPassword2.addEventListener("focusin", () => {
+    // alert("focus over")
+    tel_taken();
+
+})
+/////////////

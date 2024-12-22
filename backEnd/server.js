@@ -79,24 +79,7 @@ client.connect().then(() => {
 
             res.json(result);
 
-            ///if it contains
-            // const Isamong = await collection.findOne({ surname: logid, password: passwd });
-            // if (Isamong) {
-            //     console.log(Isamong + "is the same with" + regEmail)
-            //     // res.json(Isamong)
-            // }
 
-            // if (result) {
-            //     // Respond back to the Client side
-            //     // client response
-            // }
-            // else if (Isamong) {
-            //     res.json(myFind);
-
-            // }
-
-            // res.json({ message: 'Document inserted successfully', insertedId: result.insertedId });
-            // res.json({ message: 'Document inserted successfully', insertedId: result.insertedId });
         } catch (error) {
             console.error('Error inserting document:', error);
             res.status(500).json({ message: 'Error inserting document' });
@@ -122,7 +105,7 @@ client.connect().then(() => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
-            const getfin = fina.find({ sub: "fina" })
+            const getfin = fina.find({ subject: "Financial-Accounting" })
             const arrayfin = await getfin.toArray();// to get multiple res findMany
             res.json(arrayfin)
         }
@@ -140,23 +123,12 @@ client.connect().then(() => {
             })
             res.json(tchersreg);
 
-            // const { adminLogtel, adminLogpwd } = req1.body;
-            // const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
-            // res1.json(tcherlogin);
+
         }
         catch (error) {
             console.error(`the server not received request, ${error}`)
         }
 
-        //
-        // try {
-        //     const { adminLogtel, adminLogpwd } = req1.body;
-        //     const tcherlogin = await tchers.findOne({ tel: adminLogtel, password: adminLogpwd });
-        //     res1.json(tcherlogin);
-        // }
-        // catch (error) {
-
-        // }
     });
 
     app.post('/tcherlogin', async (req, res) => {//login Admin //teacher
@@ -201,6 +173,19 @@ client.connect().then(() => {
 
         }
     });
+    ////getTel  to weeds off duplication in the db
+    app.post("/getTel", async (req, res) => {
+        try {
+            const { regNum } = req.body;
+            const getTel = await stds.findOne({ telephone: regNum });
+            res.json(getTel);
+        }
+        catch (error) {
+
+        }
+    })
+
+
     /////comp
     app.post('/comp', async (req, res) => {
         const { author, sub, qstion, txta, txtb, txtc, txtd, txtans } = req.body;
