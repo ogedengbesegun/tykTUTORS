@@ -6,6 +6,8 @@ body {
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   overflow-y: scroll;
+}
+.body {
   background-image: url(/images/tykbgboy.jpg);
   /* background-color: rgba(0, 38, 252, 0.45); */
   background-size: cover;
@@ -13,7 +15,15 @@ body {
   min-height: 25vh;
   background-position: center;
 }
-
+.body_bg {
+  background-color: gray;
+  background-image: url(/images/tykbgboy.jpg);
+  /* background-color: rgba(0, 38, 252, 0.45); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 25vh;
+  background-position: center;
+}
 .txt {
   margin-top: 10rem;
   max-width: 30%;
@@ -63,7 +73,7 @@ th {
   font-family: Verdana, Geneva, Tahoma, sans-serif "Times New Roman", Times,
     serif;
   font-weight: 600;
-  background-color: #dfbf99;
+  background-color: rgba(73, 64, 64, 0.3);
   padding: 10px;
   width: 100%;
   height: 100%;
@@ -255,6 +265,10 @@ button[title="Previous Question"]:hover {
   z-index: 2;
   /* background-color: rgba(14, 13, 13, 0.25); */
 }
+
+section .why {
+  background-color: rgba(0, 0, 0, 0.45);
+}
 .subjList {
   cursor: pointer;
   margin-left: auto;
@@ -337,10 +351,16 @@ button[title="Previous Question"]:hover {
   right: 35px;
 }
 
-.closeSignUp {
+.position {
   position: relative;
-  top: 5px;
-  right: 5px;
+  top: 64px;
+  right: -7px;
+  float: right;
+}
+.myPosition {
+  position: relative;
+  top: -15px;
+  right: -7px;
   float: right;
 }
 
@@ -413,6 +433,11 @@ button[title="Previous Question"]:hover {
   color: #1a02f3;
 }
 
+footer {
+  opacity: 100%;
+  background-image: linear-gradient(180deg, white, gray);
+  /* box-shadow: #a751f1; */
+}
 /* device screen resolution greather than 768(tablet)  */
 @media (min-width: 768px) {
   /* .container-md,
@@ -423,7 +448,7 @@ button[title="Previous Question"]:hover {
 }
 /* device screen smaller than 768px*/
 @media (max-width: 768px) {
-  body {
+  .body {
     min-height: 100vh;
   }
   .login {

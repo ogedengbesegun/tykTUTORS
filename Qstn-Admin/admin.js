@@ -43,7 +43,8 @@ adminemail.addEventListener("focusout", () => {
 const closebtn = document.querySelector(".closebtn")
 closebtn.addEventListener("click", () => {
     dialogg.close()
-    adminemail.value = ""
+    adminemail.value = "";
+    admintel.value = "";
 })
 // ///create dialog elemnt
 // function mydlg() {
@@ -168,7 +169,6 @@ function notNumbers(e) {
     }
 };
 // 
-
 
 
 let teacherlogin = document.querySelector(".teacherlogin"); //variable declared
@@ -355,6 +355,20 @@ login.forEach(logins => {
         logSignToggle.close(); // close the modal
 
     });
+
+    //////onMouseenter change text-bg-dark
+    logins.addEventListener("mouseenter", () => {
+        logins.classList.remove('text-bg-dark');
+        logins.classList.add('text-bg-danger');
+
+    });
+    //////onMouseenter change text-bg-danger
+
+    logins.addEventListener('mouseleave', () => {
+        logins.classList.remove('text-bg-danger');
+        logins.classList.add('text-bg-dark');
+
+    })
 });
 
 // 
@@ -510,7 +524,7 @@ async function setsub() {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                author: author,
+                author: author.toLowerCase(),
                 qstion: qstion,
                 txta: txta,
                 txtb: txtb,
@@ -580,6 +594,11 @@ async function tcherReg() {
     const adminemail = document.getElementById('adminemail').value;
     const admintel = document.getElementById('admintel').value;
     const adminpwd = document.getElementById('adminpwd').value;
+    indicator.showModal()
+    const delay = (ms) => new Promise((resolve) => {
+        setTimeout(resolve, ms)
+    })
+    await delay(2000)
     try {
         const url = await allurl();
         const tchers = url["tchers"]
@@ -604,32 +623,113 @@ async function tcherReg() {
 ///////
 // to use form API checkValidity()method and validityMessage property
 // const submitAdmin = document.querySelector(".submitAdmin");
+async function emailexist() {
+    // const admintel = document.querySelector("#admintel").value;
+    const adminemail = document.querySelector("#adminemail").value;
 
+    try {
+        const findEmail = await allurl();
+        // adminEmail.value === findEmail.email
+        // console.log(findEmail["tcherlogin"]);
+        const tcherlogurl = findEmail["tcheremailexist"]
+        console.log(tcherlogurl)
+        const ftcheremail = await fetch(tcherlogurl, {
+            method: "POST"
+            , headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ adminemail: adminemail })
+        })
+        const response = await ftcheremail.json();
+        if (adminemail === response.email) {
+            // alert("email already exist")
+            const dialogg = document.querySelector(".dialogg");
+
+            const dialoggh6 = document.querySelector(".dialogg h6");
+            dialoggh6.textContent = `${adminemail} Already Exist!!!`;
+            dialogg.showModal()
+        }
+
+        // console.log(response.email);
+    } catch (error) {
+        console.log(`Not found ${error}`);
+        // adminemail = ""
+    }
+}
+
+//////////focusin password
+adminemail.addEventListener("focusout", () => {
+    emailexist()
+    // adminemail.value = "";
+
+})
+//////////////////////////
+async function telexist() {
+    const admintel = document.querySelector("#admintel")
+    // console.log(admintel.value)
+    const urladmintel = await allurl();
+    const responseurl = urladmintel["tchertelexist"]
+    try {
+        const admintelurl = await fetch(responseurl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ admintel: admintel.value })
+        });
+        const response = await admintelurl.json();
+
+        if (admintel.value === response.tel) {
+            const dialoggh6 = document.querySelector(".dialogg h6")
+            dialogg.showModal();
+            dialoggh6.textContent = `${admintel.value} already Exist!!!`
+        }
+    }
+    catch (error) {
+
+    }
+
+}//////// asynchronous
+admintel.addEventListener('focusout', () => {
+    telexist();
+
+})
+
+////////////////////////
 submitAdmin.addEventListener('click', function (event) {
+
+
     let adminsurname = document.getElementById('adminsurname').value;
     let adminothername = document.getElementById('adminothername').value;
     // let adminemail = document.getElementById('adminemail').value;
     let admintel = document.getElementById('admintel').value;
     let adminpwd = document.getElementById('adminpwd').value;
     let submitResponse = document.querySelector(".submitResponse");
+    /////////////////
 
 
     ///////////////
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(adminEmail.value)) {
-
-        alert('Please enter a valid email address.');   // an alert to warn users
+        emailOnly();
+        // alert('Please enter a valid email address.');   // an alert to warn users
         adminEmail.value = ""; // set the value back to nothing
         event.preventDefault(); // Prevent form submission
 
     }
     else if ((adminsurname === "") || (adminothername === "")
         || (admintel === "") || (adminpwd === "")) {
-        submitResponse.textContent = "Please Complete all fields";
-        submitResponse.style.color = "red"
+
+        /////bring-in existing modal, change innerHTML//
+        const dialogg = document.querySelector(".dialogg");
+
+        const dialoggh6 = document.querySelector(".dialogg h6");
+        dialoggh6.textContent = "Oops, Please Complete all fields...";
+        dialogg.showModal();
+
+
         event.preventDefault(); // Prevent form submission
         setTimeout(() => {
-            submitResponse.textContent = "";
+            dialogg.close();
+
+            dialoggh6.textContent = "Please Enter a valid Email Address";
+
         }, 2000);
         // alert("Requred information")
     }
@@ -638,27 +738,38 @@ submitAdmin.addEventListener('click', function (event) {
             //  creatElement to append into the res node
             let check = document.createElement("i");
             check.className = `fas fa-check rounded-circle
-             border-2 border border-light p-2`;
+             border-2 border border-light p-2 m-2`;
             submitResponse.append(check);
             check.style.fontSize = "50px"
             check.style.color = "blue"
-            submitResponse.classList.remove("bg-light")
+            submitResponse.classList.remove("bg-light");
             setTimeout(() => {
                 window.location.reload();
 
             }, 3000)
-        }
-        // document.querySelector(".form").setAttribute("method", ""); // to send to the server into the db
-        // confirm("Congratulations, Form Submitted Successfully")
+        };
+
     }
 });
 
-
 ///////Adminlogin req
+const indicator = document.querySelector('.indicator');
 async function tcherlogRequest() {
     const adminLogtel = document.querySelector("#adminLogtel").value;
     const adminLogpwd = document.querySelector("#adminLogpwd").value;
     const author = document.querySelector(".author");
+    indicator.showModal();
+    // const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    // await delay(5000);
+
+    ////delay execution of Promise
+    const delay = (ms) =>
+        new Promise((resolve) =>
+            setTimeout(resolve, ms)
+
+        )
+    await delay(3000);
+
     try {
         const url = await allurl();
         const tcherlogurl = url["tcherlogin"]
@@ -690,8 +801,7 @@ async function tcherlogRequest() {
             };
             loginSection.style.display = "none";//// 
         }
-        else {
-        }
+
     }
     catch (error) {
         const adminLogpwd = document.querySelector("#adminLogpwd");
@@ -700,15 +810,16 @@ async function tcherlogRequest() {
         adminLogpwd.value = "";
         // console.error(`the request failed ${error}`)
     }
-}
-////teacherlogin
-// const teacherlogin = document.querySelector(".teacherlogin");
+    finally {
+        indicator.close();
+    }
+};
+/////////
 teacherlogin.addEventListener("click", () => {
-
-    if (tcherlogRequest()) {
-
-    };
+    tcherlogRequest();
 })
+////////////
+
 
 /////logOut Admin/teacher button logout////
 const logout = document.querySelector(".logout");
@@ -724,76 +835,6 @@ logout.addEventListener('click', () => {
     }
 })
 ///////////////////////////////////
-// const submitAdmin = document.querySelector(".submitAdmin")
-
-// submitAdmin.addEventListener("click", () => {
-//     let submitResponse = document.querySelector(".submitResponse");
-
-//     if (tcherReg()) {
-
-//         // creatElement to append into the res node
-//         let check = document.createElement("i");
-//         check.className = "fas fa-check";
-//         let times = document.createElement("i");
-//         times.className = "fas fa-close";
-
-
-
-//         submitResponse.textContent = "Registration Successful "
-//         submitResponse.style.color = "green";
-//         // console.log(res.textContent);
-//         adminpwd.style.color = "green";
-//         adminpwd2.style.color = "green";
-
-//         // check.style.fontSize = "48px"
-//         submitResponse.appendChild(check);
-
-//     }   // initialized
-//     else {
-//         // times.style.fontSize = "48px"
-
-//         submitResponse.textContent = "Check Password ";
-//         submitResponse.appendChild(times);
-//         submitResponse.style.color = "red";
-//         // console.log(res.textContent);
-//         adminpwd.style.color = "red";
-//         adminpwd2.style.color = "red";
-
-
-
-//     }
-
-
-
-
-// for (let i = 0; i < admin.length; i++) {
-
-//     if ((admin[i].email == `${adminEmail.value}`)
-//         && (admin[i].password == `${adminpwd.value}`)
-//         && (`${adminpwd.value}` == `${adminpwd2.value}`)) {
-//         res.textContent = "Registration Successful "
-//         res.style.color = "green";
-//         // console.log(res.textContent);
-//         adminpwd.style.color = "green";
-//         adminpwd2.style.color = "green";
-
-//         // check.style.fontSize = "48px"
-//         res.appendChild(check);
-//         break
-
-//     }
-//     else {
-//         // times.style.fontSize = "48px"
-
-//         res.textContent = "Check Password ";
-//         res.appendChild(times);
-//         res.style.color = "red";
-//         // console.log(res.textContent);
-//         adminpwd.style.color = "red";
-//         adminpwd2.style.color = "red";
-
-
-
-//     }
-// }
-// });
+// const ans = { 'a': 'aaa', 'b': 'bbb', 'c': 'ccc', 'd': 'ddd' }
+// const { a, b, c, d } = ans;
+// console.log(`${d}/${c}`);

@@ -14,8 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 //////////
-// app2.use(express.json());
-// app2.use(cors());
+
 // app.use(bodyParser.json());
 // MongoDB connection
 const uri = process.env.MONGO_db; // Replace with your actual MongoDB connection string
@@ -140,11 +139,39 @@ client.connect().then(() => {
                 password: adminLogpwd
             });
             res.json(tcherlogin);
+            ////////////////////////
         }
         catch (error) {
 
         }
     });
+    app.post("/tcheremailexist", async (req, res) => {
+        try {
+            const { adminemail } = req.body;
+            const alreadyexist = await tchers.findOne({
+                email: adminemail
+            });
+            res.json(alreadyexist)
+
+        }
+        catch (error) {
+
+        }
+
+    });
+
+    app.post('/tchertelexist', async (req, res) => {
+        try {
+            const { admintel } = req.body;
+            const alreadytelexist = await tchers.findOne({
+                tel: admintel
+            })
+            res.json(alreadytelexist);
+        }
+        catch (error) {
+
+        }
+    })
     ////////////getUserName
     // app.post('/getUserName', async (req, res) => {
     //     try {

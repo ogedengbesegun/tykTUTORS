@@ -11,7 +11,17 @@ const regPsw = document.querySelector('.regPsw');
 const regPassword2 = document.querySelector("#regPassword2");
 
 ///////////////
-
+const dialogg = document.querySelector(".dialogg");////dialog 
+const dialoggh6 = document.querySelector(".dialogg h6");//dialog headings
+const closebtn = document.querySelector(".closebtn");//to close the dialog message
+/// click the closebtn to close modal
+closebtn.addEventListener("click", () => {
+    dialogg.close()//it closes the modal
+});
+dialogg.addEventListener('click', () => {// close the dialogg when self clicked
+    dialogg.close();
+})
+//////////////////
 
 // 1. configure the input elemnts to accept only number values
 document.querySelector(".input-Val").addEventListener('input', function (e) {
@@ -39,8 +49,11 @@ function emailOnly() {
 
         }
         else {
-            alert("Please enter a Valid Email Address");
-            regEmail.value = "";//remove
+            dialogg.showModal();
+            // alert("Please enter a Valid Email Address");
+            closebtn.addEventListener('click', () => {
+                regEmail.value = "";//remove
+            })
         }
 
     })
@@ -168,13 +181,13 @@ closeSignUp.forEach(closeSignUps => {
     // hover to change element appearance
 
     closeSignUps.addEventListener("mouseover", () => {
-        closeSignUps.style.color = "white";
-        closeSignUps.classList.remove("text-danger")
+        closeSignUps.classList.add('text-danger');
+        closeSignUps.classList.remove("text-primary")
     });
 
     closeSignUps.addEventListener("mouseleave", () => {
-        // closeSignUps.style.color = "white";
-        closeSignUps.classList.add("text-danger")
+        closeSignUps.classList.add("text-primary");
+        closeSignUps.classList.remove("text-danger")
     });
 
 })
@@ -184,24 +197,30 @@ closeSignUp.forEach(closeSignUps => {
 
 
 
+document.querySelector(".screenCover").style.display = "block";
 
 const section = document.querySelector("section")// variable declaration
-const accountExist = document.querySelector(".accountExist"); //variable declared
+const accountsExist = document.querySelectorAll(".accountExist"); //variable declared
 const stdLogin = document.querySelector(".stdLogin"); //variable declared
 const stdRegBtn = document.querySelector(".stdRegBtn");// declaration
-accountExist.addEventListener("click", () => {
-    if (stdLogin.classList.contains("hide")) { // see if it has array object
 
-        stdLogin.classList.remove("hide")// removes the hide class
+stdLogin.classList.add('hide');///set display to none
+accountsExist.forEach((accountExist) => {
+    accountExist.addEventListener("click", () => {
+        if (stdLogin.classList.contains("hide")) { // see if it has array object
 
-
-
-        section.style.display = "none"; // add hide to classList
-
+            stdLogin.classList.remove("hide")// removes the hide class
 
 
-    }
+
+            section.style.display = "none"; // add hide to classList
+
+
+
+        }
+    })
 })
+
 
 stdRegBtn.addEventListener("click", () => {
     stdLogin.classList.add("hide"); // hide the Login
@@ -282,7 +301,7 @@ regSignup.addEventListener('click', (event) => {
     dlgemail.textContent = regEmail.value;
     dlgpassword.textContent = regPsw.type;
     dlgphone.textContent = regNum.value;
-// regPsw.setAttribute("")
+    // regPsw.setAttribute("")
 
 
     /////validate form
@@ -290,17 +309,25 @@ regSignup.addEventListener('click', (event) => {
         || (regNum.value === "") || (regEmail.value === "") || (regPsw.value === "")
         || (regPassword2.value === "") || !sex()) {
         event.preventDefault();
-        alert(`Oops: Empty fields cannot Submit`)
+        dialogg.showModal();
+        dialoggh6.textContent = "Oops: Empty fields cannot Submit"
+        // alert(`Oops: Empty fields cannot Submit`)
 
     } else {
         dlgConfirm.showModal()
 
         /////////to cancel submition for error reason
         xform.addEventListener('click', () => {
-            dlgConfirm.close()// to close dialog element
-            alert('Registration NOT Submitted yet!!!')// its to int with the user
-            // location.reload()// reload present page
+            // if (dlgConfirm.close()) {
+            dlgConfirm.close()
+            dialogg.showModal();
+            dialoggh6.textContent = 'Registration NOT Submitted yet!!!'
             regPsw.value = '';
+
+            // }
+            // to close dialog element
+            // alert('Registration NOT Submitted yet!!!')// its to int with the user
+            // location.reload()// reload present page
 
 
         });
@@ -308,19 +335,23 @@ regSignup.addEventListener('click', (event) => {
         subform.addEventListener('click', () => {
 
             ///////////
+            // if () {
+            dialogg.showModal()
+            dialoggh6.textContent = 'Signup is about to be completed';
+            closebtn.addEventListener('click', () => {
+                reg();
+                ////////////////
+                setTimeout(() => {
+                    dlgConfirm.close()// to close dialog element
+                    location.reload()// to reload the page
 
-            // reg()
-            if (alert('Signup is about to be completed'), 1) {
-                reg()
+                }, 1500)// close the dialog in secs
 
-            }
+            })
 
-            ////////////////
-            setTimeout(() => {
-                dlgConfirm.close()// to close dialog element
-                location.reload()// to reload the page
 
-            }, 1500)// close the dialog in secs
+
+
         });
 
 
@@ -425,21 +456,16 @@ async function emailtaken() {
 
 
         if (valEmail.value === emailR.email) {
-            console.log(`${emailR.email} is TAKEN`)
+            // console.log(`${emailR.email} is TAKEN`)
+            dialogg.showModal();
+            dialoggh6.textContent = `${emailR.email} is TAKEN`
 
-            if (alert(`${emailR.email} is TAKEN`), 1) {
+            closebtn.addEventListener('click', () => {
                 valEmail.value = "";
-            };
+
+            });
 
         }
-        else {
-            console.log(`${emailR.email} is available`)
-
-        }
-
-        // else {
-
-        // }
 
 
     }
@@ -449,10 +475,13 @@ async function emailtaken() {
 
 }
 
-const focusPsw = document.querySelector(".regPsw");// onfucus
-focusPsw.addEventListener('focusin', () => {
-    emailtaken()
+const focusPsw = document.querySelector(".regPsw");
+regEmail.addEventListener('focusout', () => {// onfucus
+    emailtaken();
+    closebtn.addEventListener('click', () => {
+        dialoggh6.textContent = `Please Enter a valid Email Address`
 
+    })
 });
 ////////addevent listener
 
@@ -475,8 +504,14 @@ async function tel_taken() {
         console.log(getTelResp.telephone)
         ////
         if (regNum.value === getTelResp.telephone) {
-            alert(`${regNum.value} is for another User`);
-            regNum.value = "";
+            dialogg.showModal();
+            dialoggh6.textContent = `${regNum.value} is for another User`
+            // alert(`${regNum.value} is for another User`);
+            closebtn.addEventListener('click', () => {
+                regNum.value = "";
+                // dialoggh6.textContent = ``
+
+            })
         }
     }
     catch (error) {
@@ -484,7 +519,7 @@ async function tel_taken() {
     }
 }
 ////// telephone taken by another User
-regPassword2.addEventListener("focusin", () => {
+regNum.addEventListener("focusout", () => {
     // alert("focus over")
     tel_taken();
 

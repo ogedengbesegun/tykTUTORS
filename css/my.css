@@ -17,10 +17,8 @@
 
 :root {
   --primary-color: rgba(188, 188, 214, 0.829);
-  --secondary-color:green;
-
+  --secondary-color: green;
 }
-
 
 .checker {
   list-style: none;
@@ -57,12 +55,7 @@ th {
 }
 
 .bg-native {
-  /* margin-left: auto;
-  margin-right: auto; */
-  background-color: rgb(214, 217, 220);
-  /* margin: 0%; */
-  max-width: max-content;
-  /* width: 50%; */
+  background-color: rgba(214, 210, 210, 0.3);
 }
 
 /* .d-grid-2 {

@@ -1,5 +1,13 @@
 // --------------------------------------------------
 
+sessionStorage.setItem('name', "ogedengbe");
+const logid = document.getElementById("logid");
+logid.addEventListener("mouseenter", () => {
+
+    logid.value = sessionStorage.getItem("name");
+});
+//
+
 // declare the variables in this project
 
 // to declare the show result input element id
@@ -123,23 +131,23 @@ closeDlg.addEventListener("click", () => {
 
 // -------------vanilla Script-----------------------------
 // object declaration
-let logDetail = [{
-    id: "ebun",
-    pwd: "ebun001"
-}, {
-    id: "segun",
-    pwd: "segun001"
-}, {
-    id: "bolu",
-    pwd: "bolu001"
-}, {
-    id: "sade",
-    pwd: "sade001"
-}, {
-    id: "enny",
-    pwd: "enny001"
-}
-];
+// let logDetail = [{
+//     id: "ebun",
+//     pwd: "ebun001"
+// }, {
+//     id: "segun",
+//     pwd: "segun001"
+// }, {
+//     id: "bolu",
+//     pwd: "bolu001"
+// }, {
+//     id: "sade",
+//     pwd: "sade001"
+// }, {
+//     id: "enny",
+//     pwd: "enny001"
+// }
+// ];
 
 
 //1. onclick class:loginR, button
@@ -241,64 +249,8 @@ if (closeUp) {
         subjResultLogin.style.display = "none"
     })
 };
-
-
-
-////////////to get data from my mongodb via the server
-// const formgetfina = document.querySelector('form');
-
-
-// const myfina = finajson()//
-// console.log(myfina);
-
-
-// send request to the server
-// getfina();
-// async function getfina() {
-
-//     ///////
-//     async function finajson() {//fetch http
-//         const getfina = await fetch("/url.json");//fetched http dir
-//         const finaCome = await getfina.json();
-//         // console.log((finaCome.getfina));
-//         return (finaCome.getfina);
-
-//     }
-
-//     try {
-//         const fina1 = await finajson()
-//         // console.log(fina1);
-//         const fina = await fetch(fina1,// got from asychronise
-//             {
-//                 method: "POST",
-//                 headers: { "Content-Type": "application/json" },
-//                 body: JSON.stringify({
-
-//                 })
-//             }
-//         );
-
-//         const resfina = await fina.json()
-//         for (let i = resfina.length - 1; i > 0; i--) {
-//             const rm = Math.floor(Math.random() * (i + 1));
-//             [resfina[rm], resfina[i]] = [resfina[i], resfina[rm]];//array destructuring
-
-//         }
-//         console.log(resfina.slice(0, 1)[0].ask);
-//         console.log(resfina.slice(0, 1)[0].a);
-//         console.log(resfina.slice(0, 1)[0].b);
-//         console.log(resfina.slice(0, 1)[0].c);
-//         console.log(resfina.slice(0, 1)[0].d);
-//         console.log(resfina.slice(0, 1)[0].ans);
-
-
-//     }
-//     catch (error) {
-//         console.log("Check Connection Error", error)
-
-//     }
-// }
-
+///////////////
+//start()
 function start() {
 
 
@@ -359,7 +311,7 @@ function start() {
             ////////
             const totalBlocks = 100;
             // Number of blocks to load per batch
-            const batchSize = 24;
+            const batchSize = 10;
             // Current index of loaded blocks
             let currentIndex = 0;
 
@@ -367,9 +319,9 @@ function start() {
 
             // Template for the HTML structure
             const template = (index) => `
-     <div class="mx-5 bg-success rounded-3 w-auto my-2 py-2 qstnHide No-hide">
+     <div class="mx-5 bg-success rounded-3 w-auto my-2 py-2 qstnHide${index} No-hide">
          <h5 class="text-center mt-1 text-light qstNo" id="page${index}" value=${index}>Question ${index}</h5>
-         <p class="fs-5 p-1 text-center text-light qstn1">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
+         <p class="fs-5 p-1 text-center text-light qstn1${index}">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
 
          <label for="optn1-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb1" title="Option A">
              <input type="radio" id="optn1-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option A" value="a">
@@ -393,6 +345,9 @@ function start() {
          </label>
         
      </div>
+
+    
+     
  `;
 
             // Function to load a batch of blocks
@@ -401,11 +356,23 @@ function start() {
                 for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
                     qstsAll.insertAdjacentHTML('beforeend', template(i));
                 }
+
+                // next.addEventListener("click", () => {
+                //     // console.log("l am here")
+                //     const qstnHide = document.querySelector(`.qstnHide${count}`);
+                //     const rect = qstnHide.getBoundingClientRect();
+                //     qstsAll.style.height = (rect.height).toString() + "px"
+
+
+                // })
+                const qstnHide = document.querySelector(`.qstnHide${1}`);
+                const rect = qstnHide.getBoundingClientRect();
+
                 /// set overflow-y & height
-                qstsAll.style.overflowY = 'scroll';
-                // qstsAll.style.overflowColor = 'green';
-                qstsAll.style.height = '300px'
-                qstsAll.style.scrollBehaviour = 'smooth';
+                qstsAll.style.overflowY = 'hidden';
+
+                qstsAll.style.height = (rect.height).toString() + "px"
+                qstsAll.scrollIntoView({ behavior: "smooth" })
                 //////////
                 const controlBtns = document.querySelector('.controlBtns');
                 controlBtns.style.display = 'block';
@@ -417,6 +384,7 @@ function start() {
                     observer.unobserve(loadingIndicator);
                     loadingIndicator.style.display = 'none';
                 }
+
             }
 
             // Intersection Observer to detect when loading indicator is visible
@@ -436,14 +404,86 @@ function start() {
             ////
             const prev = document.querySelector('.prev');
             const next = document.querySelector('.next');
-            let count = 1;
+            let count = 0;
 
             next.addEventListener('click', () => {
+                // answer();
                 // console.log(count)
-                count = count + 1
+                count = count + 1;
+
                 if (count < batchSize + 1) {
-                    const pgnext = document.querySelector(`#page${count}`)
+                    const pgnext = document.querySelector(`#page${count}`);
                     pgnext.scrollIntoView({ behavior: 'smooth' });
+
+                    ///////
+                    const qstnHide = document.querySelector(`.qstnHide${count}`);
+                    const rect = qstnHide.getBoundingClientRect();
+                    qstsAll.style.height = (rect.height).toString() + "px";
+                    ////////
+
+                    // const inputValue = document.querySelectorAll(".inputValue");
+                    // inputValue.forEach((inputValues, index) => {
+                    // inputValues.addEventListener("click", () => {
+
+
+                    /////
+                    // const optn2 = document.querySelector(`#optn2-${count}`);
+                    // optn2.addEventListener("click", () => {
+                    //     optn2.checked;
+                    //     // index = `${count}`
+                    //     if ((optn2.checked)) {
+                    //         alert('option B is selected')
+                    //     }
+                    // });
+                    ////////
+                    // const optn3 = document.querySelector(`#optn3-${count}`);
+                    // optn3.addEventListener("click", () => {
+                    //     optn3.checked;
+                    //     // index = `${count}`
+                    //     if ((optn3.checked)) {
+                    //         alert('option C is selected')
+                    //     }
+                    // });
+                    ////////
+                    // const optn4 = document.querySelector(`#optn4-${count}`);
+                    // optn4.addEventListener("click", () => {
+                    //     optn4.checked;
+                    //     // index = `${count}`
+                    //     if ((optn4.checked)) {
+                    //         alert('option D is selected')
+                    //     }
+                    // });
+
+
+
+                    //     })
+                    // })
+                    //////////
+                    // answer()
+
+
+
+                    /////////////////////////////
+
+
+
+
+                    //  else if ((optn2.checked) && (optn2.value === ans)) {
+                    //     alert(`B is Correct`);
+                    //     return 1
+                    // }
+                    // else if ((optn3.checked) && (optn3.value === ans)) {
+                    //     alert(`C this is Correct`);
+                    //     return 1
+                    // }
+                    // else if ((optn4.checked) && (optn4.value === ans)) {
+                    //     alert(`D this is Correct`);
+                    //     return 1
+                    // }
+                    // else {
+                    //     alert(`That's Incorrect answer`)
+                    // }
+                    // });
 
                 }
                 else {
@@ -452,27 +492,96 @@ function start() {
 
                 }
 
-
+                // optn_1(); optn_2(); optn_3(); optn_4();
+                // console.log(optn_2());
+                // console.log(optn_3());
+                // console.log(optn_4());
 
 
             })////////scroll back
             prev.addEventListener('click', () => {
                 count = count - 1;
+
                 if (count != 0) {
                     const pgprev = document.querySelector(`#page${count}`);
-                    pgprev.scrollIntoView({ behavior: 'smooth' })
+                    pgprev.scrollIntoView({ behavior: 'smooth' });
+
+
+                    ////////
+                    const qstnHide = document.querySelector(`.qstnHide${count}`);
+                    const rect = qstnHide.getBoundingClientRect();
+                    qstsAll.style.height = (rect.height).toString() + "px";
+                    /////////
                 }
                 else {
                     count = 1
                 }
 
             })
-            ////back scroll
 
 
+            // })
+            // console.log(optn1.value)
 
             // Initial load
             loadBatch();
+
+
+
+            // let counting = count
+            // if (count < batchSize + 1) {
+            //     count = count + 1
+
+
+            // }
+
+
+            ////////
+            // answer();
+            function answer() {
+                let count = 0; count < batchSize + 1
+
+
+                // const qstn1 = document.querySelector(`.qstn1${count}`);
+                const optn1 = document.querySelector(`#optn1-${count}`);
+                const optn2 = document.querySelector(`#optn2-${count}`);
+                const optn3 = document.querySelector(`#optn3-${count}`);
+                const optn4 = document.querySelector(`#optn4-${count}`);
+
+                // optn1.addEventListener("click", () => {
+                const ans = array.slice(`${count}` - 1, `${count}`)[0].ans
+                console.log(ans)
+                optn1.checked;
+                optn2.checked;
+                optn3.checked;
+                optn4.checked;
+
+                // index = `${count}`
+                if ((optn1.checked && optn1.value === ans)) {
+                    alert(`A this is Correct`);
+                    return 1
+                } else if ((optn2.checked && optn2.value === ans)) {
+                    alert(`B is Correct`);
+                    return 1
+                }
+                else if ((optn1.checked && optn1.value === ans)) {
+                    alert(`C this is Correct`);
+                    return 1
+                }
+                else if ((optn1.checked && optn1.value === ans)) {
+                    alert(`D this is Correct`);
+                    return 1
+                }
+                else {
+                    alert(`That's Incorrect answer`)
+                }
+                // });
+            };
+
+
+
+
+
 
 
         }
@@ -482,7 +591,6 @@ function start() {
         }
     }
     /////////////////////////////
-
 
 
 
@@ -595,7 +703,7 @@ function showResult() {
 
 
     // 3 to initaiate the functions declared
-    answeredQtn1()
+    // answeredQtn1()
     // answeredQtn2()
     // answeredQtn3()
     // answeredQtn4()
@@ -606,12 +714,12 @@ function showResult() {
     // answeredQtn9()
     // answeredQtn10()
     // -----------------------------------
-
+    optn_1(); optn_2(); optn_3(); optn_4()
 
     // 4 this is to add together the scores for each question 
 
-    let allScore = (answeredQtn1()) * 10 + "%"
-
+    let allScore = (optn_1() + optn_2() + optn_3() + optn_4()) //* 10 + "%"
+    console.log(allScore)
     // ------------------------------------------------
 
     // 5 this laods TextContent into my scoreNumber class
@@ -627,6 +735,105 @@ function showResult() {
 
 
 }
+
+
+
+// const countn = () => {
+//     // index = []
+//     for (let i = 1; i < 100; i++) {
+//         const mycount = [i]
+//         console.log(mycount[0])
+//         console.log(mycount[0].toString())
+//     }
+// }
+// countn();
+// const qstn1 = document.querySelector(`.qstn1${count}`);
+// let count = 0; count < 10 + 1; count++
+
+
+// const optn1 = document.querySelector(`#optn1-${count}`);
+// const optn2 = document.querySelector(`#optn2-${count}`);
+// const optn3 = document.querySelector(`#optn3-${count}`);
+// const optn4 = document.querySelector(`#optn4-${count}`);
+
+// // const ans = array.slice(`${count}` - 1, `${count}`)[0].ans
+// // console.log(ans)
+// optn1.checked;
+// optn2.checked;
+// optn3.checked;
+// optn4.checked;
+
+// // index = `${count}`
+// function optn_1() {
+//     optn1.addEventListener('click', () => {
+//         if ((optn1.checked) && (optn1.value == ans)) {
+//             // alert(`${ans} is Correct`);
+//             // console.log(1);
+
+//             return 1
+//         } else {
+//             // alert("NOT correct");
+//             // console.log(0);
+
+//             return 0
+
+//         }
+
+//     })
+// };
+
+// function optn_2() {
+//     optn2.addEventListener('click', () => {
+//         if ((optn2.checked) && (optn2.value == ans)) {
+//             // alert(`${ans} is Correct`);
+//             // console.log(1);
+
+//             return 1
+//         } else {
+//             // alert("NOT correct");
+//             // console.log(0);
+
+//             return 0
+
+//         }
+
+//     })
+// };
+
+// function optn_3() {
+//     optn3.addEventListener('click', () => {
+//         if ((optn3.checked) && (optn3.value == ans)) {
+//             // alert(`${ans} is Correct`);
+//             // console.log(1);
+
+//             return 1
+//         } else {
+//             // alert("NOT correct");
+//             // console.log(0);
+
+//             return 0
+
+//         }
+
+//     })
+// };
+
+// function optn_4() {
+//     optn4.addEventListener('click', () => {
+//         if ((optn4.checked) && (optn4.value == ans)) {
+//             // alert(`${ans} is Correct`);
+//             // console.log(1);
+//             return 1
+//         } else {
+//             // alert("NOT correct");
+//             // console.log(0);
+
+//             return 0
+
+//         }
+
+//     })
+// }
 
 
 

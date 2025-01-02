@@ -2098,18 +2098,28 @@ if (printMyResult) {
 
 
 
-// Subject Picker
-// 1 set to display="none"
-document.addEventListener("DOMContentLoaded", function () {
-    let QuizQuestn = document.querySelector(".QuizQuestn");
-    if (QuizQuestn) {
-        QuizQuestn.addEventListener("click", function () {
-            document.querySelector(".menuList").style.display = "none";
-            document.querySelector(".screenCover").style.display = "block";
-        });
-    }
+//
+screenCover = document.querySelector(".screenCover");
+if (screenCover) {
+    screenCover.classList.add('hide');
 
-});
+};///hide the screenCover first
+
+//////////////////////////////
+// 1 set to display="none"
+// document.addEventListener("DOMContentLoaded", function () {
+    let QuizQuestn = document.querySelectorAll(".QuizQuestn");
+    QuizQuestn.forEach((QuizQuestns) => {
+        if (QuizQuestns) {
+            QuizQuestns.addEventListener("click", function () {
+                document.querySelector(".menuList").style.display = "none";
+                document.querySelector(".screenCover").style.display = "block";
+                // screenCover.classList.remove('hide');
+            });
+        }
+    })
+
+// });
 
 
 
@@ -2388,7 +2398,7 @@ const changeMap = mapping.map((event) => {
     return event.toString().padStart(6, "a")
 })
 console.log(mapping.map((event) => {
-  return  event.toString().padStart(8, "f").concat("joinMe")
+    return event.toString().padStart(8, "f").concat("joinMe")
 },));
 console.log(changeMap);
 
@@ -2414,16 +2424,16 @@ if (letgotext) {
     seme.forEach((word, index) => {
         const span = document.createElement('span');
         span.textContent = word;
-
         if (index === 0) {
-            span.style.color = 'green';
+            span.style.color = 'white';
 
         }
         else if (index === 1) {
             span.style.color = 'blue'
         }
         else {
-            span.style.color = 'red'
+            span.className = "text-success";
+            span.classList.add("opacity-100");
         }
 
         copyme.appendChild(span);
@@ -2469,7 +2479,6 @@ $(document).ready(function () {
     $(".navBarIcon").click(function () {
         $(".menuList").show(200)
 
-        // $(".QuizQuestn").toggle()
     });
 
 
@@ -2491,14 +2500,7 @@ $(document).ready(function () {
     //     $(".contactMe").css( "z-index", 9999 )
     // })
 
-    // $(".QuizQuestn").click(function () {
 
-    // to scroll by animating to the top of .quiz class
-    // $("html,body").animate({
-    //     scrollTop: $(".quiz").offset().top
-    // }, "fast")
-
-    // })
 
     $(".picture").click(function () {
         $("html,body").animate({

@@ -32,26 +32,31 @@
     <title>Sign-Up || (TYK)</title>
 </head>
 
-<body>
-    <div class=" text-center mt-3">
+<body class="body">
+    <div class="d-flex text-center justify-content-between
+     p-2 text-bg-dark position-fixed top-0 z-2 w-100 ">
 
 
         <span title="Back to home Page"
-            class="fas fa-arrow-left float-start border border-3 border-light  p-2 rounded-pill mt-1 ms-5 fs-4 text-light opacity-100 cursor signHome"></span>
+            class="fas fa-home border border-3 border-light  p-2 rounded-pill mt-1 ms-3 fs-4 text-light opacity-100 cursor signHome"></span>
         <h1 class=" text-primary my-auto">Test Your Knowledge (TYK)</h1>
+        <span title="Login"
+            class="fas fa-book-open border border-3 border-light  p-2 rounded-pill 
+            mt-1 me-3 fs-4 text-light opacity-100 cursor accountExist"></span>
     </div>
 
     <div class="container mt-3">
 
-        <section class=" p-3 rounded-4 regSection">
+        <section class=" p-3 rounded-4 regSection ">
             <!-- <div class="cursor backpage" title="Click to go back"><span class="fas fa-arrow-left text-light"></span>
                 <p class="d-inline text-light"> Back</p>
             </div> -->
-            <span title="Close Page" class="fas fa-times-circle fs-3 text-danger closeSignUp"></span>
-            <fieldset class=" mx-auto text-center rounded-4 border border-light border-2">
+            <span title="Close Page" class="fas fa-times-circle fs-3 text-primary position closeSignUp"></span>
+            <fieldset class=" mx-auto text-center rounded-4 border border-light border-2 mt-5">
                 <legend class="text-light  mt-2 fs-1 register">Students' Registration</legend>
                 <h4 class="m-0 text-primary text-decoration-underline">Test Your Knowledge Platfrom</h4>
-                <small class="text-light p-1 m-1 text-center d-block fs-6 mb-2 w-50 mx-auto">Register on this platform as a Student
+                <small class="text-light p-1 m-1 text-center d-block fs-6 mb-2 w-50 mx-auto">Register on this platform
+                    as a Student
                     to get you
                     ready for All kinds of O'Level Examinations eg:
                     WAEC, NECO, NABTEB and JAMB </small>
@@ -91,13 +96,21 @@
                         <p class="text-center fw-bold resMsg text-light mt-2"></p>
                         <button type="button"
                             class="btn btn-danger d-block mx-auto w-1 my-3 rounded-pill regSignup">Sign-Up/Register</button>
-                        <small class="accountExist cursor">Already have an account? Login</small>
+                        <small class="accountExist alreadyColor cursor">Already have an account? Login</small>
                     </div>
                 </form>
             </fieldset>
         </section>
+        <dialog title="email validation" class="dialogg border-0 rounded-2 m-auto p-2">
+            <h5 class="text-primary text-center">tyk Says... <i class="fas fa-warning text-danger"></i></h5>
 
-        <div class=" w-75 pt-4 pb-2 rounded-5  px-0 mx-auto hide stdLogin">
+            <h6 class="text-danger border border-0">
+                Please Enter a valid Email Address</h6>
+            <button type="button" class="btn btn-primary d-block mx-auto 
+                    closebtn">ok</button>
+        </dialog>
+
+        <div class=" w-75 pt-4 pb-2 rounded-5  px-0 mx-auto stdLogin">
             <!-- <h3 class="text-light text-center">Student Login Details</h3> -->
             <!-- <form action="" class="bg-native border-1 border-light border  p-4 rounded-2 mx-auto">
 
@@ -128,7 +141,7 @@
                     <div class="mx-1 my-1 text-center bg-light rounded-3">
                         <div title="Close the Subject Page" class="">
                             <i
-                                class="fas fa-times-circle text-danger bg-primary rounded-circle rounded-1 closeSignUp fs-3 my-2"></i>
+                                class="fas fa-times-circle text-primary rounded-circle myPosition closeSignUp fs-3 my-2"></i>
                             <!-- <small class="text-danger">Close</small> -->
                         </div>
                         <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
@@ -161,7 +174,7 @@
                     </div>
 
 
-                    <button type="button" class="btn btn-danger d-block mt-1 ms-auto me-auto stdRegBtn">Not
+                    <button type="button" class="btn btn-danger d-block mt-2 ms-auto me-auto stdRegBtn">Not
                         Registered?</button>
 
                 </fieldset>

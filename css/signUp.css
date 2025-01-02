@@ -1,4 +1,6 @@
-.accountExist:hover {
+
+
+.alreadyColor:hover {
   color: rgb(255, 0, 0);
   background-color: #ffffff;
   padding: 5px;
@@ -6,9 +8,15 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
-.accountExist {
+.alreadyColor {
   color: #ffffff;
 }
 fieldset {
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 600px) {
+  
+  .my-auto {
+    font-size:larger;
+  }
 }
