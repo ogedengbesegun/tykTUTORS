@@ -67,13 +67,13 @@ client.connect().then(() => {
 
 
             const { regSur, regOther,
-                regDob, regNum, regEmail, regPsw, confirmsex } = req.body;
+                regDob, dlgphone, dlgemail, regPsw, confirmsex } = req.body;
 
             // Insert the document into MongoDB
             const result = await stds.insertOne({
                 surname: regSur, othernames: regOther, dob: regDob,
-                sex: confirmsex, telephone: regNum,
-                email: regEmail, password: regPsw
+                sex: confirmsex, telephone: dlgphone,
+                email: dlgemail, password: regPsw
             });
 
             res.json(result);

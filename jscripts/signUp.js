@@ -18,9 +18,7 @@ const closebtn = document.querySelector(".closebtn");//to close the dialog messa
 closebtn.addEventListener("click", () => {
     dialogg.close()//it closes the modal
 });
-dialogg.addEventListener('click', () => {// close the dialogg when self clicked
-    dialogg.close();
-})
+
 //////////////////
 
 // 1. configure the input elemnts to accept only number values
@@ -202,7 +200,7 @@ document.querySelector(".screenCover").style.display = "block";
 const section = document.querySelector("section")// variable declaration
 const accountsExist = document.querySelectorAll(".accountExist"); //variable declared
 const stdLogin = document.querySelector(".stdLogin"); //variable declared
-const stdRegBtn = document.querySelector(".stdRegBtn");// declaration
+const stdRegBtns = document.querySelectorAll(".stdRegBtn");// declaration
 
 stdLogin.classList.add('hide');///set display to none
 accountsExist.forEach((accountExist) => {
@@ -221,11 +219,16 @@ accountsExist.forEach((accountExist) => {
     })
 })
 
+stdRegBtns.forEach((stdRegBtn) => {
 
-stdRegBtn.addEventListener("click", () => {
-    stdLogin.classList.add("hide"); // hide the Login
-    section.style.display = "block";// to display section
+    stdRegBtn.addEventListener("click", () => {
+        stdLogin.classList.add("hide"); // hide the Login
+        section.style.display = "block";// to display section
+    });
+
+
 });
+
 
 ///////////////
 
@@ -308,27 +311,27 @@ regSignup.addEventListener('click', (event) => {
     if ((regSur.value === "") || (regOther.value === "") || (regDob.value === "")
         || (regNum.value === "") || (regEmail.value === "") || (regPsw.value === "")
         || (regPassword2.value === "") || !sex()) {
+        /////preventDefault to submit form
         event.preventDefault();
         dialogg.showModal();
         dialoggh6.textContent = "Oops: Empty fields cannot Submit"
-        // alert(`Oops: Empty fields cannot Submit`)
 
     } else {
         dlgConfirm.showModal()
 
         /////////to cancel submition for error reason
         xform.addEventListener('click', () => {
+            // dlgConfirm.close()//close confirm dialog first
             // if (dlgConfirm.close()) {
             dlgConfirm.close()
             dialogg.showModal();
-            dialoggh6.textContent = 'Registration NOT Submitted yet!!!'
-            regPsw.value = '';
-
-            // }
-            // to close dialog element
-            // alert('Registration NOT Submitted yet!!!')// its to int with the user
-            // location.reload()// reload present page
-
+            dialoggh6.textContent = 'Registration is Cancelled !!!'
+            // regPsw.value = '';
+            closebtn.addEventListener("click", () => {
+                
+                location.reload();
+            })
+           
 
         });
         //////////////
@@ -380,10 +383,14 @@ async function reg() {
         const regSur = document.querySelector('.regSur').value;
         const regOther = document.querySelector('.regOther').value;
         const regDob = document.querySelector('.regDob').value;
-        // const regMale = document.querySelector('.regMale').value;
-        // const regFemale = document.querySelector('.regFemale').value;
-        const regNum = document.querySelector('.regNum').value;
-        const regEmail = document.querySelector('.regEmail').value;
+        ////////////
+        // const regNum = document.querySelector('.regNum').value;
+        // const regEmail = document.querySelector('.regEmail').value;
+
+        const dlgemail = document.querySelector('.dlgemail').textContent;
+        const dlgphone = document.querySelector('.dlgphone').textContent;
+
+
         const regPsw = document.querySelector('.regPsw').value;
         const confirmsex = dlgsex = sex()// either M or F
 
@@ -399,7 +406,7 @@ async function reg() {
             body: JSON.stringify({
                 regSur: regSur, regOther: regOther,
                 regDob: regDob, confirmsex: confirmsex,
-                regNum: regNum, regEmail: regEmail,
+                dlgphone: dlgphone, dlgemail: dlgemail,
                 regPsw: regPsw
             })
         })
@@ -458,12 +465,15 @@ async function emailtaken() {
         if (valEmail.value === emailR.email) {
             // console.log(`${emailR.email} is TAKEN`)
             dialogg.showModal();
-            dialoggh6.textContent = `${emailR.email} is TAKEN`
+            if (dialoggh6.textContent = `${emailR.email} is TAKEN`) {
+                closebtn.addEventListener('click', () => {
+                    valEmail.value = "";
 
-            closebtn.addEventListener('click', () => {
-                valEmail.value = "";
+                });
+            }
 
-            });
+
+
 
         }
 
@@ -477,11 +487,11 @@ async function emailtaken() {
 
 const focusPsw = document.querySelector(".regPsw");
 regEmail.addEventListener('focusout', () => {// onfucus
-    emailtaken();
-    closebtn.addEventListener('click', () => {
+    if (emailtaken()) {
         dialoggh6.textContent = `Please Enter a valid Email Address`
 
-    })
+    };
+
 });
 ////////addevent listener
 
@@ -505,13 +515,23 @@ async function tel_taken() {
         ////
         if (regNum.value === getTelResp.telephone) {
             dialogg.showModal();
-            dialoggh6.textContent = `${regNum.value} is for another User`
-            // alert(`${regNum.value} is for another User`);
-            closebtn.addEventListener('click', () => {
-                regNum.value = "";
-                // dialoggh6.textContent = ``
 
-            })
+            // alert(`${regNum.value} is for another User`);
+            if (dialoggh6.textContent = `${regNum.value} is for another User`) {
+                closebtn.classList.add("closebtn2");
+                let closebtn2 = document.querySelector(".closebtn2");
+                closebtn2.addEventListener('click', () => {
+
+                    // if (dialoggh6.textContent = `${regNum.value} is for another User`) {
+                    regNum.value = "";
+
+                    // }
+
+                })
+
+            }
+
+
         }
     }
     catch (error) {

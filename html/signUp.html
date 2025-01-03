@@ -37,11 +37,10 @@
      p-2 text-bg-dark position-fixed top-0 z-2 w-100 ">
 
 
-        <span title="Back to home Page"
+        <span title="Home Page"
             class="fas fa-home border border-3 border-light  p-2 rounded-pill mt-1 ms-3 fs-4 text-light opacity-100 cursor signHome"></span>
         <h1 class=" text-primary my-auto">Test Your Knowledge (TYK)</h1>
-        <span title="Login"
-            class="fas fa-book-open border border-3 border-light  p-2 rounded-pill 
+        <span title="Login" class="fas fa-book-open border border-3 border-light  p-2 rounded-pill 
             mt-1 me-3 fs-4 text-light opacity-100 cursor accountExist"></span>
     </div>
 
@@ -98,10 +97,12 @@
                             class="btn btn-danger d-block mx-auto w-1 my-3 rounded-pill regSignup">Sign-Up/Register</button>
                         <small class="accountExist alreadyColor cursor">Already have an account? Login</small>
                     </div>
+
+
                 </form>
             </fieldset>
         </section>
-        <dialog title="email validation" class="dialogg border-0 rounded-2 m-auto p-2">
+        <dialog title="ok" class="dialogg border-0 rounded-2 m-auto p-2">
             <h5 class="text-primary text-center">tyk Says... <i class="fas fa-warning text-danger"></i></h5>
 
             <h6 class="text-danger border border-0">
@@ -138,14 +139,19 @@
                     </legend>
 
 
-                    <div class="mx-1 my-1 text-center bg-light rounded-3">
-                        <div title="Close the Subject Page" class="">
-                            <i
-                                class="fas fa-times-circle text-primary rounded-circle myPosition closeSignUp fs-3 my-2"></i>
-                            <!-- <small class="text-danger">Close</small> -->
+                    <div class="mx-1 mt-1 mb-2 text-center bg-light rounded-3">
+                        <div class="d-flex justify-content-between pt-3 px-3  fs-1 cursor">
+                            <div title="Back">
+                                <span class="fas fa-chevron-left span-color stdRegBtn"></span>
+                            </div>
+
+                            <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
+                            <div title="Close Page" class="">
+                                <i class="fas fa-times-circle text-primary rounded-circle  closeSignUp"></i>
+                                <!-- <small class="text-danger">Close</small> -->
+                            </div>
                         </div>
-                        <h4 class="text-success fs-1 my-2 text-center">Available Subjects</h4>
-                        <ul class="mx-2 my-2 d-grid-4 gap-1 no-list-style btn border-0 text-light text-center">
+                        <ul class="mx-2 d-grid-4 gap-1 no-list-style btn border-0 text-light text-center">
                             <li class="my-2 rounded-2 p-1 subsList engl">English Language</li>
                             <li class="my-2 rounded-2 p-1 subsList math">Mathematics</li>
                             <li class="my-2 rounded-2 p-1 subsList econ">Economics</li>
@@ -187,9 +193,12 @@
         </div>
 
     </div>
+    <!--  -->
+    <!--  -->
     <!-- for dialog to display conformation -->
     <dialog class="dlgConfirm border-0 mt-3 w-75 mx-auto rounded-2 ">
-        <h1 class="text-center text-primary mt-1 fw-bold">tyk says... <i class="fas fa-microphone"></i></h1>
+        <h1 class="text-center text-primary mt-1 fw-bold">tyk says... <i class="fas fa-microphone"></i>
+        </h1>
         <h4 class="text-danger text-center">Please Confirm Details !!!</h4>
         <ul class="text-bg-light rounded-2 mx-4 mt-2">
             <div class="ms-1 my-1 p-2 fw-bold">

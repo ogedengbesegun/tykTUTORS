@@ -1,5 +1,3 @@
-
-
 .alreadyColor:hover {
   color: rgb(255, 0, 0);
   background-color: #ffffff;
@@ -14,9 +12,13 @@
 fieldset {
   background-color: rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 600px) {
+.span-color:hover {
+  color: blue;
   
+}
+/*  */
+@media screen and (max-width: 600px) {
   .my-auto {
-    font-size:larger;
+    font-size: larger;
   }
 }

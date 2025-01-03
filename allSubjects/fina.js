@@ -324,22 +324,22 @@ function start() {
          <p class="fs-5 p-1 text-center text-light qstn1${index}">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
 
          <label for="optn1-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb1" title="Option A">
-             <input type="radio" id="optn1-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option A" value="a">
+             <input type="radio" id="optn1-${index}" class="ms-2 allinput inputValue${index}" name="op-${index}" title="Option A" value="a">
              <label for="optn1-${index}" class="me-1 p-1 rounded-1 label1 lb1">${label1 = array.slice(index - 1, index)[0].a
                 }</label>
          </label>
          <label for="optn2-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb2" title="Option B">
-             <input type="radio" id="optn2-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option B" value="b">
+             <input type="radio" id="optn2-${index}" class="ms-2 allinput inputValue${index}" name="op-${index}" title="Option B" value="b">
              <label for="optn2-${index}" class="me-1 p-1 rounded-1 d-block label2 lb2">${label2 = array.slice(index - 1, index)[0].b
                 }</label>
          </label>
          <label for="optn3-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 lb3" title="Option C">
-             <input type="radio" id="optn3-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option C" value="c">
+             <input type="radio" id="optn3-${index}" class="ms-2 allinput inputValue${index}" name="op-${index}" title="Option C" value="c">
              <label for="optn3-${index}" class="me-1 p-1 rounded-1 d-block label3 lb3">${label3 = array.slice(index - 1, index)[0].c
                 }</label>
          </label>
          <label for="optn4-${index}" class="d-flex mx-2 bg-white rounded-1 my-2 lb4" title="Option D">
-             <input type="radio" id="optn4-${index}" class="ms-2 inputValue inputValue1" name="op-${index}" title="Option D" value="d">
+             <input type="radio" id="optn4-${index}" class="ms-2 allinput inputValue${index}" name="op-${index}" title="Option D" value="d">
              <label for="optn4-${index}" class="me-1 p-1 rounded-1 d-block label4 lb4">${label4 = array.slice(index - 1, index)[0].d
                 }</label>
          </label>
@@ -421,85 +421,44 @@ function start() {
                     qstsAll.style.height = (rect.height).toString() + "px";
                     ////////
 
-                    // const inputValue = document.querySelectorAll(".inputValue");
-                    // inputValue.forEach((inputValues, index) => {
-                    // inputValues.addEventListener("click", () => {
-
-
-                    /////
-                    // const optn2 = document.querySelector(`#optn2-${count}`);
-                    // optn2.addEventListener("click", () => {
-                    //     optn2.checked;
-                    //     // index = `${count}`
-                    //     if ((optn2.checked)) {
-                    //         alert('option B is selected')
-                    //     }
-                    // });
-                    ////////
-                    // const optn3 = document.querySelector(`#optn3-${count}`);
-                    // optn3.addEventListener("click", () => {
-                    //     optn3.checked;
-                    //     // index = `${count}`
-                    //     if ((optn3.checked)) {
-                    //         alert('option C is selected')
-                    //     }
-                    // });
-                    ////////
-                    // const optn4 = document.querySelector(`#optn4-${count}`);
-                    // optn4.addEventListener("click", () => {
-                    //     optn4.checked;
-                    //     // index = `${count}`
-                    //     if ((optn4.checked)) {
-                    //         alert('option D is selected')
-                    //     }
-                    // });
-
-
-
-                    //     })
-                    // })
-                    //////////
-                    // answer()
-
-
-
-                    /////////////////////////////
-
-
-
-
-                    //  else if ((optn2.checked) && (optn2.value === ans)) {
-                    //     alert(`B is Correct`);
-                    //     return 1
-                    // }
-                    // else if ((optn3.checked) && (optn3.value === ans)) {
-                    //     alert(`C this is Correct`);
-                    //     return 1
-                    // }
-                    // else if ((optn4.checked) && (optn4.value === ans)) {
-                    //     alert(`D this is Correct`);
-                    //     return 1
-                    // }
-                    // else {
-                    //     alert(`That's Incorrect answer`)
-                    // }
-                    // });
+                    const inputValue = document.querySelectorAll(`.inputValue${count}`);
+                    inputValue.forEach((inputValues, index) => {
+                        inputValues.addEventListener("click", () => {
+                            inputValues.checked;
+                            if (index === 0) {
+                                alert("l'm 1");
+                                console.log("l'm 1")
+                            }
+                            else if (index === 1) {
+                                alert("l'm 2")
+                                console.log("l'm 2")
+                            }
+                            else if (index === 2) {
+                                alert("l'm 3")
+                                console.log("l'm 3")
+                            }
+                            else if (index === 3) {
+                                alert("l'm 4")
+                                console.log("l'm 4")
+                            }
+                        })
+                    });
 
                 }
                 else {
-
-                    count = 0;
+                    if (count = batchSize-1) {
+                        next.disabled = true;
+                    }
+                    // count = 0;
 
                 }
 
-                // optn_1(); optn_2(); optn_3(); optn_4();
-                // console.log(optn_2());
-                // console.log(optn_3());
-                // console.log(optn_4());
+
 
 
             })////////scroll back
             prev.addEventListener('click', () => {
+                next.disabled=false;
                 count = count - 1;
 
                 if (count != 0) {
@@ -511,10 +470,34 @@ function start() {
                     const qstnHide = document.querySelector(`.qstnHide${count}`);
                     const rect = qstnHide.getBoundingClientRect();
                     qstsAll.style.height = (rect.height).toString() + "px";
-                    /////////
+                    ///////////////
+                    ////////////
+                    const inputValue = document.querySelectorAll(`.inputValue${count}`);
+                    inputValue.forEach((inputValues, index) => {
+                        inputValues.addEventListener("click", () => {
+                            inputValues.checked;
+                            if (index === 0) {
+                                alert("l'm 1");
+                                console.log("l'm 1")
+                            }
+                            else if (index === 1) {
+                                alert("l'm 2")
+                                console.log("l'm 2")
+                            }
+                            else if (index === 2) {
+                                alert("l'm 3")
+                                console.log("l'm 3")
+                            }
+                            else if (index === 3) {
+                                alert("l'm 4")
+                                console.log("l'm 4")
+                            }
+                        })
+                    });
+
                 }
                 else {
-                    count = 1
+                    count = 1;
                 }
 
             })
@@ -628,8 +611,8 @@ function start() {
             document.querySelector(".start").style.backgroundColor = "red";
             // this will disable my input elements to stop users_
             //from selecting on countdown
-            let inputValue = document.querySelectorAll(".inputValue")
-            inputValue.forEach(Eachinput => {
+            let allinput = document.querySelectorAll(".allinput")
+            allinput.forEach(Eachinput => {
                 Eachinput.disabled = true;
             });
 
@@ -666,7 +649,7 @@ function start() {
             // confirm("Do you want to Submit and Print ?");
             // 1.   to close down the questions and display the login page
             let qstnHide = document.querySelectorAll(".qstnHide")
-            qstnHide = Array.from(qstnHide)
+            // qstnHide = Array.from(qstnHide)
             qstnHide.forEach(qstnHid2 => {
                 qstnHid2.style.display = "none";
 
@@ -676,7 +659,7 @@ function start() {
 
 
             // ----------------------------------------------------------------
-            showResult()
+            showResult();
 
 
 
