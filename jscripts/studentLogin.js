@@ -24,9 +24,9 @@ document.querySelector("#logid").setAttribute("maxlength", 30);
 document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
 
 // set the #logid toLowerCase()
-let lower = document.querySelector("#logid");
-lower.addEventListener('input', () => {
-    lower.value = lower.value.toLowerCase()
+let logid = document.querySelector("#logid");
+logid.addEventListener('input', () => {
+    logid.value = logid.value.toLowerCase()
 })
 
 
@@ -70,10 +70,15 @@ xhttp1.send();
 
 
 
+logid.addEventListener("focusin", () => {
+    logid.value = sessionStorage.getItem('name');//@focusin bring it out
+});
+
 
 
 
 function Login() {
+    sessionStorage.setItem("name", logid.value);// sessionStorage.setItem()method
 
     // -------------------------------------------------
     //launch the loginUser function
@@ -102,7 +107,7 @@ async function loginUser() {
     async function fUsers() {// get http url
         const userurl = await fetch("/url.json");
         const userRes = await userurl.json()
-        return userRes.getLogin; 
+        return userRes.getLogin;
     }
     ///////
 

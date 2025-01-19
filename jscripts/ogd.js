@@ -2108,16 +2108,16 @@ if (screenCover) {
 //////////////////////////////
 // 1 set to display="none"
 // document.addEventListener("DOMContentLoaded", function () {
-    let QuizQuestn = document.querySelectorAll(".QuizQuestn");
-    QuizQuestn.forEach((QuizQuestns) => {
-        if (QuizQuestns) {
-            QuizQuestns.addEventListener("click", function () {
-                document.querySelector(".menuList").style.display = "none";
-                document.querySelector(".screenCover").style.display = "block";
-                // screenCover.classList.remove('hide');
-            });
-        }
-    })
+let QuizQuestn = document.querySelectorAll(".QuizQuestn");
+QuizQuestn.forEach((QuizQuestns) => {
+    if (QuizQuestns) {
+        QuizQuestns.addEventListener("click", function () {
+            document.querySelector(".menuList").style.display = "none";
+            document.querySelector(".screenCover").style.display = "block";
+            // screenCover.classList.remove('hide');
+        });
+    }
+})
 
 // });
 
@@ -2392,15 +2392,15 @@ if (printall) {
 }
 
 
-console.log(window.innerHeight)
-const mapping = [1, 2, 3, 4, 5, 6, 20, 200]
-const changeMap = mapping.map((event) => {
-    return event.toString().padStart(6, "a")
-})
-console.log(mapping.map((event) => {
-    return event.toString().padStart(8, "f").concat("joinMe")
-},));
-console.log(changeMap);
+console.log(window.innerWidth)
+// const mapping = [1, 2, 3, 4, 5, 6, 20, 200]
+// const changeMap = mapping.map((event) => {
+//     return event.toString().padStart(6, "a")
+// })
+// console.log(mapping.map((event) => {
+//     return event.toString().padStart(8, "f").concat("joinMe")
+// },));
+// console.log(changeMap);
 
 // prevent Duplicate Page Load
 // if (window.name !== "pageLoaded") {
@@ -2444,9 +2444,33 @@ if (letgotext) {
 
 
 }
+const details = () => `<details class='mx-auto 
+    w-50 text-danger mb-1 p-2'><summary class='ms-1 h6'>
+    Week Three...</summary>
+    We cannot all do great things but greats things can always come to us all
+    </details>`;
+let details1 = document.getElementById('details1');
+detail()
+function detail() {
+    let pgraph = document.createElement('p')
+    pgraph.className = `text-danger h4 p-1 m-1
+    text-center cursor border border-1 
+    border-light rounded-2`;
+    pgraph.innerText = 'Greater things l am doing now';
+    details1.append(pgraph);
+    pgraph.addEventListener('mouseover', () => {
+        pgraph.classList.remove('text-danger')
+        pgraph.style.color = 'green'
+    });
+    pgraph.addEventListener('mouseout', () => {
+        pgraph.classList.add('text-danger')
+        
+    })
 
 
-////work with split() method
+}
+// details1.style.display = 'none';
+details1.insertAdjacentHTML('afterend',)
 
 
 

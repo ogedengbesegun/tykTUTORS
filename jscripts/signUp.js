@@ -23,7 +23,7 @@ closebtn.addEventListener("click", () => {
 
 // 1. configure the input elemnts to accept only number values
 document.querySelector(".input-Val").addEventListener('input', function (e) {
-    acceptOnlyNum(e);// function call
+    acceptOnlyNum(e);// function callback
 })
 
 // Accept Only Numbers No Alphabeths

@@ -45,6 +45,7 @@ closebtn.addEventListener("click", () => {
     dialogg.close()
     adminemail.value = "";
     admintel.value = "";
+
 })
 // ///create dialog elemnt
 // function mydlg() {
@@ -586,41 +587,7 @@ submitqst.addEventListener("click", (event) => {
 
 
 //////////////
-//Teachers Registration
-////////////////////////////////
-async function tcherReg() {
-    const adminsurname = document.getElementById('adminsurname').value;
-    const adminothername = document.getElementById('adminothername').value;
-    const adminemail = document.getElementById('adminemail').value;
-    const admintel = document.getElementById('admintel').value;
-    const adminpwd = document.getElementById('adminpwd').value;
-    indicator.showModal()
-    const delay = (ms) => new Promise((resolve) => {
-        setTimeout(resolve, ms)
-    })
-    await delay(2000)
-    try {
-        const url = await allurl();
-        const tchers = url["tchers"]
-        console.log(tchers);
-        const tcher = await fetch(tchers, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                adminsurname: adminsurname,
-                adminothername: adminothername,
-                adminemail: adminemail, admintel: admintel,
-                adminpwd: adminpwd
-            })
-        });
-        const tcherResponse = await tcher.json()
-        // console.log(tcherResponse)
-    }
-    catch (error) {
 
-    }
-}
-///////
 // to use form API checkValidity()method and validityMessage property
 // const submitAdmin = document.querySelector(".submitAdmin");
 async function emailexist() {
@@ -689,18 +656,62 @@ async function telexist() {
 admintel.addEventListener('focusout', () => {
     telexist();
 
-})
+});
+//////
+
+
+
+//Teachers Registration
+////////////////////////////////
+async function tcherReg() {
+    const adminsurname = document.getElementById('adminsurname').value;
+    const adminothername = document.getElementById('adminothername').value;
+    const adminemail = document.getElementById('adminemail').value;
+    const admintel = document.getElementById('admintel').value;
+    const adminpwd = document.getElementById('adminpwd').value;
+
+    /////////indicator
+    // indicator.showModal()
+    // const delay = (ms) => new Promise((resolve) => {
+    //     setTimeout(resolve, ms)
+    // })
+    // await delay(2000);
+    //////////////
+
+    try {
+        const url = await allurl();
+        const tchers = url["tchers"]
+        console.log(tchers);
+        const tcher = await fetch(tchers, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                adminsurname: adminsurname,
+                adminothername: adminothername,
+                adminemail: adminemail, admintel: admintel,
+                adminpwd: adminpwd
+            })
+        });
+        const tcherResponse = await tcher.json()
+        // console.log(tcherResponse)
+    }
+    catch (error) {
+
+    }
+}
+///////
 
 ////////////////////////
 submitAdmin.addEventListener('click', function (event) {
-
+    ///deactivated the button once clicked
+    // submitAdmin.disabled = true;
+    //////////////////////////
 
     let adminsurname = document.getElementById('adminsurname').value;
     let adminothername = document.getElementById('adminothername').value;
     // let adminemail = document.getElementById('adminemail').value;
     let admintel = document.getElementById('admintel').value;
     let adminpwd = document.getElementById('adminpwd').value;
-    let submitResponse = document.querySelector(".submitResponse");
     /////////////////
 
 
@@ -724,6 +735,7 @@ submitAdmin.addEventListener('click', function (event) {
         dialogg.showModal();
 
 
+
         event.preventDefault(); // Prevent form submission
         setTimeout(() => {
             dialogg.close();
@@ -734,21 +746,40 @@ submitAdmin.addEventListener('click', function (event) {
         // alert("Requred information")
     }
     else {
-        if (tcherReg()) {
-            //  creatElement to append into the res node
-            let check = document.createElement("i");
-            check.className = `fas fa-check rounded-circle
-             border-2 border border-light p-2 m-2`;
-            submitResponse.append(check);
-            check.style.fontSize = "50px"
-            check.style.color = "blue"
-            submitResponse.classList.remove("bg-light");
-            setTimeout(() => {
-                window.location.reload();
+        // if (tcherReg()) {
+        setTimeout(() => {
+            tcherReg();
 
-            }, 3000)
-        };
 
+
+        }, 2000)
+        // setTimeout(() => {
+        indicator.showModal()
+        const indicatorp = document.querySelector(".indicator .p");
+        indicatorp.className = "text-success h3"
+        indicatorp.textContent = "Successful"
+        const span = document.createElement('span');
+        span.className = "fas fa-check h2 ms-2"
+        indicatorp.append(span);
+
+        /////settimeout for reload
+        setTimeout(() => {
+            indicator.close();
+
+            window.location.reload();
+        },5000)
+
+
+
+
+
+
+        
+
+
+
+
+        // };
     }
 });
 

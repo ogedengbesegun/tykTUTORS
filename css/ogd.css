@@ -19,16 +19,14 @@ body {
   background-color: gray;
   background-image: url(/images/tykbgboy.jpg);
   /* background-color: rgba(0, 38, 252, 0.45); */
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 25vh;
+  min-height: 1%;
   background-position: center;
 }
 .txt {
-  margin-top: 10rem;
-  max-width: 30%;
+  width: 30%;
   margin-right: 5px;
-  /* color: #ffffff; */
   font-weight: bold;
   float: right;
   font-size: large;
@@ -40,9 +38,23 @@ body {
 .letgo {
   /* display: grid; */
   position: static;
-  /* top: 70%; */
+  top: 5px;
+  width: 100%;
 }
 
+.box-shadow {
+  box-shadow: 0 2px 2px rgb(63, 61, 61);
+  transition: width 2s;
+}
+/* .box-shadow:hover {
+  width: 24.97%;
+} */
+.img:hover {
+  width: 99.85%;
+}
+.img {
+  transition: width 2s;
+}
 /* .login {
   top: 400px;
   margin-left: 200px;
@@ -457,8 +469,8 @@ footer {
     margin-left: 30px;
   }
   .txt {
-    margin-top: 1rem;
-    max-width: 35%;
+    /* margin-top: 1rem;
+    max-width: 35%; */
     font-size: small;
   }
 
@@ -469,5 +481,8 @@ footer {
   .regSection {
     font-size: small;
     /* background-color: aquamarine; */
+  }
+  .sm-btn{
+    font-size: small;
   }
 }

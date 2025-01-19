@@ -1,11 +1,5 @@
 // --------------------------------------------------
 
-sessionStorage.setItem('name', "ogedengbe");
-const logid = document.getElementById("logid");
-logid.addEventListener("mouseenter", () => {
-
-    logid.value = sessionStorage.getItem("name");
-});
 //
 
 // declare the variables in this project
@@ -41,8 +35,6 @@ let bell = document.querySelector(".bell");
 
 // showselect element initialized
 let showselect = document.querySelector(".showselect")
-
-
 
 
 
@@ -249,8 +241,19 @@ if (closeUp) {
         subjResultLogin.style.display = "none"
     })
 };
+///////////////////
+//////////////
 ///////////////
 //start()
+let qstnsSet = 20;
+let rpt0 = 0;
+let rpt1 = 0;
+
+// let rpt2 = 0;
+// let rpt3 = 0;
+// let rpt4 = 0;
+// let zero = 0;
+//////////////
 function start() {
 
 
@@ -311,7 +314,7 @@ function start() {
             ////////
             const totalBlocks = 100;
             // Number of blocks to load per batch
-            const batchSize = 10;
+            const batchSize = qstnsSet;
             // Current index of loaded blocks
             let currentIndex = 0;
 
@@ -379,6 +382,42 @@ function start() {
                 ////////to show previously hidden btns
                 currentIndex += batchSize;
 
+
+                ////////////// to mark the first question
+                const ans1 = array.slice(`${0}`, `${1}`)[0].ans;
+                console.log(ans1)
+                const inputValue1 = document.querySelectorAll(`.inputValue${1}`);
+                inputValue1.forEach((input1, index) => {
+                    input1.addEventListener("click", () => {
+                        const opt1 = input1.getAttribute("value")
+                        if (index === 0 && (opt1 === ans1)) {
+                            console.log("A is checked")
+                            return rpt0 = 1
+                        }
+                        else if (index === 1 && (opt1 === ans1)) {
+                            console.log("B is checked")
+                            return rpt0 = 1
+                        }
+                        else if (index === 2 && (opt1 === ans1)) {
+                            console.log("C is checked")
+                            return rpt0 = 1
+                        }
+                        else if (index === 3 && (opt1 === ans1)) {
+                            console.log("D is checked")
+                            return rpt0 = 1
+                        }
+                        else {
+                            console.log("wrong is clicked")
+                            return rpt0 = 0
+                        }
+                    })
+
+                })
+
+
+
+
+
                 // Hide loading indicator if all blocks are loaded
                 if (currentIndex >= totalBlocks) {
                     observer.unobserve(loadingIndicator);
@@ -402,11 +441,30 @@ function start() {
             observer.observe(loadingIndicator);
 
             ////
+            ///////start markin with the first qstn1
+
+
+
+            // }
+            /////////////////
+
+
             const prev = document.querySelector('.prev');
             const next = document.querySelector('.next');
-            let count = 0;
+            let count = 1;
+
+            ////////
+            // const inputone = document.querySelector(".all");
+
+            // inputone.forEach((eachinput) => {
+            //    if(inputone.checked){
+            //     alert('i m checked')
+            //    }
+            // })
+            // console.log(inputValue.value)
 
             next.addEventListener('click', () => {
+                // prev.disallowed = false;
                 // answer();
                 // console.log(count)
                 count = count + 1;
@@ -421,32 +479,78 @@ function start() {
                     qstsAll.style.height = (rect.height).toString() + "px";
                     ////////
 
+
+                    const ans = array.slice(`${count - 1}`, `${count}`)[0].ans;
+
+                    ///////////////////////////////
+
+
                     const inputValue = document.querySelectorAll(`.inputValue${count}`);
+                    console.log(ans);
                     inputValue.forEach((inputValues, index) => {
+
+
+                        ////////////////////////////
                         inputValues.addEventListener("click", () => {
-                            inputValues.checked;
-                            if (index === 0) {
-                                alert("l'm 1");
-                                console.log("l'm 1")
+                            marking()
+                        }, { once: true });
+
+                        // , { once: true }
+                        ///////////////////////////
+                        function marking() {
+
+
+                            const opt = inputValues.getAttribute("value");
+                            ////////
+
+
+                            if ((opt === ans)) {
+
+                                return rpt1 += 1
+
+                                // }
+
+
                             }
-                            else if (index === 1) {
-                                alert("l'm 2")
-                                console.log("l'm 2")
+                            else if ((opt === ans) && (inputValues.checked === false)) {
+                                // else if ( opt === ans) {
+
+                                return rpt1 - 1
+
+
                             }
-                            else if (index === 2) {
-                                alert("l'm 3")
-                                console.log("l'm 3")
+                            // else if ( opt === ans) {
+
+                            //     return rpt1 += 1
+
+
+                            // }
+                            // else if ( opt === ans) {
+
+                            //     return rpt1 += 1
+
+
+                            // }
+                            else {
+
+                                return rpt1 += 0
+
                             }
-                            else if (index === 3) {
-                                alert("l'm 4")
-                                console.log("l'm 4")
-                            }
-                        })
+
+
+                            // inputValues.removeEventListener("click", marking);
+
+
+                        }
+
+
+
+
                     });
 
                 }
                 else {
-                    if (count = batchSize-1) {
+                    if (count = batchSize - 1) {
                         next.disabled = true;
                     }
                     // count = 0;
@@ -458,7 +562,7 @@ function start() {
 
             })////////scroll back
             prev.addEventListener('click', () => {
-                next.disabled=false;
+                next.disabled = false;
                 count = count - 1;
 
                 if (count != 0) {
@@ -473,31 +577,35 @@ function start() {
                     ///////////////
                     ////////////
                     const inputValue = document.querySelectorAll(`.inputValue${count}`);
+
                     inputValue.forEach((inputValues, index) => {
                         inputValues.addEventListener("click", () => {
                             inputValues.checked;
-                            if (index === 0) {
-                                alert("l'm 1");
-                                console.log("l'm 1")
-                            }
-                            else if (index === 1) {
-                                alert("l'm 2")
-                                console.log("l'm 2")
-                            }
-                            else if (index === 2) {
-                                alert("l'm 3")
-                                console.log("l'm 3")
-                            }
-                            else if (index === 3) {
-                                alert("l'm 4")
-                                console.log("l'm 4")
-                            }
+                            // if (index === 0) {
+                            //     alert("l'm 1");
+                            //     console.log("l'm 1")
+                            // }
+                            // else if (index === 1) {
+                            //     alert("l'm 2")
+                            //     console.log("l'm 2")
+                            // }
+                            // else if (index === 2) {
+                            //     alert("l'm 3")
+                            //     console.log("l'm 3")
+                            // }
+                            // else if (index === 3) {
+                            //     alert("l'm 4")
+                            //     console.log("l'm 4")
+                            // }
                         })
                     });
 
                 }
                 else {
-                    count = 1;
+                    if (count = 1) {
+                        prev.disallowed = true;
+
+                    };
                 }
 
             })
@@ -509,63 +617,7 @@ function start() {
             // Initial load
             loadBatch();
 
-
-
-            // let counting = count
-            // if (count < batchSize + 1) {
-            //     count = count + 1
-
-
-            // }
-
-
             ////////
-            // answer();
-            function answer() {
-                let count = 0; count < batchSize + 1
-
-
-                // const qstn1 = document.querySelector(`.qstn1${count}`);
-                const optn1 = document.querySelector(`#optn1-${count}`);
-                const optn2 = document.querySelector(`#optn2-${count}`);
-                const optn3 = document.querySelector(`#optn3-${count}`);
-                const optn4 = document.querySelector(`#optn4-${count}`);
-
-                // optn1.addEventListener("click", () => {
-                const ans = array.slice(`${count}` - 1, `${count}`)[0].ans
-                console.log(ans)
-                optn1.checked;
-                optn2.checked;
-                optn3.checked;
-                optn4.checked;
-
-                // index = `${count}`
-                if ((optn1.checked && optn1.value === ans)) {
-                    alert(`A this is Correct`);
-                    return 1
-                } else if ((optn2.checked && optn2.value === ans)) {
-                    alert(`B is Correct`);
-                    return 1
-                }
-                else if ((optn1.checked && optn1.value === ans)) {
-                    alert(`C this is Correct`);
-                    return 1
-                }
-                else if ((optn1.checked && optn1.value === ans)) {
-                    alert(`D this is Correct`);
-                    return 1
-                }
-                else {
-                    alert(`That's Incorrect answer`)
-                }
-                // });
-            };
-
-
-
-
-
-
 
         }
         catch (error) {
@@ -624,7 +676,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 2 * 60;
+    let duration = 3 * 60;
 
 
 
@@ -683,33 +735,18 @@ function showResult() {
     let scoreSheetHead = document.querySelector(".scoreSheetHead")
     scoreSheetHead.style.display = "block";
     // ----------------------------------
+    // + rpt2 + rpt3 + rpt4 + zero
 
 
-    // 3 to initaiate the functions declared
-    // answeredQtn1()
-    // answeredQtn2()
-    // answeredQtn3()
-    // answeredQtn4()
-    // answeredQtn5()
-    // answeredQtn6()
-    // answeredQtn7()
-    // answeredQtn8()
-    // answeredQtn9()
-    // answeredQtn10()
-    // -----------------------------------
-    optn_1(); optn_2(); optn_3(); optn_4()
-
-    // 4 this is to add together the scores for each question 
-
-    let allScore = (optn_1() + optn_2() + optn_3() + optn_4()) //* 10 + "%"
+    let allScore = (rpt0 + rpt1) / qstnsSet * 100 + "%"//* 10 + "%"
     console.log(allScore)
     // ------------------------------------------------
 
     // 5 this laods TextContent into my scoreNumber class
     let scoreNumber = document.querySelector(".scoreNumber")
 
-    scoreNumber.textContent = allScore
-    // console.log(allScore)
+    scoreNumber.textContent = allScore;
+
     // -------------------------------------------------
 
     //6 to hide the submit Button
