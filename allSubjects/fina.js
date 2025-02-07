@@ -548,13 +548,14 @@ function start() {
             prev.addEventListener('click', () => {
                 next.disabled = false;
                 count = count - 1;
-
-                if (count != 0) {
+                console.log(count)
+                if (count >= 1) {
                     const pgprev = document.querySelector(`#page${count}`);
                     pgprev.scrollIntoView({ behavior: 'smooth' });
 
                     ///////
                     const ans = array.slice(`${count - 1}`, `${count}`)[0].ans;
+                    console.log(ans)
                     ///////
                     ////////
                     const qstnHide = document.querySelector(`.qstnHide${count}`);
@@ -566,8 +567,7 @@ function start() {
                     // console.log(input[0].value)
                     input.forEach((eachinput, index) => {
 
-                        // let arrayinput = Array.from(eachinput)
-                        // console.log(arrayinput)
+                       
                         eachinput.addEventListener("change", (event) => {
                             console.log(rpt1)
                             // rpt1
