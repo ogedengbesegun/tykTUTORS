@@ -16,6 +16,10 @@ fieldset {
   background-size: cover;
   width: 70%;
 }
+
+.bg-opacity {
+  opacity: 40%;
+}
 .session {
   display: flex;
   flex-direction: row;
@@ -31,7 +35,7 @@ fieldset {
 .Mymarquee {
   color: bisque;
   display: inline-block;
-  animation: Mymarquee 20s linear infinite;
+  animation: Mymarquee 15s linear infinite;
 }
 
 .reEnterPwd {
@@ -56,6 +60,6 @@ fieldset {
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }

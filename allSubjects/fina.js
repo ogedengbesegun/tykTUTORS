@@ -36,12 +36,17 @@ let bell = document.querySelector(".bell");
 // showselect element initialized
 let showselect = document.querySelector(".showselect")
 
+//////for dialog msg
+const dialog_msg = document.querySelector(".dialog_msg")
 
+const dialog_text = document.querySelector(".dialog_text");
+const dialog_btn_ok = document.querySelector(".dialog_btn_ok");
+const dialog_btn_cancel = document.querySelector(".dialog_btn_cancel");
 
 // --------------------------------------------------
 
 // to make the password input have maxlength of 9 
-subjPwd.setAttribute("maxlength", 9)
+subjPwd.setAttribute("maxlength", 15)
 
 
 
@@ -245,18 +250,23 @@ if (closeUp) {
 //////////////
 ///////////////
 //start()
+// let rpt;
+
+let count2 = 0;
 let qstnsSet = 20;
+
+// console.log(rpt)
 let rpt0 = 0;
 let rpt1 = 0;
+let rpt2 = 0;
+let rpt3 = 0;
+let rpt4 = 0;
 
-// let rpt2 = 0;
-// let rpt3 = 0;
-// let rpt4 = 0;
-// let zero = 0;
+// 
+// let rpt = 0
+
 //////////////
 function start() {
-
-
 
     document.querySelector(".start").style.
         backgroundColor = "green";
@@ -264,7 +274,7 @@ function start() {
 
 
 
-    // document.querySelector(".start").disabled = true
+    document.querySelector(".start").disabled = true
     // let response = JSON.parse(xhttp.responseText);
     // let array = response
     // let qtn = response
@@ -347,11 +357,8 @@ function start() {
                 }</label>
          </label>
         
-     </div>
-
-    
-     
- `;
+    </div> 
+        `;
 
             // Function to load a batch of blocks
             function loadBatch() {
@@ -386,34 +393,31 @@ function start() {
                 ////////////// to mark the first question
                 const ans1 = array.slice(`${0}`, `${1}`)[0].ans;
                 console.log(ans1)
-                const inputValue1 = document.querySelectorAll(`.inputValue${1}`);
-                inputValue1.forEach((input1, index) => {
-                    input1.addEventListener("click", () => {
-                        const opt1 = input1.getAttribute("value")
+                ///////////
+                const ans0 = document.querySelectorAll(`.inputValue${1}`);
+                ans0.forEach((input0, index) => {
+                    input0.addEventListener("click", () => {
+                        const opt1 = input0.getAttribute("value")
                         if (index === 0 && (opt1 === ans1)) {
-                            console.log("A is checked")
-                            return rpt0 = 1
+                            rpt0 = 1
                         }
                         else if (index === 1 && (opt1 === ans1)) {
-                            console.log("B is checked")
-                            return rpt0 = 1
+                            rpt0 = 1
                         }
                         else if (index === 2 && (opt1 === ans1)) {
-                            console.log("C is checked")
-                            return rpt0 = 1
+                            rpt0 = 1
                         }
                         else if (index === 3 && (opt1 === ans1)) {
-                            console.log("D is checked")
-                            return rpt0 = 1
+                            rpt0 = 1
                         }
                         else {
-                            console.log("wrong is clicked")
-                            return rpt0 = 0
+                            rpt0 = 0
                         }
+                        return rpt0
                     })
 
                 })
-
+                ////////
 
 
 
@@ -454,17 +458,13 @@ function start() {
             let count = 1;
 
             ////////
-            // const inputone = document.querySelector(".all");
 
-            // inputone.forEach((eachinput) => {
-            //    if(inputone.checked){
-            //     alert('i m checked')
-            //    }
-            // })
-            // console.log(inputValue.value)
+
 
             next.addEventListener('click', () => {
-                // prev.disallowed = false;
+                prev.disabled = false;
+
+
                 // answer();
                 // console.log(count)
                 count = count + 1;
@@ -485,73 +485,57 @@ function start() {
                     ///////////////////////////////
 
 
-                    const inputValue = document.querySelectorAll(`.inputValue${count}`);
+
+
                     console.log(ans);
-                    inputValue.forEach((inputValues, index) => {
+
+                    ////
 
 
-                        ////////////////////////////
-                        inputValues.addEventListener("click", () => {
-                            marking()
-                        }, { once: true });
+                    let input = document.querySelectorAll(`.inputValue${count}`)
+                    console.log(input[0].value)
+                    input.forEach((eachinput, index) => {
 
-                        // , { once: true }
-                        ///////////////////////////
-                        function marking() {
-
-
-                            const opt = inputValues.getAttribute("value");
-                            ////////
+                        // let arrayinput = Array.from(eachinput)
+                        // console.log(arrayinput)
+                        eachinput.addEventListener("change", (event) => {
+                            if (event.target.value === ans && index === 0) {
 
 
-                            if ((opt === ans)) {
-
-                                return rpt1 += 1
-
-                                // }
-
+                                // alert('checked & answered')
+                                rpt1 += 1;
+                            }
+                            else if (event.target.value === ans && index === 1) {
+                                rpt1 += 1
+                            }
+                            else if (event.target.value === ans && index === 2) {
+                                rpt1 += 1
 
                             }
-                            else if ((opt === ans) && (inputValues.checked === false)) {
-                                // else if ( opt === ans) {
-
-                                return rpt1 - 1
-
+                            else if (event.target.value === ans && index === 3) {
+                                rpt1 += 1
 
                             }
-                            // else if ( opt === ans) {
-
-                            //     return rpt1 += 1
-
-
-                            // }
-                            // else if ( opt === ans) {
-
-                            //     return rpt1 += 1
-
-
-                            // }
                             else {
 
-                                return rpt1 += 0
+                                // alert('Unchecked')
+                                rpt1 = 0
 
                             }
-
-
-                            // inputValues.removeEventListener("click", marking);
-
-
-                        }
+                            return rpt1
+                        })
+                    })
 
 
 
 
-                    });
+
 
                 }
                 else {
                     if (count = batchSize - 1) {
                         next.disabled = true;
+
                     }
                     // count = 0;
 
@@ -569,41 +553,56 @@ function start() {
                     const pgprev = document.querySelector(`#page${count}`);
                     pgprev.scrollIntoView({ behavior: 'smooth' });
 
-
+                    ///////
+                    const ans = array.slice(`${count - 1}`, `${count}`)[0].ans;
+                    ///////
                     ////////
                     const qstnHide = document.querySelector(`.qstnHide${count}`);
                     const rect = qstnHide.getBoundingClientRect();
                     qstsAll.style.height = (rect.height).toString() + "px";
                     ///////////////
                     ////////////
-                    const inputValue = document.querySelectorAll(`.inputValue${count}`);
+                    let input = document.querySelectorAll(`.inputValue${count}`)
+                    // console.log(input[0].value)
+                    input.forEach((eachinput, index) => {
 
-                    inputValue.forEach((inputValues, index) => {
-                        inputValues.addEventListener("click", () => {
-                            inputValues.checked;
-                            // if (index === 0) {
-                            //     alert("l'm 1");
-                            //     console.log("l'm 1")
-                            // }
-                            // else if (index === 1) {
-                            //     alert("l'm 2")
-                            //     console.log("l'm 2")
-                            // }
-                            // else if (index === 2) {
-                            //     alert("l'm 3")
-                            //     console.log("l'm 3")
-                            // }
-                            // else if (index === 3) {
-                            //     alert("l'm 4")
-                            //     console.log("l'm 4")
-                            // }
+                        // let arrayinput = Array.from(eachinput)
+                        // console.log(arrayinput)
+                        eachinput.addEventListener("change", (event) => {
+                            console.log(rpt1)
+                            // rpt1
+                            if (event.target.value === ans && index === 0) {
+
+
+                                // alert('checked & answered')
+                                rpt1 + 1;
+                            }
+                            else if (event.target.value === ans && index === 1) {
+                                rpt1 + 1
+                            }
+                            else if (event.target.value === ans && index === 2) {
+                                rpt1 + 1
+
+                            }
+                            else if (event.target.value === ans && index === 3) {
+                                rpt1 + 1
+
+                            }
+                            else {
+
+                                rpt1 + 0
+
+                            }
+                            return rpt1
                         })
-                    });
+                    })
+
+
 
                 }
                 else {
                     if (count = 1) {
-                        prev.disallowed = true;
+                        prev.disabled = true;
 
                     };
                 }
@@ -693,13 +692,10 @@ function start() {
     submit.addEventListener("click", function () {
 
 
+        dialog_msg.showModal();
+        dialog_text.textContent = `Do you want to Submit ?`;
 
-
-        if (confirm("Do you want to Submit?") == 1) {
-
-            // confirm if user wants to truely Submit
-            // confirm("Do you want to Submit and Print ?");
-            // 1.   to close down the questions and display the login page
+        dialog_btn_ok.addEventListener('click', () => {
             let qstnHide = document.querySelectorAll(".qstnHide")
             // qstnHide = Array.from(qstnHide)
             qstnHide.forEach(qstnHid2 => {
@@ -709,15 +705,13 @@ function start() {
 
             });
 
-
-            // ----------------------------------------------------------------
             showResult();
+            dialog_msg.close();
+        })
 
-
-
-        }
-
-
+        dialog_btn_cancel.addEventListener('click', () => {
+            dialog_msg.close()
+        })
 
 
     });
@@ -726,7 +720,6 @@ function start() {
 
 
 }
-
 
 // funtion to show result
 function showResult() {
@@ -737,6 +730,9 @@ function showResult() {
     // ----------------------------------
     // + rpt2 + rpt3 + rpt4 + zero
 
+    // console.log(rpt2)
+    // console.log(rpt3)
+    // console.log(rpt4)
 
     let allScore = (rpt0 + rpt1) / qstnsSet * 100 + "%"//* 10 + "%"
     console.log(allScore)

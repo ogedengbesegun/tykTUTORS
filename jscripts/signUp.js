@@ -10,14 +10,74 @@ const regEmail = document.querySelector('.regEmail');
 const regPsw = document.querySelector('.regPsw');
 const regPassword2 = document.querySelector("#regPassword2");
 
+
+
+///set the min attribute of regDob
+
+
+// regDob.addEventListener('keydown', (event) => {
+//     event.preventDefault()
+// })
+//////////
+
+
+regDob.addEventListener('click', () => {
+    // regDob.value = '1900-01-01'
+    //////////////////
+    let calendar = new Date;
+    let yr = (calendar.getFullYear()).toString();
+    let mth = (calendar.getMonth() + 1).toString();
+    let dy = (calendar.getDate()).toString()
+    dy = dy < 10 ? "0" + dy : dy
+    mth = mth < 10 ? "0" + mth : mth
+    let tStringMax = `${yr}-${mth}-${dy}`
+    console.log(tStringMax)
+    regDob.setAttribute('min', `${yr - 40}-01-01`);
+    regDob.setAttribute('max', tStringMax);
+
+    const dlg = document.createElement('dialog');
+    dlg.style.width = '255px'
+
+    dlg.className = 'm-auto  border-0 rounded-2 py-2 bg-light';
+    dlg.innerHTML = `<h5 class="text-center text-info">tykTutors Says...
+    <i class="fas fa-warning text-danger rounded-2 p-2 h1"></i></h5>
+    <p class="p-2 my-1 text-danger text-center">Click Calendar Icon 
+    <i class='far fa-calendar text-dark'></i> !!!</p>
+    <p class='text-center pb-1 px-3 w-75 mx-auto'><b class='text-danger'>
+    Note: </b>* Year ealier than ${yr - 40} is NOT allowed *</p>
+    <button type="button" title="Ok" class="btn btn-danger w-50 d-block mt-1
+    mx-auto btnok">OK</button>`
+    document.body.append(dlg);
+    dlg.showModal();
+
+    /////close dlg
+    const btnok = document.querySelector('.btnok');
+    btnok.addEventListener('click', () => {
+        if (btnok) {
+            dlg.close();
+            dlg.remove();
+        }
+
+    });
+    // const inputTitle = document.querySelector("input[title='show date picker']")
+    // inputTitle.style.display = 'none'
+
+})
+
 ///////////////
 const dialogg = document.querySelector(".dialogg");////dialog 
 const dialoggh6 = document.querySelector(".dialogg h6");//dialog headings
-const closebtn = document.querySelector(".closebtn");//to close the dialog message
-/// click the closebtn to close modal
-closebtn.addEventListener("click", () => {
-    dialogg.close()//it closes the modal
-});
+let closebtn = document.querySelector(".closebtn");//to close the dialog message
+
+
+/////// closebtnf to close dialogg msg
+closebtnf()
+function closebtnf() {
+    /// click the closebtn to close modal
+    closebtn.addEventListener("click", () => {
+        dialogg.close()//it closes the modal
+    });
+}
 
 //////////////////
 
@@ -62,6 +122,7 @@ emailOnly();
 let limitPwds = document.querySelectorAll("input[type = 'password']");
 limitPwds.forEach(limitPwd => {
     limitPwd.setAttribute("maxlength", 15);
+    limitPwd.setAttribute("minlength", 6)
 });
 
 
@@ -76,12 +137,10 @@ stdNames.forEach(eName => {
 /////////////////////////////////
 
 ////disable sign/Register button 1st
-// document.querySelector(".regSignup").disabled = true;/// disable submit button
 ///////
 
 
 // validate the form input
-// let regPsw = document.querySelector(".regPsw"); //aready declared
 
 ///// to ensure enter password and confirm are same
 function sameValue() { //give border-success when same value input
@@ -111,7 +170,6 @@ function sameValue() { //give border-success when same value input
             regPsw.classList.add("border-danger");
             regPassword2.classList.add("border-danger");
 
-            // document.querySelector(".regSignup").disabled = true;
 
         }
 
@@ -122,6 +180,7 @@ function sameValue() { //give border-success when same value input
     });
 
     regPsw.addEventListener("input", () => { //ist input
+
         if (regPsw.value != regPassword2.value) { //if val !=
             regPassword2.value = "";// return empty
             // ////////////
@@ -131,9 +190,10 @@ function sameValue() { //give border-success when same value input
             regPsw.classList.remove("border-danger"); // revert
             regPassword2.classList.remove("border-danger"); // revert
             ////
-            // document.querySelector(".regSignup").disabled = true;
 
         }
+
+
     });
 
 
@@ -141,8 +201,18 @@ function sameValue() { //give border-success when same value input
 sameValue();
 
 //////////
+//pop up dialog msg onfocus for password
+//
+regPsw.addEventListener('click', () => {
 
-
+    dialogg.showModal();
+    dialoggh6.textContent = `NOTE:
+               Password Max-length is 15`;
+    // closebtn.addEventListener('click', () => {
+    //     regPsw.setAttribute('autofocus', true)
+    //     //   
+    // })
+}, { once: true });
 
 
 // 4 reveal and toggle the password input to reveal the password
@@ -153,7 +223,7 @@ reveal.addEventListener("click", () => {
         reveal.classList.add("fa-eye");
         reveal.classList.remove("text-danger")
         reveal.style.color = "green";
-        document.querySelector(".regPsw").setAttribute("type", "text");
+        regPsw.setAttribute("type", "text");
 
     }
     else {
@@ -161,7 +231,7 @@ reveal.addEventListener("click", () => {
         reveal.classList.remove("fa-eye")
         reveal.classList.add("text-danger")
 
-        document.querySelector(".regPsw").setAttribute("type", "password");
+        regPsw.setAttribute("type", "password");
 
     }
 })
@@ -328,10 +398,10 @@ regSignup.addEventListener('click', (event) => {
             dialoggh6.textContent = 'Registration is Cancelled !!!'
             // regPsw.value = '';
             closebtn.addEventListener("click", () => {
-                
+
                 location.reload();
             })
-           
+
 
         });
         //////////////
@@ -341,14 +411,24 @@ regSignup.addEventListener('click', (event) => {
             // if () {
             dialogg.showModal()
             dialoggh6.textContent = 'Signup is about to be completed';
+            dialoggh6.classList.remove('text-danger');
+            dialoggh6.style.color = 'green'
+            let indicator = document.createElement('p');
+            indicator.className = `ms-2 text-success
+            fas fa-spinner fa-spin fs-2`;
+            // indicator.innerHTML = `<span class=''></span>`;
+            dialoggh6.append(indicator);
             closebtn.addEventListener('click', () => {
+               ///
+               
                 reg();
                 ////////////////
+
                 setTimeout(() => {
                     dlgConfirm.close()// to close dialog element
                     location.reload()// to reload the page
 
-                }, 1500)// close the dialog in secs
+                }, 1200)// close the dialog in secs
 
             })
 
@@ -485,7 +565,6 @@ async function emailtaken() {
 
 }
 
-const focusPsw = document.querySelector(".regPsw");
 regEmail.addEventListener('focusout', () => {// onfucus
     if (emailtaken()) {
         dialoggh6.textContent = `Please Enter a valid Email Address`

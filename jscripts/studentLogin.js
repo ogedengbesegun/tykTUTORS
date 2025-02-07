@@ -21,7 +21,7 @@ hide4login.forEach(eachhide4login => {
 
 // set the login class input attribute of maxlength t0 9 for security reasons
 document.querySelector("#logid").setAttribute("maxlength", 30);
-document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 9)
+document.querySelector(".studentlogin #passwd").setAttribute("maxlength", 15)
 
 // set the #logid toLowerCase()
 let logid = document.querySelector("#logid");

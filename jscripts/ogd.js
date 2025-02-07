@@ -2099,9 +2099,9 @@ if (printMyResult) {
 
 
 //
-screenCover = document.querySelector(".screenCover");
-if (screenCover) {
-    screenCover.classList.add('hide');
+hidden = document.querySelector(".hide");
+if (hidden) {
+    hidden.style.display = 'none';
 
 };///hide the screenCover first
 
@@ -2444,39 +2444,66 @@ if (letgotext) {
 
 
 }
-const details = () => `<details class='mx-auto 
+const details = (index) => `<details class='mx-auto 
     w-50 text-danger mb-1 p-2'><summary class='ms-1 h6'>
-    Week Three...</summary>
+    Week ${index}...</summary>
     We cannot all do great things but greats things can always come to us all
     </details>`;
+let details3 = document.getElementById('details3');
 let details1 = document.getElementById('details1');
+
+// details1.style.marginBottom='15px'
 detail()
 function detail() {
     let pgraph = document.createElement('p')
-    pgraph.className = `text-danger h4 p-1 m-1
-    text-center cursor border border-1 
-    border-light rounded-2`;
+    pgraph.className = `text-danger h4 p-1 my-2
+    text-center cursor border border-1 border-dark rounded-2`;
     pgraph.innerText = 'Greater things l am doing now';
-    details1.append(pgraph);
+    if (details1) {
+        details1.append(pgraph);
+
+    }
+
     pgraph.addEventListener('mouseover', () => {
-        pgraph.classList.remove('text-danger')
+        if (pgraph.className.includes('text-danger')) {
+            pgraph.classList.remove('text-danger')
+        }
+        // pgraph.classList.remove('text-danger')
         pgraph.style.color = 'green'
     });
     pgraph.addEventListener('mouseout', () => {
         pgraph.classList.add('text-danger')
-        
+
     })
 
 
 }
-// details1.style.display = 'none';
-details1.insertAdjacentHTML('afterend',)
+
+// for (let i = 2; i < 11; i++) {
+//     if (details3) {
+//         details3.insertAdjacentHTML('beforebegin', details(i))
+//         // details(4).style.color = 'yellow'
+//         details3.classList.remove("text-danger");
+//     }
 
 
+// }
 
+let correct = []
+let fals = []
+let summary1 = document.querySelector(".summary1")
+let summary2 = document.querySelector(".summary2")
 
+// summary1.addEventListener('click', () => {
+//     correct.push(1)
+//     console.log(correct)
+// })
 
+// summary2.addEventListener('click', () => {
+//     fals.push(1)
 
+//     console.log(fals)
+// })
 
 
 

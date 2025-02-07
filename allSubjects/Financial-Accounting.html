@@ -34,7 +34,7 @@
 
 
     <div class="heading d-flex justify-content-between position-sticky top-0 z-2">
-        
+
         <button title="Toggle Menu" type="button" class="ms-5 btn navbar-toggler text-light navBarIcon"><span
                 class="navbar navbar-toggler-icon border border-light fs-5 rounded-2" data-bs-theme="dark"></span><Small
                 class=" mx-1 text-light">Menu</Small>
@@ -132,9 +132,8 @@
                 <h1 class="text-light subject" title="fina">Financial Accounting</h1><img src="/images/finAcct.jpeg"
                     alt="Accounting-Image" class="myPicture ms-3">
             </div>
-            <button type="button" title="Enter Login Details First" class=" p-2 w-50 fs-6 start "
-                onclick="start()">Start Exams
-            </button>
+            <button type="button" title="Enter Login Details First" class=" p-2 w-50 fs-6 start" onclick="start()">
+                Start Exams </button>
 
             <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 text-center rounded-pill"></h4>
             <div class="card mt-2 rounded-2">
@@ -154,7 +153,7 @@
                         <h3 class="text-light">login to Start Exam</h3><span class="fas fa-book-open fs-1"></span>
                         <input title=" Enter Surname" type="text" name="logid" id="logid"
                             class="rounded-2 text-center border-0 mb-2  d-block mx-auto w-50 p-1 no-outline"
-                            placeholder="Surname" autocomplete="userName">
+                            placeholder="Surname" autocomplete="userName" autofocus>
                         <input title="Input your Password" type="password" name="passwd" id="passwd"
                             class="border-0 rounded-2  text-center d-block mx-auto w-50 p-1 no-outline"
                             placeholder="Password" autocomplete="current-password">
@@ -206,6 +205,20 @@
 
                 <!-- question page start -->
                 <div class="qstsAll No-hide"></div>
+                <dialog class="bg-light my-auto mx-auto w-50 dialog_msg p-2 border-0 ">
+                    <div class="bg-primary rounded-1 py-1">
+                        <h5 class="text-light text-center mx-1 text-decoration-underline">tykTUTORS Says...<i
+                                class="fas fa-warning text-danger ms-2 fs-3"></i></h5>
+                        <p class="dialog_text text-center text-light fw-bold h6 my-3">
+
+                        </p>
+                        <div class="text-center my-2 d-flex px-2">
+                            <button type="button" class="text-bg-secondary btn dialog_btn_ok w-50 me-1">Ok</button>
+                            <button type="button" class=" text-bg-danger btn dialog_btn_cancel w-50 ms-1">Cancel</button>
+                        </div>
+
+                    </div>
+                </dialog>
                 <div id="loading" class="loading hide">Loading more questions...</div>
 
                 <div class="controlBtns text-center hide">
