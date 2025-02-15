@@ -131,11 +131,10 @@ async function loginUser() {
         );
 
         const loginRes = await loginA.json();
-        // for (let i = 0; i < loginRes.length; i++) {
-
-        // console.log(loginRes.surname);
+        // if surname and password matches...
         if ((logid.value === loginRes.surname) && (passwd.value === loginRes.password)) {
-
+            const subj = document.querySelector('#subj');
+            subj.remove()//to remvove the dropdown box from users
             //////
             const dUserName = document.querySelector('.dUserName');
             dUserName.style.display = 'block'// chnge from hide

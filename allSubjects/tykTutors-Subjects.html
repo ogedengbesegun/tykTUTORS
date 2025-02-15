@@ -15,8 +15,8 @@
 
     <link rel="stylesheet" href="/css/ogd.css">
     <link rel="stylesheet" href="/css/my.css">
-    <link rel="stylesheet" href="/css/fina.css">
-    <link rel="shortcut icon" href="/images/finAcct.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/allsub.css">
+    <link rel="shortcut icon" href="/images/allsub.jpeg" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
         integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
@@ -25,7 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
-    <title>Financial Accounting</title>
+    <title class="title">#</title>
 </head>
 
 <body class="body">
@@ -125,17 +125,42 @@
                     <i class="fas fa-power-off text-light rounded-4  fs-1 powerOff "></i>
 
                 </button>
+                <select title="Select Subject" name="subjPick" id="subj"
+                    class="rounded-1 border-1 no-outline text-bg-dark p-1 select" >
+                    <!-- <option class=" text-center">Select One</option> -->
+                   
+                    <option value="engl" class="option">English-Language</option>
+                    <option value="math" class="option">Mathematics</option>
+                    <option value="fina" class="option">Financial-Accounting</option>
+                    <option value="econ" class="option">Economics</option>
+                    <option value="comp" class="option">Computer-Studies</option>
+                    <option value="biol" class="option">Biology</option>
+                    <option value="phys" class="option">Physics</option>
+                    <option value="chem" class="option">Chemistry</option>
+                    <option value="furt" class="option">Further-Mathematics</option>
+                    <option value="comm" class="option">Commerce</option>
+                    <option value="lite" class="option">Literature-in-English</option>
+                    <option value="gove" class="option">Government</option>
+                    <option value="civi" class="option">Civic-Education</option>
+                    <option value="mart" class="option">Marketing</option>
+                    <option value="proc" class="option">Data-Processing</option>
+                    <option value="anim" class="option">Animal-Husbandry</option>
+
+
+
+                </select>
                 <p class="h3 text-light text-center mb-3 fw-bold  float-center hide dUserName"></p>
             </div>
             <!-- <h5 class="text-light">Welcome: Segun</h5> -->
             <div class="d-flex">
-                <h1 class="text-light subject" title="fina">Financial Accounting</h1><img src="/images/finAcct.jpeg"
+                <h1 class="text-light subject" title="fina">Select a Subject</h1><img src="/images/allsub.jpeg"
                     alt="Accounting-Image" class="myPicture ms-3">
             </div>
             <button type="button" title="Enter Login Details First" class=" p-2 w-50 fs-6 start" onclick="start()">
                 Start Exams </button>
 
             <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 text-center rounded-pill"></h4>
+            <div class="seescore text-dark btn btn-light"></div>
             <div class="card mt-2 rounded-2">
 
                 <div class="hide4login">
@@ -148,9 +173,10 @@
                 </div>
 
 
-                <div class="mx-5 text-bg-primary rounded-3 w-auto my-2 p-2 text-center studentlogin">
+                <div class="mx-5 rounded-3 w-auto my-2 p-2 text-center studentlogin">
                     <form action="">
-                        <h3 class="text-light">login to Start Exam</h3><span class="fas fa-book-open fs-1"></span>
+                        <h3 class="text-light">login to Start Exam</h3><span
+                            class="fas fa-book-open fs-1 text-light"></span>
                         <input title=" Enter Surname" type="text" name="logid" id="logid"
                             class="rounded-2 text-center border-0 mb-2  d-block mx-auto w-50 p-1 no-outline"
                             placeholder="Surname" autocomplete="userName" autofocus>
@@ -159,18 +185,22 @@
                             placeholder="Password" autocomplete="current-password">
 
                         <!-- a dialog to display error msg -->
-                        <dialog class=" border-0 mx-auto my-auto rounded-2 invalidmsg">
-                            <h6 class="text-danger p-2 m-2">Oops! Invalid input <span
-                                    class="fas fa-exclamation-triangle fs-4"></span></h6>
-                            <button type="button" class="btn btn-danger mb-3 okclose">
+                        <dialog class="bg-light border-0 mx-auto my-auto rounded-2 invalidmsg">
+                            <span class="fas fa-exclamation-triangle fs-1 text-danger mt-2"></span>
+                            <h6 class="text-danger p-2 ">Oops! Invalid input </h6>
+                            <h6 class="text-danger">OR</h6>
+                            <h6 class="text-danger w-75 mx-auto pb-2">Select a Subject from
+                                Dropdown Box</h6>
+                            <button type="button" class="btn btn-danger w-50 mx-auto mb-3 okclose">
                                 OK
                             </button>
 
                         </dialog>
                         <!-- ------- -->
-                        <button type="button" class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
+                        <button type="button" title="Click to Login"
+                            class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
                             onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
-                        <small title="forgot password?" class="text-danger forgotPwd cursor">forgot password ?</small>
+                        <small title="forgot password?" class="text-light forgotPwd cursor">forgot password ?</small>
 
                         <!-- dialog to display re-enter password -->
                         <dialog class="reEnterPwd bg-secondary border-0 rounded-2 mt-7 mx-auto">
@@ -214,7 +244,8 @@
                         </p>
                         <div class="text-center my-2 d-flex px-2">
                             <button type="button" class="text-bg-secondary btn dialog_btn_ok w-50 me-1">Ok</button>
-                            <button type="button" class=" text-bg-danger btn dialog_btn_cancel w-50 ms-1">Cancel</button>
+                            <button type="button"
+                                class=" text-bg-danger btn dialog_btn_cancel w-50 ms-1">Cancel</button>
                         </div>
 
                     </div>
@@ -277,7 +308,7 @@
                 </h3>
             </div>
 
-            <h4 class="text-center my-2">Subject: Financial-Accounting </h4>
+            <h4 class="text-center my-2 sub-title"></h4>
             <!-- the label is for student name using reportName class -->
             <p class="reportName w-50 mx-auto mt-3 text-center text-bg-light border-dark border rounded-2 p-2"></p>
             <p class="mt-2 text-center fs-3">Score:</p>
@@ -397,7 +428,7 @@
     <script src="/jscripts/studentLogin.js"></script>
 
     <script src="/jscripts/ogd.js"></script>
-    <script src="/allSubjects/fina.js"></script>
+    <script src="/allSubjects/allsub.js"></script>
 
 
 

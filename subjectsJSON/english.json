@@ -1,19 +1,163 @@
 [
   {
-    "ask": "We are going together always",
-    "a": "five hundreds",
-    "b": "523",
-    "c": "re",
-    "d": "dw",
-    "ans": "pleasure"
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is a noun?",
+    "a": "Name of persons",
+    "b": "Noun is an action word",
+    "c": "Noun is a name of person, animal, place, or thing",
+    "d": "Noun is an English sentence",
+    "ans": "c"
   },
-
   {
-    "ask": "they are going for our people regularly",
-    "a": "1222",
-    "b": "5gdgdghdg",
-    "c": "dede olasco",
-    "d": "dreams do come true",
-    "ans": "can't"
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following is a verb?",
+    "a": "Run",
+    "b": "Table",
+    "c": "Quickly",
+    "d": "Beautiful",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Choose the correct plural of 'child'.",
+    "a": "Childs",
+    "b": "Childes",
+    "c": "Children",
+    "d": "Childrens",
+    "ans": "c"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which is the correct past tense of 'go'?",
+    "a": "Goed",
+    "b": "Went",
+    "c": "Going",
+    "d": "Goes",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the synonym of 'happy'?",
+    "a": "Sad",
+    "b": "Miserable",
+    "c": "Joyful",
+    "d": "Dull",
+    "ans": "c"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the adverb in the sentence: 'She sings beautifully.'",
+    "a": "She",
+    "b": "Sings",
+    "c": "Beautifully",
+    "d": "The",
+    "ans": "c"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which is the correct antonym of 'brave'?",
+    "a": "Fearful",
+    "b": "Strong",
+    "c": "Courageous",
+    "d": "Daring",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What type of sentence is this: 'Where are you going?'",
+    "a": "Declarative",
+    "b": "Interrogative",
+    "c": "Imperative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Choose the correct word to complete the sentence: 'The book is ___ the table.'",
+    "a": "On",
+    "b": "With",
+    "c": "To",
+    "d": "By",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the comparative form of 'big'?",
+    "a": "Bigger",
+    "b": "Biggest",
+    "c": "Most big",
+    "d": "More bigger",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which word is an example of a conjunction?",
+    "a": "Run",
+    "b": "And",
+    "c": "Beautiful",
+    "d": "Slowly",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following is a pronoun?",
+    "a": "He",
+    "b": "Table",
+    "c": "Sing",
+    "d": "Joyful",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following is an example of an interjection?",
+    "a": "Wow!",
+    "b": "Slowly",
+    "c": "And",
+    "d": "Jump",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct preposition in the sentence: 'The cat is under the table.'",
+    "a": "Cat",
+    "b": "Under",
+    "c": "Table",
+    "d": "Is",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which is the correct contraction for 'I am'?",
+    "a": "Iam",
+    "b": "I'm",
+    "c": "I'am",
+    "d": "Im",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Choose the correct word to complete the sentence: 'She ___ to school every day.'",
+    "a": "Go",
+    "b": "Goes",
+    "c": "Gone",
+    "d": "Going",
+    "ans": "b"
   }
 ]
+

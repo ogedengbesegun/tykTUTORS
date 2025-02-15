@@ -112,6 +112,18 @@ client.connect().then(() => {
 
         }
     });///////////////////////// end fina
+    app.post('/getengl', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const geteng = engl.find({ subject: "English-Language" })
+            const arrayeng = await geteng.toArray();// to get multiple res findMany
+            res.json(arrayeng)
+        }
+        catch (error) {
+
+        }
+    });
 
     app.post('/tchers', async (req, res) => {
         try {

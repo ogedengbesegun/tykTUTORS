@@ -11,6 +11,195 @@ const subjPwd = document.querySelector(".subjPwd");
 // to pick subject id from Select element
 let subjSelect = document.querySelector("#subjSelect");
 // score Sheet 
+const subject = document.getElementsByClassName('subject')[0];
+// subject.textContent = 'sfsfsfsf';
+
+const subj = document.querySelector('#subj');
+const option = document.querySelectorAll('option')
+const subTitle = document.querySelector('.sub-title');//result sub title
+const title = document.querySelector('title');
+const studentcolor = document.querySelector(".studentlogin");
+studentcolor.style.backgroundColor = '#3333ff'//the backgroud set onload
+
+//////
+subj.addEventListener('click', () => {
+
+    selectOne()
+});
+////////
+const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
+studentlogininput.setAttribute('readonly', true);
+///////////////
+function selectOne() {
+    // option[i++].addEventListener('click', () => {
+    if (subj.value === 'engl') {
+        // if (studentcolor.classList.contains('text-bg-primary')) {
+        // studentcolor.classList.remove('text-bg-primary');
+        studentcolor.style.backgroundColor = color['orange']
+        // }
+        subject.textContent = option[0].text;
+        subTitle.textContent = subject.textContent
+        title.textContent = subject.textContent + " tykTutors"
+    }
+    else if (subj.value === 'math') {
+        subject.textContent = option[1].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors";
+        // studentcolor.classList.remove('text-bg-primary');
+
+        studentcolor.style.backgroundColor = color['green']
+
+    }
+    else if (subj.value === 'fina') {
+        subject.textContent = option[2].text;
+
+        subTitle.textContent = subject.textContent
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['ashes']
+
+    }
+    else if (subj.value === 'econ') {
+        subject.textContent = option[3].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['darkpink']
+
+    }
+    else if (subj.value === 'comp') {
+        subject.textContent = option[4].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['purple']
+
+    }
+    else if (subj.value === 'biol') {
+        subject.textContent = option[5].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['darkpink']
+
+    }
+    else if (subj.value === 'phys') {
+        subject.textContent = option[6].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors";
+        studentcolor.style.backgroundColor = color['ashes']
+
+    }
+    else if (subj.value === 'chem') {
+        subject.textContent = option[7].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['blue']
+
+    }
+    else if (subj.value === 'furt') {
+        subject.textContent = option[8].text;
+
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['darkpink']
+
+    }
+    else if (subj.value === 'comm') {
+        subject.textContent = option[9].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['lightgreen']
+
+    }
+    else if (subj.value === 'lite') {
+        subject.textContent = option[10].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['orange']
+
+    }
+    else if (subj.value === 'gove') {
+        subject.textContent = option[11].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['purple']
+
+    }
+    else if (subj.value === 'civi') {
+        subject.textContent = option[12].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['ashes']
+
+    }
+    else if (subj.value === 'mart') {
+        subject.textContent = option[13].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['blue']
+
+    }
+    else if (subj.value === 'proc') {
+        subject.textContent = option[14].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['clay']
+
+    }
+    else if (subj.value === 'anim') {
+        subject.textContent = option[15].text;
+        subTitle.textContent = subject.textContent
+
+        title.textContent = subject.textContent + " tykTutors"
+        studentcolor.style.backgroundColor = color['darkpink']
+
+    }
+    else {
+        subject.textContent = option[0].text;
+        title.textContent = 'tykTUTORS-Subject Selection'
+        studentcolor.style.backgroundColor = color['green'];
+
+    }
+
+    if (subject.textContent != "Select a Subject") {
+        studentlogininput.removeAttribute('readonly', true);
+    }
+}
+
+
+
+// });
+//color selection
+const color = {
+    green: '#009900',
+    clay: '#ff8000',
+    blue: '#0000ff',
+    lightgreen: '#006000',
+    purple: '#9900cc',
+    ashes: '#999966',
+    darkpink: '#cc0066',
+    orange: '#ff8000'
+};
+
+
+// console.log(option1.text)
+
+
 const scoreSheetHead = document.querySelector(".scoreSheetHead");
 // loginResult
 const loginR = document.querySelector(".loginR");
@@ -253,21 +442,19 @@ if (closeUp) {
 // let rpt;
 
 let count2 = 0;
-let qstnsSet = 20;
+let qstnsSet = 10;
 
 // console.log(rpt)
-let rpt0 = 0;
-let rpt1 = 0;
-let rpt2 = 0;
-let rpt3 = 0;
-let rpt4 = 0;
+//score is required
+let score = 0;
+
 
 // 
 // let rpt = 0
 
 //////////////
 function start() {
-
+    // subj.disabled = true;
     document.querySelector(".start").style.
         backgroundColor = "green";
     document.querySelector(".start").textContent = 'Exams-in-Progress';
@@ -287,11 +474,59 @@ function start() {
 
         ///////
         async function finajson() {//fetch http
+            const luk4sub = document.querySelector('.subject');//select sub by user
             const getfina = await fetch("/url.json");//fetched http dir
             const finaCome = await getfina.json();
             // console.log((finaCome.getfina));
-            return (finaCome.getfina);
+            if (luk4sub.textContent === 'English-Language') {
+                return (finaCome.getengl);
 
+            }
+            else if (luk4sub.textContent === 'Mathematics') {
+                return finaCome.getmath
+            }
+            else if (luk4sub.textContent === 'Financial-Accounting') {
+                return finaCome.getfina
+            }
+            else if (luk4sub.textContent === 'Economics') {
+                return finaCome.getecon
+            }
+            else if (luk4sub.textContent === 'Computer-Studies') {
+                return finaCome.getcomp
+            }
+            else if (luk4sub.textContent === 'Biology') {
+                return finaCome.getbiol
+            }
+            else if (luk4sub.textContent === 'Physics') {
+                return finaCome.getphys
+            }
+            else if (luk4sub.textContent === 'Chemistry') {
+                return finaCome.getchem
+            }
+            else if (luk4sub.textContent === 'Further-Mathematics') {
+                return finaCome.getfurt
+            }
+            else if (luk4sub.textContent === 'Commerce') {
+                return finaCome.getcomm
+            }
+            else if (luk4sub.textContent === 'Literature-in-English') {
+                return finaCome.getlite
+            }
+            else if (luk4sub.textContent === 'Government') {
+                return finaCome.getgove
+            }
+            else if (luk4sub.textContent === 'Civic-Education') {
+                return finaCome.getcivi
+            }
+            else if (luk4sub.textContent === 'Marketing') {
+                return finaCome.getmart
+            }
+            else if (luk4sub.textContent === 'Data-Processing') {
+                return finaCome.getproc
+            }
+            else if (luk4sub.textContent === 'Animal-Husbandary') {
+                return finaCome.getanim
+            }
         }
 
         try {
@@ -360,12 +595,31 @@ function start() {
     </div> 
         `;
 
+
             // Function to load a batch of blocks
             function loadBatch() {
+                let correctAnswers = {};
+
                 const nextBatchEnd = Math.min(currentIndex + batchSize, totalBlocks);
                 for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
                     qstsAll.insertAdjacentHTML('beforeend', template(i));
+
+
+
+                    /////
+                    let q = `q${i}`;
+                    qstn = q
+                    // console.log(q)
+                    let qvalue = array.slice(`${i - 1}`, `${i}`)[0].ans;
+                    // console.log(qvalue)
+                    correctAnswers[q] = qvalue;
+
+
+
+
                 }
+
+                console.log(correctAnswers)
 
                 // next.addEventListener("click", () => {
                 //     // console.log("l am here")
@@ -390,35 +644,46 @@ function start() {
                 currentIndex += batchSize;
 
 
-                ////////////// to mark the first question
-                const ans1 = array.slice(`${0}`, `${1}`)[0].ans;
-                console.log(ans1)
-                ///////////
-                const ans0 = document.querySelectorAll(`.inputValue${1}`);
-                ans0.forEach((input0, index) => {
-                    input0.addEventListener("click", () => {
-                        const opt1 = input0.getAttribute("value")
-                        if (index === 0 && (opt1 === ans1)) {
-                            rpt0 = 1
-                        }
-                        else if (index === 1 && (opt1 === ans1)) {
-                            rpt0 = 1
-                        }
-                        else if (index === 2 && (opt1 === ans1)) {
-                            rpt0 = 1
-                        }
-                        else if (index === 3 && (opt1 === ans1)) {
-                            rpt0 = 1
-                        }
-                        else {
-                            rpt0 = 0
-                        }
-                        return rpt0
+                ////////////// to mark the question
+                let seescore = document.querySelector('.seescore');
+
+                let userAnswers = {}
+                console.log(userAnswers)
+                for (let j = 1; j <= batchSize; j++) {
+
+
+                    const options = document.querySelectorAll(`.inputValue${j}`)
+                    options.forEach(option => {
+                        option.addEventListener('change', (e) => {
+                            const questionKey = `q${j}`;
+                            // console.log(questionKey)
+                            const selectedOption = e.target.value;
+
+                            // Check if the answer was already given
+                            if (userAnswers[questionKey]) {
+                                // If previously correct and changed to wrong, deduct score
+                                if (userAnswers[questionKey] === correctAnswers[questionKey] && selectedOption !== correctAnswers[questionKey]) {
+                                    score--;
+                                }
+                                // If previously wrong and changed to correct, add score
+                                else if (userAnswers[questionKey] !== correctAnswers[questionKey] && selectedOption === correctAnswers[questionKey]) {
+                                    score++;
+                                }
+                            } else {
+                                // First-time selection, add score if correct
+                                if (selectedOption === correctAnswers[questionKey]) {
+                                    score++;
+                                }
+                            }
+
+                            // Update user's answer
+                            userAnswers[questionKey] = selectedOption;
+                            seescore.textContent = score
+                        })
+
                     })
 
-                })
-                ////////
-
+                }
 
 
 
@@ -453,11 +718,12 @@ function start() {
             /////////////////
 
 
+
+
+
             const prev = document.querySelector('.prev');
             const next = document.querySelector('.next');
-            let count = 1;
-
-            ////////
+            let count = 0;
 
 
 
@@ -478,56 +744,6 @@ function start() {
                     const rect = qstnHide.getBoundingClientRect();
                     qstsAll.style.height = (rect.height).toString() + "px";
                     ////////
-
-
-                    const ans = array.slice(`${count - 1}`, `${count}`)[0].ans;
-
-                    ///////////////////////////////
-
-
-
-
-                    console.log(ans);
-
-                    ////
-
-
-                    let input = document.querySelectorAll(`.inputValue${count}`)
-                    console.log(input[0].value)
-                    input.forEach((eachinput, index) => {
-
-                        // let arrayinput = Array.from(eachinput)
-                        // console.log(arrayinput)
-                        eachinput.addEventListener("change", (event) => {
-                            if (event.target.value === ans && index === 0) {
-
-
-                                // alert('checked & answered')
-                                rpt1 += 1;
-                            }
-                            else if (event.target.value === ans && index === 1) {
-                                rpt1 += 1
-                            }
-                            else if (event.target.value === ans && index === 2) {
-                                rpt1 += 1
-
-                            }
-                            else if (event.target.value === ans && index === 3) {
-                                rpt1 += 1
-
-                            }
-                            else {
-
-                                // alert('Unchecked')
-                                rpt1 = 0
-
-                            }
-                            return rpt1
-                        })
-                    })
-
-
-
 
 
 
@@ -563,42 +779,6 @@ function start() {
                     qstsAll.style.height = (rect.height).toString() + "px";
                     ///////////////
                     ////////////
-                    let input = document.querySelectorAll(`.inputValue${count}`)
-                    // console.log(input[0].value)
-                    input.forEach((eachinput, index) => {
-
-                       
-                        eachinput.addEventListener("change", (event) => {
-                            console.log(rpt1)
-                            // rpt1
-                            if (event.target.value === ans && index === 0) {
-
-
-                                // alert('checked & answered')
-                                rpt1 + 1;
-                            }
-                            else if (event.target.value === ans && index === 1) {
-                                rpt1 + 1
-                            }
-                            else if (event.target.value === ans && index === 2) {
-                                rpt1 + 1
-
-                            }
-                            else if (event.target.value === ans && index === 3) {
-                                rpt1 + 1
-
-                            }
-                            else {
-
-                                rpt1 + 0
-
-                            }
-                            return rpt1
-                        })
-                    })
-
-
-
                 }
                 else {
                     if (count = 1) {
@@ -734,7 +914,7 @@ function showResult() {
     // console.log(rpt3)
     // console.log(rpt4)
 
-    let allScore = (rpt0 + rpt1) / qstnsSet * 100 + "%"//* 10 + "%"
+    let allScore = score / qstnsSet * 100 + "%"//* 10 + "%"
     console.log(allScore)
     // ------------------------------------------------
 
@@ -754,102 +934,7 @@ function showResult() {
 
 
 
-// const countn = () => {
-//     // index = []
-//     for (let i = 1; i < 100; i++) {
-//         const mycount = [i]
-//         console.log(mycount[0])
-//         console.log(mycount[0].toString())
-//     }
-// }
-// countn();
-// const qstn1 = document.querySelector(`.qstn1${count}`);
-// let count = 0; count < 10 + 1; count++
 
-
-// const optn1 = document.querySelector(`#optn1-${count}`);
-// const optn2 = document.querySelector(`#optn2-${count}`);
-// const optn3 = document.querySelector(`#optn3-${count}`);
-// const optn4 = document.querySelector(`#optn4-${count}`);
-
-// // const ans = array.slice(`${count}` - 1, `${count}`)[0].ans
-// // console.log(ans)
-// optn1.checked;
-// optn2.checked;
-// optn3.checked;
-// optn4.checked;
-
-// // index = `${count}`
-// function optn_1() {
-//     optn1.addEventListener('click', () => {
-//         if ((optn1.checked) && (optn1.value == ans)) {
-//             // alert(`${ans} is Correct`);
-//             // console.log(1);
-
-//             return 1
-//         } else {
-//             // alert("NOT correct");
-//             // console.log(0);
-
-//             return 0
-
-//         }
-
-//     })
-// };
-
-// function optn_2() {
-//     optn2.addEventListener('click', () => {
-//         if ((optn2.checked) && (optn2.value == ans)) {
-//             // alert(`${ans} is Correct`);
-//             // console.log(1);
-
-//             return 1
-//         } else {
-//             // alert("NOT correct");
-//             // console.log(0);
-
-//             return 0
-
-//         }
-
-//     })
-// };
-
-// function optn_3() {
-//     optn3.addEventListener('click', () => {
-//         if ((optn3.checked) && (optn3.value == ans)) {
-//             // alert(`${ans} is Correct`);
-//             // console.log(1);
-
-//             return 1
-//         } else {
-//             // alert("NOT correct");
-//             // console.log(0);
-
-//             return 0
-
-//         }
-
-//     })
-// };
-
-// function optn_4() {
-//     optn4.addEventListener('click', () => {
-//         if ((optn4.checked) && (optn4.value == ans)) {
-//             // alert(`${ans} is Correct`);
-//             // console.log(1);
-//             return 1
-//         } else {
-//             // alert("NOT correct");
-//             // console.log(0);
-
-//             return 0
-
-//         }
-
-//     })
-// }
 
 
 
