@@ -1,0 +1,503 @@
+[
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve for x: 2x + 5 = 15",
+    "a": "5",
+    "b": "10",
+    "c": "15",
+    "d": "20",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the derivative of f(x) = 3x^2 + 4x - 7",
+    "a": "6x + 4",
+    "b": "3x + 4",
+    "c": "6x - 4",
+    "d": "2x + 4",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Evaluate: \u221a49",
+    "a": "9",
+    "b": "7",
+    "c": "5",
+    "d": "4",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Simplify: (2x^2 - 3x + 4) - (x^2 + x - 2)",
+    "a": "x^2 - 4x + 6",
+    "b": "x^2 - 2x + 2",
+    "c": "2x^2 - 2x + 6",
+    "d": "x^2 - 2x - 6",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If sin A = 3/5, find cos A",
+    "a": "4/5",
+    "b": "3/4",
+    "c": "5/3",
+    "d": "1/2",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the value of x if 3x - 7 = 2x + 5",
+    "a": "12",
+    "b": "8",
+    "c": "7",
+    "d": "6",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Calculate the area of a circle with radius 7 cm (π = 22/7)",
+    "a": "154 cm^2",
+    "b": "144 cm^2",
+    "c": "147 cm^2",
+    "d": "150 cm^2",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Convert 0.75 to a fraction",
+    "a": "3/4",
+    "b": "2/5",
+    "c": "1/3",
+    "d": "4/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve: 5x - 2 = 3x + 6",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the HCF of 24 and 36",
+    "a": "6",
+    "b": "12",
+    "c": "18",
+    "d": "24",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the value of y in the equation: 4y - 7 = 9",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the sum of the interior angles of a pentagon?",
+    "a": "360 degrees",
+    "b": "540 degrees",
+    "c": "720 degrees",
+    "d": "900 degrees",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve for x: 3(x - 2) = 15",
+    "a": "3",
+    "b": "5",
+    "c": "7",
+    "d": "9",
+    "ans": "d"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the square root of 121?",
+    "a": "9",
+    "b": "10",
+    "c": "11",
+    "d": "12",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the mode of the numbers: 3, 7, 3, 2, 7, 3, 8",
+    "a": "2",
+    "b": "3",
+    "c": "7",
+    "d": "8",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If a triangle has angles 40° and 60°, what is the third angle?",
+    "a": "60°",
+    "b": "70°",
+    "c": "80°",
+    "d": "90°",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the LCM of 6 and 8",
+    "a": "12",
+    "b": "18",
+    "c": "24",
+    "d": "30",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is 25% of 200?",
+    "a": "25",
+    "b": "50",
+    "c": "75",
+    "d": "100",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Convert 3/8 to a decimal",
+    "a": "0.125",
+    "b": "0.25",
+    "c": "0.375",
+    "d": "0.5",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the next term in the sequence: 2, 4, 8, 16, ...",
+    "a": "24",
+    "b": "32",
+    "c": "40",
+    "d": "48",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the sum of the first 10 natural numbers?",
+    "a": "45",
+    "b": "50",
+    "c": "55",
+    "d": "60",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve for x: 5x - 3 = 2x + 9",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the perimeter of a rectangle with length 8 cm and width 5 cm.",
+    "a": "20 cm",
+    "b": "24 cm",
+    "c": "26 cm",
+    "d": "30 cm",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Evaluate: 6! (6 factorial)",
+    "a": "360",
+    "b": "720",
+    "c": "120",
+    "d": "540",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If a car travels at 60 km/h for 3 hours, how far does it travel?",
+    "a": "120 km",
+    "b": "150 km",
+    "c": "180 km",
+    "d": "200 km",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the hypotenuse of a right-angled triangle with legs 6 cm and 8 cm.",
+    "a": "8 cm",
+    "b": "10 cm",
+    "c": "12 cm",
+    "d": "14 cm",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Convert 0.625 to a fraction.",
+    "a": "5/8",
+    "b": "3/4",
+    "c": "7/10",
+    "d": "2/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the median of the data set: 3, 5, 7, 9, 11, 13, 15",
+    "a": "7",
+    "b": "9",
+    "c": "11",
+    "d": "13",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If a = 3 and b = 4, find the value of a^2 + b^2.",
+    "a": "12",
+    "b": "24",
+    "c": "25",
+    "d": "28",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "How many degrees are there in a straight angle?",
+    "a": "90°",
+    "b": "120°",
+    "c": "180°",
+    "d": "360°",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the sum of the first 10 natural numbers?",
+    "a": "45",
+    "b": "50",
+    "c": "55",
+    "d": "60",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve for x: 5x - 3 = 2x + 9",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the perimeter of a rectangle with length 8 cm and width 5 cm.",
+    "a": "20 cm",
+    "b": "24 cm",
+    "c": "26 cm",
+    "d": "30 cm",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Evaluate: 6! (6 factorial)",
+    "a": "360",
+    "b": "720",
+    "c": "120",
+    "d": "540",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If a car travels at 60 km/h for 3 hours, how far does it travel?",
+    "a": "120 km",
+    "b": "150 km",
+    "c": "180 km",
+    "d": "200 km",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the hypotenuse of a right-angled triangle with legs 6 cm and 8 cm.",
+    "a": "8 cm",
+    "b": "10 cm",
+    "c": "12 cm",
+    "d": "14 cm",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Convert 0.625 to a fraction.",
+    "a": "5/8",
+    "b": "3/4",
+    "c": "7/10",
+    "d": "2/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the median of the data set: 3, 5, 7, 9, 11, 13, 15",
+    "a": "7",
+    "b": "9",
+    "c": "11",
+    "d": "13",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If a = 3 and b = 4, find the value of a^2 + b^2.",
+    "a": "12",
+    "b": "24",
+    "c": "25",
+    "d": "28",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "How many degrees are there in a straight angle?",
+    "a": "90°",
+    "b": "120°",
+    "c": "180°",
+    "d": "360°",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the square root of 196?",
+    "a": "12",
+    "b": "13",
+    "c": "14",
+    "d": "15",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Solve for y: 3y + 7 = 22",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the area of a triangle with base 10 cm and height 8 cm.",
+    "a": "30 cm²",
+    "b": "40 cm²",
+    "c": "50 cm²",
+    "d": "60 cm²",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the value of 5³?",
+    "a": "125",
+    "b": "150",
+    "c": "175",
+    "d": "200",
+    "ans": "a"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If the sum of two numbers is 24 and their difference is 6, what are the numbers?",
+    "a": "15 and 9",
+    "b": "14 and 10",
+    "c": "16 and 8",
+    "d": "18 and 6",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the cube root of 64?",
+    "a": "2",
+    "b": "3",
+    "c": "4",
+    "d": "5",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Convert 7/8 to a decimal.",
+    "a": "0.75",
+    "b": "0.85",
+    "c": "0.875",
+    "d": "0.95",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "What is the sum of the angles in a hexagon?",
+    "a": "540°",
+    "b": "600°",
+    "c": "720°",
+    "d": "900°",
+    "ans": "c"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "If x² = 121, what is the value of x?",
+    "a": "10",
+    "b": "11",
+    "c": "12",
+    "d": "13",
+    "ans": "b"
+  },
+  {
+    "subject": "Mathematics",
+    "author": "John Doe",
+    "ask": "Find the LCM of 9 and 12.",
+    "a": "18",
+    "b": "24",
+    "c": "27",
+    "d": "36",
+    "ans": "b"
+  }
+
+]

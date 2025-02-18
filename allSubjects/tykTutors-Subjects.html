@@ -126,9 +126,9 @@
 
                 </button>
                 <select title="Select Subject" name="subjPick" id="subj"
-                    class="rounded-1 border-1 no-outline text-bg-dark p-1 select" >
+                    class="rounded-1 border-1 no-outline text-bg-dark p-1 select">
                     <!-- <option class=" text-center">Select One</option> -->
-                   
+
                     <option value="engl" class="option">English-Language</option>
                     <option value="math" class="option">Mathematics</option>
                     <option value="fina" class="option">Financial-Accounting</option>
@@ -160,7 +160,7 @@
                 Start Exams </button>
 
             <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 text-center rounded-pill"></h4>
-            <div class="seescore text-dark btn btn-light"></div>
+            <!-- <div class="seescore text-dark btn btn-light"></div> -->
             <div class="card mt-2 rounded-2">
 
                 <div class="hide4login">
@@ -186,12 +186,15 @@
 
                         <!-- a dialog to display error msg -->
                         <dialog class="bg-light border-0 mx-auto my-auto rounded-2 invalidmsg">
-                            <span class="fas fa-exclamation-triangle fs-1 text-danger mt-2"></span>
-                            <h6 class="text-danger p-2 ">Oops! Invalid input </h6>
+                            <div class="d-flex justify-content-center pt-2 fs-3">
+                                <p class="text-primary">tykTutors Says...</p><span
+                                    class="fas fa-exclamation-triangle text-danger ms-1 fs-1 "></span>
+                            </div>
+                            <h6 class="text-danger">Oops! Invalid input </h6>
                             <h6 class="text-danger">OR</h6>
                             <h6 class="text-danger w-75 mx-auto pb-2">Select a Subject from
                                 Dropdown Box</h6>
-                            <button type="button" class="btn btn-danger w-50 mx-auto mb-3 okclose">
+                            <button type="button" class="btn btn-secondary w-50 mx-auto mb-3 okclose">
                                 OK
                             </button>
 
@@ -203,13 +206,13 @@
                         <small title="forgot password?" class="text-light forgotPwd cursor">forgot password ?</small>
 
                         <!-- dialog to display re-enter password -->
-                        <dialog class="reEnterPwd bg-secondary border-0 rounded-2 mt-7 mx-auto">
-                            <h3 class="mt-2">Forgot Password? <span
-                                    class="fas fa-times-circle text-danger opacity-50 float-end me-2 cursor closeDlg"
+                        <dialog class="reEnterPwd bg-info border-0 rounded-2 mt-7 mx-auto">
+                            <h3 class=" mt-2 text-danger">Forgot Password? <span
+                                    class="fas fa-times-circle fs-1 rounded-2 float-end me-1 cursor closeDlg"
                                     title="close"></span></h3>
                             <form action="">
                                 <input type="text" name="reIdOld" id="reIdOld"
-                                    class="rounded-2 text-center border-0 my-1 w-50 p-1 no-outline"
+                                    class="rounded-2 text-center border-0 mt-2 w-50 p-1 no-outline"
                                     placeholder="Enter email">
                                 <input type="password" name="repwdNew1" id="repwdNew1"
                                     class="border-0 rounded-2 mt-1 text-center w-50 p-1 no-outline"

@@ -58,7 +58,6 @@ client.connect().then(() => {
 
 
 
-
     // const collection2 = db.collection("fina"); //collection fina
     // Endpoint to handle POST request for inserting data
     app.post('/getsignup', async (req, res) => {
@@ -124,7 +123,21 @@ client.connect().then(() => {
 
         }
     });
+    ////eng
 
+    app.post('/getmath', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getmath = math.find({ subject: "Mathematics" })
+            const arraymath = await getmath.toArray();// to get multiple res findMany
+            res.json(arraymath)
+        }
+        catch (error) {
+
+        }
+    });
+    ////eng
     app.post('/tchers', async (req, res) => {
         try {
             const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;

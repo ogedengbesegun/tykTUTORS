@@ -461,19 +461,16 @@ function start() {
 
 
 
-    document.querySelector(".start").disabled = true
-    // let response = JSON.parse(xhttp.responseText);
-    // let array = response
-    // let qtn = response
+    document.querySelector(".start").disabled = true; // not clickable again
 
 
     ///////////////////////////
     // send request to the server
-    getfina();
-    async function getfina() {
+    getsubj();
+    async function getsubj() {
 
         ///////
-        async function finajson() {//fetch http
+        async function allsubjson() {//fetch http
             const luk4sub = document.querySelector('.subject');//select sub by user
             const getfina = await fetch("/url.json");//fetched http dir
             const finaCome = await getfina.json();
@@ -530,9 +527,9 @@ function start() {
         }
 
         try {
-            const fina1 = await finajson()
+            const subj1 = await allsubjson()
             // console.log(fina1);
-            const fina = await fetch(fina1,// got from asychronise
+            const fina = await fetch(subj1,// got from asychronise
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -723,7 +720,7 @@ function start() {
 
             const prev = document.querySelector('.prev');
             const next = document.querySelector('.next');
-            let count = 0;
+            let count = 1;
 
 
 
