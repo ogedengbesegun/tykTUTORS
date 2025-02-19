@@ -442,7 +442,7 @@ if (closeUp) {
 // let rpt;
 
 let count2 = 0;
-let qstnsSet = 10;
+let qstnsSet = 20;
 
 // console.log(rpt)
 //score is required
@@ -852,7 +852,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 3 * 60;
+    let duration = 10 * 60;
 
 
 

@@ -1,0 +1,312 @@
+[
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Economics ?",
+    "a": "study of how to make money",
+    "b": "study of how people make choices to satisfy their wants",
+    "c": "study of how to manage resources",
+    "d": "study of how to produce goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Scarcity ?",
+    "a": "state of abundant resources",
+    "b": "state of equilibrium",
+    "c": "state of insufficient resources to meet unlimited wants",
+    "d": "state of economic growth",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Opportunity Cost ?",
+    "a": "cost of producing a good",
+    "b": "cost of consuming a good",
+    "c": "cost of choosing one option over another",
+    "d": "cost of investing in a business",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Demand ?",
+    "a": "amount of goods and services buyers are willing to buy and pay for",
+    "b": "price of a good",
+    "c": "quantity of a good",
+    "d": "amount of goods and services producers are willing to produce",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Supply ?",
+    "a": "amount of goods and services buyers are willing to buy and pay for",
+    "b": "amount of goods and services producers are willing to produce and sell",
+    "c": "quantity of a good",
+    "d": "price of a good",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Market Equilibrium ?",
+    "a": "state where the quantity of a good demanded is greater than the quantity supplied",
+    "b": "state where the quantity of a good demanded is less than the quantity supplied",
+    "c": "state where the quantity of a good demanded equals the quantity supplied",
+    "d": "state where the price of a good is constant",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Price Elasticity of Demand ?",
+    "a": "measure of how responsive the quantity supplied of a good is to a change in its price",
+    "b": "measure of how responsive the demand for a good is to a change in the price of another good",
+    "c": "measure of how responsive the supply of a good is to a change in the price of another good",
+    "d": "measure of how responsive the quantity demanded of a good is to a change in its price",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Consumer Surplus ?",
+    "a": "difference between the actual price paid for a good and the minimum price a consumer is willing to pay",
+    "b": "total benefit derived by a consumer from consuming a good",
+    "c": "total cost incurred by a consumer in purchasing a good",
+    "d": "difference between the maximum price a consumer is willing to pay for a good and the actual price paid",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Producer Surplus ?",
+    "a": "difference between the minimum price a producer is willing to accept for a good and the actual price received",
+    "b": "total revenue earned by a producer from selling a good",
+    "c": "total cost incurred by a producer in producing a good",
+    "d": "difference between the actual price received by a producer for a good and the minimum price the producer is willing to accept",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Inflation ?",
+    "a": "sustained decrease in the general price level of goods and services in an economy over a period of time",
+    "b": "sustained increase in the general price level of goods and services in an economy over a period of time",
+    "c": "increase in the production of goods and services in an economy over a period of time",
+    "d": "decrease in the production of goods and services in an economy over a period of time",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Deflation ?",
+    "a": "sustained increase in the general price level of goods and services in an economy over a period of time",
+    "b": "sustained decrease in the general price level of goods and services in an economy over a period of time",
+    "c": "increase in the production of goods and services in an economy over a period of time",
+    "d": "decrease in the production of goods and services in an economy over a period of time",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Unemployment ?",
+    "a": "state of being employed",
+    "b": "state of being without a job",
+    "c": "state of being underemployed",
+    "d": "state of being overemployed",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Fiscal Policy ?",
+    "a": "use of government spending and taxation to manage the economy",
+    "b": "use of monetary policy to manage the economy",
+    "c": "use of supply-side economics to manage the economy",
+    "d": "use of demand-side economics to manage the economy",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Monetary Policy ?",
+    "a": "use of government spending and taxation to manage the economy",
+    "b": "use of interest rates and money supply to manage the economy",
+    "c": "use of supply-side economics to manage the economy",
+    "d": "use of demand-side economics to manage the economy",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is International Trade ?",
+    "a": "production of goods and services within a country",
+    "b": "exchange of goods and services within a country",
+    "c": "exchange of goods and services between countries",
+    "d": "consumption of goods and services within a country",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Comparative Advantage ?",
+    "a": "ability of a country to produce a good at a lower opportunity cost than another country",
+    "b": "ability of a country to produce a good at a higher opportunity cost than another country",
+    "c": "ability of a country to produce a good at the same opportunity cost as another country",
+    "d": "ability of a country to produce a good at a different opportunity cost than another country",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Absolute Advantage ?",
+    "a": "ability of a country to produce more of a good than another country",
+    "b": "ability of a country to produce a good at a lower opportunity cost than another country",
+    "c": "ability of a country to produce a good at the same opportunity cost as another country",
+    "d": "ability of a country to produce a good at a different opportunity cost than another country",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Economic Integration ?",
+    "a": "process of combining different economies into a single economy",
+    "b": "process of separating different economies into individual economies",
+    "c": "process of managing different economies as separate entities",
+    "d": "process of ignoring different economies",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Free Trade ?",
+    "a": "trade between countries with restrictions or tariffs",
+    "b": "trade between countries without any restrictions or tariffs",
+    "c": "trade within a country without any restrictions or tariffs",
+    "d": "trade within a country with restrictions or tariffs",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is Protectionism ?",
+    "a": "policy of protecting domestic industries from foreign competition",
+    "b": "policy of promoting free trade between countries",
+    "c": "policy of managing trade between countries",
+    "d": "policy of giving economic advantage to countries",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the main goal of macroeconomic policy?",
+    "a": "to reduce unemployment",
+    "b": "to increase economic growth",
+    "c": "to control inflation",
+    "d": "all of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of diminishing marginal utility?",
+    "a": "the more you consume, the more satisfaction you get",
+    "b": "the more you consume, the less satisfaction you get",
+    "c": "the more you consume, the same satisfaction you get",
+    "d": "the more you consume, the satisfaction remains constant",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the difference between a need and a want?",
+    "a": "a need is something you can live without, while a want is something you cannot live without",
+    "b": "a need is something you cannot live without, while a want is something you can live without",
+    "c": "a need is something you can buy, while a want is something you cannot buy",
+    "d": "a need is something you cannot buy, while a want is something you can buy",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of opportunity cost?",
+    "a": "the cost of choosing one option over another",
+    "b": "the cost of producing a good",
+    "c": "the cost of consuming a good",
+    "d": "the cost of investing in a business",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the law of supply?",
+    "a": "as the price of a good increases, the quantity supplied decreases",
+    "b": "as the price of a good increases, the quantity supplied increases",
+    "c": "as the price of a good decreases, the quantity supplied increases",
+    "d": "as the price of a good decreases, the quantity supplied decreases",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of consumer surplus?",
+    "a": "the difference between the maximum price a consumer is willing to pay and the actual price paid",
+    "b": "the difference between the actual price paid and the minimum price a consumer is willing to pay",
+    "c": "the total benefit derived by a consumer from consuming a good",
+    "d": "the total cost incurred by a consumer in purchasing a good",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of producer surplus?",
+    "a": "the difference between the actual price received by a producer and the minimum price the producer is willing to accept",
+    "b": "the difference between the minimum price a producer is willing to accept and the actual price received",
+    "c": "the total revenue earned by a producer from selling a good",
+    "d": "the total cost incurred by a producer in producing a good",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of economic efficiency?",
+    "a": "the production of goods and services at the lowest possible cost",
+    "b": "the production of goods and services at the highest possible cost",
+    "c": "the production of goods and services that maximizes consumer satisfaction",
+    "d": "the production of goods and services that minimizes consumer satisfaction",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "John Doe",
+    "ask": "What is the concept of economic growth?",
+    "a": "an increase in the production of goods and services in an economy over time",
+    "b": "a decrease in the production of goods and services in an economy over time",
+    "c": "a change in the production of goods and services in an economy over time",
+    "d": "no change in the production of goods and services in an economy over time",
+    "ans": "a"
+  },
+  {
+    "subject": "economics",
+    "author": "John Doe",
+    "ask": "What is the main goal of macroeconomic policy?",
+    "a": "to reduce unemployment",
+    "b": "to increase economic growth",
+    "c": "to control inflation",
+    "d": "all of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "economics",
+    "author": "John Doe",
+    "ask": "What is the concept of diminishing marginal utility?",
+    "a": "the more you consume, the more satisfaction you get",
+    "b": "the more you consume, the less satisfaction you get",
+    "c": "the more you consume, the same satisfaction you get",
+    "d": "the more you consume, the satisfaction remains constant",
+    "ans": "b"
+  }
+]

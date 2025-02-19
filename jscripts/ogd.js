@@ -559,7 +559,7 @@ $(document).ready(function () {
     });
 
 
-    $(".viewMore, .personalities").click(function () {
+    $(".viewMore, .schools").click(function () {
         $(".SectionTwo").toggle(1000);
         ;
         // if ($(".viewMore").text() = "Collapse") {

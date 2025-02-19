@@ -17,7 +17,7 @@ app.use(cors());
 
 // app.use(bodyParser.json());
 // MongoDB connection
-const uri = process.env.MONGO_db; // Replace with your actual MongoDB connection string
+const uri = process.env.MONGO_db2; // Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
 const PORT = process.env.PORT;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }
@@ -137,7 +137,20 @@ client.connect().then(() => {
 
         }
     });
-    ////eng
+    ////math
+    app.post('/getecon', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getecon = econ.find({ subject: "Economics" })
+            const arrayecon = await getecon.toArray();// to get multiple res findMany
+            res.json(arrayecon)
+        }
+        catch (error) {
+
+        }
+    });
+    ////econ
     app.post('/tchers', async (req, res) => {
         try {
             const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;

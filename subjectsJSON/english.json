@@ -158,6 +158,165 @@
     "c": "Gone",
     "d": "Going",
     "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the opposite of the word 'big'?",
+    "a": "Small",
+    "b": "Large",
+    "c": "Happy",
+    "d": "Tall",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the possessive adjective 'my' in the sentence: 'That is ______ book.'",
+    "a": "my",
+    "b": "mine",
+    "c": "mys",
+    "d": "myes",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following words is a synonym for 'fast'?",
+    "a": "Slow",
+    "b": "Quick",
+    "c": "Big",
+    "d": "Happy",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the verb 'to be' in the present tense for the subject 'they'.",
+    "a": "am",
+    "b": "is",
+    "c": "are",
+    "d": "be",
+    "ans": "c"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following sentences is in the passive voice?",
+    "a": "The dog bites the man.",
+    "b": "The man is bitten by the dog.",
+    "c": "The man bites the dog.",
+    "d": "The dog is bitten by the man.",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the meaning of the idiom 'break a leg'?",
+    "a": "to wish someone bad luck",
+    "b": "to wish someone good luck",
+    "c": "to tell someone to be careful",
+    "d": "to tell someone to work hard",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the verb 'to have' in the present perfect tense for the subject 'I'.",
+    "a": "have",
+    "b": "has",
+    "c": "had",
+    "d": "having",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following words is an antonym for 'hot'?",
+    "a": "Cold",
+    "b": "Warm",
+    "c": "Big",
+    "d": "Happy",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the verb 'to be' in the past tense for the subject 'he'.",
+    "a": "am",
+    "b": "is",
+    "c": "are",
+    "d": "was",
+    "ans": "d"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the meaning of the word 'nuance'?",
+    "a": "a subtle difference or shade of meaning",
+    "b": "a loud and clear expression",
+    "c": "a strong and bold statement",
+    "d": "a weak and timid voice",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the verb 'to do' in the present tense for the subject 'they'.",
+    "a": "do",
+    "b": "does",
+    "c": "did",
+    "d": "doing",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Which of the following sentences is in the active voice?",
+    "a": "The ball was thrown by John.",
+    "b": "John threw the ball.",
+    "c": "The ball is thrown by John.",
+    "d": "John is throwing the ball.",
+    "ans": "b"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the meaning of the word 'perspicacious'?",
+    "a": "having a keen understanding and insight",
+    "b": "having a strong and unpleasant smell",
+    "c": "having a sweet and pleasant taste",
+    "d": "having a loud and clear voice",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the verb 'to go' in the past tense for the subject 'they'.",
+    "a": "go",
+    "b": "goes",
+    "c": "went",
+    "d": "going",
+    "ans": "c"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What is the opposite of the word 'big'?",
+    "a": "Small",
+    "b": "Large",
+    "c": "Happy",
+    "d": "Tall",
+    "ans": "a"
+  },
+  {
+    "subject": "English-Language",
+    "author": "John Doe",
+    "ask": "Identify the correct form of the possessive adjective 'my' in the sentence: 'That is ______ book.'",
+    "a": "my",
+    "b": "mine",
+    "c": "mys",
+    "d": "myes",
+    "ans": "a"
   }
 ]
-
