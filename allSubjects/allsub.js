@@ -41,13 +41,22 @@ selectsubmsg.innerHTML = `<h3 class='text-danger mt-2'>Select a Subject First</h
 
 
 document.body.append(selectsubmsg);
-selectsubmsg.showModal();
+studentlogininput.addEventListener("mouseenter", () => {
+    selectsubmsg.showModal();
+}, { once: true });
+
 const selectsubj = document.querySelectorAll('.selectsubj');
 selectsubj.forEach(selsub => {
     selsub.addEventListener('click', () => {
         selectOne()
 
+        // selectsubmsg.close()
+
+
         selectsubmsg.close()
+        // studentlogininput.removeEventListener("mouseenter", arguments.callee);
+
+
     })
 })
 
