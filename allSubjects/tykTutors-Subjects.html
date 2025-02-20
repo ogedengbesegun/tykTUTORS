@@ -126,7 +126,7 @@
 
                 </button>
                 <select title="Select Subject" name="subjPick" id="subj"
-                    class="rounded-1 border-1 no-outline text-bg-dark p-1 select">
+                    class="rounded-1 border-1 no-outline text-bg-dark p-1 selectsubj">
                     <!-- <option class=" text-center">Select One</option> -->
 
                     <option value="engl" class="option">English-Language</option>
@@ -149,6 +149,10 @@
 
 
                 </select>
+
+                <i class="fas fa-arrow-left text-light  ms-2  pointer"></i><small class="text-light ms-1 pointer">Click
+                    to Select</small>
+
                 <p class="h3 text-light text-center mb-3 fw-bold  float-center hide dUserName"></p>
             </div>
             <!-- <h5 class="text-light">Welcome: Segun</h5> -->
@@ -202,7 +206,7 @@
                         <!-- ------- -->
                         <button type="button" title="Click to Login"
                             class="btn btn-warning mx-auto w-50 mt-2 d-block rounded-pill my-2"
-                            onclick="Login()">Login<span class="fas fa-user ms-1"></span> </button>
+                            onclick="Login()">Login<span class="fas fa-user ms-1 text-light"></span> </button>
                         <small title="forgot password?" class="text-light forgotPwd cursor">forgot password ?</small>
 
                         <!-- dialog to display re-enter password -->

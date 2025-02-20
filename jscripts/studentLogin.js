@@ -134,8 +134,13 @@ async function loginUser() {
         // if surname and password matches...
         if ((logid.value === loginRes.surname) && (passwd.value === loginRes.password)) {
             const subj = document.querySelector('#subj');
+            const pointer = document.querySelectorAll('.pointer')
             subj.remove()//to remvove the dropdown box from users
             //////
+            pointer.forEach(point => {
+                point.remove()
+            })///to remove the pointer info tags
+            ////
             const dUserName = document.querySelector('.dUserName');
             dUserName.style.display = 'block'// chnge from hide
             dUserName.textContent = `Welcome, ${loginRes.othernames.toUpperCase()}.`

@@ -29,6 +29,28 @@ subj.addEventListener('click', () => {
 ////////
 const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
 studentlogininput.setAttribute('readonly', true);
+let selectsubmsg = document.createElement('dialog');
+selectsubmsg.className = `text-bg-info border-1 w-50
+ text-center rounded-3 mx-auto my-auto`;
+selectsubmsg.innerHTML = `<h3 class='text-danger mt-2'>Select a Subject First</h3>
+<p class='text-center mx-2'>Please ensure you have selected the Subject of
+ choice first before login can be enabled !!!</p>
+ <button type='button' title='Select a Subject' 
+ class='btn btn-danger mx-auto w-50 mb-3
+ selectsubj'>Select</button>`;
+
+
+document.body.append(selectsubmsg);
+selectsubmsg.showModal();
+const selectsubj = document.querySelectorAll('.selectsubj');
+selectsubj.forEach(selsub => {
+    selsub.addEventListener('click', () => {
+        selectOne()
+
+        selectsubmsg.close()
+    })
+})
+
 ///////////////
 function selectOne() {
     // option[i++].addEventListener('click', () => {
@@ -56,7 +78,7 @@ function selectOne() {
 
         subTitle.textContent = subject.textContent
         title.textContent = subject.textContent + " tykTutors"
-        studentcolor.style.backgroundColor = color['ashes']
+        studentcolor.style.backgroundColor = color['ashblue']
 
     }
     else if (subj.value === 'econ') {
@@ -142,7 +164,7 @@ function selectOne() {
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
-        studentcolor.style.backgroundColor = color['ashes']
+        studentcolor.style.backgroundColor = color['lightgreen']
 
     }
     else if (subj.value === 'mart') {
@@ -158,7 +180,7 @@ function selectOne() {
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
-        studentcolor.style.backgroundColor = color['clay']
+        studentcolor.style.backgroundColor = color['ashblue']
 
     }
     else if (subj.value === 'anim') {
@@ -178,6 +200,7 @@ function selectOne() {
 
     if (subject.textContent != "Select a Subject") {
         studentlogininput.removeAttribute('readonly', true);
+
     }
 }
 
@@ -193,7 +216,8 @@ const color = {
     purple: '#9900cc',
     ashes: '#999966',
     darkpink: '#cc0066',
-    orange: '#ff8000'
+    orange: '#ff8000',
+    ashblue: '#75a3a3'
 };
 
 
@@ -746,7 +770,7 @@ function start() {
 
                 }
                 else {
-                    if (count = batchSize - 1) {
+                    if (count = batchSize) {
                         next.disabled = true;
 
                     }
