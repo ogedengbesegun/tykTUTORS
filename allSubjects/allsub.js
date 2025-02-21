@@ -652,7 +652,7 @@ function start() {
 
                 }
 
-                console.log(correctAnswers)
+                // console.log(correctAnswers)
 
                 // next.addEventListener("click", () => {
                 //     // console.log("l am here")
@@ -681,7 +681,7 @@ function start() {
                 let seescore = document.querySelector('.seescore');
 
                 let userAnswers = {}
-                console.log(userAnswers)
+                // console.log(userAnswers)
                 for (let j = 1; j <= batchSize; j++) {
 
 
