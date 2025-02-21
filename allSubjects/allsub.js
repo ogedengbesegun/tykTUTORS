@@ -42,7 +42,7 @@ selectsubmsg.innerHTML = `<h3 class='text-danger mt-2'>Select a Subject First</h
 
 document.body.append(selectsubmsg);
 // studentlogininput.addEventListener("mouseenter", () => {
-    selectsubmsg.showModal();
+selectsubmsg.showModal();
 // }, { once: true });
 
 const selectsubj = document.querySelectorAll('.selectsubj');
@@ -632,7 +632,10 @@ function start() {
 
                 const nextBatchEnd = Math.min(currentIndex + batchSize, totalBlocks);
                 for (let i = currentIndex + 1; i <= nextBatchEnd; i++) {
+
                     qstsAll.insertAdjacentHTML('beforeend', template(i));
+
+
 
 
 
@@ -718,26 +721,26 @@ function start() {
 
 
                 // Hide loading indicator if all blocks are loaded
-                if (currentIndex >= totalBlocks) {
-                    observer.unobserve(loadingIndicator);
-                    loadingIndicator.style.display = 'none';
-                }
+                // if (currentIndex >= totalBlocks) {
+                //     observer.unobserve(loadingIndicator);
+                //     loadingIndicator.style.display = 'none';
+                // }
 
             }
 
             // Intersection Observer to detect when loading indicator is visible
-            const observer = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting) {
-                    loadBatch();
-                }
-            }, {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            });
+            // const observer = new IntersectionObserver((entries) => {
+            //     if (entries[0].isIntersecting) {
+            //         loadBatch();
+            //     }
+            // }, {
+            //     root: null,
+            //     rootMargin: '0px',
+            //     threshold: 0.1
+            // });
 
             // Start observing the loading indicator
-            observer.observe(loadingIndicator);
+            // observer.observe(loadingIndicator);
 
             ////
             ///////start markin with the first qstn1
@@ -824,7 +827,12 @@ function start() {
             // console.log(optn1.value)
 
             // Initial load
-            loadBatch();
+            setTimeout(() => {
+                loadBatch();
+            }, 5000)
+
+
+
 
             ////////
 
@@ -885,7 +893,7 @@ function start() {
 
 
     }, 1000);
-    let duration = 10 * 60;
+    let duration = (10 * 60) + 4;
 
 
 
