@@ -509,7 +509,7 @@ function start() {
             const finaCome = await getfina.json();
             // console.log((finaCome.getfina));
             if (luk4sub.textContent === 'English-Language') {
-                return (finaCome.getengl);
+                return finaCome.getengl;
 
             }
             else if (luk4sub.textContent === 'Mathematics') {
@@ -562,7 +562,7 @@ function start() {
         try {
             const subj1 = await allsubjson()
             // console.log(fina1);
-            const fina = await fetch(subj1,// got from asychronise
+            const finans = await fetch(subj1,// got from asychronise
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -572,7 +572,7 @@ function start() {
                 }
             );
 
-            const resfina = await fina.json();
+            const resfina = await finans.json();
             let array = resfina;
 
             for (let i = array.length - 1; i > 0; i--) {
