@@ -367,13 +367,13 @@ regSignup.addEventListener('click', (event) => {
     const subform = document.querySelector('.subform');
 
     ///////////////
-    dlgsur.textContent = regSur.value.toUpperCase();
-    dlgother.textContent = regOther.value.toUpperCase();
+    dlgsur.textContent = regSur.value.toUpperCase().trim();
+    dlgother.textContent = regOther.value.toUpperCase().trim();
     dlgdob.textContent = regDob.value;
     dlgsex.textContent = sex();
-    dlgemail.textContent = regEmail.value;
-    dlgpassword.textContent = regPsw.type;
-    dlgphone.textContent = regNum.value;
+    dlgemail.textContent = regEmail.value.trim();
+    dlgpassword.textContent = regPsw.type.trim();
+    dlgphone.textContent = regNum.value.trim();
     // regPsw.setAttribute("")
 
 
@@ -419,8 +419,8 @@ regSignup.addEventListener('click', (event) => {
             // indicator.innerHTML = `<span class=''></span>`;
             dialoggh6.append(indicator);
             closebtn.addEventListener('click', () => {
-               ///
-               
+                ///
+
                 reg();
                 ////////////////
 
