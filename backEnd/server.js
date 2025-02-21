@@ -19,7 +19,7 @@ app.use(cors());
 // MongoDB connection
 const uri = process.env.MONGO_db2; // Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }
 client.connect().then(() => {
     const db = client.db('tykBank'); //  database name
