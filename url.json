@@ -1,6 +1,6 @@
 {
   "signup": "http://localhost:8080/getsignup",
-  "getLogin": "http://localhost:8080/getLogin",
+  "getLogin": "https://tyktutors.onrender.com/getLogin",
   "getUserName": "http://localhost:8080/getUserName",
   "getEmail": "http://localhost:8080/getEmail",
   "getTel": "http://localhost:8080/getTel",
