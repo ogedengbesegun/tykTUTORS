@@ -8,5 +8,8 @@
 .focus-light:focus {
   background-color: silver;
 }
-
-
+@media (max-width: 768px) {
+  /* .container {
+    font-size: xx-small;
+  } */
+}

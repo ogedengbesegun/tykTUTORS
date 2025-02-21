@@ -14,11 +14,28 @@ fieldset {
 }
 .span-color:hover {
   color: blue;
-  
+}
+.regSection input{
+  width: 50%;
+  padding: 7px;
+}
+/*  */
+.sexbox {
+  width: 50%;
 }
 /*  */
 @media screen and (max-width: 600px) {
   .my-auto {
     font-size: larger;
+  }
+}
+/* device screen smaller than 768px*/
+@media (max-width: 768px) {
+  .regSection input{
+    width: 75%;
+    padding: 7px;
+  }
+  .sexbox {
+    width: 75%;
   }
 }

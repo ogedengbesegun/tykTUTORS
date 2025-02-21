@@ -102,7 +102,7 @@ function emailOnly() {
     const Regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     // const regEmail = document.querySelector(".regEmail");
     regEmail.addEventListener("focusout", () => {
-        const emailValTrim = regEmail.value.trim();
+        const emailValTrim = regEmail.value;
         if (Regex.test(emailValTrim)) {
 
         }
@@ -367,13 +367,13 @@ regSignup.addEventListener('click', (event) => {
     const subform = document.querySelector('.subform');
 
     ///////////////
-    dlgsur.textContent = regSur.value.toUpperCase().trim();
-    dlgother.textContent = regOther.value.toUpperCase().trim();
+    dlgsur.textContent = regSur.value.toUpperCase();
+    dlgother.textContent = regOther.value.toUpperCase();
     dlgdob.textContent = regDob.value;
     dlgsex.textContent = sex();
-    dlgemail.textContent = regEmail.value.trim();
-    dlgpassword.textContent = regPsw.type.trim();
-    dlgphone.textContent = regNum.value.trim();
+    dlgemail.textContent = regEmail.value;
+    dlgpassword.textContent = regPsw.type;
+    dlgphone.textContent = regNum.value;
     // regPsw.setAttribute("")
 
 
@@ -461,7 +461,9 @@ async function reg() {
 
     try {
         const regSur = document.querySelector('.regSur').value;
+        // const surtrim = regSur; //trim whitespace
         const regOther = document.querySelector('.regOther').value;
+        // const othertrim = regOther.trim();//trim whitespace
         const regDob = document.querySelector('.regDob').value;
         ////////////
         // const regNum = document.querySelector('.regNum').value;
@@ -472,6 +474,7 @@ async function reg() {
 
 
         const regPsw = document.querySelector('.regPsw').value;
+        // const pswtrim = regPsw.trim()//trim whitespace
         const confirmsex = dlgsex = sex()// either M or F
 
 
@@ -484,10 +487,10 @@ async function reg() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                regSur: regSur, regOther: regOther,
+                regSur: regSur.trim(), regOther: regOther.trim(),
                 regDob: regDob, confirmsex: confirmsex,
                 dlgphone: dlgphone, dlgemail: dlgemail,
-                regPsw: regPsw
+                regPsw: regPsw.trim()
             })
         })
 
