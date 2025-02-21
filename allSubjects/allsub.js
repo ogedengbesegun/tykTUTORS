@@ -597,7 +597,7 @@ function start() {
 
             // Template for the HTML structure
             const template = (index) => `
-     <div class="mx-5 bg-success rounded-3 w-auto my-2 py-2 qstnHide${index} No-hide">
+     <div class="mx-2 bg-success rounded-3 w-auto my-2 py-2 qstnHide${index} No-hide">
          <h5 class="text-center mt-1 text-light qstNo" id="page${index}" value=${index}>Question ${index}</h5>
          <p class="fs-5 p-1 text-center text-light qstn1${index}">${qstn1 = array.slice(index - 1, index)[0].ask}</p>
 

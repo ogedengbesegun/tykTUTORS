@@ -8,6 +8,9 @@
 .focus-light:focus {
   background-color: silver;
 }
+.scoreSheetHead{
+  overflow-y: scroll;
+}
 @media (max-width: 768px) {
   /* .container {
     font-size: xx-small;
