@@ -8,7 +8,7 @@
   "tcherlogin": "http://localhost:8080/tcherlogin",
   "tcheremailexist": "http://localhost:8080/tcheremailexist",
   "tchertelexist": "http://localhost:8080/tchertelexist",
-  "fina": "http://localhost:8080/fina",
+  "fina": "https://tyktutors.onrender.com/fina",
   "engl": "http://localhost:8080/engl",
   "math": "http://localhost:8080/math",
   "econ": "http://localhost:8080/econ",

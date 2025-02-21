@@ -154,7 +154,7 @@
   },
   "subject": "Financial-Accounting",
   "author": "ogedengbe segun",
-  "ask": "Which of the folowing is NOT a petty cash book items? Purchase of__",
+  "ask": "Which of the following is NOT a petty cash book items? Purchase of__",
   "a": "machinery",
   "b": "stamps",
   "c": "office stationery",
@@ -324,7 +324,7 @@
   "b": "the financial position of the business",
   "c": "the arithemetical accuracy of the ledger",
   "d": "the result of the operations of the period",
-  "ans": "c",
+  "ans": "b",
   "tel": "08036749218",
   "password": "segden"
 },
@@ -360,13 +360,40 @@
 },
 {
   "_id": {
-    "$oid": "675d833faafdc4d3ad95374e"
+    "$oid": "6769f58ba9e207e03790def4"
   },
+  "author": "SEGUN ogedengbe victor",
   "subject": "Financial-Accounting",
-  "ask": "what is Ogedengbe Segun",
-  "a": "a boy",
-  "b": "a man",
-  "c": "a wonam ",
-  "d": "a Very Strong Man",
-  "ans": "d"
+  "ask": "liability is best defined as ______________",
+  "a": "the amount owed to outsiders in the business",
+  "b": "the debt of the customers to the company",
+  "c": "liable individuals in a business organization",
+  "d": "getting liability for all the owners of the business",
+  "ans": "a"
+},
+{
+  "_id": {
+    "$oid": "6783d9ecb5866f1da16902c5"
+  },
+  "author": "segun ogedengbe victor",
+  "subject": "Financial-Accounting",
+  "ask": "Assets is N30,000 , liabilities is N10,000. what is Capital?",
+  "a": "N50,000",
+  "b": "N40,000",
+  "c": "N20,000",
+  "d": "N30,000",
+  "ans": "b"
+},
+{
+  "_id": {
+    "$oid": "679382483bd19094426dda65"
+  },
+  "author": "kabiru taiwo",
+  "subject": "Financial-Accounting",
+  "ask": "What is the main purpose of preparing Departmental Account which is one of the Final Accounts",
+  "a": "to ascertain the goods for departments",
+  "b": "to ascertain the profit of each department for decision making purposes",
+  "c": "to get more sales for the departments",
+  "d": "departments must get  friendly to sell together",
+  "ans": "b"
 }]
