@@ -531,10 +531,10 @@ $(document).ready(function () {
     });
 
 
-    $('.menuList').mouseover(function () {
+    $('.menuList').click(function () {
         // hide nav element for me
         // $('.menuList').hide(200);
-
+        // $(this).hide();
         $(".contactsok").click();
 
 

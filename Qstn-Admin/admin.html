@@ -78,12 +78,12 @@
     <br><br> <!-- To put spacing into the -->
     <div class="container position-sticky top-0 mt-1 ">
         <section class="hid rounded-2 regSection">
-            <button type="button" title="close Page" class="float-end adminClose"> <i
-                    class="fas fa-times text-danger fs-4"></i></button>
+            <button type="button" title="close Page" class=" mt-1 float-end adminClose"> <i
+                    class="fas fa-times rounded-pill text-danger fs-1"></i></button>
 
             <br>
             <div class="session">
-                <fieldset class=" rounded-2 mt-3  my-2  p-2">
+                <fieldset class="me-2 rounded-2 mb-2">
                     <legend class="h2 text-center text-info bg-dark p-1 rounded-2"><b><u>Teacher's Registration</u></b>
                     </legend>
                     <b>
@@ -158,8 +158,8 @@
 
         <!--start of the admin Questions for Subjects  -->
         <div class=" loginSection"> <!--loginsection to hide all entirely-->
-            <section class="text-center my-2 rounded-2 d-flex gap-1">
-                <div class=" card p-2 border-1 border-dark w-50 h-50">
+            <section class="text-center my-2 rounded-2 t-platform">
+                <div class=" card p-2 border-1 border-dark  h-50 mb-1">
                     <h6 class="text-centre text-bg-primary p-1 rounded-1">Select Subject</h6>
                     <select title="Please Select Subject to include into the Project" name="teacherSub" id="teacherSub"
                         class="border-2 mb-1">
@@ -207,7 +207,7 @@
                 </div>
 
                 <!--  -->
-                <form action="" class="bg-secondary rounded-1 text-center form2 h-25  ">
+                <form action="" class="text-bg-dark border border-dark rounded-1 text-center form2 h-25  ">
                     <button type="button" title="close Page" class="float-end adminClose"> <i
                             class="fas fa-times text-danger fs-4"></i></button>
                     <h2 class="
@@ -217,13 +217,15 @@
                     <div class="d-block">
                         <p class="selectedSubject text-center text-light my-1"></p>
                         <input title="Enter Phone Number" type="tel" id="adminLogtel"
-                            class="no-outline text-center p-1 mb-1 mx-auto w-50" placeholder="Phone Number" required>
+                            class="no-outline text-center bg-light border-0 p-1 mb-1 mx-auto w-50"
+                            placeholder="Phone Number" required>
                         <input title="Enter Password" type="password" name="adminLogpwd" id="adminLogpwd"
-                            class=" no-outline text-center p-1 mx-auto  w-50" placeholder="Password" required>
+                            class=" no-outline text-center bg-light border-0 p-1 mx-auto  w-50" placeholder="Password"
+                            required>
                         <button title="Click Login Button" type="button"
-                            class="btn w-1 mx-auto my-2 border-primary border-2 text-light fs-5 d-block teacherlogin">Login</button>
-                        <u class="text-light">
-                            <small class="text-warning fw-bold teaforgotpwd cursor">forgot Password ?</small></u>
+                            class="btn btn-dark mx-auto my-2 text-light  border-3 fs-5 d-block teacherlogin">Login</button>
+                        <u class="text-light fw-bold">
+                            <small class=" teaforgotpwd cursor mb-1">forgot Password ?</small></u>
                         <samp class=" hide text-bg-danger mx-1 rounded-1 p-1">
                             <i class="fas fa-warning"></i> Select a SUBJECT to Login
                         </samp>

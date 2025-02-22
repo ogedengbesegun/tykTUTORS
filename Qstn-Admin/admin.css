@@ -22,7 +22,7 @@ fieldset {
 }
 .session {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 /* this will take an element back to negative left */
 .neg-ms-1 {
@@ -41,17 +41,25 @@ fieldset {
 .reEnterPwd {
   background-color: rgb(158, 203, 245);
 }
+.loginSection .t-platform{
+  display: flex;
 
+}
 /* device screen smaller than 768px tablet screens*/
 @media (max-width: 768px) {
   fieldset {
     /* background-color: rgba(58, 58, 61, 0.705); */
-    width: 100%;
+    width: 93%;
   }
 
+  .loginSection .t-platform{
+    display:block;
+    width: 75%;
+  margin-left: 12%;
+  margin-right: 12%;
+  }
   .session {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 }
 
