@@ -456,7 +456,7 @@ function detail() {
     let pgraph = document.createElement('p')
     pgraph.className = `text-danger h4 p-1 my-2
     text-center cursor border border-1 border-dark rounded-2`;
-    pgraph.innerText = 'Greater things l am doing now';
+    pgraph.innerText = 'Greater things we "ALL" can Do.';
     if (details1) {
         details1.append(pgraph);
 
@@ -525,15 +525,15 @@ $(document).ready(function () {
 
 
 
-    $(".navBarIcon").click(function () {
+    $(".navBarIcon").click(() => {
         $(".menuList").show(200)
 
     });
 
 
-    $(".menuList").mouseleave(function () {
+    $('.menuList').mouseover(function () {
         // hide nav element for me
-        $(this).hide(200);
+        // $('.menuList').hide(200);
 
         $(".contactsok").click();
 
