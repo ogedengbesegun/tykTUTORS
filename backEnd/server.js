@@ -17,7 +17,7 @@ app.use(cors());
 
 // app.use(bodyParser.json());
 // MongoDB connection
-const uri =process.env.MONGO_db2; // Replace with your actual MongoDB connection string
+const uri = process.env.MONGO_db2; // Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
 const PORT = process.env.PORT || 8080;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }
@@ -110,7 +110,7 @@ client.connect().then(() => {
         catch (error) {
 
         }
-    });///////////////////////// end fina
+    });/// fina
     app.post('/getengl', async (req, res) => {
         try {
             // req.body;
@@ -138,6 +138,7 @@ client.connect().then(() => {
         }
     });
     ////math
+    //econ
     app.post('/getecon', async (req, res) => {
         try {
             // req.body;
@@ -150,7 +151,176 @@ client.connect().then(() => {
 
         }
     });
-    ////econ
+    //econ
+    ////comp
+    app.post('/getcomp', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getcomp = comp.find({ subject: "Computer-Studies" })
+            const arraycomp = await getcomp.toArray();// to get multiple res findMany
+            res.json(arraycomp)
+        }
+        catch (error) {
+
+        }
+    });
+    ////comp
+    ////biol
+    app.post('/getbiol', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getbiol = biol.find({ subject: "Biology" })
+            const arraybiol = await getbiol.toArray();// to get multiple res findMany
+            res.json(arraybiol)
+        }
+        catch (error) {
+
+        }
+    });
+    ////biol
+    ////phys
+    app.post('/getphys', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getphys = phys.find({ subject: "Physics" })
+            const arrayphys = await getphys.toArray();// to get multiple res findMany
+            res.json(arrayphys)
+        }
+        catch (error) {
+
+        }
+    });
+    ////phys
+    ////chem
+    app.post('/getchem', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getchem = chem.find({ subject: "Chemistry" })
+            const arraychem = await getchem.toArray();// to get multiple res findMany
+            res.json(arraychem)
+        }
+        catch (error) {
+
+        }
+    });
+    ////chem
+    ////furt
+    app.post('/getfurt', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getfurt = furt.find({ subject: "Further-Mathematics" })
+            const arrayfurt = await getfurt.toArray();// to get multiple res findMany
+            res.json(arrayfurt)
+        }
+        catch (error) {
+
+        }
+    });
+    ////furt
+     ////comm
+     app.post('/getcomm', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getcomm = comm.find({ subject: "Commerce" })
+            const arraycomm = await getcomm.toArray();// to get multiple res findMany
+            res.json(arraycomm)
+        }
+        catch (error) {
+
+        }
+    });
+    ////comm
+    ////lite
+    app.post('/getlite', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getlite = lite.find({ subject: "Literature-in-English" })
+            const arraylite = await getlite.toArray();// to get multiple res findMany
+            res.json(arraylite)
+        }
+        catch (error) {
+
+        }
+    });
+    ////lite
+     ////gove
+     app.post('/getgove', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getgove = gove.find({ subject: "Government" })
+            const arraygove = await getgove.toArray();// to get multiple res findMany
+            res.json(arraygove)
+        }
+        catch (error) {
+
+        }
+    });
+    ////civi
+     ////civi
+     app.post('/getcivi', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getcivi = civi.find({ subject: "Civic-Education" })
+            const arraycivi = await getcivi.toArray();// to get multiple res findMany
+            res.json(arraycivi)
+        }
+        catch (error) {
+
+        }
+    });
+    ////civi
+      ////mart
+      app.post('/getmart', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getmart = mart.find({ subject: "Marketing" })
+            const arraymart = await getmart.toArray();// to get multiple res findMany
+            res.json(arraymart)
+        }
+        catch (error) {
+
+        }
+    });
+    ////mart
+     ////proc
+     app.post('/getproc', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getproc = proc.find({ subject: "Data-Processing" })
+            const arrayproc = await getproc.toArray();// to get multiple res findMany
+            res.json(arrayproc)
+        }
+        catch (error) {
+
+        }
+    });
+    ////proc
+    ////anim
+    app.post('/getanim', async (req, res) => {
+        try {
+            // req.body;
+            // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
+            const getanim = anim.find({ subject: "Animal-Husbandary" })
+            const arrayanim = await getanim.toArray();// to get multiple res findMany
+            res.json(arrayanim)
+        }
+        catch (error) {
+
+        }
+    });
+    ////anim
+
     app.post('/tchers', async (req, res) => {
         try {
             const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;
