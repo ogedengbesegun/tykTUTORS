@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 /* this cover the screen for me */
-.screenCover {
+/* .screenCover {
   position: fixed;
   top: 5px;
   left: 0;
@@ -10,7 +10,7 @@
   height: 100%;
   z-index: 2;
   background-color: rgba(14, 13, 13, 0.25);
-}
+} */
 .hide {
   display: none;
 }
