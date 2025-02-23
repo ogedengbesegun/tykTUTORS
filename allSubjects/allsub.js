@@ -29,6 +29,7 @@ subj.addEventListener('click', () => {
 ////////
 const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
 studentlogininput.setAttribute('readonly', true);
+
 let selectsubmsg = document.createElement('dialog');
 selectsubmsg.className = `text-bg-info border-1 w-50
  text-center rounded-3 mx-auto my-auto`;
@@ -208,17 +209,19 @@ function selectOne() {
         studentcolor.style.backgroundColor = color['darkpink']
 
     }
+    else if (subject.textContent != "Select a Subject") {
+        studentlogininput.removeAttribute('readonly', true);
+
+    }
     else {
         subject.textContent = option[0].text;
         title.textContent = 'tykTUTORS-Subject Selection'
         // studentcolor.style.backgroundColor = color['green'];
+        studentlogininput.setAttribute('readonly', true);
 
     }
 
-    if (subject.textContent != "Select a Subject") {
-        studentlogininput.removeAttribute('readonly', true);
 
-    }
 }
 
 

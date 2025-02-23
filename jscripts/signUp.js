@@ -313,7 +313,7 @@ stdRegBtns.forEach((stdRegBtn) => {
 
 const signHome = document.querySelector(".signHome"); //variable declared
 signHome.addEventListener("click", () => {
-    let url = "/index.html"
+    let url = "https://tyktutors.onrender.com"
     window.close();//closes first the active page
     const existing = window.open(url, 'index.html');
     // existing
