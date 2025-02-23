@@ -313,15 +313,15 @@ stdRegBtns.forEach((stdRegBtn) => {
 
 const signHome = document.querySelector(".signHome"); //variable declared
 signHome.addEventListener("click", () => {
-    let url = "https://tyktutors.onrender.com"
+    let url = "/index.html"
     window.close();//closes first the active page
     const existing = window.open(url, 'index.html');
-    // existing
-    if (existing) {// if already existing focus on it
-        window.focus()
+    existing
+    // if (existing) {// if already existing focus on it
+    //     window.focus()
 
 
-    }
+    // }
 
 });
 
