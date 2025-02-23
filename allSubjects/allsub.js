@@ -209,10 +209,6 @@ function selectOne() {
         studentcolor.style.backgroundColor = color['darkpink']
 
     }
-    else if (subject.textContent != "Select a Subject") {
-        studentlogininput.removeAttribute('readonly', true);
-
-    }
     else {
         subject.textContent = option[0].text;
         title.textContent = 'tykTUTORS-Subject Selection'
@@ -221,7 +217,14 @@ function selectOne() {
 
     }
 
+    if (subject.textContent != "Select a Subject") {
+        studentlogininput.removeAttribute('readonly', true);
 
+    }
+    else{
+        studentlogininput.setAttribute('readonly', true);
+
+    }
 }
 
 
