@@ -217,7 +217,7 @@ function selectOne() {
         subject.textContent = option[0].text;
         title.textContent = 'tykTUTORS-Subject Selection'
         // studentcolor.style.backgroundColor = color['green'];
-        studentlogininput.setAttribute('readonly', true);
+        // studentlogininput.setAttribute('readonly', true);
 
     }
 
