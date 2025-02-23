@@ -503,7 +503,15 @@ let summary2 = document.querySelector(".summary2")
 //     console.log(fals)
 // })
 
+eachbtn = document.querySelectorAll('.eachbtn');
+eachbtn.forEach(eachbt => {
+    eachbt.addEventListener('click', (event) => {
+        // console.log(event.target.innerText)
+        // event.target
+        document.querySelector('.menuList').style.display = 'none';
 
+    })
+})
 
 
 
@@ -531,11 +539,11 @@ $(document).ready(function () {
     });
 
 
-    $('.menuList').click(function () {
+    $('.menuList').click(function (event) {
         // hide nav element for me
         // $('.menuList').hide(200);
-        // $(this).hide();
-        $(".contactsok").click();
+        $(event.target.this).hide();
+        // $(".contactsok").click();
 
 
     });
@@ -566,10 +574,6 @@ $(document).ready(function () {
         //     $(".viewMore").text().toggle()
         // }
     });
-
-
-
-
 
     // i want remove  the subject modal dialog
     const rmsubjList = document.querySelectorAll(".rm-subjList");

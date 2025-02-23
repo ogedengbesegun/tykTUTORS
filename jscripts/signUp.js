@@ -12,7 +12,6 @@ const regPassword2 = document.querySelector("#regPassword2");
 
 
 
-///set the min attribute of regDob
 
 
 // regDob.addEventListener('keydown', (event) => {
@@ -309,11 +308,21 @@ stdRegBtns.forEach((stdRegBtn) => {
 //     })
 // })
 
+
+
+
 const signHome = document.querySelector(".signHome"); //variable declared
 signHome.addEventListener("click", () => {
     let url = "/index.html"
     window.close();//closes first the active page
-    window.open(url, 'index.html'); //open the url
+    const existing = window.open(url, 'index.html');
+    // existing
+    if (existing) {// if already existing focus on it
+        window.focus()
+
+
+    }
+
 });
 
 

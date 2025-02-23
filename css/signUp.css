@@ -15,7 +15,7 @@ fieldset {
 .span-color:hover {
   color: blue;
 }
-.regSection input{
+.regSection input {
   width: 50%;
   padding: 7px;
 }
@@ -23,6 +23,9 @@ fieldset {
 .sexbox {
   width: 50%;
 }
+
+/*signmarquee  */
+
 /*  */
 @media screen and (max-width: 600px) {
   .my-auto {
@@ -31,7 +34,7 @@ fieldset {
 }
 /* device screen smaller than 768px*/
 @media (max-width: 768px) {
-  .regSection input{
+  .regSection input {
     width: 75%;
     padding: 7px;
   }
@@ -39,3 +42,12 @@ fieldset {
     width: 75%;
   }
 }
+
+/* @keyframes signmarquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */

@@ -32,12 +32,12 @@ studentlogininput.setAttribute('readonly', true);
 let selectsubmsg = document.createElement('dialog');
 selectsubmsg.className = `text-bg-info border-1 w-50
  text-center rounded-3 mx-auto my-auto`;
-selectsubmsg.innerHTML = `<h3 class='text-danger mt-2'>Select a Subject First</h3>
+selectsubmsg.innerHTML = `<h3 class='text-danger mt-2 px-2'>Select a Subject First</h3>
 <p class='text-center mx-2'>Please ensure you have selected the Subject of
  choice first before login can be enabled !!!</p>
- <button type='button' title='Select a Subject' 
+ <button type='button' title='info' 
  class='btn btn-danger mx-auto w-50 mb-3
- selectsubj'>Select</button>`;
+ info'>Ok</button>`;
 
 
 document.body.append(selectsubmsg);
@@ -45,35 +45,43 @@ document.body.append(selectsubmsg);
 selectsubmsg.showModal();
 // }, { once: true });
 
-const selectsubj = document.querySelectorAll('.selectsubj');
-selectsubj.forEach(selsub => {
-    selsub.addEventListener('click', () => {
-        selectOne()
+const info = document.querySelector('.info');
 
-        // selectsubmsg.close()
+info.addEventListener('click', () => {
+    // selectOne()
 
-
-        selectsubmsg.close()
-        // studentlogininput.removeEventListener("mouseenter", arguments.callee);
+    // selectsubmsg.close()
 
 
-    })
+    selectsubmsg.close()
+    // studentlogininput.removeEventListener("mouseenter", arguments.callee);
+
+
 })
 
+// selectOne()
+// subj.addEventListener('mouseenter', (event) => {
+//     // if (subj.value === event.target.value) {
+//     //     console.log(event.target.value)
+
+//     // }
+//     subject.textContent = "Select  a Subject"
+// })
 ///////////////
 function selectOne() {
+
     // option[i++].addEventListener('click', () => {
     if (subj.value === 'engl') {
         // if (studentcolor.classList.contains('text-bg-primary')) {
         // studentcolor.classList.remove('text-bg-primary');
         studentcolor.style.backgroundColor = color['orange']
         // }
-        subject.textContent = option[0].text;
+        subject.textContent = option[1].text;
         subTitle.textContent = subject.textContent
         title.textContent = subject.textContent + " tykTutors"
     }
     else if (subj.value === 'math') {
-        subject.textContent = option[1].text;
+        subject.textContent = option[2].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors";
@@ -83,7 +91,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'fina') {
-        subject.textContent = option[2].text;
+        subject.textContent = option[3].text;
 
         subTitle.textContent = subject.textContent
         title.textContent = subject.textContent + " tykTutors"
@@ -91,7 +99,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'econ') {
-        subject.textContent = option[3].text;
+        subject.textContent = option[4].text;
 
         subTitle.textContent = subject.textContent
 
@@ -100,7 +108,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'comp') {
-        subject.textContent = option[4].text;
+        subject.textContent = option[5].text;
 
         subTitle.textContent = subject.textContent
 
@@ -109,7 +117,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'biol') {
-        subject.textContent = option[5].text;
+        subject.textContent = option[6].text;
 
         subTitle.textContent = subject.textContent
 
@@ -118,7 +126,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'phys') {
-        subject.textContent = option[6].text;
+        subject.textContent = option[7].text;
 
         subTitle.textContent = subject.textContent
 
@@ -127,7 +135,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'chem') {
-        subject.textContent = option[7].text;
+        subject.textContent = option[8].text;
 
         subTitle.textContent = subject.textContent
 
@@ -136,7 +144,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'furt') {
-        subject.textContent = option[8].text;
+        subject.textContent = option[9].text;
 
         subTitle.textContent = subject.textContent
 
@@ -145,7 +153,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'comm') {
-        subject.textContent = option[9].text;
+        subject.textContent = option[10].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -153,7 +161,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'lite') {
-        subject.textContent = option[10].text;
+        subject.textContent = option[11].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -161,7 +169,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'gove') {
-        subject.textContent = option[11].text;
+        subject.textContent = option[12].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -169,7 +177,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'civi') {
-        subject.textContent = option[12].text;
+        subject.textContent = option[13].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -177,7 +185,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'mart') {
-        subject.textContent = option[13].text;
+        subject.textContent = option[14].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -185,7 +193,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'proc') {
-        subject.textContent = option[14].text;
+        subject.textContent = option[15].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -193,7 +201,7 @@ function selectOne() {
 
     }
     else if (subj.value === 'anim') {
-        subject.textContent = option[15].text;
+        subject.textContent = option[16].text;
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
@@ -203,7 +211,7 @@ function selectOne() {
     else {
         subject.textContent = option[0].text;
         title.textContent = 'tykTUTORS-Subject Selection'
-        studentcolor.style.backgroundColor = color['green'];
+        // studentcolor.style.backgroundColor = color['green'];
 
     }
 

@@ -37,11 +37,16 @@
      p-2 text-bg-dark position-fixed top-0 z-2 w-100 ">
 
 
-        <span title="Home Page"
-            class="fas fa-home border border-3 border-light  p-2 rounded-pill mt-1 ms-3 fs-4 text-light opacity-100 cursor signHome"></span>
-        <h1 class=" text-primary my-auto">Test Your Knowledge (TYK)</h1>
-        <span title="Login" class="fas fa-book-open border border-3 border-light  p-2 rounded-pill 
-            mt-1 me-3 fs-4 text-light opacity-100 cursor accountExist"></span>
+        <div class="d-flex align-items-center">
+            <span title="Home Page"
+                class="fas fa-home border border-3 border-light  p-2 rounded-pill mt-1 ms-3 fs-4 text-light opacity-100 cursor signHome"></span>
+            <small class="ms-1">Home</small>
+        </div>
+        <p class=" text-primary my-auto h4">Test Your Knowledge (tyk)</p>
+        <div class="d-flex align-items-center">
+            <span title="Login" class="fas fa-book-open border border-3 border-light  p-2 rounded-pill 
+        mt-1 me-1 fs-4 text-light opacity-100 cursor accountExist"></span><small>Login</small>
+        </div>
     </div>
 
     <div class="container mt-3">
@@ -53,7 +58,7 @@
             <span title="Close Page" class="fas fa-times-circle fs-3 text-primary position closeSignUp"></span>
             <fieldset class=" mx-auto text-center rounded-4 border border-light border-2 mt-5">
                 <legend class="text-light  mt-2 fs-3 register">Students' Registration</legend>
-                <h4 class="m-0 text-primary text-decoration-underline">Test Your Knowledge Platfrom</h4>
+                <h4 class="m-0 text-primary text-decoration-underline"> Registration@tykTutor</h4>
                 <small class="text-light p-1 m-1 text-center d-block fs-6 mb-2 w-75 mx-auto">Register on this platform
                     as a Student
                     to get you
@@ -75,7 +80,7 @@
                                     class="d-inline regMale" value="M" required></label>
                             <label title="Female" for="female" class="ms-2">Female <input type="radio" name="sex"
                                     id="female" class="d-inline regFemale" value="F" required></label>
-                            </div>
+                        </div>
 
 
                         <input type=" text" name="telephone" id="telephone" placeholder="080******123"
