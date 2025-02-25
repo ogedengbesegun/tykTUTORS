@@ -260,54 +260,54 @@ adminLogtel.addEventListener("input", (e) => {
 
 // write a function the subject selections
 function subjectText() { //declaration of function to change to textContent
-    const s = "Subject: "
+
     if (teacherSub.value == "engl") {
-        return s + "English-Language"
+        return "English-Language"
     }
     else if (teacherSub.value == "math") {
-        return s + "Mathematics"
+        return "Mathematics"
     }
     else if (teacherSub.value == "fina") {
-        return s + "Financial-Accounting"
+        return "Financial-Accounting"
     }
     else if (teacherSub.value == "econ") {
-        return s + "Economics"
+        return "Economics"
     }
     else if (teacherSub.value == "comp") {
-        return s + "Computer-Studies"
+        return "Computer-Studies"
     }
     else if (teacherSub.value == "biol") {
-        return s + "Biology"
+        return "Biology"
     }
     else if (teacherSub.value == "phys") {
-        return s + "Physics"
+        return "Physics"
     }
     else if (teacherSub.value == "chem") {
-        return s + "Chemistry"
+        return "Chemistry"
     }
     else if (teacherSub.value == "furt") {
-        return s + "Further-Mathematics"
+        return "Further-Mathematics"
     }
     else if (teacherSub.value == "comm") {
-        return s + "Commerce"
+        return "Commerce"
     }
     else if (teacherSub.value == "lite") {
-        return s + "Literature-in-English"
+        return "Literature-in-English"
     }
     else if (teacherSub.value == "gove") {
-        return s + "Government"
+        return "Government"
     }
     else if (teacherSub.value == "civi") {
-        return s + "Civic-Education"
+        return "Civic-Education"
     }
     else if (teacherSub.value == "mart") {
-        return s + "Marketing"
+        return "Marketing"
     }
     else if (teacherSub.value == "proc") {
-        return s + "Data-Processing"
+        return "Data-Processing"
     }
     else if (teacherSub.value == "anim") {
-        return s + "Animal-Husbandary"
+        return "Animal-Husbandary"
     }
 
     else {
