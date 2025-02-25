@@ -361,9 +361,9 @@ section .why {
   right: 35px;
 }
 
-.position {
+.positionx {
   position: relative;
-  top: 64px;
+  top: 59px;
   right: -7px;
   float: right;
 }

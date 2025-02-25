@@ -183,7 +183,7 @@ let selectedSubject = document.querySelector(".selectedSubject");
 ///declare samp element
 let samp = document.querySelector("samp");
 /////
-teacherSub.addEventListener("click", () => {
+teacherSub.addEventListener("input", () => {
     // teacherSub.value; // onclick remain in your state
 
     if (teacherSub.value == ">>>Select One") {
@@ -260,53 +260,54 @@ adminLogtel.addEventListener("input", (e) => {
 
 // write a function the subject selections
 function subjectText() { //declaration of function to change to textContent
+    const s = "Subject: "
     if (teacherSub.value == "engl") {
-        return "English-Language"
+        return s + "English-Language"
     }
     else if (teacherSub.value == "math") {
-        return "Mathematics"
+        return s + "Mathematics"
     }
     else if (teacherSub.value == "fina") {
-        return "Financial-Accounting"
+        return s + "Financial-Accounting"
     }
     else if (teacherSub.value == "econ") {
-        return "Economics"
+        return s + "Economics"
     }
     else if (teacherSub.value == "comp") {
-        return "Computer-Studies"
+        return s + "Computer-Studies"
     }
     else if (teacherSub.value == "biol") {
-        return "Biology"
+        return s + "Biology"
     }
     else if (teacherSub.value == "phys") {
-        return "Physics"
+        return s + "Physics"
     }
     else if (teacherSub.value == "chem") {
-        return "Chemistry"
+        return s + "Chemistry"
     }
     else if (teacherSub.value == "furt") {
-        return "Further-Mathematics"
+        return s + "Further-Mathematics"
     }
     else if (teacherSub.value == "comm") {
-        return "Commerce"
+        return s + "Commerce"
     }
     else if (teacherSub.value == "lite") {
-        return "Literature-in-English"
+        return s + "Literature-in-English"
     }
     else if (teacherSub.value == "gove") {
-        return "Government"
+        return s + "Government"
     }
     else if (teacherSub.value == "civi") {
-        return "Civic-Education"
+        return s + "Civic-Education"
     }
     else if (teacherSub.value == "mart") {
-        return "Marketing"
+        return s + "Marketing"
     }
     else if (teacherSub.value == "proc") {
-        return "Data-Processing"
+        return s + "Data-Processing"
     }
     else if (teacherSub.value == "anim") {
-        return "Animal-Husbandary"
+        return s + "Animal-Husbandary"
     }
 
     else {
@@ -767,14 +768,14 @@ submitAdmin.addEventListener('click', function (event) {
             indicator.close();
 
             window.location.reload();
-        },5000)
+        }, 5000)
 
 
 
 
 
 
-        
+
 
 
 
