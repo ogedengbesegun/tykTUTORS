@@ -266,18 +266,7 @@ button[title="Previous Question"]:hover {
   height: 5%;
 }
 
-.screenCover {
-  position: fixed;
-  top: -10px;
-  left: 0;
-  border-radius: 5px;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 
-  /* background-color: rgba(14, 13, 13, 0.25); */
-}
 
 .fieldset-0 ul{
   display: grid;
