@@ -102,7 +102,8 @@ async function loginUser() {
     let invalidmsg = document.querySelector(".invalidmsg");
     let okclose = document.querySelector(".okclose");
 
-
+    const indicators = document.querySelector('.indicators');
+    indicators.showModal();
     ///////
     async function fUsers() {// get http url
         const userurl = await fetch("/url.json");
@@ -179,7 +180,8 @@ async function loginUser() {
 
 
             // the dialog is secretly opened, so close it up 
-            invalidmsg.close();
+            invalidmsg.close()
+
 
 
             // alert("Welcome" + " " + loginRes.othernames + " you have login Successfully");
