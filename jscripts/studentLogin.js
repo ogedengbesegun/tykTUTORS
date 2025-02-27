@@ -79,11 +79,13 @@ logid.addEventListener("focusin", () => {
 
 function Login() {
     sessionStorage.setItem("name", logid.value);// sessionStorage.setItem()method
-
+    logid.value = logid.value.trim()
     // -------------------------------------------------
     //launch the loginUser function
-
+setTimeout(()=>{
     loginUser();
+
+},500)
 
 
 
