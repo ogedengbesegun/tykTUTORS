@@ -119,7 +119,9 @@ names.forEach(eachName => {
 let adminClose = document.querySelectorAll(".adminClose");
 adminClose.forEach(adminclose => { //to fireUp all the classes called adminClose
     adminclose.addEventListener("click", () => {
-        window.close();
+        let url = "/index.html";
+        window.open(url, 'index');////open landing page
+        window.close();//close current page
     })
 })
 

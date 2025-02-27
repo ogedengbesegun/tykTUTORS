@@ -104,6 +104,11 @@ async function loginUser() {
 
     const indicators = document.querySelector('.indicators');
     indicators.showModal();
+    const delay = (m) =>
+        new Promise((resolve) =>
+            setTimeout(resolve, m)
+        )
+    await delay(2000)
     ///////
     async function fUsers() {// get http url
         const userurl = await fetch("/url.json");
@@ -203,6 +208,14 @@ async function loginUser() {
             passwd.value = "";
             // window.location.reload()
         });
+    }
+
+    finally {
+
+        /////
+        indicators.close();
+
+
     }
 
 }

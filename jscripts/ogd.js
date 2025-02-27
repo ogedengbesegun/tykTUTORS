@@ -143,8 +143,12 @@ let QuizQuestn = document.querySelectorAll(".QuizQuestn");
 QuizQuestn.forEach((QuizQuestns) => {
     if (QuizQuestns) {
         QuizQuestns.addEventListener("click", function () {
-            document.querySelector(".menuList").style.display = "none";
-            document.querySelector(".screenCover").style.display = "block";
+            let url = "/allSubjects/tykTutors-Subjects.html";
+            window.open(url, 'tykTutors-Subjects')
+            window.close()// close it up
+
+            // document.querySelector(".menuList").style.display = "none";
+            // document.querySelector(".screenCover").style.display = "block";
             // screenCover.classList.remove('hide');
         });
     }
@@ -174,6 +178,7 @@ if (adminSign) {
         let adminURL = "/Qstn-Admin/admin.html";
 
         window.open(adminURL, "admin");
+        window.close()
     });
 
 }
@@ -293,6 +298,7 @@ if (signUp) {
     signUp.addEventListener("click", () => {
         let url = "/html/signUp.html";
         window.open(url, "blank");
+        window.close()
     })
 };
 

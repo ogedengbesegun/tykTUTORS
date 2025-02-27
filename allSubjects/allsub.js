@@ -27,7 +27,7 @@ const studentlogininput = document.querySelector('.studentlogin input[type="pass
 studentlogininput.setAttribute('readonly', true);
 
 let selectsubmsg = document.createElement('dialog');
-selectsubmsg.className = `text-bg-info border-1 w-50
+selectsubmsg.className = `text-bg-light border-1 w-50
  text-center rounded-3 mx-auto my-auto`;
 selectsubmsg.innerHTML = `<h3 class='text-danger mt-2 px-2'>Select a Subject First</h3>
 <p class='text-center mx-2'>Please ensure you have selected the Subject of
