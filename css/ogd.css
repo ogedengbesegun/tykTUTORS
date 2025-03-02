@@ -23,16 +23,21 @@ body {
   background-repeat: no-repeat;
   min-height: 1%;
   background-position: center;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
 }
 .txt {
-  width: 30%;
+  position: absolute;
+  bottom: 0px;
   margin-right: 5px;
+  margin-left: -5px;
   font-weight: bold;
-  float: right;
+  /* float: right; */
   font-size: large;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .letgo {
@@ -85,10 +90,11 @@ th {
   font-family: Verdana, Geneva, Tahoma, sans-serif "Times New Roman", Times,
     serif;
   font-weight: 600;
-  background-color: rgba(73, 64, 64, 0.3);
-  padding: 10px;
+  background-color: rgba(37, 31, 31, 0.9);
+  padding: 5px;
   width: 100%;
   height: 100%;
+  margin-bottom: 5px;
 }
 
 .backHome {
@@ -266,15 +272,12 @@ button[title="Previous Question"]:hover {
   height: 5%;
 }
 
-
-
-.fieldset-0 ul{
+.fieldset-0 ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* width: 50%; */
   margin-left: auto;
   margin-right: auto;
-
 }
 section .why {
   background-color: rgba(0, 0, 0, 0.45);
@@ -483,12 +486,11 @@ footer {
   .sm-btn {
     font-size: small;
   }
-  .fieldset-0 ul{
+  .fieldset-0 ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* width: 50%; */
     margin-left: auto;
     margin-right: auto;
-  
   }
 }

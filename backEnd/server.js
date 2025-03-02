@@ -3,6 +3,8 @@ import dotenv from 'dotenv'; //to have access to the .env
 import express from 'express';
 import { MongoClient } from 'mongodb';
 // import bodyParser from 'body-parser';
+// import uuid from 'uuid'
+import nodemailer from 'nodemailer';
 import cors from 'cors';
 
 dotenv.config();
@@ -14,10 +16,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 //////////
+// console.log(btnmail)
 
 // app.use(bodyParser.json());
 // MongoDB connection
-const uri = process.env.MONGO_db2; // Replace with your actual MongoDB connection string
+const uri = process.env.MONGO_db2;//Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
 const PORT = process.env.PORT || 8080;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }
@@ -222,8 +225,8 @@ client.connect().then(() => {
         }
     });
     ////furt
-     ////comm
-     app.post('/getcomm', async (req, res) => {
+    ////comm
+    app.post('/getcomm', async (req, res) => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
@@ -250,8 +253,8 @@ client.connect().then(() => {
         }
     });
     ////lite
-     ////gove
-     app.post('/getgove', async (req, res) => {
+    ////gove
+    app.post('/getgove', async (req, res) => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
@@ -264,8 +267,8 @@ client.connect().then(() => {
         }
     });
     ////civi
-     ////civi
-     app.post('/getcivi', async (req, res) => {
+    ////civi
+    app.post('/getcivi', async (req, res) => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
@@ -278,8 +281,8 @@ client.connect().then(() => {
         }
     });
     ////civi
-      ////mart
-      app.post('/getmart', async (req, res) => {
+    ////mart
+    app.post('/getmart', async (req, res) => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
@@ -292,8 +295,8 @@ client.connect().then(() => {
         }
     });
     ////mart
-     ////proc
-     app.post('/getproc', async (req, res) => {
+    ////proc
+    app.post('/getproc', async (req, res) => {
         try {
             // req.body;
             // const getfin = await collection2.findOne({ author: "ogedengbe segun" });
@@ -323,16 +326,23 @@ client.connect().then(() => {
 
     app.post('/tchers', async (req, res) => {
         try {
+            const ymd = new Date()
             const { adminsurname, adminothername, adminemail, admintel, adminpwd } = req.body;
             const tchersreg = await tchers.insertOne({
+
                 surname: adminsurname, other_name: adminothername,
-                email: adminemail, tel: admintel, password: adminpwd
+                email: adminemail, tel: admintel, password: adminpwd,
+                date: ymd.getFullYear() + '-' + (ymd.getMonth() + 1) + '-' + ymd.getDate()
             })
             res.json(tchersreg);
+            ////////////
+            ///////////
+
 
 
         }
         catch (error) {
+            res.statusCode()
             console.error(`the server not received request, ${error}`)
         }
 
@@ -354,7 +364,9 @@ client.connect().then(() => {
         }
     });
     app.post("/tcheremailexist", async (req, res) => {
+
         try {
+
             const { adminemail } = req.body;
             const alreadyexist = await tchers.findOne({
                 email: adminemail
@@ -519,7 +531,44 @@ client.connect().then(() => {
         res.json(resDB)
     })
     ////////////////
+
+    //nodemailer
+    // mymail()
+    function mymail() {
+        // const { adminemail } = req.body
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'wisdomworld28608@gmail.com',
+                pass: 'hdyruzocsvzlpsem'
+            }
+        });
+
+        const mailOptions = {
+            from: 'wisdomworld28608@gmail.com',
+            to: 'wisdomworld28608@yahoo.com.com',
+            subject: 'tyktutor academy consultant',
+            html: `<div class='card bg-primary text-center'>
+                <h3 class='bg-text-primary text-center'>
+            Welcome to tykTutor Platform</h3>
+            <p class='text-success text-center'>This is the link to our Services 
+            to serving you better at our Academy</p>
+            <div class="mx-auto w-75">
+            <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br><br>
+            <u><a href='tyktutor.onrender.com' >Click Me</a></u>
+            </div>
+            <style>a{
+            margin-left:auto; 
+            margin-right:auto;}
+            </style>`
+        };
+
+        transporter.sendMail(mailOptions)
+    }
     ////////////////
+
+    ////////////////
+    /////////////////
     // Start the server
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
@@ -528,5 +577,39 @@ client.connect().then(() => {
 
 
 );
+//////////////////
+// app.post("/send-email", async (req, res) => {
+//     try {
+//         const { email } = req.body
+//         let transporter = nodemailer.createTransport({
+//             service: "gmail",
+//             auth: {
+//                 user: 'wisdomworld28608@gmail.com',
+//                 pass: 'hdyruzocsvzlpsem'
+//             },
+//         });
 
+//         let info = await transporter.sendMail({
+//             from: 'wisdomworld28608@gmail.com',
+//             to: email,
+//             subject: 'tyktutor academy consultant',
+//             html: `<div class='card bg-primary text-center'>
+//             <h3 class='bg-text-primary text-center'>
+//         Welcome to tykTutor Platform</h3>
+//         <p class='text-success text-center'>This is the link to our Services
+//         to serving you better at our Academy</p>
+//         <div class="mx-auto w-75">
+//         <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br><br>
+//         <u><a href='tyktutor.onrender.com' >Click Me</a></u>
+//         </div>`
+//         });
+
+//         res.json(info);
+//     } catch (error) {
+//         res.status(500).json({ message: "Error sending email", error: error.message });
+//     }
+// });
 ///////////////////
+
+
+// C:\Users\ubec\Desktop\tykTUTORS\images

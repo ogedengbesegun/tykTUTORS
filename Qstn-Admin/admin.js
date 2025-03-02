@@ -1,8 +1,6 @@
 
 // declare my variables
 
-
-
 // let btnNext = document.querySelector(".btnNext")
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
@@ -341,7 +339,7 @@ signUp.forEach(signUps => {
 
 
 // use the dialog element
-const login = document.querySelectorAll(".Login"); // variable declaration
+const Login = document.querySelectorAll(".Login"); // variable declaration
 // const signUp = document.querySelector(".Login");
 // signUp.addEventListener("click", () => {
 
@@ -350,7 +348,7 @@ const login = document.querySelectorAll(".Login"); // variable declaration
 //     document.querySelector(".createQst").style.display = "none";
 
 // });
-login.forEach(logins => {
+Login.forEach(logins => {
     logins.addEventListener('click', () => {
         document.querySelector(".regSection").style.display = "none"; //make visible
         document.querySelector(".loginSection").style.display = "block"; //make invinsible
@@ -362,7 +360,7 @@ login.forEach(logins => {
 
     //////onMouseenter change text-bg-dark
     logins.addEventListener("mouseenter", () => {
-        logins.classList.remove('text-bg-dark');
+        logins.classList.remove('text-bg-primary');
         logins.classList.add('text-bg-danger');
 
     });
@@ -370,7 +368,7 @@ login.forEach(logins => {
 
     logins.addEventListener('mouseleave', () => {
         logins.classList.remove('text-bg-danger');
-        logins.classList.add('text-bg-dark');
+        logins.classList.add('text-bg-primary');
 
     })
 });
@@ -477,7 +475,7 @@ async function allurl() {
         throw new Error("Unable to fetch URLs");
     }
 }
-
+/////////////
 async function findsub() {
     try {
         const getQsturl = await allurl();
@@ -547,7 +545,7 @@ async function setsub() {
         console.error("Error in setsub function:", error);
         const reqError = document.querySelector(".reqError");
 
-        reqError.textContent = "Check your Internet or Select a Subject first.";
+        reqError.textContent = "Check your Internet or Select a Subject first." + error;
     }
 }
 
@@ -695,13 +693,23 @@ async function tcherReg() {
                 adminpwd: adminpwd
             })
         });
-        const tcherResponse = await tcher.json()
-        // console.log(tcherResponse)
-    }
-    catch (error) {
+        if (tcher.ok) {
+            const tcherResponse = await tcher.json()
+
+            alert("Registration is Successful")
+
+        }
+        else {
+            alert('Not Successful, try Again')
+        }
+        //     // console.log(tcherResponse)
 
     }
+    catch (error) {
+        console.log(error + "internet NOT connected")
+    }
 }
+
 ///////
 
 ////////////////////////
@@ -758,12 +766,12 @@ submitAdmin.addEventListener('click', function (event) {
         }, 2000)
         // setTimeout(() => {
         indicator.showModal()
-        const indicatorp = document.querySelector(".indicator .p");
-        indicatorp.className = "text-success h3"
-        indicatorp.textContent = "Successful"
-        const span = document.createElement('span');
-        span.className = "fas fa-check h2 ms-2"
-        indicatorp.append(span);
+        // const indicatorp = document.querySelector(".indicator .p");
+        // indicatorp.className = "text-success h3"
+        // indicatorp.textContent = "Successful"
+        // const span = document.createElement('span');
+        // span.className = "fas fa-check h2 ms-2"
+        // indicatorp.append(span);
 
         /////settimeout for reload
         setTimeout(() => {
@@ -872,3 +880,37 @@ logout.addEventListener('click', () => {
 // const ans = { 'a': 'aaa', 'b': 'bbb', 'c': 'ccc', 'd': 'ddd' }
 // const { a, b, c, d } = ans;
 // console.log(`${d}/${c}`);
+// let response = ''
+// async function emailsend() {
+
+//     // const adminemail = document.querySelector('#adminemail')
+//     // adminemail.value;
+
+//     const resmail = await allurl()
+//     const sendm = resmail['sendmail']
+//     console.log(sendm);
+
+//     const sendmail = await fetch(sendm,
+//         {
+//             method: "POST"
+//             // headers: { 'Content-Type': 'application/json' },
+//             // body: JSON.stringify()
+//         }
+//     );
+//     const response = await sendmail.json()
+//     alert(response)
+//     // console.log(response.message)
+//     // }
+//     // catch (error) {
+//     //     console.log(error)
+
+//     // };
+
+
+
+// }
+// const mail = document.querySelector('.mail');
+// mail.addEventListener('click', () => {
+//     emailsend()
+// })
+
