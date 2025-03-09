@@ -536,7 +536,7 @@ client.connect().then(() => {
 
 
         //     //nodemailer
-        mymail()
+        // mymail()
         function mymail() {
             // const { adminemail } = req.body
             const transporter = nodemailer.createTransport({
@@ -576,7 +576,7 @@ client.connect().then(() => {
         }
 
         //     ////////////////
-        // res.json(mymail());
+        res.json(mymail());
     })
 
     ////////////////
