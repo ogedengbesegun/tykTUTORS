@@ -663,7 +663,6 @@ async function tcherReg() {
     try {
         const url = await allurl();
         const tchers = url["tchers"]
-        const sendmail = url["sendmail"]
         const tcher = await fetch(tchers, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -682,6 +681,8 @@ async function tcherReg() {
             }
 
             async function nodemail() {
+                const url = await allurl();
+                const sendmail = url["sendmail"]
 
                 try {
                     const dmail = await fetch(sendmail,
