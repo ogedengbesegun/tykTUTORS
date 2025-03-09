@@ -664,7 +664,6 @@ async function tcherReg() {
         const url = await allurl();
         const tchers = url["tchers"]
         const sendmail = url["sendmail"]
-        console.log(tchers);
         const tcher = await fetch(tchers, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -678,11 +677,12 @@ async function tcherReg() {
         if (tcher.ok) {
             const tcherResponse = await tcher.json()
 
-            if (alert("Registration is Successful"), 1) {
+            if (alert(`Registration Successful, check Email: ${adminemail}`), 1) {
                 nodemail()
             }
 
             async function nodemail() {
+
                 try {
                     const dmail = await fetch(sendmail,
                         {
@@ -694,22 +694,12 @@ async function tcherReg() {
                                 , adminpwd: adminpwd
                             })
                         });
-
-                    // if (dmail.ok) { 
-                    alert(`Message Sent to your Email-Box ${adminemail}`);
-                    // }
-                    const resmail = await dmail.json();
-
-
-                    // else {
-                    //     alert(`Check your email Address, ${adminemail} failure`)
-
-                    // }
+                    const resp = await dmail.json()
 
                 }
-                catch {
+                catch (error) {
                     // alert(`Check internet Network`)
-
+                    // alert(`Message Not Sent ${error}`)
                 }
             }
 
@@ -880,8 +870,8 @@ logout.addEventListener('click', () => {
 
 
 
-const search = document.querySelector('.search');
-const userheader = document.querySelectorAll('.userheader');
+// const search = document.querySelector('.search');
+// const userheader = document.querySelectorAll('.userheader');
 
 // search.addEventListener('input', () => {
 //     userheader.forEach(userhead => {

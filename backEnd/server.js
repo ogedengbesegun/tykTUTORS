@@ -535,8 +535,8 @@ client.connect().then(() => {
         const { adminemail, admintel, adminothername, adminpwd } = req.body
 
 
-        //nodemailer
-        // mymail()
+        //     //nodemailer
+        mymail()
         function mymail() {
             // const { adminemail } = req.body
             const transporter = nodemailer.createTransport({
@@ -547,32 +547,36 @@ client.connect().then(() => {
                 }
             });
             ////////////
+            // let admintel = '09012345678'
+            // let adminpwd = 'freedoom123@me'
+            // let adminothername = 'segun oluwaseun james'
             const split = adminpwd.split("")
             const join = split[0] + split[1] + split[2] + '****' + adminpwd.slice(adminpwd.length - 2, adminpwd.length)///
-            const sepname = adminothername.split(" ")
+            let sepname = adminothername.split(" ")//
             ////////
             const mailOptions = {
                 from: 'wisdomworld28608@gmail.com',
                 to: adminemail,
                 subject: 'tyktutor Academy Consultant',
                 html: `<div class='card bg-primary text-center'>
-                <h3 class='bg-text-primary text-center'>
-            Welcome to tykTutor Platform</h3>
-           <h4>Congratulations ${sepname[0].toUpperCase()}, your Registration is Successful</h4>
-            <p>Password: ${adminpwd.replace(adminpwd, join)}</p>
-            <p>Registered Phone Number: ${admintel}</p>
-            <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br>
-             <p class='text-success text-center'>This is the link to our Services 
-            to serving you better at our Academy</p>
-            <strong><u><a href='https://tyktutor.onrender.com'>Click Me</a></u></strong>
-            </div>
-            `
+                    <h3 class='bg-text-primary text-center'>
+                Welcome to tykTutor Platform</h3>
+            <h4>Congratulations ${sepname[0].toUpperCase()}, your Registration is Successful</h4>
+                <p>Password: ${adminpwd.replace(adminpwd, join)}</p>
+                <p>Registered Phone Number: ${admintel}</p>
+                <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br>
+                <p class='text-success text-center'>This is the link to our Services 
+                to serving you better at our Academy</p>
+                <strong><u><a href='https://tyktutor.onrender.com'>Click Me</a></u></strong>
+                </div>
+                `
             };
 
             transporter.sendMail(mailOptions);
         }
-        ////////////////
-        res.json(mymail());
+
+        //     ////////////////
+        // res.json(mymail());
     })
 
     ////////////////
@@ -621,3 +625,5 @@ client.connect().then(() => {
 
 
 // C:\Users\ubec\Desktop\tykTUTORS\images
+
+
