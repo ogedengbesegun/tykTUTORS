@@ -833,7 +833,8 @@ function start() {
             // Initial load
             setTimeout(() => {
                 loadBatch();
-            }, 5000)
+                examtime()
+            }, 2000)
 
 
 
@@ -854,52 +855,56 @@ function start() {
     // running the timer
 
 
-    let countDownTimer = document.querySelector(".countDownTimer");
-    countDownTimer.style.color = "black";
-    countDownTimer.style.fontSize = "18px";
-
-    countDownTimer.style.backgroundColor = "white"
 
 
-    let timer = setInterval(function () {
-        // 1 to set timer for the user
-        let minutes = Math.floor(duration / 60);
-        let seconds = duration % 60;
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-        countDownTimer.textContent = 'Timer: ' + minutes + ':' + seconds;
+    function examtime() {
+        ///////////////
+        let countDownTimer = document.querySelector(".countDownTimer");
+        countDownTimer.style.color = "black";
+        countDownTimer.style.fontSize = "18px";
 
-        // 2 if the duration iterate -- less than zero
-        if (--duration < 0) {
-            // the clearInterval method is invoked 
-            clearInterval(timer);
+        countDownTimer.style.backgroundColor = "white"
+        ///////////////////////////////
+        // set time interval()
+        let timer = setInterval(function () {
+            // 1 to set timer for the user
+            let minutes = Math.floor(duration / 60);
+            let seconds = duration % 60;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countDownTimer.textContent = 'Timer: ' + minutes + ':' + seconds;
 
-            // this  displays the timeup 
-            // countDownTimer.textContent = "Timer:" + " Time is Up!";
-            countDownTimer.style.color = "red";
+            // 2 if the duration iterate -- less than zero
+            if (--duration < 0) {
+                // the clearInterval method is invoked 
+                clearInterval(timer);
 
-            //// once time up disable the start btn
-            document.querySelector(".start").disabled = true;
-            document.querySelector(".start").textContent = 'Exams Ended';
-            document.querySelector(".start").style.backgroundColor = "red";
-            // this will disable my input elements to stop users_
-            //from selecting on countdown
-            let allinput = document.querySelectorAll(".allinput")
-            allinput.forEach(Eachinput => {
-                Eachinput.disabled = true;
-            });
+                // this  displays the timeup 
+                // countDownTimer.textContent = "Timer:" + " Time is Up!";
+                countDownTimer.style.color = "red";
 
-
-        }
-
-
-
-
-
-    }, 1000);
-    let duration = (10 * 60) + 4;
+                //// once time up disable the start btn
+                document.querySelector(".start").disabled = true;
+                document.querySelector(".start").textContent = 'Exams Ended';
+                document.querySelector(".start").style.backgroundColor = "red";
+                // this will disable my input elements to stop users_
+                //from selecting on countdown
+                let allinput = document.querySelectorAll(".allinput")
+                allinput.forEach(Eachinput => {
+                    Eachinput.disabled = true;
+                });
 
 
+            }
+
+
+
+
+
+        }, 1000);
+        let duration = (10 * 60);
+
+    }
 
 
 

@@ -45,36 +45,7 @@ closebtn.addEventListener("click", () => {
     admintel.value = "";
 
 })
-// ///create dialog elemnt
-// function mydlg() {
-//     const dialogg = document.createElement("dialog");
-//     dialogg.classList.add("border-0");
-//     dialogg.classList.add("rounded-2");
-//     dialogg.classList.add("dialogg");
 
-//     dialogg.innerHTML = `<h6 class="text-danger border border-0">
-//     Please Enter a valid Email Address</h6>
-//     <button class="btn btn-primary d-block mx-auto 
-//     closebtn">ok</button>`
-
-
-//     document.body.append(dialogg)// alert("Please enter a Valid Email Address");
-//     let closebtn = document.querySelector(".closebtn");
-//     const adminemail = document.querySelector("#adminemail");
-
-//     dialogg.showModal()
-
-//     closebtn.addEventListener("click", () => {
-//         // adminemail.value = "";//remove
-
-//         dialogg.close();
-//         // window.location.reload()
-
-//         adminemail.value = "";
-//     })
-
-
-// }
 
 
 
@@ -89,7 +60,18 @@ let admintel = document.querySelector("#admintel");
 
 let submitAdmin = document.querySelector(".submitAdmin")
 let section = document.querySelector("section")
+////////////////////////////
+//set min for adminpwd
+adminpwd.addEventListener('change', () => {
 
+    if (adminpwd.value.length < 6) {
+        alert("Minimum of '6' characters required");
+        adminpwd.value = "";
+    }
+})
+
+
+////////////////////////////
 // set the adminpwd to have an Attribute of maxlength
 let adminPwds = document.querySelectorAll("input[type=password]");
 adminPwds.forEach(adminPwdEach => {
@@ -186,7 +168,7 @@ let samp = document.querySelector("samp");
 teacherSub.addEventListener("input", () => {
     // teacherSub.value; // onclick remain in your state
 
-    if (teacherSub.value == ">>>Select One") {
+    if (teacherSub.value == "Select Subject") {
 
         //  = `${teacherSub.value}`;
         teacherlogin.setAttribute("disabled", "true")
@@ -216,7 +198,7 @@ teacherSub.addEventListener("input", () => {
 
 teacherSub.addEventListener("mouseenter", () => {
     // teacherSub.style.color = "red"
-    teacherSub.value = ">>>Select One"
+    teacherSub.value = "Select Subject"
     teacherlogin.setAttribute("disabled", "true")
     // selectedSubject
     selectedSubject.textContent = ""; //set to NULL
@@ -590,7 +572,6 @@ submitqst.addEventListener("click", (event) => {
 //////////////
 
 // to use form API checkValidity()method and validityMessage property
-// const submitAdmin = document.querySelector(".submitAdmin");
 async function emailexist() {
     // const admintel = document.querySelector("#admintel").value;
     const adminemail = document.querySelector("#adminemail").value;
@@ -682,6 +663,7 @@ async function tcherReg() {
     try {
         const url = await allurl();
         const tchers = url["tchers"]
+        const sendmail = url["sendmail"]
         console.log(tchers);
         const tcher = await fetch(tchers, {
             method: "POST",
@@ -696,7 +678,40 @@ async function tcherReg() {
         if (tcher.ok) {
             const tcherResponse = await tcher.json()
 
-            alert("Registration is Successful")
+            if (alert("Registration is Successful"), 1) {
+                nodemail()
+            }
+
+            async function nodemail() {
+                try {
+                    const dmail = await fetch(sendmail,
+                        {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                                adminemail: adminemail, admintel: admintel,
+                                adminsurname: adminsurname
+                                , adminpwd: adminpwd
+                            })
+                        });
+
+                    // if (dmail.ok) { 
+                    alert(`Message Sent to your Email-Box ${adminemail}`);
+                    // }
+                    const resmail = await dmail.json();
+
+
+                    // else {
+                    //     alert(`Check your email Address, ${adminemail} failure`)
+
+                    // }
+
+                }
+                catch {
+                    // alert(`Check internet Network`)
+
+                }
+            }
 
         }
         else {
@@ -715,7 +730,6 @@ async function tcherReg() {
 ////////////////////////
 submitAdmin.addEventListener('click', function (event) {
     ///deactivated the button once clicked
-    // submitAdmin.disabled = true;
     //////////////////////////
 
     let adminsurname = document.getElementById('adminsurname').value;
@@ -766,12 +780,6 @@ submitAdmin.addEventListener('click', function (event) {
         }, 2000)
         // setTimeout(() => {
         indicator.showModal()
-        // const indicatorp = document.querySelector(".indicator .p");
-        // indicatorp.className = "text-success h3"
-        // indicatorp.textContent = "Successful"
-        // const span = document.createElement('span');
-        // span.className = "fas fa-check h2 ms-2"
-        // indicatorp.append(span);
 
         /////settimeout for reload
         setTimeout(() => {
@@ -779,13 +787,6 @@ submitAdmin.addEventListener('click', function (event) {
 
             window.location.reload();
         }, 5000)
-
-
-
-
-
-
-
 
 
 
@@ -875,6 +876,26 @@ logout.addEventListener('click', () => {
     else {
 
     }
+})
+
+
+
+const search = document.querySelector('.search');
+const userheader = document.querySelectorAll('.userheader');
+
+search.addEventListener('input', () => {
+    userheader.forEach(userhead => {
+        if ((userhead.innerHTML.toLowerCase()).includes(search.value.toLowerCase())) {
+            userhead.scrollIntoView({ behavior: 'smooth' })
+
+        }
+        else {
+            for (let i = 0; i < userhead.length; i++) {
+                alert[i]
+            }
+        }
+
+    })
 })
 ///////////////////////////////////
 // const ans = { 'a': 'aaa', 'b': 'bbb', 'c': 'ccc', 'd': 'ddd' }

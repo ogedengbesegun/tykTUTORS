@@ -46,7 +46,51 @@ body {
   top: 5px;
   width: 100%;
 }
+.usersection {
+  width: 300px;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ebe9ee;
+  box-shadow: 5px 5px 10px #747277;
+}
+.usersection input {
+  outline: none;
+}
+.userimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* object-fit: cover; */
+}
+.userflex {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  /* border-bottom: 1px solid #e4e2e7; */
+  box-shadow: 5px 5px 5px rgba(201, 199, 199, 0.25);
+  margin-top: 2px;
+  border: none;
+  justify-content: start;
+}
+.userflex:hover {
+  transform: translate(0.2s);
+}
+.userlist {
+  height: 160px;
+  overflow-y: auto;
+}
+.usercol {
+  display: grid;
 
+  margin-top: 0px;
+}
+.userheader {
+  margin-left: 0px;
+}
 .box-shadow {
   box-shadow: 0 2px 2px rgb(63, 61, 61);
   transition: width 2s;
@@ -58,7 +102,7 @@ body {
   width: 99.85%;
 }
 .img {
-  transition: width 2s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 /* .login {
   top: 400px;
@@ -479,10 +523,7 @@ footer {
     font-size: small;
   }
 
-  .regSection {
-    font-size: small;
-    /* background-color: aquamarine; */
-  }
+ 
   .sm-btn {
     font-size: small;
   }

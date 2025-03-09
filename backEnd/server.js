@@ -531,41 +531,49 @@ client.connect().then(() => {
         res.json(resDB)
     })
     ////////////////
+    app.post('/sendmail', async (req, res) => {
+        const { adminemail, admintel, adminsurname, adminpwd } = req.body
 
-    //nodemailer
-    // mymail()
-    function mymail() {
-        // const { adminemail } = req.body
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'wisdomworld28608@gmail.com',
-                pass: 'hdyruzocsvzlpsem'
-            }
-        });
 
-        const mailOptions = {
-            from: 'wisdomworld28608@gmail.com',
-            to: 'wisdomworld28608@yahoo.com.com',
-            subject: 'tyktutor academy consultant',
-            html: `<div class='card bg-primary text-center'>
+        //nodemailer
+        // mymail()
+        function mymail() {
+            // const { adminemail } = req.body
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'wisdomworld28608@gmail.com',
+                    pass: 'hdyruzocsvzlpsem'
+                }
+            });
+            ////////////
+            const split = adminpwd.split("")
+            const join = split[0] + split[1] + split[2] + '****' + adminpwd.slice(adminpwd.length - 2, adminpwd.length)///
+
+            ////////
+            const mailOptions = {
+                from: 'wisdomworld28608@gmail.com',
+                to: adminemail,
+                subject: 'tyktutor Academy Consultant',
+                html: `<div class='card bg-primary text-center'>
                 <h3 class='bg-text-primary text-center'>
             Welcome to tykTutor Platform</h3>
-            <p class='text-success text-center'>This is the link to our Services 
+           <h4>Congratulations ${adminsurname.toUpperCase()}, your Registration is Successful</h4>
+            <p>Password: ${adminpwd.replace(adminpwd, join)}</p>
+            <p>Registered Phone Number: ${admintel}</p>
+            <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br>
+             <p class='text-success text-center'>This is the link to our Services 
             to serving you better at our Academy</p>
-            <div class="mx-auto w-75">
-            <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br><br>
-            <u><a href='tyktutor.onrender.com' >Click Me</a></u>
+            <strong><u><a href='https://tyktutor.onrender.com'>Click Me</a></u></strong>
             </div>
-            <style>a{
-            margin-left:auto; 
-            margin-right:auto;}
-            </style>`
-        };
+            `
+            };
 
-        transporter.sendMail(mailOptions)
-    }
-    ////////////////
+            transporter.sendMail(mailOptions);
+        }
+        ////////////////
+        res.json(mymail());
+    })
 
     ////////////////
     /////////////////
