@@ -549,7 +549,7 @@ client.connect().then(() => {
             ////////////
             const split = adminpwd.split("")
             const join = split[0] + split[1] + split[2] + '****' + adminpwd.slice(adminpwd.length - 2, adminpwd.length)///
-            const sepname = adminothername.split("")
+            const sepname = adminothername.split(" ")
             ////////
             const mailOptions = {
                 from: 'wisdomworld28608@gmail.com',
@@ -558,7 +558,7 @@ client.connect().then(() => {
                 html: `<div class='card bg-primary text-center'>
                 <h3 class='bg-text-primary text-center'>
             Welcome to tykTutor Platform</h3>
-           <h4>Congratulations ${sepname[1].toUpperCase()}, your Registration is Successful</h4>
+           <h4>Congratulations ${sepname[0].toUpperCase()}, your Registration is Successful</h4>
             <p>Password: ${adminpwd.replace(adminpwd, join)}</p>
             <p>Registered Phone Number: ${admintel}</p>
             <img src="https://tyktutor.onrender.com/images/tykicon.jpg"><br>

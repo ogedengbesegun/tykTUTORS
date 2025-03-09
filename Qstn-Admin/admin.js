@@ -883,20 +883,20 @@ logout.addEventListener('click', () => {
 const search = document.querySelector('.search');
 const userheader = document.querySelectorAll('.userheader');
 
-search.addEventListener('input', () => {
-    userheader.forEach(userhead => {
-        if ((userhead.innerHTML.toLowerCase()).includes(search.value.toLowerCase())) {
-            userhead.scrollIntoView({ behavior: 'smooth' })
+// search.addEventListener('input', () => {
+//     userheader.forEach(userhead => {
+//         if ((userhead.innerHTML.toLowerCase()).includes(search.value.toLowerCase())) {
+//             userhead.scrollIntoView({ behavior: 'smooth' })
 
-        }
-        else {
-            for (let i = 0; i < userhead.length; i++) {
-                alert[i]
-            }
-        }
+//         }
+//         else {
+//             for (let i = 0; i < userhead.length; i++) {
+//                 alert[i]
+//             }
+//         }
 
-    })
-})
+//     })
+// })
 ///////////////////////////////////
 // const ans = { 'a': 'aaa', 'b': 'bbb', 'c': 'ccc', 'd': 'ddd' }
 // const { a, b, c, d } = ans;
@@ -935,3 +935,6 @@ search.addEventListener('input', () => {
 //     emailsend()
 // })
 
+const nam1 ="segun adeleye";
+const split= nam1.split(" ");
+console.log(split[0])
