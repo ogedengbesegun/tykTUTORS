@@ -768,7 +768,7 @@ submitAdmin.addEventListener('click', function (event) {
 
 
 
-        }, 2000)
+        }, 4000)
         // setTimeout(() => {
         indicator.showModal()
 
