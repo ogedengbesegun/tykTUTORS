@@ -690,7 +690,7 @@ async function tcherReg() {
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({
                                 adminemail: adminemail, admintel: admintel,
-                                adminsurname: adminsurname
+                                adminothername: adminothername
                                 , adminpwd: adminpwd
                             })
                         });
