@@ -935,6 +935,4 @@ const userheader = document.querySelectorAll('.userheader');
 //     emailsend()
 // })
 
-const nam1 ="segun adeleye";
-const split= nam1.split(" ");
-console.log(split[0])
+
