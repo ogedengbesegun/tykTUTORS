@@ -1,0 +1,1683 @@
+[
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the SI unit of force?",
+    "a": "Newton",
+    "b": "Joule",
+    "c": "Watt",
+    "d": "Pascal",
+    "ans": "a"
+  },
+ 
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for kinetic energy?",
+    "a": "KE = mgh",
+    "b": "KE = 1/2 mv²",
+    "c": "KE = Fd",
+    "d": "KE = Pt",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a vector quantity?",
+    "a": "Mass",
+    "b": "Temperature",
+    "c": "Displacement",
+    "d": "Time",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the acceleration due to gravity on Earth?",
+    "a": "9.8 m/s²",
+    "b": "8.0 m/s²",
+    "c": "10.0 m/s²",
+    "d": "7.8 m/s²",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which law of motion states that an object will remain at rest or in uniform motion unless acted upon by a net external force?",
+    "a": "Newton's First Law",
+    "b": "Newton's Second Law",
+    "c": "Newton's Third Law",
+    "d": "Law of Gravitation",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of power?",
+    "a": "Joule",
+    "b": "Watt",
+    "c": "Newton",
+    "d": "Pascal",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is an example of a contact force?",
+    "a": "Gravitational force",
+    "b": "Magnetic force",
+    "c": "Frictional force",
+    "d": "Electrostatic force",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What happens to the pressure of a gas if its volume is decreased at constant temperature?",
+    "a": "Decreases",
+    "b": "Increases",
+    "c": "Remains constant",
+    "d": "Becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these waves requires a medium to travel?",
+    "a": "Light waves",
+    "b": "Radio waves",
+    "c": "Sound waves",
+    "d": "Microwaves",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the speed of light in a vacuum?",
+    "a": "3.0 × 10⁵ m/s",
+    "b": "3.0 × 10⁶ m/s",
+    "c": "3.0 × 10⁸ m/s",
+    "d": "3.0 × 10⁷ m/s",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a non-renewable energy source?",
+    "a": "Solar energy",
+    "b": "Wind energy",
+    "c": "Coal",
+    "d": "Hydroelectric power",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the relationship between current, voltage, and resistance according to Ohm’s Law?",
+    "a": "V = IR",
+    "b": "I = VR",
+    "c": "R = IV",
+    "d": "V = R/I",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a good conductor of electricity?",
+    "a": "Rubber",
+    "b": "Copper",
+    "c": "Glass",
+    "d": "Wood",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of electric charge?",
+    "a": "Ampere",
+    "b": "Coulomb",
+    "c": "Volt",
+    "d": "Ohm",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which type of lens is used to correct long-sightedness?",
+    "a": "Concave lens",
+    "b": "Convex lens",
+    "c": "Bifocal lens",
+    "d": "Cylindrical lens",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the phenomenon where light bends as it passes from one medium to another?",
+    "a": "Reflection",
+    "b": "Refraction",
+    "c": "Diffraction",
+    "d": "Interference",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following colors of light has the longest wavelength?",
+    "a": "Blue",
+    "b": "Green",
+    "c": "Red",
+    "d": "Violet",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating work done?",
+    "a": "W = F/t",
+    "b": "W = Fd",
+    "c": "W = mgh",
+    "d": "W = Pt",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is an example of a renewable energy source in Nigeria?",
+    "a": "Natural gas",
+    "b": "Petroleum",
+    "c": "Solar energy",
+    "d": "Coal",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the frequency of a wave if its period is 0.5 seconds?",
+    "a": "0.5 Hz",
+    "b": "1 Hz",
+    "c": "2 Hz",
+    "d": "5 Hz",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a property of transverse waves?",
+    "a": "They require a medium to travel",
+    "b": "They have compressions and rarefactions",
+    "c": "They move perpendicular to the direction of wave travel",
+    "d": "They are longitudinal waves",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the principle behind the working of a simple pendulum?",
+    "a": "Conservation of momentum",
+    "b": "Conservation of energy",
+    "c": "Hooke’s Law",
+    "d": "Pascal’s Law",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is an insulator?",
+    "a": "Silver",
+    "b": "Aluminum",
+    "c": "Plastic",
+    "d": "Iron",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating momentum?",
+    "a": "p = mv",
+    "b": "p = F/t",
+    "c": "p = m/v",
+    "d": "p = Ft",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a characteristic of electromagnetic waves?",
+    "a": "They require a medium to travel",
+    "b": "They travel at the speed of sound",
+    "c": "They can travel in a vacuum",
+    "d": "They are longitudinal waves",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of magnetic flux?",
+    "a": "Tesla",
+    "b": "Weber",
+    "c": "Henry",
+    "d": "Farad",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which law states that the total electric charge in an isolated system remains constant?",
+    "a": "Ohm’s Law",
+    "b": "Law of Conservation of Charge",
+    "c": "Faraday’s Law",
+    "d": "Lenz’s Law",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the angle of incidence when a ray of light strikes a mirror at 30° to the normal?",
+    "a": "30°",
+    "b": "60°",
+    "c": "90°",
+    "d": "0°",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of sound waves?",
+    "a": "They are transverse waves",
+    "b": "They can travel in a vacuum",
+    "c": "They are mechanical waves",
+    "d": "They have infinite speed",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating potential difference?",
+    "a": "V = I/R",
+    "b": "V = IR",
+    "c": "V = P/I",
+    "d": "V = Pt",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following materials is ferromagnetic?",
+    "a": "Copper",
+    "b": "Iron",
+    "c": "Aluminum",
+    "d": "Silver",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of increasing the length of a simple pendulum on its period?",
+    "a": "Period decreases",
+    "b": "Period increases",
+    "c": "Period remains constant",
+    "d": "Period becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a source of background radiation?",
+    "a": "Microwave ovens",
+    "b": "Cosmic rays",
+    "c": "Electric bulbs",
+    "d": "Refrigerators",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the relationship between the wavelength and frequency of a wave?",
+    "a": "λ = f/v",
+    "b": "v = fλ",
+    "c": "f = v/λ",
+    "d": "λ = v/f",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is an example of a nuclear reaction?",
+    "a": "Burning of coal",
+    "b": "Nuclear fission",
+    "c": "Chemical combustion",
+    "d": "Photosynthesis",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of energy?",
+    "a": "Newton",
+    "b": "Joule",
+    "c": "Watt",
+    "d": "Pascal",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a characteristic of a perfect black body?",
+    "a": "It reflects all light",
+    "b": "It absorbs all radiation",
+    "c": "It emits no radiation",
+    "d": "It transmits all light",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the principle of conservation of linear momentum?",
+    "a": "Momentum is always zero",
+    "b": "Total momentum before and after a collision is conserved if no external force acts",
+    "c": "Momentum increases with time",
+    "d": "Momentum decreases with mass",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a unit of pressure?",
+    "a": "Pascal",
+    "b": "Joule",
+    "c": "Watt",
+    "d": "Newton",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of increasing the temperature of a gas at constant volume?",
+    "a": "Pressure decreases",
+    "b": "Pressure increases",
+    "c": "Pressure remains constant",
+    "d": "Pressure becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of X-rays?",
+    "a": "They have long wavelengths",
+    "b": "They are non-ionizing",
+    "c": "They can penetrate solids",
+    "d": "They travel at the speed of sound",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating the refractive index of a medium?",
+    "a": "n = speed of light in vacuum / speed of light in medium",
+    "b": "n = speed of light in medium / speed of light in vacuum",
+    "c": "n = wavelength in vacuum / wavelength in medium",
+    "d": "n = frequency in medium / frequency in vacuum",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a characteristic of a parallel circuit?",
+    "a": "Current is the same in all branches",
+    "b": "Voltage is the same across all branches",
+    "c": "Resistance is the same in all branches",
+    "d": "Power is zero in all branches",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the purpose of a transformer in an electrical circuit?",
+    "a": "To generate electricity",
+    "b": "To increase or decrease voltage",
+    "c": "To store electrical energy",
+    "d": "To measure current",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of nuclear radiation?",
+    "a": "Alpha particles",
+    "b": "Beta particles",
+    "c": "Gamma rays",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the relationship between the focal length (f) and the radius of curvature (R) of a spherical mirror?",
+    "a": "f = R",
+    "b": "f = 2R",
+    "c": "f = R/2",
+    "d": "f = R²",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is an example of a simple machine?",
+    "a": "Car engine",
+    "b": "Lever",
+    "c": "Computer",
+    "d": "Television",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of frequency?",
+    "a": "Hertz",
+    "b": "Second",
+    "c": "Meter",
+    "d": "Joule",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of longitudinal waves?",
+    "a": "They move perpendicular to the direction of wave travel",
+    "b": "They have compressions and rarefactions",
+    "c": "They are electromagnetic waves",
+    "d": "They travel only in a vacuum",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of doubling the mass of an object on its kinetic energy, if velocity remains constant?",
+    "a": "Kinetic energy doubles",
+    "b": "Kinetic energy halves",
+    "c": "Kinetic energy quadruples",
+    "d": "Kinetic energy remains constant",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a characteristic of a series circuit?",
+    "a": "Current is the same in all parts",
+    "b": "Voltage is the same across all components",
+    "c": "Resistance decreases",
+    "d": "Power is zero",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the principle behind the operation of a hydraulic press?",
+    "a": "Pascal’s Law",
+    "b": "Archimedes’ Principle",
+    "c": "Bernoulli’s Principle",
+    "d": "Hooke’s Law",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of energy transformation in a hydroelectric power plant?",
+    "a": "Chemical to electrical",
+    "b": "Potential to kinetic to electrical",
+    "c": "Thermal to mechanical",
+    "d": "Nuclear to electrical",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of electrical resistance?",
+    "a": "Ohm",
+    "b": "Volt",
+    "c": "Ampere",
+    "d": "Coulomb",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a property of gamma rays?",
+    "a": "They have low penetrating power",
+    "b": "They are deflected by electric fields",
+    "c": "They have high energy and penetrating power",
+    "d": "They are slow-moving particles",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating the efficiency of a machine?",
+    "a": "Efficiency = (Work output / Work input) × 100%",
+    "b": "Efficiency = (Work input / Work output) × 100%",
+    "c": "Efficiency = Work output × Work input",
+    "d": "Efficiency = Work input / Time",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is an example of a non-ohmic conductor?",
+    "a": "Copper wire",
+    "b": "Diode",
+    "c": "Resistor",
+    "d": "Silver wire",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of increasing the amplitude of a wave on its energy?",
+    "a": "Energy decreases",
+    "b": "Energy increases",
+    "c": "Energy remains constant",
+    "d": "Energy becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a characteristic of a concave mirror?",
+    "a": "It always forms a virtual image",
+    "b": "It can form both real and virtual images",
+    "c": "It always forms an inverted image",
+    "d": "It cannot focus light",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the principle of flotation?",
+    "a": "An object floats if its density is less than that of the fluid",
+    "b": "An object floats if its weight is greater than the buoyant force",
+    "c": "An object sinks if its volume is less than the fluid",
+    "d": "An object floats if its mass is greater than the fluid",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of energy stored in a stretched spring?",
+    "a": "Kinetic energy",
+    "b": "Potential energy",
+    "c": "Thermal energy",
+    "d": "Chemical energy",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the relationship between the current and the magnetic field around a straight conductor?",
+    "a": "Current and magnetic field are inversely proportional",
+    "b": "Current and magnetic field are directly proportional",
+    "c": "Current has no effect on the magnetic field",
+    "d": "Magnetic field decreases with increasing current",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a unit of luminous intensity?",
+    "a": "Candela",
+    "b": "Lux",
+    "c": "Lumen",
+    "d": "Watt",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of increasing the resistance in a circuit on the current, if voltage is constant?",
+    "a": "Current increases",
+    "b": "Current decreases",
+    "c": "Current remains constant",
+    "d": "Current becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of infrared radiation?",
+    "a": "It is invisible and has short wavelengths",
+    "b": "It is visible and used for heating",
+    "c": "It has long wavelengths and is used for communication",
+    "d": "It is ionizing radiation",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for calculating the time period of a simple pendulum?",
+    "a": "T = 2π√(l/g)",
+    "b": "T = 2π√(g/l)",
+    "c": "T = l/g",
+    "d": "T = g/l",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is an example of a projectile motion?",
+    "a": "A car moving on a straight road",
+    "b": "A ball thrown horizontally",
+    "c": "A pendulum swinging",
+    "d": "A stone rolling down a hill",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of angular velocity?",
+    "a": "Rad/s",
+    "b": "m/s",
+    "c": "kg/m²",
+    "d": "J/s",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a characteristic of a convex lens?",
+    "a": "It always forms a virtual image",
+    "b": "It can form both real and virtual images",
+    "c": "It always forms an inverted image",
+    "d": "It cannot converge light",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the effect of increasing the frequency of a wave on its wavelength, if speed remains constant?",
+    "a": "Wavelength increases",
+    "b": "Wavelength decreases",
+    "c": "Wavelength remains constant",
+    "d": "Wavelength becomes zero",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the S.I unit of force?",
+    "a": "Newton",
+    "b": "Joule",
+    "c": "Watt",
+    "d": "Pascal",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of the following is a scalar quantity?",
+    "a": "Velocity",
+    "b": "Acceleration",
+    "c": "Distance",
+    "d": "Force",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The tendency of a body to remain at rest or in uniform motion is called?",
+    "a": "Friction",
+    "b": "Inertia",
+    "c": "Momentum",
+    "d": "Energy",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the acceleration due to gravity on Earth?",
+    "a": "9.8 m/s²",
+    "b": "8.9 m/s²",
+    "c": "10.8 m/s²",
+    "d": "7.8 m/s²",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which instrument is used to measure atmospheric pressure?",
+    "a": "Thermometer",
+    "b": "Hygrometer",
+    "c": "Barometer",
+    "d": "Anemometer",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The work done by a force is measured in?",
+    "a": "Watt",
+    "b": "Joule",
+    "c": "Newton",
+    "d": "Pascal",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for kinetic energy?",
+    "a": "mv²",
+    "b": "½mv²",
+    "c": "mgh",
+    "d": "½mgh",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a vector quantity?",
+    "a": "Speed",
+    "b": "Distance",
+    "c": "Velocity",
+    "d": "Time",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The heat required to raise the temperature of a body by 1°C is called?",
+    "a": "Latent heat",
+    "b": "Specific heat capacity",
+    "c": "Thermal conductivity",
+    "d": "Heat of fusion",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of power?",
+    "a": "Joule",
+    "b": "Newton",
+    "c": "Watt",
+    "d": "Pascal",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which law states that action and reaction are equal and opposite?",
+    "a": "Newton's First Law",
+    "b": "Newton's Second Law",
+    "c": "Newton's Third Law",
+    "d": "Law of Gravitation",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The ability of a material to return to its original shape after deformation is?",
+    "a": "Plasticity",
+    "b": "Elasticity",
+    "c": "Ductility",
+    "d": "Malleability",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the S.I unit of electric current?",
+    "a": "Ohm",
+    "b": "Volt",
+    "c": "Ampere",
+    "d": "Watt",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The rate of change of velocity is called?",
+    "a": "Speed",
+    "b": "Acceleration",
+    "c": "Momentum",
+    "d": "Distance",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is not a type of energy?",
+    "a": "Kinetic",
+    "b": "Potential",
+    "c": "Chemical",
+    "d": "Friction",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process by which a gas changes to a liquid is called?",
+    "a": "Evaporation",
+    "b": "Condensation",
+    "c": "Sublimation",
+    "d": "Melting",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of resistance?",
+    "a": "Ampere",
+    "b": "Ohm",
+    "c": "Volt",
+    "d": "Watt",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The bending of light as it passes from one medium to another is called?",
+    "a": "Reflection",
+    "b": "Refraction",
+    "c": "Diffraction",
+    "d": "Dispersion",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a renewable source of energy?",
+    "a": "Coal",
+    "b": "Petroleum",
+    "c": "Solar",
+    "d": "Natural gas",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The force per unit area is called?",
+    "a": "Pressure",
+    "b": "Tension",
+    "c": "Weight",
+    "d": "Density",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the formula for power?",
+    "a": "Work/Time",
+    "b": "Force × Distance",
+    "c": "Mass × Acceleration",
+    "d": "Energy × Time",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which device converts mechanical energy to electrical energy?",
+    "a": "Motor",
+    "b": "Generator",
+    "c": "Transformer",
+    "d": "Battery",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The S.I unit of frequency is?",
+    "a": "Hertz",
+    "b": "Watt",
+    "c": "Second",
+    "d": "Meter",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a fundamental quantity?",
+    "a": "Speed",
+    "b": "Length",
+    "c": "Density",
+    "d": "Energy",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The angle between an incident ray and the normal is called?",
+    "a": "Angle of reflection",
+    "b": "Angle of incidence",
+    "c": "Angle of refraction",
+    "d": "Critical angle",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of pressure?",
+    "a": "Joule",
+    "b": "Pascal",
+    "c": "Watt",
+    "d": "Newton",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The speed of sound in air is approximately?",
+    "a": "330 m/s",
+    "b": "300 m/s",
+    "c": "340 m/s",
+    "d": "350 m/s",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the S.I unit of energy?",
+    "a": "Watt",
+    "b": "Joule",
+    "c": "Newton",
+    "d": "Pascal",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is an electromagnetic wave?",
+    "a": "Sound wave",
+    "b": "Water wave",
+    "c": "Radio wave",
+    "d": "Shock wave",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The product of force and distance is called?",
+    "a": "Power",
+    "b": "Energy",
+    "c": "Work",
+    "d": "Momentum",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which instrument is used to measure temperature?",
+    "a": "Barometer",
+    "b": "Thermometer",
+    "c": "Hydrometer",
+    "d": "Anemometer",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The splitting of white light into colors is called?",
+    "a": "Reflection",
+    "b": "Refraction",
+    "c": "Dispersion",
+    "d": "Diffraction",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the unit of electric charge?",
+    "a": "Coulomb",
+    "b": "Ampere",
+    "c": "Volt",
+    "d": "Ohm",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a non-contact force?",
+    "a": "Friction",
+    "b": "Tension",
+    "c": "Gravity",
+    "d": "Normal force",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The time taken for one complete oscillation is called?",
+    "a": "Frequency",
+    "b": "Period",
+    "c": "Amplitude",
+    "d": "Wavelength",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which law relates voltage, current, and resistance?",
+    "a": "Coulomb’s Law",
+    "b": "Ohm’s Law",
+    "c": "Faraday’s Law",
+    "d": "Newton’s Law",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The device used to measure electric current is?",
+    "a": "Voltmeter",
+    "b": "Ammeter",
+    "c": "Ohmmeter",
+    "d": "Galvanometer",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the S.I unit of potential difference?",
+    "a": "Ampere",
+    "b": "Ohm",
+    "c": "Volt",
+    "d": "Watt",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The minimum velocity needed to escape Earth’s gravity is called?",
+    "a": "Terminal velocity",
+    "b": "Escape velocity",
+    "c": "Orbital velocity",
+    "d": "Critical velocity",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of lens?",
+    "a": "Convex",
+    "b": "Plane",
+    "c": "Spherical",
+    "d": "Cylindrical",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process of heat transfer without a medium is?",
+    "a": "Conduction",
+    "b": "Convection",
+    "c": "Radiation",
+    "d": "Sublimation",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The image formed by a convex mirror is always?",
+    "a": "Real and inverted",
+    "b": "Virtual and erect",
+    "c": "Real and erect",
+    "d": "Virtual and inverted",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of momentum?",
+    "a": "kg m/s",
+    "b": "kg m/s²",
+    "c": "N m",
+    "d": "J/s",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The rate of change of momentum is equal to?",
+    "a": "Force",
+    "b": "Energy",
+    "c": "Power",
+    "d": "Work",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a conductor of electricity?",
+    "a": "Rubber",
+    "b": "Plastic",
+    "c": "Copper",
+    "d": "Wood",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The force that keeps an object in circular motion is called?",
+    "a": "Centrifugal force",
+    "b": "Centripetal force",
+    "c": "Gravitational force",
+    "d": "Frictional force",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "What is the S.I unit of wavelength?",
+    "a": "Hertz",
+    "b": "Metre",
+    "c": "Second",
+    "d": "Joule",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of mirror?",
+    "a": "Convex",
+    "b": "Plane",
+    "c": "Concave",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The device used to step up or step down voltage is?",
+    "a": "Generator",
+    "b": "Transformer",
+    "c": "Capacitor",
+    "d": "Resistor",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a semiconductor?",
+    "a": "Copper",
+    "b": "Silicon",
+    "c": "Silver",
+    "d": "Gold",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process by which a liquid changes to a gas is called?",
+    "a": "Condensation",
+    "b": "Evaporation",
+    "c": "Sublimation",
+    "d": "Fusion",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these measures the density of a liquid?",
+    "a": "Hydrometer",
+    "b": "Barometer",
+    "c": "Thermometer",
+    "d": "Anemometer",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The energy stored in a stretched spring is called?",
+    "a": "Kinetic energy",
+    "b": "Potential energy",
+    "c": "Thermal energy",
+    "d": "Chemical energy",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of transverse waves?",
+    "a": "Compression",
+    "b": "Rarefaction",
+    "c": "Crest",
+    "d": "Trough",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of specific heat capacity is?",
+    "a": "J/kgK",
+    "b": "J/kg",
+    "c": "J/K",
+    "d": "kg/J",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of nuclear reaction?",
+    "a": "Fusion",
+    "b": "Combustion",
+    "c": "Evaporation",
+    "d": "Condensation",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The instrument used to measure wind speed is?",
+    "a": "Anemometer",
+    "b": "Barometer",
+    "c": "Thermometer",
+    "d": "Hydrometer",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a source of sound?",
+    "a": "Vibrating string",
+    "b": "Still water",
+    "c": "Vacuum",
+    "d": "Silent air",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The resistance of a wire depends on?",
+    "a": "Length",
+    "b": "Mass",
+    "c": "Volume",
+    "d": "Weight",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of energy?",
+    "a": "Kinetic",
+    "b": "Potential",
+    "c": "Thermal",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The force that attracts objects towards the Earth is?",
+    "a": "Friction",
+    "b": "Gravity",
+    "c": "Tension",
+    "d": "Magnetism",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The number of oscillations per second is called?",
+    "a": "Period",
+    "b": "Frequency",
+    "c": "Amplitude",
+    "d": "Wavelength",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of time?",
+    "a": "Metre",
+    "b": "Second",
+    "c": "Kilogram",
+    "d": "Joule",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The bending of waves around obstacles is called?",
+    "a": "Reflection",
+    "b": "Refraction",
+    "c": "Diffraction",
+    "d": "Dispersion",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of mass?",
+    "a": "Kilogram",
+    "b": "Metre",
+    "c": "Second",
+    "d": "Joule",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process of heat transfer in fluids is called?",
+    "a": "Conduction",
+    "b": "Convection",
+    "c": "Radiation",
+    "d": "Sublimation",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of simple machine?",
+    "a": "Lever",
+    "b": "Pulley",
+    "c": "Inclined plane",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of acceleration is?",
+    "a": "m/s",
+    "b": "m/s²",
+    "c": "kg m/s",
+    "d": "N m",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a fundamental force?",
+    "a": "Friction",
+    "b": "Gravity",
+    "c": "Tension",
+    "d": "Normal force",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of latent heat is?",
+    "a": "J/kg",
+    "b": "J/K",
+    "c": "J kg/K",
+    "d": "kg/J",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of electromagnetic radiation?",
+    "a": "X-rays",
+    "b": "Sound",
+    "c": "Water waves",
+    "d": "Shock waves",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The force between two charged objects is described by?",
+    "a": "Ohm’s Law",
+    "b": "Coulomb’s Law",
+    "c": "Newton’s Law",
+    "d": "Faraday’s Law",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of motion?",
+    "a": "Circular",
+    "b": "Static",
+    "c": "Stationary",
+    "d": "Rest",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of electric field strength is?",
+    "a": "N/C",
+    "b": "J/C",
+    "c": "V/m",
+    "d": "Both a and c",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of renewable energy?",
+    "a": "Hydroelectric",
+    "b": "Coal",
+    "c": "Petroleum",
+    "d": "Natural gas",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process of charging a body by touching it with a charged object is?",
+    "a": "Induction",
+    "b": "Conduction",
+    "c": "Radiation",
+    "d": "Convection",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a measure of sound intensity?",
+    "a": "Wavelength",
+    "b": "Frequency",
+    "c": "Amplitude",
+    "d": "Period",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The speed of light in a vacuum is approximately?",
+    "a": "3 × 10⁶ m/s",
+    "b": "3 × 10⁷ m/s",
+    "c": "3 × 10⁸ m/s",
+    "d": "3 × 10⁹ m/s",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of particle emitted during radioactive decay?",
+    "a": "Alpha",
+    "b": "Beta",
+    "c": "Gamma",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of magnetic flux is?",
+    "a": "Tesla",
+    "b": "Weber",
+    "c": "Gauss",
+    "d": "Henry",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a property of magnets?",
+    "a": "Repulsion of like poles",
+    "b": "Attraction of unlike poles",
+    "c": "Both a and b",
+    "d": "None of the above",
+    "ans": "c"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The heat required to change a solid to a liquid is called?",
+    "a": "Latent heat of fusion",
+    "b": "Latent heat of vaporization",
+    "c": "Specific heat capacity",
+    "d": "Thermal conductivity",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of length?",
+    "a": "Metre",
+    "b": "Kilogram",
+    "c": "Second",
+    "d": "Joule",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The phenomenon where sound is reflected back is called?",
+    "a": "Echo",
+    "b": "Refraction",
+    "c": "Diffraction",
+    "d": "Interference",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is used to measure the refractive index of a medium?",
+    "a": "Snell’s Law",
+    "b": "Ohm’s Law",
+    "c": "Coulomb’s Law",
+    "d": "Newton’s Law",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The device that converts electrical energy to mechanical energy is?",
+    "a": "Generator",
+    "b": "Motor",
+    "c": "Transformer",
+    "d": "Capacitor",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a characteristic of waves?",
+    "a": "Wavelength",
+    "b": "Frequency",
+    "c": "Amplitude",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of magnetic field strength is?",
+    "a": "Tesla",
+    "b": "Weber",
+    "c": "Henry",
+    "d": "Gauss",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of capacitor?",
+    "a": "Electrolytic",
+    "b": "Ceramic",
+    "c": "Paper",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process of splitting an atom’s nucleus is called?",
+    "a": "Fusion",
+    "b": "Fission",
+    "c": "Radiation",
+    "d": "Conduction",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of capacitance?",
+    "a": "Farad",
+    "b": "Henry",
+    "c": "Tesla",
+    "d": "Weber",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The law that states pressure is inversely proportional to volume is?",
+    "a": "Charles’ Law",
+    "b": "Boyle’s Law",
+    "c": "Gay-Lussac’s Law",
+    "d": "Avogadro’s Law",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a source of alternating current?",
+    "a": "Battery",
+    "b": "Dynamo",
+    "c": "Cell",
+    "d": "Capacitor",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The unit of inductance is?",
+    "a": "Farad",
+    "b": "Henry",
+    "c": "Tesla",
+    "d": "Weber",
+    "ans": "b"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a type of radiation?",
+    "a": "Alpha",
+    "b": "Beta",
+    "c": "Gamma",
+    "d": "All of the above",
+    "ans": "d"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The device used to measure the intensity of radiation is?",
+    "a": "Geiger counter",
+    "b": "Thermometer",
+    "c": "Barometer",
+    "d": "Hydrometer",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "Which of these is a unit of luminous intensity?",
+    "a": "Candela",
+    "b": "Lumen",
+    "c": "Lux",
+    "d": "Watt",
+    "ans": "a"
+  },
+  {
+    "subject": "PHYSICS",
+    "author": "ogedengbe segun",
+    "ask": "The process by which a solid changes directly to a gas is called?",
+    "a": "Evaporation",
+    "b": "Sublimation",
+    "c": "Condensation",
+    "d": "Fusion",
+    "ans": "b"
+  }
+]

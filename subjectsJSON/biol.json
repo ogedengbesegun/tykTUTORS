@@ -1,0 +1,366 @@
+[
+  
+    {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the SI unit of force?",
+        "a": "Newton",
+        "b": "Joule",
+        "c": "Watt",
+        "d": "Pascal",
+        "ans": "a"
+      },
+     
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the formula for kinetic energy?",
+        "a": "KE = mgh",
+        "b": "KE = 1/2 mv²",
+        "c": "KE = Fd",
+        "d": "KE = Pt",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these is a vector quantity?",
+        "a": "Mass",
+        "b": "Temperature",
+        "c": "Displacement",
+        "d": "Time",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the acceleration due to gravity on Earth?",
+        "a": "9.8 m/s²",
+        "b": "8.0 m/s²",
+        "c": "10.0 m/s²",
+        "d": "7.8 m/s²",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which law of motion states that an object will remain at rest or in uniform motion unless acted upon by a net external force?",
+        "a": "Newton's First Law",
+        "b": "Newton's Second Law",
+        "c": "Newton's Third Law",
+        "d": "Law of Gravitation",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the unit of power?",
+        "a": "Joule",
+        "b": "Watt",
+        "c": "Newton",
+        "d": "Pascal",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following is an example of a contact force?",
+        "a": "Gravitational force",
+        "b": "Magnetic force",
+        "c": "Frictional force",
+        "d": "Electrostatic force",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What happens to the pressure of a gas if its volume is decreased at constant temperature?",
+        "a": "Decreases",
+        "b": "Increases",
+        "c": "Remains constant",
+        "d": "Becomes zero",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these waves requires a medium to travel?",
+        "a": "Light waves",
+        "b": "Radio waves",
+        "c": "Sound waves",
+        "d": "Microwaves",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the speed of light in a vacuum?",
+        "a": "3.0 × 10⁵ m/s",
+        "b": "3.0 × 10⁶ m/s",
+        "c": "3.0 × 10⁸ m/s",
+        "d": "3.0 × 10⁷ m/s",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following is a non-renewable energy source?",
+        "a": "Solar energy",
+        "b": "Wind energy",
+        "c": "Coal",
+        "d": "Hydroelectric power",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the relationship between current, voltage, and resistance according to Ohm’s Law?",
+        "a": "V = IR",
+        "b": "I = VR",
+        "c": "R = IV",
+        "d": "V = R/I",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these is a good conductor of electricity?",
+        "a": "Rubber",
+        "b": "Copper",
+        "c": "Glass",
+        "d": "Wood",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the unit of electric charge?",
+        "a": "Ampere",
+        "b": "Coulomb",
+        "c": "Volt",
+        "d": "Ohm",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which type of lens is used to correct long-sightedness?",
+        "a": "Concave lens",
+        "b": "Convex lens",
+        "c": "Bifocal lens",
+        "d": "Cylindrical lens",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the phenomenon where light bends as it passes from one medium to another?",
+        "a": "Reflection",
+        "b": "Refraction",
+        "c": "Diffraction",
+        "d": "Interference",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following colors of light has the longest wavelength?",
+        "a": "Blue",
+        "b": "Green",
+        "c": "Red",
+        "d": "Violet",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the formula for calculating work done?",
+        "a": "W = F/t",
+        "b": "W = Fd",
+        "c": "W = mgh",
+        "d": "W = Pt",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the SI unit of force?",
+        "a": "Newton",
+        "b": "Joule",
+        "c": "Watt",
+        "d": "Pascal",
+        "ans": "a"
+      },
+     
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the formula for kinetic energy?",
+        "a": "KE = mgh",
+        "b": "KE = 1/2 mv²",
+        "c": "KE = Fd",
+        "d": "KE = Pt",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these is a vector quantity?",
+        "a": "Mass",
+        "b": "Temperature",
+        "c": "Displacement",
+        "d": "Time",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the acceleration due to gravity on Earth?",
+        "a": "9.8 m/s²",
+        "b": "8.0 m/s²",
+        "c": "10.0 m/s²",
+        "d": "7.8 m/s²",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which law of motion states that an object will remain at rest or in uniform motion unless acted upon by a net external force?",
+        "a": "Newton's First Law",
+        "b": "Newton's Second Law",
+        "c": "Newton's Third Law",
+        "d": "Law of Gravitation",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the unit of power?",
+        "a": "Joule",
+        "b": "Watt",
+        "c": "Newton",
+        "d": "Pascal",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following is an example of a contact force?",
+        "a": "Gravitational force",
+        "b": "Magnetic force",
+        "c": "Frictional force",
+        "d": "Electrostatic force",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What happens to the pressure of a gas if its volume is decreased at constant temperature?",
+        "a": "Decreases",
+        "b": "Increases",
+        "c": "Remains constant",
+        "d": "Becomes zero",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these waves requires a medium to travel?",
+        "a": "Light waves",
+        "b": "Radio waves",
+        "c": "Sound waves",
+        "d": "Microwaves",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the speed of light in a vacuum?",
+        "a": "3.0 × 10⁵ m/s",
+        "b": "3.0 × 10⁶ m/s",
+        "c": "3.0 × 10⁸ m/s",
+        "d": "3.0 × 10⁷ m/s",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following is a non-renewable energy source?",
+        "a": "Solar energy",
+        "b": "Wind energy",
+        "c": "Coal",
+        "d": "Hydroelectric power",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the relationship between current, voltage, and resistance according to Ohm’s Law?",
+        "a": "V = IR",
+        "b": "I = VR",
+        "c": "R = IV",
+        "d": "V = R/I",
+        "ans": "a"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of these is a good conductor of electricity?",
+        "a": "Rubber",
+        "b": "Copper",
+        "c": "Glass",
+        "d": "Wood",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the unit of electric charge?",
+        "a": "Ampere",
+        "b": "Coulomb",
+        "c": "Volt",
+        "d": "Ohm",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which type of lens is used to correct long-sightedness?",
+        "a": "Concave lens",
+        "b": "Convex lens",
+        "c": "Bifocal lens",
+        "d": "Cylindrical lens",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the phenomenon where light bends as it passes from one medium to another?",
+        "a": "Reflection",
+        "b": "Refraction",
+        "c": "Diffraction",
+        "d": "Interference",
+        "ans": "b"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "Which of the following colors of light has the longest wavelength?",
+        "a": "Blue",
+        "b": "Green",
+        "c": "Red",
+        "d": "Violet",
+        "ans": "c"
+      },
+      {
+        "subject": "PHYSICS",
+        "author": "ogedengbe segun",
+        "ask": "What is the formula for calculating work done?",
+        "a": "W = F/t",
+        "b": "W = Fd",
+        "c": "W = mgh",
+        "d": "W = Pt",
+        "ans": "b"
+      }
+  ]
+  

@@ -1,0 +1,32 @@
+[
+  {
+    " subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What type of sentence is this: 'Where are you going?'",
+    "a": "Declarative",
+    "b": "Interrogative",
+    "c": "Imperative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    " subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What type of sentence is this: 'Where are you going?'",
+    "a": "Declarative",
+    "b": "Interrogative",
+    "c": "Imperative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    " subject": "English-Language",
+    "author": "John Doe",
+    "ask": "What type of sentence is this: 'Where are you going?'",
+    "a": "Declarative",
+    "b": "Interrogative",
+    "c": "Imperative",
+    "d": "Exclamatory",
+    "ans": "b"
+  }
+]

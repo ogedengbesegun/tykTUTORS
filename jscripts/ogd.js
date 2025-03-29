@@ -27,8 +27,8 @@ xhttp.onreadystatechange = function () {
 
 }
 
-xhttp.open("GET", "/subjectsJSON/tykBank.fina.json", true);
-xhttp.send();
+xhttp.open("GET", "https://tyktutors.onrender.com/getfina", true);
+// xhttp.send();
 
 
 
@@ -517,7 +517,52 @@ eachbtn.forEach(eachbt => {
         document.querySelector('.menuList').style.display = 'none';
 
     })
-})
+});
+
+let quotescroll = document.querySelector('.quotescroll');
+let quotes = document.getElementsByClassName("quotes");
+let quotetxt = document.querySelectorAll('.quote-txt')
+// console.log(quotescroll.getBoundingClientRect().height)
+
+
+
+
+// })
+// let myheight = '';
+// let counter = 0;
+// for (let i = 0; i < quotetxt.length; i++) {
+//     myheight = quotetxt[i].getBoundingClientRect().height;
+//     // counter = i
+//     function scrollme() {
+//         counter = counter + 1
+//         console.log(counter)
+//         if (counter < quotetxt.length) {
+//             quotetxt[counter].scroll(10,20);
+
+
+
+
+//         } else {
+//             if (counter > quotetxt.length) {
+//                 quotetxt[counter].scrollIntoView()
+//             }
+//             clearInterval();
+
+//         }
+
+//     }
+//     setInterval(() => {
+//         scrollme();
+
+//     }, 5000);
+//     // scrollme()
+
+
+
+//     break
+// }
+// console.log(myheight)
+// quotescroll.style.height = (myheight + 10) + 'px'
 
 
 

@@ -6,7 +6,7 @@ import { MongoClient } from 'mongodb';
 // import uuid from 'uuid'
 import nodemailer from 'nodemailer';
 import cors from 'cors';
-
+import sgMail from '@sendgrid/mail';
 dotenv.config();
 
 const app = express();
@@ -20,6 +20,7 @@ app.use(cors());
 
 // app.use(bodyParser.json());
 // MongoDB connection
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 const uri = process.env.MONGO_db2;//Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
 const PORT = process.env.PORT || 8080;
@@ -48,6 +49,114 @@ client.connect().then(() => {
     const proc = db.collection("proc");//db for Data-Processing
     const anim = db.collection("anim");//db for Animal-Husbandary
     ////////////////////////////////
+
+
+    //////// delete duplicate objects
+
+    // engl.aggregate([
+    //     {
+    //         $group: {
+    //             _id: {
+    //                 subject: "$subject",
+    //                 author: "$author",
+    //                 ask: "$ask",
+    //                 a: "$a",
+    //                 b: "$b",
+    //                 c: "$c",
+    //                 d: "$d",
+    //                 ans: "$ans"
+    //             },
+    //             duplicates: {
+    //                 $push: "$_id"
+    //             }
+
+    //         }
+    //     },
+    //     {
+
+    //         $project: {
+    //             _id: {
+    //                 $arrayElemAt:
+    //                     ["$duplicates", 0]
+    //             },
+    //             toDelete: {
+    //                 $slice:
+    //                     ["$duplicates", 1, {
+    //                         $size:
+    //                             "$duplicates"
+    //                     }]
+    //             }
+
+    //         }
+    //     },
+    //     {
+    //         $merge: {
+    //             into: "engl", whenMatched: "keepExisting",
+    //             whenNotMatched: "insert"
+    //         }
+    //     }
+    // ]);
+
+
+
+    // async function deleteDuplicates() {
+    //     const idsToDelete = await engl.distinct("_id", { toDelete: { $exists: true } });
+
+    //     await engl.deleteMany({
+    //         _id: { $in: idsToDelete }
+    //     });
+    // }
+
+    // // Call the function
+    // deleteDuplicates();
+
+
+    /////////
+    // async function removeDuplicateEntries() {
+    //     try {
+    //         // Aggregate to find duplicates based only on 'ask' field
+    //         const duplicates = await engl.aggregate([
+    //             {
+    //                 $group: {
+    //                     _id: "$ask", // Group by 'ask' field only
+    //                     duplicates: { $push: "$_id" }
+    //                 }
+    //             },
+    //             {
+    //                 $project: {
+    //                     _id: 0, // Exclude _id field
+    //                     toDelete: { $slice: ["$duplicates", 1] } // Keep the first occurrence, delete the rest
+    //                 }
+    //             }
+    //         ]).toArray(); // Ensure the result is an array
+
+    //         if (!Array.isArray(duplicates)) {
+    //             throw new Error("Aggregation did not return an array");
+    //         }
+
+    //         // Extract IDs to delete (only duplicates)
+    //         let idsToDelete = [];
+    //         for (const doc of duplicates) {
+    //             if (Array.isArray(doc.toDelete) && doc.toDelete.length > 0) {
+    //                 idsToDelete = idsToDelete.concat(doc.toDelete);
+    //             }
+    //         }
+
+    //         if (idsToDelete.length > 0) {
+    //             await engl.deleteMany({ _id: { $in: idsToDelete } });
+    //             console.log(`Deleted ${idsToDelete.length} duplicate entries based on 'ask'.`);
+    //         } else {
+    //             console.log("No duplicate entries found.");
+    //         }
+    //     } catch (error) {
+    //         console.error("Error removing duplicates:", error);
+    //     }
+    // }
+
+    // // Call the function
+    // removeDuplicateEntries();
+
+
 
 
 
@@ -570,7 +679,7 @@ client.connect().then(() => {
                 <strong><u><a href='https://tyktutor.onrender.com'>Click Me</a></u></strong>
                 </div>
                 `
-            };
+            };//
 
             transporter.sendMail(mailOptions);
         }
@@ -585,10 +694,9 @@ client.connect().then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     });
-}).catch((error) => console.error('Error connecting to MongoDB:', error)
+}).catch((error) => console.error('Error connecting to MongoDB:', error));
 
 
-);
 //////////////////
 // app.post("/send-email", async (req, res) => {
 //     try {

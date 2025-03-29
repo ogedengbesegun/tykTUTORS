@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "67b9b4de1205d60c4830b465"
+  },
+  "author": "oluwole folasade iyabo",
+  "subject": "Computer-Studies",
+  "ask": "Another name for CPU is _",
+  "a": "VDU",
+  "b": "Processor ",
+  "c": "System unit",
+  "d": "UPS",
+  "ans": "b"
+},
+{
+  "_id": {
+    "$oid": "67b9c1ad2024e75eb2c9f579"
+  },
+  "author": "oluwole folasade iyabo",
+  "subject": "Computer-Studies",
+  "ask": "Digital literacy involves using technology responsibly,_______and effectively.",
+  "a": "Saifely",
+  "b": "Sadly",
+  "c": "Safety",
+  "d": "Safely",
+  "ans": "d"
+},
+{
+  "_id": {
+    "$oid": "67b9c1e62024e75eb2c9f57a"
+  },
+  "author": "oluwole folasade iyabo",
+  "subject": "Computer-Studies",
+  "ask": "Digital tools include all except ",
+  "a": "Computers ",
+  "b": "Smart phones ",
+  "c": "Refrigerator ",
+  "d": "Internet ",
+  "ans": "c"
+}]
