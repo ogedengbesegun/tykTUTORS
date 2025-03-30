@@ -251,10 +251,9 @@ h5 {
 .start {
   background-color: #747277;
   color: white;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 10px;
 }
 
 .myPicture {

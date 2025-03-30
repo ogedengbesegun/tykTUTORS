@@ -26,9 +26,27 @@ studentcolor.style.backgroundColor = '#3333ff'//the backgroud set onload
 const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
 studentlogininput.setAttribute('readonly', true);
 
+
+
+
+
+
+
+let sty;
+sty = {
+    marginTop: "250px",
+    color: "light",
+    width: "50%",
+}
+
 let selectsubmsg = document.createElement('dialog');
-selectsubmsg.className = `text-bg-light border-1 w-50
- text-center rounded-3 mx-auto my-auto`;
+selectsubmsg.className = `border-1
+ text-center rounded-3 mx-auto`;
+const styleProp = selectsubmsg.style
+styleProp.marginTop = sty.marginTop;
+styleProp.backgroundColor = sty.color;
+styleProp.width = sty.width;
+
 selectsubmsg.innerHTML = `<h3 class='text-danger mt-2 px-2'>Select a Subject First</h3>
 <p class='text-center mx-2'>Please ensure you have selected the Subject of
  choice first before login can be enabled !!!</p>
@@ -196,7 +214,7 @@ function selectOne() {
         subTitle.textContent = subject.textContent
 
         title.textContent = subject.textContent + " tykTutors"
-        studentcolor.style.backgroundColor = color['darkpink']
+        studentcolor.style.backgroundColor = color["darkpink"]
 
     }
     else {
@@ -278,55 +296,55 @@ subjPwd.setAttribute("maxlength", 15)
 
 
 
-// this uses the select element value
-subjSelect.addEventListener("click", () => {
-    // dialog7.style.display = "none"
+// // this uses the select element value
+// subjSelect.addEventListener("click", () => {
+//     // dialog7.style.display = "none"
 
-    // 
+//     // 
 
-    if (subjSelect.value === "fina") {
-
-
-        setTimeout(() => {
-            scoreSheetHead.style.display = "block";
-            // close up the current page
-            subjResultLogin.style.display = "none";
-
-            // to clear off the inputs
-            // -------------------------
-            subjId.value = "";
-            subjPwd.value = "";
-
-            showselect.style.display = "none";
-
-            msgUser.textContent = "";
-            // -----------------------
-
-        }, 2000);
+//     if (subjSelect.value === "fina") {
 
 
-        bell.style.display = "none";
+//         setTimeout(() => {
+//             scoreSheetHead.style.display = "block";
+//             // close up the current page
+//             subjResultLogin.style.display = "none";
 
-        dialog7.close();
+//             // to clear off the inputs
+//             // -------------------------
+//             subjId.value = "";
+//             subjPwd.value = "";
 
-    }
-    else if (subjSelect.value === "Select One") {
-        document.querySelector("option").disabled = true;
-    }
+//             showselect.style.display = "none";
 
-    else {
+//             msgUser.textContent = "";
+//             // -----------------------
 
-
-
-        dialog7.show()
-        bell.style.color = "red";
-        bell.style.display = "inline";
-
-
-    }
+//         }, 2000);
 
 
-});
+//         bell.style.display = "none";
+
+//         dialog7.close();
+
+//     }
+//     else if (subjSelect.value === "Select One") {
+//         document.querySelector("option").disabled = true;
+//     }
+
+//     else {
+
+
+
+//         dialog7.show()
+//         bell.style.color = "red";
+//         bell.style.display = "inline";
+
+
+//     }
+
+
+// });
 
 // subjSelect.addEventListener("mouseenter", () => {
 //     dialog7.style.display = "none"
@@ -978,10 +996,5 @@ function showResult() {
 
 
 }
-
-
-
-
-
 
 
