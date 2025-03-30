@@ -565,8 +565,20 @@ let quotetxt = document.querySelectorAll('.quote-txt')
 // quotescroll.style.height = (myheight + 10) + 'px'
 
 
+const menuClose = document.querySelectorAll(".icon-close");
+menuClose.forEach(menubtn => {
+    menubtn.addEventListener("click", () => {
+        document.querySelector(".menuList").style.display = "none";
 
+    })
 
+});
+
+const navBarIcon = document.querySelector(".navBarIcon");
+navBarIcon.addEventListener("click", () => {
+    document.querySelector(".menuList").style.display = "block";
+
+})
 
 
 
@@ -584,25 +596,15 @@ $(document).ready(function () {
 
 
 
-    $(".navBarIcon").click(() => {
-        $(".menuList").show(200)
-
-    });
 
 
-    $('.menuList').click(function (event) {
-        // hide nav element for me
-        // $('.menuList').hide(200);
-        $(event.target.this).hide();
-        // $(".contactsok").click();
 
 
-    });
 
-    $(".icon-menuList, .icon-close").click(function () {
-        $(".menuList").hide();
+    // $(".icon-close, .menu_close").click(function () {
+    //     $(".menuList").hide();
 
-    });
+    // });
 
     // $(".contacts").click(function () {
     //     $(".contactMe").css( "z-index", 9999 )
@@ -610,12 +612,12 @@ $(document).ready(function () {
 
 
 
-    $(".picture").click(function () {
-        $("html,body").animate({
-            scrollTop: $(".sectionThree").offset().top
+    // $(".picture").click(function () {
+    //     $("html,body").animate({
+    //         scrollTop: $(".sectionThree").offset().top
 
-        }, "slow");
-    });
+    //     }, "slow");
+    // });
 
 
     $(".viewMore, .schools").click(function () {

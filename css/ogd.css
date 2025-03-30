@@ -32,12 +32,13 @@ body {
 }
 /* menuList */
 .menuList {
-  width: 24vw;
+  width: 22vw;
   margin: 0 auto;
   position: fixed;
-  top: 30px;
+  top: 100px;
   z-index: 3;
   padding: 0 2px;
+  display: none;
 }
 .menuList ul {
   width: 100%;
@@ -459,13 +460,7 @@ section .why {
   right: -5px;
   float: right;
 }
-.icon-close {
-  top: -45px;
-  right: -20px;
-  position: relative;
 
-  float: right;
-}
 
 /* float right */
 .floatRight {
