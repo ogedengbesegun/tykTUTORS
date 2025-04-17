@@ -8,7 +8,6 @@ import nodemailer from 'nodemailer';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
 
-import { btnmail } from './btnmail';
 
 dotenv.config();
 
