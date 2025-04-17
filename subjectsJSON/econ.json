@@ -1,17 +1,17 @@
 [
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Economics ?",
     "a": "study of how to make money",
-    "b": "study of how people make choices to satisfy their wants",
+    "b": "study of how to produce goods",
     "c": "study of how to manage resources",
-    "d": "study of how to produce goods",
-    "ans": "b"
+    "d": "study of how people make choices to satisfy their wants",
+    "ans": "d"
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Scarcity ?",
     "a": "state of abundant resources",
     "b": "state of equilibrium",
@@ -21,7 +21,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Opportunity Cost ?",
     "a": "cost of producing a good",
     "b": "cost of consuming a good",
@@ -31,7 +31,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Demand ?",
     "a": "amount of goods and services buyers are willing to buy and pay for",
     "b": "price of a good",
@@ -41,17 +41,17 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Supply ?",
     "a": "amount of goods and services buyers are willing to buy and pay for",
-    "b": "amount of goods and services producers are willing to produce and sell",
+    "b": "price of a good",
     "c": "quantity of a good",
-    "d": "price of a good",
-    "ans": "b"
+    "d": "amount of goods and services producers are willing to produce and sell",
+    "ans": "d"
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Market Equilibrium ?",
     "a": "state where the quantity of a good demanded is greater than the quantity supplied",
     "b": "state where the quantity of a good demanded is less than the quantity supplied",
@@ -61,7 +61,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Price Elasticity of Demand ?",
     "a": "measure of how responsive the quantity supplied of a good is to a change in its price",
     "b": "measure of how responsive the demand for a good is to a change in the price of another good",
@@ -71,7 +71,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Consumer Surplus ?",
     "a": "difference between the actual price paid for a good and the minimum price a consumer is willing to pay",
     "b": "total benefit derived by a consumer from consuming a good",
@@ -81,7 +81,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Producer Surplus ?",
     "a": "difference between the minimum price a producer is willing to accept for a good and the actual price received",
     "b": "total revenue earned by a producer from selling a good",
@@ -91,7 +91,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Inflation ?",
     "a": "sustained decrease in the general price level of goods and services in an economy over a period of time",
     "b": "sustained increase in the general price level of goods and services in an economy over a period of time",
@@ -101,7 +101,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Deflation ?",
     "a": "sustained increase in the general price level of goods and services in an economy over a period of time",
     "b": "sustained decrease in the general price level of goods and services in an economy over a period of time",
@@ -111,7 +111,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Unemployment ?",
     "a": "state of being employed",
     "b": "state of being without a job",
@@ -121,7 +121,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Fiscal Policy ?",
     "a": "use of government spending and taxation to manage the economy",
     "b": "use of monetary policy to manage the economy",
@@ -131,7 +131,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Monetary Policy ?",
     "a": "use of government spending and taxation to manage the economy",
     "b": "use of interest rates and money supply to manage the economy",
@@ -141,7 +141,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is International Trade ?",
     "a": "production of goods and services within a country",
     "b": "exchange of goods and services within a country",
@@ -151,7 +151,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Comparative Advantage ?",
     "a": "ability of a country to produce a good at a lower opportunity cost than another country",
     "b": "ability of a country to produce a good at a higher opportunity cost than another country",
@@ -161,7 +161,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Absolute Advantage ?",
     "a": "ability of a country to produce more of a good than another country",
     "b": "ability of a country to produce a good at a lower opportunity cost than another country",
@@ -171,7 +171,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Economic Integration ?",
     "a": "process of combining different economies into a single economy",
     "b": "process of separating different economies into individual economies",
@@ -181,7 +181,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Free Trade ?",
     "a": "trade between countries with restrictions or tariffs",
     "b": "trade between countries without any restrictions or tariffs",
@@ -191,7 +191,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is Protectionism ?",
     "a": "policy of protecting domestic industries from foreign competition",
     "b": "policy of promoting free trade between countries",
@@ -201,7 +201,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the main goal of macroeconomic policy?",
     "a": "to reduce unemployment",
     "b": "to increase economic growth",
@@ -211,7 +211,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of diminishing marginal utility?",
     "a": "the more you consume, the more satisfaction you get",
     "b": "the more you consume, the less satisfaction you get",
@@ -221,7 +221,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the difference between a need and a want?",
     "a": "a need is something you can live without, while a want is something you cannot live without",
     "b": "a need is something you cannot live without, while a want is something you can live without",
@@ -231,7 +231,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of opportunity cost?",
     "a": "the cost of choosing one option over another",
     "b": "the cost of producing a good",
@@ -241,7 +241,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the law of supply?",
     "a": "as the price of a good increases, the quantity supplied decreases",
     "b": "as the price of a good increases, the quantity supplied increases",
@@ -251,7 +251,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of consumer surplus?",
     "a": "the difference between the maximum price a consumer is willing to pay and the actual price paid",
     "b": "the difference between the actual price paid and the minimum price a consumer is willing to pay",
@@ -261,7 +261,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of producer surplus?",
     "a": "the difference between the actual price received by a producer and the minimum price the producer is willing to accept",
     "b": "the difference between the minimum price a producer is willing to accept and the actual price received",
@@ -271,7 +271,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of economic efficiency?",
     "a": "the production of goods and services at the lowest possible cost",
     "b": "the production of goods and services at the highest possible cost",
@@ -281,7 +281,7 @@
   },
   {
     "subject": "Economics",
-    "author": "John Doe",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of economic growth?",
     "a": "an increase in the production of goods and services in an economy over time",
     "b": "a decrease in the production of goods and services in an economy over time",
@@ -290,8 +290,8 @@
     "ans": "a"
   },
   {
-    "subject": "economics",
-    "author": "John Doe",
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
     "ask": "What is the main goal of macroeconomic policy?",
     "a": "to reduce unemployment",
     "b": "to increase economic growth",
@@ -300,13 +300,903 @@
     "ans": "d"
   },
   {
-    "subject": "economics",
-    "author": "John Doe",
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
     "ask": "What is the concept of diminishing marginal utility?",
     "a": "the more you consume, the more satisfaction you get",
     "b": "the more you consume, the less satisfaction you get",
     "c": "the more you consume, the same satisfaction you get",
     "d": "the more you consume, the satisfaction remains constant",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The study of economics is primarily concerned with:",
+    "a": "The distribution of wealth only",
+    "b": "The allocation of scarce resources",
+    "c": "The production of goods only",
+    "d": "The consumption of services only",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The concept of opportunity cost is best illustrated by:",
+    "a": "The price of a good in the market",
+    "b": "The cost of producing one more unit",
+    "c": "The value of the next best alternative forgone",
+    "d": "The total cost of production",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A mixed economy combines elements of:",
+    "a": "Capitalism and socialism",
+    "b": "Traditional and command economies",
+    "c": "Market and traditional economies",
+    "d": "Socialism and traditional economies",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The law of demand states that, other things being equal:",
+    "a": "Price and quantity demanded are positively related",
+    "b": "Price and quantity demanded are negatively related",
+    "c": "Income and quantity demanded are negatively related",
+    "d": "Price and supply are positively related",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A shift in the demand curve to the right indicates:",
+    "a": "A decrease in demand",
+    "b": "An increase in supply",
+    "c": "An increase in demand",
+    "d": "A decrease in supply",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a determinant of supply?",
+    "a": "Consumer income",
+    "b": "Cost of production",
+    "c": "Tastes and preferences",
+    "d": "Population size",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The equilibrium price in a market is determined by:",
+    "a": "Supply alone",
+    "b": "Demand alone",
+    "c": "The interaction of supply and demand",
+    "d": "Government regulation",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A price floor above equilibrium price leads to:",
+    "a": "A shortage",
+    "b": "A surplus",
+    "c": "No change in quantity",
+    "d": "An increase in demand",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The production possibility curve (PPC) illustrates:",
+    "a": "Unlimited resources",
+    "b": "Scarcity and opportunity cost",
+    "c": "Infinite production capacity",
+    "d": "Fixed technology",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a factor of production?",
+    "a": "Money",
+    "b": "Land",
+    "c": "Demand",
+    "d": "Price",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The law of diminishing returns applies when:",
+    "a": "All inputs are variable",
+    "b": "Output increases indefinitely",
+    "c": "All inputs are fixed",
+    "d": "One input is fixed while others vary",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Economies of scale are achieved when:",
+    "a": "Production costs increase with output",
+    "b": "Marginal cost exceeds average cost",
+    "c": "Total cost remains constant",
+    "d": "Average cost per unit decreases as output increases",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A market structure with many sellers and identical products is called:",
+    "a": "Monopoly",
+    "b": "Oligopoly",
+    "c": "Perfect competition",
+    "d": "Monopolistic competition",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A monopolist maximizes profit where:",
+    "a": "Marginal cost equals average cost",
+    "b": "Marginal revenue equals marginal cost",
+    "c": "Price equals average cost",
+    "d": "Demand equals supply",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "National income measures the value of:",
+    "a": "Goods produced in a year",
+    "b": "Goods and services produced in a year",
+    "c": "Services consumed in a year",
+    "d": "Imports and exports in a year",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Gross Domestic Product (GDP) is calculated using the:",
+    "a": "Income method only",
+    "b": "Expenditure, income, or output method",
+    "c": "Output method only",
+    "d": "Consumption method only",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The difference between GDP and GNP is:",
+    "a": "Net foreign income",
+    "b": "Depreciation",
+    "c": "Indirect taxes",
+    "d": "Subsidies",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Inflation is best described as:",
+    "a": "A fall in the general price level",
+    "b": "A sustained rise in the general price level",
+    "c": "A decrease in purchasing power of money",
+    "d": "An increase in production costs",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Demand-pull inflation occurs when:",
+    "a": "Production costs rise",
+    "b": "Aggregate demand exceeds aggregate supply",
+    "c": "Money supply decreases",
+    "d": "Taxes increase",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The central bank controls money supply through:",
+    "a": "Fiscal policy",
+    "b": "Monetary policy",
+    "c": "Trade policy",
+    "d": "Industrial policy",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Open market operations involve the central bank:",
+    "a": "Printing more money",
+    "b": "Buying or selling government securities",
+    "c": "Setting tax rates",
+    "d": "Regulating exports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The function of money as a store of value means it can:",
+    "a": "Be used to purchase goods",
+    "b": "Retain purchasing power over time",
+    "c": "Measure the value of goods",
+    "d": "Facilitate exchange",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A commercial bank creates money by:",
+    "a": "Printing currency",
+    "b": "Lending money",
+    "c": "Issuing bonds",
+    "d": "Collecting taxes",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main source of government revenue in Nigeria is:",
+    "a": "Personal income tax",
+    "b": "Oil revenue",
+    "c": "Customs duties",
+    "d": "Agricultural exports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A progressive tax system is one where:",
+    "a": "Tax rates decrease as income increases",
+    "b": "Tax rates increase as income increases",
+    "c": "Everyone pays the same tax rate",
+    "d": "Tax is based on consumption",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main objective of fiscal policy is to:",
+    "a": "Control money supply",
+    "b": "Stabilize the economy",
+    "c": "Regulate international trade",
+    "d": "Promote industrialization",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A budget deficit occurs when:",
+    "a": "Revenue equals expenditure",
+    "b": "Expenditure exceeds revenue",
+    "c": "Revenue exceeds expenditure",
+    "d": "Exports equal imports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "International trade is based on the principle of:",
+    "a": "Absolute advantage",
+    "b": "Comparative advantage",
+    "c": "Equal advantage",
+    "d": "Mutual benefit",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A tariff is a tax imposed on:",
+    "a": "Income",
+    "b": "Exports",
+    "c": "Imports",
+    "d": "Production",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The balance of payments records:",
+    "a": "Government revenue and expenditure",
+    "b": "A country’s transactions with the rest of the world",
+    "c": "Domestic production only",
+    "d": "Money supply changes",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A favorable balance of trade occurs when:",
+    "a": "Imports exceed exports",
+    "b": "Exports exceed imports",
+    "c": "Imports equal exports",
+    "d": "Foreign aid increases",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Devaluation of a currency is likely to:",
+    "a": "Increase imports",
+    "b": "Reduce exports",
+    "c": "Make exports cheaper",
+    "d": "Increase domestic prices",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Economic development is best measured by:",
+    "a": "GDP alone",
+    "b": "Improvements in living standards",
+    "c": "Export volumes",
+    "d": "Money supply",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Malthusian population theory is concerned with:",
+    "a": "Population growth and food supply",
+    "b": "Urbanization",
+    "c": "Migration patterns",
+    "d": "Age distribution",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Unemployment caused by seasonal changes in demand is called:",
+    "a": "Structural unemployment",
+    "b": "Frictional unemployment",
+    "c": "Seasonal unemployment",
+    "d": "Cyclical unemployment",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The dependency ratio measures the ratio of:",
+    "a": "Workers to retirees",
+    "b": "Non-workers to workers",
+    "c": "Children to adults",
+    "d": "Exports to imports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The primary sector of an economy includes:",
+    "a": "Manufacturing",
+    "b": "Agriculture",
+    "c": "Banking",
+    "d": "Transportation",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "Industrialization in Nigeria is hindered by:",
+    "a": "Excess capital",
+    "b": "Inadequate infrastructure",
+    "c": "High labour supply",
+    "d": "Abundant raw materials",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Nigerian National Petroleum Corporation (NNPC) is primarily responsible for:",
+    "a": "Regulating banking",
+    "b": "Managing oil and gas resources",
+    "c": "Promoting agriculture",
+    "d": "Controlling inflation",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major positive contribution of petroleum to Nigeria’s economy is:",
+    "a": "Increased unemployment",
+    "b": "Foreign exchange earnings",
+    "c": "Environmental degradation",
+    "d": "Reduced exports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘economies of scale’ refers to:",
+    "a": "Increased costs with production",
+    "b": "Cost advantages from large-scale production",
+    "c": "Fixed costs only",
+    "d": "Reduced output",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The elasticity of demand measures:",
+    "a": "Change in supply due to price",
+    "b": "Responsiveness of quantity demanded to price changes",
+    "c": "Change in income due to demand",
+    "d": "Fixed demand for goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A good with perfectly inelastic demand has an elasticity of:",
+    "a": "Zero",
+    "b": "One",
+    "c": "Infinity",
+    "d": "Greater than one",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The marginal utility of a good refers to:",
+    "a": "Total satisfaction from consumption",
+    "b": "Additional satisfaction from consuming one more unit",
+    "c": "Average satisfaction per unit",
+    "d": "Cost of consuming one more unit",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A firm in perfect competition is a:",
+    "a": "Price maker",
+    "b": "Price taker",
+    "c": "Monopoly",
+    "d": "Oligopoly",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The break-even point for a firm occurs when:",
+    "a": "Total revenue equals total cost",
+    "b": "Marginal revenue exceeds marginal cost",
+    "c": "Profit is maximized",
+    "d": "Losses are minimized",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main goal of economic planning in Nigeria is to:",
+    "a": "Increase imports",
+    "b": "Achieve sustainable development",
+    "c": "Reduce exports",
+    "d": "Limit foreign investment",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Niger Delta region is significant for Nigeria’s economy due to its:",
+    "a": "Agricultural output",
+    "b": "Oil and gas deposits",
+    "c": "Manufacturing industries",
+    "d": "Tourism potential",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The law of supply states that, other things being equal:",
+    "a": "Price and quantity supplied are negatively related",
+    "b": "Price and quantity supplied are positively related",
+    "c": "Cost and supply are negatively related",
+    "d": "Demand and supply are positively related",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A shift in the supply curve to the left indicates:",
+    "a": "An increase in supply",
+    "b": "A decrease in supply",
+    "c": "An increase in demand",
+    "d": "A decrease in demand",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A price ceiling below equilibrium price leads to:",
+    "a": "A surplus",
+    "b": "A shortage",
+    "c": "No change in quantity",
+    "d": "An increase in supply",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The income elasticity of demand for inferior goods is:",
+    "a": "Positive",
+    "b": "Negative",
+    "c": "Zero",
+    "d": "Infinite",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main function of the capital market is to:",
+    "a": "Facilitate short-term loans",
+    "b": "Provide long-term finance",
+    "c": "Regulate money supply",
+    "d": "Control inflation",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A regressive tax system is one where:",
+    "a": "Tax rates increase with income",
+    "b": "Tax rates decrease with income",
+    "c": "Everyone pays the same tax amount",
+    "d": "Tax is based on production",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘deflationary gap’ refers to:",
+    "a": "Excess aggregate demand",
+    "b": "Insufficient aggregate demand to achieve full employment",
+    "c": "Equal aggregate demand and supply",
+    "d": "Excess money supply",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main aim of the World Bank is to:",
+    "a": "Control global trade",
+    "b": "Provide loans for development",
+    "c": "Regulate exchange rates",
+    "d": "Promote industrialization",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Economic Community of West African States (ECOWAS) promotes:",
+    "a": "Global trade",
+    "b": "Regional economic integration",
+    "c": "Agricultural exports only",
+    "d": "Monetary policy control",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The optimum population is achieved when:",
+    "a": "Population exceeds resources",
+    "b": "Population matches resource availability",
+    "c": "Population is below resource capacity",
+    "d": "Population growth stops",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major challenge of agriculture in Nigeria is:",
+    "a": "Excess labour supply",
+    "b": "Lack of modern technology",
+    "c": "High export demand",
+    "d": "Abundant fertile land",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main purpose of privatization is to:",
+    "a": "Increase government control",
+    "b": "Improve efficiency and profitability",
+    "c": "Reduce employment",
+    "d": "Limit foreign investment",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A public corporation is managed by:",
+    "a": "A board of directors",
+    "b": "Private shareholders",
+    "c": "Individual entrepreneurs",
+    "d": "Foreign investors",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘stagflation’ refers to:",
+    "a": "High inflation and low unemployment",
+    "b": "High inflation and high unemployment",
+    "c": "Low inflation and low unemployment",
+    "d": "Low inflation and high unemployment",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The money market deals with:",
+    "a": "Long-term loans",
+    "b": "Short-term loans",
+    "c": "Equity shares",
+    "d": "Government bonds",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major function of the International Monetary Fund (IMF) is to:",
+    "a": "Provide development loans",
+    "b": "Stabilize exchange rates",
+    "c": "Promote agriculture",
+    "d": "Control global inflation",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘gross national income’ includes:",
+    "a": "Domestic production only",
+    "b": "Government expenditure only",
+    "c": "Imports only",
+    "d": "Net income from abroad",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A cooperative society is owned and controlled by:",
+    "a": "The government",
+    "b": "Foreign companies",
+    "c": "Private investors",
+    "d": "Its members",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘economic growth’ refers to:",
+    "a": "Increase in population",
+    "b": "Increase in real GDP over time",
+    "c": "Increase in imports",
+    "d": "Increase in inflation",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The Phillips Curve illustrates the relationship between:",
+    "a": "Inflation and money supply",
+    "b": "Inflation and unemployment",
+    "c": "Unemployment and GDP",
+    "d": "GDP and money supply",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major advantage of division of labour is:",
+    "a": "Increased unemployment",
+    "b": "Higher production costs",
+    "c": "Increased productivity",
+    "d": "Reduced output",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘liquidity’ in economics refers to:",
+    "a": "The ease of converting assets to cash",
+    "b": "The total money supply",
+    "c": "The level of debt",
+    "d": "The rate of inflation",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main purpose of a trade union is to:",
+    "a": "Increase production costs",
+    "b": "Protect workers’ interests",
+    "c": "Reduce employment",
+    "d": "Control prices",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major disadvantage of a planned economy is:",
+    "a": "High efficiency",
+    "b": "Lack of consumer choice",
+    "c": "Excessive competition",
+    "d": "Low government control",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘velocity of money’ refers to:",
+    "a": "The rate of inflation",
+    "b": "The frequency of money changing hands",
+    "c": "The growth of money supply",
+    "d": "The level of unemployment",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major feature of a capitalist economy is:",
+    "a": "Central planning",
+    "b": "Private ownership of resources",
+    "c": "Equal income distribution",
+    "d": "Government control of prices",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘fiscal drag’ refers to:",
+    "a": "Increased government spending",
+    "b": "Reduced economic growth due to high taxes",
+    "c": "Lower tax revenue",
+    "d": "Increased exports",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main source of foreign exchange for Nigeria is:",
+    "a": "Tourism",
+    "b": "Oil exports",
+    "c": "Agricultural exports",
+    "d": "Foreign aid",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘opportunity cost’ is most closely associated with:",
+    "a": "Monetary cost",
+    "b": "Choice and sacrifice",
+    "c": "Profit maximization",
+    "d": "Fixed cost",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major function of the African Development Bank is to:",
+    "a": "Control global trade",
+    "b": "Promote economic development in Africa",
+    "c": "Regulate oil prices",
+    "d": "Stabilize global currencies",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘external debt’ refers to:",
+    "a": "Domestic borrowing",
+    "b": "Private sector loans",
+    "c": "Government revenue",
+    "d": "Money owed to foreign creditors",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major cause of unemployment in Nigeria is:",
+    "a": "High population growth",
+    "b": "Excess labour supply",
+    "c": "Abundant job opportunities",
+    "d": "Low education levels",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘terms of trade’ measures:",
+    "a": "The ratio of export prices to import prices",
+    "b": "The volume of trade",
+    "c": "The balance of payments",
+    "d": "The level of tariffs",
+    "ans": "a"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major objective of OPEC is to:",
+    "a": "Increase global oil supply",
+    "b": "Stabilize oil prices",
+    "c": "Reduce oil production",
+    "d": "Promote alternative energy",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘subsistence agriculture’ refers to:",
+    "a": "Large-scale farming for export",
+    "b": "Farming for family consumption",
+    "c": "Mechanized farming",
+    "d": "Commercial farming",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The main purpose of a stock exchange is to:",
+    "a": "Control money supply",
+    "b": "Provide short-term loans",
+    "c": "Regulate interest rates",
+    "d": "Facilitate trading of securities",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major characteristic of underdevelopment is:",
+    "a": "High GDP per capita",
+    "b": "Advanced technology",
+    "c": "Low population growth",
+    "d": "Low living standards",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘multiplier effect’ refers to:",
+    "a": "Increased money supply",
+    "b": "Reduced government expenditure",
+    "c": "Amplified impact of initial spending on income",
+    "d": "Decreased investment",
+    "ans": "c"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "A major feature of a joint-stock company is:",
+    "a": "Unlimited liability",
+    "b": "Single ownership",
+    "c": "Government control",
+    "d": "Limited liability",
+    "ans": "d"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘economic diversification’ in Nigeria refers to:",
+    "a": "Increasing oil production",
+    "b": "Expanding non-oil sectors",
+    "c": "Reducing exports",
+    "d": "Limiting foreign trade",
+    "ans": "b"
+  },
+  {
+    "subject": "Economics",
+    "author": "Ogedengbe Segun",
+    "ask": "The term ‘cost-push inflation’ is caused by:",
+    "a": "Increased consumer demand",
+    "b": "Rising production costs",
+    "c": "Excess money supply",
+    "d": "Reduced government spending",
     "ans": "b"
   }
 ]

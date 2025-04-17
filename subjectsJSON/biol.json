@@ -1,366 +1,1002 @@
 [
-  
-    {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the SI unit of force?",
-        "a": "Newton",
-        "b": "Joule",
-        "c": "Watt",
-        "d": "Pascal",
-        "ans": "a"
-      },
-     
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the formula for kinetic energy?",
-        "a": "KE = mgh",
-        "b": "KE = 1/2 mv²",
-        "c": "KE = Fd",
-        "d": "KE = Pt",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these is a vector quantity?",
-        "a": "Mass",
-        "b": "Temperature",
-        "c": "Displacement",
-        "d": "Time",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the acceleration due to gravity on Earth?",
-        "a": "9.8 m/s²",
-        "b": "8.0 m/s²",
-        "c": "10.0 m/s²",
-        "d": "7.8 m/s²",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which law of motion states that an object will remain at rest or in uniform motion unless acted upon by a net external force?",
-        "a": "Newton's First Law",
-        "b": "Newton's Second Law",
-        "c": "Newton's Third Law",
-        "d": "Law of Gravitation",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the unit of power?",
-        "a": "Joule",
-        "b": "Watt",
-        "c": "Newton",
-        "d": "Pascal",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following is an example of a contact force?",
-        "a": "Gravitational force",
-        "b": "Magnetic force",
-        "c": "Frictional force",
-        "d": "Electrostatic force",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What happens to the pressure of a gas if its volume is decreased at constant temperature?",
-        "a": "Decreases",
-        "b": "Increases",
-        "c": "Remains constant",
-        "d": "Becomes zero",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these waves requires a medium to travel?",
-        "a": "Light waves",
-        "b": "Radio waves",
-        "c": "Sound waves",
-        "d": "Microwaves",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the speed of light in a vacuum?",
-        "a": "3.0 × 10⁵ m/s",
-        "b": "3.0 × 10⁶ m/s",
-        "c": "3.0 × 10⁸ m/s",
-        "d": "3.0 × 10⁷ m/s",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following is a non-renewable energy source?",
-        "a": "Solar energy",
-        "b": "Wind energy",
-        "c": "Coal",
-        "d": "Hydroelectric power",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the relationship between current, voltage, and resistance according to Ohm’s Law?",
-        "a": "V = IR",
-        "b": "I = VR",
-        "c": "R = IV",
-        "d": "V = R/I",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these is a good conductor of electricity?",
-        "a": "Rubber",
-        "b": "Copper",
-        "c": "Glass",
-        "d": "Wood",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the unit of electric charge?",
-        "a": "Ampere",
-        "b": "Coulomb",
-        "c": "Volt",
-        "d": "Ohm",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which type of lens is used to correct long-sightedness?",
-        "a": "Concave lens",
-        "b": "Convex lens",
-        "c": "Bifocal lens",
-        "d": "Cylindrical lens",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the phenomenon where light bends as it passes from one medium to another?",
-        "a": "Reflection",
-        "b": "Refraction",
-        "c": "Diffraction",
-        "d": "Interference",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following colors of light has the longest wavelength?",
-        "a": "Blue",
-        "b": "Green",
-        "c": "Red",
-        "d": "Violet",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the formula for calculating work done?",
-        "a": "W = F/t",
-        "b": "W = Fd",
-        "c": "W = mgh",
-        "d": "W = Pt",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the SI unit of force?",
-        "a": "Newton",
-        "b": "Joule",
-        "c": "Watt",
-        "d": "Pascal",
-        "ans": "a"
-      },
-     
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the formula for kinetic energy?",
-        "a": "KE = mgh",
-        "b": "KE = 1/2 mv²",
-        "c": "KE = Fd",
-        "d": "KE = Pt",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these is a vector quantity?",
-        "a": "Mass",
-        "b": "Temperature",
-        "c": "Displacement",
-        "d": "Time",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the acceleration due to gravity on Earth?",
-        "a": "9.8 m/s²",
-        "b": "8.0 m/s²",
-        "c": "10.0 m/s²",
-        "d": "7.8 m/s²",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which law of motion states that an object will remain at rest or in uniform motion unless acted upon by a net external force?",
-        "a": "Newton's First Law",
-        "b": "Newton's Second Law",
-        "c": "Newton's Third Law",
-        "d": "Law of Gravitation",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the unit of power?",
-        "a": "Joule",
-        "b": "Watt",
-        "c": "Newton",
-        "d": "Pascal",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following is an example of a contact force?",
-        "a": "Gravitational force",
-        "b": "Magnetic force",
-        "c": "Frictional force",
-        "d": "Electrostatic force",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What happens to the pressure of a gas if its volume is decreased at constant temperature?",
-        "a": "Decreases",
-        "b": "Increases",
-        "c": "Remains constant",
-        "d": "Becomes zero",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these waves requires a medium to travel?",
-        "a": "Light waves",
-        "b": "Radio waves",
-        "c": "Sound waves",
-        "d": "Microwaves",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the speed of light in a vacuum?",
-        "a": "3.0 × 10⁵ m/s",
-        "b": "3.0 × 10⁶ m/s",
-        "c": "3.0 × 10⁸ m/s",
-        "d": "3.0 × 10⁷ m/s",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following is a non-renewable energy source?",
-        "a": "Solar energy",
-        "b": "Wind energy",
-        "c": "Coal",
-        "d": "Hydroelectric power",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the relationship between current, voltage, and resistance according to Ohm’s Law?",
-        "a": "V = IR",
-        "b": "I = VR",
-        "c": "R = IV",
-        "d": "V = R/I",
-        "ans": "a"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of these is a good conductor of electricity?",
-        "a": "Rubber",
-        "b": "Copper",
-        "c": "Glass",
-        "d": "Wood",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the unit of electric charge?",
-        "a": "Ampere",
-        "b": "Coulomb",
-        "c": "Volt",
-        "d": "Ohm",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which type of lens is used to correct long-sightedness?",
-        "a": "Concave lens",
-        "b": "Convex lens",
-        "c": "Bifocal lens",
-        "d": "Cylindrical lens",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the phenomenon where light bends as it passes from one medium to another?",
-        "a": "Reflection",
-        "b": "Refraction",
-        "c": "Diffraction",
-        "d": "Interference",
-        "ans": "b"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "Which of the following colors of light has the longest wavelength?",
-        "a": "Blue",
-        "b": "Green",
-        "c": "Red",
-        "d": "Violet",
-        "ans": "c"
-      },
-      {
-        "subject": "PHYSICS",
-        "author": "ogedengbe segun",
-        "ask": "What is the formula for calculating work done?",
-        "a": "W = F/t",
-        "b": "W = Fd",
-        "c": "W = mgh",
-        "d": "W = Pt",
-        "ans": "b"
-      }
-  ]
-  
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The basic unit of life is the:",
+    "a": "Cell",
+    "b": "Tissue",
+    "c": "Organ",
+    "d": "System",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which organelle is responsible for protein synthesis?",
+    "a": "Mitochondrion",
+    "b": "Ribosome",
+    "c": "Golgi apparatus",
+    "d": "Lysosome",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which plants make their own food is called:",
+    "a": "Respiration",
+    "b": "Photosynthesis",
+    "c": "Transpiration",
+    "d": "Fermentation",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the nucleus?",
+    "a": "Energy production",
+    "b": "Waste elimination",
+    "c": "Storage of genetic material",
+    "d": "Protein digestion",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The blood group known as the universal donor is:",
+    "a": "A",
+    "b": "B",
+    "c": "AB",
+    "d": "O",
+    "ans": "d"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of living things?",
+    "a": "Growth",
+    "b": "Combustion",
+    "c": "Melting",
+    "d": "Evaporation",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The enzyme that digests starch in the mouth is:",
+    "a": "Amylase",
+    "b": "Lipase",
+    "c": "Pepsin",
+    "d": "Trypsin",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the flower that develops into a fruit is the:",
+    "a": "Stigma",
+    "b": "Ovary",
+    "c": "Anther",
+    "d": "Petal",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a nitrogen-fixing bacterium?",
+    "a": "Rhizobium",
+    "b": "Escherichia coli",
+    "c": "Staphylococcus",
+    "d": "Salmonella",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of cell division that produces gametes is called:",
+    "a": "Mitosis",
+    "b": "Meiosis",
+    "c": "Binary fission",
+    "d": "Budding",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a component of blood?",
+    "a": "Red blood cells",
+    "b": "Cartilage",
+    "c": "Bone marrow",
+    "d": "Ligaments",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas exchanged during respiration in humans is:",
+    "a": "Nitrogen",
+    "b": "Oxygen",
+    "c": "Carbon monoxide",
+    "d": "Helium",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The organ responsible for filtering blood in humans is the:",
+    "a": "Liver",
+    "b": "Kidney",
+    "c": "Heart",
+    "d": "Spleen",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a plant hormone?",
+    "a": "Auxin",
+    "b": "Insulin",
+    "c": "Adrenaline",
+    "d": "Thyroxine",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which water moves through a plant is called:",
+    "a": "Photosynthesis",
+    "b": "Transpiration",
+    "c": "Respiration",
+    "d": "Osmosis",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The genetic material in living organisms is:",
+    "a": "RNA",
+    "b": "DNA",
+    "c": "Protein",
+    "d": "Lipid",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a communicable disease?",
+    "a": "Malaria",
+    "b": "Diabetes",
+    "c": "Hypertension",
+    "d": "Scurvy",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the brain responsible for balance is the:",
+    "a": "Cerebrum",
+    "b": "Cerebellum",
+    "c": "Medulla oblongata",
+    "d": "Hypothalamus",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of vitamin C?",
+    "a": "Orange",
+    "b": "Yam",
+    "c": "Rice",
+    "d": "Beans",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which organisms maintain a stable internal environment is called:",
+    "a": "Metabolism",
+    "b": "Homeostasis",
+    "c": "Excretion",
+    "d": "Reproduction",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a unicellular organism?",
+    "a": "Amoeba",
+    "b": "Earthworm",
+    "c": "Hydra",
+    "d": "Snail",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The pigment responsible for photosynthesis in plants is:",
+    "a": "Hemoglobin",
+    "b": "Chlorophyll",
+    "c": "Melanin",
+    "d": "Carotene",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the liver?",
+    "a": "Pumping blood",
+    "b": "Detoxification",
+    "c": "Breathing",
+    "d": "Vision",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction that involves only one parent is called:",
+    "a": "Sexual reproduction",
+    "b": "Asexual reproduction",
+    "c": "Fertilization",
+    "d": "Pollination",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a vector of malaria?",
+    "a": "Anopheles mosquito",
+    "b": "Housefly",
+    "c": "Cockroach",
+    "d": "Tsetse fly",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the seed that develops into the root is the:",
+    "a": "Plumule",
+    "b": "Radicle",
+    "c": "Cotyledon",
+    "d": "Testa",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the skeletal system?",
+    "a": "Transport of oxygen",
+    "b": "Support and protection",
+    "c": "Digestion of food",
+    "d": "Excretion of waste",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which water moves across a semi-permeable membrane is called:",
+    "a": "Diffusion",
+    "b": "Osmosis",
+    "c": "Active transport",
+    "d": "Phagocytosis",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a renewable resource?",
+    "a": "Coal",
+    "b": "Petroleum",
+    "c": "Timber",
+    "d": "Natural gas",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The molecule that carries genetic information in cells is:",
+    "a": "RNA",
+    "b": "DNA",
+    "c": "Protein",
+    "d": "Lipid",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the pancreas?",
+    "a": "Production of insulin",
+    "b": "Filtration of blood",
+    "c": "Pumping blood",
+    "d": "Storage of bile",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of ecological interaction where both organisms benefit is called:",
+    "a": "Predation",
+    "b": "Parasitism",
+    "c": "Mutualism",
+    "d": "Competition",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of arthropods?",
+    "a": "Exoskeleton",
+    "b": "Gills",
+    "c": "Vertebral column",
+    "d": "Scales",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The organ responsible for gas exchange in fish is the:",
+    "a": "Lung",
+    "b": "Gill",
+    "c": "Skin",
+    "d": "Trachea",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of protein?",
+    "a": "Rice",
+    "b": "Beans",
+    "c": "Cassava",
+    "d": "Yam",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which organisms produce offspring is called:",
+    "a": "Excretion",
+    "b": "Respiration",
+    "c": "Reproduction",
+    "d": "Nutrition",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a viral disease?",
+    "a": "Tuberculosis",
+    "b": "Malaria",
+    "c": "HIV/AIDS",
+    "d": "Cholera",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the leaf where photosynthesis occurs is the:",
+    "a": "Stoma",
+    "b": "Chloroplast",
+    "c": "Cuticle",
+    "d": "Vein",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the nervous system?",
+    "a": "Coordination of body activities",
+    "b": "Digestion of food",
+    "c": "Transport of nutrients",
+    "d": "Excretion of waste",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction in yeast is called:",
+    "a": "Budding",
+    "b": "Spore formation",
+    "c": "Binary fission",
+    "d": "Fragmentation",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a component of the ecosystem?",
+    "a": "Producers",
+    "b": "Machines",
+    "c": "Rocks",
+    "d": "Buildings",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The hormone responsible for regulating blood sugar levels is:",
+    "a": "Adrenaline",
+    "b": "Insulin",
+    "c": "Thyroxine",
+    "d": "Estrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the skin?",
+    "a": "Regulation of body temperature",
+    "b": "Production of red blood cells",
+    "c": "Digestion of carbohydrates",
+    "d": "Transport of oxygen",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of nutrition in fungi is:",
+    "a": "Autotrophic",
+    "b": "Heterotrophic",
+    "c": "Photosynthetic",
+    "d": "Chemosynthetic",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a parasitic plant?",
+    "a": "Dodder",
+    "b": "Maize",
+    "c": "Bean",
+    "d": "Rice",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the human eye that controls the amount of light entering is the:",
+    "a": "Retina",
+    "b": "Iris",
+    "c": "Cornea",
+    "d": "Lens",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of vitamin A?",
+    "a": "Carrot",
+    "b": "Yam",
+    "c": "Rice",
+    "d": "Cassava",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which organisms evolve over time is called:",
+    "a": "Adaptation",
+    "b": "Evolution",
+    "c": "Mutation",
+    "d": "Selection",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a bacterial disease?",
+    "a": "Malaria",
+    "b": "Tuberculosis",
+    "c": "HIV/AIDS",
+    "d": "Measles",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the flower that attracts pollinators is the:",
+    "a": "Sepal",
+    "b": "Petal",
+    "c": "Stamen",
+    "d": "Carpel",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the respiratory system?",
+    "a": "Gas exchange",
+    "b": "Digestion of food",
+    "c": "Pumping blood",
+    "d": "Excretion of waste",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction in hydra is called:",
+    "a": "Fragmentation",
+    "b": "Spore formation",
+    "c": "Binary fission",
+    "d": "Budding",
+    "ans": "d"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a decomposer in an ecosystem?",
+    "a": "Eagle",
+    "b": "Grass",
+    "c": "Lion",
+    "d": "Fungi",
+    "ans": "d"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The hormone responsible for growth in humans is:",
+    "a": "Insulin",
+    "b": "Adrenaline",
+    "c": "Growth hormone",
+    "d": "Estrogen",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the circulatory system?",
+    "a": "Transport of nutrients",
+    "b": "Regulation of body temperature",
+    "c": "Production of hormones",
+    "d": "Gas exchange",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of nutrition in green plants is:",
+    "a": "Heterotrophic",
+    "b": "Autotrophic",
+    "c": "Saprophytic",
+    "d": "Parasitic",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a carnivorous plant?",
+    "a": "Venus flytrap",
+    "b": "Maize",
+    "c": "Bean",
+    "d": "Rice",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the human ear responsible for hearing is the:",
+    "a": "Eardrum",
+    "b": "Cochlea",
+    "c": "Pinna",
+    "d": "Eustachian tube",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of vitamin D?",
+    "a": "Egg yolk",
+    "b": "Yam",
+    "c": "Rice",
+    "d": "Cassava",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which traits are passed from parents to offspring is called:",
+    "a": "Evolution",
+    "b": "Heredity",
+    "c": "Adaptation",
+    "d": "Mutation",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a fungal disease?",
+    "a": "Ringworm",
+    "b": "Malaria",
+    "c": "Tuberculosis",
+    "d": "Cholera",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the plant that anchors it to the soil is the:",
+    "a": "Stem",
+    "b": "Root",
+    "c": "Leaf",
+    "d": "Flower",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the endocrine system?",
+    "a": "Regulation of body processes",
+    "b": "Transport of nutrients",
+    "c": "Gas exchange",
+    "d": "Digestion of food",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction in spirogyra is called:",
+    "a": "Budding",
+    "b": "Fragmentation",
+    "c": "Conjugation",
+    "d": "Spore formation",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a consumer in an ecosystem?",
+    "a": "Grass",
+    "b": "Lion",
+    "c": "Mushroom",
+    "d": "Fern",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The hormone responsible for ovulation in females is:",
+    "a": "Insulin",
+    "b": "Adrenaline",
+    "c": "Estrogen",
+    "d": "Progesterone",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the digestive system?",
+    "a": "Breakdown of food",
+    "b": "Regulation of body temperature",
+    "c": "Transport of oxygen",
+    "d": "Production of hormones",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of nutrition in amoeba is:",
+    "a": "Autotrophic",
+    "b": "Heterotrophic",
+    "c": "Photosynthetic",
+    "d": "Chemosynthetic",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a symbiotic relationship?",
+    "a": "Lichen",
+    "b": "Tapeworm",
+    "c": "Mistletoe",
+    "d": "Dodder",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the human brain responsible for memory is the:",
+    "a": "Cerebellum",
+    "b": "Cerebrum",
+    "c": "Medulla oblongata",
+    "d": "Hypothalamus",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of vitamin K?",
+    "a": "Spinach",
+    "b": "Yam",
+    "c": "Rice",
+    "d": "Cassava",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which organisms adapt to their environment is called:",
+    "a": "Evolution",
+    "b": "Adaptation",
+    "c": "Mutation",
+    "d": "Selection",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a protozoan disease?",
+    "a": "Malaria",
+    "b": "Tuberculosis",
+    "c": "Cholera",
+    "d": "Tetanus",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the plant that conducts water is the:",
+    "a": "Phloem",
+    "b": "Xylem",
+    "c": "Cambium",
+    "d": "Cortex",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the excretory system?",
+    "a": "Removal of waste",
+    "b": "Transport of nutrients",
+    "c": "Gas exchange",
+    "d": "Digestion of food",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction in earthworms is called:",
+    "a": "Budding",
+    "b": "Fragmentation",
+    "c": "Sexual reproduction",
+    "d": "Spore formation",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a primary consumer in an ecosystem?",
+    "a": "Hawk",
+    "b": "Grasshopper",
+    "c": "Fungi",
+    "d": "Fern",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The hormone responsible for fight-or-flight response is:",
+    "a": "Insulin",
+    "b": "Adrenaline",
+    "c": "Estrogen",
+    "d": "Progesterone",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the muscular system?",
+    "a": "Movement",
+    "b": "Gas exchange",
+    "c": "Production of hormones",
+    "d": "Regulation of body temperature",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of nutrition in paramecium is:",
+    "a": "Autotrophic",
+    "b": "Heterotrophic",
+    "c": "Photosynthetic",
+    "d": "Chemosynthetic",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The structure that controls the movement of substances in and out of the cell is the:",
+    "a": "Cell membrane",
+    "b": "Cell wall",
+    "c": "Cytoplasm",
+    "d": "Nucleus",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of inheritance where both alleles are expressed equally is called:",
+    "a": "Dominance",
+    "b": "Codominance",
+    "c": "Recessiveness",
+    "d": "Incomplete dominance",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a saprophytic organism?",
+    "a": "Mushroom",
+    "b": "Eagle",
+    "c": "Grass",
+    "d": "Lion",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The organ responsible for producing bile in humans is the:",
+    "a": "Pancreas",
+    "b": "Kidney",
+    "c": "Gallbladder",
+    "d": "Liver",
+    "ans": "d"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of monocotyledonous plants?",
+    "a": "Parallel leaf veins",
+    "b": "Net-like leaf veins",
+    "c": "Tap root system",
+    "d": "Two seed leaves",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The process by which organisms break down food to release energy is called:",
+    "a": "Photosynthesis",
+    "b": "Respiration",
+    "c": "Transpiration",
+    "d": "Fermentation",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the large intestine?",
+    "a": "Absorption of water",
+    "b": "Digestion of proteins",
+    "c": "Production of enzymes",
+    "d": "Absorption of sugars",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of ecological succession that occurs in a previously uninhabited area is called:",
+    "a": "Secondary succession",
+    "b": "Primary succession",
+    "c": "Tertiary succession",
+    "d": "Climax succession",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The blood vessel that carries oxygenated blood from the lungs to the heart is the:",
+    "a": "Pulmonary vein",
+    "b": "Pulmonary artery",
+    "c": "Aorta",
+    "d": "Vena cava",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of variation that is influenced by the environment is called:",
+    "a": "Genetic variation",
+    "b": "Continuous variation",
+    "c": "Environmental variation",
+    "d": "Discontinuous variation",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the stomata in plants?",
+    "a": "Absorption of water",
+    "b": "Gas exchange",
+    "c": "Storage of food",
+    "d": "Support",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The disease caused by a deficiency of vitamin C is:",
+    "a": "Rickets",
+    "b": "Scurvy",
+    "c": "Beriberi",
+    "d": "Pellagra",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The part of the neuron that receives impulses is the:",
+    "a": "Dendrite",
+    "b": "Axon",
+    "c": "Cell body",
+    "d": "Synapse",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of pollination where pollen is transferred to another flower on a different plant is called:",
+    "a": "Self-pollination",
+    "b": "Cross-pollination",
+    "c": "Wind pollination",
+    "d": "Insect pollination",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of mammals?",
+    "a": "Cold-blooded",
+    "b": "Lay eggs",
+    "c": "Have mammary glands",
+    "d": "Have scales",
+    "ans": "c"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The organism responsible for causing sleeping sickness is:",
+    "a": "Plasmodium",
+    "b": "Trypanosoma",
+    "c": "Vibrio cholerae",
+    "d": "Mycobacterium",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The structure in the leaf that prevents excessive water loss is the:",
+    "a": "Cuticle",
+    "b": "Stoma",
+    "c": "Vein",
+    "d": "Chloroplast",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of joint found in the elbow is called:",
+    "a": "Ball and socket",
+    "b": "Hinge",
+    "c": "Pivot",
+    "d": "Gliding",
+    "ans": "b"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of the thyroid gland?",
+    "a": "Regulation of metabolism",
+    "b": "Production of red blood cells",
+    "c": "Digestion of carbohydrates",
+    "d": "Absorption of water",
+    "ans": "a"
+  },
+  {
+    "subject": "Biology",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reproduction in ferns is called:",
+    "a": "Budding",
+    "b": "Spore formation",
+    "c": "Fragmentation",
+    "d": "Binary fission",
+    "ans": "b"
+  }
+]

@@ -1,0 +1,1002 @@
+[
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of amount of substance?",
+    "a": "Mole",
+    "b": "Kilogram",
+    "c": "Metre",
+    "d": "Ampere",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The number of protons in an atom is known as its:",
+    "a": "Mass number",
+    "b": "Atomic number",
+    "c": "Neutron number",
+    "d": "Electron number",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a noble gas?",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Helium",
+    "d": "Chlorine",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical bond formed by the sharing of electrons is called:",
+    "a": "Ionic bond",
+    "b": "Metallic bond",
+    "c": "Hydrogen bond",
+    "d": "Covalent bond",
+    "ans": "d"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the oxidation number of chlorine in HClO₄?",
+    "a": "+1",
+    "b": "+7",
+    "c": "-1",
+    "d": "+5",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a physical change?",
+    "a": "Burning of wood",
+    "b": "Rusting of iron",
+    "c": "Melting of ice",
+    "d": "Digestion of food",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas responsible for the greenhouse effect is:",
+    "a": "Carbon dioxide",
+    "b": "Nitrogen",
+    "c": "Oxygen",
+    "d": "Argon",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the molar mass of water (H₂O)?",
+    "a": "16 g/mol",
+    "b": "18 g/mol",
+    "c": "20 g/mol",
+    "d": "22 g/mol",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an electrolyte?",
+    "a": "Sugar solution",
+    "b": "Sodium chloride solution",
+    "c": "Alcohol",
+    "d": "Pure water",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of separating a liquid from a solid by evaporation is called:",
+    "a": "Filtration",
+    "b": "Distillation",
+    "c": "Crystallization",
+    "d": "Sublimation",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a strong acid?",
+    "a": "Hydrochloric acid",
+    "b": "Acetic acid",
+    "c": "Citric acid",
+    "d": "Carbonic acid",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The pH of a neutral solution at 25°C is:",
+    "a": "0",
+    "b": "7",
+    "c": "14",
+    "d": "5",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following elements is a halogen?",
+    "a": "Fluorine",
+    "b": "Sulfur",
+    "c": "Phosphorus",
+    "d": "Magnesium",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the chemical formula of sodium hydroxide?",
+    "a": "NaCl",
+    "b": "NaOH",
+    "c": "Na₂CO₃",
+    "d": "NaHCO₃",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of breaking down a compound using electricity is called:",
+    "a": "Electrolysis",
+    "b": "Neutralization",
+    "c": "Combustion",
+    "d": "Saponification",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a hydrocarbon?",
+    "a": "Ethanol",
+    "b": "Methane",
+    "c": "Acetic acid",
+    "d": "Glucose",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The functional group in alcohols is:",
+    "a": "-OH",
+    "b": "-COOH",
+    "c": "-CHO",
+    "d": "-NH₂",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the name of the compound with the formula C₂H₅OH?",
+    "a": "Methanol",
+    "b": "Ethanol",
+    "c": "Propanol",
+    "d": "Butanol",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a product of the complete combustion of carbon?",
+    "a": "Carbon monoxide",
+    "b": "Carbon dioxide",
+    "c": "Soot",
+    "d": "Ash",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The main source of organic compounds is:",
+    "a": "Rocks",
+    "b": "Plants and animals",
+    "c": "Water",
+    "d": "Air",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an allotrope of carbon?",
+    "a": "Diamond",
+    "b": "Sulfur",
+    "c": "Phosphorus",
+    "d": "Silicon",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The reaction between an acid and a base produces:",
+    "a": "Salt and water",
+    "b": "Gas and water",
+    "c": "Salt and gas",
+    "d": "Water and oxygen",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a transition metal?",
+    "a": "Sodium",
+    "b": "Iron",
+    "c": "Calcium",
+    "d": "Potassium",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas used in welding is:",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Acetylene",
+    "d": "Carbon dioxide",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the chemical symbol for gold?",
+    "a": "Ag",
+    "b": "Au",
+    "c": "Pb",
+    "d": "Fe",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of adding oxygen to a substance is called:",
+    "a": "Reduction",
+    "b": "Oxidation",
+    "c": "Neutralization",
+    "d": "Precipitation",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a non-metal?",
+    "a": "Sodium",
+    "b": "Sulfur",
+    "c": "Iron",
+    "d": "Copper",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The formula for sulfuric acid is:",
+    "a": "HNO₃",
+    "b": "HCl",
+    "c": "H₂SO₄",
+    "d": "H₃PO₄",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used as a drying agent in the laboratory?",
+    "a": "Calcium chloride",
+    "b": "Sodium chloride",
+    "c": "Potassium chloride",
+    "d": "Magnesium chloride",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The valency of oxygen in most of its compounds is:",
+    "a": "+2",
+    "b": "-2",
+    "c": "+1",
+    "d": "-1",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a product of fermentation?",
+    "a": "Ethanol",
+    "b": "Methanol",
+    "c": "Propanol",
+    "d": "Butanol",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas that turns lime water milky is:",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Carbon dioxide",
+    "d": "Hydrogen",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the atomic number of carbon?",
+    "a": "6",
+    "b": "8",
+    "c": "12",
+    "d": "14",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for ammonia is:",
+    "a": "NH₄",
+    "b": "NH₃",
+    "c": "N₂H₄",
+    "d": "NO₂",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a greenhouse gas?",
+    "a": "Methane",
+    "b": "Oxygen",
+    "c": "Nitrogen",
+    "d": "Argon",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of separating a mixture based on differences in boiling points is called:",
+    "a": "Filtration",
+    "b": "Distillation",
+    "c": "Sublimation",
+    "d": "Chromatography",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an alkali metal?",
+    "a": "Sodium",
+    "b": "Calcium",
+    "c": "Iron",
+    "d": "Copper",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The functional group in carboxylic acids is:",
+    "a": "-OH",
+    "b": "-COOH",
+    "c": "-CHO",
+    "d": "-NH₂",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to test for the presence of starch?",
+    "a": "Iodine solution",
+    "b": "Benedict’s solution",
+    "c": "Fehling’s solution",
+    "d": "Silver nitrate",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The main component of natural gas is:",
+    "a": "Ethane",
+    "b": "Propane",
+    "c": "Butane",
+    "d": "Methane",
+    "ans": "d"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of molar mass?",
+    "a": "g/mol",
+    "b": "kg/mol",
+    "c": "g/L",
+    "d": "kg/L",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of bond in sodium chloride is:",
+    "a": "Covalent",
+    "b": "Ionic",
+    "c": "Metallic",
+    "d": "Hydrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a polymer?",
+    "a": "Glucose",
+    "b": "Polythene",
+    "c": "Ethanol",
+    "d": "Methane",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas used in fire extinguishers is:",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Carbon dioxide",
+    "d": "Hydrogen",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the chemical formula for calcium carbonate?",
+    "a": "CaCO₃",
+    "b": "CaCl₂",
+    "c": "CaSO₄",
+    "d": "Ca(OH)₂",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of removing impurities from a metal is called:",
+    "a": "Refining",
+    "b": "Alloying",
+    "c": "Smelting",
+    "d": "Galvanizing",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of an acid?",
+    "a": "Turns blue litmus red",
+    "b": "Turns red litmus blue",
+    "c": "Feels soapy",
+    "d": "Tastes bitter",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The compound responsible for the smell of rotten eggs is:",
+    "a": "Hydrogen sulfide",
+    "b": "Carbon monoxide",
+    "c": "Sulfur dioxide",
+    "d": "Nitrogen dioxide",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the mass number of an element with 12 protons and 14 neutrons?",
+    "a": "12",
+    "b": "14",
+    "c": "26",
+    "d": "28",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for glucose is:",
+    "a": "C₆H₁₂O₆",
+    "b": "C₂H₅OH",
+    "c": "CH₃COOH",
+    "d": "C₃H₈",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a reducing agent?",
+    "a": "Oxygen",
+    "b": "Carbon monoxide",
+    "c": "Chlorine",
+    "d": "Nitrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of coating iron with zinc to prevent rusting is called:",
+    "a": "Electroplating",
+    "b": "Galvanizing",
+    "c": "Alloying",
+    "d": "Smelting",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of concentration?",
+    "a": "mol/dm³",
+    "b": "g/dm³",
+    "c": "mol/m³",
+    "d": "g/m³",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The functional group in aldehydes is:",
+    "a": "-OH",
+    "b": "-CHO",
+    "c": "-COOH",
+    "d": "-NH₂",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to test for the presence of proteins?",
+    "a": "Iodine solution",
+    "b": "Biuret reagent",
+    "c": "Benedict’s solution",
+    "d": "Fehling’s solution",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas responsible for acid rain is:",
+    "a": "Carbon dioxide",
+    "b": "Sulfur dioxide",
+    "c": "Oxygen",
+    "d": "Nitrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the chemical formula for potassium permanganate?",
+    "a": "KMnO₄",
+    "b": "K₂Cr₂O₇",
+    "c": "KCl",
+    "d": "KNO₃",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reaction in which heat is absorbed is called:",
+    "a": "Exothermic",
+    "b": "Endothermic",
+    "c": "Combustion",
+    "d": "Neutralization",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a noble gas?",
+    "a": "Argon",
+    "b": "Fluorine",
+    "c": "Chlorine",
+    "d": "Bromine",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The compound used as an antiseptic is:",
+    "a": "Ethanol",
+    "b": "Methanol",
+    "c": "Phenol",
+    "d": "Propanol",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the atomic number of oxygen?",
+    "a": "6",
+    "b": "8",
+    "c": "10",
+    "d": "12",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for hydrochloric acid is:",
+    "a": "HNO₃",
+    "b": "HCl",
+    "c": "H₂SO₄",
+    "d": "H₃PO₄",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a product of the electrolysis of sodium chloride solution?",
+    "a": "Sodium metal",
+    "b": "Chlorine gas",
+    "c": "Oxygen gas",
+    "d": "Nitrogen gas",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The main source of hydrocarbons is:",
+    "a": "Coal",
+    "b": "Petroleum",
+    "c": "Wood",
+    "d": "Water",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of Avogadro’s constant?",
+    "a": "mol⁻¹",
+    "b": "mol",
+    "c": "g/mol",
+    "d": "kg/mol",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of bond in metals is called:",
+    "a": "Covalent",
+    "b": "Ionic",
+    "c": "Metallic",
+    "d": "Hydrogen",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a carbohydrate?",
+    "a": "Glucose",
+    "b": "Ethanol",
+    "c": "Methane",
+    "d": "Acetic acid",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas used in balloons is:",
+    "a": "Hydrogen",
+    "b": "Helium",
+    "c": "Oxygen",
+    "d": "Nitrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the chemical formula for magnesium oxide?",
+    "a": "MgO",
+    "b": "MgCl₂",
+    "c": "MgSO₄",
+    "d": "Mg(OH)₂",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of converting a gas to a liquid is called:",
+    "a": "Evaporation",
+    "b": "Condensation",
+    "c": "Sublimation",
+    "d": "Melting",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of a base?",
+    "a": "Turns red litmus blue",
+    "b": "Turns blue litmus red",
+    "c": "Tastes sour",
+    "d": "Reacts with metals to produce salt",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The compound used in making soap is:",
+    "a": "Sodium chloride",
+    "b": "Sodium hydroxide",
+    "c": "Calcium carbonate",
+    "d": "Potassium nitrate",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the mass number of an element with 8 protons and 8 neutrons?",
+    "a": "8",
+    "b": "16",
+    "c": "24",
+    "d": "32",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for ethanoic acid is:",
+    "a": "CH₃OH",
+    "b": "CH₃COOH",
+    "c": "C₂H₅OH",
+    "d": "C₃H₈",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an oxidizing agent?",
+    "a": "Hydrogen",
+    "b": "Carbon monoxide",
+    "c": "Potassium permanganate",
+    "d": "Sulfur",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of coating a metal with another metal using electricity is called:",
+    "a": "Galvanizing",
+    "b": "Electroplating",
+    "c": "Alloying",
+    "d": "Smelting",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of rate of reaction?",
+    "a": "mol/dm³·s",
+    "b": "g/dm³·s",
+    "c": "mol/s",
+    "d": "g/s",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The functional group in ketones is:",
+    "a": "-OH",
+    "b": "-CO-",
+    "c": "-CHO",
+    "d": "-COOH",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to test for the presence of reducing sugars?",
+    "a": "Iodine solution",
+    "b": "Biuret reagent",
+    "c": "Benedict’s solution",
+    "d": "Silver nitrate",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas responsible for ozone depletion is:",
+    "a": "Carbon dioxide",
+    "b": "Chlorofluorocarbon",
+    "c": "Oxygen",
+    "d": "Nitrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of standard enthalpy change?",
+    "a": "kJ/mol",
+    "b": "J/kg",
+    "c": "kJ/kg",
+    "d": "J/mol·K",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of isomerism exhibited by compounds with the same molecular formula but different structural arrangements is called:",
+    "a": "Geometric isomerism",
+    "b": "Structural isomerism",
+    "c": "Optical isomerism",
+    "d": "Functional isomerism",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used as a catalyst in the Haber process for ammonia production?",
+    "a": "Platinum",
+    "b": "Nickel",
+    "c": "Iron",
+    "d": "Vanadium",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for barium sulfate is:",
+    "a": "BaCl₂",
+    "b": "BaSO₄",
+    "c": "BaCO₃",
+    "d": "Ba(NO₃)₂",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The process of separating a mixture based on differences in solubility is called:",
+    "a": "Chromatography",
+    "b": "Filtration",
+    "c": "Distillation",
+    "d": "Evaporation",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the oxidation number of sulfur in H₂SO₄?",
+    "a": "+4",
+    "b": "+6",
+    "c": "+2",
+    "d": "-2",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of an alkane?",
+    "a": "Contains double bonds",
+    "b": "Is highly reactive",
+    "c": "Is saturated",
+    "d": "Contains triple bonds",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas produced when dilute hydrochloric acid reacts with sodium carbonate is:",
+    "a": "Hydrogen",
+    "b": "Oxygen",
+    "c": "Nitrogen",
+    "d": "Carbon dioxide",
+    "ans": "d"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the S.I unit of equilibrium constant for a gaseous reaction?",
+    "a": "No unit",
+    "b": "mol/dm³",
+    "c": "dm³/mol",
+    "d": "mol²/dm⁶",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The compound used in the manufacture of fertilizers is:",
+    "a": "Ammonium nitrate",
+    "b": "Sodium chloride",
+    "c": "Calcium carbonate",
+    "d": "Potassium hydroxide",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a product of the saponification process?",
+    "a": "Soap",
+    "b": "Sugar",
+    "c": "Starch",
+    "d": "Ethanol",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for iron(III) oxide is:",
+    "a": "FeO",
+    "b": "Fe₂O₃",
+    "c": "Fe₃O₄",
+    "d": "FeSO₄",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of reaction in which two or more substances combine to form a single product is called:",
+    "a": "Combination",
+    "b": "Decomposition",
+    "c": "Displacement",
+    "d": "Neutralization",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The functional group in esters is:",
+    "a": "-COOH",
+    "b": "-COO-",
+    "c": "-CHO",
+    "d": "-OH",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to test for the presence of chloride ions?",
+    "a": "Silver nitrate",
+    "b": "Barium chloride",
+    "c": "Sodium hydroxide",
+    "d": "Potassium permanganate",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The gas used in the manufacture of margarine is:",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Hydrogen",
+    "d": "Carbon dioxide",
+    "ans": "c"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the molar mass of sodium chloride (NaCl)?",
+    "a": "58.5 g/mol",
+    "b": "46 g/mol",
+    "c": "74 g/mol",
+    "d": "36 g/mol",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The type of bond formed between a metal and a non-metal is:",
+    "a": "Covalent",
+    "b": "Ionic",
+    "c": "Metallic",
+    "d": "Hydrogen",
+    "ans": "b"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a product of the destructive distillation of coal?",
+    "a": "Coke",
+    "b": "Ethanol",
+    "c": "Glucose",
+    "d": "Methane",
+    "ans": "a"
+  },
+  {
+    "subject": "Chemistry",
+    "author": "Ogedengbe Segun",
+    "ask": "The chemical formula for aluminum oxide is:",
+    "a": "Al₂O₃",
+    "b": "AlCl₃",
+    "c": "Al₂(SO₄)₃",
+    "d": "Al(NO₃)₃",
+    "ans": "a"
+  }
+]
