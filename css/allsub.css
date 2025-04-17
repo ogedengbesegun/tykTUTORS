@@ -16,8 +16,6 @@
   margin: 0 auto;
 }
 
-
-
 /*  */
 
 .selectsubj {
@@ -33,7 +31,6 @@
     width: 90%;
     margin: 0 auto;
   }
-  
 }
 
 @media (max-width: 321px) {
@@ -42,6 +39,10 @@
     /* margin-left: 0px; */
   }
   .selectsubj {
-    width:60%
+    width: 60%;
   }
+/* 
+  selectsubmsg {
+    width: 100%;
+  } */
 }

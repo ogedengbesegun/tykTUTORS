@@ -36,7 +36,7 @@ let sty;
 sty = {
     marginTop: "250px",
     color: "light",
-    width: "50%",
+    width: "60%",
 }
 
 let selectsubmsg = document.createElement('dialog');
@@ -48,10 +48,10 @@ styleProp.backgroundColor = sty.color;
 styleProp.width = sty.width;
 
 selectsubmsg.innerHTML = `<h3 class='text-danger mt-2 px-2'>Select a Subject First</h3>
-<p class='text-center mx-2'>Please ensure you have selected the Subject of
+<p class='text-center mx-2 w-75 mx-auto'>Please ensure you have selected the Subject of
  choice first before login can be enabled !!!</p>
  <button type='button' title='info' 
- class='btn btn-danger mx-auto w-50 mb-3
+ class='btn btn-secondary mx-auto w-50 mb-3
  info'>Ok</button>`;
 
 
