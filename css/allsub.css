@@ -16,8 +16,10 @@
   margin: 0 auto;
 }
 
-/*  */
-
+/* loginEx */
+.loginEx{
+  width:37%
+}
 .selectsubj {
   padding: 2px;
 }

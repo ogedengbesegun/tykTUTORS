@@ -36,8 +36,13 @@ let sty;
 sty = {
     marginTop: "250px",
     color: "light",
-    width: "60%",
+    width: "55%",
+    
 }
+
+
+
+
 
 let selectsubmsg = document.createElement('dialog');
 selectsubmsg.className = `border-1
@@ -609,7 +614,7 @@ function start() {
             const qstsAll = document.querySelector('.qstsAll');
             const loadingIndicator = document.getElementById('loading');
             ////////
-            const totalBlocks = 100;
+            const totalBlocks = 200;
             // Number of blocks to load per batch
             const batchSize = qstnsSet;
             // Current index of loaded blocks

@@ -7,6 +7,9 @@ import { MongoClient } from 'mongodb';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
+
+import { btnmail } from './btnmail';
+
 dotenv.config();
 
 const app = express();
@@ -735,3 +738,4 @@ client.connect().then(() => {
 // C:\Users\ubec\Desktop\tykTUTORS\images
 
 
+console.log(btnmail)
