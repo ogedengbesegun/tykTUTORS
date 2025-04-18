@@ -1,0 +1,1392 @@
+[
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the primary reason for Okonkwo’s downfall?",
+    "a": "His love for his family",
+    "b": "His rigid adherence to tradition",
+    "c": "His collaboration with the colonialists",
+    "d": "His lack of ambition",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the main theme of Wole Soyinka’s 'The Lion and the Jewel'?",
+    "a": "Love and betrayal",
+    "b": "Tradition versus modernity",
+    "c": "Political corruption",
+    "d": "Economic hardship",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' who prophesies Macbeth’s rise to power?",
+    "a": "Lady Macbeth",
+    "b": "The three witches",
+    "c": "Banquo",
+    "d": "King Duncan",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is Adah’s primary struggle?",
+    "a": "Gender and racial discrimination",
+    "b": "Economic prosperity",
+    "c": "Political oppression",
+    "d": "Religious conflict",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What literary device is predominantly used in John Donne’s poem 'The Flea'?",
+    "a": "Metaphor",
+    "b": "Irony",
+    "c": "Personification",
+    "d": "Hyperbole",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' who is the tragic hero?",
+    "a": "Odewale",
+    "b": "Adetusa",
+    "c": "Baba Fakunle",
+    "d": "Gbonka",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what does the piano symbolize?",
+    "a": "African tradition",
+    "b": "Western culture",
+    "c": "Nature",
+    "d": "Conflict",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' who demands a pound of flesh?",
+    "a": "Antonio",
+    "b": "Bassanio",
+    "c": "Shylock",
+    "d": "Portia",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the setting of Cyprian Ekwensi’s 'Jagua Nana'?",
+    "a": "Rural Nigeria",
+    "b": "Colonial Lagos",
+    "c": "Post-independence Lagos",
+    "d": "Northern Nigeria",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what is the poet’s attitude toward injustice?",
+    "a": "Indifference",
+    "b": "Approval",
+    "c": "Criticism",
+    "d": "Support",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what is the central theme?",
+    "a": "Love and romance",
+    "b": "The horrors of war",
+    "c": "Economic prosperity",
+    "d": "Cultural heritage",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' who is the villain?",
+    "a": "Othello",
+    "b": "Desdemona",
+    "c": "Iago",
+    "d": "Cassio",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What literary device is used in the line 'The wind howled like a banshee'?",
+    "a": "Simile",
+    "b": "Metaphor",
+    "c": "Personification",
+    "d": "Alliteration",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the egwugwu?",
+    "a": "They are colonial administrators",
+    "b": "They are ancestral spirits",
+    "c": "They are village warriors",
+    "d": "They are market traders",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' who represents modernity?",
+    "a": "Baroka",
+    "b": "Lakunle",
+    "c": "Sidi",
+    "d": "Sadiku",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what motivates Macbeth to kill King Duncan?",
+    "a": "Ambition and prophecy",
+    "b": "Revenge",
+    "c": "Loyalty to his wife",
+    "d": "Fear of banishment",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is Francis’s attitude toward Adah’s ambitions?",
+    "a": "Supportive",
+    "b": "Indifferent",
+    "c": "Hostile",
+    "d": "Encouraging",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Christopher Okigbo’s 'Heavensgate,' what is the poet’s primary concern?",
+    "a": "Political reform",
+    "b": "Spiritual quest",
+    "c": "Economic issues",
+    "d": "Social justice",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is Odewale’s tragic flaw?",
+    "a": "Greed",
+    "b": "Ignorance of his origins",
+    "c": "Cowardice",
+    "d": "Dishonesty",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the rhyme scheme of a Shakespearean sonnet?",
+    "a": "ABAB CDCD EFEF GG",
+    "b": "ABBA ABBA CDE CDE",
+    "c": "AABB CCDD EEFF GG",
+    "d": "ABAB BCBC CDCD EE",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Portia’s role in the trial scene?",
+    "a": "She is the plaintiff",
+    "b": "She disguises herself as a lawyer",
+    "c": "She is a witness",
+    "d": "She is the defendant",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what motivates Jagua’s lifestyle?",
+    "a": "Desire for wealth and glamour",
+    "b": "Commitment to family",
+    "c": "Pursuit of education",
+    "d": "Religious devotion",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what literary device is used to emphasize apathy?",
+    "a": "Repetition",
+    "b": "Metaphor",
+    "c": "Irony",
+    "d": "Alliteration",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' who are the casualties referred to in the poem?",
+    "a": "Victorious soldiers",
+    "b": "Victims of war",
+    "c": "Political leaders",
+    "d": "Economic elites",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is Desdemona’s tragic fate?",
+    "a": "She becomes queen",
+    "b": "She is murdered by Othello",
+    "c": "She leaves Venice",
+    "d": "She betrays Othello",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a play that ends in death and sorrow?",
+    "a": "Comedy",
+    "b": "Tragedy",
+    "c": "Farce",
+    "d": "Melodrama",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the role of the District Commissioner?",
+    "a": "A traditional leader",
+    "b": "A colonial administrator",
+    "c": "A missionary",
+    "d": "A trader",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is Sidi’s initial attitude toward Lakunle?",
+    "a": "She admires him",
+    "b": "She rejects him",
+    "c": "She is indifferent",
+    "d": "She fears him",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is Lady Macbeth’s role in the murder of Duncan?",
+    "a": "She prevents it",
+    "b": "She encourages it",
+    "c": "She is unaware of it",
+    "d": "She commits it herself",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what symbolizes Adah’s hope for a better future?",
+    "a": "Her marriage",
+    "b": "Her education",
+    "c": "Her wealth",
+    "d": "Her religion",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what is the poet’s emotional conflict?",
+    "a": "Love versus duty",
+    "b": "Tradition versus modernity",
+    "c": "Wealth versus poverty",
+    "d": "Faith versus doubt",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the significance of the oracle?",
+    "a": "It predicts prosperity",
+    "b": "It foretells Odewale’s fate",
+    "c": "It promotes peace",
+    "d": "It advises rebellion",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is the significance of the three caskets?",
+    "a": "They test suitors’ wisdom",
+    "b": "They contain gold",
+    "c": "They symbolize wealth",
+    "d": "They are gifts for Portia",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is Freddie’s role in Jagua’s life?",
+    "a": "Her brother",
+    "b": "Her lover",
+    "c": "Her employer",
+    "d": "Her rival",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what happens to Danladi in the poem?",
+    "a": "He is promoted",
+    "b": "He is arrested",
+    "c": "He escapes",
+    "d": "He is celebrated",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what literary device is used to describe the war’s impact?",
+    "a": "Symbolism",
+    "b": "Irony",
+    "c": "Alliteration",
+    "d": "Hyperbole",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what object symbolizes Othello’s trust in Desdemona?",
+    "a": "A ring",
+    "b": "A handkerchief",
+    "c": "A sword",
+    "d": "A crown",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a character who contrasts with the protagonist to highlight their traits?",
+    "a": "Antagonist",
+    "b": "Foil",
+    "c": "Narrator",
+    "d": "Chorus",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' who is Okonkwo’s favorite child?",
+    "a": "Nwoye",
+    "b": "Ezinma",
+    "c": "Ikemefuna",
+    "d": "Obiageli",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is Baroka’s strategy to win Sidi?",
+    "a": "He offers her wealth",
+    "b": "He uses deception",
+    "c": "He challenges Lakunle",
+    "d": "He seeks her family’s approval",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the significance of the floating dagger?",
+    "a": "It symbolizes Macbeth’s guilt",
+    "b": "It represents Duncan’s power",
+    "c": "It is a gift from Banquo",
+    "d": "It signifies peace",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is Adah’s profession in London?",
+    "a": "Teacher",
+    "b": "Librarian",
+    "c": "Nurse",
+    "d": "Writer",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what is the tone of the poem?",
+    "a": "Optimistic",
+    "b": "Nostalgic",
+    "c": "Angry",
+    "d": "Humorous",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the role of Baba Fakunle?",
+    "a": "King",
+    "b": "Priest",
+    "c": "Warrior",
+    "d": "Trader",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Antonio’s profession?",
+    "a": "Lawyer",
+    "b": "Merchant",
+    "c": "Soldier",
+    "d": "Doctor",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the significance of the Tropicana nightclub?",
+    "a": "It is a place of worship",
+    "b": "It is Jagua’s workplace",
+    "c": "It is a political headquarters",
+    "d": "It is a school",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what is the poet’s final realization?",
+    "a": "Injustice affects everyone",
+    "b": "Apathy is rewarding",
+    "c": "Silence is power",
+    "d": "Ignorance is bliss",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what is the poet’s tone?",
+    "a": "Hopeful",
+    "b": "Mournful",
+    "c": "Joyful",
+    "d": "Indifferent",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what motivates Iago’s actions?",
+    "a": "Love for Desdemona",
+    "b": "Jealousy and resentment",
+    "c": "Loyalty to Othello",
+    "d": "Desire for wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a poem that mourns the death of someone?",
+    "a": "Ode",
+    "b": "Sonnet",
+    "c": "Elegy",
+    "d": "Ballad",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the yam crop?",
+    "a": "It symbolizes wealth and status",
+    "b": "It represents colonial trade",
+    "c": "It is a religious artifact",
+    "d": "It signifies poverty",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is Sadiku’s role?",
+    "a": "Sidi’s mother",
+    "b": "Baroka’s wife",
+    "c": "Lakunle’s sister",
+    "d": "Village teacher",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is Banquo’s fate?",
+    "a": "He becomes king",
+    "b": "He is murdered",
+    "c": "He flees Scotland",
+    "d": "He joins the witches",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the setting of the novel?",
+    "a": "Lagos and London",
+    "b": "Accra and Paris",
+    "c": "Nairobi and New York",
+    "d": "Abuja and Berlin",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what literary device is used to contrast cultures?",
+    "a": "Symbolism",
+    "b": "Irony",
+    "c": "Alliteration",
+    "d": "Hyperbole",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the role of the chorus?",
+    "a": "To fight in battles",
+    "b": "To comment on the action",
+    "c": "To lead the kingdom",
+    "d": "To serve Odewale",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Bassanio’s goal?",
+    "a": "To become a merchant",
+    "b": "To win Portia’s hand",
+    "c": "To defeat Shylock",
+    "d": "To rule Venice",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is Jagua’s tragic flaw?",
+    "a": "Her pursuit of love",
+    "b": "Her greed for wealth",
+    "c": "Her lack of ambition",
+    "d": "Her dishonesty",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what is the significance of the jeep?",
+    "a": "It represents freedom",
+    "b": "It symbolizes oppression",
+    "c": "It signifies wealth",
+    "d": "It is a gift",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what is the poet’s view on war?",
+    "a": "It is glorious",
+    "b": "It is destructive",
+    "c": "It is necessary",
+    "d": "It is heroic",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is Cassio’s role?",
+    "a": "Othello’s enemy",
+    "b": "Othello’s lieutenant",
+    "c": "Desdemona’s brother",
+    "d": "Iago’s mentor",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a long narrative poem about heroic deeds?",
+    "a": "Elegy",
+    "b": "Epic",
+    "c": "Sonnet",
+    "d": "Ode",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the role of the chi?",
+    "a": "A village elder",
+    "b": "A personal god",
+    "c": "A colonial officer",
+    "d": "A market leader",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the significance of the magazine?",
+    "a": "It promotes Lakunle’s ideas",
+    "b": "It contains Sidi’s pictures",
+    "c": "It criticizes Baroka",
+    "d": "It advertises the village",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the witches’ role in the play?",
+    "a": "They guide Macbeth to safety",
+    "b": "They predict his fate",
+    "c": "They oppose his rule",
+    "d": "They serve Lady Macbeth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the significance of the library?",
+    "a": "It is Adah’s workplace",
+    "b": "It symbolizes education",
+    "c": "It is a place of conflict",
+    "d": "It represents wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what is the poet’s final choice?",
+    "a": "He embraces the piano",
+    "b": "He remains undecided",
+    "c": "He chooses the drums",
+    "d": "He rejects both",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the setting of the play?",
+    "a": "Ancient Greece",
+    "b": "Yoruba kingdom",
+    "c": "Colonial Nigeria",
+    "d": "Modern Lagos",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Shylock’s motivation?",
+    "a": "Love for Portia",
+    "b": "Desire for revenge",
+    "c": "Quest for power",
+    "d": "Pursuit of justice",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the role of Uncle Taiwo?",
+    "a": "Jagua’s mentor",
+    "b": "A politician",
+    "c": "A businessman",
+    "d": "A teacher",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what is the poet’s critique of society?",
+    "a": "Lack of education",
+    "b": "Apathy toward injustice",
+    "c": "Economic inequality",
+    "d": "Religious hypocrisy",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what is the significance of the river?",
+    "a": "It symbolizes peace",
+    "b": "It represents destruction",
+    "c": "It signifies wealth",
+    "d": "It is a place of worship",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is the setting of the play?",
+    "a": "London and Paris",
+    "b": "Venice and Cyprus",
+    "c": "Rome and Athens",
+    "d": "Scotland and Denmark",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a sudden realization by a character?",
+    "a": "Epiphany",
+    "b": "Climax",
+    "c": "Denouement",
+    "d": "Foreshadowing",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the locusts?",
+    "a": "They symbolize prosperity",
+    "b": "They foreshadow destruction",
+    "c": "They represent fertility",
+    "d": "They signify peace",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the role of the Bale?",
+    "a": "Village chief",
+    "b": "Schoolteacher",
+    "c": "Priest",
+    "d": "Trader",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the significance of the sleepwalking scene?",
+    "a": "It reveals Lady Macbeth’s guilt",
+    "b": "It shows her ambition",
+    "c": "It predicts Macbeth’s victory",
+    "d": "It signifies her loyalty",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is Adah’s ultimate goal?",
+    "a": "To return to Nigeria",
+    "b": "To become a writer",
+    "c": "To gain wealth",
+    "d": "To remarry",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Gabriel Okara’s 'Piano and Drums,' what is the poet’s view on cultural identity?",
+    "a": "It should be abandoned",
+    "b": "It is a source of conflict",
+    "c": "It is irrelevant",
+    "d": "It is easily resolved",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the significance of Odewale’s scar?",
+    "a": "It marks his royalty",
+    "b": "It reveals his identity",
+    "c": "It symbolizes his strength",
+    "d": "It signifies his wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is the outcome of the trial?",
+    "a": "Shylock wins his case",
+    "b": "Antonio is saved",
+    "c": "Portia is punished",
+    "d": "Bassanio loses his wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the significance of Jagua’s name?",
+    "a": "It reflects her beauty",
+    "b": "It symbolizes her wealth",
+    "c": "It signifies her strength",
+    "d": "It represents her family",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Niyi Osundare’s 'Not My Business,' what is the poet’s use of imagery?",
+    "a": "To celebrate freedom",
+    "b": "To depict oppression",
+    "c": "To describe nature",
+    "d": "To praise leadership",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In John Pepper Clark’s 'The Casualties,' what is the poet’s message?",
+    "a": "War benefits society",
+    "b": "War destroys lives",
+    "c": "War is inevitable",
+    "d": "War promotes unity",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is the significance of the storm in Act II?",
+    "a": "It symbolizes peace",
+    "b": "It foreshadows conflict",
+    "c": "It represents love",
+    "d": "It signifies victory",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for the main idea or message of a literary work?",
+    "a": "Plot",
+    "b": "Theme",
+    "c": "Setting",
+    "d": "Tone",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the kola nut in Igbo culture?",
+    "a": "It symbolizes hospitality",
+    "b": "It represents wealth",
+    "c": "It is a war trophy",
+    "d": "It signifies mourning",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the role of the village girls in the play?",
+    "a": "They oppose Sidi",
+    "b": "They support Sidi’s beauty",
+    "c": "They challenge Baroka",
+    "d": "They teach Lakunle",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what does the forest moving to Dunsinane symbolize?",
+    "a": "Macbeth’s victory",
+    "b": "Nature’s rebellion",
+    "c": "The witches’ power",
+    "d": "The fulfillment of prophecy",
+    "ans": "d"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the significance of Adah’s children?",
+    "a": "They hinder her ambitions",
+    "b": "They motivate her struggle",
+    "c": "They reject her values",
+    "d": "They symbolize wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In J.P. Clark’s 'Abiku,' what is the Abiku’s defining characteristic?",
+    "a": "It is a heroic figure",
+    "b": "It repeatedly dies and returns",
+    "c": "It seeks revenge",
+    "d": "It brings prosperity",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the role of Aderopo?",
+    "a": "Odewale’s son",
+    "b": "A messenger",
+    "c": "A warrior",
+    "d": "A priest",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is the significance of the ring Portia gives Bassanio?",
+    "a": "It symbolizes wealth",
+    "b": "It represents their bond",
+    "c": "It is a family heirloom",
+    "d": "It signifies power",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the role of Mama Nancy?",
+    "a": "Jagua’s rival",
+    "b": "A market woman",
+    "c": "A mentor to Jagua",
+    "d": "A politician",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Lenrie Peters’ 'The Fence,' what does the fence symbolize?",
+    "a": "Unity",
+    "b": "Indecision",
+    "c": "Freedom",
+    "d": "Protection",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is the significance of the willow song sung by Desdemona?",
+    "a": "It foreshadows her death",
+    "b": "It celebrates her love",
+    "c": "It mocks Othello",
+    "d": "It praises Cyprus",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What literary device is used in the line 'The stars danced in the night sky'?",
+    "a": "Simile",
+    "b": "Personification",
+    "c": "Metaphor",
+    "d": "Alliteration",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the role of Obierika?",
+    "a": "Okonkwo’s enemy",
+    "b": "A village elder",
+    "c": "Okonkwo’s friend",
+    "d": "A colonial officer",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the significance of the dance of the lost traveler?",
+    "a": "It mocks Lakunle",
+    "b": "It celebrates Baroka’s power",
+    "c": "It entertains Sidi",
+    "d": "It criticizes tradition",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the role of Macduff?",
+    "a": "Macbeth’s ally",
+    "b": "The avenger of Duncan",
+    "c": "A witch",
+    "d": "A servant",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the role of Mr. Noble?",
+    "a": "Adah’s landlord",
+    "b": "Her employer",
+    "c": "Her mentor",
+    "d": "Her husband",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Kofi Awoonor’s 'The Anvil and the Hammer,' what does the anvil symbolize?",
+    "a": "Western influence",
+    "b": "African tradition",
+    "c": "Modernity",
+    "d": "Conflict",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the significance of the festival?",
+    "a": "It celebrates Odewale’s reign",
+    "b": "It reveals the truth",
+    "c": "It promotes war",
+    "d": "It honors the gods",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Gratiano’s role?",
+    "a": "Portia’s suitor",
+    "b": "Bassanio’s friend",
+    "c": "Shylock’s ally",
+    "d": "A judge",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the significance of Jagua’s return to Ogabu?",
+    "a": "It symbolizes her failure",
+    "b": "It represents her redemption",
+    "c": "It signifies her wealth",
+    "d": "It marks her marriage",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In David Diop’s 'Africa,' what is the poet’s tone?",
+    "a": "Proud and defiant",
+    "b": "Mournful and submissive",
+    "c": "Joyful and celebratory",
+    "d": "Indifferent and detached",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is Emilia’s role?",
+    "a": "Iago’s wife",
+    "b": "Othello’s sister",
+    "c": "Desdemona’s mother",
+    "d": "A servant",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a play that combines humor and serious themes?",
+    "a": "Tragedy",
+    "b": "Comedy",
+    "c": "Tragicomedy",
+    "d": "Farce",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the Week of Peace?",
+    "a": "It promotes war",
+    "b": "It honors the earth goddess",
+    "c": "It celebrates harvest",
+    "d": "It marks colonial rule",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is Lakunle’s profession?",
+    "a": "Farmer",
+    "b": "Schoolteacher",
+    "c": "Chief",
+    "d": "Trader",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the significance of the banquet scene?",
+    "a": "It shows Macbeth’s hospitality",
+    "b": "It reveals his guilt",
+    "c": "It celebrates his coronation",
+    "d": "It honors Banquo",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the role of the social worker?",
+    "a": "To support Adah’s family",
+    "b": "To deport Adah",
+    "c": "To employ Adah",
+    "d": "To oppose Adah",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Christopher Okigbo’s 'The Passage,' what is the poet’s primary theme?",
+    "a": "Love and romance",
+    "b": "Spiritual journey",
+    "c": "Political reform",
+    "d": "Economic struggle",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the role of Alaka?",
+    "a": "Odewale’s friend",
+    "b": "A priest",
+    "c": "A warrior",
+    "d": "A king",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is the role of Launcelot Gobbo?",
+    "a": "A merchant",
+    "b": "A servant",
+    "c": "A suitor",
+    "d": "A lawyer",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the role of Dennis Odoma?",
+    "a": "Jagua’s husband",
+    "b": "A young admirer",
+    "c": "A politician",
+    "d": "A businessman",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Leopold Sedar Senghor’s 'Black Woman,' what is the poet’s attitude toward Africa?",
+    "a": "Critical",
+    "b": "Reverent",
+    "c": "Indifferent",
+    "d": "Hostile",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is the significance of the candle in the final scene?",
+    "a": "It symbolizes hope",
+    "b": "It represents Desdemona’s life",
+    "c": "It signifies Othello’s victory",
+    "d": "It marks Iago’s defeat",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a speech delivered by a character alone on stage?",
+    "a": "Monologue",
+    "b": "Dialogue",
+    "c": "Soliloquy",
+    "d": "Aside",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the role of the Oracle of the Hills and Caves?",
+    "a": "It predicts weather",
+    "b": "It guides the village",
+    "c": "It promotes trade",
+    "d": "It trains warriors",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the significance of the railway project?",
+    "a": "It symbolizes modernity",
+    "b": "It represents tradition",
+    "c": "It signifies wealth",
+    "d": "It marks conflict",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the significance of the apparitions?",
+    "a": "They guide Macbeth to safety",
+    "b": "They predict his downfall",
+    "c": "They honor his reign",
+    "d": "They oppose Lady Macbeth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the significance of Adah’s writing?",
+    "a": "It is her hobby",
+    "b": "It is her path to freedom",
+    "c": "It causes conflict",
+    "d": "It earns her wealth",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In J.P. Clark’s 'Abiku,' what is the mother’s attitude toward the Abiku?",
+    "a": "Joyful",
+    "b": "Pleading",
+    "c": "Indifferent",
+    "d": "Hostile",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the significance of the bush path?",
+    "a": "It leads to prosperity",
+    "b": "It symbolizes danger",
+    "c": "It represents peace",
+    "d": "It signifies Odewale’s journey",
+    "ans": "d"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is Jessica’s role?",
+    "a": "Shylock’s daughter",
+    "b": "Portia’s maid",
+    "c": "Bassanio’s sister",
+    "d": "Antonio’s wife",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the significance of the election?",
+    "a": "It brings peace",
+    "b": "It causes conflict",
+    "c": "It unites the community",
+    "d": "It honors Jagua",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Lenrie Peters’ 'The Fence,' what is the poet’s emotional state?",
+    "a": "Confident",
+    "b": "Conflicted",
+    "c": "Joyful",
+    "d": "Angry",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Othello,' what is Roderigo’s motivation?",
+    "a": "Loyalty to Othello",
+    "b": "Love for Desdemona",
+    "c": "Desire for power",
+    "d": "Friendship with Iago",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the term for a hint of future events in a story?",
+    "a": "Flashback",
+    "b": "Foreshadowing",
+    "c": "Climax",
+    "d": "Irony",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Chinua Achebe’s 'Things Fall Apart,' what is the significance of the New Yam Festival?",
+    "a": "It marks colonial rule",
+    "b": "It celebrates harvest",
+    "c": "It honors warriors",
+    "d": "It promotes trade",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Wole Soyinka’s 'The Lion and the Jewel,' what is the significance of the mime?",
+    "a": "It criticizes Sidi",
+    "b": "It entertains the village",
+    "c": "It mocks modernity",
+    "d": "It honors Baroka",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'Macbeth,' what is the role of Malcolm?",
+    "a": "Macbeth’s son",
+    "b": "Duncan’s heir",
+    "c": "Banquo’s brother",
+    "d": "A witch",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Buchi Emecheta’s 'Second Class Citizen,' what is the significance of the slum housing?",
+    "a": "It symbolizes Adah’s success",
+    "b": "It reflects her struggles",
+    "c": "It represents her wealth",
+    "d": "It signifies her freedom",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Kofi Awoonor’s 'The Anvil and the Hammer,' what is the hammer’s symbolism?",
+    "a": "African tradition",
+    "b": "Western influence",
+    "c": "Peace",
+    "d": "Unity",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Ola Rotimi’s 'The Gods Are Not to Blame,' what is the role of the drummers?",
+    "a": "To fight Odewale",
+    "b": "To entertain the court",
+    "c": "To announce events",
+    "d": "To lead the war",
+    "ans": "c"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In William Shakespeare’s 'The Merchant of Venice,' what is the significance of the lead casket?",
+    "a": "It contains Portia’s portrait",
+    "b": "It symbolizes greed",
+    "c": "It represents wealth",
+    "d": "It signifies failure",
+    "ans": "a"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In Cyprian Ekwensi’s 'Jagua Nana,' what is the significance of Jagua’s infertility?",
+    "a": "It symbolizes her independence",
+    "b": "It reflects her tragedy",
+    "c": "It signifies her wealth",
+    "d": "It represents her strength",
+    "ans": "b"
+  },
+  {
+    "subject": "Literature-in-English",
+    "author": "Ogedengbe Segun",
+    "ask": "In David Diop’s 'Africa,' what literary device is used to address the continent?",
+    "a": "Apostrophe",
+    "b": "Metaphor",
+    "c": "Simile",
+    "d": "Irony",
+    "ans": "a"
+  }
+]

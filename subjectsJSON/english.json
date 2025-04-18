@@ -4,20 +4,20 @@
     "author": "Ogedengbe Segun",
     "ask": "Choose the word that best completes the sentence: The teacher’s explanation was so _____ that everyone understood the concept.",
     "a": "vague",
-    "b": "clear",
-    "c": "complex",
+    "b": "complex",
+    "c": "clear",
     "d": "boring",
-    "ans": "b"
+    "ans": "c"
   },
   {
     "subject": "English-Language",
     "author": "Ogedengbe Segun",
     "ask": "What is the synonym of 'enormous'?",
     "a": "Tiny",
-    "b": "Huge",
-    "c": "Average",
+    "b": "Average",
+    "c": "Huge",
     "d": "Small",
-    "ans": "b"
+    "ans": "c"
   },
   {
     "subject": "English-Language",
@@ -134,10 +134,10 @@
     "author": "Ogedengbe Segun",
     "ask": "Which word is an antonym of 'happy'?",
     "a": "Joyful",
-    "b": "Sad",
-    "c": "Excited",
-    "d": "Pleased",
-    "ans": "b"
+    "b": "Excited",
+    "c": "Pleased",
+    "d": "Sad",
+    "ans": "d"
   },
   {
     "subject": "English-Language",
@@ -184,20 +184,20 @@
     "author": "Ogedengbe Segun",
     "ask": "What is the superlative form of 'good'?",
     "a": "Gooder",
-    "b": "Best",
-    "c": "Better",
+    "b": "Better",
+    "c": "Best",
     "d": "Goodest",
-    "ans": "b"
+    "ans": "c"
   },
   {
     "subject": "English-Language",
     "author": "Ogedengbe Segun",
     "ask": "Choose the correct sentence:",
     "a": "Me and him went to the store.",
-    "b": "He and I went to the store.",
-    "c": "Him and I went to the store.",
-    "d": "I and he went to the store.",
-    "ans": "b"
+    "b": "Him and I went to the store.",
+    "c": "I and he went to the store.",
+    "d": "He and I went to the store.",
+    "ans": "d"
   },
   {
     "subject": "English-Language",
@@ -244,10 +244,10 @@
     "author": "Ogedengbe Segun",
     "ask": "Choose the correct pronoun: This book belongs to _____ .",
     "a": "he",
-    "b": "him",
-    "c": "his",
-    "d": "himself",
-    "ans": "b"
+    "b": "his",
+    "c": "himself",
+    "d": "him",
+    "ans": "d"
   },
   {
     "subject": "English-Language",
@@ -1284,19 +1284,19 @@
     "author": "Ogedengbe Segun",
     "ask": "What is the meaning of the idiom 'to make ends meet'?",
     "a": "To earn a large income",
-    "b": "To live within one’s means",
-    "c": "To waste money",
-    "d": "To borrow excessively",
-    "ans": "b"
+    "b": "To waste money",
+    "c": "To borrow excessively",
+    "d": "To live within one’s means",
+    "ans": "d"
   },
   {
     "subject": "English-Language",
     "author": "Ogedengbe Segun",
     "ask": "In Gabriel Okara’s 'Piano and Drums,' what do the drums symbolize?",
     "a": "Modernity",
-    "b": "African tradition",
-    "c": "Western culture",
-    "d": "Conflict",
-    "ans": "b"
+    "b": "Western culture",
+    "c": "Conflict",
+    "d": "African tradition",
+    "ans": "d"
   }
 ]

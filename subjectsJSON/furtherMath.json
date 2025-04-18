@@ -1,0 +1,1412 @@
+[
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the magnitude of the vector v = (3, 4)?",
+    "a": "5",
+    "b": "7",
+    "c": "9",
+    "d": "12",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle moves with constant acceleration of 2 m/s² and initial velocity of 5 m/s, what is its velocity after 3 seconds?",
+    "a": "8 m/s",
+    "b": "11 m/s",
+    "c": "14 m/s",
+    "d": "17 m/s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = 3x² + 2x + 1?",
+    "a": "6x + 2",
+    "b": "3x + 2",
+    "c": "6x + 1",
+    "d": "3x + 1",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[2, 1], [3, 4]], what is the determinant of A?",
+    "a": "5",
+    "b": "8",
+    "c": "11",
+    "d": "14",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the modulus of the complex number z = 3 + 4i?",
+    "a": "5",
+    "b": "7",
+    "c": "9",
+    "d": "13",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "A die is rolled twice. What is the probability of getting a sum of 7?",
+    "a": "1/6",
+    "b": "1/12",
+    "c": "1/9",
+    "d": "1/36",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 10 terms of the arithmetic sequence 2, 5, 8, ...?",
+    "a": "155",
+    "b": "165",
+    "c": "175",
+    "d": "185",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the line passing through (2, 3) and parallel to y = 2x + 1?",
+    "a": "y = 2x - 1",
+    "b": "y = 2x + 1",
+    "c": "y = 2x - 3",
+    "d": "y = 2x + 3",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If sin θ = 3/5 and θ is acute, what is cos θ?",
+    "a": "4/5",
+    "b": "3/4",
+    "c": "5/4",
+    "d": "2/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of 2x + 3 with respect to x?",
+    "a": "x² + 3x + c",
+    "b": "2x² + 3x + c",
+    "c": "x² + 3 + c",
+    "d": "2x² + 3 + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a force of 10 N acts on a 2 kg mass for 4 seconds, what is the change in velocity?",
+    "a": "10 m/s",
+    "b": "20 m/s",
+    "c": "30 m/s",
+    "d": "40 m/s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the scalar product of vectors u = (2, 3) and v = (4, -1)?",
+    "a": "5",
+    "b": "8",
+    "c": "11",
+    "d": "14",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the mean of the data set {2, 4, 6, 8, 10}?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]], what is A + B?",
+    "a": "[[6, 8], [10, 12]]",
+    "b": "[[5, 8], [10, 12]]",
+    "c": "[[6, 8], [9, 12]]",
+    "d": "[[5, 8], [9, 12]]",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the argument of the complex number z = -3 + 3i?",
+    "a": "π/4",
+    "b": "3π/4",
+    "c": "π/2",
+    "d": "5π/4",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of an infinite geometric series with first term 2 and common ratio 1/3?",
+    "a": "3",
+    "b": "4",
+    "c": "6",
+    "d": "9",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the distance between points (1, 2) and (4, 6)?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a projectile is launched with velocity 20 m/s at 30° to the horizontal, what is the horizontal component of velocity?",
+    "a": "10√3 m/s",
+    "b": "10 m/s",
+    "c": "17.3 m/s",
+    "d": "20 m/s",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = e^(2x)?",
+    "a": "e^(2x)",
+    "b": "2e^(2x)",
+    "c": "e^x",
+    "d": "2e^x",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If two cards are drawn from a deck of 52, what is the probability both are aces?",
+    "a": "1/221",
+    "b": "1/169",
+    "c": "1/663",
+    "d": "1/1326",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the inverse of the matrix A = [[1, 2], [3, 4]]?",
+    "a": "[[-2, 1], [1.5, -0.5]]",
+    "b": "[[-2, 1], [1, -0.5]]",
+    "c": "[[-2, 0.5], [1.5, -0.5]]",
+    "d": "[[-2, 1], [0.5, -0.5]]",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of sin x with respect to x?",
+    "a": "-cos x + c",
+    "b": "cos x + c",
+    "c": "-sin x + c",
+    "d": "sin x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If u = (1, 2, 3) and v = (4, 5, 6), what is the cross product u × v?",
+    "a": "(-3, 6, -3)",
+    "b": "(3, -6, 3)",
+    "c": "(-3, -6, 3)",
+    "d": "(3, 6, -3)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the variance of the data set {1, 2, 3, 4, 5}?",
+    "a": "2",
+    "b": "3",
+    "c": "4",
+    "d": "5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 5 terms of the geometric sequence 3, 6, 12, ...?",
+    "a": "93",
+    "b": "96",
+    "c": "99",
+    "d": "102",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the circle with center (2, 3) and radius 4?",
+    "a": "(x - 2)² + (y - 3)² = 16",
+    "b": "(x + 2)² + (y + 3)² = 16",
+    "c": "(x - 2)² + (y - 3)² = 4",
+    "d": "(x + 2)² + (y + 3)² = 4",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If tan θ = 1 and θ is acute, what is θ?",
+    "a": "30°",
+    "b": "45°",
+    "c": "60°",
+    "d": "90°",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the acceleration of a 5 kg object subjected to a force of 20 N?",
+    "a": "2 m/s²",
+    "b": "4 m/s²",
+    "c": "6 m/s²",
+    "d": "8 m/s²",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = ln x?",
+    "a": "1/x",
+    "b": "x",
+    "c": "ln x",
+    "d": "e^x",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = 1 + i, what is z²?",
+    "a": "2i",
+    "b": "2",
+    "c": "-2",
+    "d": "-2i",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of drawing a red card from a standard deck of 52 cards?",
+    "a": "1/2",
+    "b": "1/4",
+    "c": "1/3",
+    "d": "1/13",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the interior angles of a pentagon?",
+    "a": "360°",
+    "b": "540°",
+    "c": "720°",
+    "d": "900°",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[2, 0], [0, 3]], what is A²?",
+    "a": "[[4, 0], [0, 9]]",
+    "b": "[[4, 0], [0, 6]]",
+    "c": "[[2, 0], [0, 9]]",
+    "d": "[[4, 0], [0, 3]]",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of 1/x with respect to x?",
+    "a": "ln|x| + c",
+    "b": "1/x + c",
+    "c": "x + c",
+    "d": "e^x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the magnitude of the vector v = (-2, 3, 6)?",
+    "a": "7",
+    "b": "8",
+    "c": "9",
+    "d": "10",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the standard deviation of the data set {2, 4, 6, 8, 10}?",
+    "a": "√10",
+    "b": "√12",
+    "c": "√14",
+    "d": "√16",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the nth term of the arithmetic sequence 3, 7, 11, ...?",
+    "a": "4n - 1",
+    "b": "4n + 1",
+    "c": "3n + 1",
+    "d": "3n - 1",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the line perpendicular to y = 3x + 2 and passing through (1, 1)?",
+    "a": "y = -1/3x + 4/3",
+    "b": "y = -1/3x + 2/3",
+    "c": "y = 3x - 2",
+    "d": "y = 3x + 2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a body moves with velocity v = 3t² + 2t, what is its acceleration at t = 2?",
+    "a": "12 m/s²",
+    "b": "14 m/s²",
+    "c": "16 m/s²",
+    "d": "18 m/s²",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = cos x?",
+    "a": "sin x",
+    "b": "-sin x",
+    "c": "cos x",
+    "d": "-cos x",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = 2 - 2i, what is the conjugate of z?",
+    "a": "2 + 2i",
+    "b": "-2 + 2i",
+    "c": "2 - 2i",
+    "d": "-2 - 2i",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of getting at least one head when two coins are tossed?",
+    "a": "1/2",
+    "b": "1/4",
+    "c": "3/4",
+    "d": "1",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the determinant of the matrix A = [[3, 2], [1, 4]]?",
+    "a": "10",
+    "b": "12",
+    "c": "14",
+    "d": "16",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of e^x with respect to x?",
+    "a": "e^x + c",
+    "b": "1/e^x + c",
+    "c": "x + c",
+    "d": "ln x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle is projected vertically upwards with velocity 30 m/s, what is the maximum height reached? (Take g = 10 m/s²)",
+    "a": "45 m",
+    "b": "50 m",
+    "c": "55 m",
+    "d": "60 m",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the median of the data set {3, 5, 7, 9, 11}?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the nth term of the geometric sequence 2, 6, 18, ...?",
+    "a": "2 × 3^(n-1)",
+    "b": "3 × 2^(n-1)",
+    "c": "2 × 3^n",
+    "d": "3 × 2^n",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the tangent to the curve y = x² at x = 2?",
+    "a": "y = 4x - 4",
+    "b": "y = 4x - 2",
+    "c": "y = 2x - 4",
+    "d": "y = 2x - 2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If sin θ + cos θ = 1, what is sin θ cos θ?",
+    "a": "0",
+    "b": "1/2",
+    "c": "1",
+    "d": "2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the work done by a force of 5 N moving an object 10 m in the direction of the force?",
+    "a": "25 J",
+    "b": "50 J",
+    "c": "75 J",
+    "d": "100 J",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = x³ - 2x² + x?",
+    "a": "3x² - 4x + 1",
+    "b": "3x² - 4x",
+    "c": "3x² - 2x + 1",
+    "d": "3x² - 2x",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = -1 - i, what is |z|?",
+    "a": "√2",
+    "b": "2",
+    "c": "√3",
+    "d": "3",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of rolling an even number on a fair die?",
+    "a": "1/2",
+    "b": "1/3",
+    "c": "1/4",
+    "d": "1/6",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the trace of the matrix A = [[1, 2], [3, 4]]?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of cos x with respect to x?",
+    "a": "sin x + c",
+    "b": "-sin x + c",
+    "c": "cos x + c",
+    "d": "-cos x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle moves with displacement s = t³ - 3t² + 2t, what is its velocity at t = 1?",
+    "a": "2 m/s",
+    "b": "3 m/s",
+    "c": "4 m/s",
+    "d": "5 m/s",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the correlation coefficient for perfectly linear data?",
+    "a": "0",
+    "b": "1",
+    "c": "-1",
+    "d": "0.5",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 8 terms of the arithmetic sequence 1, 4, 7, ...?",
+    "a": "100",
+    "b": "104",
+    "c": "108",
+    "d": "112",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the midpoint of the line segment joining (2, 3) and (6, 7)?",
+    "a": "(4, 5)",
+    "b": "(3, 5)",
+    "c": "(4, 4)",
+    "d": "(3, 4)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If cos θ = -4/5 and θ is in the second quadrant, what is sin θ?",
+    "a": "3/5",
+    "b": "-3/5",
+    "c": "4/5",
+    "d": "-4/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the unit vector in the direction of v = (6, 8)?",
+    "a": "(3/5, 4/5)",
+    "b": "(6/10, 8/10)",
+    "c": "(3/10, 4/10)",
+    "d": "(6/5, 8/5)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "A particle moves with velocity v = 4t + 3. What is its displacement after 2 seconds?",
+    "a": "10 m",
+    "b": "14 m",
+    "c": "18 m",
+    "d": "22 m",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = 5x³ - 4x + 2?",
+    "a": "15x² - 4",
+    "b": "5x² - 4",
+    "c": "15x² + 4",
+    "d": "5x² + 4",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[3, 2], [1, 5]], what is the trace of A?",
+    "a": "8",
+    "b": "7",
+    "c": "6",
+    "d": "5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the modulus of the complex number z = 5 - 12i?",
+    "a": "13",
+    "b": "17",
+    "c": "19",
+    "d": "25",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "A bag contains 3 red and 2 blue balls. What is the probability of drawing 2 red balls in succession without replacement?",
+    "a": "3/10",
+    "b": "2/5",
+    "c": "1/2",
+    "d": "3/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 12 terms of the arithmetic sequence 1, 4, 7, ...?",
+    "a": "222",
+    "b": "228",
+    "c": "234",
+    "d": "240",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the line passing through (3, 4) and perpendicular to y = -2x + 5?",
+    "a": "y = 1/2x + 5/2",
+    "b": "y = -1/2x + 5/2",
+    "c": "y = 2x - 2",
+    "d": "y = -2x + 10",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If cos θ = 5/13 and θ is acute, what is sin θ?",
+    "a": "12/13",
+    "b": "5/12",
+    "c": "13/12",
+    "d": "12/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of 3x² + 2 with respect to x?",
+    "a": "x³ + 2x + c",
+    "b": "3x³ + 2x + c",
+    "c": "x³ + 2 + c",
+    "d": "3x³ + 2 + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "A force of 15 N acts on a 3 kg mass for 5 seconds. What is the final velocity if the initial velocity is 0 m/s?",
+    "a": "20 m/s",
+    "b": "25 m/s",
+    "c": "30 m/s",
+    "d": "35 m/s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the dot product of vectors u = (3, -2) and v = (4, 5)?",
+    "a": "2",
+    "b": "12",
+    "c": "22",
+    "d": "32",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the mean of the data set {3, 5, 7, 9, 11}?",
+    "a": "6",
+    "b": "7",
+    "c": "8",
+    "d": "9",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[4, 1], [2, 3]] and B = [[1, 2], [3, 4]], what is AB?",
+    "a": "[[7, 12], [11, 16]]",
+    "b": "[[6, 12], [10, 16]]",
+    "c": "[[7, 11], [12, 16]]",
+    "d": "[[6, 11], [10, 16]]",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the argument of the complex number z = -4 - 4i?",
+    "a": "π/4",
+    "b": "3π/4",
+    "c": "5π/4",
+    "d": "7π/4",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of an infinite geometric series with first term 4 and common ratio 1/4?",
+    "a": "16/3",
+    "b": "4",
+    "c": "5",
+    "d": "6",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the distance between points (2, 3) and (5, 7)?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a projectile is launched with velocity 30 m/s at 45° to the horizontal, what is the vertical component of velocity? (Use g = 10 m/s²)",
+    "a": "15√2 m/s",
+    "b": "15 m/s",
+    "c": "30√2 m/s",
+    "d": "30 m/s",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = sin(2x)?",
+    "a": "2cos(2x)",
+    "b": "cos(2x)",
+    "c": "-2sin(2x)",
+    "d": "-cos(2x)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "A box contains 4 red and 3 blue marbles. What is the probability of drawing a red marble and then a blue marble without replacement?",
+    "a": "12/49",
+    "b": "12/42",
+    "c": "4/7",
+    "d": "3/7",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the inverse of the matrix A = [[2, 3], [1, 4]]?",
+    "a": "[[4, -3], [-1, 2]]/5",
+    "b": "[[4, -3], [1, -2]]/5",
+    "c": "[[2, -3], [-1, 4]]/5",
+    "d": "[[2, -3], [1, -4]]/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of tan x with respect to x?",
+    "a": "-ln|cos x| + c",
+    "b": "ln|cos x| + c",
+    "c": "ln|sin x| + c",
+    "d": "-ln|sin x| + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If u = (2, 1, 3) and v = (1, 2, 4), what is the cross product u × v?",
+    "a": "(2, -5, 3)",
+    "b": "(-2, 5, -3)",
+    "c": "(2, 5, -3)",
+    "d": "(-2, -5, 3)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the variance of the data set {2, 4, 6, 8}?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 6 terms of the geometric sequence 2, 8, 32, ...?",
+    "a": "546",
+    "b": "682",
+    "c": "819",
+    "d": "1092",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the circle with center (-1, 2) and radius 3?",
+    "a": "(x + 1)² + (y - 2)² = 9",
+    "b": "(x - 1)² + (y + 2)² = 9",
+    "c": "(x + 1)² + (y - 2)² = 3",
+    "d": "(x - 1)² + (y + 2)² = 3",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If cot θ = 3/4 and θ is acute, what is sin θ?",
+    "a": "4/5",
+    "b": "3/5",
+    "c": "5/4",
+    "d": "4/3",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the momentum of a 4 kg object moving at 5 m/s?",
+    "a": "15 kg·m/s",
+    "b": "20 kg·m/s",
+    "c": "25 kg·m/s",
+    "d": "30 kg·m/s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = x⁴ + 3x² - 2?",
+    "a": "4x³ + 6x",
+    "b": "4x³ + 3x",
+    "c": "x³ + 6x",
+    "d": "x³ + 3x",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = 3 - 3i, what is z²?",
+    "a": "18i",
+    "b": "18",
+    "c": "-18",
+    "d": "-18i",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of drawing a king from a standard deck of 52 cards?",
+    "a": "1/13",
+    "b": "1/26",
+    "c": "1/4",
+    "d": "1/52",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the interior angles of a hexagon?",
+    "a": "540°",
+    "b": "720°",
+    "c": "900°",
+    "d": "1080°",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[1, 0], [0, 2]], what is A³?",
+    "a": "[[1, 0], [0, 8]]",
+    "b": "[[1, 0], [0, 6]]",
+    "c": "[[1, 0], [0, 4]]",
+    "d": "[[1, 0], [0, 2]]",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of sec² x with respect to x?",
+    "a": "tan x + c",
+    "b": "-tan x + c",
+    "c": "sec x + c",
+    "d": "-sec x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the magnitude of the vector v = (1, -2, 2)?",
+    "a": "3",
+    "b": "4",
+    "c": "5",
+    "d": "6",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the standard deviation of the data set {1, 3, 5, 7, 9}?",
+    "a": "√8",
+    "b": "√10",
+    "c": "√12",
+    "d": "√14",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the nth term of the arithmetic sequence 5, 9, 13, ...?",
+    "a": "4n + 1",
+    "b": "4n - 1",
+    "c": "5n + 1",
+    "d": "5n - 1",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the line through (1, 2) with gradient -3?",
+    "a": "y = -3x + 5",
+    "b": "y = -3x + 2",
+    "c": "y = 3x - 1",
+    "d": "y = 3x + 2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle moves with velocity v = 5t² + 3t, what is its acceleration at t = 1?",
+    "a": "10 m/s²",
+    "b": "13 m/s²",
+    "c": "16 m/s²",
+    "d": "19 m/s²",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = tan x?",
+    "a": "sec² x",
+    "b": "-sec² x",
+    "c": "tan² x",
+    "d": "-tan² x",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = 1 - i, what is the conjugate of z?",
+    "a": "1 + i",
+    "b": "-1 + i",
+    "c": "1 - i",
+    "d": "-1 - i",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of getting exactly two heads when three coins are tossed?",
+    "a": "1/8",
+    "b": "3/8",
+    "c": "1/2",
+    "d": "5/8",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the determinant of the matrix A = [[4, 1], [2, 3]]?",
+    "a": "10",
+    "b": "12",
+    "c": "14",
+    "d": "16",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of 2e^x with respect to x?",
+    "a": "2e^x + c",
+    "b": "e^x + c",
+    "c": "2x + c",
+    "d": "x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle is projected vertically upwards with velocity 40 m/s, what is the time to reach maximum height? (Take g = 10 m/s²)",
+    "a": "3 s",
+    "b": "4 s",
+    "c": "5 s",
+    "d": "6 s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the median of the data set {2, 4, 6, 8, 10, 12}?",
+    "a": "6",
+    "b": "7",
+    "c": "8",
+    "d": "9",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the nth term of the geometric sequence 4, 12, 36, ...?",
+    "a": "4 × 3^(n-1)",
+    "b": "3 × 4^(n-1)",
+    "c": "4 × 3^n",
+    "d": "3 × 4^n",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the tangent to the curve y = x³ at x = 1?",
+    "a": "y = 3x - 2",
+    "b": "y = 3x - 1",
+    "c": "y = x - 1",
+    "d": "y = x - 2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If 2sin θ - cos θ = 0, what is tan θ?",
+    "a": "1/2",
+    "b": "2",
+    "c": "1",
+    "d": "-1",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the kinetic energy of a 2 kg object moving at 3 m/s?",
+    "a": "6 J",
+    "b": "9 J",
+    "c": "12 J",
+    "d": "18 J",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = 2x⁵ - x³ + 4x?",
+    "a": "10x⁴ - 3x² + 4",
+    "b": "10x⁴ - x² + 4",
+    "c": "2x⁴ - 3x² + 4",
+    "d": "2x⁴ - x² + 4",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = -2 + 2i, what is |z|?",
+    "a": "2√2",
+    "b": "2",
+    "c": "4",
+    "d": "√2",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of rolling a number greater than 4 on a fair die?",
+    "a": "1/3",
+    "b": "1/2",
+    "c": "2/3",
+    "d": "1/6",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the trace of the matrix A = [[2, 3], [4, 5]]?",
+    "a": "7",
+    "b": "8",
+    "c": "9",
+    "d": "10",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of csc² x with respect to x?",
+    "a": "-cot x + c",
+    "b": "cot x + c",
+    "c": "-csc x + c",
+    "d": "csc x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle moves with displacement s = 2t³ + t², what is its velocity at t = 2?",
+    "a": "26 m/s",
+    "b": "28 m/s",
+    "c": "30 m/s",
+    "d": "32 m/s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the correlation coefficient for data with no linear relationship?",
+    "a": "0",
+    "b": "1",
+    "c": "-1",
+    "d": "0.5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 9 terms of the arithmetic sequence 2, 6, 10, ...?",
+    "a": "198",
+    "b": "204",
+    "c": "210",
+    "d": "216",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the midpoint of the line segment joining (3, 4) and (7, 8)?",
+    "a": "(5, 6)",
+    "b": "(4, 6)",
+    "c": "(5, 5)",
+    "d": "(4, 5)",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If sin θ = -3/5 and θ is in the third quadrant, what is cos θ?",
+    "a": "-4/5",
+    "b": "4/5",
+    "c": "3/5",
+    "d": "-3/5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the number of ways to arrange 5 distinct books on a shelf?",
+    "a": "120",
+    "b": "60",
+    "c": "24",
+    "d": "720",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the general solution of the differential equation dy/dx = 2x?",
+    "a": "y = x² + c",
+    "b": "y = 2x² + c",
+    "c": "y = x + c",
+    "d": "y = 2x + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle moves with constant acceleration of 3 m/s² and initial velocity of 4 m/s, what is its displacement after 2 seconds?",
+    "a": "10 m",
+    "b": "12 m",
+    "c": "14 m",
+    "d": "16 m",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = e^(3x)?",
+    "a": "3e^(3x)",
+    "b": "e^(3x)",
+    "c": "3e^x",
+    "d": "e^x",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If z = 2 + 3i, what is z + z̅?",
+    "a": "4",
+    "b": "6",
+    "c": "8",
+    "d": "10",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the number of ways to choose 3 students from 5?",
+    "a": "10",
+    "b": "15",
+    "c": "20",
+    "d": "60",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 7 terms of the geometric sequence 1, 3, 9, ...?",
+    "a": "1093",
+    "b": "1092",
+    "c": "1091",
+    "d": "1090",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the line parallel to y = 4x - 3 and passing through (0, 5)?",
+    "a": "y = 4x + 5",
+    "b": "y = 4x - 5",
+    "c": "y = -4x + 5",
+    "d": "y = -4x - 5",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If tan θ = -1 and θ is in the second quadrant, what is cos θ?",
+    "a": "-1/√2",
+    "b": "1/√2",
+    "c": "-1",
+    "d": "1",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the work done by a force of 8 N moving an object 6 m at an angle of 60° to the direction of motion?",
+    "a": "24 J",
+    "b": "48 J",
+    "c": "36 J",
+    "d": "12 J",
+    "ans": "c"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the integral of 4x³ with respect to x?",
+    "a": "x⁴ + c",
+    "b": "4x⁴ + c",
+    "c": "x³ + c",
+    "d": "4x³ + c",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If u = (1, 2, 0) and v = (0, 1, 3), what is u · v?",
+    "a": "2",
+    "b": "3",
+    "c": "4",
+    "d": "5",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the variance of the data set {1, 2, 3, 4}?",
+    "a": "1.25",
+    "b": "1.5",
+    "c": "1.75",
+    "d": "2",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the probability of selecting a prime number from {1, 2, 3, 4, 5, 6}?",
+    "a": "1/2",
+    "b": "1/3",
+    "c": "1/6",
+    "d": "2/3",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the general solution of the differential equation dy/dx = y?",
+    "a": "y = e^x + c",
+    "b": "y = ce^x",
+    "c": "y = x + c",
+    "d": "y = cx",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If A = [[3, 0], [0, 3]], what is the determinant of A?",
+    "a": "6",
+    "b": "9",
+    "c": "12",
+    "d": "15",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the argument of the complex number z = 1 + i?",
+    "a": "π/4",
+    "b": "π/2",
+    "c": "3π/4",
+    "d": "π",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the sum of the first 10 terms of the arithmetic sequence 3, 5, 7, ...?",
+    "a": "120",
+    "b": "130",
+    "c": "140",
+    "d": "150",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the equation of the circle with center (0, 0) and radius 5?",
+    "a": "x² + y² = 25",
+    "b": "x² + y² = 5",
+    "c": "x² + y² = 10",
+    "d": "x² + y² = 15",
+    "ans": "a"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "If a particle is projected at 20 m/s at 60° to the horizontal, what is the time of flight? (Take g = 10 m/s²)",
+    "a": "2√3 s",
+    "b": "4 s",
+    "c": "2 s",
+    "d": "3√3 s",
+    "ans": "b"
+  },
+  {
+    "subject": "Further Mathematics",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the derivative of y = ln(2x)?",
+    "a": "1/x",
+    "b": "2/x",
+    "c": "1/2x",
+    "d": "2x",
+    "ans": "b"
+  }
+]

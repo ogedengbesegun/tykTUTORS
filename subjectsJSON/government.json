@@ -1,0 +1,1442 @@
+[
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the primary function of the legislature in a democratic government?",
+        "a": "To enforce laws",
+        "b": "To make laws",
+        "c": "To interpret laws",
+        "d": "To implement policies",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following best defines sovereignty?",
+        "a": "The power to make foreign policies",
+        "b": "The supreme authority of a state",
+        "c": "The right to vote in elections",
+        "d": "The control of economic resources",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In a federal system, power is shared between which two levels of government?",
+        "a": "Central and local",
+        "b": "Central and regional",
+        "c": "Regional and local",
+        "d": "Executive and judiciary",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main feature of a unitary system of government?",
+        "a": "Decentralized power",
+        "b": "Centralized authority",
+        "c": "Multiple sovereign states",
+        "d": "Independent judiciary",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution introduced the presidential system of government?",
+        "a": "1960 Constitution",
+        "b": "1963 Constitution",
+        "c": "1979 Constitution",
+        "d": "1999 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government ruled by a single person with absolute power?",
+        "a": "Democracy",
+        "b": "Oligarchy",
+        "c": "Autocracy",
+        "d": "Aristocracy",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of the executive arm of government?",
+        "a": "President",
+        "b": "Senate President",
+        "c": "Chief Justice",
+        "d": "Speaker of the House",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main purpose of a constitution?",
+        "a": "To allocate resources",
+        "b": "To define the structure of government",
+        "c": "To regulate foreign trade",
+        "d": "To conduct elections",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of democracy?",
+        "a": "Rule by a single party",
+        "b": "Suppression of opposition",
+        "c": "Free and fair elections",
+        "d": "Military control",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process by which citizens choose their leaders?",
+        "a": "Legislation",
+        "b": "Election",
+        "c": "Adjudication",
+        "d": "Referendum",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which political ideology emphasizes equality and collective ownership of resources?",
+        "a": "Capitalism",
+        "b": "Socialism",
+        "c": "Fascism",
+        "d": "Liberalism",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for conducting elections?",
+        "a": "National Assembly",
+        "b": "Independent National Electoral Commission",
+        "c": "Federal Executive Council",
+        "d": "Supreme Court",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where a king or queen rules with limited power?",
+        "a": "Absolute monarchy",
+        "b": "Constitutional monarchy",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a fundamental human right in Nigeria?",
+        "a": "Right to free education",
+        "b": "Right to life",
+        "c": "Right to employment",
+        "d": "Right to vote at 16",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the judiciary in Nigeria?",
+        "a": "To make laws",
+        "b": "To interpret laws",
+        "c": "To enforce laws",
+        "d": "To conduct elections",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution established the First Republic?",
+        "a": "1960 Constitution",
+        "b": "1963 Constitution",
+        "c": "1979 Constitution",
+        "d": "1999 Constitution",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government controlled by a small group of people?",
+        "a": "Democracy",
+        "b": "Oligarchy",
+        "c": "Monarchy",
+        "d": "Republic",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, how many years is the term of office for the President?",
+        "a": "4 years",
+        "b": "5 years",
+        "c": "6 years",
+        "d": "7 years",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a characteristic of a confederal system?",
+        "a": "Strong central government",
+        "b": "Weak central authority",
+        "c": "Single ruling party",
+        "d": "No regional governments",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the right of citizens to participate in government?",
+        "a": "Sovereignty",
+        "b": "Citizenship",
+        "c": "Franchise",
+        "d": "Authority",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which organization did Nigeria join in 1960 to promote African unity?",
+        "a": "United Nations",
+        "b": "Organization of African Unity",
+        "c": "Commonwealth of Nations",
+        "d": "Economic Community of West African States",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who appoints the Chief Justice of the Federation?",
+        "a": "President",
+        "b": "Senate",
+        "c": "National Judicial Council",
+        "d": "House of Representatives",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government based on religious laws?",
+        "a": "Monarchy",
+        "b": "Theocracy",
+        "c": "Oligarchy",
+        "d": "Democracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a function of political parties?",
+        "a": "Interpreting laws",
+        "b": "Mobilizing voters",
+        "c": "Conducting trials",
+        "d": "Enforcing policies",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, what is the minimum age to vote in elections?",
+        "a": "16",
+        "b": "18",
+        "c": "21",
+        "d": "25",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was dominant during the First Republic?",
+        "a": "People’s Democratic Party",
+        "b": "Northern People’s Congress",
+        "c": "All Progressives Congress",
+        "d": "Action Group",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a vote to decide a specific issue?",
+        "a": "Election",
+        "b": "Referendum",
+        "c": "Plebiscite",
+        "d": "By-election",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of the Nigerian 1999 Constitution?",
+        "a": "Parliamentary system",
+        "b": "Presidential system",
+        "c": "Confederal system",
+        "d": "Unitary system",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which arm of government controls public funds?",
+        "a": "Judiciary",
+        "b": "Legislature",
+        "c": "Executive",
+        "d": "Electoral Commission",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the division of powers among the three arms of government?",
+        "a": "Checks and balances",
+        "b": "Separation of powers",
+        "c": "Rule of law",
+        "d": "Federalism",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader introduced the Structural Adjustment Programme (SAP)?",
+        "a": "Olusegun Obasanjo",
+        "b": "Ibrahim Babangida",
+        "c": "Sani Abacha",
+        "d": "Yakubu Gowon",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main objective of the Economic Community of West African States (ECOWAS)?",
+        "a": "Military dominance",
+        "b": "Economic integration",
+        "c": "Cultural preservation",
+        "d": "Political control",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of the Senate?",
+        "a": "President",
+        "b": "Senate President",
+        "c": "Chief Justice",
+        "d": "Vice President",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where citizens govern themselves directly?",
+        "a": "Representative democracy",
+        "b": "Direct democracy",
+        "c": "Oligarchy",
+        "d": "Autocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was in use during the Second Republic?",
+        "a": "1960 Constitution",
+        "b": "1963 Constitution",
+        "c": "1979 Constitution",
+        "d": "1999 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the legal framework that ensures equality before the law?",
+        "a": "Separation of powers",
+        "b": "Rule of law",
+        "c": "Sovereignty",
+        "d": "Federalism",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, how many states make up the federation?",
+        "a": "30",
+        "b": "36",
+        "c": "42",
+        "d": "48",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a function of the civil service in Nigeria?",
+        "a": "Making laws",
+        "b": "Implementing policies",
+        "c": "Conducting elections",
+        "d": "Interpreting laws",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where power is inherited?",
+        "a": "Democracy",
+        "b": "Monarchy",
+        "c": "Oligarchy",
+        "d": "Republic",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of 12 states in 1967?",
+        "a": "Yakubu Gowon",
+        "b": "Murtala Mohammed",
+        "c": "Olusegun Obasanjo",
+        "d": "Shehu Shagari",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the United Nations (UN)?",
+        "a": "Economic development",
+        "b": "Maintaining global peace",
+        "c": "Cultural preservation",
+        "d": "Military control",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body has the power to impeach the President?",
+        "a": "Supreme Court",
+        "b": "National Assembly",
+        "c": "Federal Executive Council",
+        "d": "Electoral Commission",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where one party dominates politics?",
+        "a": "Multi-party system",
+        "b": "One-party system",
+        "c": "Two-party system",
+        "d": "No-party system",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of federalism?",
+        "a": "Centralized power",
+        "b": "Division of powers",
+        "c": "Single authority",
+        "d": "Military rule",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of the House of Representatives?",
+        "a": "Speaker",
+        "b": "President",
+        "c": "Senate President",
+        "d": "Chief Justice",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of amending a constitution?",
+        "a": "Legislation",
+        "b": "Referendum",
+        "c": "Constitutional review",
+        "d": "Judicial review",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party won the 1999 presidential election?",
+        "a": "All Progressives Congress",
+        "b": "People’s Democratic Party",
+        "c": "Action Group",
+        "d": "National Party of Nigeria",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where citizens elect representatives?",
+        "a": "Direct democracy",
+        "b": "Representative democracy",
+        "c": "Oligarchy",
+        "d": "Autocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution introduced federalism?",
+        "a": "1914 Constitution",
+        "b": "1922 Constitution",
+        "c": "1951 Constitution",
+        "d": "1960 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the power of courts to review laws?",
+        "a": "Judicial review",
+        "b": "Legislative review",
+        "c": "Executive review",
+        "d": "Constitutional review",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which organization replaced the Organization of African Unity (OAU)?",
+        "a": "African Union",
+        "b": "United Nations",
+        "c": "ECOWAS",
+        "d": "Commonwealth",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body advises the President on policy matters?",
+        "a": "National Assembly",
+        "b": "Federal Executive Council",
+        "c": "Supreme Court",
+        "d": "Electoral Commission",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where two parties dominate politics?",
+        "a": "One-party system",
+        "b": "Two-party system",
+        "c": "Multi-party system",
+        "d": "No-party system",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the ‘War Against Indiscipline’ campaign?",
+        "a": "Shehu Shagari",
+        "b": "Muhammadu Buhari",
+        "c": "Sani Abacha",
+        "d": "Olusegun Obasanjo",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the Commonwealth of Nations?",
+        "a": "Military alliance",
+        "b": "Economic cooperation",
+        "c": "Cultural domination",
+        "d": "Political control",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, how many senators represent each state in the Senate?",
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a temporary suspension of a constitution?",
+        "a": "Amendment",
+        "b": "Abrogation",
+        "c": "Suspension",
+        "d": "Review",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was prominent during the Second Republic?",
+        "a": "National Party of Nigeria",
+        "b": "All Progressives Congress",
+        "c": "People’s Democratic Party",
+        "d": "Northern People’s Congress",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the principle that no one is above the law?",
+        "a": "Sovereignty",
+        "b": "Rule of law",
+        "c": "Separation of powers",
+        "d": "Federalism",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of the judiciary?",
+        "a": "President",
+        "b": "Chief Justice",
+        "c": "Senate President",
+        "d": "Speaker",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where the military rules?",
+        "a": "Democracy",
+        "b": "Monarchy",
+        "c": "Military regime",
+        "d": "Oligarchy",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader introduced the six geo-political zones?",
+        "a": "Ibrahim Babangida",
+        "b": "Sani Abacha",
+        "c": "Olusegun Obasanjo",
+        "d": "Yakubu Gowon",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the African Union (AU)?",
+        "a": "Economic domination",
+        "b": "Promoting African unity",
+        "c": "Military control",
+        "d": "Cultural preservation",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for local government elections?",
+        "a": "Independent National Electoral Commission",
+        "b": "State Independent Electoral Commission",
+        "c": "National Assembly",
+        "d": "Federal Executive Council",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where multiple parties compete for power?",
+        "a": "One-party system",
+        "b": "Two-party system",
+        "c": "Multi-party system",
+        "d": "No-party system",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was used during the colonial period?",
+        "a": "1914 Constitution",
+        "b": "1960 Constitution",
+        "c": "1979 Constitution",
+        "d": "1999 Constitution",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of transferring power to local authorities?",
+        "a": "Centralization",
+        "b": "Decentralization",
+        "c": "Federalism",
+        "d": "Sovereignty",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of NYSC in 1973?",
+        "a": "Yakubu Gowon",
+        "b": "Murtala Mohammed",
+        "c": "Olusegun Obasanjo",
+        "d": "Shehu Shagari",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the Non-Aligned Movement (NAM)?",
+        "a": "Military alliance",
+        "b": "Neutrality in global politics",
+        "c": "Economic domination",
+        "d": "Cultural preservation",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body has the power to declare a state of emergency?",
+        "a": "National Assembly",
+        "b": "President",
+        "c": "Supreme Court",
+        "d": "Electoral Commission",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where the head of state is ceremonial?",
+        "a": "Presidential system",
+        "b": "Parliamentary system",
+        "c": "Monarchy",
+        "d": "Autocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party won the 2015 presidential election?",
+        "a": "People’s Democratic Party",
+        "b": "All Progressives Congress",
+        "c": "National Party of Nigeria",
+        "d": "Action Group",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of citizens recalling elected officials?",
+        "a": "Impeachment",
+        "b": "Referendum",
+        "c": "Recall",
+        "d": "Election",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was in use during the military regime of 1983–1998?",
+        "a": "1960 Constitution",
+        "b": "1979 Constitution",
+        "c": "Suspended",
+        "d": "1999 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the power of a state to govern its foreign affairs?",
+        "a": "Sovereignty",
+        "b": "Federalism",
+        "c": "Autonomy",
+        "d": "Authority",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the Vision 2010 program?",
+        "a": "Sani Abacha",
+        "b": "Ibrahim Babangida",
+        "c": "Olusegun Obasanjo",
+        "d": "Shehu Shagari",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the United Nations Security Council?",
+        "a": "Economic development",
+        "b": "Maintaining global peace",
+        "c": "Cultural preservation",
+        "d": "Political control",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process by which a state gains independence from colonial rule?",
+        "a": "Decolonization",
+        "b": "Annexation",
+        "c": "Federation",
+        "d": "Amalgamation",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was associated with the Clifford Constitution?",
+        "a": "1914 Constitution",
+        "b": "1922 Constitution",
+        "c": "1946 Constitution",
+        "d": "1951 Constitution",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the primary role of the public service in Nigeria?",
+        "a": "Making laws",
+        "b": "Implementing government policies",
+        "c": "Conducting elections",
+        "d": "Interpreting laws",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which political ideology advocates for private ownership and free market competition?",
+        "a": "Socialism",
+        "b": "Communism",
+        "c": "Capitalism",
+        "d": "Fascism",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who chairs the Federal Executive Council?",
+        "a": "President",
+        "b": "Vice President",
+        "c": "Senate President",
+        "d": "Chief Justice",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where power is vested in the people?",
+        "a": "Autocracy",
+        "b": "Democracy",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader introduced the 1946 Richards Constitution?",
+        "a": "Lord Lugard",
+        "b": "Sir Arthur Richards",
+        "c": "Sir Hugh Clifford",
+        "d": "Sir Bernard Bourdillon",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the Code of Conduct Bureau in Nigeria?",
+        "a": "To conduct elections",
+        "b": "To prevent corruption among public officers",
+        "c": "To make laws",
+        "d": "To interpret laws",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a characteristic of a parliamentary system?",
+        "a": "Separation of executive and legislature",
+        "b": "Fusion of executive and legislature",
+        "c": "Independent judiciary",
+        "d": "Centralized power",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, what is the minimum age to contest for the presidency?",
+        "a": "30",
+        "b": "35",
+        "c": "40",
+        "d": "45",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of dividing a country into electoral districts?",
+        "a": "Gerrymandering",
+        "b": "Delimitation",
+        "c": "Franchise",
+        "d": "Referendum",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was founded by Chief Obafemi Awolowo?",
+        "a": "Northern People’s Congress",
+        "b": "Action Group",
+        "c": "National Party of Nigeria",
+        "d": "People’s Democratic Party",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where a few wealthy individuals rule?",
+        "a": "Aristocracy",
+        "b": "Plutocracy",
+        "c": "Monarchy",
+        "d": "Democracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which international organization is Nigeria a member of to promote global trade?",
+        "a": "World Trade Organization",
+        "b": "African Union",
+        "c": "Commonwealth of Nations",
+        "d": "United Nations",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for auditing public accounts?",
+        "a": "Central Bank of Nigeria",
+        "b": "Auditor-General’s Office",
+        "c": "Federal Ministry of Finance",
+        "d": "National Assembly",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the principle that ensures fairness in government actions?",
+        "a": "Equity",
+        "b": "Sovereignty",
+        "c": "Rule of law",
+        "d": "Federalism",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution introduced regionalism?",
+        "a": "1922 Constitution",
+        "b": "1946 Constitution",
+        "c": "1951 Constitution",
+        "d": "1960 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where citizens vote directly on laws?",
+        "a": "Representative democracy",
+        "b": "Direct democracy",
+        "c": "Constitutional monarchy",
+        "d": "Oligarchy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who appoints the Inspector-General of Police?",
+        "a": "President",
+        "b": "Senate",
+        "c": "Police Service Commission",
+        "d": "National Security Adviser",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a function of the Nigerian National Assembly?",
+        "a": "Enforcing laws",
+        "b": "Making laws",
+        "c": "Implementing policies",
+        "d": "Conducting trials",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of selecting candidates for elections?",
+        "a": "Nomination",
+        "b": "Campaign",
+        "c": "Voting",
+        "d": "Inauguration",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of the Midwest Region in 1963?",
+        "a": "Abubakar Tafawa Balewa",
+        "b": "Nnamdi Azikiwe",
+        "c": "Yakubu Gowon",
+        "d": "Ahmadu Bello",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main objective of the Organization of Petroleum Exporting Countries (OPEC)?",
+        "a": "Cultural exchange",
+        "b": "Oil production regulation",
+        "c": "Military cooperation",
+        "d": "Political unity",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for the appointment of judges?",
+        "a": "National Judicial Council",
+        "b": "Federal Executive Council",
+        "c": "National Assembly",
+        "d": "Supreme Court",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government ruled by religious leaders?",
+        "a": "Monarchy",
+        "b": "Theocracy",
+        "c": "Oligarchy",
+        "d": "Democracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was led by Sir Ahmadu Bello during the First Republic?",
+        "a": "Action Group",
+        "b": "Northern People’s Congress",
+        "c": "National Convention of Nigerian Citizens",
+        "d": "National Party of Nigeria",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of citizens expressing their opinions to influence government?",
+        "a": "Lobbying",
+        "b": "Voting",
+        "c": "Legislation",
+        "d": "Adjudication",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was associated with the Macpherson Constitution?",
+        "a": "1922 Constitution",
+        "b": "1946 Constitution",
+        "c": "1951 Constitution",
+        "d": "1954 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where the head of state is elected?",
+        "a": "Monarchy",
+        "b": "Republic",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for the registration of political parties?",
+        "a": "Independent National Electoral Commission",
+        "b": "National Assembly",
+        "c": "Federal Executive Council",
+        "d": "Supreme Court",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of a written constitution?",
+        "a": "Flexibility",
+        "b": "Codified in a single document",
+        "c": "Based on customs",
+        "d": "Easily amended",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where power is concentrated in one person?",
+        "a": "Democracy",
+        "b": "Monarchy",
+        "c": "Dictatorship",
+        "d": "Oligarchy",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was the first civilian president of the Fourth Republic?",
+        "a": "Shehu Shagari",
+        "b": "Olusegun Obasanjo",
+        "c": "Umaru Yar’Adua",
+        "d": "Goodluck Jonathan",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the Economic Community of West African States Monitoring Group (ECOMOG)?",
+        "a": "Economic development",
+        "b": "Peacekeeping",
+        "c": "Cultural preservation",
+        "d": "Political control",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of a local government?",
+        "a": "Governor",
+        "b": "Chairman",
+        "c": "Speaker",
+        "d": "President",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where regions have significant autonomy?",
+        "a": "Unitary system",
+        "b": "Federal system",
+        "c": "Confederal system",
+        "d": "Parliamentary system",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was associated with the Second Republic’s presidency?",
+        "a": "National Party of Nigeria",
+        "b": "Northern People’s Congress",
+        "c": "Action Group",
+        "d": "People’s Democratic Party",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of citizens acquiring political knowledge?",
+        "a": "Political socialization",
+        "b": "Political mobilization",
+        "c": "Political participation",
+        "d": "Political integration",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was associated with the Lyttleton Constitution?",
+        "a": "1922 Constitution",
+        "b": "1946 Constitution",
+        "c": "1951 Constitution",
+        "d": "1954 Constitution",
+        "ans": "d"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where the legislature has supreme power?",
+        "a": "Presidential system",
+        "b": "Parliamentary system",
+        "c": "Monarchy",
+        "d": "Oligarchy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for investigating corruption cases?",
+        "a": "Economic and Financial Crimes Commission",
+        "b": "Independent National Electoral Commission",
+        "c": "National Assembly",
+        "d": "Federal Executive Council",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of an unwritten constitution?",
+        "a": "Codified in a single document",
+        "b": "Based on conventions and statutes",
+        "c": "Rigid amendment process",
+        "d": "Centralized power",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where the military and civilians share power?",
+        "a": "Diarchy",
+        "b": "Monarchy",
+        "c": "Oligarchy",
+        "d": "Democracy",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of the Federal Capital Territory in Abuja?",
+        "a": "Murtala Mohammed",
+        "b": "Olusegun Obasanjo",
+        "c": "Shehu Shagari",
+        "d": "Ibrahim Babangida",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the International Monetary Fund (IMF)?",
+        "a": "Military cooperation",
+        "b": "Financial stability",
+        "c": "Cultural exchange",
+        "d": "Political unity",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of the Supreme Court?",
+        "a": "President",
+        "b": "Chief Justice",
+        "c": "Senate President",
+        "d": "Speaker",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where citizens have no say in governance?",
+        "a": "Democracy",
+        "b": "Autocracy",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was associated with Nnamdi Azikiwe during the First Republic?",
+        "a": "Northern People’s Congress",
+        "b": "Action Group",
+        "c": "National Convention of Nigerian Citizens",
+        "d": "National Party of Nigeria",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of citizens joining political parties?",
+        "a": "Political socialization",
+        "b": "Political participation",
+        "c": "Political mobilization",
+        "d": "Political integration",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was in use during the Third Republic?",
+        "a": "1960 Constitution",
+        "b": "1979 Constitution",
+        "c": "1989 Constitution",
+        "d": "1999 Constitution",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where the head of government is a prime minister?",
+        "a": "Presidential system",
+        "b": "Parliamentary system",
+        "c": "Monarchy",
+        "d": "Oligarchy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for the prosecution of electoral offenses?",
+        "a": "Independent National Electoral Commission",
+        "b": "Economic and Financial Crimes Commission",
+        "c": "Nigeria Police Force",
+        "d": "National Judicial Council",
+        "ans": "c"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of a flexible constitution?",
+        "a": "Difficult to amend",
+        "b": "Easily amended",
+        "c": "Codified in a single document",
+        "d": "Based on conventions",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where power is shared among ethnic groups?",
+        "a": "Federalism",
+        "b": "Consociationalism",
+        "c": "Unitary system",
+        "d": "Confederal system",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of 19 states in 1987?",
+        "a": "Ibrahim Babangida",
+        "b": "Sani Abacha",
+        "c": "Olusegun Obasanjo",
+        "d": "Yakubu Gowon",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the World Bank?",
+        "a": "Military cooperation",
+        "b": "Economic development",
+        "c": "Cultural exchange",
+        "d": "Political unity",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, who is the head of a state government?",
+        "a": "President",
+        "b": "Governor",
+        "c": "Speaker",
+        "d": "Chief Judge",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where one ethnic group dominates governance?",
+        "a": "Hegemony",
+        "b": "Federalism",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian political party was associated with the Unity Party of Nigeria during the Second Republic?",
+        "a": "Obafemi Awolowo",
+        "b": "Ahmadu Bello",
+        "c": "Nnamdi Azikiwe",
+        "d": "Shehu Shagari",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for the process of citizens protesting government actions?",
+        "a": "Lobbying",
+        "b": "Demonstration",
+        "c": "Voting",
+        "d": "Legislation",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian constitution was associated with the amalgamation of Nigeria?",
+        "a": "1914 Constitution",
+        "b": "1922 Constitution",
+        "c": "1946 Constitution",
+        "d": "1951 Constitution",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a system where the head of state is a president?",
+        "a": "Parliamentary system",
+        "b": "Presidential system",
+        "c": "Monarchy",
+        "d": "Oligarchy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "In Nigeria, which body is responsible for the census?",
+        "a": "National Population Commission",
+        "b": "Independent National Electoral Commission",
+        "c": "National Assembly",
+        "d": "Federal Executive Council",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which of the following is a feature of a rigid constitution?",
+        "a": "Easily amended",
+        "b": "Difficult to amend",
+        "c": "Based on conventions",
+        "d": "Uncodified",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the term for a government where power is derived from the consent of the governed?",
+        "a": "Autocracy",
+        "b": "Democracy",
+        "c": "Oligarchy",
+        "d": "Theocracy",
+        "ans": "b"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "Which Nigerian leader was associated with the creation of 30 states in 1991?",
+        "a": "Ibrahim Babangida",
+        "b": "Sani Abacha",
+        "c": "Olusegun Obasanjo",
+        "d": "Yakubu Gowon",
+        "ans": "a"
+    },
+    {
+        "subject": "Government",
+        "author": "Ogedengbe Segun",
+        "ask": "What is the main function of the United Nations Educational, Scientific and Cultural Organization (UNESCO)?",
+        "a": "Military cooperation",
+        "b": "Cultural preservation",
+        "c": "Economic development",
+        "d": "Political unity",
+        "ans": "b"
+    }
+]

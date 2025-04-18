@@ -1,0 +1,1382 @@
+[
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the primary function of the Central Processing Unit (CPU)?",
+    "a": "To store data",
+    "b": "To process instructions",
+    "c": "To display output",
+    "d": "To connect networks",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of an input device?",
+    "a": "Monitor",
+    "b": "Printer",
+    "c": "Keyboard",
+    "d": "Speaker",
+    "ans": "c"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does RAM stand for in computing?",
+    "a": "Read Access Memory",
+    "b": "Random Access Memory",
+    "c": "Remote Access Module",
+    "d": "Read-Only Memory",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which programming language is known for its use in web development?",
+    "a": "Python",
+    "b": "JavaScript",
+    "c": "C++",
+    "d": "Fortran",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of an operating system?",
+    "a": "To write programs",
+    "b": "To manage hardware and software resources",
+    "c": "To store databases",
+    "d": "To browse the internet",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of secondary storage device?",
+    "a": "RAM",
+    "b": "Hard Disk Drive",
+    "c": "CPU",
+    "d": "Cache Memory",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does HTTP stand for in the context of the internet?",
+    "a": "HyperText Transfer Protocol",
+    "b": "High Transfer Text Protocol",
+    "c": "Hyperlink Text Transport",
+    "d": "Hybrid Text Transfer Protocol",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of system software?",
+    "a": "Microsoft Word",
+    "b": "Windows 10",
+    "c": "Google Chrome",
+    "d": "Adobe Photoshop",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the decimal number 10?",
+    "a": "1010",
+    "b": "1100",
+    "c": "1001",
+    "d": "1110",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which device is used to connect a computer to a network?",
+    "a": "Modem",
+    "b": "Monitor",
+    "c": "Mouse",
+    "d": "Keyboard",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the function of a compiler in programming?",
+    "a": "To execute code",
+    "b": "To translate high-level code to machine code",
+    "c": "To debug programs",
+    "d": "To design algorithms",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of malware?",
+    "a": "Firewall",
+    "b": "Virus",
+    "c": "Router",
+    "d": "Browser",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does GUI stand for in computing?",
+    "a": "General User Interface",
+    "b": "Graphical User Interface",
+    "c": "Global Utility Interface",
+    "d": "Group User Integration",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a database management system?",
+    "a": "Microsoft Excel",
+    "b": "MySQL",
+    "c": "Notepad",
+    "d": "Paint",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a firewall in a network?",
+    "a": "To store data",
+    "b": "To protect against unauthorized access",
+    "c": "To increase internet speed",
+    "d": "To manage databases",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which number system uses base 16?",
+    "a": "Binary",
+    "b": "Decimal",
+    "c": "Hexadecimal",
+    "d": "Octal",
+    "ans": "c"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the full form of URL?",
+    "a": "Uniform Resource Locator",
+    "b": "Universal Reference Link",
+    "c": "Unique Resource Label",
+    "d": "Uniform Reference Link",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an output device?",
+    "a": "Scanner",
+    "b": "Printer",
+    "c": "Microphone",
+    "d": "Joystick",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a flowchart in programming?",
+    "a": "To execute code",
+    "b": "To represent algorithms visually",
+    "c": "To store data",
+    "d": "To connect networks",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a high-level programming language?",
+    "a": "Assembly",
+    "b": "Python",
+    "c": "Machine Code",
+    "d": "Binary",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does LAN stand for in networking?",
+    "a": "Local Area Network",
+    "b": "Large Access Network",
+    "c": "Linked Area Node",
+    "d": "Long Area Network",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to create web pages?",
+    "a": "HTML",
+    "b": "SQL",
+    "c": "Java",
+    "d": "C#",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a backup in computing?",
+    "a": "To increase processing speed",
+    "b": "To protect data from loss",
+    "c": "To connect to the internet",
+    "d": "To install software",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a volatile memory?",
+    "a": "ROM",
+    "b": "RAM",
+    "c": "Hard Disk",
+    "d": "Flash Drive",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does IP stand for in networking?",
+    "a": "Internet Protocol",
+    "b": "Internal Processor",
+    "c": "Integrated Port",
+    "d": "Information Packet",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of application software?",
+    "a": "Linux",
+    "b": "Microsoft Excel",
+    "c": "BIOS",
+    "d": "Device Driver",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the hexadecimal equivalent of the binary number 1011?",
+    "a": "A",
+    "b": "B",
+    "c": "C",
+    "d": "D",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to protect a computer from viruses?",
+    "a": "Antivirus Software",
+    "b": "Web Browser",
+    "c": "Spreadsheet",
+    "d": "Text Editor",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a spreadsheet software?",
+    "a": "To create web pages",
+    "b": "To manage numerical data",
+    "c": "To write programs",
+    "d": "To secure networks",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of network topology?",
+    "a": "Star",
+    "b": "Cloud",
+    "c": "Grid",
+    "d": "Matrix",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does SQL stand for in database management?",
+    "a": "Structured Query Language",
+    "b": "System Query Logic",
+    "c": "Standard Query Link",
+    "d": "Sequential Query Language",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a storage unit?",
+    "a": "Byte",
+    "b": "Pixel",
+    "c": "Hertz",
+    "d": "Watt",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a router in a network?",
+    "a": "To store data",
+    "b": "To direct data packets",
+    "c": "To display output",
+    "d": "To process instructions",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a low-level programming language?",
+    "a": "Python",
+    "b": "Java",
+    "c": "Assembly",
+    "d": "C++",
+    "ans": "c"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does WWW stand for in the context of the internet?",
+    "a": "World Wide Web",
+    "b": "Wide Web World",
+    "c": "Web World Wide",
+    "d": "World Web Wide",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of primary memory?",
+    "a": "Hard Disk",
+    "b": "ROM",
+    "c": "Flash Drive",
+    "d": "SSD",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a pseudocode in programming?",
+    "a": "To execute code",
+    "b": "To plan algorithms",
+    "c": "To store data",
+    "d": "To connect networks",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a cybercrime?",
+    "a": "Installing software",
+    "b": "Hacking",
+    "c": "Browsing the internet",
+    "d": "Creating a website",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does BIOS stand for in computing?",
+    "a": "Basic Input/Output System",
+    "b": "Binary Input/Output System",
+    "c": "Basic Interface Operating System",
+    "d": "Binary Interface Operating System",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to store data permanently?",
+    "a": "RAM",
+    "b": "Cache",
+    "c": "Hard Disk",
+    "d": "Register",
+    "ans": "c"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the decimal number 15?",
+    "a": "1100",
+    "b": "1111",
+    "c": "1010",
+    "d": "1001",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a web browser?",
+    "a": "Microsoft Word",
+    "b": "Google Chrome",
+    "c": "Windows XP",
+    "d": "Oracle",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of an algorithm in programming?",
+    "a": "To store data",
+    "b": "To provide a step-by-step solution",
+    "c": "To display output",
+    "d": "To connect networks",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of computer network?",
+    "a": "WAN",
+    "b": "RAM",
+    "c": "ROM",
+    "d": "CPU",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does FTP stand for in networking?",
+    "a": "File Transfer Protocol",
+    "b": "Fast Transmission Protocol",
+    "c": "File Transport Package",
+    "d": "Fixed Transfer Protocol",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a word processor?",
+    "a": "To manage databases",
+    "b": "To create and edit text documents",
+    "c": "To secure networks",
+    "d": "To write programs",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the hexadecimal equivalent of the decimal number 16?",
+    "a": "F",
+    "b": "10",
+    "c": "11",
+    "d": "12",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to prevent unauthorized access to a computer?",
+    "a": "Password",
+    "b": "Printer",
+    "c": "Monitor",
+    "d": "Mouse",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a data table in a database?",
+    "a": "To execute code",
+    "b": "To organize data in rows and columns",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of optical storage device?",
+    "a": "Hard Disk",
+    "b": "CD-ROM",
+    "c": "RAM",
+    "d": "Cache",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does DNS stand for in networking?",
+    "a": "Domain Name System",
+    "b": "Data Network Service",
+    "c": "Digital Name Server",
+    "d": "Dynamic Network System",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of a computer?",
+    "a": "Slow processing",
+    "b": "High accuracy",
+    "c": "Limited storage",
+    "d": "Manual operation",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a variable in programming?",
+    "a": "To store data temporarily",
+    "b": "To display output",
+    "c": "To connect networks",
+    "d": "To manage hardware",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of loop in programming?",
+    "a": "For Loop",
+    "b": "Database",
+    "c": "Spreadsheet",
+    "d": "Firewall",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the hexadecimal number A?",
+    "a": "1010",
+    "b": "1100",
+    "c": "1000",
+    "d": "1110",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a mobile operating system?",
+    "a": "Windows XP",
+    "b": "Android",
+    "c": "Microsoft Word",
+    "d": "Oracle",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a modem in a network?",
+    "a": "To convert digital signals to analog and vice versa",
+    "b": "To store data",
+    "c": "To display output",
+    "d": "To process instructions",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of computer virus?",
+    "a": "Trojan Horse",
+    "b": "Router",
+    "c": "Firewall",
+    "d": "Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does ISP stand for in the context of the internet?",
+    "a": "Internet Service Provider",
+    "b": "Internal System Protocol",
+    "c": "Integrated Service Platform",
+    "d": "Information System Processor",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a presentation software?",
+    "a": "To create slideshows",
+    "b": "To manage databases",
+    "c": "To write programs",
+    "d": "To secure networks",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the decimal equivalent of the binary number 1010?",
+    "a": "8",
+    "b": "10",
+    "c": "12",
+    "d": "14",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to enhance the security of a network?",
+    "a": "Encryption",
+    "b": "Spreadsheet",
+    "c": "Word Processor",
+    "d": "Web Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a primary key in a database?",
+    "a": "To store data",
+    "b": "To uniquely identify records",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of magnetic storage device?",
+    "a": "Floppy Disk",
+    "b": "CD-ROM",
+    "c": "RAM",
+    "d": "Cache",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does TCP stand for in networking?",
+    "a": "Transmission Control Protocol",
+    "b": "Transfer Control Package",
+    "c": "Terminal Control Protocol",
+    "d": "Transport Communication Protocol",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a feature of a computer?",
+    "a": "Low speed",
+    "b": "High storage capacity",
+    "c": "Manual operation",
+    "d": "Limited accuracy",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a subroutine in programming?",
+    "a": "To store data",
+    "b": "To perform a specific task within a program",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of conditional statement in programming?",
+    "a": "If Statement",
+    "b": "Database",
+    "c": "Spreadsheet",
+    "d": "Firewall",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the hexadecimal equivalent of the binary number 1111?",
+    "a": "E",
+    "b": "F",
+    "c": "10",
+    "d": "11",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a desktop operating system?",
+    "a": "Android",
+    "b": "Ubuntu",
+    "c": "Microsoft Excel",
+    "d": "MySQL",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a switch in a network?",
+    "a": "To connect devices within a network",
+    "b": "To store data",
+    "c": "To display output",
+    "d": "To process instructions",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of spyware?",
+    "a": "Keylogger",
+    "b": "Router",
+    "c": "Firewall",
+    "d": "Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does VPN stand for in networking?",
+    "a": "Virtual Private Network",
+    "b": "Variable Public Network",
+    "c": "Virtual Public Node",
+    "d": "Variable Private Node",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a graphic design software?",
+    "a": "To create visual content",
+    "b": "To manage databases",
+    "c": "To write programs",
+    "d": "To secure networks",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the decimal equivalent of the hexadecimal number 1A?",
+    "a": "24",
+    "b": "26",
+    "c": "28",
+    "d": "30",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to detect malware on a computer?",
+    "a": "Antivirus Scanner",
+    "b": "Spreadsheet",
+    "c": "Word Processor",
+    "d": "Web Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a foreign key in a database?",
+    "a": "To store data",
+    "b": "To link tables",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of solid-state storage device?",
+    "a": "Hard Disk",
+    "b": "SSD",
+    "c": "RAM",
+    "d": "Cache",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does SMTP stand for in networking?",
+    "a": "Simple Mail Transfer Protocol",
+    "b": "System Mail Transport Protocol",
+    "c": "Standard Mail Transfer Package",
+    "d": "Sequential Mail Transport Protocol",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a benefit of using a computer?",
+    "a": "Low reliability",
+    "b": "High efficiency",
+    "c": "Manual operation",
+    "d": "Limited versatility",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of an array in programming?",
+    "a": "To store multiple data items of the same type",
+    "b": "To display output",
+    "c": "To connect networks",
+    "d": "To manage hardware",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of operator in programming?",
+    "a": "Arithmetic Operator",
+    "b": "Database",
+    "c": "Spreadsheet",
+    "d": "Firewall",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the decimal number 7?",
+    "a": "110",
+    "b": "111",
+    "c": "101",
+    "d": "100",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of a server operating system?",
+    "a": "Windows Server",
+    "b": "Microsoft Excel",
+    "c": "Android",
+    "d": "MySQL",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a hub in a network?",
+    "a": "To connect multiple devices",
+    "b": "To store data",
+    "c": "To display output",
+    "d": "To process instructions",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of ransomware?",
+    "a": "WannaCry",
+    "b": "Router",
+    "c": "Firewall",
+    "d": "Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does HTML stand for in web development?",
+    "a": "HyperText Markup Language",
+    "b": "High Text Markup Language",
+    "c": "Hyperlink Text Mode Language",
+    "d": "Hybrid Text Markup Language",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the main function of the Arithmetic Logic Unit (ALU) in a CPU?",
+    "a": "To store data",
+    "b": "To perform arithmetic and logical operations",
+    "c": "To manage memory",
+    "d": "To control input devices",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a pointing input device?",
+    "a": "Scanner",
+    "b": "Mouse",
+    "c": "Printer",
+    "d": "Speaker",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does ROM stand for in computing?",
+    "a": "Read-Only Memory",
+    "b": "Random Output Memory",
+    "c": "Read Operations Module",
+    "d": "Remote Output Memory",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which programming language is primarily used for data analysis and machine learning?",
+    "a": "C#",
+    "b": "Python",
+    "c": "PHP",
+    "d": "Ruby",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the role of a device driver in a computer system?",
+    "a": "To write programs",
+    "b": "To enable communication between hardware and software",
+    "c": "To browse the internet",
+    "d": "To store databases",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of flash storage device?",
+    "a": "Hard Disk Drive",
+    "b": "USB Flash Drive",
+    "c": "RAM",
+    "d": "Cache Memory",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does HTTPS stand for in the context of secure web browsing?",
+    "a": "HyperText Transfer Protocol Secure",
+    "b": "High Text Transmission Protocol Secure",
+    "c": "Hyperlink Transfer Protocol System",
+    "d": "Hybrid Text Transfer Protocol Secure",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of utility software?",
+    "a": "Microsoft PowerPoint",
+    "b": "Norton Antivirus",
+    "c": "Mozilla Firefox",
+    "d": "Adobe Illustrator",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the decimal number 13?",
+    "a": "1101",
+    "b": "1011",
+    "c": "1110",
+    "d": "1001",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which device is used to amplify network signals?",
+    "a": "Repeater",
+    "b": "Monitor",
+    "c": "Keyboard",
+    "d": "Printer",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the function of an interpreter in programming?",
+    "a": "To execute code line by line",
+    "b": "To store programs",
+    "c": "To design algorithms",
+    "d": "To manage databases",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of phishing attack?",
+    "a": "Firewall",
+    "b": "Email Scam",
+    "c": "Router",
+    "d": "Browser",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does API stand for in software development?",
+    "a": "Application Programming Interface",
+    "b": "Advanced Processor Interface",
+    "c": "Automated Program Integration",
+    "d": "Application Process Indicator",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an open-source database management system?",
+    "a": "Microsoft Access",
+    "b": "PostgreSQL",
+    "c": "Microsoft Excel",
+    "d": "WordPad",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a VPN in networking?",
+    "a": "To increase internet speed",
+    "b": "To create a secure connection over the internet",
+    "c": "To store data",
+    "d": "To display web pages",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which number system uses base 8?",
+    "a": "Binary",
+    "b": "Decimal",
+    "c": "Hexadecimal",
+    "d": "Octal",
+    "ans": "d"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the full form of HTML in web development?",
+    "a": "HyperText Markup Language",
+    "b": "High Text Manipulation Language",
+    "c": "Hyperlink Text Management Language",
+    "d": "Hybrid Text Markup Language",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a multimedia output device?",
+    "a": "Scanner",
+    "b": "Projector",
+    "c": "Microphone",
+    "d": "Joystick",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a debugger in programming?",
+    "a": "To store data",
+    "b": "To identify and fix errors in code",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a general-purpose programming language?",
+    "a": "SQL",
+    "b": "Java",
+    "c": "CSS",
+    "d": "HTML",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does MAN stand for in networking?",
+    "a": "Metropolitan Area Network",
+    "b": "Main Access Network",
+    "c": "Mobile Area Node",
+    "d": "Multi-Area Network",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used for styling web pages?",
+    "a": "CSS",
+    "b": "Python",
+    "c": "SQL",
+    "d": "C++",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of data compression in computing?",
+    "a": "To increase file size",
+    "b": "To reduce file size for storage or transmission",
+    "c": "To secure networks",
+    "d": "To write programs",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a non-volatile memory?",
+    "a": "RAM",
+    "b": "Flash Memory",
+    "c": "Cache",
+    "d": "Register",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does MAC stand for in networking?",
+    "a": "Media Access Control",
+    "b": "Main Access Channel",
+    "c": "Mobile Access Code",
+    "d": "Memory Allocation Control",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of presentation software?",
+    "a": "Microsoft PowerPoint",
+    "b": "Oracle",
+    "c": "Windows 7",
+    "d": "Notepad",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the hexadecimal equivalent of the binary number 1100?",
+    "a": "B",
+    "b": "C",
+    "c": "D",
+    "d": "E",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to secure wireless networks?",
+    "a": "WPA",
+    "b": "Spreadsheet",
+    "c": "Word Processor",
+    "d": "Web Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a query in a database?",
+    "a": "To store data",
+    "b": "To retrieve specific data",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of bus topology?",
+    "a": "Ring",
+    "b": "Linear",
+    "c": "Mesh",
+    "d": "Tree",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does IDE stand for in programming?",
+    "a": "Integrated Development Environment",
+    "b": "Internal Data Engine",
+    "c": "Interactive Design Editor",
+    "d": "Integrated Data Environment",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a unit of data storage larger than a byte?",
+    "a": "Bit",
+    "b": "Kilobyte",
+    "c": "Nibble",
+    "d": "Pixel",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a gateway in a network?",
+    "a": "To store data",
+    "b": "To connect different network protocols",
+    "c": "To display output",
+    "d": "To process instructions",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a scripting language?",
+    "a": "C",
+    "b": "JavaScript",
+    "c": "Assembly",
+    "d": "Fortran",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does URL stand for in the context of the internet?",
+    "a": "Uniform Resource Locator",
+    "b": "Universal Reference Link",
+    "c": "Unique Resource Label",
+    "d": "Uniform Reference Link",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of cloud storage service?",
+    "a": "Google Drive",
+    "b": "Microsoft Word",
+    "c": "Windows XP",
+    "d": "Notepad",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a logic gate in computing?",
+    "a": "To store data",
+    "b": "To perform basic logical operations",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of social engineering attack?",
+    "a": "Firewall",
+    "b": "Phishing",
+    "c": "Router",
+    "d": "Browser",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does CMOS stand for in computing?",
+    "a": "Complementary Metal-Oxide Semiconductor",
+    "b": "Central Memory Operating System",
+    "c": "Common Module Output System",
+    "d": "Compact Memory Operating System",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of external storage device?",
+    "a": "RAM",
+    "b": "External Hard Drive",
+    "c": "Cache",
+    "d": "Register",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the binary equivalent of the decimal number 9?",
+    "a": "1001",
+    "b": "1010",
+    "c": "1100",
+    "d": "1110",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is an example of an email client?",
+    "a": "Microsoft Outlook",
+    "b": "Google Chrome",
+    "c": "Windows 10",
+    "d": "MySQL",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a data validation in a database?",
+    "a": "To store data",
+    "b": "To ensure data accuracy and consistency",
+    "c": "To connect networks",
+    "d": "To display output",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of ring topology?",
+    "a": "Circular",
+    "b": "Star",
+    "c": "Bus",
+    "d": "Mesh",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does XML stand for in web development?",
+    "a": "Extensible Markup Language",
+    "b": "Extended Memory Language",
+    "c": "External Module Language",
+    "d": "Extra Markup Language",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of backup strategy?",
+    "a": "Full Backup",
+    "b": "Spreadsheet",
+    "c": "Word Processor",
+    "d": "Web Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the hexadecimal equivalent of the decimal number 12?",
+    "a": "B",
+    "b": "C",
+    "c": "D",
+    "d": "E",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is used to manage network traffic?",
+    "a": "Switch",
+    "b": "Spreadsheet",
+    "c": "Word Processor",
+    "d": "Web Browser",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a relational database?",
+    "a": "To store data in tables with relationships",
+    "b": "To display output",
+    "c": "To connect networks",
+    "d": "To manage hardware",
+    "ans": "a"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of denial-of-service attack?",
+    "a": "Firewall",
+    "b": "DDoS",
+    "c": "Router",
+    "d": "Browser",
+    "ans": "b"
+  },
+  {
+    "subject": "Computer-Studies",
+    "author": "Ogedengbe Segun",
+    "ask": "What does GPU stand for in computing?",
+    "a": "Graphics Processing Unit",
+    "b": "General Processing Unit",
+    "c": "Global Processor Utility",
+    "d": "Graphical Performance Unit",
+    "ans": "a"
+  }
+]
