@@ -585,7 +585,7 @@ client.connect().then(() => {
 
             const db2 = client.db(inputDB);
             const collection = db2.collection("Stafflist");
-            collection.insertOne({ "_unique": ` ${db2}` + 120 });
+            collection.insertOne({ "_unique": ` ${collection}` + $inc });
             res.send(`Database ${inputDB} created`);
         } catch (error) {
             console.log("Check the db name", error)
