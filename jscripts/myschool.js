@@ -11,8 +11,13 @@ const inputDB = document.querySelector(".inputDB");
 
 
 nameDB.addEventListener("click", () => {
-  
+    const spinning = document.createElement("span");
+    spinning.textContent = "SpinnerMe"
+    spinning.classList.add('fas fa-spin fa-spinner text-success fs-4');
+    inputDB.appendChild(spinning)
     async function Createdb() {
+
+
         const inputDB = document.querySelector(".inputDB").value;
         const cleanInput = inputDB.replace(/\s+/g, '')
         try {
@@ -37,7 +42,7 @@ nameDB.addEventListener("click", () => {
     if (Createdb()) {
         // alert(`Your DataBase Name ${inputDB.replace(/\s+/g,'')} created Succussfully`);
         // if (alert(),1) {
-        //     cleanInput = '';
+        //     inputDB = '';
 
         // }
     }

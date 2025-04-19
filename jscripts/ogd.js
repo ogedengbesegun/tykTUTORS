@@ -433,7 +433,7 @@ if (letgotext) {
 
         }
         else if (index === 1) {
-            span.style.color = 'blue'
+            span.style.color = 'white'
         }
         else {
             span.className = "text-success";
