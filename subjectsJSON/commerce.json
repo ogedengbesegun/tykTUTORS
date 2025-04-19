@@ -1,0 +1,712 @@
+[
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the primary purpose of commerce?",
+    "a": "To produce goods",
+    "b": "To regulate prices",
+    "c": "To control production",
+    "d": "To facilitate exchange of goods and services",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a feature of a sole proprietorship?",
+    "a": "Limited liability",
+    "b": "Public ownership",
+    "c": "Single ownership",
+    "d": "Government control",
+    "ans": "c"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the main function of a commercial bank?",
+    "a": "To print money",
+    "b": "To regulate trade",
+    "c": "To manage insurance",
+    "d": "To accept deposits and grant loans",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which document is issued by a seller to a buyer indicating goods sold on credit?",
+    "a": "Receipt",
+    "b": "Quotation",
+    "c": "Delivery note",
+    "d": "Invoice",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'entrepreneurship' in commerce?",
+    "a": "Managing government resources",
+    "b": "Regulating trade",
+    "c": "Distributing goods",
+    "d": "Organizing and taking business risks",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of insurance?",
+    "a": "Life assurance",
+    "b": "Bank loan",
+    "c": "Stock exchange",
+    "d": "Cheque",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a bill of lading in international trade?",
+    "a": "To confirm payment",
+    "b": "To serve as a document of title to goods",
+    "c": "To regulate prices",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a characteristic of a partnership business?",
+    "a": "Unlimited liability",
+    "b": "Single ownership",
+    "c": "Government control",
+    "d": "Public shares",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the main function of the stock exchange?",
+    "a": "To produce goods",
+    "b": "To facilitate buying and selling of securities",
+    "c": "To grant loans",
+    "d": "To regulate prices",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a retail trade activity?",
+    "a": "Importing goods",
+    "b": "Selling goods to consumers",
+    "c": "Manufacturing products",
+    "d": "Exporting goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of advertising in commerce?",
+    "a": "To reduce production",
+    "b": "To promote products and services",
+    "c": "To regulate prices",
+    "d": "To limit sales",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of credit sale?",
+    "a": "Cash on delivery",
+    "b": "Hire purchase",
+    "c": "Prepayment",
+    "d": "Spot cash",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'capital' in a business?",
+    "a": "Goods produced",
+    "b": "Resources used for production",
+    "c": "Daily sales",
+    "d": "Customer base",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a warehouse?",
+    "a": "To manufacture goods",
+    "b": "To store goods",
+    "c": "To regulate prices",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the primary role of a clearing house in banking?",
+    "a": "To print money",
+    "b": "To regulate trade",
+    "c": "To insure goods",
+    "d": "To settle interbank transactions",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of trade?",
+    "a": "Home trade",
+    "b": "Stock trade",
+    "c": "Bond trade",
+    "d": "Service trade",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a letter of credit in international trade?",
+    "a": "To advertise products",
+    "b": "To guarantee payment",
+    "c": "To regulate prices",
+    "d": "To store goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a feature of a public limited company?",
+    "a": "Unlimited liability",
+    "b": "Shares traded on the stock exchange",
+    "c": "Single ownership",
+    "d": "Government control",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'market' in commerce?",
+    "a": "A place for production",
+    "b": "A regulatory body",
+    "c": "A storage facility",
+    "d": "A place for buying and selling",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of transportation in commerce?",
+    "a": "Pipeline",
+    "b": "Warehouse",
+    "c": "Insurance",
+    "d": "Advertising",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a business plan?",
+    "a": "To regulate prices",
+    "b": "To store goods",
+    "c": "To limit sales",
+    "d": "To guide business operations",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a source of business finance?",
+    "a": "Advertising",
+    "b": "Warehousing",
+    "c": "Transportation",
+    "d": "Bank loan",
+    "ans": "d"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'profit' in a business?",
+    "a": "Loss from sales",
+    "b": "Excess of revenue over expenses",
+    "c": "Cost of production",
+    "d": "Customer complaints",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of cooperative society?",
+    "a": "Consumer cooperative",
+    "b": "Public corporation",
+    "c": "Sole proprietorship",
+    "d": "Partnership",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a cheque in banking?",
+    "a": "To store money",
+    "b": "To facilitate payment",
+    "c": "To regulate prices",
+    "d": "To insure goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of marketing?",
+    "a": "Producing goods",
+    "b": "Promoting products",
+    "c": "Regulating prices",
+    "d": "Storing goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'barter trade'?",
+    "a": "Exchange of goods without money",
+    "b": "Exchange using credit cards",
+    "c": "Exchange through banks",
+    "d": "Exchange with insurance",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of wholesaler?",
+    "a": "Retailer",
+    "b": "General wholesaler",
+    "c": "Manufacturer",
+    "d": "Consumer",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a trade mark in commerce?",
+    "a": "To regulate prices",
+    "b": "To identify a brand",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of business risk?",
+    "a": "Insurable risk",
+    "b": "Advertising risk",
+    "c": "Transportation risk",
+    "d": "Warehousing risk",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'export trade'?",
+    "a": "Selling goods within a country",
+    "b": "Selling goods to other countries",
+    "c": "Buying goods from other countries",
+    "d": "Producing goods locally",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a central bank?",
+    "a": "To accept customer deposits",
+    "b": "To control money supply",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a proforma invoice?",
+    "a": "To confirm payment",
+    "b": "To provide a quotation",
+    "c": "To store goods",
+    "d": "To regulate prices",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of market structure?",
+    "a": "Monopoly",
+    "b": "Warehouse",
+    "c": "Insurance",
+    "d": "Transportation",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'franchise' in commerce?",
+    "a": "A license to sell a company’s products",
+    "b": "A type of insurance",
+    "c": "A form of transportation",
+    "d": "A storage facility",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a chamber of commerce?",
+    "a": "To produce goods",
+    "b": "To promote trade and industry",
+    "c": "To regulate prices",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a consignment note in transportation?",
+    "a": "To advertise products",
+    "b": "To document goods in transit",
+    "c": "To regulate prices",
+    "d": "To store goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of public corporation?",
+    "a": "Sole proprietorship",
+    "b": "Nigerian National Petroleum Corporation",
+    "c": "Partnership",
+    "d": "Cooperative society",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'turnover' in a business?",
+    "a": "Total sales revenue",
+    "b": "Cost of production",
+    "c": "Customer complaints",
+    "d": "Loss from sales",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of communication in commerce?",
+    "a": "Fax",
+    "b": "Insurance",
+    "c": "Warehousing",
+    "d": "Advertising",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a deed of partnership?",
+    "a": "To regulate prices",
+    "b": "To outline partnership terms",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of discount in trade?",
+    "a": "Trade discount",
+    "b": "Insurance discount",
+    "c": "Transportation discount",
+    "d": "Warehousing discount",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'import trade'?",
+    "a": "Selling goods to other countries",
+    "b": "Buying goods from other countries",
+    "c": "Producing goods locally",
+    "d": "Selling goods within a country",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a retailer?",
+    "a": "To produce goods",
+    "b": "To sell goods to consumers",
+    "c": "To regulate prices",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a balance of trade?",
+    "a": "To store goods",
+    "b": "To measure trade between countries",
+    "c": "To regulate prices",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of business law?",
+    "a": "Contract law",
+    "b": "Insurance law",
+    "c": "Transportation law",
+    "d": "Warehousing law",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'merchandising' in commerce?",
+    "a": "Promoting and selling products",
+    "b": "Producing goods",
+    "c": "Regulating prices",
+    "d": "Storing goods",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a customs authority?",
+    "a": "To produce goods",
+    "b": "To regulate imports and exports",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a memorandum of association?",
+    "a": "To regulate prices",
+    "b": "To outline a company’s objectives",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of financial institution?",
+    "a": "Insurance company",
+    "b": "Warehouse",
+    "c": "Advertising agency",
+    "d": "Transportation company",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'branding' in commerce?",
+    "a": "Creating a unique product identity",
+    "b": "Producing goods",
+    "c": "Regulating prices",
+    "d": "Storing goods",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a port authority?",
+    "a": "To produce goods",
+    "b": "To manage port operations",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a trade association?",
+    "a": "To regulate prices",
+    "b": "To promote industry interests",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of economic system?",
+    "a": "Mixed economy",
+    "b": "Insurance economy",
+    "c": "Transportation economy",
+    "d": "Warehousing economy",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'logistics' in commerce?",
+    "a": "Management of goods transportation",
+    "b": "Production of goods",
+    "c": "Regulation of prices",
+    "d": "Storage of goods",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of an advertising agency?",
+    "a": "To produce goods",
+    "b": "To create promotional campaigns",
+    "c": "To regulate prices",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a certificate of incorporation?",
+    "a": "To regulate prices",
+    "b": "To confirm a company’s legal status",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of negotiable instrument?",
+    "a": "Bill of exchange",
+    "b": "Insurance policy",
+    "c": "Transport document",
+    "d": "Warehouse receipt",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'e-commerce'?",
+    "a": "Trading through electronic platforms",
+    "b": "Producing goods electronically",
+    "c": "Regulating prices online",
+    "d": "Storing goods digitally",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a courier service?",
+    "a": "To produce goods",
+    "b": "To deliver parcels",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a patent in commerce?",
+    "a": "To regulate prices",
+    "b": "To protect an invention",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of foreign exchange market?",
+    "a": "Spot market",
+    "b": "Insurance market",
+    "c": "Transportation market",
+    "d": "Warehousing market",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'supply chain' in commerce?",
+    "a": "Network of production and distribution",
+    "b": "Production of goods",
+    "c": "Regulation of prices",
+    "d": "Storage of goods",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a shipping company?",
+    "a": "To produce goods",
+    "b": "To transport goods by sea",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a credit note?",
+    "a": "To confirm payment",
+    "b": "To adjust an invoice",
+    "c": "To regulate prices",
+    "d": "To store goods",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of consumer protection agency?",
+    "a": "Standards Organisation of Nigeria",
+    "b": "Insurance company",
+    "c": "Transportation company",
+    "d": "Warehousing company",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'working capital' in a business?",
+    "a": "Funds for daily operations",
+    "b": "Cost of production",
+    "c": "Customer complaints",
+    "d": "Loss from sales",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a function of a trade union?",
+    "a": "To produce goods",
+    "b": "To protect workers’ rights",
+    "c": "To sell insurance",
+    "d": "To advertise products",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the purpose of a waybill in transportation?",
+    "a": "To regulate prices",
+    "b": "To document goods in transit",
+    "c": "To store goods",
+    "d": "To grant loans",
+    "ans": "b"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "Which of the following is a type of business objective?",
+    "a": "Profit maximization",
+    "b": "Insurance coverage",
+    "c": "Transportation efficiency",
+    "d": "Warehousing capacity",
+    "ans": "a"
+  },
+  {
+    "subject": "Commerce",
+    "author": "Ogedengbe Segun",
+    "ask": "What is the meaning of 'market segmentation' in commerce?",
+    "a": "Dividing the market into groups",
+    "b": "Producing goods",
+    "c": "Regulating prices",
+    "d": "Storing goods",
+    "ans": "a"
+  }
+]

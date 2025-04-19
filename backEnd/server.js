@@ -55,123 +55,6 @@ client.connect().then(() => {
 
     //////// delete duplicate objects
 
-    // engl.aggregate([
-    //     {
-    //         $group: {
-    //             _id: {
-    //                 subject: "$subject",
-    //                 author: "$author",
-    //                 ask: "$ask",
-    //                 a: "$a",
-    //                 b: "$b",
-    //                 c: "$c",
-    //                 d: "$d",
-    //                 ans: "$ans"
-    //             },
-    //             duplicates: {
-    //                 $push: "$_id"
-    //             }
-
-    //         }
-    //     },
-    //     {
-
-    //         $project: {
-    //             _id: {
-    //                 $arrayElemAt:
-    //                     ["$duplicates", 0]
-    //             },
-    //             toDelete: {
-    //                 $slice:
-    //                     ["$duplicates", 1, {
-    //                         $size:
-    //                             "$duplicates"
-    //                     }]
-    //             }
-
-    //         }
-    //     },
-    //     {
-    //         $merge: {
-    //             into: "engl", whenMatched: "keepExisting",
-    //             whenNotMatched: "insert"
-    //         }
-    //     }
-    // ]);
-
-
-
-    // async function deleteDuplicates() {
-    //     const idsToDelete = await engl.distinct("_id", { toDelete: { $exists: true } });
-
-    //     await engl.deleteMany({
-    //         _id: { $in: idsToDelete }
-    //     });
-    // }
-
-    // // Call the function
-    // deleteDuplicates();
-
-
-    /////////
-    // async function removeDuplicateEntries() {
-    //     try {
-    //         // Aggregate to find duplicates based only on 'ask' field
-    //         const duplicates = await engl.aggregate([
-    //             {
-    //                 $group: {
-    //                     _id: "$ask", // Group by 'ask' field only
-    //                     duplicates: { $push: "$_id" }
-    //                 }
-    //             },
-    //             {
-    //                 $project: {
-    //                     _id: 0, // Exclude _id field
-    //                     toDelete: { $slice: ["$duplicates", 1] } // Keep the first occurrence, delete the rest
-    //                 }
-    //             }
-    //         ]).toArray(); // Ensure the result is an array
-
-    //         if (!Array.isArray(duplicates)) {
-    //             throw new Error("Aggregation did not return an array");
-    //         }
-
-    //         // Extract IDs to delete (only duplicates)
-    //         let idsToDelete = [];
-    //         for (const doc of duplicates) {
-    //             if (Array.isArray(doc.toDelete) && doc.toDelete.length > 0) {
-    //                 idsToDelete = idsToDelete.concat(doc.toDelete);
-    //             }
-    //         }
-
-    //         if (idsToDelete.length > 0) {
-    //             await engl.deleteMany({ _id: { $in: idsToDelete } });
-    //             console.log(`Deleted ${idsToDelete.length} duplicate entries based on 'ask'.`);
-    //         } else {
-    //             console.log("No duplicate entries found.");
-    //         }
-    //     } catch (error) {
-    //         console.error("Error removing duplicates:", error);
-    //     }
-    // }
-
-    // // Call the function
-    // removeDuplicateEntries();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // const collection2 = db.collection("fina"); //collection fina
     // Endpoint to handle POST request for inserting data
     app.post('/getsignup', async (req, res) => {
@@ -691,6 +574,23 @@ client.connect().then(() => {
     })
 
     ////////////////
+
+    app.post('/createDB', async (req, res) => {
+        try {
+            const { inputDB } = req.body;
+            // const regex = !/^[\w-]+$/
+            // if (regex.test(inputDB)) return
+
+            await client.connect();
+
+            const db2 = client.db(inputDB);
+            const collection = db2.collection("Stafflist");
+            collection.insertOne({ "_unique": ` ${db2}` + 120 });
+            res.send(`Database ${inputDB} created`);
+        } catch (error) {
+            console.log("Check the db name", error)
+        }
+    })
     /////////////////
     // Start the server
     app.listen(PORT, () => {
