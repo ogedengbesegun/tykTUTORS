@@ -35,11 +35,11 @@ nameDB.addEventListener("click", () => {
 
     }
     if (Createdb()) {
-        alert(`Your DataBase Name ${inputDB.replace(/\s+/g,'')} created Succussfully`);
-        if (alert(),1) {
-            cleanInput = '';
+        // alert(`Your DataBase Name ${inputDB.replace(/\s+/g,'')} created Succussfully`);
+        // if (alert(),1) {
+        //     cleanInput = '';
 
-        }
+        // }
     }
 });
 
