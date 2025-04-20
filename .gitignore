@@ -1,5 +1,7 @@
 node_modules
 .env
+url.json
+
 url2.json
 markdown.md
 subjectsJSON
