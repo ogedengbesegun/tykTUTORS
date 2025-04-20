@@ -7,7 +7,8 @@ import { MongoClient } from 'mongodb';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
-
+// import { Clerk } from '@clerk/clerk-js';
+// Clerk
 
 dotenv.config();
 
@@ -23,7 +24,7 @@ app.use(cors());
 // app.use(bodyParser.json());
 // MongoDB connection
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-const uri = process.env.MONGO_db2;//Replace with your actual MongoDB connection string
+const uri = process.env.MONGO_db;//Replace with your actual MongoDB connection string
 const client = new MongoClient(uri)
 const PORT = process.env.PORT || 8080;
 // ,{ useNewUrlParser: true, useUnifiedTopology: true }

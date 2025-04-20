@@ -1,3 +1,5 @@
 node_modules
 .env
 url2.json
+markdown.md
+subjectsJSON

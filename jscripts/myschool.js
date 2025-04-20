@@ -9,12 +9,16 @@ async function getjson() {
 const nameDB = document.querySelector('.nameDB');
 const inputDB = document.querySelector(".inputDB");
 
+function spinn() {
+    const spin = document.createElement('span');
+    spin.className = `fas fa-spinner fa-spin ms-2`;
+    spin.style.color = "lightgreen";
+    nameDB.append(spin);
+}
 
+////////////
 nameDB.addEventListener("click", () => {
-    const spinning = document.createElement("span");
-    spinning.textContent = "SpinnerMe"
-    spinning.classList.add('fas fa-spin fa-spinner text-success fs-4');
-    inputDB.appendChild(spinning)
+
     async function Createdb() {
 
 
@@ -31,7 +35,7 @@ nameDB.addEventListener("click", () => {
                 body: JSON.stringify({ inputDB: cleanInput })
             })
             let result = await getdbUrl.json()
-
+            if (result) return alert("Database Created Successfully")
         } catch (error) {
             console.log(" create DB request Failed", error)
         }
@@ -40,11 +44,31 @@ nameDB.addEventListener("click", () => {
 
     }
     if (Createdb()) {
-        // alert(`Your DataBase Name ${inputDB.replace(/\s+/g,'')} created Succussfully`);
-        // if (alert(),1) {
-        //     inputDB = '';
+        const inter = setTimeout(() => {
+            spinn();
+        }, 300)
 
+        // nameDB.textContent = 'Registring'
+        setTimeout(() => {
+            inputDB.value = '';
+            clearTimeout(inter)
+
+        }, 3000)
         // }
     }
-});
+}, { once: true });
 
+//////////panel && menubtn
+const menubtn = document.querySelector('.menubtn');
+const panel = document.querySelector('.panel');
+panel.style.display = 'none'
+
+//onclick menubtn
+menubtn.addEventListener('click', () => {
+    panel.style.display = "block"
+})
+const rmpanel = document.querySelector('.rmpanel');
+rmpanel.addEventListener('click', () => {
+    panel.style.display = 'none';
+})
+/////////////
