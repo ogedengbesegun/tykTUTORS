@@ -72,3 +72,9 @@ rmpanel.addEventListener('click', () => {
     panel.style.display = 'none';
 })
 /////////////
+// window with event handler to screen resizing
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 786) {
+//         panel.style.display = 'none';
+//     }
+// })

@@ -8,18 +8,20 @@
 .movetrain {
   width: 50%;
   overflow-x: scroll;
-
-  scrollbar-width: 10px;
 }
 .schoolreg {
   width: 50%;
 }
 .panel {
   background-color: lightgray;
+  display: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  max-height: 40%;
+  width: 50%;
+  margin-right: 5px;
 }
-/* .navigation {
- 
-} */
+
 /* for Landing Page Sch */
 
 .leaf {
@@ -85,8 +87,12 @@
   #signupE {
     font-size: medium;
   }
+  /* .panel {
+    width: 60%;
+  } */
   /*Landing Page  */
 }
+
 @media (max-width: 425) {
   .keepMove {
     font-size: xx-small;
