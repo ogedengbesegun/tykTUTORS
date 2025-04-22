@@ -41,5 +41,6 @@
   "getproc": "http://localhost:8080/getproc",
   "getanim": "http://localhost:8080/getanim",
   "sendmail": "http://localhost:8080/sendmail",
-  "createDB": "http://localhost:8080/createDB"
+  "createDB": "http://localhost:8080/createDB",
+  "submitlogin": "http://localhost:8080/submitlogin"
 }

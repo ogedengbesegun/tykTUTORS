@@ -9,6 +9,9 @@ import cors from 'cors';
 import sgMail from '@sendgrid/mail';
 // import { Clerk } from '@clerk/clerk-js';
 // Clerk
+import bcrypt from "bcrypt";
+
+
 
 dotenv.config();
 
@@ -32,7 +35,7 @@ client.connect().then(() => {
     const db = client.db('tykBank'); //  database name
     const stds = db.collection('stds'); //  collection =stds name
     const tchers = db.collection('tchers'); //  collection =tchers details
-
+    const schoolSignUp = db.collection('schoolSignUp');
 
     //////subjects db
     const comp = db.collection("comp");//db for computer-Studies
@@ -573,6 +576,32 @@ client.connect().then(() => {
         //     ////////////////
         res.json(mymail());
     })
+    //////////////////
+    //schoolSignUp
+    app.post('/submitlogin', async (req, res) => {
+        const { signupE, signupP } = req.body;
+
+        const saltRounds = 10;
+
+        async function storeUserPassword(signupP) {
+            const hashedPassword = await bcrypt.hash(signupP, saltRounds);
+
+            // Now store `hashedPassword` in MongoDB
+            // return hashedPassword
+            const response = await schoolSignUp.insertOne({ email: signupE, password: hashedPassword })
+            res.json(response)
+        }
+        storeUserPassword(signupP)
+
+        // const Dhashedpassword = await hashedPassword
+
+
+    })
+
+    // const bcrypt = require('bcrypt');
+
+
+
 
     ////////////////
 

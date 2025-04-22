@@ -78,9 +78,10 @@
                         class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required>
                     <!-- <label for="signupP d-block">Password</label>  -->
                     <input type="password" name="signupP" id="signupP"
-                        class="my-1 rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Password"><span
-                        class="fas fa-eye-slash text-secondary eyeblind eyeblind2 pointer"
-                        pattern="^.*@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$"></span>
+                        class="my-1 rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Password"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$"
+                        title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
+                        required><span class="fas fa-eye-slash text-secondary eyeblind eyeblind2 pointer"></span>
 
                     <button type="submit" class="btn btn-secondary mb-2 w-75 mx-auto submitlogin">Login <span
                             class="fas fa-user"></span></button>
@@ -91,6 +92,7 @@
     </div>
 
 
+<!-- Template 3 -->
 
 
 
