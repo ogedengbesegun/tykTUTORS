@@ -9,7 +9,8 @@
   width: 50%;
   overflow-x: scroll;
 }
-.schoolreg {
+.schoolreg,
+.mycontainer {
   width: 50%;
 }
 .panel {
@@ -43,11 +44,26 @@
   width: 25%;
 }
 /*  */
-.eyeblind {
+.eyeblind,
+.eyeblind2 {
   position: relative;
   z-index: 2;
   margin-left: -25px;
   background-color: white;
+}
+
+.footerlist {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carouseimg {
+  /* margin-top: 10px; */
+  display: block;
+  width: 50%;
+}
+.carousetext {
+  margin: auto 0px;
 }
 /*  */
 
@@ -59,7 +75,8 @@
     display: block;
   }
   .movetrain,
-  .schoolreg {
+  .schoolreg,
+  .mycontainer {
     width: 75%;
   }
 
@@ -85,6 +102,24 @@
 
   #signupP,
   #signupE {
+    font-size: medium;
+  }
+
+  .footerlist {
+    display: grid;
+    /* grid-column: [span]; */
+    justify-content: center;
+    justify-items: center;
+  }
+
+  /*  */
+  .carouseimg {
+    /* margin-top: 10px; */
+    /* display: block; */
+    width: 25%;
+  }
+  .carousetext {
+    margin: auto 0px;
     font-size: medium;
   }
   /* .panel {

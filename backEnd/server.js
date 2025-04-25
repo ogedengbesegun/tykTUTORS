@@ -578,31 +578,44 @@ client.connect().then(() => {
     })
     //////////////////
     //schoolSignUp
-    app.post('/submitlogin', async (req, res) => {
+    app.post('/submitsignup', async (req, res) => {
+
         const { signupE, signupP } = req.body;
+
+        // const response = await schoolSignUp.insertOne({ email: signupE, password: signupP })
+        // res.json(response);
 
         const saltRounds = 10;
 
         async function storeUserPassword(signupP) {
+
             const hashedPassword = await bcrypt.hash(signupP, saltRounds);
 
             // Now store `hashedPassword` in MongoDB
-            // return hashedPassword
             const response = await schoolSignUp.insertOne({ email: signupE, password: hashedPassword })
-            res.json(response)
-        }
-        storeUserPassword(signupP)
+            res.json(response);
 
+        }
+        try {
+            storeUserPassword(signupP);
+
+        } catch (error) {
+            console.log('error occured hashing password', error)
+        }
         // const Dhashedpassword = await hashedPassword
 
+    });
+    /////////checksignupE
 
+    app.post('/checksignupE', async (req, res) => {
+        try {
+            const { signupE } = req.body;
+            const checkEmail = await schoolSignUp.findOne({ email: signupE });
+            res.json(checkEmail);
+        } catch (error) {
+            console.log(`Email address is taken`, error)
+        }
     })
-
-    // const bcrypt = require('bcrypt');
-
-
-
-
     ////////////////
 
     app.post('/createDB', async (req, res) => {
@@ -615,12 +628,14 @@ client.connect().then(() => {
 
             const db2 = client.db(inputDB);
             const collection = db2.collection("Stafflist");
-            collection.insertOne({ "_unique": ` ${db2}` + 120 });
+            collection.insertOne({ '_Number': 1 })
             res.send(`Database ${inputDB} created`);
         } catch (error) {
             console.log("Check the db name", error)
         }
-    })
+    });
+
+
     /////////////////
     // Start the server
     app.listen(PORT, () => {

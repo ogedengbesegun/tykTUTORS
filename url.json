@@ -42,5 +42,6 @@
   "getanim": "http://localhost:8080/getanim",
   "sendmail": "http://localhost:8080/sendmail",
   "createDB": "http://localhost:8080/createDB",
-  "submitlogin": "http://localhost:8080/submitlogin"
+  "submitsignup": "http://localhost:8080/submitsignup",
+  "checksignupE": "http://localhost:8080/checksignupE"
 }

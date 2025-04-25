@@ -34,7 +34,7 @@
     <div class=" rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page1">
 
         <h1 class="text-bg-secondary p-2 rounded-1 box-shadow">Welcome</h1><span
-            class="text-light btn border-light onpage1">Login</span>
+            class="text-light btn border-light onpage1">Sign Up <span class="fas fa-user-plus"></span></span>
         <h1 class="text-light my-auto h-100">tykTutor <span class="fas fa-spinner fa-spin"></span></h1>
         <div class="">
             <section class="keepMove">
@@ -42,12 +42,32 @@
                 <div class="fas fa-leaf fs-5 text-light leaf"></div><span> you moving...</span>
             </section>
 
-            <section action="" class="mx-auto w-100  bg-body-tertiary rounded">
+            <section class="mx-auto w-100  bg-body-tertiary rounded">
                 <p class="text-bg-secondary p-2">Don't miss out anything, test your Knowledge</p>
                 <!-- <h4 class="text-center">SignUp <span class="fas fa-arrowalt"></span></h4> -->
-                <img src="/images/auth-bg-1.png" alt="login_Page" width="60%" height="30%" class="my-2 pt-1">
-                <a href="/html/myschool.html" class="btn btn-secondary mb-2 w-75 mx-auto">Signup with <span
-                        class="fab fa-google"></span></a>
+                <img src="/images/auth-bg-2.png" alt="login_Page" width="60%" height="30%" class="my-2 pt-1">
+                <!-- <a href="/html/myschool.html" class="btn btn-secondary mb-2 w-75 mx-auto">Signup with <span
+                        class="fab fa-google"></span></a> -->
+
+
+                <form action="" class="">
+                    <!-- <label for="signupE d-block">Email</label> -->
+                    <input type="email" name="loginE" id="loginE"
+                        class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required
+                        autocomplete="off">
+                    <!-- <label for="signupP d-block">Password</label>  -->
+                    <input type="password" name="loginP" id="loginP"
+                        class="my-1 rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Password"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$"
+                        title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
+                        required><span class="fas fa-eye-slash text-secondary eyeblind2 pointer"></span>
+
+                    <button type="button" class="btn btn-secondary mb-2 w-75 mx-auto submitlogin">Login <span
+                            class="fas fa-sign-in-alt"></span></button>
+                    <a class="mb-1 btn text-secondary onpage1">Sign Up <span class="fas fa-user-plus"></span></a>
+                </form>
+
+
             </section>
         </div>
     </div>
@@ -58,7 +78,7 @@
     <div class="  rounded text-center container  mt-2 landingBinder border-light border-2 py-3 border page2">
 
         <h1 class="text-bg-secondary p-2 rounded-1  box-shadow">Welcome</h1><span
-            class="text-light btn border-light onpage2">Signup</span>
+            class="text-light btn border-light onpage2">Login <span class="fas fa-sign-in-alt"></span></span>
         <h1 class="text-light my-auto h-100">tykTutor <span class="fas fa-spinner fa-spin"></span></h1>
         <div class="">
             <section class="keepMove">
@@ -66,7 +86,7 @@
                 <div class="fas fa-leaf fs-5 text-light leaf"></div><span> you moving...</span>
             </section>
 
-            <section action="" class="mx-auto w-100  bg-body-tertiary rounded">
+            <section class="mx-auto w-100  bg-body-tertiary rounded">
                 <p class="text-bg-secondary p-2">Don't miss out anything, test your Knowledge</p>
                 <img src="/images/auth-bg-1.png" alt="login_Page" width="60%" height="30%" class="my-2 pt-1">
                 <!-- <a href="/html/myschool.html" class="btn btn-secondary mb-2 w-75 mx-auto">SignUp with <span
@@ -75,16 +95,16 @@
                 <form action="" class="">
                     <!-- <label for="signupE d-block">Email</label> -->
                     <input type="email" name="signupE" id="signupE"
-                        class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required>
+                        class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required
+                        autocomplete="off">
                     <!-- <label for="signupP d-block">Password</label>  -->
                     <input type="password" name="signupP" id="signupP"
                         class="my-1 rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Password"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$"
                         title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
-                        required><span class="fas fa-eye-slash text-secondary eyeblind eyeblind2 pointer"></span>
+                        required><span class="fas fa-eye-slash text-secondary eyeblind pointer"></span>
 
-                    <button type="submit" class="btn btn-secondary mb-2 w-75 mx-auto submitlogin">Login <span
-                            class="fas fa-user"></span></button>
+                    <button type="button" class="btn btn-secondary mb-2 w-75 mx-auto submitsignup">Sign Up <span
+                            class="fas fa-user-plus"></span></button>
                 </form>
             </section>
 
@@ -92,7 +112,7 @@
     </div>
 
 
-<!-- Template 3 -->
+    <!-- Template 3 -->
 
 
 
