@@ -85,7 +85,7 @@ onpage2.addEventListener('click', () => {
 async function url() {
     const geturl = await fetch('/url.json');
     const okurl = await geturl.json();
-    console.log(okurl.submitsignup)
+    // console.log(okurl.submitsignup)
     return okurl
 }
 /////////////////////
@@ -188,3 +188,38 @@ signupE.addEventListener('focusout', () => {
 });
 //////////////////////////////
 /////////////////////////////
+// schoollogin()
+async function schoollogin() {
+    const loginP = document.querySelector('#loginP').value;
+    const loginE = document.querySelector('#loginE').value;
+    try {
+        const geturl = await url()
+        const schlogin = geturl.login4sch
+        console.log(schlogin)
+        const schloginf = await fetch(schlogin, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+
+            body: JSON.stringify({ loginP: loginP, loginE: loginE })
+        })
+        const respon = await schloginf.json()
+        if (respon.success) {
+            alert(respon.message)
+        }
+        else {
+            alert(respon.message)
+        }
+    } catch (error) {
+        console.log('failure to login', error)
+    }
+}
+//////////
+///submitlogiin btn
+const submitlogin = document.querySelector('.submitlogin');
+submitlogin.addEventListener('click', () => {
+    if (schoollogin().ok) {
+        window.open('/html/myschool.html', 'blank')
+
+    }
+
+})

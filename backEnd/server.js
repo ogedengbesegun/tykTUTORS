@@ -605,36 +605,113 @@ client.connect().then(() => {
         // const Dhashedpassword = await hashedPassword
 
     });
+    /////////
+    ///////////submitSchool login4sch/////
+    ///////
+    app.post('/login4sch', async (req, res) => {
+        const { loginP, loginE } = req.body;
+
+        try {
+            const loginsch = await schoolSignUp.findOne({ email: loginE });
+
+            if (!loginsch) {
+                return res.status(404).json({ success: false, message: 'Email not found' });
+            }
+
+            const match = await bcrypt.compare(loginP, loginsch.password);
+
+            if (!match) {
+                return res.status(401).json({ success: false, message: 'Incorrect password' });
+            }
+
+            res.json({ success: true, message: 'Login successful' });
+
+        } catch (error) {
+            console.error('Login error:', error);
+            res.status(500).json({ success: false, message: 'Server error' });
+        }
+    });
+
+
     /////////checksignupE
 
     app.post('/checksignupE', async (req, res) => {
         try {
-            const { signupE } = req.body;
-            const checkEmail = await schoolSignUp.findOne({ email: signupE });
+            const { signupE, schoolE } = req.body;
+            const checkEmail = await schoolSignUp.findOne({ email: signupE || schoolE });
             res.json(checkEmail);
         } catch (error) {
             console.log(`Email address is taken`, error)
         }
     })
     ////////////////
+    /////////checksignupE
 
+    app.post('/checkschoolE', async (req, res) => {
+        try {
+            const { schoolE } = req.body;
+            const checkEmail = await schoolSignUp.findOne({ email: schoolE });
+            if (checkEmail) {
+                return res.status(401).json({ success: true, message: "Email is Not Registered" })
+            }
+            res.json(checkEmail);
+        } catch (error) {
+            console.log(`Email address is taken`, error)
+        }
+    })
+    ////////////////
+    /////to update recordds using email as ref///////
+    app.post('/validateEmail', async (req, res) => {
+        const { schoolE, dbName } = req.body;
+
+        try {
+            const searchEmail = await schoolSignUp.findOne({ email: schoolE, school_name:dbName });
+
+            if (!searchEmail) {
+
+
+
+                return res.status(401).json({ success: false, message: "Email NOT registered" });
+
+            }
+
+            const validateEmail = await schoolSignUp.updateOne(
+                { email: schoolE },
+                { $set: { school_name: dbName } }
+            );
+
+
+            if (validateEmail.modifiedCount === 0 && !searchEmail.school_name === '') {
+                return res.status(400).json({ success: false, message: "Cannot Register School Name" });
+                // }
+
+            }
+            res.json({ success: true, message: `${schoolE} already Exist` });
+        }
+
+        catch (error) {
+            console.error('Server error:', error);
+            res.status(500).json({ success: false, message: "Server Error" });
+        }
+    })
+    ////////////////
+    ////////////
     app.post('/createDB', async (req, res) => {
         try {
-            const { inputDB } = req.body;
+            const { inputDB, dbName } = req.body;
             // const regex = !/^[\w-]+$/
             // if (regex.test(inputDB)) return
 
             await client.connect();
 
             const db2 = client.db(inputDB);
-            const collection = db2.collection("Stafflist");
-            collection.insertOne({ '_Number': 1 })
+            const collection = db2.collection("school_collection");
+            collection.insertOne({ _name: dbName })
             res.send(`Database ${inputDB} created`);
         } catch (error) {
             console.log("Check the db name", error)
         }
     });
-
 
     /////////////////
     // Start the server
