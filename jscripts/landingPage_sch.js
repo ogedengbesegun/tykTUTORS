@@ -56,7 +56,7 @@ eyeblind2.addEventListener('click', () => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 const onpage1 = document.querySelectorAll('.onpage1');
-const onpage2 = document.querySelector('.onpage2');
+const onpage2 = document.querySelectorAll('.onpage2');
 const page1 = document.querySelector('.page1');
 const page2 = document.querySelector('.page2');
 
@@ -71,11 +71,13 @@ onpage1.forEach(onpage => {
     })
     ////
 })
-
-onpage2.addEventListener('click', () => {
-    page2.style.display = "none";
-    page1.style.display = "block"
+onpage2.forEach(onpage_2 => {
+    onpage_2.addEventListener('click', () => {
+        page2.style.display = "none";
+        page1.style.display = "block"
+    });
 });
+
 
 //////////////////signupE and validation
 
@@ -203,8 +205,15 @@ async function schoollogin() {
             body: JSON.stringify({ loginP: loginP, loginE: loginE })
         })
         const respon = await schloginf.json()
-        if (respon.success) {
-            alert(respon.message)
+        if (respon.success === true) {
+
+            window.open('/html/myschool.html', '_blank');
+            const loginP = document.querySelector('#loginP');
+            loginP.value = ''
+
+            setTimeout(() => {
+                window.close()
+            }, 2000);
         }
         else {
             alert(respon.message)
@@ -217,9 +226,13 @@ async function schoollogin() {
 ///submitlogiin btn
 const submitlogin = document.querySelector('.submitlogin');
 submitlogin.addEventListener('click', () => {
-    if (schoollogin().ok) {
-        window.open('/html/myschool.html', 'blank')
+    schoollogin()
+});
 
-    }
+//////FORGOT PASSWORD///////////
+const changePW = document.getElementsByClassName('changePW')[0];
 
-})
+function showM() {
+    changePW.showModal()
+};
+// showM()

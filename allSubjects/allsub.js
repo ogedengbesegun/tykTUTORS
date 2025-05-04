@@ -373,28 +373,7 @@ closeDlg.addEventListener("click", () => {
     reEnterPwd.close();
 });
 
-
-
-// -------------vanilla Script-----------------------------
-// object declaration
-// let logDetail = [{
-//     id: "ebun",
-//     pwd: "ebun001"
-// }, {
-//     id: "segun",
-//     pwd: "segun001"
-// }, {
-//     id: "bolu",
-//     pwd: "bolu001"
-// }, {
-//     id: "sade",
-//     pwd: "sade001"
-// }, {
-//     id: "enny",
-//     pwd: "enny001"
-// }
-// ];
-
+// vanilla script.////////////////
 
 //1. onclick class:loginR, button
 loginR.addEventListener("click", () => {
@@ -643,7 +622,7 @@ function start() {
              <label for="optn3-${index}" class="me-1 p-1 rounded-1 d-block label3 lb3">${label3 = array.slice(index - 1, index)[0].c
                 }</label>
          </label>
-         <label for="optn4-${index}" class="d-flex mx-2 bg-white rounded-1 my-2 lb4" title="Option D">
+         <label for="optn4-${index}" class="d-flex mx-2 bg-white rounded-1 mt-2 mb-4 lb4" title="Option D">
              <input type="radio" id="optn4-${index}" class="ms-2 allinput inputValue${index}" name="op-${index}" title="Option D" value="d">
              <label for="optn4-${index}" class="me-1 p-1 rounded-1 d-block label4 lb4">${label4 = array.slice(index - 1, index)[0].d
                 }</label>

@@ -41,12 +41,11 @@
   "getproc": "http://localhost:8080/getproc",
   "getanim": "http://localhost:8080/getanim",
   "sendmail": "http://localhost:8080/sendmail",
-  "createDB": "http://localhost:8080/createDB",
+
   "submitsignup": "http://localhost:8080/submitsignup",
   "checksignupE": "http://localhost:8080/checksignupE",
   "checkschoolE": "http://localhost:8080/checkschoolE",
   "updateSchN": "http://localhost:8080/updateSchN",
   "validateEmail": "http://localhost:8080/validateEmail",
   "login4sch": "http://localhost:8080/login4sch"
-
 }

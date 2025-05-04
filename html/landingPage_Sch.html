@@ -62,18 +62,39 @@
                         title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
                         required><span class="fas fa-eye-slash text-secondary eyeblind2 pointer"></span>
 
-                    <button type="button" class="btn btn-secondary mb-2 w-75 mx-auto submitlogin">Login <span
+                    <button type="button" class="btn btn-secondary mb-0 w-75 mx-auto submitlogin">Login <span
                             class="fas fa-sign-in-alt"></span></button>
-                    <a class="mb-1 btn text-secondary onpage1">Sign Up <span class="fas fa-user-plus"></span></a>
+                    <a href="http://" class="d-block text-danger mb-2">forgot password?</a>
+                    <a class="mb-1 btn text-secondary border border-success onpage1">Sign Up <span
+                            class="fas fa-user-plus"></span></a>
                 </form>
 
 
             </section>
         </div>
     </div>
+    <!--  -->
+    <!-- create a Dialog box -->
+    
+        <dialog class="mx-auto mt-5 changePW p-3 border-0 rounded-1 ">
 
+            <div class="mt-4 ">
+                <h3 class="text-success text-center text-decoration-underline">forgot password?</h3>
+                <div class="d-grid w-50 mx-auto">
+                    <small class="d-block my-0 ms-2 text-danger d-no">Enter Email</small>
+                    <input type="email" name="changeE" id="changeE" placeholder="Enter Email"
+                        class="p-2 border-0 no-outline">
+                    <input type="text" name="twiloTx" id="twiloTx" class="no-outline border-0 p-2"
+                        placeholder="Enter Code">
+                </div>
+                <button type="button" title="Change Password" class="btn btn-secondary mx-auto d-block">Change
+                    Password</button>
+            </div>
 
-
+        </dialog>
+    
+    <!-- dialog box -->
+    <!--  -->
     <!-- template 2 -->
     <div class="  rounded text-center container  mt-2 landingBinder border-light border-2 py-3 border page2">
 
@@ -105,6 +126,8 @@
 
                     <button type="button" class="btn btn-secondary mb-2 w-75 mx-auto submitsignup">Sign Up <span
                             class="fas fa-user-plus"></span></button>
+                    <button type="button" class="btn text-secondary border-success border  mb-2 mx-auto onpage2">Login
+                        <span class="fas fa-sign-in-alt"></span></button>
                 </form>
             </section>
 

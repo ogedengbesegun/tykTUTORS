@@ -77,16 +77,25 @@ logid.addEventListener("focusin", () => {
 
 
 
-function Login() {
+function Login(e) {
+    let logid = document.querySelector('#logid');//call for the logid
+    let passwd = document.querySelector('#passwd');
+
     sessionStorage.setItem("name", logid.value);// sessionStorage.setItem()method
     logid.value = logid.value.trim()
     // -------------------------------------------------
-    //launch the loginUser function
-setTimeout(()=>{
-    loginUser();
 
-},500)
+    if (logid.value === '' || passwd.value === '') {
+        // e.preventDefault()
+        alert('Please enter Surname, Password')
+    } else {
+        //launch the loginUser function
+        setTimeout(() => {
+            loginUser();
 
+        }, 500)
+
+    }
 
 
 

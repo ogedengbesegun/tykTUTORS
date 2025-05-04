@@ -615,7 +615,7 @@ client.connect().then(() => {
             const loginsch = await schoolSignUp.findOne({ email: loginE });
 
             if (!loginsch) {
-                return res.status(404).json({ success: false, message: 'Email not found' });
+                return res.status(404).json({ success: false, message: 'Email not found, Sign Up' });
             }
 
             const match = await bcrypt.compare(loginP, loginsch.password);
@@ -660,58 +660,53 @@ client.connect().then(() => {
         }
     })
     ////////////////
-    /////to update recordds using email as ref///////
+  
+    /////////////validate///////
     app.post('/validateEmail', async (req, res) => {
         const { schoolE, dbName } = req.body;
 
+        if (!dbName?.trim()) {
+            return res.status(400).json({ success: false, message: 'School Name Cannot be Empty' });
+        }
+
         try {
-            const searchEmail = await schoolSignUp.findOne({ email: schoolE, school_name:dbName });
+            await client.connect();
+            const db2 = client.db(dbName.split(' ').map(word =>word[0]).join(''));
+            const collection = db2.collection("school_collection");
+
+            // const schoolSignUp = db2.collection('sign_up_collection'); // define it
+
+            const searchEmail = await schoolSignUp.findOne({ email: schoolE });
 
             if (!searchEmail) {
-
-
-
-                return res.status(401).json({ success: false, message: "Email NOT registered" });
-
+                return res.status(404).json({ success: false, message: "Email Not Found, Please Sign Up" });
             }
 
-            const validateEmail = await schoolSignUp.updateOne(
+            if (searchEmail.email && searchEmail.school_name) {
+                return res.status(400).json({ success: false, message: "School name already registered." });
+            }
+
+            const updateSchool = await schoolSignUp.updateOne(
                 { email: schoolE },
                 { $set: { school_name: dbName } }
             );
 
-
-            if (validateEmail.modifiedCount === 0 && !searchEmail.school_name === '') {
-                return res.status(400).json({ success: false, message: "Cannot Register School Name" });
-                // }
-
+            if (updateSchool.modifiedCount === 0) {
+                return res.status(500).json({ success: false, message: "Failed to register school name." });
             }
-            res.json({ success: true, message: `${schoolE} already Exist` });
-        }
 
-        catch (error) {
+            await collection.insertOne({ school_name: dbName, email: schoolE });
+
+            res.json({ success: true, message: "School name registered successfully!" });
+
+        } catch (error) {
             console.error('Server error:', error);
             res.status(500).json({ success: false, message: "Server Error" });
         }
-    })
-    ////////////////
-    ////////////
-    app.post('/createDB', async (req, res) => {
-        try {
-            const { inputDB, dbName } = req.body;
-            // const regex = !/^[\w-]+$/
-            // if (regex.test(inputDB)) return
-
-            await client.connect();
-
-            const db2 = client.db(inputDB);
-            const collection = db2.collection("school_collection");
-            collection.insertOne({ _name: dbName })
-            res.send(`Database ${inputDB} created`);
-        } catch (error) {
-            console.log("Check the db name", error)
-        }
     });
+
+    
+    // });
 
     /////////////////
     // Start the server

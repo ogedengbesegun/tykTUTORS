@@ -75,6 +75,10 @@
   width: 100%;
 }
 /*  */
+.changePW {
+  width: 50%;
+  height: 50%;
+}
 
 @media (max-width: 768px) {
   .navbtn {

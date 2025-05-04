@@ -328,6 +328,14 @@ if (mouseEnter) {
 };
 
 
+//schools login directory
+
+const schoollogin = document.querySelector('.schoollogin');
+if (schoollogin) {
+    schoollogin.addEventListener('click', () => {
+        window.open('/html/landingPage_Sch.html', '_blank')
+    })
+}
 
 
 // waec URL directory defined
