@@ -48,8 +48,9 @@
 .eyeblind2 {
   position: relative;
   z-index: 2;
-  margin-left: -25px;
+  /* margin-left: -25px; */
   background-color: white;
+  padding: 8px;
 }
 
 .footerlist {
@@ -65,7 +66,10 @@
 .carousetext {
   margin: auto 0px;
 }
-
+/* signupP */
+#signupP, #loginP{
+  width: 65%;
+}
 #dbName,
 #schoolE {
   border: none;
@@ -107,7 +111,7 @@
     margin-bottom: 5px;
   }
   .landingBinder {
-    width: 50%;
+    width: 69%;
   }
   .keepMove {
     font-size: small;
