@@ -166,8 +166,8 @@ submitsignup.addEventListener('click', (e) => {
             fSubmitsignup();
 
             setTimeout(() => {
-                signupE.value = '';
-                signupP.value = '';
+                // signupE.value = '';
+                // signupP.value = '';
                 alert(`Congratulations, Sign UP is Successful`);
 
             }, 2000)
