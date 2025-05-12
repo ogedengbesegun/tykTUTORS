@@ -390,18 +390,7 @@ client.connect().then(() => {
 
         }
     })
-    ////////////getUserName
-    // app.post('/getUserName', async (req, res) => {
-    //     try {
-    //         const oderNames = collection.find({ surname: 'ogedengbe' });
-    //         const oderNamesRes = await oderNames.toArray();
-    //         res.json(oderNamesRes)
-
-    //     }
-    //     catch (error) {
-
-    //     }
-    // });
+    
 
     ////////Is_email_available
     app.post('/getEmail', async (req, res) => {
@@ -581,26 +570,34 @@ client.connect().then(() => {
     app.post('/submitsignup', async (req, res) => {
 
         const { signupE, signupP } = req.body;
-
-        // const response = await schoolSignUp.insertOne({ email: signupE, password: signupP })
-        // res.json(response);
+        // /////
+        // const findsignupE = await schoolSignUp.findOne({ email: signupE })
+        // if (findsignupE) {
+        //     signupE === '';
+        //     signupP === '';
+        //     return res.status(401).json({ success: false, message: "Email Already Exists" })
+        // };
 
         const saltRounds = 10;
+        try {
 
-        async function storeUserPassword(signupP) {
+
+
+            // async function storeUserPassword(signupP) {
 
             const hashedPassword = await bcrypt.hash(signupP, saltRounds);
 
             // Now store `hashedPassword` in MongoDB
-            const response = await schoolSignUp.insertOne({ email: signupE, password: hashedPassword })
-            res.json(response);
-
-        }
-        try {
-            storeUserPassword(signupP);
+            await schoolSignUp.insertOne({ email: signupE, password: hashedPassword });
+            return res.json({ success: true, message: `Congratulations, ${signupE} is Successfully Registered` });
+            // res.json(insertres)
+            // }
+            //////
+            // storeUserPassword(signupP);
 
         } catch (error) {
-            console.log('error occured hashing password', error)
+            console.error('Error occurred during signup:', error);
+            return res.status(500).json({ success: false, message: 'Server Error' });
         }
         // const Dhashedpassword = await hashedPassword
 
@@ -615,16 +612,16 @@ client.connect().then(() => {
             const loginsch = await schoolSignUp.findOne({ email: loginE });
 
             if (!loginsch) {
-                return res.status(404).json({ success: false, message: 'Email not found, Sign Up' });
+                return res.status(404).json({ success: false, message: 'Email is Not Found Please, Sign Up'});
             }
 
             const match = await bcrypt.compare(loginP, loginsch.password);
 
             if (!match) {
-                return res.status(401).json({ success: false, message: 'Incorrect password' });
+                return res.status(401).json({ success: false, message: 'Incorrectsss Password' });
             }
 
-            res.json({ success: true, message: 'Login successful' });
+            res.json({ success: true, message: 'Login Successful' });
 
         } catch (error) {
             console.error('Login error:', error);
@@ -642,6 +639,7 @@ client.connect().then(() => {
             res.json(checkEmail);
         } catch (error) {
             console.log(`Email address is taken`, error)
+            res.json({ success: false, message: 'Error Checking Email or Internet Failure' });
         }
     })
     ////////////////
@@ -660,7 +658,6 @@ client.connect().then(() => {
         }
     })
     ////////////////
-  
     /////////////validate///////
     app.post('/validateEmail', async (req, res) => {
         const { schoolE, dbName } = req.body;
@@ -671,7 +668,7 @@ client.connect().then(() => {
 
         try {
             await client.connect();
-            const db2 = client.db(dbName.split(' ').map(word =>word[0]).join(''));
+            const db2 = client.db(dbName.split(' ').map(word => word[0]).join(''));
             const collection = db2.collection("school_collection");
 
             // const schoolSignUp = db2.collection('sign_up_collection'); // define it
@@ -683,7 +680,7 @@ client.connect().then(() => {
             }
 
             if (searchEmail.email && searchEmail.school_name) {
-                return res.status(400).json({ success: false, message: "School name already registered." });
+                return res.status(400).json({ success: false, message: "School Name already registered." });
             }
 
             const updateSchool = await schoolSignUp.updateOne(
@@ -705,7 +702,7 @@ client.connect().then(() => {
         }
     });
 
-    
+
     // });
 
     /////////////////

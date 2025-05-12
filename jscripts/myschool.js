@@ -1,3 +1,5 @@
+import { array, item, spinBanner, dialogObj, dialog, delay } from './freeAgents.js'
+
 async function getjson() {
     const jsons = await fetch("/url.json")
     const jsonResponse = await jsons.json()
@@ -9,12 +11,12 @@ async function getjson() {
 const nameDB = document.querySelector('.nameDB');
 const inputDB = document.querySelector(".inputDB");
 
-function spinn() {
-    const spin = document.createElement('span');
-    spin.className = `fas fa-spinner fa-spin ms-2`;
-    spin.style.color = "lightgreen";
-    nameDB.append(spin);
-}
+// function spinn() {
+//     const spin = document.createElement('span');
+//     spin.className = `fas fa-spinner fa-spin ms-2`;
+//     spin.style.color = "lightgreen";
+//     nameDB.append(spin);
+// }
 
 ////////////
 // nameDB.setAttribute('title', 'Button Disabled')
@@ -29,7 +31,7 @@ if (nameDB.setAttribute('disabled', true)) {
 
 
 nameDB.addEventListener("click", () => {
-    
+
 
 });
 
@@ -73,6 +75,8 @@ async function updateSchR() {
 // const validateEbtn = document.querySelector('#validateEbtn');
 
 async function validateEmail() {
+    spinBanner.showModal()
+    await delay(3000)
     const schoolE = document.querySelector('#schoolE').value;
     const dbName = document.querySelector('#dbName').value
     try {
@@ -88,16 +92,23 @@ async function validateEmail() {
         const response = await valMail.json();
         ///////
         if (response.success) {
-            alert(response.message);
+            dialog()
+            document.querySelector('.dialogMsg').innerHTML = response.message;
+
+            // alert(response.message);
 
         }
         else {
-            alert(response.message)
+            dialog()
+            document.querySelector('.dialogMsg').innerHTML = response.message;
+            // alert(response.message)
         }
     } catch (error) {
 
     }
-
+    finally {
+        spinBanner.close();
+    }
 }
 ///////validation btn
 const validateEbtn = document.querySelector('#validateEbtn');
@@ -123,5 +134,4 @@ function toupperCase() {
 }
 ////////////////////////
 ///////////////
-
 

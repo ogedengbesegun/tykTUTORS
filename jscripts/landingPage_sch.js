@@ -1,5 +1,6 @@
 // import { stringify } from "path-to-regexp";
 
+
 const eyeblind = document.querySelector('.eyeblind');
 const eyeblind2 = document.querySelector('.eyeblind2');
 ///////////////
@@ -78,8 +79,79 @@ onpage2.forEach(onpage_2 => {
     });
 });
 
-
 //////////////////signupE and validation
+///////infrmation banner Dialog//////
+const dialogObj = {
+    checkError: `Error! Check your Email Address or Password
+     Use at least one Uppercase, Lowercase, Digit and 
+     Special Characters e.g Az 09 @ $ & ! ?`,
+    emailAlreadyExist: `  Already Exist!!! Check Emaill Address.`,
+    emailcreated: ` , is Created Successfully`,
+    spinner: `<i class='fas fa-spin fa-spinner fs-1 text-success'></>`,
+    Loading: 'Loading...',
+    checking: `Checking...`,
+    email: `<span class='fas fa-envelope fs-1'></span`,
+    atom: `<span class='fas fa-atom fa-spin fs-1'></span>`,
+    fan: `<span class='fas fa-fan fa-spin fs-1'></span>`,
+    recycle: `<span class='fas fa-recycle fa-spin fs-1'></span>`,
+    cog: `<span class='fas fa-cog fa-spin fs-1'></span>`,
+    sync: `<span class='fas fa-sync fa-spin fs-1'></span>`,
+    compact_disc: `<span class='fas fa-compact-disc fa-spin fs-1'></span>`,
+    circle_notch: `<span class='fas fa-circle-notch fa-spin fs-1'></span>`,
+    yin_yang: `<span class='fas fa-yin-yang fa-spin fs-1'></span>`
+}
+// dialog()
+function dialog() {
+    const infoBanner = document.createElement('dialog');
+    infoBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
+    infoBanner.innerHTML = `<h2 class="text-success text-center mt-2">Attention <span class="fas fa-warning text-danger"></span></h2>
+     <p class="p-2 text-center w-75 mx-auto dialogMsg">
+   
+     </p>
+     <button class="btn btn-secondary d-block mx-auto mb-2 close ">Close</button>`
+
+    document.body.append(infoBanner);
+    infoBanner.showModal()
+
+
+    ///////////closex
+
+
+
+
+    closex();
+    function closex() {
+        const close = document.getElementsByClassName('close')[0];
+
+        close.addEventListener('click', () => {
+            infoBanner.close()
+            infoBanner.remove(); // Optional: clean up after closing
+
+
+        })
+    }
+
+
+
+};
+
+////////////dialog/////
+
+//rolling()
+// function roling() {
+
+//////spinBanner()
+const spinBanner = document.createElement('dialog');
+spinBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
+spinBanner.innerHTML = `<h2 class="text-success text-center mt-2 spinBannerHeader">Loading... ${dialogObj.fan}</h2>
+     <p class="p-2 text-center w-75 mx-auto spinText text-success">
+     ${dialogObj.circle_notch}</p>
+    `
+
+document.body.append(spinBanner);
+// spinBanner.showModal()
+// }
+///spinner
 
 
 //url
@@ -93,6 +165,10 @@ async function url() {
 /////////////////////
 
 async function fSubmitsignup() {
+    /////
+    spinBanner.showModal()
+
+    await delay(3000);// cause delay 
 
     const getsubmitsignup = await url()
 
@@ -108,41 +184,38 @@ async function fSubmitsignup() {
 
         const submitBtn = await fetch(oksubmitsignup,
             {
-                method: "post",
+                method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ signupE: signupE, signupP: signupP })
-            })
-        let resp = await submitBtn.json();
+            });
+
+        const Respo = await submitBtn.json();
+        if (Respo) {
+            // if () {
+            // setTimeout(() => {
+            dialog()
+            document.querySelector('.dialogMsg').textContent = `${signupE}` + dialogObj.emailcreated;
+
+            document.querySelector('#signupP').value = '';
+            document.querySelector('#signupE').value = '';
+            // }, 1500)
+            // }
+
+
+
+        }
 
 
     } catch (error) {
-        console.log("Failure to send request", error)
+        console.log("Failure to send request and Sign Up", error)
+    }
+    finally {
+        spinBanner.close();
+        // spinBanner.remove();
     }
 }
+//////////
 
-////////
-async function checkEmail() {
-    const signupE = document.querySelector('#signupE').value;
-
-    const geturl = await url()
-    console.log(geturl.checksignupE)
-    const valMail = await fetch(geturl.checksignupE,
-        {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ signupE: signupE })
-        }
-    );
-    const response = valMail.json();
-    ////if that happens
-    if (await response) {
-        const signupE = document.querySelector('#signupE');
-
-        alert(`${signupE.value} Already Exist!!! Check Emaill Address.`)
-        signupE.value = '';
-    }
-}
-//////////////////
 
 //submitsignup
 const submitsignup = document.querySelector('.submitsignup');
@@ -152,46 +225,112 @@ const Regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$/;//password
 submitsignup.addEventListener('click', (e) => {
 
     if (Regex.test(signupP.value) === false || regexx.test(signupE.value) === false) {
-        // console.log(Regex.test(signupP.value))
-        e.preventDefault()
-        alert(`Error! Check your Emaill Address or Password
-         Use at least one Uppercase, Lowercase, Digit and 
-         Special Characters e.g Az 09 @ $ & ! ?`);
+
+
+        e.preventDefault();
+        dialog();
+
+
+        document.querySelector('.dialogMsg').textContent = dialogObj.checkError;
+
+
+
+
+
 
     }
 
 
     else {
-        if (confirm(` Please, ${signupE.value} Confirm SignUp`)) {
-            fSubmitsignup();
-
-            setTimeout(() => {
-                // signupE.value = '';
-                // signupP.value = '';
-                alert(`Congratulations, Sign UP is Successful`);
-
-            }, 2000)
+        fSubmitsignup()
 
 
-        }
-        else {
-            e.preventDefault()
-        }
+
     }
 
 
 });
 
-//////////////////////
+////////submitsignup//////////
+////////
+async function checkEmail() {
+    spinBanner.showModal()
+
+    await delay(3000);/// to delay 3000;
+    try {
+        const signupE = document.querySelector('#signupE').value;
+
+        const geturl = await url()
+        console.log(geturl.checksignupE)
+        const valMail = await fetch(geturl.checksignupE,
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ signupE: signupE })
+            }
+        );
+        const response = await valMail.json();
+        ////if that happens
+        if (response) {
+            const signupE = document.querySelector('#signupE');
+
+            //callback ()
+            dialog();
+
+            //dialogMSg
+            document.querySelector('.dialogMsg').textContent = `${signupE.value}` + dialogObj.emailAlreadyExist;
+
+            signupE.value = '';
+        } else if (!response) {
+            dialog();
+            document.querySelector('.dialogMsg').textContent = `Email is Available for use`;
+        }
+    } catch (error) {
+        //allow the text back to statusco
+
+        if (response.success === false) {
+            dialog();
+            document.querySelector('.dialogMsg').textContent = response.message;
+        }
+
+    }
+    finally {
+        spinBanner.close();
+    }
+};//////
+//////////////////
 ////on focus out
 signupE.addEventListener('focusout', () => {
     checkEmail()
 
 });
+
+
+
+
+async function delay(m) {
+    //  const delay = (m) =>
+    new Promise((resolve) =>
+        setTimeout(resolve, m)
+
+    )
+
+}
+
 //////////////////////////////
 /////////////////////////////
 // schoollogin()
 async function schoollogin() {
+    // roling();
+    spinBanner.showModal()
+
+
+
+    await delay(3000)
+
+
+
+    ///////////////////
     const loginP = document.querySelector('#loginP').value;
     const loginE = document.querySelector('#loginE').value;
     try {
@@ -206,20 +345,35 @@ async function schoollogin() {
         })
         const respon = await schloginf.json()
         if (respon.success === true) {
+            dialog();
+            document.querySelector('.dialogMsg').textContent = respon.message
+            document.querySelector('.close').addEventListener('click', () => {
+                window.open('/html/myschool.html', '_blank');
+                const loginP = document.querySelector('#loginP');
+                loginP.value = ''
 
-            window.open('/html/myschool.html', '_blank');
-            const loginP = document.querySelector('#loginP');
-            loginP.value = ''
+                // setTimeout(() => {
+                //     window.close()
+                // }, 2000);
+            })
 
-            setTimeout(() => {
-                window.close()
-            }, 2000);
         }
         else {
-            alert(respon.message)
+            dialog()
+            document.querySelector('.dialogMsg').textContent = respon.message
+            /// clear the input fields
+            document.querySelector('#loginP').value = '';
+            document.querySelector('#loginE').value = ''
         }
     } catch (error) {
+        dialog()
+        document.querySelector('.dialogMsg').textContent = `Internet Error or ${error}`
         console.log('failure to login', error)
+    }
+    finally {
+
+        spinBanner.close()
+
     }
 }
 //////////
@@ -230,9 +384,45 @@ submitlogin.addEventListener('click', () => {
 });
 
 //////FORGOT PASSWORD///////////
-const changePW = document.getElementsByClassName('changePW')[0];
+const changePW = document.createElement('dialog');
 
-function showM() {
-    changePW.showModal()
-};
+changePW.className = ` forgotPwBanner mx-auto mt-4 p-2 border-0 rounded-1`;
+changePW.innerHTML = ` 
+            <span class='fas fa-times-circle fs-3 mt-2 text-danger btn cursor mx-auto closebtn' title='Close'></span>
+                     <div class=" mx-auto mt-5 pt-1">
+            <h3 class="text-success text-center text-decoration-underline">forgot password?</h3>
+          <h4 class='text-center text-danger'>Instruction:</h4>
+            <p class=' text-center px-2'>1. Click the Get Code Button to have codes sent to your Registered Email.</p>
+            <p class='text-center px-2'>2. Enter the Code and ckick Change Password Button</p>
+            <div class="d-grid mx-auto my-4 px-2">
+                
+                <input type="email" name="changeE" id="changeE" placeholder="Enter Email"
+                    class="p-2 border no-outline">
+                <input type="text" name="twiloTx" id="twiloTx" class="no-outline border mt-1 p-2" placeholder="Enter Code">
+            </div>
+           <div class='d-flex justify-content-center mb-2'> 
+               <button type='button' title='Get Code' class='btn btn-primary me-1'>Get Code</button>
+                <button type="button" title="Change Password" class="btn btn-secondary">Change
+                Password</button>
+            </div>
+        </div>`;
+document.body.append(changePW);
+
+const forgotPwd = document.querySelector('.forgotPwd');
+
+///click the forgot btn callback
+
+forgotPwd.addEventListener('click', () => {
+    changePW.showModal();
+
+})
+
+const closebtn = document.getElementsByClassName('closebtn')[0];
+closebtn.addEventListener('click', () => {
+    changePW.close();
+    // changePW.remove();
+})
+// function showM() {
+//     changePW.showModal()
+// };
 // showM()

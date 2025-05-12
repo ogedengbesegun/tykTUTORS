@@ -13,6 +13,13 @@
 .mycontainer {
   width: 50%;
 }
+
+.no-list-style {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .panel {
   background-color: lightgray;
   display: none;
@@ -40,18 +47,7 @@
   margin-bottom: 5px;
 }
 
-.landingBinder {
-  width: 25%;
-}
 /*  */
-.eyeblind,
-.eyeblind2 {
-  position: relative;
-  z-index: 2;
-  /* margin-left: -25px; */
-  background-color: white;
-  padding: 8px;
-}
 
 .footerlist {
   display: flex;
@@ -67,9 +63,15 @@
   margin: auto 0px;
 }
 /* signupP */
-#signupP, #loginP{
-  width: 64%;
-}
+/* #loginE {
+  width: 70%;
+} */
+
+/* #signupE,
+#loginE {
+  width: 70%;
+} */
+/*  */
 #dbName,
 #schoolE {
   border: none;

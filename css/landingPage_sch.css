@@ -1,0 +1,57 @@
+/* body {
+  background-image: url(/images/software-development-6523979_640.jpg);
+  background-repeat: no-repeat;
+} */
+
+/*  */
+.eyeblind,
+.eyeblind2,
+.envelope {
+  margin-left: -4px;
+  background-color: white;
+  padding: 7px;
+}
+.closebtn {
+  float: right;
+}
+
+.landingBinder {
+  width: 35%;
+}
+.msgBanner,
+.forgotPwBanner {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  /*  */
+  /*  */
+  .leaf {
+    background-color: lightgreen;
+    border-radius: 35px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .landingBinder {
+    width: 69%;
+  }
+  .keepMove {
+    font-size: small;
+  }
+
+  #signupP,
+  #signupE {
+    font-size: medium;
+  }
+  .msgBanner,
+  .forgotPwBanner {
+    width: 50%;
+  }
+}

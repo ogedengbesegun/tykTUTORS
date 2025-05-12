@@ -24,6 +24,7 @@
 
         <link rel="stylesheet" href="/css/my.css">
         <link rel="stylesheet" href="/css/myshool.css">
+        <link rel="stylesheet" href="/css/landingPage_sch.css">
         <title>tykTutor_Sch_LandingPage</title>
     </head>
 </head>
@@ -39,7 +40,7 @@
         <div class="">
             <section class="keepMove">
                 <span>We keep</span>
-                <div class="fas fa-leaf fs-5 text-light leaf"></div><span> you moving...</span>
+                <div class="fas fa-leaf fa-spin fs-5 text-light leaf"></div><span> you moving...</span>
             </section>
 
             <section class="mx-auto w-100  bg-body-tertiary rounded">
@@ -52,19 +53,29 @@
 
                 <form action="" class="">
                     <!-- <label for="signupE d-block">Email</label> -->
-                    <input type="email" name="loginE" id="loginE"
-                        class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required
-                        autocomplete="off">
-                    <!-- <label for="signupP d-block">Password</label>  -->
-                    <input type="password" name="loginP" id="loginP"
-                        class="my-1 rounded-1 no-outline border-0 p-1 mx-auto" placeholder="Password"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$"
-                        title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
-                        required><span class="fas fa-eye-slash text-secondary eyeblind2 pointer"></span>
 
-                    <button type="button" class="btn btn-secondary mb-0 w-75 mx-auto submitlogin">Login <span
+                    <div class=" mx-auto">
+                        <div class="align-items-center text-secondary">
+                            <input type="email" name="loginE" id="loginE" class=" rounded-1 no-outline border-0 p-1"
+                                placeholder="Enter Email" required>
+                            <i class="fas fa-envelope envelope"></i>
+                        </div>
+
+                        <!-- <label for="signupP d-block">Password</label>  -->
+                        <div class="" id="input_eyeblind">
+                            <input type="password" name="loginP" id="loginP"
+                                class="my-1 rounded-1 no-outline border-0 p-1" placeholder="Password"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$"
+                                title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
+                                required>
+                            <i class="fas fa-eye-slash text-secondary eyeblind2 pointer me-0"></i>
+                        </div>
+                    </div>
+
+
+                    <button type="button" class="btn btn-secondary mt-2 mb-0 w-50 mx-auto submitlogin">Login <span
                             class="fas fa-sign-in-alt"></span></button>
-                    <a href="http://" class="d-block text-danger mb-2">forgot password?</a>
+                    <a class="d-block text-danger mb-2 forgotPwd cursor">forgot password?</a>
                     <a class="mb-1 btn btn-sm text-secondary border border-success onpage1">Sign Up <span
                             class="fas fa-user-plus fs-6"></span></a>
                 </form>
@@ -73,29 +84,14 @@
             </section>
         </div>
     </div>
+
     <!--  -->
     <!-- create a Dialog box -->
 
-    <dialog class="mx-auto mt-5 changePW p-3 border-0 rounded-1 ">
-
-        <div class="mt-4 ">
-            <h3 class="text-success text-center text-decoration-underline">forgot password?</h3>
-            <div class="d-grid w-50 mx-auto">
-                <small class="d-block my-0 ms-2 text-danger d-no">Enter Email</small>
-                <input type="email" name="changeE" id="changeE" placeholder="Enter Email"
-                    class="p-2 border-0 no-outline">
-                <input type="text" name="twiloTx" id="twiloTx" class="no-outline border-0 p-2" placeholder="Enter Code">
-            </div>
-            <button type="button" title="Change Password" class="btn btn-secondary mx-auto d-block">Change
-                Password</button>
-        </div>
-
-    </dialog>
-
-    <!-- dialog box -->
+    <!-- dialog box  created in js-->
     <!--  -->
     <!-- template 2 -->
-    <div class="  rounded text-center container  mt-2 landingBinder border-light border-2 py-3 border page2">
+    <div class="  rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page2">
 
         <h1 class="text-bg-secondary p-2 rounded-1  box-shadow">Welcome</h1><span
             class="text-light btn border-light onpage2">Login <span class="fas fa-sign-in-alt"></span></span>
@@ -103,28 +99,34 @@
         <div class="">
             <section class="keepMove">
                 <span>We keep</span>
-                <div class="fas fa-leaf fs-5 text-light leaf"></div><span> you moving...</span>
+                <div class="fas fa-leaf fa-spin fs-5 text-light leaf"></div><span> you moving...</span>
             </section>
 
             <section class="mx-auto w-100  bg-body-tertiary rounded">
                 <p class="text-bg-secondary p-2">Don't miss out anything, test your Knowledge</p>
-                <img src="/images/auth-bg-1.png" alt="login_Page" width="60%" height="30%" class="my-2 pt-1">
+                <img src="/images/auth-bg-1.png" alt="login_Page" width="60%" height="30%"
+                    class="my-2 pt-1 border border-success rounded-1">
                 <!-- <a href="/html/myschool.html" class="btn btn-secondary mb-2 w-75 mx-auto">SignUp with <span
                         class="fab fa-google"></span></a> -->
 
                 <form action="" class="">
                     <!-- <label for="signupE d-block">Email</label> -->
-                    <input type="email" name="signupE" id="signupE"
-                        class=" rounded-1 no-outline border-0 p-1 w-75 mx-auto" placeholder="Enter Email" required
-                        autocomplete="off">
-                    <!-- <label for="signupP d-block">Password</label>  -->
-                    <input type="password" name="signupP" id="signupP"
-                        class="my-1 rounded-1 no-outline border-0 p-1 mx-auto" placeholder="Password"
-                        title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
-                        required><span class="fas fa-eye-slash text-secondary eyeblind pointer"></span>
+                    <div class="">
+                        <div>
+                            <input type="email" name="signupE" id="signupE" class=" rounded-1 no-outline border-0 p-1"
+                                placeholder="Enter Email" required autocomplete="on"><i
+                                class="fas fa-envelope text-secondary envelope"></i>
+                        </div>
+                        <div class="">
+                            <input type="password" name="signupP" id="signupP"
+                                class="my-1 rounded-1 no-outline border-0 p-1" placeholder="Password"
+                                title="Use at least one Uppercase, Lowercase, Digit and Special Characters e.g @ $ & ! ? "
+                                required><span class="fas fa-eye-slash text-secondary eyeblind pointer"></span>
+                        </div>
+                    </div>
 
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-secondary mb-2 w-75 mx-auto submitsignup">Sign Up <span
+                    <div class="d-grid mt-2">
+                        <button type="button" class="btn btn-secondary mb-2 w-50 mx-auto submitsignup">Sign Up <span
                                 class="fas fa-user-plus"></span></button>
                         <button type="button"
                             class="btn btn-sm text-secondary border-success border  mb-2 mx-auto onpage2">Login
@@ -146,6 +148,7 @@
 
 
     <script src="/jscripts/landingPage_sch.js"></script>
+    <!-- <script src="/jscripts/delay.js"></script> -->
 </body>
 
 </html>
