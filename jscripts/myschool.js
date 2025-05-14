@@ -1,22 +1,20 @@
-import { array, item, spinBanner, dialogObj, dialog, delay } from './freeAgents.js'
+import { array, item, spinBanner, dialogObj, dialog, delay } from './freeAgents.js';
+// const url = import.meta.env.VITE_API_login4sch;
+// dotenv.config();
 
+////////
 async function getjson() {
-    const jsons = await fetch("/url.json")
+    const jsons = await fetch('/url.json');
     const jsonResponse = await jsons.json()
     console.log(jsonResponse)
     return jsonResponse
 }
-// getjson()
+getjson()
 ////variable dc
 const nameDB = document.querySelector('.nameDB');
 const inputDB = document.querySelector(".inputDB");
 
-// function spinn() {
-//     const spin = document.createElement('span');
-//     spin.className = `fas fa-spinner fa-spin ms-2`;
-//     spin.style.color = "lightgreen";
-//     nameDB.append(spin);
-// }
+
 
 ////////////
 // nameDB.setAttribute('title', 'Button Disabled')
@@ -75,8 +73,10 @@ async function updateSchR() {
 // const validateEbtn = document.querySelector('#validateEbtn');
 
 async function validateEmail() {
-    spinBanner.showModal()
-    await delay(3000)
+    spinBanner.showModal()//modal
+    //////
+    await delay(3000)///cause some delay
+    ///////////
     const schoolE = document.querySelector('#schoolE').value;
     const dbName = document.querySelector('#dbName').value
     try {
@@ -102,8 +102,12 @@ async function validateEmail() {
             dialog()
             document.querySelector('.dialogMsg').innerHTML = response.message;
             // alert(response.message)
+            document.querySelector('#schoolE').value = '';
+            document.querySelector('#dbName').value = '';
         }
     } catch (error) {
+        dialog();
+        document.querySelector('.dialogMsg').innerHTML = `Check your Network or ${error.message}`
 
     }
     finally {
