@@ -1,4 +1,7 @@
 
+
+// const sgMail = require('@sendgrid/mail')
+
 import dotenv from 'dotenv'; //to have access to the .env 
 import express from 'express';
 import { MongoClient } from 'mongodb';
@@ -390,7 +393,7 @@ client.connect().then(() => {
 
         }
     })
-    
+
 
     ////////Is_email_available
     app.post('/getEmail', async (req, res) => {
@@ -571,12 +574,7 @@ client.connect().then(() => {
 
         const { signupE, signupP } = req.body;
         // /////
-        // const findsignupE = await schoolSignUp.findOne({ email: signupE })
-        // if (findsignupE) {
-        //     signupE === '';
-        //     signupP === '';
-        //     return res.status(401).json({ success: false, message: "Email Already Exists" })
-        // };
+
 
         const saltRounds = 10;
         try {
@@ -612,7 +610,7 @@ client.connect().then(() => {
             const loginsch = await schoolSignUp.findOne({ email: loginE });
 
             if (!loginsch) {
-                return res.status(404).json({ success: false, message: 'Email is Not Found Please, Sign Up'});
+                return res.status(404).json({ success: false, message: 'Email is Not Found Please, Sign Up' });
             }
 
             const match = await bcrypt.compare(loginP, loginsch.password);
@@ -702,6 +700,37 @@ client.connect().then(() => {
         }
     });
 
+    /////senndGrid_Email
+    app.post('/sendGridEmail', async (req, res) => {
+        const { changeE } = req.body;
+        // try {
+
+        const msg = {
+            to: `${changeE}`, // Change to your recipient
+            from: 'wisdomworld28608@gmail.com', // Change to your verified sender
+            subject: 'You are trying to change your email',
+            text: 'Code will be sent to you shortly',
+            html: `<strong>we keep <span class='fas fa-spin fa-leaf'</span> you moving</strong>`,
+        }
+
+        sgMail
+            .send(msg)
+            .then((response) => {
+                console.log(response[0].statusCode)
+                console.log(response[0].headers)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+
+
+
+
+    })
+    // catch (error) {
+    //     console.error('Error sending email:', error);
+    //     res.status(500).json({ success: false, message: 'Error sending email' });
+    // }
 
     // });
 

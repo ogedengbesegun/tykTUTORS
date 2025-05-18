@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="/css/my.css">
     <link rel="stylesheet" href="/css/myshool.css">
+    <link rel="stylesheet" href="/css/sch_login_signup.css">
     <title>tyktutor_Schol Registration</title>
 </head>
 
@@ -69,7 +70,7 @@
 
             </section>
 
-            <section class=" schoolreg  border-1 border-dark  border mx-auto rounded-2 bg-body-tertiary ">
+            <section class="hid schoolreg  border-1 border-dark  border mx-auto rounded-2 bg-body-tertiary ">
 
                 <div class="">
                     <p class="text-center mt-2 mb-0 fw-bold ">REGISTER YOUR SCHOOL HERE</p>
@@ -80,9 +81,10 @@
                         <div class="d-flex mx-auto w-75 mt-3">
                             <input type="text" title="Enter School Email Address" id="schoolE"
                                 placeholder="Enter School Email " class="no-outline"><span
-                                class="fas fa-leaf text-bg-success rounded mx-auto p-1 cursor fs-4"
-                                title="(validate Email)" id="validateEbtn"></span><small
-                                class="text-danger">click</small>
+                                class="fas fa-leaf text-bg-success rounded mx-auto p-1 cursor fs-4 register_sch"
+                                title="(Register Your School)" id="validateEbtn"></span><small
+                                class="text-danger my-1 cursor register_sch"
+                                title="(Register Your School)">Register</small>
                         </div>
                         <!-- <div class="">
                             <i class="fas fa-spinner fa-spin text-center d-block my-1"></i>
@@ -95,18 +97,21 @@
                             placeholder="Enter School Name">
 
                         <button type="button"
-                            class="btn btn-secondary d-block mx-auto w-50 mb-3 text-light fs-5 nameDB">Create
+                            class="btn btn-sm btn-secondary d-block mx-auto w-50 mb-3 text-light fs-6 nameDB">View
                             Database</button>
-
+                        <label
+                            class="showDBname border border-1 text-success fw-bold fs-2 text-center mx-auto d-block w-50"></label>
 
                     </div>
 
                 </div>
 
-
+                <p class="text-center text-success my-1 p-1 fw-bold w-50 mx-auto">This the Best Learning Platform for
+                    your
+                    institution
+                </p>
             </section>
-            <p class="text-center my-1 p-1 fw-bold w-50 mx-auto">This the Best Learning Platform for your institution
-            </p>
+
             <hr class="fw-bold border-1 border border-dark">
 
         </section>
@@ -116,11 +121,11 @@
     <!--  -->
     <section class="mycontainer mx-auto">
         <h1 class="text-success text-center ">Motivated with tykTutor <span class="fas fa-brain"></span></h1>
-        <div id="carouselExampleIndicators" class=" border-1 border-dark border mb-3 rounded-1 mx-auto carousel slide"
+        <div id="carouselExampleIndicators" class=" border-1 border-dark border mb-3 rounded-1  mx-auto carousel slide"
             data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active text-bg-success" aria-current="true" aria-label="Slide 1"></button>
 
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
@@ -152,7 +157,8 @@
 
                     <div class="d-flex">
                         <img src="/images/auth-bg-1.png" class="carouseimg " alt="...">
-                        <p class="my-auto carousetext"> "Learning is not attained by chance, it must be sought for with
+                        <p class="my-auto carousetext p-2 text-center"> "Learning is not attained by chance, it must be
+                            sought for with
                             ardor and attended to with diligence."<B> - Abigail Adams</B>
 
                         </p>

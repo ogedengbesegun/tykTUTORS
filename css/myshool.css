@@ -12,6 +12,7 @@
 .schoolreg,
 .mycontainer {
   width: 50%;
+  height: 100%;
 }
 
 .no-list-style {
@@ -61,7 +62,11 @@
 }
 .carousetext {
   margin: auto 0px;
-}
+} 
+.dialogContainer {
+  width: 25%;
+  
+  }
 /* signupP */
 /* #loginE {
   width: 70%;
@@ -140,6 +145,10 @@
   .carousetext {
     margin: auto 0px;
     font-size: medium;
+  }
+  .dialogContainer {
+  width: 60%;
+  
   }
   /* .panel {
     width: 60%;

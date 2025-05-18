@@ -24,7 +24,7 @@
 
         <link rel="stylesheet" href="/css/my.css">
         <link rel="stylesheet" href="/css/myshool.css">
-        <link rel="stylesheet" href="/css/landingPage_sch.css">
+        <link rel="stylesheet" href="/css/sch_login_signup.css">
         <title>tykTutor_Sch_LandingPage</title>
     </head>
 </head>
@@ -32,10 +32,10 @@
 <body class="text-bg-success pb-2">
 
 
-    <div class=" rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page1">
+    <div class="hide rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page2">
 
-        <h1 class="text-bg-secondary p-2 rounded-1 box-shadow">Welcome</h1><span
-            class="text-light btn border-light onpage1">Sign Up <span class="fas fa-user-plus"></span></span>
+        <h1 class="text-bg-secondary p-2 rounded-1 box-shadow">Login<small class="d-block">School Administrator</small></h1><span
+            class="text-light btn border-light onpage2">Sign Up <span class="fas fa-user-plus"></span></span>
         <h1 class="text-light my-auto h-100">tykTutor <span class="fas fa-graduation-cap"></span></h1>
         <div class="">
             <section class="keepMove">
@@ -76,7 +76,7 @@
                     <button type="button" class="btn btn-secondary mt-2 mb-0 w-50 mx-auto submitlogin">Login <span
                             class="fas fa-sign-in-alt"></span></button>
                     <a class="d-block text-danger mb-2 forgotPwd cursor">forgot password?</a>
-                    <a class="mb-1 btn btn-sm text-secondary border border-success onpage1">Sign Up <span
+                    <a class="mb-1 btn btn-sm text-secondary border border-success onpage2">Sign Up <span
                             class="fas fa-user-plus fs-6"></span></a>
                 </form>
 
@@ -91,10 +91,10 @@
     <!-- dialog box  created in js-->
     <!--  -->
     <!-- template 2 -->
-    <div class="  rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page2">
+    <div class=" rounded text-center container  mt-3 landingBinder border-light border-2 py-3 border page1">
 
-        <h1 class="text-bg-secondary p-2 rounded-1  box-shadow">Welcome</h1><span
-            class="text-light btn border-light onpage2">Login <span class="fas fa-sign-in-alt"></span></span>
+        <h1 class="text-bg-secondary p-2 rounded-1  box-shadow">Signup<small class="d-block">School Administrator</small></h1><span
+            class="text-light btn border-light onpage1">Login <span class="fas fa-sign-in-alt"></span></span>
         <h1 class="text-light my-auto h-100">tykTutor <span class="fas fa-graduation-cap"></span></h1>
         <div class="">
             <section class="keepMove">
@@ -109,7 +109,7 @@
                 <!-- <a href="/html/myschool.html" class="btn btn-secondary mb-2 w-75 mx-auto">SignUp with <span
                         class="fab fa-google"></span></a> -->
 
-                <form action="" class="">
+                <form action="" class="signupForm">
                     <!-- <label for="signupE d-block">Email</label> -->
                     <div class="">
                         <div>
@@ -129,7 +129,7 @@
                         <button type="button" class="btn btn-secondary mb-2 w-50 mx-auto submitsignup">Sign Up <span
                                 class="fas fa-user-plus"></span></button>
                         <button type="button"
-                            class="btn btn-sm text-secondary border-success border  mb-2 mx-auto onpage2">Login
+                            class="btn btn-sm text-secondary border-success border  mb-2 mx-auto onpage1">Login
                             <span class="fas fa-sign-in-alt"></span></button>
                     </div>
                 </form>
@@ -146,8 +146,7 @@
 
 
 
-
-    <script src="/jscripts/landingPage_sch.js" type="module"></script>
+    <script type="module" src="/jscripts/school_login_signup.js"></script>
     <!-- <script src="/jscripts/delay.js"></script> -->
 </body>
 

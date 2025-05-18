@@ -1,4 +1,4 @@
-import { array, item, spinBanner, dialogObj, dialog, delay } from './freeAgents.js';
+import { spinBanner, dialogObj, dialog, delay, dialogInput } from './freeAgents.js';
 // const url = import.meta.env.VITE_API_login4sch;
 // dotenv.config();
 
@@ -19,19 +19,25 @@ const inputDB = document.querySelector(".inputDB");
 ////////////
 // nameDB.setAttribute('title', 'Button Disabled')
 
-if (nameDB.setAttribute('disabled', true)) {
-    nameDB.setAttribute('title', 'Button Disabled')
+// if (nameDB.setAttribute('disabled', true)) {
+//     // nameDB.setAttribute('title', 'Button Disabled')
 
-} else {
-    nameDB.setAttribute('title', 'Create Database')
-}
+// // } else {
+//     nameDB.setAttribute('title', 'Create Database')
+// }
 ///////////////////
 
 
 nameDB.addEventListener("click", () => {
-
-
+    // document.querySelector('.showDBname').textContent = 'segun'
+    dialogInput.showModal();
 });
+///closeup
+const closeup = document.querySelector('.closeup');
+closeup.addEventListener('click', () => {
+    dialogInput.close()
+})
+
 
 //////////panel && menubtn
 const menubtn = document.querySelector('.menubtn');
@@ -55,15 +61,27 @@ rmpanel.addEventListener('click', () => {
 // })
 
 async function updateSchR() {
-    const dbName = document.querySelector('#dbName').value
-    const geturl = await getjson();
+    spinBanner.showModal()//modal
+    //////
+    await delay(3000)///cause some delay
+    ///////////
+    try {
+        const viewDBemail = document.querySelector('#viewDBemail').value;
+        const geturl = await getjson();
 
-    const updatef = await fetch(geturl.updadteschN, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ dbName: dbName })
-    })
-    const respon = await updatef.json()
+        const updatef = await fetch(geturl.updateSchN, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ viewDBemail: viewDBemail })
+        })
+        const respon = await updatef.json()
+
+    } catch (error) {
+
+    }
+    finally {
+        spinBanner.close();
+    }
 
 }
 ////////////
@@ -73,9 +91,19 @@ async function updateSchR() {
 // const validateEbtn = document.querySelector('#validateEbtn');
 
 async function validateEmail() {
-    spinBanner.showModal()//modal
-    //////
-    await delay(3000)///cause some delay
+    if ((document.querySelector('#schoolE').value === '') || (document.querySelector('#dbName').value === '')) {
+        dialog();
+        document.querySelector('.dialogMsg').innerHTML = `Please Enter Email and School Name`
+        return;
+    }
+    else {
+
+        spinBanner.showModal()//modal
+        //////
+        await delay(3000)///cause some delay
+    }
+
+
     ///////////
     const schoolE = document.querySelector('#schoolE').value;
     const dbName = document.querySelector('#dbName').value
@@ -106,24 +134,32 @@ async function validateEmail() {
             document.querySelector('#dbName').value = '';
         }
     } catch (error) {
+
         dialog();
         document.querySelector('.dialogMsg').innerHTML = `Check your Network or ${error.message}`
-
     }
     finally {
         spinBanner.close();
     }
 }
-///////validation btn
-const validateEbtn = document.querySelector('#validateEbtn');
-validateEbtn.addEventListener('click', () => {
-    // const dbName = document.querySelector('#dbName').value
-    if (validateEmail()) {
-        nameDB.removeAttribute('disabled', true)
+///////validation/regidtration of Schools
+const registerSch = document.querySelectorAll('.register_sch');
+registerSch.forEach(registeredSch => {
+    registeredSch.addEventListener('click', () => {
+        if (validateEmail()) {
+            // nameDB.removeAttribute('disabled', true)
 
-    }
+        }
 
-})
+
+    })
+});
+// const validateEbtn = document.querySelector('#validateEbtn');
+// validateEbtn.addEventListener('click', () => {
+//     // const dbName = document.querySelector('#dbName').value
+
+
+// })
 ///////check ifexisting
 
 ////////// to upperCase

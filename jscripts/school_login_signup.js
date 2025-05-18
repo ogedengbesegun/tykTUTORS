@@ -1,6 +1,6 @@
-import { array, item, spinBanner, dialogObj, dialog, delay } from './freeAgents.js';
+import { spinBanner, dialogObj, dialog, delay, confirmDialog, dialogInput } from './freeAgents.js';
 // import { stringify } from "path-to-regexp";
-
+// confirmDialog.showModal();
 
 const eyeblind = document.querySelector('.eyeblind');
 const eyeblind2 = document.querySelector('.eyeblind2');
@@ -62,7 +62,10 @@ const onpage2 = document.querySelectorAll('.onpage2');
 const page1 = document.querySelector('.page1');
 const page2 = document.querySelector('.page2');
 
-page2.style.display = "none"
+window.addEventListener('load', () => {
+    page2.style.display = "none"
+});
+
 
 onpage1.forEach(onpage => {
 
@@ -80,80 +83,6 @@ onpage2.forEach(onpage_2 => {
     });
 });
 
-//////////////////signupE and validation
-///////infrmation banner Dialog//////
-// const dialogObj = {
-//     checkError: `Error! Check your Email Address or Password
-//      Use at least one Uppercase, Lowercase, Digit and 
-//      Special Characters e.g Az 09 @ $ & ! ?`,
-//     emailAlreadyExist: `  Already Exist!!! Check Emaill Address.`,
-//     emailcreated: ` , is Created Successfully`,
-//     spinner: `<i class='fas fa-spin fa-spinner fs-1 text-success'></>`,
-//     Loading: 'Loading...',
-//     checking: `Checking...`,
-//     email: `<span class='fas fa-envelope fs-1'></span`,
-//     atom: `<span class='fas fa-atom fa-spin fs-1'></span>`,
-//     fan: `<span class='fas fa-fan fa-spin fs-1'></span>`,
-//     recycle: `<span class='fas fa-recycle fa-spin fs-1'></span>`,
-//     cog: `<span class='fas fa-cog fa-spin fs-1'></span>`,
-//     sync: `<span class='fas fa-sync fa-spin fs-1'></span>`,
-//     compact_disc: `<span class='fas fa-compact-disc fa-spin fs-1'></span>`,
-//     circle_notch: `<span class='fas fa-circle-notch fa-spin fs-1'></span>`,
-//     yin_yang: `<span class='fas fa-yin-yang fa-spin fs-1'></span>`
-// }
-// dialog()
-// function dialog() {
-//     const infoBanner = document.createElement('dialog');
-//     infoBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
-//     infoBanner.innerHTML = `<h2 class="text-success text-center mt-2">Attention <span class="fas fa-warning text-danger"></span></h2>
-//      <p class="p-2 text-center w-75 mx-auto dialogMsg">
-
-//      </p>
-//      <button class="btn btn-secondary d-block mx-auto mb-2 close ">Close</button>`
-
-//     document.body.append(infoBanner);
-//     infoBanner.showModal()
-
-
-//     ///////////closex
-
-
-
-
-//     closex();
-//     function closex() {
-//         const close = document.getElementsByClassName('close')[0];
-
-//         close.addEventListener('click', () => {
-//             infoBanner.close()
-//             infoBanner.remove(); // Optional: clean up after closing
-
-
-//         })
-//     }
-
-
-
-// };
-
-////////////dialog/////
-
-//rolling()
-// function roling() {
-
-//////spinBanner()
-// const spinBanner = document.createElement('dialog');
-// spinBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
-// spinBanner.innerHTML = `<h2 class="text-success text-center mt-2 spinBannerHeader">Loading... ${dialogObj.fan}</h2>
-//      <p class="p-2 text-center w-75 mx-auto spinText text-success">
-//      ${dialogObj.circle_notch}</p>
-//     `
-
-// document.body.append(spinBanner);
-// spinBanner.showModal()
-// }
-///spinner
-
 
 //url
 // url() getting all url
@@ -165,20 +94,24 @@ async function url() {
 }
 /////////////////////
 
-async function fSubmitsignup() {
+async function fSubmitsignup(e) {
+
     /////
     spinBanner.showModal()
 
     await delay(3000);// cause delay 
-
+    //
+    //////
+    const signupE = document.querySelector('#signupE').value;
+    const signupP = document.querySelector('#signupP').value;
+    ///////
     const getsubmitsignup = await url()
 
     const oksubmitsignup = await getsubmitsignup.submitsignup
     console.log(oksubmitsignup);
     ////////////////////////
 
-    const signupP = document.querySelector('#signupP').value;
-    const signupE = document.querySelector('#signupE').value;
+    // const signupE = document.querySelector('#signupE').value;
     //////////
     try {
 
@@ -195,7 +128,8 @@ async function fSubmitsignup() {
             // if () {
             // setTimeout(() => {
             dialog()
-            document.querySelector('.dialogMsg').textContent = `${signupE}` + dialogObj.emailcreated;
+            document.querySelector('.dialogMsg').textContent = `${signupE}` +
+                dialogObj.emailcreated + ` Please Login to Continue`;
 
             document.querySelector('#signupP').value = '';
             document.querySelector('#signupE').value = '';
@@ -226,31 +160,67 @@ const submitsignup = document.querySelector('.submitsignup');
 /////////////////
 const regexx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//email
 const Regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$&!?])[A-Za-z\d@$&!?]+$/;//password
+
 submitsignup.addEventListener('click', (e) => {
 
-    if (Regex.test(signupP.value) === false || regexx.test(signupE.value) === false) {
 
-
+    // Validate inputs
+    if (!Regex.test(signupP.value) || !regexx.test(signupE.value)) {
         e.preventDefault();
         dialog();
 
+        const dialogMsg = document.querySelector('.dialogMsg');
+        if (dialogMsg) {
+            dialogMsg.textContent = dialogObj.checkError;
+        }
 
-        document.querySelector('.dialogMsg').textContent = dialogObj.checkError;
-
-
-
-
-
-
+        return;
     }
-
-
     else {
-        fSubmitsignup()
+
+        // Yes button action
+        confirmDialog.showModal();
+        const confirmDialogMsg = document.querySelector('.confirmDialogMsg');
+        confirmDialogMsg.textContent = `Are you sure you want to register the email: ${signupE.value}?`;
 
 
+        // Add Yes/No button listeners (run once)
+        const noBtn = document.querySelector('.confirmDialogNo');
+        const yesBtn = document.querySelector('.confirmDialogYes');
+        const signupForm = document.querySelector('.signupForm');
+        function yesFtn() {
 
+            yesBtn.addEventListener('click', () => {
+                fSubmitsignup(e);
+                confirmDialog.close();
+            });
+            // }
+        }
+
+        function noFtn() {
+
+            noBtn?.addEventListener('click', () => {
+
+                signupForm.reset()
+
+
+                confirmDialog.close();
+                // confirmDialog.remove()
+
+                location.reload();
+            });
+        }
+        // Call the functions
+        // if () {
+        yesFtn();
+
+        // } else {
+        noFtn();
+        // }
     }
+    // else {
+
+    // }
 
 
 });
@@ -258,9 +228,18 @@ submitsignup.addEventListener('click', (e) => {
 ////////submitsignup//////////
 ////////
 async function checkEmail() {
-    spinBanner.showModal()
+    const signupE = document.querySelector('#signupE');
 
-    await delay(3000);/// to delay 3000;
+    if (signupE.value === '') {
+        dialog();
+        document.querySelector('.dialogMsg').textContent = `Please Enter a Valid Email Address`;
+        return; //meaning dont proceed further
+    } else {
+        spinBanner.showModal()
+
+        await delay(3000);/// to delay 3000;
+    }
+    ///asynchronous ()
     try {
         const signupE = document.querySelector('#signupE').value;
 
@@ -294,10 +273,7 @@ async function checkEmail() {
         dialog();
         document.querySelector('.dialogMsg').textContent = `Check your Internet Connection or ${error.message}`
         signupE.value = ''
-        // if (response.success === false) {
-        //     dialog();
-        //     document.querySelector('.dialogMsg').textContent = response.message;
-        // }
+
 
     }
     finally {
@@ -310,20 +286,9 @@ signupE.addEventListener('focusout', () => {
     checkEmail()
 
 });
+/////////////////////
 
 
-
-
-// async function delay(m) {
-//     //  const delay = (m) =>
-//     new Promise((resolve) =>
-//         setTimeout(resolve, m)
-
-//     )
-
-// }
-
-//////////////////////////////
 /////////////////////////////
 // schoollogin()
 async function schoollogin() {
@@ -336,13 +301,13 @@ async function schoollogin() {
         document.querySelector('.dialogMsg').textContent = `Please Enter Email and Password`;
         return
     } else {
-    // roling();
+        // roling();
         spinBanner.showModal()
 
 
 
         await delay(3000)
-//cause delay
+        //cause delay
     };
     try {
         const geturl = await url()
@@ -399,7 +364,7 @@ const changePW = document.createElement('dialog');
 
 changePW.className = ` forgotPwBanner mx-auto mt-4 p-2 border-0 rounded-1`;
 changePW.innerHTML = ` 
-            <span class='fas fa-times-circle fs-3 mt-2 text-danger btn cursor mx-auto closebtn' title='Close'></span>
+            <span class='fas fa-times-circle fs-3 mt-2 text-danger btn cursor mx-auto closebtn border-1' title='Close'></span>
                      <div class=" mx-auto mt-5 pt-1">
             <h3 class="text-success text-center text-decoration-underline">forgot password?</h3>
           <h4 class='text-center text-danger'>Instruction:</h4>
@@ -412,7 +377,7 @@ changePW.innerHTML = `
                 <input type="text" name="twiloTx" id="twiloTx" class="no-outline border mt-1 p-2" placeholder="Enter Code">
             </div>
            <div class='d-flex justify-content-center mb-2'> 
-               <button type='button' title='Get Code' class='btn btn-primary me-1'>Get Code</button>
+               <button type='button' title='Get Code' class='btn btn-primary me-1 getCode'>Get Code</button>
                 <button type="button" title="Change Password" class="btn btn-secondary">Change
                 Password</button>
             </div>
@@ -425,15 +390,84 @@ const forgotPwd = document.querySelector('.forgotPwd');
 
 forgotPwd.addEventListener('click', () => {
     changePW.showModal();
+    const closebtn = document.querySelector('.closebtn');
 
+
+    // changePW.remove();
 })
 
 const closebtn = document.getElementsByClassName('closebtn')[0];
+closebtn.style.transition = 'all 0.5s ease-in-out';
+closebtn.style.transform = 'scale(0.98)';
+
+//closebtn closeModal
 closebtn.addEventListener('click', () => {
     changePW.close();
     // changePW.remove();
 })
-// function showM() {
-//     changePW.showModal()
-// };
-// showM()
+
+
+//mouseover
+closebtn.addEventListener('mouseover', () => {
+    closebtn.classList.add('border-danger');
+
+});
+//mouseout
+closebtn.addEventListener('mouseout', () => {
+    closebtn.classList.remove('border-danger');
+
+});
+//////https://api.sendgrid.com/v3/
+
+async function requestGridEmail() {
+    const changeE = document.querySelector('#changeE');
+    if (changeE.value === '') {
+        dialog();
+        document.querySelector('.dialogMsg').textContent = `Please Enter a Valid Email Address`;
+        return; //meaning dont proceed further
+    } else {
+        spinBanner.showModal()
+
+        await delay(3000);/// to delay 3000;
+    }
+    try {
+
+        const fsendGrid = await url();
+        const sendGridrequest = await fetch(fsendGrid.sendGridEmail, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ changeE: changeE.value })
+        });
+
+        sendGridrequest = await fsendGrid.json();
+        if (sendGridrequest) {
+            dialog();
+            document.querySelector('.dialogMsg').textContent = `Code Sent to ${changeE.value} Successfully`;
+            setTimeout(() => {
+                changeE.value = '';
+                changePW.close();
+            }, 2000);
+
+        } else {
+            dialog();
+            document.querySelector('.dialogMsg').textContent = `Server Error, Failure to send Code`;
+        }
+    }
+    catch (error) {
+        dialog();
+        document.querySelector('.dialogMsg').textContent = `Check your Internet Connection`;
+        changeE.value = '';
+    }
+    finally {
+        spinBanner.close();
+    }
+}
+////on click getCodebtn
+const getCode = document.querySelector('.getCode');
+getCode.addEventListener('click', () => {
+    requestGridEmail();
+    const changeE = document.querySelector('#changeE');
+    changeE.value = '';
+    changePW.close();
+    // changePW.remove();
+})
