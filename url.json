@@ -48,5 +48,5 @@
   "updateSchN": "https://tyktutors.onrender.com/updateSchN",
   "validateEmail": "https://tyktutors.onrender.com/validateEmail",
   "login4sch": "https://tyktutors.onrender.com/login4sch",
-  "sendGridEmail": "https://api.sendgrid.com/v3/"
+  "sendGridEmail": "https://tyktutors.onrender.com/sendGridEmail"
 }

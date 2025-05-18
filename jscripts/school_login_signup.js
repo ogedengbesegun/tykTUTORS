@@ -433,6 +433,7 @@ async function requestGridEmail() {
     try {
 
         const fsendGrid = await url();
+        console.log(fsendGrid.sendGridEmail)
         const sendGridrequest = await fetch(fsendGrid.sendGridEmail, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -466,8 +467,8 @@ async function requestGridEmail() {
 const getCode = document.querySelector('.getCode');
 getCode.addEventListener('click', () => {
     requestGridEmail();
-    const changeE = document.querySelector('#changeE');
-    changeE.value = '';
+    // const changeE = document.querySelector('#changeE');
+    // changeE.value = '';
     changePW.close();
     // changePW.remove();
 })
