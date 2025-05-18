@@ -333,7 +333,7 @@ if (mouseEnter) {
 const schoollogin = document.querySelector('.schoollogin');
 if (schoollogin) {
     schoollogin.addEventListener('click', () => {
-        window.open('/html/landingPage_Sch.html', '_blank')
+        window.open('/html/school_login_signup.html', '_blank')
     })
 }
 
