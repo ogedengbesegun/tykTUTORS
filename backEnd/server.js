@@ -701,29 +701,29 @@ client.connect().then(() => {
     });
 
     /////senndGrid_Email
-    // app.post('/sendGridEmail', async (req, res) => {
-    //     const { changeE } = req.body;
-    //     // try {
+    app.post('/sendGridEmail', async (req, res) => {
+        const { changeE } = req.body;
+        // try {
 
-    //     const msg = {
-    //         to: `${changeE}`, // Change to your recipient
-    //         from: 'wisdomworld28608@gmail.com', // Change to your verified sender
-    //         subject: 'You are trying to change your email',
-    //         text: 'Code will be sent to you shortly',
-    //         html: `<strong>we keep <span class='fas fa-spin fa-leaf'</span> you moving</strong>`,
-    //     }
+        const msg = {
+            to: `${changeE}`, // Change to your recipient
+            from: 'wisdomworld28608@gmail.com', // Change to your verified sender
+            subject: 'You are trying to change your email',
+            text: 'Code will be sent to you shortly',
+            html: `<strong>we keep <span class='fas fa-spin fa-leaf'</span> you moving</strong>`,
+        }
 
-    //     sgMail
-    //         .send(msg)
-    //         .then((response) => {
-    //             console.log(response[0].statusCode)
-    //             console.log(response[0].headers)
-    //         })
-    //         .catch((error) => {
-    //             console.error(error)
-    //         })
+        sgMail
+            .send(msg)
+            .then((response) => {
+                console.log(response[0].statusCode)
+                console.log(response[0].headers)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
 
-    // })
+    })
 
 
     /////////////////
