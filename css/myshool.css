@@ -62,11 +62,10 @@
 }
 .carousetext {
   margin: auto 0px;
-} 
+}
 .dialogContainer {
   width: 25%;
-  
-  }
+}
 /* signupP */
 /* #loginE {
   width: 70%;
@@ -147,8 +146,7 @@
     font-size: medium;
   }
   .dialogContainer {
-  width: 60%;
-  
+    width: 60%;
   }
   /* .panel {
     width: 60%;
@@ -171,5 +169,9 @@
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  
+  .schoolreg {
+    width: 85%;
   }
 }

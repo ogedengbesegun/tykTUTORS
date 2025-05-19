@@ -40,7 +40,7 @@
   }
 
   .landingBinder {
-    width: 69%;
+    width: 65%;
   }
   .keepMove {
     font-size: small;
@@ -53,5 +53,10 @@
   .msgBanner,
   .forgotPwBanner {
     width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .landingBinder {
+    width: 85%;
   }
 }
