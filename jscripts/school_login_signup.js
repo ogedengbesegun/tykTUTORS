@@ -364,8 +364,8 @@ const changePW = document.createElement('dialog');
 
 changePW.className = ` forgotPwBanner mx-auto mt-4 p-2 border-0 rounded-1`;
 changePW.innerHTML = ` 
-            <span class='fas fa-times-circle fs-3 mt-2 text-danger btn cursor mx-auto closebtn border-1' title='Close'></span>
-                     <div class=" mx-auto mt-5 pt-1">
+            <span class='fas fa-times-circle fs-3 d-block w-25 opacity-50 mx-auto text-danger btn cursor  closebtn border-1' title='Close'></span>
+                     <div class=" mx-auto mt-1 pt-1">
             <h3 class="text-success text-center text-decoration-underline">forgot password?</h3>
           <h4 class='text-center text-danger'>Instruction:</h4>
             <p class=' text-center px-2'>1. Click the Get Code Button to have codes sent to your Registered Email.</p>
@@ -471,4 +471,44 @@ getCode.addEventListener('click', () => {
     // changeE.value = '';
     changePW.close();
     // changePW.remove();
-})
+});
+
+//////closeLogin
+const closeLogin = document.querySelector('.closeLogin');
+closeLogin.addEventListener('click', () => {
+
+    let url = '/index.html';
+    const alreadyOpened = window.open(url, '_blank');
+    if (alreadyOpened) {
+        // alreadyOpened.close();
+        window.history.back();
+        setTimeout(() => {
+            window.close()
+        }, 2000)
+
+    }
+    // else {
+    //     // window.open(url, '_blank')
+    // }
+
+
+
+    //     const w = window.open(url, '_blank');
+    //     if (w) windows.push(w);
+    // for (let i = 0; i < 3; i++) {
+    //     let url = '/index.html';
+
+    //     const w = window.open(url, '_blank');
+    //     if (w) windows.push(w);
+    // }
+
+    // // Close all but the last
+    // for (let i = 0; i < windows.length - 1; i++) {
+    //     windows[i].close();
+    // }
+
+    // window.close();
+});
+
+/////
+

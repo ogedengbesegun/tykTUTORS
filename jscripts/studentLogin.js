@@ -1,3 +1,4 @@
+import { spinBanner, dialogObj, dialog, delay, dialogInput } from './freeAgents.js';
 
 // document.querySelector(".start").disabled = true;
 document.querySelector(".start").disabled = true;
@@ -33,25 +34,21 @@ logid.addEventListener('input', () => {
 
 
 
-let xhttp1 = new XMLHttpRequest();
-xhttp1.onreadystatechange = () => {
+// let xhttp1 = new XMLHttpRequest();
+// xhttp1.onreadystatechange = () => {
 
 
 
-    if (this.readyState == 4 && this.status == 200) {
-        // Typical action to be performed when the document is ready:
+//     if (this.readyState == 4 && this.status == 200) {
+//         // Typical action to be performed when the document is ready:
 
-        console.log(xhttp1.responseText);
+//         console.log(xhttp1.responseText);
 
-        // var response1 = JSON.parse(xhttp1.responseText)
-
-
-
-        // console.log(class1AID)
+//         // var response1 = JSON.parse(xhttp1.responseText)
 
 
 
-
+//         // console.log(class1AID)
 
 
 
@@ -59,14 +56,18 @@ xhttp1.onreadystatechange = () => {
 
 
 
-    }
 
 
 
-}
 
-xhttp1.open("GET", "/subjectsJSON/studentLogin.json", true);
-xhttp1.send();
+//     }
+
+
+
+// }
+
+// xhttp1.open("GET", "/subjectsJSON/studentLogin.json", true);
+// xhttp1.send();
 
 
 
@@ -76,19 +77,34 @@ logid.addEventListener("focusin", () => {
 
 
 
-
-function Login(e) {
+// Login(e)
+// function Login() {
+document.querySelector('.Login').addEventListener('click', (e) => {
     let logid = document.querySelector('#logid');//call for the logid
     let passwd = document.querySelector('#passwd');
-
+    const selectTime = document.querySelector('#selectTime');
+    const selectQstn = document.querySelector('#selectQstn');
     sessionStorage.setItem("name", logid.value);// sessionStorage.setItem()method
     logid.value = logid.value.trim()
     // -------------------------------------------------
-
+    //|| selectTime.value === 'Select Time' || selectQstn.value === 'Select Questions'
     if (logid.value === '' || passwd.value === '') {
-        // e.preventDefault()
-        alert('Please enter Surname, Password')
-    } else {
+        e.preventDefault()
+        dialog();
+        const dialogMsg = document.querySelector('.dialogMsg')
+        dialogMsg.style.color = 'red';
+        dialogMsg.textContent = "Please enter Surname, Password or both";
+        // alert('Please enter Surname, Password')
+    } else if (
+        selectTime.value === '0' || selectQstn.value === '0') {
+        e.preventDefault();
+        dialog();
+        const dialogMsg = document.querySelector('.dialogMsg')
+        dialogMsg.style.color = 'red';
+        dialogMsg.textContent = "Please select Time and Questions";
+    }
+    // if the logid and password is not empty, then launch the loginUser function
+    else {
         //launch the loginUser function
         setTimeout(() => {
             loginUser();
@@ -97,11 +113,7 @@ function Login(e) {
 
     }
 
-
-
-
-
-}
+});
 
 
 
@@ -120,7 +132,7 @@ async function loginUser() {
             setTimeout(resolve, m)
         )
     await delay(2000)
-    
+
     ///////
     async function fUsers() {// get http url
         const userurl = await fetch("/url.json");

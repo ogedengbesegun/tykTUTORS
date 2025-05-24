@@ -129,41 +129,70 @@
 
         <!-- login Page financial accounting start page -->
         <div class="container">
-            <section class="quiz bg-dark px-3 pb-4 rounded-4 mt-2 mb-3 z-3">
-                <div class="">
-                    <button type="button" title="Close Page" class=" btn my-3">
+            <section class="quiz  px-3 pb-4 rounded-4 mt-2 mb-3 z-3">
+                <!-- <div class=""> -->
+                <div class="d-flex justify-content-between mb-2">
+                    <button type="button" title="Close Page to quit" class=" btn my-3">
                         <i class="fas fa-power-off text-light rounded-4  fs-1 powerOff "></i>
 
                     </button>
                     <!-- <div class=" sel_and_pointer my-4"> -->
-                    <select title="Select Subject" name="subjPick" id="subj"
-                        class="  no-outline text-bg-dark selectsubj rounded-3 ">
-                        <!-- <option class=" text-center">Select One</option> -->
-                        <option value="">Select a Subject</option>
-                        <option value="engl" class="option">English-Language</option>
-                        <option value="math" class="option">Mathematics</option>
-                        <option value="fina" class="option">Financial-Accounting</option>
-                        <option value="econ" class="option">Economics</option>
-                        <option value="comp" class="option">Computer-Studies</option>
-                        <option value="biol" class="option">Biology</option>
-                        <option value="phys" class="option">Physics</option>
-                        <option value="chem" class="option">Chemistry</option>
-                        <option value="furt" class="option">Further-Mathematics</option>
-                        <option value="comm" class="option">Commerce</option>
-                        <option value="lite" class="option">Literature-in-English</option>
-                        <option value="gove" class="option">Government</option>
-                        <option value="civi" class="option">Civic-Education</option>
-                        <option value="mart" class="option">Marketing</option>
-                        <option value="proc" class="option">Data-Processing</option>
-                        <option value="anim" class="option">Animal-Husbandry</option>
+                    <div class="selectOptions text-center mt-3">
+                        <select title="Select Subject" name="subjPick" id="subj"
+                            class="  no-outline text-bg-dark selectsubj rounded-3 ">
+                            <!-- <option class=" text-center">Select One</option> -->
+                            <option value="" class="text-bg-primary">Select a Subject</option>
+                            <option value="engl" class="option">English-Language</option>
+                            <option value="math" class="option">Mathematics</option>
+                            <option value="fina" class="option">Financial-Accounting</option>
+                            <option value="econ" class="option">Economics</option>
+                            <option value="comp" class="option">Computer-Studies</option>
+                            <option value="biol" class="option">Biology</option>
+                            <option value="phys" class="option">Physics</option>
+                            <option value="chem" class="option">Chemistry</option>
+                            <option value="furt" class="option">Further-Mathematics</option>
+                            <option value="comm" class="option">Commerce</option>
+                            <option value="lite" class="option">Literature-in-English</option>
+                            <option value="gove" class="option">Government</option>
+                            <option value="civi" class="option">Civic-Education</option>
+                            <option value="mart" class="option">Marketing</option>
+                            <option value="proc" class="option">Data-Processing</option>
+                            <option value="anim" class="option">Animal-Husbandry</option>
 
 
 
-                    </select>
+                        </select>
 
-                    <i class="fas fa-arrow-left text-danger pointer"></i>
-                    <!-- </div> -->
-                </div>
+                        <!-- <i class="fas fa-arrow-left text-danger pointer"></i> -->
+                        <!-- </div> -->
+                        <select title="Select Time" name="selectTime" id="selectTime"
+                            class="rounded-3 no-outline text-bg-dark ">
+                            <option value="0" class="text-bg-primary text-center">Select Time</option>
+                            <option value="1" class="text-bg-success text-center">5 min</option>
+                            <option value="2" class="text-bg-success text-center">10 min</option>
+                            <option value="3" class="text-bg-success text-center">20 min</option>
+                            <option value="4" class="text-bg-success text-center">30 min</option>
+                            <option value="5" class="text-bg-success text-center">1 hour</option>
+                        </select>
+                        <p class="showTime hide text-light"></p>
+                        <select title="Select Desired Numbers of Questions" name="selectQstn" id="selectQstn"
+                            class="rounded-3 no-outline text-bg-dark selectsubj">
+                            <option value="0" class="text-bg-primary text-center">Select Questions</option>
+                            <option value="10" class="text-bg-success text-center">10 Questions</option>
+                            <option value="20" class="text-bg-success text-center">20 Questions</option>
+                            <option value="30" class="text-bg-success text-center">30 Questions</option>
+                            <option value="40" class="text-bg-success text-center">40 Questions</option>
+                            <option value="50" class="text-bg-success text-center">50 Questions</option>
+                            <option value="60" class="text-bg-success text-center">60 Questions</option>
+                            <option value="70" class="text-bg-success text-center">70 Questions</option>
+                            <option value="80" class="text-bg-success text-center">80 Questions</option>
+                            <option value="90" class="text-bg-success text-center">90 Questions</option>
+                            <option value="100" class="text-bg-success text-center">100 Questions</option>
+
+                        </select>
+                    </div>
+                </div> <!-- button and selectoption -->
+                <!-- </div> -->
                 <p class="h3 text-light text-center mb-3 fw-bold  float-center hide dUserName"></p>
 
                 <!-- <h5 class="text-light">Welcome: Segun</h5> -->
@@ -178,7 +207,7 @@
                 <!-- <div class="seescore text-dark btn btn-light"></div> -->
                 <div class="card mt-2 rounded-2">
 
-                    <div class="hide4login">
+                    <div class="hide4login mt-1">
                         <div class="d-flex justify-content-center">
                             <h4 class=" text-center text-success mx-2">tykTUTORS <span
                                     class="fas fa-graduation-cap"></span>
@@ -203,7 +232,7 @@
                             <!-- a dialog to display error msg -->
                             <dialog class="bg-light border-0 mx-auto my-auto rounded-2 invalidmsg">
                                 <div class="d-flex justify-content-center pt-2 fs-3">
-                                    <p class="text-primary">tykTutors Says...</p><span
+                                    <p class="text-success">tykTutors Says...</p><span
                                         class="fas fa-exclamation-triangle text-danger ms-1 fs-1 "></span>
                                 </div>
                                 <h6 class="text-danger">Oops! Invalid input </h6>
@@ -217,8 +246,8 @@
                             </dialog>
                             <!-- ------- -->
                             <button type="button" title="Click to Login"
-                                class="btn btn-secondary border-2 border-light  mx-auto  mt-2 d-block rounded-2 loginEx"
-                                onclick="Login()">Login<span class="fas fa-user ms-1 text-light"></span> </button>
+                                class="btn btn-secondary border-2 border-light  mx-auto  mt-2 d-block rounded-2 Login loginEx">Login<span
+                                    class="fas fa-user ms-1 text-light"></span> </button>
                             <small title="forgot password?" class="text-light forgotPwd cursor">forgot password
                                 ?</small>
 
@@ -247,8 +276,9 @@
                             </dialog>
                         </form>
                         <!-- <a href="/html/signUp.html" class=""> -->
-                        <p title="Sign Up" class="text-light mt-1 cursor sign-up">Sign Up <span
-                                class="fas fa-right-to-bracket"></span></p>
+                        <p title="Sign Up" class="text-light mt-1 cursor sign-up border mx-auto w-25 rounded-2">Sign Up
+                            <span class="fas fa-right-to-bracket"></span>
+                        </p>
                         <!-- </a> -->
                     </div>
                     <!-- start page end -->
@@ -259,7 +289,7 @@
                         <div class="border-primary border-1 border rounded-1 py-1">
                             <h5 class="text-dark text-center mx-1 text-decoration-underline">tykTUTORS Says...<i
                                     class="fas fa-warning text-danger ms-2 fs-3"></i></h5>
-                            <p class="dialog_text text-center text-dark fw-bold h6 my-3 mx-2">
+                            <p class="dialog_text text-center fw-bold h6 my-3 mx-2">
 
                             </p>
                             <div class="text-center my-2 d-flex px-2 justify-content-center">
@@ -454,7 +484,7 @@
 
     <!-- scripts  -->
 
-    <script src="/jscripts/studentLogin.js"></script>
+    <script src="/jscripts/studentLogin.js" type="module"></script>
 
     <script src="/jscripts/ogd.js"></script>
     <script src="/allSubjects/allsub.js"></script>

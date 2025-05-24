@@ -14,11 +14,14 @@
 .quiz {
   width: 70%;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.69);
 }
-
+.dialog-lg {
+  width: 30%;
+}
 /* loginEx */
-.loginEx{
-  width:37%
+.loginEx {
+  width: 37%;
 }
 .selectsubj {
   padding: 2px;
@@ -33,6 +36,9 @@
     width: 90%;
     margin: 0 auto;
   }
+  .dialog-sm {
+    width: 50%;
+  }
 }
 
 @media (max-width: 321px) {
@@ -43,7 +49,8 @@
   .selectsubj {
     width: 60%;
   }
-/* 
+  
+  /* 
   selectsubmsg {
     width: 100%;
   } */

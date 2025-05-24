@@ -1,7 +1,4 @@
 // --------------------------------------------------
-
-//
-
 // declare the variables in this project
 
 // to declare the show result input element id
@@ -36,8 +33,8 @@ let sty;
 sty = {
     marginTop: "250px",
     color: "light",
-    width: "55%",
-    
+
+
 }
 
 
@@ -45,24 +42,24 @@ sty = {
 
 
 let selectsubmsg = document.createElement('dialog');
-selectsubmsg.className = `border-1
- text-center rounded-3 mx-auto`;
+selectsubmsg.className = `border-0  
+ text-center rounded-2 mx-auto dialog-lg dialog-sm position top-0 `;
 const styleProp = selectsubmsg.style
 styleProp.marginTop = sty.marginTop;
 styleProp.backgroundColor = sty.color;
-styleProp.width = sty.width;
+// styleProp.width = sty.width;
 
-selectsubmsg.innerHTML = `<h3 class='text-danger mt-2 px-2'>Select a Subject First</h3>
+selectsubmsg.innerHTML = `<h3 class='text-success mt-2 px-2'>Select a Subject First</h3>
 <p class='text-center mx-2 w-75 mx-auto'>Please ensure you have selected the Subject of
  choice first before login can be enabled !!!</p>
  <button type='button' title='info' 
- class='btn btn-secondary mx-auto w-50 mb-3
+ class='btn btn-secondary mx-auto  mb-3
  info'>Ok</button>`;
 
 
 document.body.append(selectsubmsg);
 // studentlogininput.addEventListener("mouseenter", () => {
-selectsubmsg.showModal();
+selectsubmsg.show();
 // }, { once: true });
 
 const info = document.querySelector('.info');
@@ -240,9 +237,109 @@ function selectOne() {
     }
 }
 
+const selectTime = document.querySelector('#selectTime');
+const selectQstn = document.querySelector('#selectQstn');
+
+///////
+// let getTime;
 
 
-// });
+
+let timeqstn;// seting Time ffor the queestion chosen by the user
+// const showTime = document.querySelector('.showTime');
+function getSelectTime() {
+    if (selectTime.value === '1') {
+        timeqstn = 5;
+        // showTime.textContent = timeqstn;
+    }
+    else if (selectTime.value === '2') {
+        timeqstn = 10;
+        // showTime.textContent = timeqstn;
+    }
+    else if (selectTime.value === '3') {
+        timeqstn = 20;
+        // showTime.textContent = timeqstn;
+    }
+    else if (selectTime.value === '4') {
+        timeqstn = 30;
+        // showTime.textContent = timeqstn;
+    }
+    else if (selectTime.value === '5') {
+        timeqstn = 60;
+        // showTime.textContent = timeqstn;
+    }
+    else {
+        timeqstn = 0;
+        // showTime.textContent = timeqstn;
+    }
+    return timeqstn;
+}
+selectTime.addEventListener('input', () => {
+    timeqstn = getSelectTime();
+    console.log(timeqstn); // Initialize with 0 if not set
+
+    // console.log(timeqstn += timeqstn); // Shows the updated timeqstn value
+});
+// 
+let getQstn;
+function getSelectQstn() {
+    if (selectQstn.value === '10') {
+        getQstn = 10;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '20') {
+        getQstn = 20;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '30') {
+        getQstn = 30;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '40') {
+        getQstn = 40;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '50') {
+        getQstn = 50;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '60') {
+        getQstn = 60;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '70') {
+        getQstn = 70;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '80') {
+        getQstn = 80;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '90') {
+        getQstn = 90;
+        // showQstn.textContent = getQstn;
+    }
+    else if (selectQstn.value === '100') {
+        getQstn = 100;
+        // showQstn.textContent = getQstn;
+    }
+
+    else {
+        getQstn = 0;
+        // showQstn.textContent = getQstn;
+    }
+    return getQstn;
+};
+selectQstn.addEventListener('input', () => {
+    getQstn = getSelectQstn();
+    console.log(getQstn); // Initialize with 0 if not set
+
+    // console.log(getQstn += getQstn); // Shows the updated getQstn value
+});
+
+
+
+
 //color selection
 const color = {
     green: '#009900',
@@ -301,64 +398,7 @@ subjPwd.setAttribute("maxlength", 15)
 
 
 
-// // this uses the select element value
-// subjSelect.addEventListener("click", () => {
-//     // dialog7.style.display = "none"
 
-//     // 
-
-//     if (subjSelect.value === "fina") {
-
-
-//         setTimeout(() => {
-//             scoreSheetHead.style.display = "block";
-//             // close up the current page
-//             subjResultLogin.style.display = "none";
-
-//             // to clear off the inputs
-//             // -------------------------
-//             subjId.value = "";
-//             subjPwd.value = "";
-
-//             showselect.style.display = "none";
-
-//             msgUser.textContent = "";
-//             // -----------------------
-
-//         }, 2000);
-
-
-//         bell.style.display = "none";
-
-//         dialog7.close();
-
-//     }
-//     else if (subjSelect.value === "Select One") {
-//         document.querySelector("option").disabled = true;
-//     }
-
-//     else {
-
-
-
-//         dialog7.show()
-//         bell.style.color = "red";
-//         bell.style.display = "inline";
-
-
-//     }
-
-
-// });
-
-// subjSelect.addEventListener("mouseenter", () => {
-//     dialog7.style.display = "none"
-
-
-// });
-
-
-// this is to display error msg on on readonly attribute
 
 
 
@@ -375,43 +415,7 @@ closeDlg.addEventListener("click", () => {
 
 // vanilla script.////////////////
 
-//1. onclick class:loginR, button
-loginR.addEventListener("click", () => {
-    for (let i = 0; i < logDetail.length; i++) {
-        if ((logDetail[i].id === `${subjId.value}`) && (logDetail[i].pwd === `${subjPwd.value}`)) {
 
-            // to  msg the user
-            msgUser.textContent = "Successfully";
-
-
-            // to show select Subject and showselect
-            showselect.style.display = "block";
-
-            // to remove text-danger class from msgUser
-            msgUser.classList.remove("text-danger");
-
-            break;///to stop others from running
-        }
-        else {
-
-            msgUser.textContent = "Incorrect Details";
-
-            msgUser.classList.add("text-danger")
-        }
-
-
-
-    };
-});
-
-//2. clear the input values on focus of the cursor [err correction]
-subjPwd.addEventListener("click", () => {
-    subjPwd.value = "";
-
-    showselect.style.display = "none";
-
-    msgUser.textContent = "";
-})
 
 
 // home page navigating back
@@ -501,7 +505,8 @@ function start() {
 
 
     document.querySelector(".start").disabled = true; // not clickable again
-
+    selectTime.disabled = true; // not clickable again
+    selectQstn.disabled = true; // not clickable again
 
     ///////////////////////////
     // send request to the server
@@ -595,7 +600,7 @@ function start() {
             ////////
             const totalBlocks = 200;
             // Number of blocks to load per batch
-            const batchSize = qstnsSet;
+            const batchSize = getQstn // to set the number of questions to load
             // Current index of loaded blocks
             let currentIndex = 0;
 
@@ -894,9 +899,24 @@ function start() {
                 let allinput = document.querySelectorAll(".allinput")
                 allinput.forEach(Eachinput => {
                     Eachinput.disabled = true;
+
+
                 });
 
+                setTimeout(() => {
+                    // this will display the result sheet
 
+                    dialog_msg.showModal();
+                    dialog_text.style.color = "red";
+                    dialog_text.textContent = `Time is Up!`;
+                    dialog_btn_ok.textContent = "Ok";
+                    dialog_btn_cancel.style.display = "none";
+                    dialog_btn_ok.addEventListener('click', () => {
+                        dialog_msg.close();
+                        showResult();
+                    });
+
+                }, 3000)
             }
 
 
@@ -904,7 +924,7 @@ function start() {
 
 
         }, 1000);
-        let duration = (10 * 60);
+        let duration = (timeqstn * 60);
 
     }
 
@@ -951,6 +971,7 @@ function start() {
 }
 
 // funtion to show result
+
 function showResult() {
 
     // 2. to display the candidates result 
@@ -963,7 +984,7 @@ function showResult() {
     // console.log(rpt3)
     // console.log(rpt4)
 
-    let allScore = score / qstnsSet * 100 + "%"//* 10 + "%"
+    let allScore = score / getQstn * 100 + "%"//* 10 + "%"
     console.log(allScore)
     // ------------------------------------------------
 

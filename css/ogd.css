@@ -253,7 +253,7 @@ h5 {
   background-color: #747277;
   color: white;
   border-radius: 10px;
-  width: 40%;
+  /* width: 40%; */
   margin-top: 10px;
 }
 
@@ -310,10 +310,6 @@ h5 {
   /* background-image: url(/images/software-development-6523979_640.jpg); */
 }
 
-/* .StudentName {
-  text-wrap: nowrap;
-  font-size: medium;
-} */
 
 button[title="Next Question"]:hover,
 button[title="Previous Question"]:hover {

@@ -334,7 +334,11 @@ const schoollogin = document.querySelector('.schoollogin');
 if (schoollogin) {
     schoollogin.addEventListener('click', () => {
         window.open('/html/school_login_signup.html', '_blank')
-    })
+        setTimeout(() => {
+            window.close();
+        }, 2000)
+    });
+
 }
 
 
