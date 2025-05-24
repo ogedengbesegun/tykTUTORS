@@ -227,14 +227,14 @@ function selectOne() {
 
     }
 
-    if (subject.textContent != "Select a Subject") {
-        studentlogininput.removeAttribute('readonly', true);
+    // if (subject.textContent != "Select a Subject") {
+    //     studentlogininput.removeAttribute('readonly', true);
 
-    }
-    else {
-        studentlogininput.setAttribute('readonly', true);
+    // }
+    // else {
+    //     studentlogininput.setAttribute('readonly', true);
 
-    }
+    // }
 }
 
 const selectTime = document.querySelector('#selectTime');
@@ -984,7 +984,7 @@ function showResult() {
     // console.log(rpt3)
     // console.log(rpt4)
 
-    let allScore = score / getQstn * 100 + "%"//* 10 + "%"
+    let allScore = Math.floor(Math.random() * (score / getQstn)) * 100 + "%"//* 10 + "%"
     console.log(allScore)
     // ------------------------------------------------
 
