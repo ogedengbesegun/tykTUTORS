@@ -103,6 +103,14 @@ document.querySelector('.Login').addEventListener('click', (e) => {
         dialogMsg.style.color = 'red';
         dialogMsg.textContent = "Please select Time and Questions";
     }
+    else if (document.querySelector('#subj').value === "0") {
+        e.preventDefault();
+        dialog();
+        const dialogMsg = document.querySelector('.dialogMsg')
+        dialogMsg.style.color = 'red';
+        dialogMsg.textContent = `Please ensure you have selected a Subject 
+        of choice first before login can be enabled !!!`;
+    }
     // if the logid and password is not empty, then launch the loginUser function
     else {
         //launch the loginUser function

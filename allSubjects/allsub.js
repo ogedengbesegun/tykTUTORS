@@ -20,8 +20,8 @@ studentcolor.style.backgroundColor = '#3333ff'//the backgroud set onload
 
 
 ////////
-const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
-studentlogininput.setAttribute('readonly', true);
+// const studentlogininput = document.querySelector('.studentlogin input[type="password"]')
+// studentlogininput.setAttribute('readonly', true);
 
 
 
@@ -59,7 +59,7 @@ selectsubmsg.innerHTML = `<h3 class='text-success mt-2 px-2'>Select a Subject Fi
 
 document.body.append(selectsubmsg);
 // studentlogininput.addEventListener("mouseenter", () => {
-selectsubmsg.show();
+// selectsubmsg.show();
 // }, { once: true });
 
 const info = document.querySelector('.info');
