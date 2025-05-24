@@ -19,6 +19,10 @@
 .dialog-lg {
   width: 30%;
 }
+/* sign-up */
+.sign-up {
+  width: 20%;
+}
 /* loginEx */
 .loginEx {
   width: 37%;
@@ -39,9 +43,12 @@
   .dialog-sm {
     width: 50%;
   }
+  .sign-up {
+    width: 30%;
+  }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 375px) {
   .pointer {
     display: none;
     /* margin-left: 0px; */
@@ -49,7 +56,10 @@
   .selectsubj {
     width: 60%;
   }
-  
+
+  .sign-up {
+    width: 50%;
+  }
   /* 
   selectsubmsg {
     width: 100%;
