@@ -172,6 +172,12 @@
   }
   
   .schoolreg {
-    width: 85%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  
+   .schoolreg {
+    width: 88%;
   }
 }
