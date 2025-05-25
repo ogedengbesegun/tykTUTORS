@@ -984,14 +984,14 @@ function showResult() {
     // console.log(rpt3)
     // console.log(rpt4)
 
-    let allScore = Math.floor(Math.random() * (score / getQstn)) * 100 + "%"//* 10 + "%"
+    let allScore = (score / getQstn) * 100 //* 10 + "%"
     console.log(allScore)
     // ------------------------------------------------
 
     // 5 this laods TextContent into my scoreNumber class
     let scoreNumber = document.querySelector(".scoreNumber")
 
-    scoreNumber.textContent = allScore;
+    scoreNumber.textContent = Math.round(allScore) + "%";
 
     // -------------------------------------------------
 
