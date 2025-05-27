@@ -1,4 +1,4 @@
-import { spinBanner, dialogObj, dialog, delay, confirmDialog, dialogInput } from './freeAgents.js';
+import { spinBanner, dialogObj,color, dialog, delay, confirmDialog, dialogInput } from './freeAgents.js';
 // import { stringify } from "path-to-regexp";
 // confirmDialog.showModal();
 
@@ -475,6 +475,7 @@ getCode.addEventListener('click', () => {
 
 //////closeLogin
 const closeLogin = document.querySelector('.closeLogin');
+// closeLogin.style.backgroundColor=color.green;
 closeLogin.addEventListener('click', () => {
 
     let url = '/index.html';

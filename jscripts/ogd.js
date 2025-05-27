@@ -65,30 +65,7 @@ xhttp.open("GET", "https://tyktutors.onrender.com/getfina", true);
 
 // console.log(vang.slice(0, 1)[0]);
 
-// covert the inputs into Array
-let inputValues = document.querySelectorAll(".inputValue");
-let inputValue = Array.from(inputValues)
-// console.log(inputValue)
-let lb1 = document.querySelectorAll('.lb1');
-let lb2 = document.querySelectorAll('.lb2');
-let lb3 = document.querySelectorAll('.lb3');
-let lb4 = document.querySelectorAll('.lb4');
 
-// -----------
-
-// these are variables declarations made global
-let qstn1 = document.querySelector(".qstn1")
-let label1 = document.querySelector(".label1")
-let label2 = document.querySelector(".label2")
-let label3 = document.querySelector(".label3")
-let label4 = document.querySelector(".label4")
-
-
-
-let scoreResult = {
-    success: 1,
-    failure: 0
-}
 
 
 

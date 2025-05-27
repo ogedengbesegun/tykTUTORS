@@ -45,8 +45,8 @@ document.body.append(spinBanner);
 function dialog() {
     const infoBanner = document.createElement('dialog');
     infoBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
-    infoBanner.innerHTML = `<h2 class="text-success text-center mt-2">Attention <span class="fas fa-warning text-danger"></span></h2>
-     <p class="p-2 text-center w-75 mx-auto dialogMsg">
+    infoBanner.innerHTML = `<h2 class="text-success text-center mt-2 text-decoration-underline">Attention <span class="fas fa-warning text-danger"></span></h2>
+     <p class="p-2 text-center mx-auto dialogMsg">
    
      </p>
      <button class="btn btn-secondary d-block mx-auto mb-2 close ">Close</button>`
@@ -119,9 +119,20 @@ placeholder='Enter Registered Email'>
 document.body.append(dialogInput);
 // dialogInput.showModal()
 ///dialogInput
+///color
+const color = {
+    green: '#009900',
+    clay: '#ff8000',
+    blue: '#0000ff',
+    lightgreen: '#006000',
+    purple: '#9900cc',
+    ashes: '#999966',
+    darkpink: '#cc0066',
+    orange: '#ff8000',
+    ashblue: '#75a3a3'
+};
 
-
-export { spinBanner, dialogObj, dialog, delay, confirmDialog, dialogInput };
+export { spinBanner, dialogObj, color, dialog, delay, confirmDialog, dialogInput };
 
 
 
