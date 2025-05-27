@@ -27,7 +27,7 @@
   /*  */
   /*  */
   .leaf {
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 144);
     border-radius: 35px;
     width: 35px;
     height: 35px;
@@ -55,6 +55,8 @@
     width: 50%;
   }
 }
+
+/*  */
 @media (max-width: 425px) {
   .landingBinder {
     width: 85%;
@@ -62,7 +64,7 @@
   .forgotPwBanner {
     width: 75%;
   }
-  .msgBanner{
+  .msgBanner {
     width: 75%;
   }
 }

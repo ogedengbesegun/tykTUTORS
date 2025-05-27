@@ -34,7 +34,7 @@ const dialogObj = {
 const spinBanner = document.createElement('dialog');
 spinBanner.className = 'mt-6 mx-auto border-0 rounded-1 msgBanner'
 spinBanner.innerHTML = `<h2 class="text-success text-center mt-2 spinBannerHeader">Loading... ${dialogObj.fan}</h2>
-     <p class="p-2 text-center w-75 mx-auto spinText text-success">
+     <p class="p-2 text-center w-1 mx-auto spinText text-success">
      we keep ${dialogObj.movingLeaf} you moving</p>
     `
 
@@ -124,7 +124,7 @@ const color = {
     green: '#009900',
     clay: '#ff8000',
     blue: '#0000ff',
-    lightgreen: '#006000',
+    lightgreen: '#90ee90',
     purple: '#9900cc',
     ashes: '#999966',
     darkpink: '#cc0066',
