@@ -12,7 +12,7 @@
   padding: 7px;
 }
 /*  */
-.closeLogin{
+.closeLogin {
   border-bottom: 1px solid gray;
 }
 .landingBinder {
@@ -60,6 +60,9 @@
     width: 85%;
   }
   .forgotPwBanner {
+    width: 75%;
+  }
+  .msgBanner{
     width: 75%;
   }
 }
