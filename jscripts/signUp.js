@@ -14,14 +14,9 @@ const regPassword2 = document.querySelector("#regPassword2");
 
 
 
-// regDob.addEventListener('keydown', (event) => {
-//     event.preventDefault()
-// })
-//////////
 
 
 regDob.addEventListener('click', () => {
-    // regDob.value = '1900-01-01'
     //////////////////
     let calendar = new Date;
     let yr = (calendar.getFullYear()).toString();
@@ -47,8 +42,9 @@ regDob.addEventListener('click', () => {
     <button type="button" title="Ok" class="btn btn-danger w-50 d-block mt-1
     mx-auto btnok">OK</button>`
     document.body.append(dlg);
-    dlg.showModal();
 
+    // dlg.showModal();
+    // alert(regDob.value)
     /////close dlg
     const btnok = document.querySelector('.btnok');
     btnok.addEventListener('click', () => {
@@ -58,11 +54,17 @@ regDob.addEventListener('click', () => {
         }
 
     });
-    // const inputTitle = document.querySelector("input[title='show date picker']")
-    // inputTitle.style.display = 'none'
 
+    // const showDob = document.querySelector('.showDob');
+    // showDob.value = `${regDob.value}`;// set the value of showDob
+
+    //////////////
+});
+
+regDob.addEventListener('input', () => {
+    const showDob = document.querySelector('.showDob');
+    showDob.value = `${regDob.value}`;// set the value of showDob
 })
-
 ///////////////
 const dialogg = document.querySelector(".dialogg");////dialog 
 const dialoggh6 = document.querySelector(".dialogg h6");//dialog headings

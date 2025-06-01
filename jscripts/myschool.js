@@ -1,4 +1,4 @@
-import { spinBanner, dialogObj, dialog, delay, dialogInput } from './freeAgents.js';
+import { spinBanner, dialogObj, color, dialog, delay, confirmDialog, dialogInput} from './freeAgents.js';
 // const url = import.meta.env.VITE_API_login4sch;
 // dotenv.config();
 
@@ -29,7 +29,6 @@ const inputDB = document.querySelector(".inputDB");
 
 
 nameDB.addEventListener("click", () => {
-    // document.querySelector('.showDBname').textContent = 'segun'
     dialogInput.showModal();
 });
 ///closeup
@@ -42,23 +41,28 @@ closeup.addEventListener('click', () => {
 //////////panel && menubtn
 const menubtn = document.querySelector('.menubtn');
 const panel = document.querySelector('.panel');
+const navbtn = document.querySelector('.navbtn');
+
 panel.style.display = 'none'
 
 //onclick menubtn
 menubtn.addEventListener('click', () => {
-    panel.style.display = "block"
-})
+    navbtn.style.display = "block"
+});
+/////
 const rmpanel = document.querySelector('.rmpanel');
 rmpanel.addEventListener('click', () => {
-    panel.style.display = 'none';
+    navbtn.style.display = 'none';
 })
 /////////////
 // window with event handler to screen resizing
+
 // window.addEventListener('resize', () => {
-//     if (window.innerWidth > 786) {
-//         panel.style.display = 'none';
+//     if (window.innerWidth > 768) {
+//         navbtn.style.display = 'block';
 //     }
 // })
+///////
 
 async function updateSchR() {
     spinBanner.showModal()//modal

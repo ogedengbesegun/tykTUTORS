@@ -40,6 +40,22 @@ fieldset {
   width: 50%;
 }
 /*signmarquee  */
+.regSection .regDob{
+  width: 6%;
+  padding: 7px;
+  border: none;
+   border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.regSection .showDob{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 40%;
+}
+
+.dateDiv{
+  border-radius: 50%;
+}
 
 /*  */
 @media screen and (max-width: 600px) {
@@ -60,6 +76,13 @@ fieldset {
   .mysize {
     width: 90%;
   }
+  .regSection .showDob{
+  width: 65%;
+}
+.regSection .regDob{
+
+  width: 10%;
+}
 }
 
 /* @keyframes signmarquee {

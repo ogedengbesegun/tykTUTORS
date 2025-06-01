@@ -89,14 +89,20 @@
   width: 50%;
   height: 50%;
 }
-
+/*  */
+.navbtn {
+  display: block;
+}
 @media (max-width: 768px) {
-  .navbtn {
-    display: none;
-  }
   .menubtn {
     display: block;
   }
+
+  .navbtn {
+    display: none;
+    position: relative;
+  }
+
   .movetrain,
   .schoolreg,
   .mycontainer {
@@ -174,6 +180,24 @@
   .schoolreg {
     width: 90%;
   }
+  .navbtn {
+    display: none;
+  }
+  /* .navbtn { */
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* 
+    width: 75%;
+    color: white;
+    padding: 10px;
+    grid-gap: 10px;
+    position: fixed;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+  } */
 }
 @media (max-width: 375px) {
   .schoolreg {
