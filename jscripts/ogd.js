@@ -564,10 +564,14 @@ menuClose.forEach(menubtn => {
 });
 
 const navBarIcon = document.querySelector(".navBarIcon");
-navBarIcon.addEventListener("click", () => {
-    document.querySelector(".menuList").style.display = "block";
+if (navBarIcon) {
+    navBarIcon.addEventListener("click", () => {
+        document.querySelector(".menuList").style.display = "block";
+        // navBarIcon.style.height = '50px'
+        // navBarIcon.style.scrollY = "scroll"
+    })
 
-})
+}
 
 
 

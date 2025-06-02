@@ -41,12 +41,13 @@ fieldset {
 }
 /*signmarquee  */
 .regSection .regDob {
-  width: 6%;
+  width: 10%;
   padding: 7px;
-  border: none;
+  margin-left: -5px;
+  /* border: 1px solid white; */
   outline: none;
-  border-bottom-right-radius: 17px;
-  border-top-right-radius: 17px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .regSection .showDob {
   border-bottom-left-radius: 20px;
@@ -54,9 +55,9 @@ fieldset {
   width: 40%;
 }
 
-.dateDiv {
+/* .dateDiv {
   border-radius: 50%;
-}
+} */
 
 /*  */
 @media screen and (max-width: 600px) {

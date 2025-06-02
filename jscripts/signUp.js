@@ -25,7 +25,7 @@ regDob.addEventListener('click', () => {
     dy = dy < 10 ? "0" + dy : dy
     mth = mth < 10 ? "0" + mth : mth
     let tStringMax = `${yr}-${mth}-${dy}`
-    console.log(tStringMax)
+    // console.log(tStringMax)
     regDob.setAttribute('min', `${yr - 40}-01-01`);
     regDob.setAttribute('max', tStringMax);
 
@@ -44,7 +44,7 @@ regDob.addEventListener('click', () => {
     document.body.append(dlg);
 
     // dlg.showModal();
-    
+
     // alert(regDob.value)
     /////close dlg
     const btnok = document.querySelector('.btnok');
@@ -435,15 +435,20 @@ regSignup.addEventListener('click', (event) => {
 
                 reg();
                 ////////////////
+                //redirect////
+                setTimeout(() => {
+                    const url = '/html/signUp.html'
+                    window.open(url, 'signup.html');
+
+                }, 2000)
 
                 setTimeout(() => {
                     dlgConfirm.close()// to close dialog element
                     location.reload()// to reload the page
 
-                }, 1200)// close the dialog in secs
+                }, 3000)// close the dialog in secs
 
             })
-
 
 
 
@@ -507,8 +512,9 @@ async function reg() {
         })
 
         const response = await fetchstds.json();
+        if (response) {
 
-
+        }
     }
     catch (error) {
         console.log("Not connecting to the server", error)
