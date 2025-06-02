@@ -44,6 +44,7 @@ regDob.addEventListener('click', () => {
     document.body.append(dlg);
 
     // dlg.showModal();
+    
     // alert(regDob.value)
     /////close dlg
     const btnok = document.querySelector('.btnok');

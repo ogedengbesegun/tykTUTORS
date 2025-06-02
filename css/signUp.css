@@ -40,20 +40,21 @@ fieldset {
   width: 50%;
 }
 /*signmarquee  */
-.regSection .regDob{
+.regSection .regDob {
   width: 6%;
   padding: 7px;
   border: none;
-   border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  outline: none;
+  border-bottom-right-radius: 17px;
+  border-top-right-radius: 17px;
 }
-.regSection .showDob{
+.regSection .showDob {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   width: 40%;
 }
 
-.dateDiv{
+.dateDiv {
   border-radius: 50%;
 }
 
@@ -76,13 +77,20 @@ fieldset {
   .mysize {
     width: 90%;
   }
-  .regSection .showDob{
-  width: 65%;
+  .regSection .showDob {
+    width: 65%;
+  }
 }
-.regSection .regDob{
 
-  width: 10%;
+@media (max-width: 425px) {
+  .regSection .regDob {
+    width: 12%;
+  }
 }
+@media (max-width: 375px) {
+  .regSection .regDob {
+    width: 14%;
+  }
 }
 
 /* @keyframes signmarquee {
