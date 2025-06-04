@@ -436,17 +436,18 @@ regSignup.addEventListener('click', (event) => {
                 reg();
                 ////////////////
                 //redirect////
-                setTimeout(() => {
-                    const url = '/html/signUp.html'
-                    window.open(url, 'signup.html');
 
-                }, 2000)
 
                 setTimeout(() => {
                     dlgConfirm.close()// to close dialog element
                     location.reload()// to reload the page
+                    window.close()
+                }, 2000)// close the dialog in 
 
-                }, 3000)// close the dialog in secs
+                //////////////
+                // setTimeout(() => {
+                //     window.close() // close the current window
+                // }, 3000);
 
             })
 
@@ -463,6 +464,9 @@ regSignup.addEventListener('click', (event) => {
 
 
 });
+
+
+
 //    this.preventDefault();
 
 ///http address server
@@ -513,6 +517,10 @@ async function reg() {
 
         const response = await fetchstds.json();
         if (response) {
+            const url = '/allSubjects/tykTutors-Subjects.html'
+
+            open(url); // redirect tykTutors-Subjects.html
+
 
         }
     }

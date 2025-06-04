@@ -203,7 +203,7 @@
                 <button type="button" title="Enter Login Details First" class=" p-2 fs-6 start" onclick="start()">
                     Start Exams </button>
 
-                <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 text-center rounded-pill"></h4>
+                <h4 class="my-2 rounded-1 p-1 countDownTimer w-50 position-static top-0 text-center rounded-pill"></h4>
                 <!-- <div class="seescore text-dark btn btn-light"></div> -->
                 <div class="card mt-2 rounded-2">
 
@@ -381,80 +381,80 @@
 
         <!-- Print Previous Results based on current subject(Finan Acct) -->
         <div class="hide bg-light position-fixed top-0 z-2 w-100 h-100 mx-auto subjResultLogin">
-            <!-- <div class="card w-50 mx-auto mt-2 bg-info border-0">
+        <!-- <div class="card w-50 mx-auto mt-2 bg-info border-0">
             <p class="text-center mt-2">1. Select a Subject</p>
             <p class="text-center">2. Enter Log-In Details to view your Result</p>
-        </div> -->
-            <div class="container mt-5">
-                <h4 class="text-center">Check Results Page </h4>
+           </div> -->
+        <div class="container my-4">
+            <h4 class="text-center">Check Results Page </h4>
 
-                <div class="bg-primary text-center rounded-2 w-75 mx-auto">
+            <div class="bg-primary text-center rounded-2 w-75 mx-auto">
 
-                    <button type="button" title="close" class="btn btn-primary mb-4 float-end  closeUp"><span
-                            class="fas fa-times text-danger fw-bold fs-4"></span></button>
-                    <h4 class="text-white pt-5 mx-auto w-75">Login Details to Print </h4>
-                    <form action="">
-
-
-                        <input type="text" title="Enter your ID" name="" id="subjId"
-                            class="mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjId"
-                            placeholder="Enter ID">
-                        <input type="password" title="Enter your Password" name="" id="subjPwd"
-                            class=" mt-1 mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjPwd"
-                            placeholder="Enter Password">
-                        <small class="msg-User d-block mb-3"></small>
-                        <button type="button" class="btn btn-success mx-auto w-25 mb-2 loginR">LogIn <span
-                                class="fas fa-user"></span></button>
-                    </form>
-                </div>
-            </div>
+                <button type="button" title="close" class="btn btn-primary mb-4 float-end  closeUp"><span
+                        class="fas fa-times text-danger fw-bold fs-4"></span></button>
+                <h4 class="text-white pt-5 mx-auto w-75">Login Details to Print </h4>
+                <form action="">
 
 
-            <!-- these allows users to select the subject of choice for result viewing -->
-            <div class="hide text-center container showselect ">
-                <h5 class="text-center text-primary selectSubject">Select Subject </span></h5>
-                <select title="Select Subject" name="subjPick" id="subjSelect"
-                    class="rounded-1 border-0 no-outline text-bg-info p-1 select ">
-                    <option class="text-bg-primary text-center">Select One</option>
-                    <option value="engl">English-Language</option>
-                    <option value="math">Mathematics</option>
-                    <option value="fina">Financial-Accounting</option>
-                    <option value="econ">Economics</option>
-                    <option value="comp">Computer-Studies</option>
-                    <option value="biol">Biology</option>
-                    <option value="phys">Physics</option>
-                    <option value="chem">Chemistry</option>
-                    <option value="furt">Further-Mathematics</option>
-                    <option value="comm">Commerce</option>
-                    <option value="lite">Literature-in-English</option>
-                    <option value="gove">Government</option>
-                    <option value="civi">Civic-Education</option>
-                    <option value="mart">Marketing</option>
-                    <option value="proc">Data-Processing</option>
-                    <option value="anim">Animal-Husbandry</option>
-
-
-
-                </select>
-                <dialog class="dialog7 container border-0 text-center w-50 p-1 rounded-1">
-                    <h6 class="text-danger"> Subject Loading<span class=" fas  ms-1 fs-2 bell"></span></h6>
-                </dialog>
+                    <input type="text" title="Enter your ID" name="" id="subjId"
+                        class="mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjId"
+                        placeholder="Enter ID">
+                    <input type="password" title="Enter your Password" name="" id="subjPwd"
+                        class=" mt-1 mb-1 rounded-pill border-0 text-center p-1 no-outline d-block mx-auto subjPwd"
+                        placeholder="Enter Password">
+                    <small class="msg-User d-block mb-3"></small>
+                    <button type="button" class="btn btn-success mx-auto mb-2 loginR">LogIn <span
+                            class="fas fa-user"></span></button>
+                </form>
             </div>
         </div>
 
-        <!-- indicators dialog -->
-        <dialog class="indicators border-0 border rounded-1 mx-auto mt-7  p-3 bg-light">
-            <div class=" text-center">
-                <h2>Loading...</h2>
-                <p><i class="fas fa-spinner fa-spin h2 text-success"></i></p>
-                <p class="p"></p>
 
-            </div>
-        </dialog>
-        <!-- --------------------------------------------------------------- -->
-        <!-- attach a select Subject list items for selection -->
+        <!-- these allows users to select the subject of choice for result viewing -->
+        <div class="hide text-center container showselect ">
+            <h5 class="text-center text-primary selectSubject">Select Subject </span></h5>
+            <select title="Select Subject" name="subjPick" id="subjSelect"
+                class="rounded-1 border-0 no-outline text-bg-info p-1 select ">
+                <option class="text-bg-primary text-center">Select One</option>
+                <option value="engl">English-Language</option>
+                <option value="math">Mathematics</option>
+                <option value="fina">Financial-Accounting</option>
+                <option value="econ">Economics</option>
+                <option value="comp">Computer-Studies</option>
+                <option value="biol">Biology</option>
+                <option value="phys">Physics</option>
+                <option value="chem">Chemistry</option>
+                <option value="furt">Further-Mathematics</option>
+                <option value="comm">Commerce</option>
+                <option value="lite">Literature-in-English</option>
+                <option value="gove">Government</option>
+                <option value="civi">Civic-Education</option>
+                <option value="mart">Marketing</option>
+                <option value="proc">Data-Processing</option>
+                <option value="anim">Animal-Husbandry</option>
 
-        <!-- <hr class="hr">
+
+
+            </select>
+            <dialog class="dialog7 container border-0 text-center w-50 p-1 rounded-1">
+                <h6 class="text-danger"> Subject Loading<span class=" fas  ms-1 fs-2 bell"></span></h6>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- indicators dialog -->
+    <dialog class="indicators border-0 border rounded-1 mx-auto mt-7  p-3 bg-light">
+        <div class=" text-center">
+            <h2>Loading...</h2>
+            <p><i class="fas fa-spinner fa-spin h2 text-success"></i></p>
+            <p class="p"></p>
+
+        </div>
+    </dialog>
+    <!-- --------------------------------------------------------------- -->
+    <!-- attach a select Subject list items for selection -->
+
+    <!-- <hr class="hr">
      <footer class="mx-1 border-1 border-black rounded-1 mt-auto">
         <h3 class="text-primary text-center border border-1 border-secondary mx-auto w-1 rounded-pill p-2">Our
             Services</h3>
