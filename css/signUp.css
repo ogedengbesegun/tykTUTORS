@@ -56,19 +56,18 @@ input[type="date"]#calIcon {
   -webkit-appearance: none;
   appearance: none;
   position: relative;
-  left: -10;
+  /* left: -10; */
   width: 1.5em;
   height: 2.5em;
   padding: 0;
   border: none;
   /* background: transparent; */
-  color: transparent; /* Hide text */
+  color: transparent; 
   cursor: pointer;
-  /* margin-left: -300; */
 }
 input[type="date"]#calIcon::-webkit-calendar-picker-indicator {
-    /* color: black;
-    opacity: 1; */
+    color: black;
+    opacity: 1;
     cursor: pointer;
   }
 /*signmarquee  */
