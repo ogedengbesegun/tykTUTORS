@@ -22,7 +22,23 @@ const app = express();
 
 // Initialize Express app
 app.use(express.json());
-app.use(cors());
+//Allow frontend origin (replace with your real domain later)
+const allowedOrigins = [
+  'http://127.0.0.1:5501',        // for local dev
+  'https://tyktutor.onrender.com'  // ← your public frontend domain
+];
+
+app.use(cors(
+    {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}
+));
 //////////
 // console.log(btnmail)
 
