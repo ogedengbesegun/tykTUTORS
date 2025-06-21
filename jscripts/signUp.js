@@ -12,9 +12,16 @@ const regPassword2 = document.querySelector("#regPassword2");
 
 
 
-
-
-
+///////date picker
+// const calIcon = document.querySelector(".calIcon");
+// calIcon.addEventListener('click', (e) => {
+//     handleDateChange(e)
+// })
+/////
+// function handleDateChange(e) {
+//     alert("Selected date: " + e.target.value);
+// }
+///////////////////
 
 regDob.addEventListener('click', () => {
     //////////////////
@@ -39,7 +46,7 @@ regDob.addEventListener('click', () => {
     <i class='far fa-calendar text-dark'></i> !!!</p>
     <p class='text-center pb-1 px-3 w-75 mx-auto'><b class='text-danger'>
     Note: </b>* Year ealier than ${yr - 40} is NOT allowed *</p>
-    <button type="button" title="Ok" class="btn btn-danger w-50 d-block mt-1
+    <button type="button" title="Ok" class="btn btn-success w-25 d-block mt-1
     mx-auto btnok">OK</button>`
     document.body.append(dlg);
 

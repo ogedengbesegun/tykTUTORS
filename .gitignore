@@ -1,7 +1,7 @@
 node_modules
-.env
+.env*
 url.json
 
 url2.json
 markdown.md
-subjectsJSON/biol.json
+

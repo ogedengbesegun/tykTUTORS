@@ -15,7 +15,6 @@ import sgMail from '@sendgrid/mail';
 import bcrypt from "bcrypt";
 
 
-
 dotenv.config();
 
 const app = express();
@@ -616,7 +615,7 @@ client.connect().then(() => {
             const match = await bcrypt.compare(loginP, loginsch.password);
 
             if (!match) {
-                return res.status(401).json({ success: false, message: 'Incorrectsss Password' });
+                return res.status(401).json({ success: false, message: 'Incorrect Password' });
             }
 
             res.json({ success: true, message: 'Login Successful' });

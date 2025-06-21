@@ -67,24 +67,23 @@
                 <form class="form">
                     <div class="">
                         <input type="text" name="surname" id="surname" title="Enter Surname Name" placeholder="Surname"
-                            class="text-center rounded-pill border-0  mb-2 no-outline stdNames regSur" required
+                            class="text-center  border-0  mb-2 no-outline stdNames regSur" required
                             autofocus>
                         <input type="text" name="othernames" id="othernames" title="Enter Other Names"
                             placeholder="Other Names" required
-                            class="text-center rounded-pill border-0 mb-2 no-outline stdNames regOther">
-                        <div class=" d-flexk justify-content-center">
-                            <input type="text" title="yyyy-mm-dd" readonly  id='dateSet' 
-                            placeholder="yyyy-mm-dd"
-                            class="border-0 no-outline text-center showDob"/>
-                            <input type="date"  title="Date"
-                                class="text-center regDob" />
+                            class="text-center  border-0 mb-2 no-outline stdNames regOther">
+
+                        <div class="d-flex justify-content-center w-100 mx-auto">
+                            <input type="text" title="yyyy-mm-dd" readonly id='dateSet' placeholder="yyyy-mm-dd"
+                                class="border-0 no-outline text-center showDob" />
+                            <input type="date" title="Date" id="calIcon" class="text-center regDob" />
                         </div>
 
 
-                        <div class="bg-light rounded-pill mx-auto  my-2 sexbox" title="Select Sex">
-                             <label title="Male" for="male" class="">Male <input type="radio" name="sex" id="male"
+                        <div class="bg-light  mx-auto  my-2 sexbox" title="Select Sex">
+                            <label title="Male" for="male" class="">Male <input type="radio" name="sex" id="male"
                                     class="d-inline regMale" value="M" required></label>
-        
+
                             <label title="Female" for="female" class="ms-2">Female <input type="radio" name="sex"
                                     id="female" class="d-inline regFemale" value="F" required></label>
                         </div>
@@ -92,18 +91,18 @@
 
                         <input type=" text" name="telephone" id="telephone" placeholder="080******123"
                             title="Student's Or Parent/Guardian Phone Number" required
-                            class="text-center rounded-pill border-0 mb-2 no-outline no-inner-no-outer-spin input-Val regNum"
+                            class="text-center  border-0 mb-2 no-outline no-inner-no-outer-spin input-Val regNum"
                             maxlength="11">
                         <input type="email" name="email" id="email" title="Enter a Valid Email Address"
-                            class="rounded-pill mb-2 border-0 no-outline text-center regEmail"
+                            class=" mb-2 border-0 no-outline text-center regEmail"
                             placeholder="email@myemail.com" required>
                         <input type="password" name="password" id="password" placeholder="Enter Password" required
-                            class="text-center rounded-pill border border-3 border-success  FScustom no-outline regPsw"
+                            class="text-center  border border-3 border-success  FScustom no-outline regPsw"
                             title="Enter your Password"><i class="fas fa-eye-slash text-danger reveal"></i>
 
                         <input type="password" name="regPassword2" id="regPassword2" placeholder="Confirm Password"
                             required
-                            class="text-center rounded-pill border border-3 border-success FScustom no-outline mt-2 ms-2"
+                            class="text-center  border border-3 border-success FScustom no-outline mt-2 ms-2"
                             title="Confirm Password">
                         <p class="text-center fw-bold resMsg text-light mt-2"></p>
                         <button type="button"

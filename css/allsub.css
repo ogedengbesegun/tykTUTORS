@@ -32,6 +32,10 @@
   padding: 2px;
 }
 /*  */
+/*  */
+input{
+  border-bottom: 1px bold green;
+}
 
 @media (max-width: 768px) {
   /* .container {
