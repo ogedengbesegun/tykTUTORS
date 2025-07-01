@@ -9,7 +9,14 @@
 //     }).find(item => item === 9);
 
 // console.log(item)
-//2
+////capitalize every word and trim()
+function capitalized(str) {
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ').trim();
+}
+/////////
 const dialogObj = {
     checkError: `Error! Check your Email Address or Password
      Use at least one Uppercase, Lowercase, Digit and 
@@ -132,7 +139,7 @@ const color = {
     ashblue: '#75a3a3'
 };
 
-export { spinBanner, dialogObj, color, dialog, delay, confirmDialog, dialogInput };
+export { spinBanner, dialogObj, color, dialog, delay, confirmDialog, dialogInput,capitalized };
 
 
 

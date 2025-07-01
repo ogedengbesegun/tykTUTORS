@@ -1,4 +1,10 @@
 // --------------------------------------------------
+///hey Backend wake up NOW....////
+const wakeup = async () => {
+    const wakywaky = await fetch('https://tyktutors.onrender.com');
+}
+wakeup();
+/////////////////////////////
 // declare the variables in this project
 
 // to declare the show result input element id
